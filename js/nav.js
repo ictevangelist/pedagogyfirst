@@ -5,6 +5,27 @@
    back-to-top is an ordinary anchor. Nothing becomes unreachable.
    ===================================================================== */
 (function () {
+  /* ---------- Measure the sticky chrome ----------
+     The header wraps onto a second row at some widths and text sizes, and the
+     cluster bar sticks beneath it. Measuring both keeps the sticky offset and
+     the anchor scroll-margin correct instead of guessing a fixed height. */
+  var header = document.querySelector('.site-header');
+  var clusterBar = document.querySelector('.cluster-nav');
+
+  function measure() {
+    var root = document.documentElement;
+    if (header) root.style.setProperty('--header-h', header.offsetHeight + 'px');
+    if (clusterBar) root.style.setProperty('--clusternav-h', clusterBar.offsetHeight + 'px');
+  }
+  measure();
+  window.addEventListener('resize', measure, { passive: true });
+  window.addEventListener('load', measure);
+  if ('ResizeObserver' in window) {
+    var ro = new ResizeObserver(measure);
+    if (header) ro.observe(header);
+    if (clusterBar) ro.observe(clusterBar);
+  }
+
   /* ---------- Mobile menu ---------- */
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');

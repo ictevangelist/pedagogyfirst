@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Chapter 01 — Retrieval Practice.
+Chapter 01 : Retrieval Practice.
 Expansions for each of the 24 strategies on the infographic.
 
 Keys map to the strategy number as printed on the card.
@@ -46,7 +46,7 @@ EXPANSIONS = {
             "Collect five at random. The pattern across five tells you most of what you need.",
         ],
         "tech": "A shared document or whiteboard tool works well when you want the class to see the collective picture build up. Individual recall first though, always, or the confident few will do the remembering for everyone.",
-        "watch": "Turning it into a competition for who wrote most rewards fast writers rather than secure knowledge, and it quietly punishes anyone who finds writing effortful.",
+        "watch": "Turning it into a competition for who wrote most rewards fast writers rather than secure knowledge, and it penalises anyone who finds writing effortful.",
     },
     "04": {
         "what": "Quiz the class on material you have not taught yet. They will get most of it wrong, which is the point. The failed attempt primes them for the teaching that follows.",
@@ -265,7 +265,7 @@ EXPANSIONS = {
             "Tell students why the timing varies, so the delay does not read as withholding.",
         ],
         "tech": "Quiz tools with an instant reveal suit the factual case. For the harder work, turn the instant reveal off; the default is rarely what you want.",
-        "watch": "Blanket immediate feedback on everything feels responsive and quietly removes the productive struggle from the tasks that most needed it.",
+        "watch": "Blanket immediate feedback on everything feels responsive and removes the productive struggle from the tasks that most needed it.",
     },
     "22": {
         "what": "Students rate how confident they are in each answer, then check. Over time the gap between confidence and accuracy narrows, which is a skill in itself.",

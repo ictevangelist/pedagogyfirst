@@ -39,6 +39,18 @@ WORDS = {
     "04": "Four", "05": "Five", "06": "Six",
 }
 
+# Full chapter names are long enough that seven of them wrap the header onto a
+# second row. The nav carries a short form; the full name is on the page itself,
+# in the breadcrumb and in the link's title.
+SHORT = {
+    "retrieval-practice": "Retrieval",
+    "formative-assessment": "Formative",
+    "feedback": "Feedback",
+    "questioning-and-discussion": "Questioning",
+    "explanations-and-modelling": "Explanations",
+    "metacognition-and-self-regulation": "Metacognition",
+}
+
 
 # ---------------------------------------------------------------- helpers
 def e(s):
@@ -71,6 +83,44 @@ def asset_version():
 
 
 VER = asset_version()
+
+
+# ---------------------------------------------------------------- colour
+def _lum(hex_colour):
+    h = hex_colour.lstrip("#")
+    if len(h) == 3:
+        h = "".join(c * 2 for c in h)
+    parts = [int(h[i:i + 2], 16) / 255 for i in (0, 2, 4)]
+    lin = [c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in parts]
+    return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
+
+
+def contrast(fg, bg):
+    a, b = _lum(fg), _lum(bg)
+    hi, lo = max(a, b), min(a, b)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+def readable_on_white_text(hex_colour, target=4.6):
+    """
+    Darken a colour until white text on it clears WCAG AA.
+
+    The infographic palettes were designed for dark text on pale cards. On the
+    site the same hues carry white text in the number badge, and 17 of the 29
+    fail at full saturation. Darkening preserves the hue, and therefore the
+    link back to the infographic, while making the badge legible. The original
+    colour is kept for the rules and dots, which are decorative.
+    """
+    h = hex_colour.lstrip("#")
+    if len(h) == 3:
+        h = "".join(c * 2 for c in h)
+    r, g, b = (int(h[i:i + 2], 16) for i in (0, 2, 4))
+    for _ in range(60):
+        candidate = f"#{r:02x}{g:02x}{b:02x}"
+        if contrast("#ffffff", candidate) >= target:
+            return candidate
+        r, g, b = (int(v * 0.94) for v in (r, g, b))
+    return "#333333"
 
 
 # ---------------------------------------------------------------- chrome
@@ -130,8 +180,10 @@ def header(chapters, current=None):
     items.append(f'<li><a href="/"{home_current}>Home</a></li>')
     for c in chapters:
         cur = ' aria-current="page"' if c["slug"] == current else ""
+        short = SHORT.get(c["slug"], c["name"])
         items.append(
-            f'<li><a href="/{c["slug"]}/"{cur}>{c["number"]}. {e(c["name"])}</a></li>'
+            f'<li><a href="/{c["slug"]}/"{cur} title="{e(c["name"])}">'
+            f'<span class="nav-no">{c["number"]}</span> {e(short)}</a></li>'
         )
     return f"""<header class="site-header">
   <div class="wrap header-inner">
@@ -166,7 +218,7 @@ def footer(research=None):
     </p>
   </div>
 </footer>
-<a class="to-top" href="#top">
+<a class="to-top" href="#top" aria-label="Back to top of page">
   <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false" fill="currentColor"><path d="M7 2l5 6H9v4H5V8H2z"/></svg>
   Back to top
 </a>
@@ -198,7 +250,7 @@ def prose_section(section_id, kicker, heading, block, callout_last=True):
 </section>"""
 
 
-def strategy_card(s, exp, chapter_slug, colour):
+def strategy_card(s, exp, chapter_slug, colour, badge):
     """One strategy, expanded. Falls back gracefully if not yet written."""
     anchor = s["slug"]
     body = ""
@@ -226,7 +278,7 @@ def strategy_card(s, exp, chapter_slug, colour):
         f'<a class="permalink" href="#{anchor}" aria-label="Link to strategy {s["number"]}, {e(s["title"])}">#{s["number"]}</a>'
     )
 
-    return f"""    <article class="strategy" id="{anchor}" style="--cluster:{colour}" aria-labelledby="{anchor}-h">
+    return f"""    <article class="strategy" id="{anchor}" style="--cluster:{colour};--cluster-badge:{badge}" aria-labelledby="{anchor}-h">
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">{s["icon"]}</span>
         <span class="strategy__no">{s["number"]}</span>
@@ -239,7 +291,10 @@ def strategy_card(s, exp, chapter_slug, colour):
 
 def cluster_section(cluster, strategies, chapter_slug, expansions):
     cards = "\n".join(
-        strategy_card(s, expansions.get(s["number"]), chapter_slug, cluster["colour"])
+        strategy_card(
+            s, expansions.get(s["number"]), chapter_slug,
+            cluster["colour"], cluster["badge"],
+        )
         for s in strategies
     )
     n = len(strategies)
@@ -268,9 +323,10 @@ def build_chapter(chapter, prose, chapters, index):
     clusters = []
     for c in chapter["clusters"]:
         cid = re.sub(r"[^a-z0-9]+", "-", c["label"].lower()).strip("-")
+        badge = readable_on_white_text(c["colour"])
         items = [s for s in chapter["strategies"] if s["cluster"] == c["key"]]
         if items:
-            clusters.append(({**c, "id": cid}, items))
+            clusters.append(({**c, "id": cid, "badge": badge}, items))
 
     nav_items = "".join(
         f'<li><a href="#{c["id"]}"><span class="dot" style="--cluster:{c["colour"]}" aria-hidden="true"></span>{e(c["label"])}</a></li>'

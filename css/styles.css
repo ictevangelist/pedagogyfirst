@@ -66,8 +66,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; color: var(--ink); margin: 0 0 .5rem; text-wrap: balance; }
-p, li { max-width: var(--measure); }
+h1, h2, h3, h4 { overflow-wrap: break-word; font-family: var(--font-head); font-weight: 700; line-height: 1.2; color: var(--ink); margin: 0 0 .5rem; text-wrap: balance; }
+p, li { max-width: var(--measure); overflow-wrap: break-word; }
 a { color: var(--accent-ink); text-underline-offset: 3px; text-decoration-thickness: from-font; }
 a:hover { text-decoration-thickness: 2px; }
 
@@ -86,17 +86,21 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- Skip links ---------- */
 .skip-links a {
-  position: absolute; left: -9999px; top: 0; z-index: 200;
+  position: absolute; left: 0; top: 0; z-index: 200;
   background: var(--ink); color: #fff; padding: .8rem 1.2rem;
   font-weight: 600; border-radius: 0 0 8px 0;
+  /* Clipped rather than pushed off-canvas: a negative offset can widen the
+     scroll area at large text sizes, which breaks reflow. */
+  clip-path: inset(50%); white-space: nowrap;
 }
-.skip-links a:focus { left: 0; }
+.skip-links a:focus { clip-path: none; }
 
 /* ---------- Layout ---------- */
 .wrap { width: min(100% - 2.5rem, 1180px); margin-inline: auto; }
 .wrap--narrow { width: min(100% - 2.5rem, 860px); margin-inline: auto; }
 main { display: block; }
-section { scroll-margin-top: 5.5rem; }
+section { scroll-margin-top: calc(var(--header-h, 4.2rem) + var(--clusternav-h, 4rem) + 1rem); }
+.cluster-nav { scroll-margin-top: var(--header-h, 4.2rem); }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -106,8 +110,8 @@ section { scroll-margin-top: 5.5rem; }
   border-bottom: 1px solid var(--border);
 }
 .site-header::before { content: ""; display: block; height: 4px; background: var(--brand-grad); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .6rem 0; }
-.brand { display: inline-flex; align-items: baseline; gap: .35rem; flex: none; white-space: nowrap; font-family: var(--font-head); font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.02rem; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; padding: .6rem 0; }
+.brand { display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: .35rem; min-width: 0; font-family: var(--font-head); font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.02rem; }
 .brand span { color: var(--accent-ink); }
 .brand:hover { text-decoration: underline; }
 
@@ -126,6 +130,8 @@ section { scroll-margin-top: 5.5rem; }
   min-height: 44px; display: flex; align-items: center;
 }
 .main-nav a:hover { background: var(--paper-alt); color: var(--ink); }
+.nav-no { font-family: var(--font-meta); font-size: .74rem; font-weight: 600; color: var(--border-strong); margin-right: .18rem; }
+.main-nav a[aria-current="page"] .nav-no { color: var(--accent); }
 .main-nav a[aria-current="page"] { color: var(--accent-ink); font-weight: 600; box-shadow: inset 0 -3px 0 var(--accent); }
 
 /* ---------- Hero ---------- */
@@ -156,7 +162,11 @@ section { scroll-margin-top: 5.5rem; }
 
 /* ---------- Breadcrumb ---------- */
 .crumbs { font-size: .88rem; color: var(--ink-soft); padding: .9rem 0 0; }
-.crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
+.crumbs ol { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0; padding: 0; }
+.crumbs li { display: inline-flex; align-items: center; min-height: 24px; }
+/* Breadcrumb links are standalone targets, so they carry the 24px minimum. */
+.crumbs a { display: inline-flex; align-items: center; min-height: 24px; padding: .15rem .25rem; border-radius: 5px; }
+.crumbs a:hover { background: var(--paper-alt); }
 .crumbs li + li::before { content: "›"; margin-right: .4rem; color: var(--border-strong); }
 
 /* ---------- Prose blocks ---------- */
@@ -175,7 +185,7 @@ section { scroll-margin-top: 5.5rem; }
 
 /* ---------- Cluster navigation ---------- */
 .cluster-nav {
-  position: sticky; top: 4.2rem; z-index: 60;
+  position: sticky; top: var(--header-h, 4.2rem); z-index: 60;
   background: rgba(255,255,255,.95); backdrop-filter: blur(6px);
   border-block: 1px solid var(--border); padding: .55rem 0; margin-top: 2.2rem;
 }
@@ -201,14 +211,14 @@ section { scroll-margin-top: 5.5rem; }
 .strategy {
   border: 1px solid var(--border); border-left: 6px solid var(--cluster, var(--accent));
   border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow);
-  padding: 1.4rem 1.5rem 1.5rem; scroll-margin-top: 9rem;
+  padding: 1.4rem 1.5rem 1.5rem; scroll-margin-top: calc(var(--header-h, 4.2rem) + var(--clusternav-h, 4rem) + 1rem);
 }
 .strategy:target { outline: 3px solid var(--focus); outline-offset: 4px; }
 .strategy__top { display: flex; align-items: flex-start; gap: .8rem; margin-bottom: .5rem; }
 .strategy__icon { font-size: 1.6rem; line-height: 1; flex: none; }
 .strategy__no {
   font-family: var(--font-head); font-weight: 700; font-size: .95rem;
-  color: #fff; background: var(--cluster, var(--accent));
+  color: #fff; background: var(--cluster-badge, var(--cluster, var(--accent)));
   border-radius: 7px; padding: .2rem .5rem; flex: none; letter-spacing: .02em;
 }
 .strategy h3 { font-size: 1.22rem; margin: 0; }
@@ -237,8 +247,14 @@ section { scroll-margin-top: 5.5rem; }
   border-radius: 7px; padding: .3rem .6rem;
 }
 .chip b { font-weight: 600; color: var(--ink-soft); text-transform: uppercase; font-size: .68rem; letter-spacing: .1em; margin-right: .3rem; }
-.permalink { font-family: var(--font-meta); font-size: .78rem; color: var(--ink-soft); text-decoration: none; margin-left: auto; align-self: center; }
-.permalink:hover { color: var(--accent-ink); text-decoration: underline; }
+.permalink {
+  font-family: var(--font-meta); font-size: .78rem; color: var(--ink-soft);
+  text-decoration: none; margin-left: auto; align-self: center;
+  min-width: 2.6rem; min-height: 1.7rem; padding: .25rem .5rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 6px;
+}
+.permalink:hover { color: var(--accent-ink); background: var(--paper-alt); text-decoration: underline; }
 
 /* ---------- Chapter index cards ---------- */
 .chapter-grid { display: grid; gap: 1.3rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr)); margin: 2rem 0; padding: 0; list-style: none; }
@@ -343,7 +359,6 @@ section { scroll-margin-top: 5.5rem; }
   .main-nav.open { display: block; }
   .main-nav ul { flex-direction: column; gap: 0; padding: .5rem 1.25rem 1rem; }
   .main-nav a { padding: .75rem .4rem; }
-  .cluster-nav { top: 3.9rem; }
   .strategy { padding: 1.2rem 1.1rem 1.3rem; }
 }
 
