@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 Ways to Embed Effective Feedback in Your Classroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", sans-serif; background: #f5c518; width: 1400px; margin: 0 auto; }
+  .infographic { width: 1400px; background: linear-gradient(135deg, #f5c518 0%, #f0b400 50%, #e8a800 100%); padding: 34px 40px 28px; position: relative; overflow: hidden; }
+  .infographic::before { content: ""; position: absolute; top: -160px; right: -120px; width: 520px; height: 520px; background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+  .infographic::after { content: ""; position: absolute; bottom: -120px; left: -120px; width: 440px; height: 440px; background: radial-gradient(circle, rgba(194,24,91,0.1) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+
+  /* HEADER */
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; position: relative; z-index: 1; }
+  .header-left { display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1; }
+  .header-icon { width: 68px; height: 68px; flex-shrink: 0; }
+  .header-text h1 { font-family: "Exo 2", sans-serif; font-size: 29px; font-weight: 900; color: #1a1a1a; line-height: 1.1; letter-spacing: -0.5px; }
+  .header-text .subtitle { font-size: 11px; color: #3e2c00; font-family: "Poppins", sans-serif; margin-top: 5px; font-weight: 400; }
+  .header-text .quote { font-size: 11px; color: #7b1fa2; font-style: italic; margin-top: 4px; font-weight: 500; font-family: "Poppins", sans-serif; }
+  .header-badge { background: #fffde7; border: 2px solid #c2185b; border-radius: 12px; padding: 10px 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(194,24,91,0.25); flex-shrink: 0; width: 115px; }
+
+  /* LEGEND */
+  .legend { display: flex; flex-wrap: nowrap; gap: 20px; margin-bottom: 12px; position: relative; z-index: 1; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #1a1a1a; font-weight: 600; white-space: nowrap; font-family: "Poppins", sans-serif; }
+  .legend-dot { width: 13px; height: 13px; border-radius: 4px; flex-shrink: 0; }
+  .legend-dot.define    { background: #c2185b; }
+  .legend-dot.timing    { background: #0277bd; }
+  .legend-dot.source    { background: #00796b; }
+  .legend-dot.learner   { background: #6a1b9a; }
+  .legend-dot.closing   { background: #e65100; }
+
+  /* GRID */
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; position: relative; z-index: 1; align-items: stretch; }
+
+  /* CARDS */
+  .card { border-radius: 10px; padding: 10px 10px 9px; position: relative; display: flex; flex-direction: column; }
+  .card-number { position: absolute; top: 7px; right: 8px; font-family: "Exo 2", sans-serif; font-size: 10px; font-weight: 800; opacity: 0.3; color: #1a1a1a; }
+  .card-icon { font-size: 19px; line-height: 1; height: 22px; display: flex; align-items: center; margin-bottom: 4px; flex-shrink: 0; }
+  .card-category { font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #1a1a1a; opacity: 0.55; line-height: 11px; margin-bottom: 3px; flex-shrink: 0; }
+  .card-title { font-family: "Exo 2", sans-serif; font-size: 11px; font-weight: 800; color: #1a1a1a; line-height: 1.3; margin-bottom: 5px; flex-shrink: 0; }
+  .card-desc { font-size: 9px; color: #1a1a1a; line-height: 1.45; font-weight: 400; margin-bottom: 6px; height: 70px; overflow: hidden; flex-shrink: 0; }
+  .card-meta { display: flex; flex-direction: column; gap: 2px; margin-top: auto; flex-shrink: 0; }
+  .meta-chip { display: flex; align-items: center; gap: 3px; background: rgba(255,255,255,0.55); border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 1px 5px; height: 14px; font-size: 7.5px; font-family: "Inter", sans-serif; font-weight: 500; color: #1a1a1a; white-space: nowrap; overflow: hidden; }
+  .meta-label { font-size: 6.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #000; opacity: 0.45; flex-shrink: 0; }
+
+  .cat-define   { background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); border: 1px solid rgba(194,24,91,0.25); border-left: 4px solid #c2185b; }
+  .cat-timing   { background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%); border: 1px solid rgba(2,119,189,0.25); border-left: 4px solid #0277bd; }
+  .cat-source   { background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%); border: 1px solid rgba(0,121,107,0.25); border-left: 4px solid #00796b; }
+  .cat-learner  { background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border: 1px solid rgba(106,27,154,0.25); border-left: 4px solid #6a1b9a; }
+  .cat-closing  { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border: 1px solid rgba(230,81,0,0.25); border-left: 4px solid #e65100; }
+
+  /* FOOTER */
+  .footer { display: flex; align-items: flex-start; justify-content: space-between; margin-top: 14px; padding-top: 10px; border-top: 2px solid rgba(0,0,0,0.12); position: relative; z-index: 1; gap: 20px; }
+  .footer-left { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .footer-motto { font-family: "Exo 2", sans-serif; font-size: 11.5px; font-weight: 800; color: #1a1a1a; }
+  .footer-motto span { color: #c2185b; text-transform: uppercase; }
+  .footer-research { font-size: 9.5px; color: #3e2c00; font-weight: 400; font-family: "Poppins", sans-serif; }
+  .footer-cta { font-size: 9.5px; color: #3e2c00; font-weight: 400; margin-top: 1px; font-family: "Poppins", sans-serif; }
+  .footer-cta a { color: #c2185b; font-weight: 600; text-decoration: none; }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; min-width: 180px; }
+  .footer-created-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #1a1a1a; opacity: 0.45; font-family: "Poppins", sans-serif; }
+  .footer-author { font-family: "Exo 2", sans-serif; font-size: 20px; font-weight: 900; line-height: 1.1; color: #c2185b; }
+</style>
+</head>
+<body>
+<div class="infographic">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" width="68" height="68">
+        <rect width="68" height="68" rx="12" fill="#fffde7"/>
+        <path d="M20 18 L48 18 L48 52 L34 44 L20 52 Z" fill="#c2185b" stroke="#ad1457" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M26 28 L42 28" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M26 34 L38 34" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M26 40 L40 40" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="52" cy="16" r="10" fill="#0277bd" stroke="#fffde7" stroke-width="2"/>
+        <path d="M48 16 L51 19 L56 13" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div class="header-text">
+        <h1>24 Ways to Embed Effective <span style="background: linear-gradient(90deg, #c2185b 0%, #e91e63 50%, #c2185b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Feedback</span> in Your Classroom</h1>
+        <p class="subtitle">Evidence-informed strategies, with or without technology</p>
+        <p style="font-size:10px; color:#3e2c00; font-family:'Poppins',sans-serif; margin-top:3px; font-weight:400;">Rooted in the work of Hattie &amp; Timperley, Sadler, Butler, Nicol &amp; Macfarlane-Dick, Wiliam, Kluger &amp; DeNisi, Shute, Topping, Andrade, Carless and Boud</p>
+        <p class="quote">"Feedback is one of the most powerful influences on learning and achievement, but this impact can be either positive or negative." &mdash; Hattie &amp; Timperley, 2007</p>
+      </div>
+    </div>
+    <div class="header-badge">
+      <div style="text-align:center;">
+        <div style="font-family:'Poppins',sans-serif; font-size:15px; font-weight:600; color:#c2185b; line-height:1.1; margin-bottom:4px;">Pedagogy<br>First</div>
+        <div style="font-size:8px; font-weight:700; color:#3e2c00; text-transform:uppercase; letter-spacing:0.5px; line-height:1.5;">24 Strategies to<br>Try Today</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot define"></div>What Feedback Is</div>
+    <div class="legend-item"><div class="legend-dot timing"></div>Timing &amp; Frequency</div>
+    <div class="legend-item"><div class="legend-dot source"></div>Source &amp; Direction</div>
+    <div class="legend-item"><div class="legend-dot learner"></div>Feedback &amp; the Learner</div>
+    <div class="legend-item"><div class="legend-dot closing"></div>Closing the Gap</div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <!-- CATEGORY 1: WHAT FEEDBACK IS (5 cards) -->
+
+    <div class="card cat-define">
+      <span class="card-number">01</span>
+      <div class="card-icon">&#128269;</div>
+      <div class="card-category">What Feedback Is</div>
+      <div class="card-title">Feedback Is Not Marking</div>
+      <div class="card-desc">If a student never reads or acts on your comments, you have marked but not given feedback. Before returning work, plan how students will engage with it. No engagement, no feedback.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> audio or digital ink feedback tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-define">
+      <span class="card-number">02</span>
+      <div class="card-icon">&#127919;</div>
+      <div class="card-category">What Feedback Is</div>
+      <div class="card-title">Feed Up, Feed Back, Feed Forward</div>
+      <div class="card-desc">Every comment should answer three questions: where am I going, how am I doing, what next? Most feedback answers only the second. Check yours covers all three before you hand it back.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> structured feedback template tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Hattie &amp; Timperley</span>
+      </div>
+    </div>
+
+    <div class="card cat-define">
+      <span class="card-number">03</span>
+      <div class="card-icon">&#128200;</div>
+      <div class="card-category">What Feedback Is</div>
+      <div class="card-title">Four Levels of Feedback</div>
+      <div class="card-desc">Before writing a comment, ask: am I addressing the task, the process or the person? Task and process feedback improve learning. Self-level praise undermines it. Name your target.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> feedback checklist or rubric tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Hattie &amp; Timperley</span>
+      </div>
+    </div>
+
+    <div class="card cat-define">
+      <span class="card-number">04</span>
+      <div class="card-icon">&#9888;&#65039;</div>
+      <div class="card-category">What Feedback Is</div>
+      <div class="card-title">One Third Makes It Worse</div>
+      <div class="card-desc">Over a third of feedback interventions decrease performance. Before giving feedback, check: does this comment address the work or the student? If it is about the student, rewrite it.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> feedback audit or review tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Kluger &amp; DeNisi</span>
+      </div>
+    </div>
+
+    <div class="card cat-define">
+      <span class="card-number">05</span>
+      <div class="card-icon">&#128220;</div>
+      <div class="card-category">What Feedback Is</div>
+      <div class="card-title">Sadler's Three Conditions</div>
+      <div class="card-desc">Share the criteria before students begin. Show them how to compare their work against it. Give them time to act on what they find. Without all three steps, feedback cannot function.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> success criteria display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sadler</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: TIMING & FREQUENCY (5 cards) -->
+
+    <div class="card cat-timing">
+      <span class="card-number">06</span>
+      <div class="card-icon">&#9200;</div>
+      <div class="card-category">Timing &amp; Frequency</div>
+      <div class="card-title">Immediate for Simple Tasks</div>
+      <div class="card-desc">For simple or procedural tasks, correct errors immediately. Shute found quick feedback prevents mistakes from embedding. Do not wait until next lesson to fix what can be fixed now.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> auto-marked quiz or response tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Shute</span>
+      </div>
+    </div>
+
+    <div class="card cat-timing">
+      <span class="card-number">07</span>
+      <div class="card-icon">&#128336;</div>
+      <div class="card-category">Timing &amp; Frequency</div>
+      <div class="card-title">Delayed for Complex Tasks</div>
+      <div class="card-desc">For complex work, a short delay before feedback lets the learner process first. Immediate correction on difficult tasks can short-circuit thinking. Let the struggle do its work.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> LMS with scheduled feedback release</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Shute; Kulhavy</span>
+      </div>
+    </div>
+
+    <div class="card cat-timing">
+      <span class="card-number">08</span>
+      <div class="card-icon">&#128260;</div>
+      <div class="card-category">Timing &amp; Frequency</div>
+      <div class="card-title">During, Not Just After</div>
+      <div class="card-desc">Feedback given while students are still working is formative. Feedback returned weeks later is a post-mortem. Move around the room, intervene in the moment. Proximity is strategy.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> live collaboration or monitoring tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam; Black &amp; Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-timing">
+      <span class="card-number">09</span>
+      <div class="card-icon">&#128203;</div>
+      <div class="card-category">Timing &amp; Frequency</div>
+      <div class="card-title">Comment Only, No Grades</div>
+      <div class="card-desc">Butler found comments alone produced the greatest gains. A grade cancels the comment: students see the score and skip the words. If grades are mandated, delay until feedback is used.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotation tool; hide grades option</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Butler</span>
+      </div>
+    </div>
+
+    <div class="card cat-timing">
+      <span class="card-number">10</span>
+      <div class="card-icon">&#128202;</div>
+      <div class="card-category">Timing &amp; Frequency</div>
+      <div class="card-title">Reduce Volume, Raise Focus</div>
+      <div class="card-desc">A page of comments overwhelms. One or two precise targets land. Identify the one thing that would make the biggest difference right now and focus entirely on that.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> digital highlight or pin tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Shute; Wiliam</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 3: SOURCE & DIRECTION (5 cards) -->
+
+    <div class="card cat-source">
+      <span class="card-number">11</span>
+      <div class="card-icon">&#128101;</div>
+      <div class="card-category">Source &amp; Direction</div>
+      <div class="card-title">Peer Feedback with Structure</div>
+      <div class="card-desc">Give students criteria and a protocol before they assess each other's work. Topping showed peer feedback improves learning for both, but without scaffolding it becomes empty praise.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> peer review tool with criteria prompts</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Topping</span>
+      </div>
+    </div>
+
+    <div class="card cat-source">
+      <span class="card-number">12</span>
+      <div class="card-icon">&#128300;</div>
+      <div class="card-category">Source &amp; Direction</div>
+      <div class="card-title">Self-Assessment as Process</div>
+      <div class="card-desc">Ask students to assess their work against criteria before you mark it. Andrade found the act of comparing, not the accuracy of the judgment, improves performance. Process is the point.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> self-review checklist tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Andrade</span>
+      </div>
+    </div>
+
+    <div class="card cat-source">
+      <span class="card-number">13</span>
+      <div class="card-icon">&#128172;</div>
+      <div class="card-category">Source &amp; Direction</div>
+      <div class="card-title">Dialogic Feedback</div>
+      <div class="card-desc">Build reply loops into feedback. Let students question and clarify comments over time rather than receive a final judgment. Carless showed uptake rises when feedback is a conversation.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> threaded comment or chat tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Carless</span>
+      </div>
+    </div>
+
+    <div class="card cat-source">
+      <span class="card-number">14</span>
+      <div class="card-icon">&#129302;</div>
+      <div class="card-category">Source &amp; Direction</div>
+      <div class="card-title">Technology as Feedback Source</div>
+      <div class="card-desc">Use automated tools for factual accuracy and procedural correctness; reserve your time for voice, argument and creativity. Match the feedback source to what is being assessed.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> adaptive or AI-assisted feedback tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Shute; Black &amp; Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-source">
+      <span class="card-number">15</span>
+      <div class="card-icon">&#128203;</div>
+      <div class="card-category">Source &amp; Direction</div>
+      <div class="card-title">Whole Class Feedback</div>
+      <div class="card-desc">Read the set and identify patterns: common strengths, recurring errors, one priority next step. Teach to the gap, not to each paper. Sustainable for teachers; precise for students.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared display or document tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam; Hattie</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 4: FEEDBACK & THE LEARNER (5 cards) -->
+
+    <div class="card cat-learner">
+      <span class="card-number">16</span>
+      <div class="card-icon">&#129504;</div>
+      <div class="card-category">Feedback &amp; the Learner</div>
+      <div class="card-title">Task, Not Person</div>
+      <div class="card-desc">Feedback that threatens self-concept decreases performance. "This paragraph needs restructuring" works. "You need to try harder" does not. Direct feedback at the work, not the person.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotation tool focused on work</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Kluger &amp; DeNisi</span>
+      </div>
+    </div>
+
+    <div class="card cat-learner">
+      <span class="card-number">17</span>
+      <div class="card-icon">&#128161;</div>
+      <div class="card-category">Feedback &amp; the Learner</div>
+      <div class="card-title">Feedback Must Cause Thinking</div>
+      <div class="card-desc">Write "why might this be stronger with evidence?" not insert the evidence yourself. If feedback needs no effort from the learner, it is information, not feedback. Thinking is the point.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotation tool with reply function</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-learner">
+      <span class="card-number">18</span>
+      <div class="card-icon">&#128276;</div>
+      <div class="card-category">Feedback &amp; the Learner</div>
+      <div class="card-title">Praise the Strategy, Not the Trait</div>
+      <div class="card-desc">Butler found task-involving feedback improves performance. Ego-involving feedback shifts attention from learning to self-image. Praise what the student did, not who the student is.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> feedback phrasing guide or template</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Butler; Kluger &amp; DeNisi</span>
+      </div>
+    </div>
+
+    <div class="card cat-learner">
+      <span class="card-number">19</span>
+      <div class="card-icon">&#127793;</div>
+      <div class="card-category">Feedback &amp; the Learner</div>
+      <div class="card-title">Build Feedback Literacy</div>
+      <div class="card-desc">Teach students how to read and act on feedback before you give it. Model with an exemplar: here is the comment, what it means, what to do next. Feedback literacy is taught, not assumed.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> worked example or modelling tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Carless; Boud</span>
+      </div>
+    </div>
+
+    <div class="card cat-learner">
+      <span class="card-number">20</span>
+      <div class="card-icon">&#128170;</div>
+      <div class="card-category">Feedback &amp; the Learner</div>
+      <div class="card-title">Seven Principles of Good Practice</div>
+      <div class="card-desc">Audit your practice against Nicol and Macfarlane-Dick's seven principles. Do you clarify criteria? Enable self-assessment? Encourage dialogue? Close the gap? Redesign where you do not.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> feedback design checklist tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Nicol &amp; Macfarlane-Dick</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 5: CLOSING THE GAP (4 cards) -->
+
+    <div class="card cat-closing">
+      <span class="card-number">21</span>
+      <div class="card-icon">&#9201;&#65039;</div>
+      <div class="card-category">Closing the Gap</div>
+      <div class="card-title">Build In Time to Act</div>
+      <div class="card-desc">Feedback with no time to act on it is wasted. Begin the next lesson with students reading and responding to comments before anything new. The response is the learning event.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> LMS; share feedback in advance</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam &amp; Leahy</span>
+      </div>
+    </div>
+
+    <div class="card cat-closing">
+      <span class="card-number">22</span>
+      <div class="card-icon">&#10067;</div>
+      <div class="card-category">Closing the Gap</div>
+      <div class="card-title">Questions, Not Corrections</div>
+      <div class="card-desc">Return work with questions, not corrections. "What evidence supports this claim?" demands more thinking than rewriting it for them. The cognitive work belongs with the learner.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> digital annotation or comment tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-closing">
+      <span class="card-number">23</span>
+      <div class="card-icon">&#128196;</div>
+      <div class="card-category">Closing the Gap</div>
+      <div class="card-title">Sustainable Feedback</div>
+      <div class="card-desc">Boud argues feedback should build the learner's capacity to judge quality. If students always need you to tell them how they did, the system has failed. Design for independence.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> self-assessment or portfolio tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Boud</span>
+      </div>
+    </div>
+
+    <div class="card cat-closing">
+      <span class="card-number">24</span>
+      <div class="card-icon">&#128736;&#65039;</div>
+      <div class="card-category">Closing the Gap</div>
+      <div class="card-title">Feedback as Design, Not Event</div>
+      <div class="card-desc">Plan feedback into your scheme of work: who gives it, when, in what form, and when students act on it. Feedback designed into learning from the start works. Left to chance, it does not.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> curriculum planning or LMS tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Boud; Sadler; Carless</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-motto"><span>Pedagogy first, technology second.</span> Always.</div>
+      <div class="footer-research">Rooted in the work of Hattie &amp; Timperley, Sadler, Butler, Nicol &amp; Macfarlane-Dick, Wiliam, Kluger &amp; DeNisi, Shute, Topping, Andrade, Carless and Boud</div>
+      <div class="footer-cta">Want to work together? <a href="https://ictevangelist.com">ictevangelist.com</a></div>
+    </div>
+    <div class="footer-right">
+      <svg width="112" height="24" viewBox="0 0 112 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:3px;">
+        <circle cx="12" cy="12" r="11" fill="#fffde7" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="12" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">CC</text>
+        <circle cx="40" cy="12" r="11" fill="#fffde7" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="40" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">BY</text>
+        <circle cx="68" cy="12" r="11" fill="#fffde7" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="68" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">NC</text>
+        <circle cx="96" cy="12" r="11" fill="#fffde7" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="96" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">SA</text>
+      </svg>
+      <div class="footer-created-label">Created by</div>
+      <div class="footer-author">Mark Anderson</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

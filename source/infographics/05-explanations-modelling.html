@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 Ways to Embed Effective Explanations and Modelling in Your Classroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", sans-serif; background: #2c2c54; width: 1400px; margin: 0 auto; }
+  .infographic { width: 1400px; background: linear-gradient(135deg, #40407a 0%, #2c2c54 50%, #1e1e3f 100%); padding: 34px 40px 28px; position: relative; overflow: hidden; }
+  .infographic::before { content: ""; position: absolute; top: -160px; right: -120px; width: 520px; height: 520px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+  .infographic::after { content: ""; position: absolute; bottom: -120px; left: -120px; width: 440px; height: 440px; background: radial-gradient(circle, rgba(255,177,66,0.08) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; position: relative; z-index: 1; }
+  .header-left { display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1; }
+  .header-icon { width: 68px; height: 68px; flex-shrink: 0; }
+  .header-text h1 { font-family: "Exo 2", sans-serif; font-size: 29px; font-weight: 900; color: #ffffff; line-height: 1.1; letter-spacing: -0.5px; }
+  .header-text .subtitle { font-size: 11px; color: rgba(255,255,255,0.82); font-family: "Poppins", sans-serif; margin-top: 5px; font-weight: 400; }
+  .header-text .scholars { font-size: 10px; color: rgba(255,255,255,0.82); font-family: "Poppins", sans-serif; margin-top: 3px; font-weight: 400; }
+  .header-text .quote { font-size: 11px; color: #ffffff; font-style: italic; margin-top: 4px; font-weight: 500; font-family: "Poppins", sans-serif; }
+  .header-badge { background: rgba(255,177,66,0.15); border: 2px solid #ffb142; border-radius: 12px; padding: 10px 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.3); flex-shrink: 0; width: 115px; }
+
+  .legend { display: flex; flex-wrap: nowrap; gap: 24px; margin-bottom: 12px; position: relative; z-index: 1; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #ffffff; font-weight: 600; white-space: nowrap; font-family: "Poppins", sans-serif; }
+  .legend-dot { width: 13px; height: 13px; border-radius: 4px; flex-shrink: 0; }
+  .legend-dot.structure  { background: #b33939; }
+  .legend-dot.cogload    { background: #cd6133; }
+  .legend-dot.multimedia { background: #34ace0; }
+  .legend-dot.modelling  { background: #706fd3; }
+
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; position: relative; z-index: 1; align-items: stretch; }
+
+  .card { border-radius: 10px; padding: 10px 10px 9px; position: relative; display: flex; flex-direction: column; }
+  .card-number { position: absolute; top: 7px; right: 8px; font-family: "Exo 2", sans-serif; font-size: 10px; font-weight: 800; opacity: 0.3; color: #1a1a1a; }
+  .card-icon { font-size: 19px; line-height: 1; height: 22px; display: flex; align-items: center; margin-bottom: 4px; flex-shrink: 0; }
+  .card-category { font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #1a1a1a; opacity: 0.55; line-height: 11px; margin-bottom: 3px; flex-shrink: 0; }
+  .card-title { font-family: "Exo 2", sans-serif; font-size: 11px; font-weight: 800; color: #1a1a1a; line-height: 1.3; margin-bottom: 5px; flex-shrink: 0; }
+  .card-desc { font-size: 9px; color: #1a1a1a; line-height: 1.45; font-weight: 400; margin-bottom: 6px; height: 70px; overflow: hidden; flex-shrink: 0; }
+  .card-meta { display: flex; flex-direction: column; gap: 2px; margin-top: auto; flex-shrink: 0; }
+  .meta-chip { display: flex; align-items: center; gap: 3px; background: rgba(255,255,255,0.55); border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 1px 5px; height: 14px; font-size: 7.5px; font-family: "Inter", sans-serif; font-weight: 500; color: #1a1a1a; white-space: nowrap; overflow: hidden; }
+  .meta-label { font-size: 6.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #000; opacity: 0.45; flex-shrink: 0; }
+
+  .cat-structure  { background: linear-gradient(135deg, #fce4e4 0%, #f5c6c6 100%); border: 1px solid rgba(179,57,57,0.25); border-left: 4px solid #b33939; }
+  .cat-cogload    { background: linear-gradient(135deg, #fde8d8 0%, #f9cfb0 100%); border: 1px solid rgba(205,97,51,0.25); border-left: 4px solid #cd6133; }
+  .cat-multimedia { background: linear-gradient(135deg, #dff0fa 0%, #b3ddf2 100%); border: 1px solid rgba(52,172,224,0.25); border-left: 4px solid #34ace0; }
+  .cat-modelling  { background: linear-gradient(135deg, #ece9fa 0%, #d5d0f0 100%); border: 1px solid rgba(112,111,211,0.25); border-left: 4px solid #706fd3; }
+
+  .footer { display: flex; align-items: flex-start; justify-content: space-between; margin-top: 14px; padding-top: 10px; border-top: 2px solid rgba(255,255,255,0.2); position: relative; z-index: 1; gap: 20px; }
+  .footer-left { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .footer-motto { font-family: "Exo 2", sans-serif; font-size: 11.5px; font-weight: 800; color: #ffffff; }
+  .footer-motto span { color: #ffb142; text-transform: uppercase; }
+  .footer-research { font-size: 9.5px; color: rgba(255,255,255,0.82); font-weight: 400; font-family: "Poppins", sans-serif; }
+  .footer-cta { font-size: 9.5px; color: rgba(255,255,255,0.82); font-weight: 400; margin-top: 1px; font-family: "Poppins", sans-serif; }
+  .footer-cta a { color: #ffb142; font-weight: 600; text-decoration: none; }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; min-width: 180px; }
+  .footer-created-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.65); font-family: "Poppins", sans-serif; }
+  .footer-author { font-family: "Exo 2", sans-serif; font-size: 20px; font-weight: 900; line-height: 1.1; color: #ffb142; }
+</style>
+</head>
+<body>
+<div class="infographic">
+
+  <div class="header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" width="68" height="68">
+        <rect width="68" height="68" rx="12" fill="rgba(255,255,255,0.08)"/>
+        <rect x="12" y="14" width="32" height="40" rx="3" fill="#ffb142" stroke="#ffffff" stroke-width="1.5"/>
+        <line x1="18" y1="22" x2="38" y2="22" stroke="#2c2c54" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18" y1="28" x2="34" y2="28" stroke="#2c2c54" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18" y1="34" x2="36" y2="34" stroke="#2c2c54" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="50" cy="44" r="12" fill="#706fd3" stroke="#ffffff" stroke-width="1.5"/>
+        <path d="M46 44 L50 38 L54 44 M50 38 L50 50" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div class="header-text">
+        <h1>24 Ways to Embed Effective <span style="color:#ff793f;">Explanations &amp; Modelling</span> in Your Classroom</h1>
+        <p class="subtitle">Evidence-informed strategies, with or without technology &nbsp;&#183;&nbsp; Rooted in cognitive and educational research</p>
+        <p class="scholars">Rooted in the work of Rosenshine, Sweller, Mayer, Paivio, Willingham, Atkinson, and the EEF Digital Technology Guidance (2019)</p>
+        <p class="quote">&#8220;To improve learning, technology must be used in a way that is informed by effective pedagogy.&#8221; &#8212; EEF, 2019</p>
+      </div>
+    </div>
+    <div class="header-badge">
+      <div style="text-align:center;">
+        <div style="font-family:'Poppins',sans-serif; font-size:15px; font-weight:600; color:#ffb142; line-height:1.1; margin-bottom:4px;">Pedagogy<br>First</div>
+        <div style="font-size:8px; font-weight:700; color:#ffffff; text-transform:uppercase; letter-spacing:0.5px; line-height:1.5;">24 Strategies to<br>Try Today</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot structure"></div>Structuring Explanations</div>
+    <div class="legend-item"><div class="legend-dot cogload"></div>Managing Cognitive Load</div>
+    <div class="legend-item"><div class="legend-dot multimedia"></div>Multimedia &amp; Dual Coding</div>
+    <div class="legend-item"><div class="legend-dot modelling"></div>Modelling &amp; Worked Examples</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- CAT 1: STRUCTURING EXPLANATIONS (6 cards) -->
+
+    <div class="card cat-structure"><span class="card-number">01</span>
+      <div class="card-icon">&#128218;</div>
+      <div class="card-category">Structuring Explanations</div>
+      <div class="card-title">Small Steps, Always</div>
+      <div class="card-desc">Rosenshine: present new material in small steps with practice after each. Use animations to chunk information and reveal content gradually. Let students process before continuing.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> slide animation; progressive reveal</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-structure"><span class="card-number">02</span>
+      <div class="card-icon">&#128230;</div>
+      <div class="card-category">Structuring Explanations</div>
+      <div class="card-title">Concrete Before Abstract</div>
+      <div class="card-desc">Willingham: anchor new ideas to concrete examples first. Use images, video or objects to make the abstract visible before naming it. Move to the abstract once the concrete is secure.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> visualiser; image or video clip</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Willingham</span>
+      </div>
+    </div>
+
+    <div class="card cat-structure"><span class="card-number">03</span>
+      <div class="card-icon">&#128279;</div>
+      <div class="card-category">Structuring Explanations</div>
+      <div class="card-title">Connect to Prior Knowledge</div>
+      <div class="card-desc">Rosenshine: connect to prior knowledge before introducing anything new. Use a retrieval starter or concept map on screen to activate what students know. Link before you launch.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> concept map or retrieval tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-structure"><span class="card-number">04</span>
+      <div class="card-icon">&#128161;</div>
+      <div class="card-category">Structuring Explanations</div>
+      <div class="card-title">Clarity Over Novelty</div>
+      <div class="card-desc">The EEF found clarity matters more than delivery method. A diagram under a visualiser can outperform a polished video. Choose the tool that makes the idea clearest, not the newest.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> any display tool used with purpose</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> EEF</span>
+      </div>
+    </div>
+
+    <div class="card cat-structure"><span class="card-number">05</span>
+      <div class="card-icon">&#9989;</div>
+      <div class="card-category">Structuring Explanations</div>
+      <div class="card-title">Check, Don&#8217;t Assume</div>
+      <div class="card-desc">Listening is not learning. Use live polls or mini whiteboards to check understanding at every step. Rosenshine: reteach before moving on. The explanation is the start, not the finish.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> live polling or mini whiteboard tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-structure"><span class="card-number">06</span>
+      <div class="card-icon">&#10133;</div>
+      <div class="card-category">Structuring Explanations</div>
+      <div class="card-title">Supplement, Never Substitute</div>
+      <div class="card-desc">The EEF: technology works best when it supplements teaching, not replaces it. A screencast works alongside classroom explanation, not instead of it. Supplement, never substitute.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> screencast; LMS for replay access</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> EEF</span>
+      </div>
+    </div>
+
+    <!-- CAT 2: MANAGING COGNITIVE LOAD (6 cards) -->
+
+    <div class="card cat-cogload"><span class="card-number">07</span>
+      <div class="card-icon">&#129504;</div>
+      <div class="card-category">Managing Cognitive Load</div>
+      <div class="card-title">Four Slots, No More</div>
+      <div class="card-desc">Sweller: working memory holds about four items. Every screen element competes for those slots. Strip slides to essentials. Press B to blank the screen when you want attention on you.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> B/W key; clean slide design</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sweller</span>
+      </div>
+    </div>
+
+    <div class="card cat-cogload"><span class="card-number">08</span>
+      <div class="card-icon">&#128064;</div>
+      <div class="card-category">Managing Cognitive Load</div>
+      <div class="card-title">Avoid Split Attention</div>
+      <div class="card-desc">Sweller&#8217;s split attention: separate text and diagrams force learners to search between them. Integrate labels directly into the image. Use annotation tools to build the diagram live.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotation tool; integrated diagrams</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sweller</span>
+      </div>
+    </div>
+
+    <div class="card cat-cogload"><span class="card-number">09</span>
+      <div class="card-icon">&#128263;</div>
+      <div class="card-category">Managing Cognitive Load</div>
+      <div class="card-title">Say It or Show It, Not Both</div>
+      <div class="card-desc">Sweller&#8217;s redundancy effect: narrating text on screen forces double processing. Say it or show it, not both. Use the B or W key to blank the slide while you talk through the idea.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> B/W key in PowerPoint or Keynote</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sweller</span>
+      </div>
+    </div>
+
+    <div class="card cat-cogload"><span class="card-number">10</span>
+      <div class="card-icon">&#10060;</div>
+      <div class="card-category">Managing Cognitive Load</div>
+      <div class="card-title">Remove the Clutter</div>
+      <div class="card-desc">Mayer&#8217;s coherence: remove every word, image and sound that does not support learning. Strip clip art from slides. Cut background music. Every element on screen must earn its place.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> clean slide template; minimal design</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <div class="card cat-cogload"><span class="card-number">11</span>
+      <div class="card-icon">&#10145;&#65039;</div>
+      <div class="card-category">Managing Cognitive Load</div>
+      <div class="card-title">Signal What Matters</div>
+      <div class="card-desc">Mayer&#8217;s signalling: bold, arrows and highlights direct attention to what matters. Use annotation tools to signal live during the explanation. Without it, learners search alone.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotation; slide highlight features</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <div class="card cat-cogload"><span class="card-number">12</span>
+      <div class="card-icon">&#9986;&#65039;</div>
+      <div class="card-category">Managing Cognitive Load</div>
+      <div class="card-title">Chunk and Reveal</div>
+      <div class="card-desc">Mayer&#8217;s segmenting: break content into chunks. Use slide animations to reveal one idea per click, not auto-play. Let working memory process before the next chunk arrives.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> slide animation; click to reveal</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <!-- CAT 3: MULTIMEDIA AND DUAL CODING (6 cards) -->
+
+    <div class="card cat-multimedia"><span class="card-number">13</span>
+      <div class="card-icon">&#128444;&#65039;</div>
+      <div class="card-category">Multimedia &amp; Dual Coding</div>
+      <div class="card-title">Words and Images Together</div>
+      <div class="card-desc">Paivio&#8217;s dual coding: the brain processes words and images through separate channels. Design every slide with both: a key visual paired with minimal text. Two routes to the same idea.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> dual coded slide design</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Paivio</span>
+      </div>
+    </div>
+
+    <div class="card cat-multimedia"><span class="card-number">14</span>
+      <div class="card-icon">&#127911;</div>
+      <div class="card-category">Multimedia &amp; Dual Coding</div>
+      <div class="card-title">Narrate, Don&#8217;t Label</div>
+      <div class="card-desc">Mayer&#8217;s modality: people learn better from images with narration than images with text. Record a narrated screencast over a diagram. Let the voice do what text would overload.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> screen recording with voiceover</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <div class="card cat-multimedia"><span class="card-number">15</span>
+      <div class="card-icon">&#128205;</div>
+      <div class="card-category">Multimedia &amp; Dual Coding</div>
+      <div class="card-title">Keep Words Near Images</div>
+      <div class="card-desc">Mayer&#8217;s spatial contiguity: place words near the images they describe. Labels sit beside the diagram, not in a separate list. Use slide design to keep related information together.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> integrated slide layout</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <div class="card cat-multimedia"><span class="card-number">16</span>
+      <div class="card-icon">&#128260;</div>
+      <div class="card-category">Multimedia &amp; Dual Coding</div>
+      <div class="card-title">Progressive Reveal</div>
+      <div class="card-desc">Use animations to reveal content one step at a time. One idea per click, building the full picture gradually. Progressive reveal aligns the display to the pace of your explanation.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> slide animation; appear on click</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer; Sweller</span>
+      </div>
+    </div>
+
+    <div class="card cat-multimedia"><span class="card-number">17</span>
+      <div class="card-icon">&#127909;</div>
+      <div class="card-category">Multimedia &amp; Dual Coding</div>
+      <div class="card-title">Short Screencasts</div>
+      <div class="card-desc">Record short screencasts with narration over visuals. Mayer: images plus voice outperforms text-heavy slides. Keep each video to one idea. Brevity beats completeness every time.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> screen recording tool; Loom or similar</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <div class="card cat-multimedia"><span class="card-number">18</span>
+      <div class="card-icon">&#128214;</div>
+      <div class="card-category">Multimedia &amp; Dual Coding</div>
+      <div class="card-title">Pre-Train the Vocabulary</div>
+      <div class="card-desc">Mayer&#8217;s pre-training: teach key terms before the main explanation. A vocabulary slide or pre-lesson video builds familiarity first. Learners who know the words can focus on the ideas.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> vocabulary slide; pre-lesson video</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mayer</span>
+      </div>
+    </div>
+
+    <!-- CAT 4: MODELLING AND WORKED EXAMPLES (6 cards) -->
+
+    <div class="card cat-modelling"><span class="card-number">19</span>
+      <div class="card-icon">&#128483;</div>
+      <div class="card-category">Modelling &amp; Worked Examples</div>
+      <div class="card-title">Think Aloud</div>
+      <div class="card-desc">Rosenshine: model the process, not the product. Use a visualiser or screen share to think aloud live. Narrate your decisions as you work. Make invisible expertise visible to all.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> visualiser; screen share with narration</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-modelling"><span class="card-number">20</span>
+      <div class="card-icon">&#128247;</div>
+      <div class="card-category">Modelling &amp; Worked Examples</div>
+      <div class="card-title">The Visualiser as Stage</div>
+      <div class="card-desc">A visualiser turns any desk into a modelling stage. Show handwriting, annotate text, build diagrams under the camera. The EEF found this among the most promising classroom technology.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> visualiser or document camera</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> EEF; Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-modelling"><span class="card-number">21</span>
+      <div class="card-icon">&#128221;</div>
+      <div class="card-category">Modelling &amp; Worked Examples</div>
+      <div class="card-title">Worked Examples on Replay</div>
+      <div class="card-desc">Sweller and Cooper: students learn more from worked examples than equivalent problems. Record a screencast of the example so students can pause and study the method at their pace.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> screen recording; LMS for sharing</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sweller &amp; Cooper</span>
+      </div>
+    </div>
+
+    <div class="card cat-modelling"><span class="card-number">22</span>
+      <div class="card-icon">&#128257;</div>
+      <div class="card-category">Modelling &amp; Worked Examples</div>
+      <div class="card-title">Alternate Examples and Practice</div>
+      <div class="card-desc">Atkinson: alternate worked examples with practice. Display an example on screen, then set a parallel task. Example, try. Example, try. Interleaving builds understanding faster.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> display and task alternating on screen</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Atkinson; Sweller</span>
+      </div>
+    </div>
+
+    <div class="card cat-modelling"><span class="card-number">23</span>
+      <div class="card-icon">&#128201;</div>
+      <div class="card-category">Modelling &amp; Worked Examples</div>
+      <div class="card-title">Fade the Scaffolds</div>
+      <div class="card-desc">Rosenshine: begin with full support, then fade. Show a complete example, then a partial one with gaps, then independent practice. Use fillable templates to structure the fading.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> fillable template or shared doc</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine; Sweller</span>
+      </div>
+    </div>
+
+    <div class="card cat-modelling"><span class="card-number">24</span>
+      <div class="card-icon">&#127759;</div>
+      <div class="card-category">Modelling &amp; Worked Examples</div>
+      <div class="card-title">Simulations Beyond Physical Limits</div>
+      <div class="card-desc">The EEF found simulations let students manipulate variables and see consequences beyond physical limits. Use to extend your explanation, not replace it. Technology serves pedagogy.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> simulation tool; interactive model</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> EEF</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-motto"><span>Pedagogy first, technology second.</span> Always.</div>
+      <div class="footer-research">Rooted in the work of Rosenshine, Sweller, Mayer, Paivio, Willingham, Atkinson, and the EEF Digital Technology Guidance (2019)</div>
+      <div class="footer-cta">Want to work together? <a href="https://ictevangelist.com">ictevangelist.com</a></div>
+    </div>
+    <div class="footer-right">
+      <svg width="112" height="24" viewBox="0 0 112 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:3px;">
+        <circle cx="12" cy="12" r="11" fill="rgba(255,177,66,0.2)" stroke="#ffb142" stroke-width="0.8"/>
+        <text x="12" y="16" text-anchor="middle" font-size="8.5" fill="#ffb142" font-family="Arial,sans-serif" font-weight="800">CC</text>
+        <circle cx="40" cy="12" r="11" fill="rgba(255,177,66,0.2)" stroke="#ffb142" stroke-width="0.8"/>
+        <text x="40" y="16" text-anchor="middle" font-size="8.5" fill="#ffb142" font-family="Arial,sans-serif" font-weight="800">BY</text>
+        <circle cx="68" cy="12" r="11" fill="rgba(255,177,66,0.2)" stroke="#ffb142" stroke-width="0.8"/>
+        <text x="68" y="16" text-anchor="middle" font-size="8.5" fill="#ffb142" font-family="Arial,sans-serif" font-weight="800">NC</text>
+        <circle cx="96" cy="12" r="11" fill="rgba(255,177,66,0.2)" stroke="#ffb142" stroke-width="0.8"/>
+        <text x="96" y="16" text-anchor="middle" font-size="8.5" fill="#ffb142" font-family="Arial,sans-serif" font-weight="800">SA</text>
+      </svg>
+      <div class="footer-created-label">Created by</div>
+      <div class="footer-author">Mark Anderson</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1845 @@
+[
+  {
+    "title": "24 Ways to Embed Retrieval Practice in Your Classroom",
+    "subtitle": "Evidence-informed strategies, with or without technology · Rooted in the work of Bjork, Roediger & Karpicke, Agarwal, Dunlosky, Cepeda, Kornell, Rohrer, Ebbinghaus, Kapur and Metcalfe",
+    "scholars": "Rooted in the work of Bjork, Roediger & Karpicke, Agarwal, Dunlosky, Cepeda, Kornell, Rohrer, Ebbinghaus, Kapur, Metcalfe, Nestojko, Fiorella & Mayer, Slamecka & Graf and Godden & Baddeley",
+    "quote": "\"The act of retrieving knowledge is itself a learning event, not merely a test of what has been learned.\" — Roediger & Karpicke, 2006",
+    "research": "Rooted in the work of Bjork, Roediger & Karpicke, Agarwal, Dunlosky, Cepeda, Kornell, Rohrer, Ebbinghaus, Kapur, Metcalfe, Nestojko, Fiorella & Mayer, Slamecka & Graf and Godden & Baddeley",
+    "palette": {
+      "body_bg": "#1e272e",
+      "panel_bg": "linear-gradient(135deg, #2d3436 0%, #1a1f24 50%, #0f1317 100%)",
+      "accent": "#E65100"
+    },
+    "clusters": [
+      {
+        "key": "testing",
+        "label": "The Testing Effect",
+        "colour": "#e17055"
+      },
+      {
+        "key": "spacing",
+        "label": "Spacing & Interleaving",
+        "colour": "#00b894"
+      },
+      {
+        "key": "desirable",
+        "label": "Desirable Difficulties",
+        "colour": "#fdcb6e"
+      },
+      {
+        "key": "formats",
+        "label": "Retrieval Formats",
+        "colour": "#6c5ce7"
+      },
+      {
+        "key": "metacog",
+        "label": "Metacognition & Calibration",
+        "colour": "#fd79a8"
+      }
+    ],
+    "strategies": [
+      {
+        "number": "01",
+        "slug": "01-retrieval-beats-re-reading",
+        "icon": "🧠",
+        "cluster": "testing",
+        "category": "The Testing Effect",
+        "title": "Retrieval Beats Re-reading",
+        "summary": "Replace re-reading with retrieval. Instead of reviewing notes, ask students to write down everything they remember, then check. The testing is the learning, not the preparation for it.",
+        "tech": "low-stakes quiz or flashcard tool",
+        "informed_by": "Roediger & Karpicke"
+      },
+      {
+        "number": "02",
+        "slug": "02-low-stakes-starter-quizzes",
+        "icon": "📋",
+        "cluster": "testing",
+        "category": "The Testing Effect",
+        "title": "Low-Stakes Starter Quizzes",
+        "summary": "Five questions per lesson on prior content; nothing in the gradebook. Agarwal found routine quizzing reduces test anxiety rather than causing it. The quiz is not the assessment. It is the learning.",
+        "tech": "quiz or response tool",
+        "informed_by": "Roediger & Karpicke; Agarwal et al."
+      },
+      {
+        "number": "03",
+        "slug": "03-brain-dump",
+        "icon": "✍️",
+        "cluster": "testing",
+        "category": "The Testing Effect",
+        "title": "Brain Dump",
+        "summary": "A blank page, two minutes, no notes: write everything you remember. The imperfect attempt is the point. What students cannot recall shows precisely where teaching needs to return.",
+        "tech": "shared doc or whiteboard tool",
+        "informed_by": "Roediger; Karpicke; Agarwal"
+      },
+      {
+        "number": "04",
+        "slug": "04-test-before-you-teach",
+        "icon": "📈",
+        "cluster": "testing",
+        "category": "The Testing Effect",
+        "title": "Test Before You Teach",
+        "summary": "Quiz students before teaching. Struggling to retrieve primes the brain; students who fail before instruction remember the answer more reliably once taught. Failure is productive.",
+        "tech": "pre-lesson quiz tool",
+        "informed_by": "Bjork; Kapur"
+      },
+      {
+        "number": "05",
+        "slug": "05-closed-book-reconstruction",
+        "icon": "📄",
+        "cluster": "testing",
+        "category": "The Testing Effect",
+        "title": "Closed-Book Reconstruction",
+        "summary": "Students reconstruct key ideas from memory, then open notes and correct in a different colour. Karpicke and Blunt found this outperforms re-reading. The corrections are the data.",
+        "tech": "document tool; colour annotation",
+        "informed_by": "Karpicke & Blunt"
+      },
+      {
+        "number": "06",
+        "slug": "06-distribute-practice-over-time",
+        "icon": "📅",
+        "cluster": "spacing",
+        "category": "Spacing & Interleaving",
+        "title": "Distribute Practice Over Time",
+        "summary": "Spread retrieval across days and weeks rather than cramming it into one session. Build review points into your medium-term plan. The calendar is part of the pedagogy.",
+        "tech": "spaced repetition tool",
+        "informed_by": "Cepeda et al.; Ebbinghaus"
+      },
+      {
+        "number": "07",
+        "slug": "07-yesterday-last-week-last-month",
+        "icon": "🔄",
+        "cluster": "spacing",
+        "category": "Spacing & Interleaving",
+        "title": "Yesterday, Last Week, Last Month",
+        "summary": "Three questions per lesson: one from yesterday, one from last week, one from last month. These intervals are a starting point; complex topics may need revisiting more frequently.",
+        "tech": "quiz tool; lesson slide template",
+        "informed_by": "Rosenshine; Bjork"
+      },
+      {
+        "number": "08",
+        "slug": "08-interleave-topics-don-t-block",
+        "icon": "🎲",
+        "cluster": "spacing",
+        "category": "Spacing & Interleaving",
+        "title": "Interleave Topics, Don't Block",
+        "summary": "Kornell and Bjork found mixing topics produces stronger retention than finishing one before moving to the next. Blocked practice feels organised; it produces weaker retention. Discriminating is the mechanism.",
+        "tech": "shuffled quiz or random question tool",
+        "informed_by": "Kornell & Bjork; Rohrer"
+      },
+      {
+        "number": "09",
+        "slug": "09-the-retrieval-schedule",
+        "icon": "🕐",
+        "cluster": "spacing",
+        "category": "Spacing & Interleaving",
+        "title": "The Retrieval Schedule",
+        "summary": "Dunlosky's review ranked re-reading among the least effective strategies. Teach students the evidence: study, return after two days, then a week, then a month. Many students do the opposite.",
+        "tech": "spaced repetition or revision planner",
+        "informed_by": "Dunlosky et al."
+      },
+      {
+        "number": "10",
+        "slug": "10-cumulative-review",
+        "icon": "🔗",
+        "cluster": "spacing",
+        "category": "Spacing & Interleaving",
+        "title": "Cumulative Review",
+        "summary": "Plan retrieval into your medium-term planning, not just lessons. Bring back earlier content in starters and assessments. When it never reappears, students conclude it no longer matters.",
+        "tech": "question bank or quiz builder",
+        "informed_by": "Bjork; Carey"
+      },
+      {
+        "number": "11",
+        "slug": "11-embrace-the-struggle",
+        "icon": "🧔",
+        "cluster": "desirable",
+        "category": "Desirable Difficulties",
+        "title": "Embrace the Struggle",
+        "summary": "Bjork coined desirable difficulties for conditions that slow apparent learning but improve long-term retention. Effortful retrieval is the clearest example. Resist the urge to make it easier.",
+        "tech": "any retrieval tool, hints disabled",
+        "informed_by": "R. Bjork"
+      },
+      {
+        "number": "12",
+        "slug": "12-remove-the-scaffolding",
+        "icon": "🚫",
+        "cluster": "desirable",
+        "category": "Desirable Difficulties",
+        "title": "Remove the Scaffolding",
+        "summary": "Retrieval with notes open is reading, not retrieval. Fade support gradually: notes first, then headings only, then nothing. The transition to unaided retrieval is where consolidation happens.",
+        "tech": "quiz tool; timed or closed-book mode",
+        "informed_by": "R. Bjork; Kornell"
+      },
+      {
+        "number": "13",
+        "slug": "13-vary-the-retrieval-context",
+        "icon": "🔀",
+        "cluster": "desirable",
+        "category": "Desirable Difficulties",
+        "title": "Vary the Retrieval Context",
+        "summary": "Retrieve the same content in different formats and settings, decontextualising knowledge so it is not tied to one context or format. Harder for students; that is precisely the point.",
+        "tech": "varied formats; multi-modal tools",
+        "informed_by": "Godden & Baddeley; Bjork"
+      },
+      {
+        "number": "14",
+        "slug": "14-the-generation-effect",
+        "icon": "❓",
+        "cluster": "desirable",
+        "category": "Desirable Difficulties",
+        "title": "The Generation Effect",
+        "summary": "Slamecka and Graf found generating an answer, even a wrong one, before being told it produces stronger retention than passive exposure. The effort of generation drives encoding, not the accuracy.",
+        "tech": "response tool; pre-teach quiz",
+        "informed_by": "Slamecka & Graf; McDaniel"
+      },
+      {
+        "number": "15",
+        "slug": "15-forget-before-you-retrieve",
+        "icon": "⏱️",
+        "cluster": "desirable",
+        "category": "Desirable Difficulties",
+        "title": "Forget Before You Retrieve",
+        "summary": "Do not retrieve immediately after teaching. Wait a day, then quiz. Wait a week, then quiz again. The gap between learning and retrieval is where consolidation happens.",
+        "tech": "spaced quiz tool; lesson timer",
+        "informed_by": "R. Bjork; Roediger"
+      },
+      {
+        "number": "16",
+        "slug": "16-retrieval-beyond-facts",
+        "icon": "💬",
+        "cluster": "formats",
+        "category": "Retrieval Formats",
+        "title": "Retrieval Beyond Facts",
+        "summary": "Factual retrieval builds the schema; higher-order retrieval tests whether students can use it. Secure the foundations first, then push beyond them. Retrieval is not a pub quiz.",
+        "tech": "quiz tool with varied question types",
+        "informed_by": "Agarwal"
+      },
+      {
+        "number": "17",
+        "slug": "17-concept-mapping-from-memory",
+        "icon": "🗺",
+        "cluster": "formats",
+        "category": "Retrieval Formats",
+        "title": "Concept Mapping from Memory",
+        "summary": "Karpicke and Blunt found concept mapping from memory outperformed re-reading for retention. Not just what students know but how ideas connect. Relational knowledge beats isolated facts.",
+        "tech": "mind-mapping or diagram tool",
+        "informed_by": "Karpicke & Blunt"
+      },
+      {
+        "number": "18",
+        "slug": "18-retrieval-through-teaching",
+        "icon": "👥",
+        "cluster": "formats",
+        "category": "Retrieval Formats",
+        "title": "Retrieval Through Teaching",
+        "summary": "The learning happens during preparation, not delivery. Preparing to teach demands complete, organised retrieval. Organising knowledge to explain it is where consolidation occurs.",
+        "tech": "video recording or presentation tool",
+        "informed_by": "Nestojko et al.; Fiorella"
+      },
+      {
+        "number": "19",
+        "slug": "19-cued-recall",
+        "icon": "🔔",
+        "cluster": "formats",
+        "category": "Retrieval Formats",
+        "title": "Cued Recall",
+        "summary": "Tulving and Thomson showed retrieval depends on available cues. A heading, a keyword, labels removed: each triggers retrieval without doing the work. Builds confidence before unaided retrieval.",
+        "tech": "cloze quiz or gapped handout tool",
+        "informed_by": "Tulving & Thomson"
+      },
+      {
+        "number": "20",
+        "slug": "20-teach-the-illusion-of-knowing",
+        "icon": "🔬",
+        "cluster": "metacog",
+        "category": "Metacognition & Calibration",
+        "title": "Teach the Illusion of Knowing",
+        "summary": "Show students their own illusion of knowing. Ask them to rate confidence before revealing the answer. When they were certain and wrong, that is the precise moment to intervene.",
+        "tech": "confidence-rated quiz tool",
+        "informed_by": "Koriat & Bjork; Dunlosky"
+      },
+      {
+        "number": "21",
+        "slug": "21-provide-instant-feedback",
+        "icon": "✅",
+        "cluster": "metacog",
+        "category": "Metacognition & Calibration",
+        "title": "Provide Instant Feedback",
+        "summary": "Metcalfe shows instant feedback is essential for confident errors. For general retrieval, allow a processing gap before revealing answers. Speed matters most when confidence is highest.",
+        "tech": "quiz tool with instant answer reveal",
+        "informed_by": "Metcalfe"
+      },
+      {
+        "number": "22",
+        "slug": "22-confidence-ratings",
+        "icon": "🎯",
+        "cluster": "metacog",
+        "category": "Metacognition & Calibration",
+        "title": "Confidence Ratings",
+        "summary": "Dunlosky and Metcalfe showed students are most confident about things most recently read, not things they actually know. Rate confidence after each attempt, then reveal the answer. That gap is the target.",
+        "tech": "quiz tool with confidence rating",
+        "informed_by": "Dunlosky & Metcalfe"
+      },
+      {
+        "number": "23",
+        "slug": "23-retrieval-journals",
+        "icon": "📊",
+        "cluster": "metacog",
+        "category": "Metacognition & Calibration",
+        "title": "Retrieval Journals",
+        "summary": "Zimmerman showed students who monitor their performance make better revision decisions. Log what came back, what did not, and what needs revisiting. It is a map of what to do next.",
+        "tech": "learning journal or digital notebook",
+        "informed_by": "Dunlosky et al.; Zimmerman"
+      },
+      {
+        "number": "24",
+        "slug": "24-study-strategy-audit",
+        "icon": "🧪",
+        "cluster": "metacog",
+        "category": "Metacognition & Calibration",
+        "title": "Study Strategy Audit",
+        "summary": "Dunlosky's review rated ten strategies: re-reading scored low; practice testing scored highest. Ask students how they revise, then show them the data. That conversation is the intervention.",
+        "tech": "survey or discussion tool",
+        "informed_by": "Dunlosky et al."
+      }
+    ],
+    "slug": "retrieval-practice",
+    "name": "Retrieval Practice",
+    "number": "01"
+  },
+  {
+    "title": "24 Ways to Embed Formative Assessment in Your Classroom",
+    "subtitle": "Evidence informed strategies, with or without technology · Rooted in the work of Black, Wiliam, Butler, Sadler, Berger, Hattie, Bjork, Rosenshine, Angelo & Cross and CAST",
+    "scholars": "Rooted in the work of Black, Wiliam, Butler, Sadler, Berger, Hattie, Bjork, Rosenshine, Angelo & Cross and CAST",
+    "quote": "\"We should view technology as a tool to amplify good teaching practices, not replace them.\" — Mark Anderson, RISE Edu Magazine",
+    "research": "Rooted in the work of Black, Wiliam, Butler, Sadler, Berger, Hattie, Bjork, Rosenshine, Angelo & Cross and CAST",
+    "palette": {
+      "body_bg": "#1e272e",
+      "panel_bg": "linear-gradient(135deg, #2c3e50 0%, #1a2530 50%, #0f1922 100%)",
+      "accent": "#e67e22"
+    },
+    "clusters": [
+      {
+        "key": "clarify",
+        "label": "Clarify Learning Intentions",
+        "colour": "#3498db"
+      },
+      {
+        "key": "elicit",
+        "label": "Elicit Evidence of Learning",
+        "colour": "#2ecc71"
+      },
+      {
+        "key": "feedback",
+        "label": "Feedback That Moves Learning Forward",
+        "colour": "#e67e22"
+      },
+      {
+        "key": "peers",
+        "label": "Students as Learning Resources",
+        "colour": "#9b59b6"
+      },
+      {
+        "key": "ownership",
+        "label": "Students as Owners of Their Learning",
+        "colour": "#f1c40f"
+      }
+    ],
+    "strategies": [
+      {
+        "number": "01",
+        "slug": "01-separate-intention-from-task",
+        "icon": "🎯",
+        "cluster": "clarify",
+        "category": "Clarify Intentions",
+        "title": "Separate Intention from Task",
+        "summary": "The learning intention is what to learn, not what to do. Finishing the task is not the same as achieving the learning. Keep them distinct in your planning and in what you say to students at every stage of the lesson.",
+        "tech": "presentation or display tool",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "02",
+        "slug": "02-build-success-criteria-together",
+        "icon": "🤝",
+        "cluster": "clarify",
+        "category": "Clarify Intentions",
+        "title": "Build Success Criteria Together",
+        "summary": "Ask students what excellent looks like before they begin. Their language, not yours, becomes the standard. Criteria they articulate themselves land far more deeply than criteria handed to them.",
+        "tech": "collaborative document tool",
+        "informed_by": "Wiliam & Leahy"
+      },
+      {
+        "number": "03",
+        "slug": "03-exemplars-before-rubrics",
+        "icon": "📄",
+        "cluster": "clarify",
+        "category": "Clarify Intentions",
+        "title": "Exemplars Before Rubrics",
+        "summary": "Show work at different standards before students start their own. Students spot quality in someone else's work more readily than in their own. A rubric tells students what quality is; an exemplar shows them.",
+        "tech": "visualiser or document camera",
+        "informed_by": "Sadler, Berger"
+      },
+      {
+        "number": "04",
+        "slug": "04-withhold-the-objective",
+        "icon": "🔮",
+        "cluster": "clarify",
+        "category": "Clarify Intentions",
+        "title": "Withhold the Objective",
+        "summary": "Ask students to name what they learned at the end rather than copy an objective at the start. Generating the answer embeds it far more reliably than copying from the board.",
+        "tech": "polling tool; whole class response",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "05",
+        "slug": "05-hinge-questions",
+        "icon": "🔀",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "Hinge Questions",
+        "summary": "A hinge question is a diagnostic question at a lesson turning point. Wrong answers each map to a known misconception. Responses tell you whether to move on or go back. Never improvise it.",
+        "tech": "polling or quiz tool",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "06",
+        "slug": "06-plausible-distractors",
+        "icon": "🧩",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "Plausible Distractors",
+        "summary": "Engineer wrong answers as carefully as the right one. Each distractor should map to a real misconception. Every wrong answer a student gives tells you something precise. Wrong answers are the diagnostic data.",
+        "tech": "quiz tool; full response view",
+        "informed_by": "Wiliam, Black"
+      },
+      {
+        "number": "07",
+        "slug": "07-deliberate-cold-call",
+        "icon": "🎙️",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "Deliberate Cold Call",
+        "summary": "Select who answers deliberately, not at random. Track participation so nobody stays invisible across lessons. Where appropriate, target the students whose thinking you most need to hear.",
+        "tech": "participation tracking tool",
+        "informed_by": "Wiliam, Black"
+      },
+      {
+        "number": "08",
+        "slug": "08-mini-whiteboards",
+        "icon": "✍️",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "Mini Whiteboards",
+        "summary": "All students write their response and hold it up simultaneously. The teacher reads the room in seconds: full participation, no waiting, no dominant voices. Works across all subjects.",
+        "tech": "multimodal response tools",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "09",
+        "slug": "09-abcd-response-cards",
+        "icon": "🃏",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "ABCD Response Cards",
+        "summary": "Give each student a card: A, B, C and D. Pose a question and all students hold up their answer at once. No hands, no opt-out. The spread of responses shows instantly where misconceptions lie.",
+        "tech": "multimodal audience response tools",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "10",
+        "slug": "10-every-voice-every-time",
+        "icon": "🌎",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "Every Voice, Every Time",
+        "summary": "Eliciting evidence only works if every student can respond. Offer written, verbal, visual and digital means of expression. The method you choose decides who gets to show what they know.",
+        "tech": "multimodal and anonymous response tools",
+        "informed_by": "CAST"
+      },
+      {
+        "number": "11",
+        "slug": "11-think-pair-share-disciplined",
+        "icon": "💬",
+        "cluster": "elicit",
+        "category": "Elicit Evidence",
+        "title": "Think, Pair, Share: Disciplined",
+        "summary": "Individual thinking first; paired discussion second; nominated response third. Nomination makes the report-back evidence, not just the most confident voice. Without it, the share is optional.",
+        "tech": "timer for paired discussion",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "12",
+        "slug": "12-comment-only-marking",
+        "icon": "✏️",
+        "cluster": "feedback",
+        "category": "Feedback",
+        "title": "Comment Only Marking",
+        "summary": "Remove grades from work in progress. Research showed comments alone produced the greatest gains. Adding a score to a comment cancels it out: students read the grade and ignore the feedback entirely.",
+        "tech": "digital annotation or LMS tool",
+        "informed_by": "Butler, Wiliam"
+      },
+      {
+        "number": "13",
+        "slug": "13-feedback-must-cause-thinking",
+        "icon": "🧠",
+        "cluster": "feedback",
+        "category": "Feedback",
+        "title": "Feedback Must Cause Thinking",
+        "summary": "Feedback must be more work for the recipient than the donor. Pose questions rather than writing corrections. If feedback requires no response from the learner, it is not feedback; it is merely information.",
+        "tech": "annotation tool with reply function",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "14",
+        "slug": "14-build-in-time-to-act",
+        "icon": "⏰",
+        "cluster": "feedback",
+        "category": "Feedback",
+        "title": "Build In Time to Act",
+        "summary": "Feedback with no time to act on it has no value. Begin the next lesson with students reading and responding to feedback before anything new. Time to act is where the learning happens.",
+        "tech": "LMS; share feedback in advance",
+        "informed_by": "Wiliam & Leahy"
+      },
+      {
+        "number": "15",
+        "slug": "15-whole-class-feedback",
+        "icon": "📋",
+        "cluster": "feedback",
+        "category": "Feedback",
+        "title": "Whole Class Feedback",
+        "summary": "Record class patterns rather than individual comments: common strengths, recurring errors and two or three next steps. Teach to the gap, not to the individual paper. Workload stays manageable.",
+        "tech": "shared document or display tool",
+        "informed_by": "Wiliam & Hattie"
+      },
+      {
+        "number": "16",
+        "slug": "16-3-questions-not-corrections",
+        "icon": "❓",
+        "cluster": "feedback",
+        "category": "Feedback",
+        "title": "3 Questions, Not Corrections",
+        "summary": "Return work with three questions rather than corrections. Students must respond before moving on. Cognitive effort belongs with the learner. Feedback that corrects for them removes the struggle.",
+        "tech": "digital annotation tool or LMS",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "17",
+        "slug": "17-guided-practice-together",
+        "icon": "👥",
+        "cluster": "peers",
+        "category": "Students as Learning Resources",
+        "title": "Guided Practice Together",
+        "summary": "Independence is the destination, not the starting point. Before students work alone, have them practise with peers in structured steps, checking each other's responses at every stage before moving forward.",
+        "tech": "collaborative document tool",
+        "informed_by": "Rosenshine"
+      },
+      {
+        "number": "18",
+        "slug": "18-student-generated-questions",
+        "icon": "💡",
+        "cluster": "peers",
+        "category": "Students as Learning Resources",
+        "title": "Student Generated Questions",
+        "summary": "Ask students to write questions that could appear in an assessment on this topic. Collate the best and use them for review. Generating questions demands higher order thinking than simply answering them.",
+        "tech": "shared doc or quiz builder tool",
+        "informed_by": "Black & Wiliam"
+      },
+      {
+        "number": "19",
+        "slug": "19-structured-peer-assessment",
+        "icon": "🔍",
+        "cluster": "peers",
+        "category": "Students as Learning Resources",
+        "title": "Structured Peer Assessment",
+        "summary": "Peer feedback only works when students understand quality. Use exemplars first so students assess against shared criteria. Without shared criteria, peer feedback is opinion, not evidence.",
+        "tech": "peer assessment tool",
+        "informed_by": "Sadler, Berger"
+      },
+      {
+        "number": "20",
+        "slug": "20-spaced-retrieval-practice",
+        "icon": "🔁",
+        "cluster": "ownership",
+        "category": "Student Ownership",
+        "title": "Spaced Retrieval Practice",
+        "summary": "Low stakes quizzing on prior content, not today's lesson. Returning to older material at increasing intervals is one of the most robust findings in memory research. Re-reading notes is not the same as retrieving.",
+        "tech": "spaced repetition quiz tool",
+        "informed_by": "Bjork"
+      },
+      {
+        "number": "21",
+        "slug": "21-test-before-you-teach",
+        "icon": "📝",
+        "cluster": "ownership",
+        "category": "Student Ownership",
+        "title": "Test Before You Teach",
+        "summary": "Quiz students on material before you teach it. Triggering the feeling of not knowing primes attention and improves retention. Students who struggle before instruction remember the answer better.",
+        "tech": "quiz tool; lesson start",
+        "informed_by": "Bjork, Wiliam"
+      },
+      {
+        "number": "22",
+        "slug": "22-the-muddiest-point",
+        "icon": "🌧️",
+        "cluster": "ownership",
+        "category": "Student Ownership",
+        "title": "The Muddiest Point",
+        "summary": "At lesson close, each student anonymously writes the one thing they are least clear about. The teacher addresses the most common muddy points publicly at the start of the next lesson. Two minutes; high value.",
+        "tech": "anonymous response tool",
+        "informed_by": "Angelo & Cross"
+      },
+      {
+        "number": "23",
+        "slug": "23-review-little-and-often",
+        "icon": "📅",
+        "cluster": "ownership",
+        "category": "Student Ownership",
+        "title": "Review Little and Often",
+        "summary": "Begin every lesson with a brief review of prior content: yesterday's, last week's, last month's. The most effective teachers check understanding constantly. If most students cannot answer, adjust the pace of teaching.",
+        "tech": "low stakes quiz tool",
+        "informed_by": "Rosenshine"
+      },
+      {
+        "number": "24",
+        "slug": "24-spaced-self-quizzing",
+        "icon": "🧪",
+        "cluster": "ownership",
+        "category": "Student Ownership",
+        "title": "Spaced Self Quizzing",
+        "summary": "Teach students to quiz themselves rather than re-read notes. Re-reading feels productive but produces weak retention. Self quizzing feels harder but works. Retrieval effort drives long term memory.",
+        "tech": "quizzing or flashcard tool",
+        "informed_by": "Bjork"
+      }
+    ],
+    "slug": "formative-assessment",
+    "name": "Formative Assessment",
+    "number": "02"
+  },
+  {
+    "title": "24 Ways to Embed Effective Feedback in Your Classroom",
+    "subtitle": "Evidence-informed strategies, with or without technology",
+    "scholars": "Rooted in the work of Hattie & Timperley, Sadler, Butler, Nicol & Macfarlane-Dick, Wiliam, Kluger & DeNisi, Shute, Topping, Andrade, Carless and Boud",
+    "quote": "\"Feedback is one of the most powerful influences on learning and achievement, but this impact can be either positive or negative.\" — Hattie & Timperley, 2007",
+    "research": "Rooted in the work of Hattie & Timperley, Sadler, Butler, Nicol & Macfarlane-Dick, Wiliam, Kluger & DeNisi, Shute, Topping, Andrade, Carless and Boud",
+    "palette": {
+      "body_bg": "#f5c518",
+      "panel_bg": "linear-gradient(135deg, #f5c518 0%, #f0b400 50%, #e8a800 100%)",
+      "accent": "#c2185b"
+    },
+    "clusters": [
+      {
+        "key": "define",
+        "label": "What Feedback Is",
+        "colour": "#c2185b"
+      },
+      {
+        "key": "timing",
+        "label": "Timing & Frequency",
+        "colour": "#0277bd"
+      },
+      {
+        "key": "source",
+        "label": "Source & Direction",
+        "colour": "#00796b"
+      },
+      {
+        "key": "learner",
+        "label": "Feedback & the Learner",
+        "colour": "#6a1b9a"
+      },
+      {
+        "key": "closing",
+        "label": "Closing the Gap",
+        "colour": "#e65100"
+      }
+    ],
+    "strategies": [
+      {
+        "number": "01",
+        "slug": "01-feedback-is-not-marking",
+        "icon": "🔍",
+        "cluster": "define",
+        "category": "What Feedback Is",
+        "title": "Feedback Is Not Marking",
+        "summary": "If a student never reads or acts on your comments, you have marked but not given feedback. Before returning work, plan how students will engage with it. No engagement, no feedback.",
+        "tech": "audio or digital ink feedback tool",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "02",
+        "slug": "02-feed-up-feed-back-feed-forward",
+        "icon": "🎯",
+        "cluster": "define",
+        "category": "What Feedback Is",
+        "title": "Feed Up, Feed Back, Feed Forward",
+        "summary": "Every comment should answer three questions: where am I going, how am I doing, what next? Most feedback answers only the second. Check yours covers all three before you hand it back.",
+        "tech": "structured feedback template tool",
+        "informed_by": "Hattie & Timperley"
+      },
+      {
+        "number": "03",
+        "slug": "03-four-levels-of-feedback",
+        "icon": "📈",
+        "cluster": "define",
+        "category": "What Feedback Is",
+        "title": "Four Levels of Feedback",
+        "summary": "Before writing a comment, ask: am I addressing the task, the process or the person? Task and process feedback improve learning. Self-level praise undermines it. Name your target.",
+        "tech": "feedback checklist or rubric tool",
+        "informed_by": "Hattie & Timperley"
+      },
+      {
+        "number": "04",
+        "slug": "04-one-third-makes-it-worse",
+        "icon": "⚠️",
+        "cluster": "define",
+        "category": "What Feedback Is",
+        "title": "One Third Makes It Worse",
+        "summary": "Over a third of feedback interventions decrease performance. Before giving feedback, check: does this comment address the work or the student? If it is about the student, rewrite it.",
+        "tech": "feedback audit or review tool",
+        "informed_by": "Kluger & DeNisi"
+      },
+      {
+        "number": "05",
+        "slug": "05-sadler-s-three-conditions",
+        "icon": "📜",
+        "cluster": "define",
+        "category": "What Feedback Is",
+        "title": "Sadler's Three Conditions",
+        "summary": "Share the criteria before students begin. Show them how to compare their work against it. Give them time to act on what they find. Without all three steps, feedback cannot function.",
+        "tech": "success criteria display tool",
+        "informed_by": "Sadler"
+      },
+      {
+        "number": "06",
+        "slug": "06-immediate-for-simple-tasks",
+        "icon": "⏰",
+        "cluster": "timing",
+        "category": "Timing & Frequency",
+        "title": "Immediate for Simple Tasks",
+        "summary": "For simple or procedural tasks, correct errors immediately. Shute found quick feedback prevents mistakes from embedding. Do not wait until next lesson to fix what can be fixed now.",
+        "tech": "auto-marked quiz or response tool",
+        "informed_by": "Shute"
+      },
+      {
+        "number": "07",
+        "slug": "07-delayed-for-complex-tasks",
+        "icon": "🕐",
+        "cluster": "timing",
+        "category": "Timing & Frequency",
+        "title": "Delayed for Complex Tasks",
+        "summary": "For complex work, a short delay before feedback lets the learner process first. Immediate correction on difficult tasks can short-circuit thinking. Let the struggle do its work.",
+        "tech": "LMS with scheduled feedback release",
+        "informed_by": "Shute; Kulhavy"
+      },
+      {
+        "number": "08",
+        "slug": "08-during-not-just-after",
+        "icon": "🔄",
+        "cluster": "timing",
+        "category": "Timing & Frequency",
+        "title": "During, Not Just After",
+        "summary": "Feedback given while students are still working is formative. Feedback returned weeks later is a post-mortem. Move around the room, intervene in the moment. Proximity is strategy.",
+        "tech": "live collaboration or monitoring tool",
+        "informed_by": "Wiliam; Black & Wiliam"
+      },
+      {
+        "number": "09",
+        "slug": "09-comment-only-no-grades",
+        "icon": "📋",
+        "cluster": "timing",
+        "category": "Timing & Frequency",
+        "title": "Comment Only, No Grades",
+        "summary": "Butler found comments alone produced the greatest gains. A grade cancels the comment: students see the score and skip the words. If grades are mandated, delay until feedback is used.",
+        "tech": "annotation tool; hide grades option",
+        "informed_by": "Butler"
+      },
+      {
+        "number": "10",
+        "slug": "10-reduce-volume-raise-focus",
+        "icon": "📊",
+        "cluster": "timing",
+        "category": "Timing & Frequency",
+        "title": "Reduce Volume, Raise Focus",
+        "summary": "A page of comments overwhelms. One or two precise targets land. Identify the one thing that would make the biggest difference right now and focus entirely on that.",
+        "tech": "digital highlight or pin tool",
+        "informed_by": "Shute; Wiliam"
+      },
+      {
+        "number": "11",
+        "slug": "11-peer-feedback-with-structure",
+        "icon": "👥",
+        "cluster": "source",
+        "category": "Source & Direction",
+        "title": "Peer Feedback with Structure",
+        "summary": "Give students criteria and a protocol before they assess each other's work. Topping showed peer feedback improves learning for both, but without scaffolding it becomes empty praise.",
+        "tech": "peer review tool with criteria prompts",
+        "informed_by": "Topping"
+      },
+      {
+        "number": "12",
+        "slug": "12-self-assessment-as-process",
+        "icon": "🔬",
+        "cluster": "source",
+        "category": "Source & Direction",
+        "title": "Self-Assessment as Process",
+        "summary": "Ask students to assess their work against criteria before you mark it. Andrade found the act of comparing, not the accuracy of the judgment, improves performance. Process is the point.",
+        "tech": "self-review checklist tool",
+        "informed_by": "Andrade"
+      },
+      {
+        "number": "13",
+        "slug": "13-dialogic-feedback",
+        "icon": "💬",
+        "cluster": "source",
+        "category": "Source & Direction",
+        "title": "Dialogic Feedback",
+        "summary": "Build reply loops into feedback. Let students question and clarify comments over time rather than receive a final judgment. Carless showed uptake rises when feedback is a conversation.",
+        "tech": "threaded comment or chat tool",
+        "informed_by": "Carless"
+      },
+      {
+        "number": "14",
+        "slug": "14-technology-as-feedback-source",
+        "icon": "🤖",
+        "cluster": "source",
+        "category": "Source & Direction",
+        "title": "Technology as Feedback Source",
+        "summary": "Use automated tools for factual accuracy and procedural correctness; reserve your time for voice, argument and creativity. Match the feedback source to what is being assessed.",
+        "tech": "adaptive or AI-assisted feedback tool",
+        "informed_by": "Shute; Black & Wiliam"
+      },
+      {
+        "number": "15",
+        "slug": "15-whole-class-feedback",
+        "icon": "📋",
+        "cluster": "source",
+        "category": "Source & Direction",
+        "title": "Whole Class Feedback",
+        "summary": "Read the set and identify patterns: common strengths, recurring errors, one priority next step. Teach to the gap, not to each paper. Sustainable for teachers; precise for students.",
+        "tech": "shared display or document tool",
+        "informed_by": "Wiliam; Hattie"
+      },
+      {
+        "number": "16",
+        "slug": "16-task-not-person",
+        "icon": "🧠",
+        "cluster": "learner",
+        "category": "Feedback & the Learner",
+        "title": "Task, Not Person",
+        "summary": "Feedback that threatens self-concept decreases performance. \"This paragraph needs restructuring\" works. \"You need to try harder\" does not. Direct feedback at the work, not the person.",
+        "tech": "annotation tool focused on work",
+        "informed_by": "Kluger & DeNisi"
+      },
+      {
+        "number": "17",
+        "slug": "17-feedback-must-cause-thinking",
+        "icon": "💡",
+        "cluster": "learner",
+        "category": "Feedback & the Learner",
+        "title": "Feedback Must Cause Thinking",
+        "summary": "Write \"why might this be stronger with evidence?\" not insert the evidence yourself. If feedback needs no effort from the learner, it is information, not feedback. Thinking is the point.",
+        "tech": "annotation tool with reply function",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "18",
+        "slug": "18-praise-the-strategy-not-the-trait",
+        "icon": "🔔",
+        "cluster": "learner",
+        "category": "Feedback & the Learner",
+        "title": "Praise the Strategy, Not the Trait",
+        "summary": "Butler found task-involving feedback improves performance. Ego-involving feedback shifts attention from learning to self-image. Praise what the student did, not who the student is.",
+        "tech": "feedback phrasing guide or template",
+        "informed_by": "Butler; Kluger & DeNisi"
+      },
+      {
+        "number": "19",
+        "slug": "19-build-feedback-literacy",
+        "icon": "🌱",
+        "cluster": "learner",
+        "category": "Feedback & the Learner",
+        "title": "Build Feedback Literacy",
+        "summary": "Teach students how to read and act on feedback before you give it. Model with an exemplar: here is the comment, what it means, what to do next. Feedback literacy is taught, not assumed.",
+        "tech": "worked example or modelling tool",
+        "informed_by": "Carless; Boud"
+      },
+      {
+        "number": "20",
+        "slug": "20-seven-principles-of-good-practice",
+        "icon": "💪",
+        "cluster": "learner",
+        "category": "Feedback & the Learner",
+        "title": "Seven Principles of Good Practice",
+        "summary": "Audit your practice against Nicol and Macfarlane-Dick's seven principles. Do you clarify criteria? Enable self-assessment? Encourage dialogue? Close the gap? Redesign where you do not.",
+        "tech": "feedback design checklist tool",
+        "informed_by": "Nicol & Macfarlane-Dick"
+      },
+      {
+        "number": "21",
+        "slug": "21-build-in-time-to-act",
+        "icon": "⏱️",
+        "cluster": "closing",
+        "category": "Closing the Gap",
+        "title": "Build In Time to Act",
+        "summary": "Feedback with no time to act on it is wasted. Begin the next lesson with students reading and responding to comments before anything new. The response is the learning event.",
+        "tech": "LMS; share feedback in advance",
+        "informed_by": "Wiliam & Leahy"
+      },
+      {
+        "number": "22",
+        "slug": "22-questions-not-corrections",
+        "icon": "❓",
+        "cluster": "closing",
+        "category": "Closing the Gap",
+        "title": "Questions, Not Corrections",
+        "summary": "Return work with questions, not corrections. \"What evidence supports this claim?\" demands more thinking than rewriting it for them. The cognitive work belongs with the learner.",
+        "tech": "digital annotation or comment tool",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "23",
+        "slug": "23-sustainable-feedback",
+        "icon": "📄",
+        "cluster": "closing",
+        "category": "Closing the Gap",
+        "title": "Sustainable Feedback",
+        "summary": "Boud argues feedback should build the learner's capacity to judge quality. If students always need you to tell them how they did, the system has failed. Design for independence.",
+        "tech": "self-assessment or portfolio tool",
+        "informed_by": "Boud"
+      },
+      {
+        "number": "24",
+        "slug": "24-feedback-as-design-not-event",
+        "icon": "🛠️",
+        "cluster": "closing",
+        "category": "Closing the Gap",
+        "title": "Feedback as Design, Not Event",
+        "summary": "Plan feedback into your scheme of work: who gives it, when, in what form, and when students act on it. Feedback designed into learning from the start works. Left to chance, it does not.",
+        "tech": "curriculum planning or LMS tool",
+        "informed_by": "Boud; Sadler; Carless"
+      }
+    ],
+    "slug": "feedback",
+    "name": "Feedback",
+    "number": "03"
+  },
+  {
+    "title": "24 Ways to Embed Effective Questioning & Discussion in Your Classroom",
+    "subtitle": "Evidence-informed strategies, with or without technology · Rooted in cognitive and educational research",
+    "scholars": "Rooted in the work of Anderson & Krathwohl, Dillon, Hattie & Zierer, Rowe, Tobin, Lyman, Wiliam, Good & Brophy, Alexander, Mercer, Michaels, O’Connor & Resnick, and King",
+    "quote": "“Classroom talk is the most pervasive but arguably the least examined tool in any teacher’s repertoire.” — Robin Alexander",
+    "research": "Rooted in the work of Anderson & Krathwohl, Dillon, Hattie & Zierer, Rowe, Tobin, Lyman, Wiliam, Good & Brophy, Alexander, Mercer, Michaels, O’Connor & Resnick, and King",
+    "palette": {
+      "body_bg": "#00382e",
+      "panel_bg": "linear-gradient(135deg, #00574a 0%, #00433a 50%, #00382e 100%)",
+      "accent": "#f1c40f"
+    },
+    "clusters": [
+      {
+        "key": "quality",
+        "label": "The Quality of Questions",
+        "colour": "#e53935"
+      },
+      {
+        "key": "wait",
+        "label": "Wait Time & Thinking Space",
+        "colour": "#f57c00"
+      },
+      {
+        "key": "equity",
+        "label": "Participation & Equity",
+        "colour": "#7b1fa2"
+      },
+      {
+        "key": "dialogic",
+        "label": "Dialogic Teaching & Discussion",
+        "colour": "#1565c0"
+      },
+      {
+        "key": "student",
+        "label": "Student-Generated Questions",
+        "colour": "#2e7d32"
+      }
+    ],
+    "strategies": [
+      {
+        "number": "01",
+        "slug": "01-questions-that-make-thinking-visible",
+        "icon": "🔍",
+        "cluster": "quality",
+        "category": "The Quality of Questions",
+        "title": "Questions That Make Thinking Visible",
+        "summary": "Anderson and Krathwohl map six levels: remembering, understanding, applying, analysing, evaluating, creating. These are not a hierarchy of worth. Recall is foundational, not inferior.",
+        "tech": "question bank or lesson planning tool",
+        "informed_by": "Anderson & Krathwohl"
+      },
+      {
+        "number": "02",
+        "slug": "02-surface-deep-and-transfer",
+        "icon": "📈",
+        "cluster": "quality",
+        "category": "The Quality of Questions",
+        "title": "Surface, Deep and Transfer",
+        "summary": "Hattie and Zierer distinguish surface (what), deep (why) and transfer questions. Each serves a different stage. Reaching transfer before surface is secure sets students up to fail.",
+        "tech": "discussion prompt or slide display tool",
+        "informed_by": "Hattie & Zierer"
+      },
+      {
+        "number": "03",
+        "slug": "03-open-questions-demand-more",
+        "icon": "❓",
+        "cluster": "quality",
+        "category": "The Quality of Questions",
+        "title": "Open Questions Demand More",
+        "summary": "Dillon found genuine open questions, where the teacher does not know the answer, produce the most extended student reasoning. Not every question needs a predetermined destination.",
+        "tech": "shared whiteboard or discussion board",
+        "informed_by": "Dillon"
+      },
+      {
+        "number": "04",
+        "slug": "04-plan-questions-before-the-lesson",
+        "icon": "💡",
+        "cluster": "quality",
+        "category": "The Quality of Questions",
+        "title": "Plan Questions Before the Lesson",
+        "summary": "Improvised questions default to recall, not because recall is wrong but because planning stops there. Anderson and Krathwohl works as a planning tool: write questions at every level.",
+        "tech": "lesson planning or slide preparation tool",
+        "informed_by": "Anderson & Krathwohl"
+      },
+      {
+        "number": "05",
+        "slug": "05-alternatives-to-questions",
+        "icon": "🗣",
+        "cluster": "quality",
+        "category": "The Quality of Questions",
+        "title": "Alternatives to Questions",
+        "summary": "Dillon found statements and silence elicit richer responses than questions. Try: Tell me more. I had not considered that. Not every probe needs to end with a question mark.",
+        "tech": "discussion or annotation tool",
+        "informed_by": "Dillon"
+      },
+      {
+        "number": "06",
+        "slug": "06-wait-time-1-after-you-ask",
+        "icon": "⏰",
+        "cluster": "wait",
+        "category": "Wait Time & Thinking Space",
+        "title": "Wait Time 1: After You Ask",
+        "summary": "Rowe found most teachers wait under one second before speaking. Extending to three seconds increases the length and complexity of responses. Silence is thinking, not a gap to fill.",
+        "tech": "timer or countdown display tool",
+        "informed_by": "Rowe"
+      },
+      {
+        "number": "07",
+        "slug": "07-wait-time-2-after-a-student-speaks",
+        "icon": "🕐",
+        "cluster": "wait",
+        "category": "Wait Time & Thinking Space",
+        "title": "Wait Time 2: After a Student Speaks",
+        "summary": "Rowe identified a second wait time: the pause after a student responds. Three seconds prompts elaboration and self-correction. Silence after an answer signals that more is expected.",
+        "tech": "live polling or response capture tool",
+        "informed_by": "Rowe"
+      },
+      {
+        "number": "08",
+        "slug": "08-write-before-you-speak",
+        "icon": "📝",
+        "cluster": "wait",
+        "category": "Wait Time & Thinking Space",
+        "title": "Write Before You Speak",
+        "summary": "Ask students to write before any verbal response is taken. Writing prevents the quickest from foreclosing others’ thinking. The pen democratises the room before the voice takes over.",
+        "tech": "shared doc, whiteboard or response tool",
+        "informed_by": "Tobin; Rowe"
+      },
+      {
+        "number": "09",
+        "slug": "09-think-pair-share",
+        "icon": "👥",
+        "cluster": "wait",
+        "category": "Wait Time & Thinking Space",
+        "title": "Think-Pair-Share",
+        "summary": "Lyman’s think-pair-share gives every student thinking time before public exposure. Pairs test ideas with a peer first. The result is more considered and more substantive discussion.",
+        "tech": "partner chat tool or response system",
+        "informed_by": "Lyman"
+      },
+      {
+        "number": "10",
+        "slug": "10-hands-down",
+        "icon": "✋",
+        "cluster": "equity",
+        "category": "Participation & Equity",
+        "title": "Hands Down",
+        "summary": "Wiliam shows hand-raising distorts who answers. A small group volunteers repeatedly; the rest disengage. Remove hands and direct to named students. Every student should be asked.",
+        "tech": "random name picker or class list tool",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "11",
+        "slug": "11-cold-call-without-threat",
+        "icon": "🎲",
+        "cluster": "equity",
+        "category": "Participation & Equity",
+        "title": "Cold Call Without Threat",
+        "summary": "Good and Brophy showed differential questioning reinforces attainment gaps. Direct questions are equitable only when the climate supports it. Norms: no wrong attempts, only thinking.",
+        "tech": "random selector or seating plan tool",
+        "informed_by": "Good & Brophy; Wiliam"
+      },
+      {
+        "number": "12",
+        "slug": "12-track-who-you-ask",
+        "icon": "📊",
+        "cluster": "equity",
+        "category": "Participation & Equity",
+        "title": "Track Who You Ask",
+        "summary": "Good and Brophy found teachers direct harder questions to higher-attaining students. Track participation across lessons. Patterns invisible in the moment become visible on paper.",
+        "tech": "participation tracker or tally tool",
+        "informed_by": "Good & Brophy"
+      },
+      {
+        "number": "13",
+        "slug": "13-pose-pause-pounce-bounce",
+        "icon": "🎯",
+        "cluster": "equity",
+        "category": "Participation & Equity",
+        "title": "Pose, Pause, Pounce, Bounce",
+        "summary": "Wiliam’s PPPB: pose the question, pause, direct to one student, then bounce the answer to another. The bounce keeps all students alert and spreads thinking across the whole room.",
+        "tech": "display timer; random name tool",
+        "informed_by": "Wiliam"
+      },
+      {
+        "number": "14",
+        "slug": "14-five-principles-of-dialogic-talk",
+        "icon": "💬",
+        "cluster": "dialogic",
+        "category": "Dialogic Teaching & Discussion",
+        "title": "Five Principles of Dialogic Talk",
+        "summary": "Alexander identifies five qualities of dialogic talk: collective, reciprocal, supportive, cumulative and purposeful. Most talk meets two or three of these. Audit and start with the gaps.",
+        "tech": "lesson observation or reflection tool",
+        "informed_by": "Alexander"
+      },
+      {
+        "number": "15",
+        "slug": "15-break-the-ire-pattern",
+        "icon": "▶️",
+        "cluster": "dialogic",
+        "category": "Dialogic Teaching & Discussion",
+        "title": "Break the IRE Pattern",
+        "summary": "IRE (Initiation, Response, Evaluation): ask, answer, judge. Alexander shows this pattern limits thinking. Replace evaluation with a follow-up question. What makes you say that?",
+        "tech": "video reflection or lesson capture tool",
+        "informed_by": "Alexander; Mercer"
+      },
+      {
+        "number": "16",
+        "slug": "16-exploratory-talk",
+        "icon": "🗣",
+        "cluster": "dialogic",
+        "category": "Dialogic Teaching & Discussion",
+        "title": "Exploratory Talk",
+        "summary": "Mercer distinguishes disputational, cumulative and exploratory talk. Only exploratory talk, where students challenge ideas with evidence and build on each thinking, improves outcomes.",
+        "tech": "collaborative doc or discussion tool",
+        "informed_by": "Mercer"
+      },
+      {
+        "number": "17",
+        "slug": "17-ground-rules-for-talk",
+        "icon": "📚",
+        "cluster": "dialogic",
+        "category": "Dialogic Teaching & Discussion",
+        "title": "Ground Rules for Talk",
+        "summary": "Mercer found teaching norms of exploratory talk transforms discussion. Norms co-constructed with the class outperform those displayed or modelled. Make the ground rules together.",
+        "tech": "shared doc or display tool",
+        "informed_by": "Mercer"
+      },
+      {
+        "number": "18",
+        "slug": "18-accountable-talk",
+        "icon": "👨‍🏫",
+        "cluster": "dialogic",
+        "category": "Dialogic Teaching & Discussion",
+        "title": "Accountable Talk",
+        "summary": "Michaels, O’Connor and Resnick hold students to accurate knowledge and rigorous reasoning. Teach moves: I agree because..., The evidence is..., Say more.... Language shapes thinking.",
+        "tech": "discussion sentence starter display",
+        "informed_by": "Michaels, O’Connor & Resnick"
+      },
+      {
+        "number": "19",
+        "slug": "19-build-on-student-responses",
+        "icon": "🔁",
+        "cluster": "dialogic",
+        "category": "Dialogic Teaching & Discussion",
+        "title": "Build on Student Responses",
+        "summary": "Alexander’s EEF programme showed gains when teachers extended rather than evaluated. Return an answer: Aisha says X. Does anyone want to add or challenge? Conductor, not judge.",
+        "tech": "live display or response capture tool",
+        "informed_by": "Alexander"
+      },
+      {
+        "number": "20",
+        "slug": "20-teach-question-stems",
+        "icon": "✍️",
+        "cluster": "student",
+        "category": "Student-Generated Questions",
+        "title": "Teach Question Stems",
+        "summary": "King found students trained to generate questions using stems produce richer discussion than those answering only teacher questions. Generating questions demands deeper processing.",
+        "tech": "question stem cards or display tool",
+        "informed_by": "King"
+      },
+      {
+        "number": "21",
+        "slug": "21-reciprocal-peer-questioning",
+        "icon": "👥",
+        "cluster": "student",
+        "category": "Student-Generated Questions",
+        "title": "Reciprocal Peer Questioning",
+        "summary": "King’s reciprocal questioning has students generate and pose questions to each other, with neither knowing the answer. This produces genuine enquiry rather than rehearsal. Aim to think.",
+        "tech": "pair chat or response tool",
+        "informed_by": "King"
+      },
+      {
+        "number": "22",
+        "slug": "22-questions-as-evidence-of-understanding",
+        "icon": "🔎",
+        "cluster": "student",
+        "category": "Student-Generated Questions",
+        "title": "Questions as Evidence of Understanding",
+        "summary": "A student’s question reveals the depth of their understanding. Ask for one written question before leaving. Why does X cause Y? shows far more than What is X?. Questions are windows.",
+        "tech": "exit ticket or response tool",
+        "informed_by": "King; Wiliam"
+      },
+      {
+        "number": "23",
+        "slug": "23-interthinking-through-questions",
+        "icon": "💬",
+        "cluster": "student",
+        "category": "Student-Generated Questions",
+        "title": "Interthinking Through Questions",
+        "summary": "Mercer’s interthinking describes shared cognition built through language. Student questions sustain joint enquiry. The goal is thinking in common, not performance for the teacher.",
+        "tech": "collaborative discussion or writing tool",
+        "informed_by": "Mercer"
+      },
+      {
+        "number": "24",
+        "slug": "24-questions-that-drive-enquiry",
+        "icon": "📄",
+        "cluster": "student",
+        "category": "Student-Generated Questions",
+        "title": "Questions That Drive Enquiry",
+        "summary": "King found connecting questions to prior knowledge produces the most powerful learning. Ask students to write what they know and want to know. Their questions become the entry point.",
+        "tech": "shared doc, padlet or survey tool",
+        "informed_by": "King"
+      }
+    ],
+    "slug": "questioning-and-discussion",
+    "name": "Questioning & Discussion",
+    "number": "04"
+  },
+  {
+    "title": "24 Ways to Embed Effective Explanations & Modelling in Your Classroom",
+    "subtitle": "Evidence-informed strategies, with or without technology · Rooted in cognitive and educational research",
+    "scholars": "Rooted in the work of Rosenshine, Sweller, Mayer, Paivio, Willingham, Atkinson, and the EEF Digital Technology Guidance (2019)",
+    "quote": "“To improve learning, technology must be used in a way that is informed by effective pedagogy.” — EEF, 2019",
+    "research": "Rooted in the work of Rosenshine, Sweller, Mayer, Paivio, Willingham, Atkinson, and the EEF Digital Technology Guidance (2019)",
+    "palette": {
+      "body_bg": "#2c2c54",
+      "panel_bg": "linear-gradient(135deg, #40407a 0%, #2c2c54 50%, #1e1e3f 100%)",
+      "accent": "#ffb142"
+    },
+    "clusters": [
+      {
+        "key": "structure",
+        "label": "Structuring Explanations",
+        "colour": "#b33939"
+      },
+      {
+        "key": "cogload",
+        "label": "Managing Cognitive Load",
+        "colour": "#cd6133"
+      },
+      {
+        "key": "multimedia",
+        "label": "Multimedia & Dual Coding",
+        "colour": "#34ace0"
+      },
+      {
+        "key": "modelling",
+        "label": "Modelling & Worked Examples",
+        "colour": "#706fd3"
+      }
+    ],
+    "strategies": [
+      {
+        "number": "01",
+        "slug": "01-small-steps-always",
+        "icon": "📚",
+        "cluster": "structure",
+        "category": "Structuring Explanations",
+        "title": "Small Steps, Always",
+        "summary": "Rosenshine: present new material in small steps with practice after each. Use animations to chunk information and reveal content gradually. Let students process before continuing.",
+        "tech": "slide animation; progressive reveal",
+        "informed_by": "Rosenshine"
+      },
+      {
+        "number": "02",
+        "slug": "02-concrete-before-abstract",
+        "icon": "📦",
+        "cluster": "structure",
+        "category": "Structuring Explanations",
+        "title": "Concrete Before Abstract",
+        "summary": "Willingham: anchor new ideas to concrete examples first. Use images, video or objects to make the abstract visible before naming it. Move to the abstract once the concrete is secure.",
+        "tech": "visualiser; image or video clip",
+        "informed_by": "Willingham"
+      },
+      {
+        "number": "03",
+        "slug": "03-connect-to-prior-knowledge",
+        "icon": "🔗",
+        "cluster": "structure",
+        "category": "Structuring Explanations",
+        "title": "Connect to Prior Knowledge",
+        "summary": "Rosenshine: connect to prior knowledge before introducing anything new. Use a retrieval starter or concept map on screen to activate what students know. Link before you launch.",
+        "tech": "concept map or retrieval tool",
+        "informed_by": "Rosenshine"
+      },
+      {
+        "number": "04",
+        "slug": "04-clarity-over-novelty",
+        "icon": "💡",
+        "cluster": "structure",
+        "category": "Structuring Explanations",
+        "title": "Clarity Over Novelty",
+        "summary": "The EEF found clarity matters more than delivery method. A diagram under a visualiser can outperform a polished video. Choose the tool that makes the idea clearest, not the newest.",
+        "tech": "any display tool used with purpose",
+        "informed_by": "EEF"
+      },
+      {
+        "number": "05",
+        "slug": "05-check-don-t-assume",
+        "icon": "✅",
+        "cluster": "structure",
+        "category": "Structuring Explanations",
+        "title": "Check, Don’t Assume",
+        "summary": "Listening is not learning. Use live polls or mini whiteboards to check understanding at every step. Rosenshine: reteach before moving on. The explanation is the start, not the finish.",
+        "tech": "live polling or mini whiteboard tool",
+        "informed_by": "Rosenshine"
+      },
+      {
+        "number": "06",
+        "slug": "06-supplement-never-substitute",
+        "icon": "➕",
+        "cluster": "structure",
+        "category": "Structuring Explanations",
+        "title": "Supplement, Never Substitute",
+        "summary": "The EEF: technology works best when it supplements teaching, not replaces it. A screencast works alongside classroom explanation, not instead of it. Supplement, never substitute.",
+        "tech": "screencast; LMS for replay access",
+        "informed_by": "EEF"
+      },
+      {
+        "number": "07",
+        "slug": "07-four-slots-no-more",
+        "icon": "🧠",
+        "cluster": "cogload",
+        "category": "Managing Cognitive Load",
+        "title": "Four Slots, No More",
+        "summary": "Sweller: working memory holds about four items. Every screen element competes for those slots. Strip slides to essentials. Press B to blank the screen when you want attention on you.",
+        "tech": "B/W key; clean slide design",
+        "informed_by": "Sweller"
+      },
+      {
+        "number": "08",
+        "slug": "08-avoid-split-attention",
+        "icon": "👀",
+        "cluster": "cogload",
+        "category": "Managing Cognitive Load",
+        "title": "Avoid Split Attention",
+        "summary": "Sweller’s split attention: separate text and diagrams force learners to search between them. Integrate labels directly into the image. Use annotation tools to build the diagram live.",
+        "tech": "annotation tool; integrated diagrams",
+        "informed_by": "Sweller"
+      },
+      {
+        "number": "09",
+        "slug": "09-say-it-or-show-it-not-both",
+        "icon": "🔇",
+        "cluster": "cogload",
+        "category": "Managing Cognitive Load",
+        "title": "Say It or Show It, Not Both",
+        "summary": "Sweller’s redundancy effect: narrating text on screen forces double processing. Say it or show it, not both. Use the B or W key to blank the slide while you talk through the idea.",
+        "tech": "B/W key in PowerPoint or Keynote",
+        "informed_by": "Sweller"
+      },
+      {
+        "number": "10",
+        "slug": "10-remove-the-clutter",
+        "icon": "❌",
+        "cluster": "cogload",
+        "category": "Managing Cognitive Load",
+        "title": "Remove the Clutter",
+        "summary": "Mayer’s coherence: remove every word, image and sound that does not support learning. Strip clip art from slides. Cut background music. Every element on screen must earn its place.",
+        "tech": "clean slide template; minimal design",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "11",
+        "slug": "11-signal-what-matters",
+        "icon": "➡️",
+        "cluster": "cogload",
+        "category": "Managing Cognitive Load",
+        "title": "Signal What Matters",
+        "summary": "Mayer’s signalling: bold, arrows and highlights direct attention to what matters. Use annotation tools to signal live during the explanation. Without it, learners search alone.",
+        "tech": "annotation; slide highlight features",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "12",
+        "slug": "12-chunk-and-reveal",
+        "icon": "✂️",
+        "cluster": "cogload",
+        "category": "Managing Cognitive Load",
+        "title": "Chunk and Reveal",
+        "summary": "Mayer’s segmenting: break content into chunks. Use slide animations to reveal one idea per click, not auto-play. Let working memory process before the next chunk arrives.",
+        "tech": "slide animation; click to reveal",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "13",
+        "slug": "13-words-and-images-together",
+        "icon": "🖼️",
+        "cluster": "multimedia",
+        "category": "Multimedia & Dual Coding",
+        "title": "Words and Images Together",
+        "summary": "Paivio’s dual coding: the brain processes words and images through separate channels. Design every slide with both: a key visual paired with minimal text. Two routes to the same idea.",
+        "tech": "dual coded slide design",
+        "informed_by": "Paivio"
+      },
+      {
+        "number": "14",
+        "slug": "14-narrate-don-t-label",
+        "icon": "🎧",
+        "cluster": "multimedia",
+        "category": "Multimedia & Dual Coding",
+        "title": "Narrate, Don’t Label",
+        "summary": "Mayer’s modality: people learn better from images with narration than images with text. Record a narrated screencast over a diagram. Let the voice do what text would overload.",
+        "tech": "screen recording with voiceover",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "15",
+        "slug": "15-keep-words-near-images",
+        "icon": "📍",
+        "cluster": "multimedia",
+        "category": "Multimedia & Dual Coding",
+        "title": "Keep Words Near Images",
+        "summary": "Mayer’s spatial contiguity: place words near the images they describe. Labels sit beside the diagram, not in a separate list. Use slide design to keep related information together.",
+        "tech": "integrated slide layout",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "16",
+        "slug": "16-progressive-reveal",
+        "icon": "🔄",
+        "cluster": "multimedia",
+        "category": "Multimedia & Dual Coding",
+        "title": "Progressive Reveal",
+        "summary": "Use animations to reveal content one step at a time. One idea per click, building the full picture gradually. Progressive reveal aligns the display to the pace of your explanation.",
+        "tech": "slide animation; appear on click",
+        "informed_by": "Mayer; Sweller"
+      },
+      {
+        "number": "17",
+        "slug": "17-short-screencasts",
+        "icon": "🎥",
+        "cluster": "multimedia",
+        "category": "Multimedia & Dual Coding",
+        "title": "Short Screencasts",
+        "summary": "Record short screencasts with narration over visuals. Mayer: images plus voice outperforms text-heavy slides. Keep each video to one idea. Brevity beats completeness every time.",
+        "tech": "screen recording tool; Loom or similar",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "18",
+        "slug": "18-pre-train-the-vocabulary",
+        "icon": "📖",
+        "cluster": "multimedia",
+        "category": "Multimedia & Dual Coding",
+        "title": "Pre-Train the Vocabulary",
+        "summary": "Mayer’s pre-training: teach key terms before the main explanation. A vocabulary slide or pre-lesson video builds familiarity first. Learners who know the words can focus on the ideas.",
+        "tech": "vocabulary slide; pre-lesson video",
+        "informed_by": "Mayer"
+      },
+      {
+        "number": "19",
+        "slug": "19-think-aloud",
+        "icon": "🗣",
+        "cluster": "modelling",
+        "category": "Modelling & Worked Examples",
+        "title": "Think Aloud",
+        "summary": "Rosenshine: model the process, not the product. Use a visualiser or screen share to think aloud live. Narrate your decisions as you work. Make invisible expertise visible to all.",
+        "tech": "visualiser; screen share with narration",
+        "informed_by": "Rosenshine"
+      },
+      {
+        "number": "20",
+        "slug": "20-the-visualiser-as-stage",
+        "icon": "📷",
+        "cluster": "modelling",
+        "category": "Modelling & Worked Examples",
+        "title": "The Visualiser as Stage",
+        "summary": "A visualiser turns any desk into a modelling stage. Show handwriting, annotate text, build diagrams under the camera. The EEF found this among the most promising classroom technology.",
+        "tech": "visualiser or document camera",
+        "informed_by": "EEF; Rosenshine"
+      },
+      {
+        "number": "21",
+        "slug": "21-worked-examples-on-replay",
+        "icon": "📝",
+        "cluster": "modelling",
+        "category": "Modelling & Worked Examples",
+        "title": "Worked Examples on Replay",
+        "summary": "Sweller and Cooper: students learn more from worked examples than equivalent problems. Record a screencast of the example so students can pause and study the method at their pace.",
+        "tech": "screen recording; LMS for sharing",
+        "informed_by": "Sweller & Cooper"
+      },
+      {
+        "number": "22",
+        "slug": "22-alternate-examples-and-practice",
+        "icon": "🔁",
+        "cluster": "modelling",
+        "category": "Modelling & Worked Examples",
+        "title": "Alternate Examples and Practice",
+        "summary": "Atkinson: alternate worked examples with practice. Display an example on screen, then set a parallel task. Example, try. Example, try. Interleaving builds understanding faster.",
+        "tech": "display and task alternating on screen",
+        "informed_by": "Atkinson; Sweller"
+      },
+      {
+        "number": "23",
+        "slug": "23-fade-the-scaffolds",
+        "icon": "📉",
+        "cluster": "modelling",
+        "category": "Modelling & Worked Examples",
+        "title": "Fade the Scaffolds",
+        "summary": "Rosenshine: begin with full support, then fade. Show a complete example, then a partial one with gaps, then independent practice. Use fillable templates to structure the fading.",
+        "tech": "fillable template or shared doc",
+        "informed_by": "Rosenshine; Sweller"
+      },
+      {
+        "number": "24",
+        "slug": "24-simulations-beyond-physical-limits",
+        "icon": "🌏",
+        "cluster": "modelling",
+        "category": "Modelling & Worked Examples",
+        "title": "Simulations Beyond Physical Limits",
+        "summary": "The EEF found simulations let students manipulate variables and see consequences beyond physical limits. Use to extend your explanation, not replace it. Technology serves pedagogy.",
+        "tech": "simulation tool; interactive model",
+        "informed_by": "EEF"
+      }
+    ],
+    "slug": "explanations-and-modelling",
+    "name": "Explanations & Modelling",
+    "number": "05"
+  },
+  {
+    "title": "24 Ways to Embed Metacognition & Self-Regulation in Your Classroom",
+    "subtitle": "Evidence-informed strategies, with or without technology · Rooted in cognitive and educational research",
+    "scholars": "Rooted in the work of Zimmerman, Flavell, Winne, Butler, and Willingham",
+    "quote": "“As children should learn about metacognition and how best to learn, they should also be taught how to use technology to support their learning.” — Anderson & Lewis, The EdTech Playbook, 2025",
+    "research": "Rooted in the work of Zimmerman, Flavell, Winne, Butler, and Willingham",
+    "palette": {
+      "body_bg": "#f2bc36",
+      "panel_bg": "#f2bc36",
+      "accent": "#c2185b"
+    },
+    "clusters": [
+      {
+        "key": "fore",
+        "label": "Forethought & Planning",
+        "colour": "#2980b9"
+      },
+      {
+        "key": "perform",
+        "label": "Performance & Monitoring",
+        "colour": "#16a085"
+      },
+      {
+        "key": "reflect",
+        "label": "Self-Reflection & Evaluation",
+        "colour": "#8e44ad"
+      },
+      {
+        "key": "strategy",
+        "label": "Strategy Knowledge & Use",
+        "colour": "#d35400"
+      },
+      {
+        "key": "digital",
+        "label": "Digital Cognition",
+        "colour": "#c2185b"
+      }
+    ],
+    "strategies": [
+      {
+        "number": "01",
+        "slug": "01-set-the-goal-first",
+        "icon": "🎯",
+        "cluster": "fore",
+        "category": "Forethought & Planning",
+        "title": "Set the Goal First",
+        "summary": "Zimmerman: planning begins with a specific, proximal goal, not a vague aim. Have students state what a good answer to this question looks like before they start writing it.",
+        "tech": "shared success criteria on screen",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "02",
+        "slug": "02-knowledge-comes-first",
+        "icon": "🧠",
+        "cluster": "fore",
+        "category": "Forethought & Planning",
+        "title": "Knowledge Comes First",
+        "summary": "Willingham: you cannot plan or monitor a task you know nothing about. Teach the content first; metacognition works on knowledge, never instead of it. Build the base, then regulate.",
+        "tech": "retrieval starter to check the base",
+        "informed_by": "Willingham"
+      },
+      {
+        "number": "03",
+        "slug": "03-analyse-the-task-first",
+        "icon": "🔍",
+        "cluster": "fore",
+        "category": "Forethought & Planning",
+        "title": "Analyse the Task First",
+        "summary": "Zimmerman: strong learners break a task into its demands before starting. Ask students what this question is really asking and which prior topics it draws on before they answer.",
+        "tech": "annotate the question on a board",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "04",
+        "slug": "04-pick-a-strategy-on-purpose",
+        "icon": "📜",
+        "cluster": "fore",
+        "category": "Forethought & Planning",
+        "title": "Pick a Strategy on Purpose",
+        "summary": "Flavell: planning means selecting an approach, not defaulting to one. Have students name which method they will use for this problem and why, before the first line goes down.",
+        "tech": "strategy menu in a shared doc",
+        "informed_by": "Flavell"
+      },
+      {
+        "number": "05",
+        "slug": "05-build-realistic-confidence",
+        "icon": "💪",
+        "cluster": "fore",
+        "category": "Forethought & Planning",
+        "title": "Build Realistic Confidence",
+        "summary": "Zimmerman: self-efficacy drives effort, but it must be earned by past success, not pep talks. Point students to a recent task they mastered to set a credible expectation for this one.",
+        "tech": "portfolio of prior work to revisit",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "06",
+        "slug": "06-check-don-t-just-feel",
+        "icon": "👀",
+        "cluster": "perform",
+        "category": "Performance & Monitoring",
+        "title": "Check, Don't Just Feel",
+        "summary": "Winne: a novice's sense of understanding is unreliable. Pair every self-check with an external test, a quiz or worked answer, so monitoring rests on evidence rather than confidence.",
+        "tech": "self-marking quiz with feedback",
+        "informed_by": "Winne"
+      },
+      {
+        "number": "07",
+        "slug": "07-scaffold-focus-then-fade",
+        "icon": "🔒",
+        "cluster": "perform",
+        "category": "Performance & Monitoring",
+        "title": "Scaffold Focus, Then Fade",
+        "summary": "Zimmerman: monitoring needs a low-distraction environment first. Use classroom.cloud to scaffold focus while students are learning, then withdraw it as they manage attention themselves.",
+        "tech": "classroom.cloud",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "08",
+        "slug": "08-build-in-stop-points",
+        "icon": "⏰",
+        "cluster": "perform",
+        "category": "Performance & Monitoring",
+        "title": "Build in Stop Points",
+        "summary": "Winne: monitoring fades without prompts. Insert planned pauses where students ask whether the approach is still working, before sunk effort makes a wrong method hard to abandon.",
+        "tech": "timed checkpoint prompts",
+        "informed_by": "Winne"
+      },
+      {
+        "number": "09",
+        "slug": "09-ask-yourself-as-you-go",
+        "icon": "❔",
+        "cluster": "perform",
+        "category": "Performance & Monitoring",
+        "title": "Ask Yourself As You Go",
+        "summary": "Flavell: monitoring means questioning your understanding mid-task. Teach students to pause and ask “do I actually understand this?”, so gaps surface in time to fix them.",
+        "tech": "self-check prompts mid-task",
+        "informed_by": "Flavell"
+      },
+      {
+        "number": "10",
+        "slug": "10-make-thinking-visible",
+        "icon": "📝",
+        "cluster": "perform",
+        "category": "Performance & Monitoring",
+        "title": "Make Thinking Visible",
+        "summary": "Flavell: regulation you cannot see, you cannot coach. Have students leave a brief trace of their reasoning as they work, so you and they can inspect the process, not just the product.",
+        "tech": "shared doc showing working e.g. OneNote",
+        "informed_by": "Flavell"
+      },
+      {
+        "number": "11",
+        "slug": "11-judge-against-a-standard",
+        "icon": "📏",
+        "cluster": "reflect",
+        "category": "Self-Reflection & Evaluation",
+        "title": "Judge Against a Standard",
+        "summary": "Zimmerman: self-judgement needs a reference, not a hunch. Give students the mark scheme or an exemplar to compare their work against, so evaluation is anchored to a real standard.",
+        "tech": "exemplar shown beside own work",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "12",
+        "slug": "12-credit-the-method-not-the-gift",
+        "icon": "🔗",
+        "cluster": "reflect",
+        "category": "Self-Reflection & Evaluation",
+        "title": "Credit the Method, Not the Gift",
+        "summary": "Zimmerman: how students explain a result shapes the next attempt. Steer attribution toward the method used, which they can change, rather than fixed ability, which they cannot.",
+        "tech": "reflection prompt after results",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "13",
+        "slug": "13-turn-reflection-into-a-plan",
+        "icon": "🔄",
+        "cluster": "reflect",
+        "category": "Self-Reflection & Evaluation",
+        "title": "Turn Reflection Into a Plan",
+        "summary": "Butler: feedback only regulates learning if it changes the next action. Have students convert each reflection into one concrete adjustment they will make on the very next task.",
+        "tech": "action log carried forward",
+        "informed_by": "Butler"
+      },
+      {
+        "number": "14",
+        "slug": "14-compare-predicted-to-actual",
+        "icon": "📊",
+        "cluster": "reflect",
+        "category": "Self-Reflection & Evaluation",
+        "title": "Compare Predicted to Actual",
+        "summary": "Winne: calibration improves when students see the gap between expected and real scores. Have them predict a mark, then compare, so monitoring is corrected by evidence over time.",
+        "tech": "prediction logged before marking",
+        "informed_by": "Winne"
+      },
+      {
+        "number": "15",
+        "slug": "15-reflection-feeds-teaching",
+        "icon": "💬",
+        "cluster": "reflect",
+        "category": "Self-Reflection & Evaluation",
+        "title": "Reflection Feeds Teaching",
+        "summary": "Butler: self-regulation and instruction are a loop. Use what students notice about their own errors to decide what you reteach, so their reflection shapes the next lesson.",
+        "tech": "exit poll of common errors",
+        "informed_by": "Butler"
+      },
+      {
+        "number": "16",
+        "slug": "16-know-the-strategy-itself",
+        "icon": "📚",
+        "cluster": "strategy",
+        "category": "Strategy Knowledge & Use",
+        "title": "Know the Strategy Itself",
+        "summary": "Flavell: students cannot deploy a strategy they have never been taught. Teach retrieval, spacing or self-explanation explicitly as named methods before expecting independent use.",
+        "tech": "strategy reference sheet",
+        "informed_by": "Flavell"
+      },
+      {
+        "number": "17",
+        "slug": "17-know-when-to-use-each",
+        "icon": "🧰",
+        "cluster": "strategy",
+        "category": "Strategy Knowledge & Use",
+        "title": "Know When to Use Each",
+        "summary": "Winne: conditional knowledge, knowing which strategy suits which task, is what separates skilled learners. Teach not just the method but the cues that signal when it is the right one.",
+        "tech": "worked cases matched to methods",
+        "informed_by": "Winne"
+      },
+      {
+        "number": "18",
+        "slug": "18-fade-the-scaffold",
+        "icon": "🎓",
+        "cluster": "strategy",
+        "category": "Strategy Knowledge & Use",
+        "title": "Fade the Scaffold",
+        "summary": "Zimmerman: support must be withdrawn for self-regulation to develop. Move from modelled to guided to independent use, removing prompts as students show they no longer need them.",
+        "tech": "prompts gradually removed",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "19",
+        "slug": "19-keep-what-works-drop-the-rest",
+        "icon": "🧹",
+        "cluster": "strategy",
+        "category": "Strategy Knowledge & Use",
+        "title": "Keep What Works, Drop the Rest",
+        "summary": "Winne: learners refine an approach by checking whether it worked. Have students trial a study method, judge it against results, and keep only what the evidence supports.",
+        "tech": "method log with outcomes",
+        "informed_by": "Winne"
+      },
+      {
+        "number": "20",
+        "slug": "20-tie-strategies-to-content",
+        "icon": "💡",
+        "cluster": "strategy",
+        "category": "Strategy Knowledge & Use",
+        "title": "Tie Strategies to Content",
+        "summary": "Willingham: strategies do not float free of subjects. Teach each one inside the content it serves, so students learn to self-regulate this topic, not metacognition in the abstract.",
+        "tech": "subject-specific strategy banks",
+        "informed_by": "Willingham"
+      },
+      {
+        "number": "21",
+        "slug": "21-schedule-your-own-spacing",
+        "icon": "📅",
+        "cluster": "digital",
+        "category": "Digital Cognition",
+        "title": "Schedule Your Own Spacing",
+        "summary": "Regulating when you study is a planning act. Teach students to set their own calendar reminders to revisit topics over time, owning the spacing rather than waiting to be told.",
+        "tech": "calendar reminders for review",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "22",
+        "slug": "22-make-your-own-questions",
+        "icon": "🃏",
+        "cluster": "digital",
+        "category": "Digital Cognition",
+        "title": "Make Your Own Questions",
+        "summary": "Writing a good question forces you to judge what matters. Have students build low-stakes quizzes and flashcards from their own notes, so the tool supports retrieval they have authored.",
+        "tech": "self-built quizzes; flashcard app",
+        "informed_by": "Winne"
+      },
+      {
+        "number": "23",
+        "slug": "23-regulate-the-device-too",
+        "icon": "📱",
+        "cluster": "digital",
+        "category": "Digital Cognition",
+        "title": "Regulate the Device Too",
+        "summary": "Self-regulation now includes the screen. Teach students to use focus modes and silence alerts as a deliberate choice, regulating the tool so it serves attention instead of stealing it.",
+        "tech": "focus mode; app limits",
+        "informed_by": "Zimmerman"
+      },
+      {
+        "number": "24",
+        "slug": "24-partner-not-substitute",
+        "icon": "🤖",
+        "cluster": "digital",
+        "category": "Digital Cognition",
+        "title": "Partner, Not Substitute",
+        "summary": "Willingham: memory is the residue of thought. Offload the thinking to AI and nothing is learned. Have students use it to check and challenge their reasoning, not to do it for them.",
+        "tech": "AI as a critic of own work",
+        "informed_by": "Willingham"
+      }
+    ],
+    "slug": "metacognition-and-self-regulation",
+    "name": "Metacognition & Self-Regulation",
+    "number": "06"
+  }
+]

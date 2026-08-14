@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 Ways to Embed Effective Questioning and Discussion in Your Classroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", sans-serif; background: #00382e; width: 1400px; margin: 0 auto; }
+  .infographic { width: 1400px; background: linear-gradient(135deg, #00574a 0%, #00433a 50%, #00382e 100%); padding: 34px 40px 28px; position: relative; overflow: hidden; }
+  .infographic::before { content: ""; position: absolute; top: -160px; right: -120px; width: 520px; height: 520px; background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+  .infographic::after { content: ""; position: absolute; bottom: -120px; left: -120px; width: 440px; height: 440px; background: radial-gradient(circle, rgba(241,196,15,0.08) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; position: relative; z-index: 1; }
+  .header-left { display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1; }
+  .header-icon { width: 68px; height: 68px; flex-shrink: 0; }
+  .header-text h1 { font-family: "Exo 2", sans-serif; font-size: 29px; font-weight: 900; color: #ffffff; line-height: 1.1; letter-spacing: -0.5px; }
+  .header-text .subtitle { font-size: 11px; color: rgba(255,255,255,0.82); font-family: "Poppins", sans-serif; margin-top: 5px; font-weight: 400; }
+  .header-text .scholars { font-size: 10px; color: rgba(255,255,255,0.82); font-family: "Poppins", sans-serif; margin-top: 3px; font-weight: 400; }
+  .header-text .quote { font-size: 11px; color: #ffffff; font-style: italic; margin-top: 4px; font-weight: 500; font-family: "Poppins", sans-serif; }
+  .header-badge { background: rgba(241,196,15,0.15); border: 2px solid #f1c40f; border-radius: 12px; padding: 10px 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.3); flex-shrink: 0; width: 115px; }
+
+  .legend { display: flex; flex-wrap: nowrap; gap: 20px; margin-bottom: 12px; position: relative; z-index: 1; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #ffffff; font-weight: 600; white-space: nowrap; font-family: "Poppins", sans-serif; }
+  .legend-dot { width: 13px; height: 13px; border-radius: 4px; flex-shrink: 0; }
+  .legend-dot.quality  { background: #e53935; }
+  .legend-dot.wait     { background: #f57c00; }
+  .legend-dot.equity   { background: #7b1fa2; }
+  .legend-dot.dialogic { background: #1565c0; }
+  .legend-dot.student  { background: #2e7d32; }
+
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; position: relative; z-index: 1; align-items: stretch; }
+
+  .card { border-radius: 10px; padding: 10px 10px 9px; position: relative; display: flex; flex-direction: column; }
+  .card-number { position: absolute; top: 7px; right: 8px; font-family: "Exo 2", sans-serif; font-size: 10px; font-weight: 800; opacity: 0.3; color: #1a1a1a; }
+  .card-icon { font-size: 19px; line-height: 1; height: 22px; display: flex; align-items: center; margin-bottom: 4px; flex-shrink: 0; }
+  .card-category { font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #1a1a1a; opacity: 0.55; line-height: 11px; margin-bottom: 3px; flex-shrink: 0; }
+  .card-title { font-family: "Exo 2", sans-serif; font-size: 11px; font-weight: 800; color: #1a1a1a; line-height: 1.3; margin-bottom: 5px; flex-shrink: 0; }
+  .card-desc { font-size: 9px; color: #1a1a1a; line-height: 1.45; font-weight: 400; margin-bottom: 6px; height: 70px; overflow: hidden; flex-shrink: 0; }
+  .card-meta { display: flex; flex-direction: column; gap: 2px; margin-top: auto; flex-shrink: 0; }
+  .meta-chip { display: flex; align-items: center; gap: 3px; background: rgba(255,255,255,0.55); border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; padding: 1px 5px; height: 14px; font-size: 7.5px; font-family: "Inter", sans-serif; font-weight: 500; color: #1a1a1a; white-space: nowrap; overflow: hidden; }
+  .meta-label { font-size: 6.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #000; opacity: 0.45; flex-shrink: 0; }
+
+  .cat-quality  { background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border: 1px solid rgba(229,57,53,0.25); border-left: 4px solid #e53935; }
+  .cat-wait     { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border: 1px solid rgba(245,124,0,0.25); border-left: 4px solid #f57c00; }
+  .cat-equity   { background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border: 1px solid rgba(123,31,162,0.25); border-left: 4px solid #7b1fa2; }
+  .cat-dialogic { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border: 1px solid rgba(21,101,192,0.25); border-left: 4px solid #1565c0; }
+  .cat-student  { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border: 1px solid rgba(46,125,50,0.25); border-left: 4px solid #2e7d32; }
+
+  .footer { display: flex; align-items: flex-start; justify-content: space-between; margin-top: 14px; padding-top: 10px; border-top: 2px solid rgba(255,255,255,0.3); position: relative; z-index: 1; gap: 20px; }
+  .footer-left { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .footer-motto { font-family: "Exo 2", sans-serif; font-size: 11.5px; font-weight: 800; color: #ffffff; }
+  .footer-motto span { color: #f1c40f; text-transform: uppercase; }
+  .footer-research { font-size: 9.5px; color: rgba(255,255,255,0.82); font-weight: 400; font-family: "Poppins", sans-serif; }
+  .footer-cta { font-size: 9.5px; color: rgba(255,255,255,0.82); font-weight: 400; margin-top: 1px; font-family: "Poppins", sans-serif; }
+  .footer-cta a { color: #f1c40f; font-weight: 600; text-decoration: none; }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; min-width: 180px; }
+  .footer-created-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.65); font-family: "Poppins", sans-serif; }
+  .footer-author { font-family: "Exo 2", sans-serif; font-size: 20px; font-weight: 900; line-height: 1.1; color: #f1c40f; }
+</style>
+</head>
+<body>
+<div class="infographic">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" width="68" height="68">
+        <rect width="68" height="68" rx="12" fill="rgba(255,255,255,0.1)"/>
+        <circle cx="22" cy="26" r="12" fill="#f1c40f" stroke="#ffffff" stroke-width="1.5"/>
+        <path d="M17 26 Q22 20 27 26 Q22 32 17 26Z" fill="#00433a"/>
+        <circle cx="22" cy="26" r="3" fill="#ffffff"/>
+        <circle cx="46" cy="38" r="12" fill="#e6b800" stroke="#ffffff" stroke-width="1.5"/>
+        <path d="M41 38 Q46 32 51 38 Q46 44 41 38Z" fill="#00433a"/>
+        <circle cx="46" cy="38" r="3" fill="#ffffff"/>
+        <path d="M33 28 L35 36" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2,2"/>
+      </svg>
+      <div class="header-text">
+        <h1>24 Ways to Embed Effective <span style="color:#f1c40f;">Questioning &amp; Discussion</span> in Your Classroom</h1>
+        <p class="subtitle">Evidence-informed strategies, with or without technology &nbsp;&#183;&nbsp; Rooted in cognitive and educational research</p>
+        <p class="scholars">Rooted in the work of Anderson &amp; Krathwohl, Dillon, Hattie &amp; Zierer, Rowe, Tobin, Lyman, Wiliam, Good &amp; Brophy, Alexander, Mercer, Michaels, O&#8217;Connor &amp; Resnick, and King</p>
+        <p class="quote">&#8220;Classroom talk is the most pervasive but arguably the least examined tool in any teacher&#8217;s repertoire.&#8221; &#8212; Robin Alexander</p>
+      </div>
+    </div>
+    <div class="header-badge">
+      <div style="text-align:center;">
+        <div style="font-family:'Poppins',sans-serif; font-size:15px; font-weight:600; color:#f1c40f; line-height:1.1; margin-bottom:4px;">Pedagogy<br>First</div>
+        <div style="font-size:8px; font-weight:700; color:#ffffff; text-transform:uppercase; letter-spacing:0.5px; line-height:1.5;">24 Strategies to<br>Try Today</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot quality"></div>The Quality of Questions</div>
+    <div class="legend-item"><div class="legend-dot wait"></div>Wait Time &amp; Thinking Space</div>
+    <div class="legend-item"><div class="legend-dot equity"></div>Participation &amp; Equity</div>
+    <div class="legend-item"><div class="legend-dot dialogic"></div>Dialogic Teaching &amp; Discussion</div>
+    <div class="legend-item"><div class="legend-dot student"></div>Student-Generated Questions</div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <!-- CATEGORY 1: THE QUALITY OF QUESTIONS (5 cards) -->
+
+    <div class="card cat-quality">
+      <span class="card-number">01</span>
+      <div class="card-icon">&#128269;</div>
+      <div class="card-category">The Quality of Questions</div>
+      <div class="card-title">Questions That Make Thinking Visible</div>
+      <div class="card-desc">Anderson and Krathwohl map six levels: remembering, understanding, applying, analysing, evaluating, creating. These are not a hierarchy of worth. Recall is foundational, not inferior.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> question bank or lesson planning tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Anderson &amp; Krathwohl</span>
+      </div>
+    </div>
+
+    <div class="card cat-quality">
+      <span class="card-number">02</span>
+      <div class="card-icon">&#128200;</div>
+      <div class="card-category">The Quality of Questions</div>
+      <div class="card-title">Surface, Deep and Transfer</div>
+      <div class="card-desc">Hattie and Zierer distinguish surface (what), deep (why) and transfer questions. Each serves a different stage. Reaching transfer before surface is secure sets students up to fail.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> discussion prompt or slide display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Hattie &amp; Zierer</span>
+      </div>
+    </div>
+
+    <div class="card cat-quality">
+      <span class="card-number">03</span>
+      <div class="card-icon">&#10067;</div>
+      <div class="card-category">The Quality of Questions</div>
+      <div class="card-title">Open Questions Demand More</div>
+      <div class="card-desc">Dillon found genuine open questions, where the teacher does not know the answer, produce the most extended student reasoning. Not every question needs a predetermined destination.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared whiteboard or discussion board</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Dillon</span>
+      </div>
+    </div>
+
+    <div class="card cat-quality">
+      <span class="card-number">04</span>
+      <div class="card-icon">&#128161;</div>
+      <div class="card-category">The Quality of Questions</div>
+      <div class="card-title">Plan Questions Before the Lesson</div>
+      <div class="card-desc">Improvised questions default to recall, not because recall is wrong but because planning stops there. Anderson and Krathwohl works as a planning tool: write questions at every level.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> lesson planning or slide preparation tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Anderson &amp; Krathwohl</span>
+      </div>
+    </div>
+
+    <div class="card cat-quality">
+      <span class="card-number">05</span>
+      <div class="card-icon">&#128483;</div>
+      <div class="card-category">The Quality of Questions</div>
+      <div class="card-title">Alternatives to Questions</div>
+      <div class="card-desc">Dillon found statements and silence elicit richer responses than questions. Try: Tell me more. I had not considered that. Not every probe needs to end with a question mark.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> discussion or annotation tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Dillon</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: WAIT TIME AND THINKING SPACE (4 cards) -->
+
+    <div class="card cat-wait">
+      <span class="card-number">06</span>
+      <div class="card-icon">&#9200;</div>
+      <div class="card-category">Wait Time &amp; Thinking Space</div>
+      <div class="card-title">Wait Time 1: After You Ask</div>
+      <div class="card-desc">Rowe found most teachers wait under one second before speaking. Extending to three seconds increases the length and complexity of responses. Silence is thinking, not a gap to fill.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> timer or countdown display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rowe</span>
+      </div>
+    </div>
+
+    <div class="card cat-wait">
+      <span class="card-number">07</span>
+      <div class="card-icon">&#128336;</div>
+      <div class="card-category">Wait Time &amp; Thinking Space</div>
+      <div class="card-title">Wait Time 2: After a Student Speaks</div>
+      <div class="card-desc">Rowe identified a second wait time: the pause after a student responds. Three seconds prompts elaboration and self-correction. Silence after an answer signals that more is expected.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> live polling or response capture tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rowe</span>
+      </div>
+    </div>
+
+    <div class="card cat-wait">
+      <span class="card-number">08</span>
+      <div class="card-icon">&#128221;</div>
+      <div class="card-category">Wait Time &amp; Thinking Space</div>
+      <div class="card-title">Write Before You Speak</div>
+      <div class="card-desc">Ask students to write before any verbal response is taken. Writing prevents the quickest from foreclosing others&#8217; thinking. The pen democratises the room before the voice takes over.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared doc, whiteboard or response tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Tobin; Rowe</span>
+      </div>
+    </div>
+
+    <div class="card cat-wait">
+      <span class="card-number">09</span>
+      <div class="card-icon">&#128101;</div>
+      <div class="card-category">Wait Time &amp; Thinking Space</div>
+      <div class="card-title">Think-Pair-Share</div>
+      <div class="card-desc">Lyman&#8217;s think-pair-share gives every student thinking time before public exposure. Pairs test ideas with a peer first. The result is more considered and more substantive discussion.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> partner chat tool or response system</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Lyman</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 3: PARTICIPATION AND EQUITY (4 cards) -->
+
+    <div class="card cat-equity">
+      <span class="card-number">10</span>
+      <div class="card-icon">&#9995;</div>
+      <div class="card-category">Participation &amp; Equity</div>
+      <div class="card-title">Hands Down</div>
+      <div class="card-desc">Wiliam shows hand-raising distorts who answers. A small group volunteers repeatedly; the rest disengage. Remove hands and direct to named students. Every student should be asked.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> random name picker or class list tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-equity">
+      <span class="card-number">11</span>
+      <div class="card-icon">&#127922;</div>
+      <div class="card-category">Participation &amp; Equity</div>
+      <div class="card-title">Cold Call Without Threat</div>
+      <div class="card-desc">Good and Brophy showed differential questioning reinforces attainment gaps. Direct questions are equitable only when the climate supports it. Norms: no wrong attempts, only thinking.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> random selector or seating plan tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Good &amp; Brophy; Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-equity">
+      <span class="card-number">12</span>
+      <div class="card-icon">&#128202;</div>
+      <div class="card-category">Participation &amp; Equity</div>
+      <div class="card-title">Track Who You Ask</div>
+      <div class="card-desc">Good and Brophy found teachers direct harder questions to higher-attaining students. Track participation across lessons. Patterns invisible in the moment become visible on paper.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> participation tracker or tally tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Good &amp; Brophy</span>
+      </div>
+    </div>
+
+    <div class="card cat-equity">
+      <span class="card-number">13</span>
+      <div class="card-icon">&#127919;</div>
+      <div class="card-category">Participation &amp; Equity</div>
+      <div class="card-title">Pose, Pause, Pounce, Bounce</div>
+      <div class="card-desc">Wiliam&#8217;s PPPB: pose the question, pause, direct to one student, then bounce the answer to another. The bounce keeps all students alert and spreads thinking across the whole room.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> display timer; random name tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 4: DIALOGIC TEACHING AND DISCUSSION (6 cards) -->
+
+    <div class="card cat-dialogic">
+      <span class="card-number">14</span>
+      <div class="card-icon">&#128172;</div>
+      <div class="card-category">Dialogic Teaching &amp; Discussion</div>
+      <div class="card-title">Five Principles of Dialogic Talk</div>
+      <div class="card-desc">Alexander identifies five qualities of dialogic talk: collective, reciprocal, supportive, cumulative and purposeful. Most talk meets two or three of these. Audit and start with the gaps.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> lesson observation or reflection tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Alexander</span>
+      </div>
+    </div>
+
+    <div class="card cat-dialogic">
+      <span class="card-number">15</span>
+      <div class="card-icon">&#9654;&#65039;</div>
+      <div class="card-category">Dialogic Teaching &amp; Discussion</div>
+      <div class="card-title">Break the IRE Pattern</div>
+      <div class="card-desc">IRE (Initiation, Response, Evaluation): ask, answer, judge. Alexander shows this pattern limits thinking. Replace evaluation with a follow-up question. What makes you say that?</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> video reflection or lesson capture tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Alexander; Mercer</span>
+      </div>
+    </div>
+
+    <div class="card cat-dialogic">
+      <span class="card-number">16</span>
+      <div class="card-icon">&#128483;</div>
+      <div class="card-category">Dialogic Teaching &amp; Discussion</div>
+      <div class="card-title">Exploratory Talk</div>
+      <div class="card-desc">Mercer distinguishes disputational, cumulative and exploratory talk. Only exploratory talk, where students challenge ideas with evidence and build on each thinking, improves outcomes.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> collaborative doc or discussion tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mercer</span>
+      </div>
+    </div>
+
+    <div class="card cat-dialogic">
+      <span class="card-number">17</span>
+      <div class="card-icon">&#128218;</div>
+      <div class="card-category">Dialogic Teaching &amp; Discussion</div>
+      <div class="card-title">Ground Rules for Talk</div>
+      <div class="card-desc">Mercer found teaching norms of exploratory talk transforms discussion. Norms co-constructed with the class outperform those displayed or modelled. Make the ground rules together.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared doc or display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mercer</span>
+      </div>
+    </div>
+
+    <div class="card cat-dialogic">
+      <span class="card-number">18</span>
+      <div class="card-icon">&#128104;&#8205;&#127979;</div>
+      <div class="card-category">Dialogic Teaching &amp; Discussion</div>
+      <div class="card-title">Accountable Talk</div>
+      <div class="card-desc">Michaels, O&#8217;Connor and Resnick hold students to accurate knowledge and rigorous reasoning. Teach moves: I agree because..., The evidence is..., Say more.... Language shapes thinking.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> discussion sentence starter display</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Michaels, O&#8217;Connor &amp; Resnick</span>
+      </div>
+    </div>
+
+    <div class="card cat-dialogic">
+      <span class="card-number">19</span>
+      <div class="card-icon">&#128257;</div>
+      <div class="card-category">Dialogic Teaching &amp; Discussion</div>
+      <div class="card-title">Build on Student Responses</div>
+      <div class="card-desc">Alexander&#8217;s EEF programme showed gains when teachers extended rather than evaluated. Return an answer: Aisha says X. Does anyone want to add or challenge? Conductor, not judge.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> live display or response capture tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Alexander</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 5: STUDENT-GENERATED QUESTIONS (5 cards) -->
+
+    <div class="card cat-student">
+      <span class="card-number">20</span>
+      <div class="card-icon">&#9997;&#65039;</div>
+      <div class="card-category">Student-Generated Questions</div>
+      <div class="card-title">Teach Question Stems</div>
+      <div class="card-desc">King found students trained to generate questions using stems produce richer discussion than those answering only teacher questions. Generating questions demands deeper processing.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> question stem cards or display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> King</span>
+      </div>
+    </div>
+
+    <div class="card cat-student">
+      <span class="card-number">21</span>
+      <div class="card-icon">&#128101;</div>
+      <div class="card-category">Student-Generated Questions</div>
+      <div class="card-title">Reciprocal Peer Questioning</div>
+      <div class="card-desc">King&#8217;s reciprocal questioning has students generate and pose questions to each other, with neither knowing the answer. This produces genuine enquiry rather than rehearsal. Aim to think.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> pair chat or response tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> King</span>
+      </div>
+    </div>
+
+    <div class="card cat-student">
+      <span class="card-number">22</span>
+      <div class="card-icon">&#128270;</div>
+      <div class="card-category">Student-Generated Questions</div>
+      <div class="card-title">Questions as Evidence of Understanding</div>
+      <div class="card-desc">A student&#8217;s question reveals the depth of their understanding. Ask for one written question before leaving. Why does X cause Y? shows far more than What is X?. Questions are windows.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> exit ticket or response tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> King; Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-student">
+      <span class="card-number">23</span>
+      <div class="card-icon">&#128172;</div>
+      <div class="card-category">Student-Generated Questions</div>
+      <div class="card-title">Interthinking Through Questions</div>
+      <div class="card-desc">Mercer&#8217;s interthinking describes shared cognition built through language. Student questions sustain joint enquiry. The goal is thinking in common, not performance for the teacher.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> collaborative discussion or writing tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Mercer</span>
+      </div>
+    </div>
+
+    <div class="card cat-student">
+      <span class="card-number">24</span>
+      <div class="card-icon">&#128196;</div>
+      <div class="card-category">Student-Generated Questions</div>
+      <div class="card-title">Questions That Drive Enquiry</div>
+      <div class="card-desc">King found connecting questions to prior knowledge produces the most powerful learning. Ask students to write what they know and want to know. Their questions become the entry point.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared doc, padlet or survey tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> King</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-motto"><span>Pedagogy first, technology second.</span> Always.</div>
+      <div class="footer-research">Rooted in the work of Anderson &amp; Krathwohl, Dillon, Hattie &amp; Zierer, Rowe, Tobin, Lyman, Wiliam, Good &amp; Brophy, Alexander, Mercer, Michaels, O&#8217;Connor &amp; Resnick, and King</div>
+      <div class="footer-cta">Want to work together? <a href="https://ictevangelist.com">ictevangelist.com</a></div>
+    </div>
+    <div class="footer-right">
+      <svg width="112" height="24" viewBox="0 0 112 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:3px;">
+        <circle cx="12" cy="12" r="11" fill="rgba(241,196,15,0.2)" stroke="#f1c40f" stroke-width="0.8"/>
+        <text x="12" y="16" text-anchor="middle" font-size="8.5" fill="#f1c40f" font-family="Arial,sans-serif" font-weight="800">CC</text>
+        <circle cx="40" cy="12" r="11" fill="rgba(241,196,15,0.2)" stroke="#f1c40f" stroke-width="0.8"/>
+        <text x="40" y="16" text-anchor="middle" font-size="8.5" fill="#f1c40f" font-family="Arial,sans-serif" font-weight="800">BY</text>
+        <circle cx="68" cy="12" r="11" fill="rgba(241,196,15,0.2)" stroke="#f1c40f" stroke-width="0.8"/>
+        <text x="68" y="16" text-anchor="middle" font-size="8.5" fill="#f1c40f" font-family="Arial,sans-serif" font-weight="800">NC</text>
+        <circle cx="96" cy="12" r="11" fill="rgba(241,196,15,0.2)" stroke="#f1c40f" stroke-width="0.8"/>
+        <text x="96" y="16" text-anchor="middle" font-size="8.5" fill="#f1c40f" font-family="Arial,sans-serif" font-weight="800">SA</text>
+      </svg>
+      <div class="footer-created-label">Created by</div>
+      <div class="footer-author">Mark Anderson</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

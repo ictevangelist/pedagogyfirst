@@ -1,0 +1,181 @@
+{
+  "front": {
+    "why": {
+      "standfirst": "Why I made these.",
+      "paragraphs": [
+        "When I work with schools, before I arrive, the pattern is familiar. Technology not making the impact it should be. Tools often chosen for their features rather than careful thinking about how they solve a problem or serve learning. Effort and budget spent, without much impact in the classroom.",
+        "What changes the picture is the order. Start with the pedagogy, work out what the learning or teaching actually needs, and then consider whether a technology helps. It sounds obvious, but it is the step most often skipped. When the schools I work with get this right, outcomes improve, for teachers and for students alike. That is the thread running through all six guides here.",
+        "A consommé takes far more work than opening a tin of soup, and the result looks deceptively simple. What reads as a single page of strategies in these infographics took a great deal of thinking and practice, refined into something you can use, like an edu-consommé, if you will.",
+        "Explore the ideas, and see if they’re right for your classroom."
+      ]
+    },
+    "idea": {
+      "standfirst": "Technology should enhance teaching and learning, not dictate teaching and learning.",
+      "paragraphs": [
+        "When used well, technology helps us go further.",
+        "This guide has been a real passion project, combining the ideas of cognitive science with the desire to use technology effectively.",
+        "Exploring retrieval practice, formative assessment, feedback, questioning and discussion, explanations and modelling, and metacognition and self-regulation, this guide aims to reinforce the important point that when considering technology use in the classroom, it is a teaching and learning consideration, not a technology consideration. Careful, considered, cognisant choices mean we should choose to use technology when it serves a purpose that helps with learning or teaching. It’s important to remember that sometimes, a mini whiteboard beats anything that needs Wi-Fi and/or a battery."
+      ]
+    },
+    "how": {
+      "standfirst": "How to use this guide.",
+      "paragraphs": [
+        "This guide brings together the six Pedagogy First, Technology Second infographics shared through my blog, and adds the thinking behind them. You can download each individual infographic from Use this version to read, search, select from and support professional learning.",
+        "THE SIX GUIDES ONLINE Click or tap any guide to open it on the blog.",
+        "› Retrieval Practice & Memory › Formative Assessment › Feedback › Questioning & Discussion › Explanations & Modelling › Metacognition & Self-Regulation Start with the classroom need: choose the section that matches the problem you are trying to solve.1 Use the strategy pages as prompts: pick one or two ideas, try them deliberately, and adapt them to your context.2 Read the thinking pages for the why: use the evidence-informed ideas to support better professional judgement.3"
+      ]
+    }
+  },
+  "chapters": {
+    "retrieval-practice": {
+      "opener": {
+        "standfirst": "The act of pulling knowledge out of memory does more for learning than putting it back in. This chapter is about making that effort happen, on purpose, again and again.",
+        "attribution": "",
+        "is_quote": false
+      },
+      "thinking": {
+        "standfirst": "Forgetting is not the enemy of learning. It is the condition that makes learning stick.",
+        "paragraphs": [
+          "Robert Bjork’s idea of desirable difficulties turned what we considered intuitive on its head. The conditions that make learning feel hard and slow in the moment, spacing it out, mixing it up, testing instead of reviewing, are often the very conditions that make it last. The conditions that feel smooth and productive, rereading and massed practice, mostly produce confidence without retention.",
+          "That is why this chapter is built around the testing effect rather than around revision. Roediger and Karpicke showed that students who were tested on material remembered far more, weeks later, than students who restudied it for the same time. Dunlosky’s reviews then sorted the techniques that help most.",
+          "The strategies that feel least efficient in the lesson are often the ones doing the most helpful work; don’t discount them."
+        ]
+      },
+      "practice": {
+        "standfirst": "A retrieval tool is only as good as the thinking it provokes. The effort has to stay with the learner.",
+        "paragraphs": [
+          "EdTech is genuinely brilliant for retrieval practice when it makes regular recall simple, rather than one which does the thinking for the students. Low-stakes platforms let you run quick, two- minute starters every lesson with zero marking. Spaced repetition tools automatically revisit older topics at the right intervals. This perfectly matches the research, saving you the headache of tracking it manually.",
+          "Ultimately, retrieval is not a game show. If a tool feels like a fastest finger first round, giving answers too quickly or valuing speed over deep thought, it removes the desirable difficulty that makes the practice worthwhile.",
+          "Use technology to help manage the activity, but never the struggle for learners. The retrieval effort is the important part, not the admin around it."
+        ]
+      }
+    },
+    "formative-assessment": {
+      "opener": {
+        "standfirst": "The term formative should apply not to the assessment but to the function that the evidence generated by the assessment actually serves.",
+        "attribution": "Dylan Wiliam, Assessment: The Bridge between Teaching and Learning, 2013",
+        "is_quote": true
+      },
+      "thinking": {
+        "standfirst": "If it does not change what you do next, it was not formative. It was just a test with a kinder name.",
+        "paragraphs": [
+          "Dylan Wiliam and Paul Black’s work were obviously my ‘go to’ for this chapter, because it answers the only three questions assessment exists to serve: where is the learner going, where are they now, and what closes the gap. The strategies I’ve shared in this section aim to move assessment out of the marking pile and into the lesson itself, where it can help teaching in the moment.",
+          "The most difficult, and this is where technology can often help, is the most powerful: eliciting evidence from every student, not just the confident few."
+        ]
+      },
+      "practice": {
+        "standfirst": "Technology can make every learner visible at once. That is its real contribution to assessment.",
+        "paragraphs": [
+          "The classic weakness of classroom questioning is that you hear from a handful of pupils and make assumptions about the rest. Polling tools, mini whiteboards and simple response systems help take much of that problem away by gathering a response from everyone at the same time. That turns a rough feel for the room into something much closer to evidence.",
+          "But evidence is only useful when you act on it. A tool that shows you a bar chart of misconceptions has done nothing until it changes what you do in the next five minutes because of what it shows."
+        ]
+      }
+    },
+    "feedback": {
+      "opener": {
+        "standfirst": "Feedback is too often treated as another word for marking. It isn’t. Good feedback gives pupils information they can use to improve what they do next, and that is a far higher bar than writing a comment in the margin.",
+        "attribution": "",
+        "is_quote": false
+      },
+      "thinking": {
+        "standfirst": "Feedback is not what the teacher gives. It is what the learner does with it.",
+        "paragraphs": [
+          "Hattie and Timperley’s work showed us that feedback can have a powerful effect on achievement, but it is not automatically useful. Some feedback helps, some does very little, and some can make things worse.",
+          "Sadler’s work found the important bit that is often missed. Feedback only works when learners understand what quality looks like, can compare their work against it, and know how to close the gap. Nicol and Macfarlane Dick took this further by placing feedback within self-regulation, helping pupils become better at judging and improving their own work.",
+          "Butler’s study is a useful warning too. When grades sit alongside comments, pupils often look at the grade and miss the guidance."
+        ]
+      },
+      "practice": {
+        "standfirst": "Technology can make feedback faster. That only matters if pupils use it.",
+        "paragraphs": [
+          "Digital annotation, audio comments and shared documents can shorten the gap between work and response to almost nothing. That matters. Feedback given while the work is still fresh has a far better chance of shaping what pupils do next than feedback returned two weeks later.",
+          "Used well, the same tools also make whole-class feedback more manageable. You can spot common patterns, address them quickly, and avoid writing the same comment thirty times.",
+          "The trap is automated feedback that gives a score, a tick, or a badge and stops there. That may be useful information, but it is ultimately unhelpful. Feedback earns its keep when pupils have time to think, improve, redraft, correct, compare or try again.",
+          "The win is not faster feedback. The win is better work because pupils had time to use it."
+        ]
+      }
+    },
+    "questioning-and-discussion": {
+      "opener": {
+        "standfirst": "The questions a teacher asks, and the talk they allow to follow, shape what thinking happens in a room.",
+        "attribution": "",
+        "is_quote": false
+      },
+      "thinking": {
+        "standfirst": "A classroom runs on its questions. Change the questions and you change the thinking.",
+        "paragraphs": [
+          "Robin Alexander’s work on dialogic teaching showed us that talk is not the decoration around learning, it is often the medium of it. The problem is that classroom talk can easily become too thin, too quick, and too dependent on the teacher.",
+          "Neil Mercer’s work on exploratory talk helps here, because it shows what better classroom discussion looks like when pupils reason together, build on each other’s ideas and make their thinking public. Mary Budd Rowe’s work on wait time adds another important reminder: a few seconds of silence after a question can change the quality of what follows.",
+          "The strategies in this section move from better questions to better talk to the routines that help every voice count.",
+          "Silence after a question is not dead air; it is where better thinking often begins."
+        ]
+      },
+      "practice": {
+        "standfirst": "Technology can widen who gets to speak, but the thinking still has to belong to the student.",
+        "paragraphs": [
+          "Anonymous response tools, shared documents and structured digital discussion can bring in students who might never raise a hand. That matters. They also give the class something to come back to, so a useful conversation does not disappear the moment the lesson moves on.",
+          "The risk, especially with AI, is that the tool answers the question students should be wrestling with. A good question slows thinking down. It gives students something to try, explain, challenge, refine and improve. When the tool removes that struggle, it can remove the learning too.",
+          "Use technology to bring more voices into the room, not to take the thinking out of it."
+        ]
+      }
+    },
+    "explanations-and-modelling": {
+      "opener": {
+        "standfirst": "Telling is not explaining, and showing is not modelling. This chapter is about helping teaching work framed around how attention and memory actually work.",
+        "attribution": "",
+        "is_quote": false
+      },
+      "thinking": {
+        "standfirst": "Telling is not explaining. An explanation has to be built for the mind that receives it.",
+        "paragraphs": [
+          "Telling is not explaining. We’ve learned through Rosenshine’s principles of instruction that distilled decades of research on effective teaching into a sequence that small steps, worked examples, checks for understanding, and scaffolds are removed as competence grows, helps.",
+          "Sweller’s cognitive load theory explained why this works, because working memory is narrow and easily overwhelmed, and good explanation manages that load rather than ignoring it.",
+          "Mayer’s multimedia principles then show how words and images should be combined, and how they should not.",
+          "I’ve integrated technology throughout the various categories, sharing ideas on how it can be used, when appropriate. Technology can often help, but it isn’t always the answer. You’ll always know your students better than anyone else, so keep them and your classes, front and centre in your thinking.",
+          "Working memory can overload. When explaining things with your class, it’s important to remember your role is often an act of load management."
+        ]
+      },
+      "practice": {
+        "standfirst": "Explanations and modelling are key to learning. Done well, the impact is signiﬁcant, but it isn’t as simple as just showing content and talking about it...",
+        "paragraphs": [
+          "Visualisers, screen recording and well-designed slides can help you model thinking step by step and replay it, which suits the way novices need to see a process unfold. Paivio laid it all out for us with dual coding theory, Sweller gave us cognitive load theory, and Mayer took these to give us the cognitive theory of multimedia learning. From this, we know to narrate a diagram rather than captioning it, cut the decorative extras, and never make the eye choose between competing sources at once.",
+          "The commonest mistake is the busy slide that feels rich but teaches little, because it forces split attention precisely when the explanation needs space. Design the explanation for how attention works. Pedagogy sets the rules; tech supports and enhances but doesn’t replace or offload.",
+          "Use technology to support explanation and modelling, never to replace or become the process.",
+          "Pedagogy informs the approach; technology enhances and supports."
+        ]
+      }
+    },
+    "metacognition-and-self-regulation": {
+      "opener": {
+        "standfirst": "Students who can orchestrate their own thinking processes consistently outperform those who cannot. This chapter explores how to cultivate that ability explicitly, ensuring self-regulation is a taught skill rather than a fortunate byproduct. It involves empowering learners to dissect the challenge, select the right cognitive tools, evaluate their ongoing progress, and pivot effectively when obstacles arise.",
+        "attribution": "",
+        "is_quote": false
+      },
+      "thinking": {
+        "standfirst": "Self-regulation is not something pupils simply pick up by being told to reﬂect. It has to be taught, modelled, practised and gradually handed over.",
+        "paragraphs": [
+          "Zimmerman’s work showed us that self-regulation is a cycle, not a fixed trait. Learners look ahead, choose a strategy, monitor how it is going, then use what they notice to improve the next attempt. Flavell’s work gave us the language of metacognition, helping us see that pupils can become more aware of their own thinking. Winne took this further by showing how learners should monitor and adjust while the work is happening, not just after it is finished.",
+          "This is where technology can help, when it is used intentionally (and that’s the point). Digital tools can help pupils plan, track, reflect and improve. Used poorly, students can offload their thinking, weakening the very capacity we are trying to build.",
+          "Reflection only earns the name metacognition when it changes what the learner does next."
+        ]
+      },
+      "practice": {
+        "standfirst": "Technology can scaffold self-regulation, or it can quietly do the regulating for the student.",
+        "paragraphs": [
+          "Learning journals, planning tools and progress dashboards can make invisible thinking visible, prompting students to set goals, check progress and adjust, which is the Zimmerman cycle made concrete. Used deliberately, these supports are scaffolds: present while the habit forms, then faded as the learner takes over.",
+          "The risk is a tool that monitors and corrects so smoothly that the student never has to, removing the very work that builds the capacity. A guide that hands you the answer makes you dependent on the guide.",
+          "Scaffold the regulation, then fade the scaffold. The goal is a learner who no longer needs the tool."
+        ]
+      }
+    }
+  },
+  "closing": {
+    "standfirst": "Six resources, grounded in the cognitive science of teaching and learning.",
+    "paragraphs": [
+      "Each guide is built around what the research actually says, not what happens to be trending.",
+      "The aim was never to show off what technology can do. It was to start with the teaching, work out what genuinely helps learning, and only then ask where a tool might serve that purpose.",
+      "Sometimes it does, and sometimes the best thing in the room has no battery in it at all.",
+      "What looks like a single page of strategies sits on top of decades of classroom practice, leadership, research reading and applied work. That is the point of a distillation: the simplicity on the surface is earned by the depth underneath. Use these ideas, adapt them, argue with them, and make them your own."
+    ]
+  }
+}
