@@ -7,10 +7,10 @@ Expansions for each of the 24 strategies on the infographic.
 EXPANSIONS = {
     "01": {
         "what": "Marking is what you do to a piece of work. Feedback is what the student does next as a result. If nothing happens after the comment, you have marked.",
-        "why": "Wiliam's distinction matters because most workload debates are about marking while most learning gains come from the response. A comment that is never read, or read and not acted on, has cost you time and changed nothing. Planning the response before you write the comment reverses the usual order and is far more efficient.",
+        "why": "Wiliam's distinction matters because most workload debates are about marking while most learning gains come from the response. A comment that's never read, or read and not acted on, has cost you time and changed nothing. Planning the response before you write the comment reverses the usual order and is far more efficient.",
         "how": [
             "Before marking a set, decide how students will engage with what you write.",
-            "Timetable that engagement. If there is no slot for it, do not write the comments.",
+            "Timetable that engagement. If there's no slot for it, don't write the comments.",
             "Give a specific action, not a judgement.",
             "Check the actions happened. This is the step that makes students take the rest seriously.",
         ],
@@ -19,24 +19,24 @@ EXPANSIONS = {
     },
     "02": {
         "what": "Every piece of feedback should answer three questions: where am I going, how am I doing, and what do I do next. Most feedback answers only the middle one.",
-        "why": "Hattie and Timperley's model is useful precisely because it exposes the imbalance. Comments cluster around evaluation of the current work. Without the goal restated, the student cannot judge the gap; without the next step, they cannot close it. All three together turn a comment into something actionable.",
+        "why": "Hattie and Timperley's model is useful precisely because it exposes the imbalance. Comments cluster around evaluation of the current work. Without the goal restated, the student can't judge the gap; without the next step, they can't close it. All three together turn a comment into something actionable.",
         "how": [
             "Check any comment against all three before it goes back.",
             "Feed up can be brief: a reference to the shared criteria is enough.",
             "Feed back should point at evidence in the work, not offer a general impression.",
             "Feed forward should be one specific thing to do, not a list.",
         ],
-        "tech": "A structured feedback template with three prompts makes the omission visible while you are writing, which is when it can be fixed.",
+        "tech": "A structured feedback template with three prompts makes the omission visible while you're writing, which is when it can be fixed.",
         "watch": "Three sections becoming three sentences of filler is worse than one good sentence. The structure is a check, not a quota.",
     },
     "03": {
         "what": "Feedback lands at one of four levels: the task, the process, the student's self-regulation, or the person. The first three help. The fourth does not.",
-        "why": "Hattie and Timperley found task and process feedback most effective for improving work, self-regulation feedback powerful for developing independent learners, and self-level feedback, praise directed at the person, largely ineffective and sometimes harmful. Naming which level you are aiming at before you write is a fast way to raise the quality.",
+        "why": "Hattie and Timperley found task and process feedback most effective for improving work, self-regulation feedback powerful for developing independent learners, and self-level feedback, praise directed at the person, largely ineffective and sometimes harmful. Naming which level you're aiming at before you write is a fast way to raise the quality.",
         "how": [
             "Ask before writing: am I talking about the work, the method, their learning behaviours, or them?",
             "Rewrite anything at the person level. Well done you becomes what specifically worked.",
             "Use process feedback when the task is understood but the approach is inefficient.",
-            "Use self-regulation feedback when the student can already judge quality but is not doing it.",
+            "Use self-regulation feedback when the student can already judge quality but isn't doing it.",
         ],
         "tech": "A feedback checklist or rubric tool with the four levels on it makes the categorisation a two-second check rather than an act of recall.",
         "watch": "Praise is not banned. It is just not feedback. Warmth in a relationship and information about the work are different things and both are needed.",
@@ -55,26 +55,26 @@ EXPANSIONS = {
     },
     "05": {
         "what": "Sadler set out three conditions for feedback to work: the student must know the standard, be able to compare their work to it, and have the means to close the gap. All three, or none of it functions.",
-        "why": "The conditions explain most feedback failures. Students who do not know the standard cannot interpret the comment. Students who cannot compare cannot see the gap you are describing. Students with no time or means to act cannot close it. Diagnosing which condition is missing is more productive than writing more comments.",
+        "why": "The conditions explain most feedback failures. Students who don't know the standard can't interpret the comment. Students who can't compare can't see the gap you're describing. Students with no time or means to act can't close it. Diagnosing which condition is missing is more productive than writing more comments.",
         "how": [
             "Share and unpack the criteria before students start, not when you return the work.",
             "Teach the comparison explicitly, using exemplars.",
             "Provide the time and the route to act.",
-            "When feedback is not landing, work out which of the three is missing before rewriting comments.",
+            "When feedback isn't landing, work out which of the three is missing before rewriting comments.",
         ],
         "tech": "A success criteria display tool keeps the standard visible during the work and during the response, which is when students most need it.",
-        "watch": "Handing out criteria is not the same as sharing the standard. Students can read a rubric and still not recognise quality when they see it.",
+        "watch": "Handing out criteria isn't the same as sharing the standard. Students can read a rubric and still not recognise quality when they see it.",
     },
     "06": {
         "what": "For simple, procedural or factual work, correct errors quickly, before they get practised.",
-        "why": "Shute's review found immediate feedback most effective for lower-level tasks, where an uncorrected error simply becomes a rehearsed error. There is no productive struggle to protect in the spelling of a technical term or the sign convention in a calculation. Waiting a week to correct it means a week of practising it wrongly.",
+        "why": "Shute's review found immediate feedback most effective for lower-level tasks, where an uncorrected error simply becomes a rehearsed error. There's no productive struggle to protect in the spelling of a technical term or the sign convention in a calculation. Waiting a week to correct it means a week of practising it wrongly.",
         "how": [
             "Build immediate correction into practice tasks rather than saving it for marking.",
             "Circulate during independent work and correct at the point of error.",
             "Use self-marking for the procedural parts so students see errors within seconds.",
             "Reserve your own time for the parts that need judgement.",
         ],
-        "tech": "Auto-marked quizzes and response tools are genuinely good at this, and they free you to work on the parts a machine cannot judge.",
+        "tech": "Auto-marked quizzes and response tools are genuinely good at this, and they free you to work on the parts a machine can't judge.",
         "watch": "Applying the same immediacy to complex reasoning removes the thinking. The rule is task-dependent, not a general preference for speed.",
     },
     "07": {
@@ -84,16 +84,16 @@ EXPANSIONS = {
             "On extended or open tasks, let the attempt finish before you intervene.",
             "Resist answering questions that the student is close to resolving themselves.",
             "Schedule the feedback for the following lesson rather than the same one.",
-            "Tell students the delay is deliberate, so it does not read as slow marking.",
+            "Tell students the delay is deliberate, so it doesn't read as slow marking.",
         ],
-        "tech": "An LMS with scheduled feedback release lets you write it while it is fresh and deliver it when it will be most useful.",
+        "tech": "An LMS with scheduled feedback release lets you write it while it's fresh and deliver it when it will be most useful.",
         "watch": "Delay is not the same as neglect. Feedback that arrives three weeks later, when the class has moved on, is a post-mortem whatever the theory says.",
     },
     "08": {
         "what": "Feedback given while students are still working is formative. Feedback given after the work is finished and moved on from is a report.",
         "why": "Black and Wiliam's central case for formative assessment is about the timing of the information relative to the decision it should influence. A comment that arrives while the work can still change is worth several that arrive afterwards. Circulating during independent work is the highest-yield feedback slot in most lessons, and it costs no marking time at all.",
         "how": [
-            "Plan where you will be during independent work rather than drifting.",
+            "Plan where you'll be during independent work rather than drifting.",
             "Prioritise the students whose approach will go wrong early.",
             "Keep interventions short and specific. One thing.",
             "Note recurring issues and address them to the whole class rather than thirty times.",
@@ -110,12 +110,12 @@ EXPANSIONS = {
             "Explain the reasoning to students and parents in advance.",
             "Keep the practice consistent, or students will hunt for the grade anyway.",
         ],
-        "tech": "Annotation tools and LMS platforms usually have an option to hide grades until a set point. It is rarely the default; you will need to turn it on.",
+        "tech": "Annotation tools and LMS platforms usually have an option to hide grades until a set point. It's rarely the default; you'll need to turn it on.",
         "watch": "A comment plus a grade in the same envelope has the same effect as a grade alone. If policy requires the grade, the separation has to be real.",
     },
     "10": {
         "what": "Fewer comments, more precisely aimed. One or two things that would make the biggest difference, rather than everything that could be improved.",
-        "why": "Shute and Wiliam both point to the cognitive load problem: a page covered in comments gives the student no basis for deciding where to start, so many start nowhere. Identifying the single highest-leverage improvement is harder work for the marker and considerably more useful for the learner.",
+        "why": "Shute and Wiliam both point to the cognitive load problem: a page covered in comments gives the student no basis for deciding where to start, so many start nowhere. Working out the one change that would make the biggest difference is harder work for you and far more useful for them.",
         "how": [
             "Read the whole piece before writing anything.",
             "Ask what one change would most improve the next piece.",
@@ -123,7 +123,7 @@ EXPANSIONS = {
             "Keep a note of the others for whole-class teaching if they recur.",
         ],
         "tech": "A digital highlight or pin tool lets you mark the single place the comment refers to, which removes the ambiguity that makes short comments hard to act on.",
-        "watch": "Reducing volume without raising precision is just less feedback. The saved time has to go into deciding what matters most.",
+        "watch": "Reducing volume without raising precision is just less feedback. The saved time has to go into deciding which single change would help most.",
     },
     "11": {
         "what": "Peer feedback with a protocol: agreed criteria, a defined order, and required evidence from the work.",
@@ -132,14 +132,14 @@ EXPANSIONS = {
             "Establish the criteria with exemplars first.",
             "Give a protocol: what to look at, in what order, and the sentence stems to use.",
             "Require evidence: quote the line, point at the step.",
-            "Model it yourself, including how to say this is not yet meeting the criterion.",
+            "Model it yourself, including how to say this isn't yet meeting the criterion.",
         ],
         "tech": "Peer review tools with criteria prompts built into the form keep students on the protocol when your attention is elsewhere.",
         "watch": "Peer feedback introduced without teaching the skill produces empty praise, and students conclude the whole approach is pointless.",
     },
     "12": {
         "what": "Students assess their own work against the criteria before you see it. The comparison is the point, not the accuracy of the mark they give themselves.",
-        "why": "Andrade's research found that the act of comparing work to criteria improved subsequent performance, whether or not the self-assessment was accurate. The student is being made to do the thing that feedback usually does for them: locate the gap. That is a transferable skill; receiving a comment is not.",
+        "why": "Andrade's research found that the act of comparing work to criteria improved subsequent performance, whether or not the self-assessment was accurate. The student is being made to do the thing that feedback usually does for them: locate the gap. That's a transferable skill; receiving a comment isn't.",
         "how": [
             "Give the criteria and require a self-assessment before submission.",
             "Ask for evidence: which line meets this criterion?",
@@ -151,7 +151,7 @@ EXPANSIONS = {
     },
     "13": {
         "what": "Feedback as a conversation rather than a verdict. Students can reply, question and clarify, and the exchange continues over time.",
-        "why": "Carless's work on feedback dialogue found that uptake rises substantially when students can respond. A single written comment is a guess at what will be understood; a thread lets the misunderstanding surface. It also changes the power dynamic in a way that makes students more likely to admit they do not follow.",
+        "why": "Carless's work on feedback dialogue found that uptake rises substantially when students can respond. A single written comment is a guess at what will be understood; a thread lets the misunderstanding surface. It also changes the power dynamic in a way that makes students more likely to admit they don't follow.",
         "how": [
             "Invite a reply explicitly rather than hoping for one.",
             "Answer the replies, at least sometimes, or the invitation is hollow.",
@@ -159,11 +159,11 @@ EXPANSIONS = {
             "Do it on a subset of pieces rather than everything, so it stays sustainable.",
         ],
         "tech": "Threaded comments in a document or LMS are what make this practical. On paper the dialogue rarely gets past one exchange.",
-        "watch": "Opening a dialogue you have no time to sustain is worse than not opening it. Choose the pieces where the conversation will earn its keep.",
+        "watch": "Opening a dialogue you've no time to sustain is worse than not opening it. Choose the pieces where the conversation will earn its keep.",
     },
     "14": {
         "what": "Let automated tools handle accuracy and procedure. Keep your own time for voice, argument, structure and creativity.",
-        "why": "Shute's and Black and Wiliam's work both point to matching the feedback source to what is being assessed. A machine is reliable on whether an equation balances and unreliable on whether an argument persuades. Spending teacher time on the first while the second goes uncommented is a poor allocation of the scarcest resource in the building.",
+        "why": "Shute's and Black and Wiliam's work both point to matching the feedback source to what is being assessed. A machine is reliable on whether an equation balances and unreliable on whether an argument persuades. Spending teacher time on the first while the second goes uncommented is a poor use of the scarcest resource in the building.",
         "how": [
             "Separate the parts of a task that have right answers from the parts that need judgement.",
             "Automate the first ruthlessly.",
@@ -171,7 +171,7 @@ EXPANSIONS = {
             "Check the automated feedback occasionally. Tools are wrong in patterned ways.",
         ],
         "tech": "Adaptive and AI-assisted tools are improving quickly on procedural correctness. Treat their comments on quality as a draft to be checked, not a verdict to be forwarded.",
-        "watch": "Passing on AI-generated comments unread puts your name to feedback you have not evaluated, and students work out quickly when comments do not fit their work.",
+        "watch": "Passing on AI-generated comments unread puts your name to feedback you haven't evaluated, and students work out quickly when comments don't fit their work.",
     },
     "15": {
         "what": "Read the set, identify the patterns, and teach to them. Common strengths, recurring errors, one or two priority next steps for everyone.",
@@ -180,19 +180,19 @@ EXPANSIONS = {
             "Read with a single analysis sheet beside you, annotating nothing.",
             "Group into strengths, errors, misconceptions and next steps.",
             "Teach from the sheet, with examples from the work on the board.",
-            "Add individual comments only where a student's need is not on the sheet.",
+            "Add individual comments only where a student's need isn't on the sheet.",
         ],
         "tech": "A shared document or display tool lets the class see and copy the analysis, so the next steps end up in their books rather than only in your teaching.",
         "watch": "Students who need something genuinely individual can disappear inside a whole-class approach. Keep a small margin for the exceptions.",
     },
     "16": {
         "what": "Direct every comment at the work rather than at the person. This paragraph needs restructuring, not you need to work harder.",
-        "why": "Kluger and DeNisi found that feedback which draws attention to the self, whether critical or complimentary, tends to reduce performance, because attention moves from the task to managing self-image. The work is fixable and impersonal; the person is neither. The rewrite is usually mechanical and the difference in how it lands is not.",
+        "why": "Kluger and DeNisi found that feedback which draws attention to the self, whether critical or complimentary, tends to reduce performance, because attention moves from the task to managing self-image. The work is fixable and impersonal; the person is neither. The rewrite is usually mechanical and the difference in how it lands isn't.",
         "how": [
             "Reread comments for the word you and consider whether it belongs.",
             "Name the feature of the work, not the trait of the student.",
             "Where behaviour genuinely is the issue, address it separately from the feedback on the work.",
-            "Keep the tone matter-of-fact. Feedback on work does not need softening if it is genuinely about the work.",
+            "Keep the tone matter-of-fact. Feedback on work doesn't need softening if it's genuinely about the work.",
         ],
         "tech": "Annotation tools that anchor a comment to a specific place in the text make it structurally harder to write about the person.",
         "watch": "Removing you from the sentence while keeping the judgement is cosmetic. This work shows a lack of effort is still about the person.",
@@ -210,7 +210,7 @@ EXPANSIONS = {
         "watch": "Questions with only one acceptable answer are instructions wearing a question mark, and students spot the difference immediately.",
     },
     "18": {
-        "what": "Praise what the student did rather than what they are. The strategy, the effort in a specific place, the decision that worked.",
+        "what": "Praise what the student did rather than what they're. The strategy, the effort in a specific place, the decision that worked.",
         "why": "Butler distinguished task-involving from ego-involving feedback and found the first improved performance while the second shifted attention to self-image. Kluger and DeNisi's meta-analysis points the same way. Praising a trait gives a student nothing to repeat; praising a strategy tells them exactly what to do again.",
         "how": [
             "Name the specific move: the way you set out the working made the error easy to find.",
@@ -218,20 +218,20 @@ EXPANSIONS = {
             "Praise less often and more precisely.",
             "Make sure the praised strategy is one they can deploy again.",
         ],
-        "tech": "A phrasing guide or comment bank you have written yourself, with the trait-based versions removed, is more use than any platform feature.",
-        "watch": "You are so clever feels generous and tells a struggling student that the thing they lack is fixed and internal.",
+        "tech": "A phrasing guide or comment bank you've written yourself, with the trait-based versions removed, is more use than any platform feature.",
+        "watch": "You're so clever feels generous and tells a struggling student that the thing they lack is fixed and internal.",
     },
     "19": {
         "what": "Teach students how to read and use feedback before you give them any. Model it with a worked example.",
-        "why": "Carless and Boud's work on feedback literacy argues that students need to be taught to appreciate feedback, make judgements, manage affect and take action. None of that is automatic, and the students least likely to have it are the ones who most need the feedback. Assuming the skill exists is the reason a great deal of careful marking goes unread.",
+        "why": "Carless and Boud's work on feedback literacy argues that students need to be taught to appreciate feedback, make judgements, manage affect and take action. None of that's automatic, and the students least likely to have it are the ones who most need the feedback. Assuming the skill exists is the reason a great deal of careful marking goes unread.",
         "how": [
             "Take an anonymous piece with real comments and work through it as a class.",
-            "Show the interpretation: this comment means this, and here is what I would do.",
+            "Show the interpretation: this comment means this, and here's what I would do.",
             "Discuss the affective part openly. Critical feedback stings, and pretending otherwise helps nobody.",
             "Revisit it during the year rather than treating it as a September exercise.",
         ],
-        "tech": "A worked example on a visualiser or shared screen lets the whole class watch the interpretation happen, which is the part that is normally invisible.",
-        "watch": "Feedback literacy taught once in September will not survive to March. It needs revisiting, especially after a set of results that landed badly.",
+        "tech": "A worked example on a visualiser or shared screen lets the whole class watch the interpretation happen, which is the part that's normally invisible.",
+        "watch": "Feedback literacy taught once in September won't survive to March. It needs revisiting, especially after a set of results that landed badly.",
     },
     "20": {
         "what": "Audit your feedback practice against Nicol and Macfarlane-Dick's seven principles of good feedback practice, and redesign where it falls short.",
@@ -247,7 +247,7 @@ EXPANSIONS = {
     },
     "21": {
         "what": "Timetable the response. The lesson after feedback starts with students reading and acting on it, before anything new.",
-        "why": "Wiliam and Leahy are blunt about this: if there is no time to act, the feedback has no route into learning. The response is the learning event, not the comment. Ten minutes of curriculum time is a small cost against the hours already spent producing the feedback it makes usable.",
+        "why": "Wiliam and Leahy are blunt about this: if there's no time to act, the feedback has no route into learning. The response is the learning event, not the comment. Ten minutes of curriculum time is a small cost against the hours already spent producing the feedback it makes usable.",
         "how": [
             "Block the first ten minutes of the next lesson. Every time, not when convenient.",
             "Set a specific task rather than read my comments.",
@@ -267,11 +267,11 @@ EXPANSIONS = {
             "Follow up on the responses, or the questions become rhetorical.",
         ],
         "tech": "Digital annotation keeps the question anchored to the exact place it refers to, which is what makes a short question interpretable.",
-        "watch": "Questions on work that is fundamentally off track are not enough. Sometimes the right response is to reteach, not to interrogate.",
+        "watch": "Questions on work that's gone badly wrong aren't enough. Sometimes the right response is to reteach, not to interrogate.",
     },
     "23": {
         "what": "Design feedback to build the student's own capacity to judge quality, so they need you less over time.",
-        "why": "Boud's argument for sustainable feedback is that the purpose is not this piece of work but the student's future independence. If a class still cannot tell good from bad without you in July, the system has produced dependency rather than learning, however good the individual comments were.",
+        "why": "Boud's argument for sustainable feedback is that the purpose isn't this piece of work but the student's future independence. If a class still can't tell good from bad without you in July, the system has produced dependency rather than learning, however good the individual comments were.",
         "how": [
             "Shift the balance across the year from your judgements to their judgements.",
             "Require self-assessment before feedback, every time, so the comparison becomes habit.",
@@ -283,14 +283,14 @@ EXPANSIONS = {
     },
     "24": {
         "what": "Plan feedback into the scheme of work from the start: who gives it, when, in what form, and when students act on it.",
-        "why": "Boud, Sadler and Carless converge on the point that feedback is a design problem rather than an event. Left to chance, it happens when there is time, which is rarely when it would be most useful. Designed in, it lands at the points where students can still change what they are doing.",
+        "why": "Boud, Sadler and Carless converge on the point that feedback is a design problem rather than an event. Left to chance, it happens when there's time, which is rarely when it would be most useful. Designed in, it lands at the points where students can still change what they're doing.",
         "how": [
             "When you plan a unit, mark the feedback points before the lessons.",
             "Decide the source for each: self, peer, teacher, automated.",
             "Schedule the response time at the same moment you schedule the feedback.",
             "Review at the end of the unit whether the points were in the right places.",
         ],
-        "tech": "Whatever you plan in, planning tool or paper, the feedback points need to be visible in the same document as the lessons or they will not survive contact with the term.",
-        "watch": "A feedback plan that only exists in the assessment policy is not a plan. It has to be in the unit, next to the lessons it affects.",
+        "tech": "Whatever you plan in, planning tool or paper, the feedback points need to be visible in the same document as the lessons or they won't survive contact with the term.",
+        "watch": "A feedback plan that only exists in the assessment policy isn't a plan. It has to be in the unit, next to the lessons it affects.",
     },
 }

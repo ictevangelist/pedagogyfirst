@@ -25,6 +25,10 @@ TITLE = "Pedagogy First. Technology Second."
 TAGLINE = "Six evidence informed guides to teaching and learning, and the thinking behind them."
 REVIEWED = "2026-08-15"
 
+# Put the GA4 measurement ID here, e.g. "G-XXXXXXXXXX", and analytics switch
+# on behind a consent banner. Left empty, nothing loads and no banner appears.
+GA_MEASUREMENT_ID = ""
+
 CHAPTER_MODULES = {
     "retrieval-practice": "ch01_retrieval_practice",
     "formative-assessment": "ch02_formative_assessment",
@@ -91,7 +95,7 @@ def asset_version():
     """Fingerprint css/js so GitHub Pages cannot serve a stale bundle."""
     blob = b"".join(
         (ROOT / p).read_bytes()
-        for p in ("css/styles.css", "js/a11y.js", "js/nav.js", "js/filter.js")
+        for p in ("css/styles.css", "js/a11y.js", "js/nav.js", "js/filter.js", "js/analytics.js")
         if (ROOT / p).exists()
     )
     return hashlib.md5(blob).hexdigest()[:8]
@@ -248,6 +252,32 @@ def header(chapters, current=None):
 """
 
 
+def cta_band(context="site"):
+    """
+    One clear next step, in the same place on every page.
+
+    The site is free to read and the point of it is the conversation that
+    follows, so the ask is explicit rather than buried in the footer.
+    """
+    return f"""<section class="cta-band" aria-labelledby="cta-h">
+  <div class="wrap">
+    <div class="cta-band__inner">
+      <div>
+        <h2 id="cta-h">Want this thinking in your school?</h2>
+        <p>I run keynotes, INSET and workshops on pedagogy, AI and digital strategy,
+           and I work with schools and trusts over time rather than one day and gone.
+           Tell me where your team is and I'll tell you honestly whether I can help.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--light" href="https://ictevangelist.com/contact"
+           data-cta="{context}">Talk to me about it</a>
+        <a class="btn btn--outline" href="/#downloads">Download the guide first</a>
+      </div>
+    </div>
+  </div>
+</section>"""
+
+
 def work_with_mark():
     w = FRONT.WORK_WITH_MARK
     quotes = "".join(
@@ -264,6 +294,15 @@ def work_with_mark():
     <div class="mini-quotes">{quotes}</div>
   </div>
 </section>"""
+
+
+def analytics_tag():
+    if not GA_MEASUREMENT_ID:
+        return "<!-- analytics off: set GA_MEASUREMENT_ID in build.py -->"
+    return (
+        f'<script src="/js/analytics.js?v={VER}" '
+        f'data-ga="{GA_MEASUREMENT_ID}" defer></script>'
+    )
 
 
 def footer(research=None):
@@ -293,6 +332,7 @@ def footer(research=None):
 <script src="/js/nav.js?v={VER}" defer></script>
 <script src="/js/filter.js?v={VER}" defer></script>
 <script src="/js/a11y.js?v={VER}" defer></script>
+{analytics_tag()}
 </body>
 </html>
 """
@@ -598,7 +638,7 @@ def build_chapter(chapter, prose, chapters, index, crossrefs):
   </div>
 </main>
 """,
-        work_with_mark(),
+        cta_band(context=slug),
         footer(chapter.get("research")),
     ]
 

@@ -7,7 +7,7 @@ Expansions for each of the 24 strategies on the infographic.
 EXPANSIONS = {
     "01": {
         "what": "Planning starts with a specific, close-at-hand goal rather than a general aim. Not do well in this essay, but this paragraph will make one claim and support it with two pieces of evidence.",
-        "why": "Zimmerman's forethought phase begins with goal setting, and his research distinguishes proximal goals, which are specific and near, from distal ones, which are general and remote. Proximal goals give the learner something to monitor against during the task. A vague aim gives them nothing to check, so monitoring does not happen.",
+        "why": "Zimmerman's forethought phase begins with goal setting, and his research distinguishes proximal goals, which are specific and near, from distal ones, which are general and remote. Proximal goals give the learner something to monitor against during the task. A vague aim gives them nothing to check, so monitoring doesn't happen.",
         "how": [
             "Before students start, ask them to write what a good answer to this question would contain.",
             "Insist on specifics rather than adjectives. Detailed is not a goal.",
@@ -15,11 +15,11 @@ EXPANSIONS = {
             "Return to it at the end and ask whether it was met.",
         ],
         "tech": "Shared success criteria on screen give everyone the same reference point, and keep it visible for the whole task rather than for the first minute.",
-        "watch": "Goals that are really instructions in disguise do not develop planning. The student has to make the decision for it to be planning.",
+        "watch": "Goals that are really instructions in disguise don't develop planning. The student has to make the decision for it to be planning.",
     },
     "02": {
-        "what": "Teach the content before expecting students to regulate their learning of it. Metacognition works on knowledge; it does not substitute for it.",
-        "why": "Willingham's argument is that metacognitive strategies are largely domain-general while the ability to use them well is not. You cannot judge whether your understanding of a topic is adequate if you know almost nothing about the topic. Self-regulation applied to an empty schema produces confident students who are monitoring nothing.",
+        "what": "Teach the content before expecting students to regulate their learning of it. Metacognition works on knowledge; it doesn't substitute for it.",
+        "why": "Willingham's argument is that metacognitive strategies are largely domain-general while the ability to use them well isn't. You can't judge whether your understanding of a topic is adequate if you know almost nothing about the topic. Self-regulation applied to an empty schema produces confident students who are monitoring nothing.",
         "how": [
             "Establish the knowledge base before introducing the strategy.",
             "Check the base is secure with retrieval, not with self-report.",
@@ -45,8 +45,8 @@ EXPANSIONS = {
         "what": "Planning means choosing an approach deliberately rather than defaulting to whichever one you used last.",
         "why": "Flavell's work on metacognitive knowledge distinguishes knowing strategies from knowing when to use them. Students who have several methods available but never pause to select are functionally operating with one. Requiring the choice to be named, before work begins, makes the selection conscious and therefore improvable.",
         "how": [
-            "Have students name the method they will use and why, before they start.",
-            "Keep a visible menu of the methods you have taught for this kind of problem.",
+            "Have students name the method they'll use and why, before they start.",
+            "Keep a visible menu of the methods you've taught for this kind of problem.",
             "Ask two students who chose differently to explain their reasoning.",
             "Return at the end: was that the right choice?",
         ],
@@ -66,7 +66,7 @@ EXPANSIONS = {
         "watch": "Confidence built on tasks that were made easy collapses on contact with a real one, and the collapse costs more than the confidence gained.",
     },
     "06": {
-        "what": "Pair every self-check with an external one. A student's sense of understanding is not reliable evidence of understanding.",
+        "what": "Pair every self-check with an external one. A student's sense of understanding isn't reliable evidence of understanding.",
         "why": "Winne's work on monitoring found that learners' internal judgements are systematically miscalibrated, particularly for novices, and particularly just after reading something. Fluency feels like knowledge. An external check, a quiz, a worked answer, a peer, converts a feeling into information.",
         "how": [
             "After any do you understand moment, follow with a question that tests it.",
@@ -79,19 +79,19 @@ EXPANSIONS = {
     },
     "07": {
         "what": "Provide a low-distraction environment while students are learning to monitor their own work, then withdraw the support as they take over.",
-        "why": "Zimmerman's performance phase includes attention control as a component of self-regulation, and like the other components it is learned rather than innate. Scaffolding the environment first is legitimate; leaving the scaffold permanently is not, because the student never develops the capacity themselves.",
+        "why": "Zimmerman's performance phase includes attention control as a component of self-regulation, and like the other components it's learned rather than innate. Scaffolding the environment first is legitimate; leaving the scaffold permanently isn't, because the student never develops the capacity themselves.",
         "how": [
             "Start with the structure: clear expectations, reduced distraction, defined work periods.",
-            "Name what you are doing and why, so it is understood as temporary.",
+            "Name what you're doing and why, so it's understood as temporary.",
             "Withdraw the external control in stages as students demonstrate they can manage.",
             "Expect regression and reinstate briefly rather than abandoning the fade.",
         ],
         "tech": "Classroom management tools can scaffold focus during the learning phase. Treat them as scaffolding to be removed, not as the permanent condition of the room.",
-        "watch": "Monitoring software used indefinitely teaches compliance under observation rather than self-regulation, and students behave accordingly the moment it is off.",
+        "watch": "Monitoring software used indefinitely teaches compliance under observation rather than self-regulation, and students behave accordingly the moment it's off.",
     },
     "08": {
         "what": "Insert planned pauses during a task where students ask whether the approach is still working.",
-        "why": "Winne's model treats monitoring as a process that fades without cues, particularly when a task is absorbing. The sunk cost problem is real: the further into a wrong method a student is, the less willing they are to abandon it. A checkpoint at the third minute is considerably cheaper than one at the twentieth.",
+        "why": "Winne's model treats monitoring as a process that fades without cues, particularly when a task is absorbing. The sunk cost problem is real: the further into a wrong method a student is, the less willing they're to abandon it. A checkpoint at the third minute is considerably cheaper than one at the twentieth.",
         "how": [
             "Plan two or three stop points into any extended task.",
             "At each, one question: is this working, and how do I know?",
@@ -103,7 +103,7 @@ EXPANSIONS = {
     },
     "09": {
         "what": "Teach students to interrupt themselves mid-task with a direct question: do I actually understand this, or am I just following along?",
-        "why": "Flavell's original account of metacognition centres on this kind of monitoring during a cognitive activity. The value is timing. A gap noticed while there is still time to fix it becomes a question to the teacher; the same gap noticed in an exam becomes a lost mark. Students rarely do this unprompted because the prompt has to come from inside.",
+        "why": "Flavell's original account of metacognition centres on this kind of monitoring during a cognitive activity. The value is timing. A gap noticed while there's still time to fix it becomes a question to the teacher; the same gap noticed in an exam becomes a lost mark. Students rarely do this unprompted because the prompt has to come from inside.",
         "how": [
             "Teach the specific question and the moments to ask it.",
             "Model it aloud yourself while working through an example.",
@@ -115,7 +115,7 @@ EXPANSIONS = {
     },
     "10": {
         "what": "Have students leave a visible trace of their reasoning as they work, so the process can be inspected rather than only the outcome.",
-        "why": "Flavell's point that regulation you cannot see you cannot coach applies directly to teaching. A correct answer conceals whether the method was sound or lucky; a wrong answer conceals where the reasoning broke. The working is the diagnostic material, and it is also what students can review themselves later.",
+        "why": "Flavell's point that regulation you can't see you can't coach applies directly to teaching. A correct answer conceals whether the method was sound or lucky; a wrong answer conceals where the reasoning broke. The working is the diagnostic material, and it's also what students can review themselves later.",
         "how": [
             "Require working to be shown, including the rejected attempts.",
             "Ask for a sentence on why this method, not just the steps.",
@@ -123,7 +123,7 @@ EXPANSIONS = {
             "Use strong examples of working as models for the class.",
         ],
         "tech": "A shared document or digital notebook keeps the working, which paper working rarely survives beyond the lesson.",
-        "watch": "Demanding working while only rewarding answers teaches students that the working is a formality, and they will produce it retrospectively.",
+        "watch": "Demanding working while only rewarding answers teaches students that the working is a formality, and they'll produce it retrospectively.",
     },
     "11": {
         "what": "Self-evaluation needs a reference. Give students the mark scheme or an exemplar to judge their work against rather than asking how they think they did.",
@@ -135,14 +135,14 @@ EXPANSIONS = {
             "Compare their judgement with yours and discuss the difference rather than overriding it.",
         ],
         "tech": "Showing the exemplar alongside their own work, on screen or on a split page, removes the memory load from the comparison.",
-        "watch": "Self-evaluation against a standard students cannot yet recognise produces confident inaccuracy. Teach the standard with exemplars first.",
+        "watch": "Self-evaluation against a standard students can't yet recognise produces confident inaccuracy. Teach the standard with exemplars first.",
     },
     "12": {
-        "what": "Steer how students explain their results towards the method they used, which they can change, and away from fixed ability, which they cannot.",
+        "what": "Steer how students explain their results towards the method they used, which they can change, and away from fixed ability, which they can't.",
         "why": "Zimmerman's work on attribution within the self-reflection phase shows that causal explanations shape the next attempt. A student who attributes failure to being bad at this has no next step. A student who attributes it to not checking their working has an obvious one. The attribution is teachable and it determines whether effort continues.",
         "how": [
             "After results, ask what specifically produced that outcome.",
-            "Push past I did not revise enough to what revision was actually done.",
+            "Push past I didn't revise enough to what revision was actually done.",
             "Name the method in your own feedback so the language is modelled.",
             "Challenge fixed-ability language when you hear it, gently and consistently.",
         ],
@@ -159,18 +159,18 @@ EXPANSIONS = {
             "Start the next reflection by checking whether the previous adjustment happened.",
         ],
         "tech": "An action log carried between tasks makes the follow-through visible, which is what stops reflection becoming a ritual.",
-        "watch": "I will try harder next time is not an adjustment. It fails the test of whether anyone could tell if it happened.",
+        "watch": "I will try harder next time isn't an adjustment. It fails the test of whether anyone could tell if it happened.",
     },
     "14": {
-        "what": "Students predict their mark before it is revealed, then compare. Over time the gap narrows.",
-        "why": "Winne's research on calibration shows that accuracy in self-judgement improves with repeated feedback on the mismatch, and that calibration matters because it drives revision decisions. A student who thinks they know a topic will not revise it. Improving the accuracy of that judgement is often worth more than improving the knowledge directly.",
+        "what": "Students predict their mark before it's revealed, then compare. Over time the gap narrows.",
+        "why": "Winne's research on calibration shows that accuracy in self-judgement improves with repeated feedback on the mismatch, and that calibration matters because it drives revision decisions. A student who thinks they know a topic won't revise it. Improving the accuracy of that judgement is often worth more than improving the knowledge directly.",
         "how": [
             "Prediction written before submission, not after.",
             "Reveal the actual mark and record both.",
             "Track the gap across a term rather than a single instance.",
             "Discuss the pattern: consistent overestimation means something different from random error.",
         ],
-        "tech": "Logging predictions alongside marks in a spreadsheet or LMS makes the trend visible, which a single comparison cannot be.",
+        "tech": "Logging predictions alongside marks in a spreadsheet or LMS makes the trend visible, which a single comparison can't be.",
         "watch": "Students who learn that low predictions look modest will game it. Make clear you are interested in accuracy, not humility.",
     },
     "15": {
@@ -187,19 +187,19 @@ EXPANSIONS = {
     },
     "16": {
         "what": "Teach the strategies themselves as named methods: retrieval practice, spacing, self-explanation, elaboration. Students cannot deploy what they have never been taught.",
-        "why": "Flavell's category of metacognitive knowledge includes knowledge of strategies, and it is knowledge like any other: it has to be taught. Students left to discover study methods overwhelmingly arrive at rereading and highlighting, because those are the most obvious and the least effortful.",
+        "why": "Flavell's category of metacognitive knowledge includes knowledge of strategies, and it's knowledge like any other: it has to be taught. Students left to discover study methods overwhelmingly arrive at rereading and highlighting, because those are the most obvious and the least effortful.",
         "how": [
             "Name each strategy explicitly when you use it in class.",
-            "Explain what it is, what it is for, and why it works.",
+            "Explain what it's, what it's for, and why it works.",
             "Practise it in lesson before expecting it in independent study.",
             "Keep a running reference of the strategies the class has been taught.",
         ],
         "tech": "A strategy reference sheet, built up over the year and kept accessible, means the repertoire is available at the point of revision.",
-        "watch": "A single assembly on study skills is not teaching the strategies. They need practising in the subject with the subject's content.",
+        "watch": "A single assembly on study skills isn't teaching the strategies. They need practising in the subject with the subject's content.",
     },
     "17": {
-        "what": "Beyond knowing a strategy, students need to know when it applies. That is conditional knowledge, and it is the harder half.",
-        "why": "Winne identifies conditional knowledge, knowing which approach suits which situation, as a key discriminator between skilled and unskilled learners. A student with five strategies and no sense of when to use each is not much better off than a student with one. The cues that signal which method fits have to be taught explicitly.",
+        "what": "Beyond knowing a strategy, students need to know when it applies. That's conditional knowledge, and it's the harder half.",
+        "why": "Winne identifies conditional knowledge, knowing which approach suits which situation, as a key discriminator between skilled and unskilled learners. A student with five strategies and no sense of when to use each isn't much better off than a student with one. The cues that signal which method fits have to be taught explicitly.",
         "how": [
             "Teach the cues alongside the strategy: use this when the task looks like this.",
             "Give sorting activities: here are six tasks, which method suits each?",
@@ -211,7 +211,7 @@ EXPANSIONS = {
     },
     "18": {
         "what": "Move from modelled to guided to independent use, removing prompts as students show they no longer need them.",
-        "why": "Zimmerman's model of developing self-regulation runs through observation, emulation, self-control and self-regulation. The support has to be withdrawn for the final stage to exist at all. Fading is not a nicety at the end of a sequence; it is the mechanism by which regulation transfers from the teacher to the learner.",
+        "why": "Zimmerman's model of developing self-regulation runs through observation, emulation, self-control and self-regulation. The support has to be withdrawn for the final stage to exist at all. Fading isn't a nicety at the end of a sequence; it's the mechanism by which regulation transfers from the teacher to the learner.",
         "how": [
             "Model the strategy fully first, thinking aloud.",
             "Guide the next attempt with prompts.",
@@ -225,7 +225,7 @@ EXPANSIONS = {
         "what": "Students trial a study method, judge it against their actual results, and keep only what the evidence supports.",
         "why": "Winne's model of self-regulated learning is adaptive: the learner evaluates the effectiveness of an approach and revises it. Most students never do this, so ineffective methods persist for years because they were never tested. Running the test explicitly, once, changes revision behaviour more than being told what works.",
         "how": [
-            "Have students name the method they will use for the next assessment.",
+            "Have students name the method they'll use for the next assessment.",
             "Log it before, not after.",
             "Compare method and outcome afterwards, honestly.",
             "Decide together what to keep and what to drop for next time.",
@@ -235,7 +235,7 @@ EXPANSIONS = {
     },
     "20": {
         "what": "Teach each strategy inside the content it serves rather than in a standalone session about learning.",
-        "why": "Willingham's consistent argument is that strategies do not float free of subject knowledge, and that transfer between domains is much weaker than we assume. A student who has learned to self-explain in science will not automatically do so in history. Teaching the strategy in each subject, with that subject's content, is the only reliable route.",
+        "why": "Willingham's consistent argument is that strategies don't float free of subject knowledge, and that transfer between domains is much weaker than we assume. A student who has learned to self-explain in science won't automatically do so in history. Teaching the strategy in each subject, with that subject's content, is the only reliable route.",
         "how": [
             "Teach the strategy in your subject, with your content.",
             "Show what it looks like specifically here, since it will differ by subject.",
@@ -255,14 +255,14 @@ EXPANSIONS = {
             "Follow up: did the reminder fire, and did you act on it?",
         ],
         "tech": "Calendar reminders on whatever device they already carry. The tool matters far less than whether they set it themselves.",
-        "watch": "Reminders set once and ignored thereafter are worse than none, because students conclude the technique does not work for them.",
+        "watch": "Reminders set once and ignored thereafter are worse than none, because students conclude the technique doesn't work for them.",
     },
     "22": {
         "what": "Students build their own quizzes and flashcards from their own notes, rather than using ready-made sets.",
-        "why": "Writing a good question requires judging what matters, which is a metacognitive act in itself. Winne's emphasis on learner-generated monitoring applies directly: a self-built quiz reflects the student's own model of the topic, including its gaps, and building it surfaces those gaps before any answering happens.",
+        "why": "Writing a good question means deciding what's worth asking, which is a metacognitive act in itself. Winne's emphasis on learner-generated monitoring applies directly: a self-built quiz reflects the student's own model of the topic, including its gaps, and building it surfaces those gaps before any answering happens.",
         "how": [
             "Require questions to be written from their own notes, not from the textbook.",
-            "Specify a mix of question types so it is not all recall.",
+            "Specify a mix of question types so it isn't all recall.",
             "Have them write the answers separately, so the questions can be used properly.",
             "Swap decks with a partner to test whether the questions are answerable.",
         ],
@@ -271,7 +271,7 @@ EXPANSIONS = {
     },
     "23": {
         "what": "Self-regulation now includes managing the device. Teach students to use focus modes and silence notifications as a deliberate choice.",
-        "why": "Attention control is part of Zimmerman's performance phase, and the modern version of it is substantially about the screen in front of the learner. Treating device management as a rule imposed by adults produces compliance while supervised. Treating it as a strategy the learner deploys produces something that survives into independent study.",
+        "why": "Attention control is part of Zimmerman's performance phase, and the modern version of it is largely about the screen in front of the learner. Treating device management as a rule imposed by adults produces compliance while supervised. Treating it as a strategy the learner deploys produces something that survives into independent study.",
         "how": [
             "Teach the specific settings rather than telling students to concentrate.",
             "Have them set focus mode at the start of independent work, themselves.",
@@ -283,14 +283,14 @@ EXPANSIONS = {
     },
     "24": {
         "what": "Use AI to check and challenge reasoning that the student has already done, not to produce the reasoning in the first place.",
-        "why": "Willingham's formulation that memory is the residue of thought is the whole argument in one line. Whatever the student thinks about is what they will remember. If the model does the thinking, the model has the residue and the student has a document. Used as a critic of work already produced, it can prompt thinking the student would not otherwise have done.",
+        "why": "Willingham's formulation that memory is the residue of thought is the whole argument in one line. Whatever the student thinks about is what they'll remember. If the model does the thinking, the model has the residue and the student has a document. Used as a critic of work already produced, it can prompt thinking the student wouldn't otherwise have done.",
         "how": [
             "Require the student's own attempt first, and keep it.",
             "Ask the model to critique or question rather than to improve or rewrite.",
             "Have students evaluate the critique. Some of it will be wrong.",
             "Compare the before and after, and discuss what actually changed and why.",
         ],
-        "tech": "Any general assistant can play this role. What matters is the instruction it is given and the order of operations, not which one you use.",
-        "watch": "A tool that produces a better piece of work has not necessarily produced any learning. The question is always what thinking the student did.",
+        "tech": "Any general assistant can play this role. What counts is the instruction you give it and the order you do things in, not which tool you pick.",
+        "watch": "A tool that produces a better piece of work hasn't necessarily produced any learning. The question is always what thinking the student did.",
     },
 }

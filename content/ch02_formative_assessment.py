@@ -6,20 +6,20 @@ Expansions for each of the 24 strategies on the infographic.
 
 EXPANSIONS = {
     "01": {
-        "what": "The learning intention is what students are meant to learn. The task is what they are meant to do. They are not the same thing, and conflating them is one of the most common planning errors there is.",
-        "why": "Wiliam's point is that students who are clear only about the task will optimise for completing it. Finish the poster, fill the sheet, get to question ten. None of that guarantees the learning. When the intention is stated separately, students have something to aim at beyond done, and you have something to assess against beyond finished.",
+        "what": "The learning intention is what students are meant to learn. The task is what they are meant to do. They aren't the same thing, and conflating them is one of the most common planning errors there's.",
+        "why": "Wiliam's point is that students who are clear only about the task will optimise for completing it. Finish the poster, fill the sheet, get to question ten. None of that guarantees the learning. When the intention is stated separately, students have something to aim at beyond done, and you've something to assess against beyond finished.",
         "how": [
             "Write the intention and the task as two separate lines in your plan.",
-            "Say both aloud: today we are learning X, and the way we will do that is Y.",
+            "Say both aloud: today we're learning X, and the way we'll do that's Y.",
             "When you circulate, ask about the intention rather than progress through the task.",
             "At the end, review against the intention, not against how far they got.",
         ],
-        "tech": "Any display tool works. What matters is that both lines are visible throughout, not flashed up once at the start and then replaced by the instructions.",
+        "tech": "Any display tool will do. The trick is keeping both lines visible all lesson, rather than flashing them up at the start and then replacing them with the instructions.",
         "watch": "Objectives copied into books at the start of a lesson are task compliance dressed as clarity. Nobody has yet learned anything by transcribing an aim.",
     },
     "02": {
         "what": "Rather than handing out success criteria, build them with the class before they begin: what would a good one of these actually look like?",
-        "why": "Wiliam and Leahy found that criteria students have articulated themselves carry far more weight than criteria they have been given. The reason is straightforward. Generating the criteria requires you to think about quality; receiving them requires you to read. The wording they produce is also the wording they will recognise later in feedback.",
+        "why": "Wiliam and Leahy found that criteria students have articulated themselves carry far more weight than criteria they've been given. The reason is straightforward. Generating the criteria requires you to think about quality; receiving them requires you to read. The wording they produce is also the wording they'll recognise later in feedback.",
         "how": [
             "Show one or two examples of the kind of work you want, ideally at different standards.",
             "Ask what makes the better one better. Collect their language, not yours.",
@@ -27,35 +27,35 @@ EXPANSIONS = {
             "Display the co-constructed version and refer to it by their phrasing all lesson.",
         ],
         "tech": "A collaborative document lets the whole class contribute rather than the four who speak, and the criteria stay editable as understanding develops.",
-        "watch": "Asking for their criteria and then presenting yours anyway teaches them that the consultation is decorative, and they will contribute less next time.",
+        "watch": "Asking for their criteria and then presenting yours anyway teaches them that the consultation is decorative, and they'll contribute less next time.",
     },
     "03": {
         "what": "Show real examples of work at different standards before students start their own, and let them work out what separates them. Exemplars first, rubric second.",
-        "why": "Sadler argued that students cannot close a gap they cannot see, and Berger's work on models and critique shows how quickly quality becomes concrete when it is in front of you. A rubric describes quality in the abstract; an exemplar demonstrates it. Students are also markedly better at spotting strengths and weaknesses in someone else's work than in their own.",
+        "why": "Sadler argued that students can't close a gap they can't see, and Berger's work on models and critique shows how quickly quality becomes concrete when it's in front of you. A rubric describes quality in the abstract; an exemplar demonstrates it. Students are also markedly better at spotting strengths and weaknesses in someone else's work than in their own.",
         "how": [
             "Collect examples at three standards, anonymised or from previous years.",
             "Show the strongest last, not first, so the discussion builds.",
-            "Ask what specifically makes the difference, pushing past it is neater or longer.",
+            "Ask what specifically makes the difference, pushing past it's neater or longer.",
             "Only then hand out the rubric, and connect each line to what they just saw.",
         ],
         "tech": "A visualiser puts real student work on the board in seconds without a scanning and printing detour, which is usually what stops this happening.",
-        "watch": "Only ever showing excellent examples leaves students with no sense of the distance between standards, which is exactly the judgement you are trying to build.",
+        "watch": "Only ever showing excellent examples leaves students with no sense of the distance between standards, which is exactly the judgement you're trying to build.",
     },
     "04": {
-        "what": "Do not give the objective at the start. Ask students at the end to say what they have learned, in their own words.",
-        "why": "Generating an answer produces stronger memory than reading one, which is the same generation effect that makes retrieval practice work. There is a diagnostic bonus too: what a class says it has learned, unprompted, is a considerably more honest account of the lesson than a copied objective and a thumbs up.",
+        "what": "Do not give the objective at the start. Ask students at the end to say what they've learned, in their own words.",
+        "why": "Generating an answer produces stronger memory than reading one, which is the same generation effect that makes retrieval practice work. There's a diagnostic bonus too: what a class says it has learned, unprompted, is a considerably more honest account of the lesson than a copied objective and a thumbs up.",
         "how": [
             "Plan the lesson so the intention becomes apparent through the work.",
             "In the last five minutes, ask for the learning in one sentence, written not spoken.",
             "Collect a sample and read them before the next lesson.",
-            "Where the sentences drift from your intention, that is your starting point next time.",
+            "Where the sentences drift from your intention, that's your starting point next time.",
         ],
         "tech": "A polling or whole-class response tool captures every sentence rather than the handful you can hear, and takes about ninety seconds.",
         "watch": "This works when the lesson is well structured. Withholding the objective from a lesson that lacks a clear line of sight just produces confusion.",
     },
     "05": {
-        "what": "A hinge question sits at the turning point of a lesson. It is a single diagnostic question whose answers tell you whether to move on or go back, and it is written in advance.",
-        "why": "Wiliam's design constraints are demanding on purpose: every student answers it in under a minute, you can interpret the responses in under thirty seconds, and each wrong answer maps to a specific misconception. Met properly, it converts a vague sense that they are with me into evidence you can act on immediately.",
+        "what": "A hinge question sits at the turning point of a lesson. It's a single diagnostic question whose answers tell you whether to move on or go back, and it's written in advance.",
+        "why": "Wiliam's design constraints are demanding on purpose: every student answers it in under a minute, you can interpret the responses in under thirty seconds, and each wrong answer maps to a specific misconception. Met properly, it converts a vague sense that they're with me into evidence you can act on immediately.",
         "how": [
             "Identify the point in the lesson where continuing without understanding would be wasteful.",
             "Write the question, and write what each wrong answer would tell you.",
@@ -91,19 +91,19 @@ EXPANSIONS = {
     },
     "08": {
         "what": "Every student writes an answer and holds it up at the same time. You read the room in seconds.",
-        "why": "It is the fastest whole-class response method available and it works in every subject. Wiliam's argument for it is about participation ratio: simultaneous responses mean every student has thought, not just the one who was asked. The simultaneity also matters, because it removes the chance to copy or to wait and see.",
+        "why": "It's the fastest whole-class response method available and it works in every subject. Wiliam makes the case in terms of participation ratio: simultaneous responses mean every student has thought, not only the one who was asked. The simultaneity also matters, because it removes the chance to copy or to wait and see.",
         "how": [
             "Pose the question, give thinking time, then say show me.",
             "Scan the room before you comment on any individual answer.",
             "Respond to the pattern rather than to the first board you see.",
             "Keep it quick. Two or three rounds in a lesson, not twenty.",
         ],
-        "tech": "Digital equivalents give you a record you can revisit, which physical boards do not. For speed and simplicity in the moment, the physical version is hard to beat.",
+        "tech": "Digital equivalents give you a record you can revisit, which physical boards don't. For speed and simplicity in the moment, the physical version is hard to beat.",
         "watch": "Waiting for the slowest writer every time turns a thirty-second check into a three-minute one. Keep the questions short enough to answer in a few words.",
     },
     "09": {
         "what": "Each student holds a set of lettered cards. You pose a multiple-choice question and everyone shows their answer at once.",
-        "why": "It is mini whiteboards with less writing, which matters when the barrier is transcription speed rather than understanding. Paired with well-designed distractors, the spread of letters across the room is an instant map of which misconception is dominant, and Wiliam's case for it rests on exactly that diagnostic speed.",
+        "why": "It's mini whiteboards with less writing, which matters when the barrier is transcription speed rather than understanding. Paired with well-designed distractors, the spread of letters across the room is an instant map of which misconception is dominant, and Wiliam's case for it rests on exactly that diagnostic speed.",
         "how": [
             "Prepare questions with meaningful distractors in advance.",
             "Cards up on a count so nobody is following the room.",
@@ -115,15 +115,15 @@ EXPANSIONS = {
     },
     "10": {
         "what": "Offer more than one way to respond: written, spoken, drawn, digital. The method you pick decides who is able to show you what they know.",
-        "why": "This is CAST's Universal Design for Learning principle of multiple means of action and expression applied to assessment. A student who understands the concept but struggles to write at speed will look, on a written response task, exactly like a student who does not understand. That is a measurement problem, not a learning one.",
+        "why": "This is CAST's Universal Design for Learning principle of multiple means of action and expression applied to assessment. A student who understands the concept but struggles to write at speed will look, on a written response task, exactly like a student who doesn't understand. That is a measurement problem, not a learning one.",
         "how": [
             "Vary the response mode across a sequence rather than defaulting to writing.",
-            "Where the mode is not the thing being assessed, let students choose it.",
-            "Offer an anonymous route for students who will not volunteer publicly.",
+            "Where the mode isn't the thing being assessed, let students choose it.",
+            "Offer an anonymous route for students who won't volunteer publicly.",
             "Check who is consistently invisible in your usual method, and change the method for them.",
         ],
         "tech": "Multimodal and anonymous response tools make this practical at speed. Without them, offering four routes usually means managing four sets of logistics.",
-        "watch": "If the mode is what you are assessing, for example extended writing in English, then varying it changes the construct. Be clear which case you are in.",
+        "watch": "If the mode is what you're assessing, for example extended writing in English, then varying it changes the construct. Be clear which case you are in.",
     },
     "11": {
         "what": "Think alone, then discuss in pairs, then a nominated student reports back. All three stages, in that order, with the nomination made by you.",
@@ -139,15 +139,15 @@ EXPANSIONS = {
     },
     "12": {
         "what": "Return work in progress with comments and no grade attached.",
-        "why": "Butler's study is the classic reference: students given comments alone improved, students given grades alone did not, and students given both performed like the grades-only group. The grade appears to cancel the comment. Once there is a number, attention goes to the number and to how it compares with the person sitting next door.",
+        "why": "Butler's study is the classic reference: students given comments alone improved, students given grades alone didn't, and students given both performed like the grades-only group. The grade appears to cancel the comment. Once there's a number, attention goes to the number and to how it compares with the person sitting next door.",
         "how": [
             "Decide in advance which pieces are formative. Those get comments only.",
             "Where grades are required by policy, record them separately and release them later.",
             "Give class time to read and respond before any grade appears.",
-            "Tell students why you are doing it, or the missing grade reads as an oversight.",
+            "Tell students why you're doing it, or the missing grade reads as an oversight.",
         ],
         "tech": "An LMS or annotation tool that lets you withhold a grade until feedback has been actioned makes the delayed release practical rather than a paperwork exercise.",
-        "watch": "If students can see the grade in the system while reading the comment, you have both conditions at once, and Butler's result says the comment loses.",
+        "watch": "If students can see the grade in the system while reading the comment, you've both conditions at once, and Butler's result says the comment loses.",
     },
     "13": {
         "what": "Feedback should require more work from the student than it did from you. Pose a question rather than writing the correction.",
@@ -159,11 +159,11 @@ EXPANSIONS = {
             "Check the responses. Unread responses train students not to bother.",
         ],
         "tech": "An annotation tool with a reply function turns feedback into a thread rather than a verdict, and makes the student's response visible in the same place.",
-        "watch": "Questions that are really instructions in disguise, such as should you perhaps have included a conclusion, do not cause thinking. They cause compliance.",
+        "watch": "Questions that are really instructions in disguise, such as should you perhaps have included a conclusion, don't cause thinking. They cause compliance.",
     },
     "14": {
         "what": "Timetable the response. Start the next lesson with students reading and acting on feedback before anything new begins.",
-        "why": "Wiliam and Leahy's point is blunt: feedback with no time to act on it is a gift to the filing system. The learning is in the response, not the receipt. Ten minutes at the start of a lesson is a small price for making the previous three hours of marking count for anything.",
+        "why": "Wiliam and Leahy's point is blunt: feedback with no time to act on it's a gift to the filing system. The learning is in the response, not the receipt. Ten minutes at the start of a lesson is a small price for making the previous three hours of marking count for anything.",
         "how": [
             "Block the first ten minutes of the lesson after a marked piece. Every time.",
             "Give a specific task, not read my comments. Redraft this paragraph, or answer the three questions.",
@@ -182,12 +182,12 @@ EXPANSIONS = {
             "Teach from the sheet at the start of the next lesson.",
             "Add individual comments only where a student's need is genuinely not on the sheet.",
         ],
-        "tech": "A shared document or display tool means the class sees the same analysis you are working from, and can copy the next steps into their own work.",
+        "tech": "A shared document or display tool means the class sees the same analysis you're working from, and can copy the next steps into their own work.",
         "watch": "Whole-class feedback used as a way to mark less, without the reteaching that follows, is just marking less.",
     },
     "16": {
         "what": "Return work with three questions rather than corrections. Students must answer them before moving on.",
-        "why": "It is Wiliam's causes thinking principle made concrete and countable. Three is enough to matter and few enough that a class can genuinely respond to all of them in the time available. Corrections tell a student what was wrong; questions make them work out why, which is the part that transfers.",
+        "why": "It's Wiliam's causes thinking principle made concrete and countable. Three is enough to matter and few enough that a class can genuinely respond to all of them in the time available. Corrections tell a student what was wrong; questions make them work out why, which is the part that transfers.",
         "how": [
             "Cap it at three per piece. Resist the urge to note everything.",
             "Make each one answerable in a sentence or two.",
@@ -199,7 +199,7 @@ EXPANSIONS = {
     },
     "17": {
         "what": "Before students work alone, have them practise in structured steps with a partner, checking each other's responses at each stage.",
-        "why": "Rosenshine's guided practice principle is that independence is the destination rather than the starting point, and that the highest-performing teachers spend longer in the guided phase than most. Peer checking at each step catches errors before they are practised into place, which is considerably cheaper than unpicking them later.",
+        "why": "Rosenshine's guided practice principle is that independence is the destination rather than the starting point, and that the highest-performing teachers spend longer in the guided phase than most. Peer checking at each step catches errors before they're practised into place, which is considerably cheaper than unpicking them later.",
         "how": [
             "Break the process into steps small enough to check.",
             "After each step, partners compare and resolve differences before continuing.",
@@ -211,7 +211,7 @@ EXPANSIONS = {
     },
     "18": {
         "what": "Students write questions that could appear in an assessment on this topic. The best go into the class question bank.",
-        "why": "Black and Wiliam's work on students as learning resources rests on the fact that generating a good question requires you to judge what matters, which is a higher-order act than answering one. It also surfaces what students think the important content is, which is not always what you think you taught.",
+        "why": "Black and Wiliam's work on students as learning resources rests on the fact that generating a good question makes you decide what's worth asking about, which is a harder job than answering one. It also surfaces what students think the important content is, which isn't always what you think you taught.",
         "how": [
             "Specify the type: one recall, one explanation, one application.",
             "Ask for the answer alongside the question. It stops vague questions.",
@@ -219,23 +219,23 @@ EXPANSIONS = {
             "Discuss what makes a good question when the weak ones appear.",
         ],
         "tech": "A shared document or quiz builder means the class bank accumulates across the year rather than being lost in exercise books.",
-        "watch": "Without a specified type you will get twenty recall questions, because those are easiest to write and to answer.",
+        "watch": "Without a specified type you'll get twenty recall questions, because those are easiest to write and to answer.",
     },
     "19": {
         "what": "Peer assessment against shared criteria, with exemplars used first so that students know what quality looks like before they judge it.",
-        "why": "Sadler's conditions apply to peers exactly as they do to teachers: you cannot assess against a standard you cannot yet recognise. Berger's critique protocols work because the standard is established first and the language for talking about it is taught. Skip that and peer feedback reduces to encouragement, which is pleasant and not useful.",
+        "why": "Sadler's conditions apply to peers exactly as they do to teachers: you can't assess against a standard you can't yet recognise. Berger's critique protocols work because the standard is established first and the language for talking about it's taught. Skip that and peer feedback reduces to encouragement, which is pleasant and not useful.",
         "how": [
             "Establish the standard with exemplars before any peer work.",
             "Give a protocol: what to look for, in what order, in what words.",
             "Require evidence: point to the line that shows it.",
-            "Model a critique yourself first, including how to say something is not yet good enough.",
+            "Model a critique yourself first, including how to say something isn't yet good enough.",
         ],
         "tech": "A peer assessment tool with the criteria embedded keeps students on the protocol rather than drifting into general comment.",
         "watch": "Peer feedback without shared criteria produces opinion. Well-meant opinion, delivered confidently, can send a student in entirely the wrong direction.",
     },
     "20": {
         "what": "Low-stakes quizzing on content from previous weeks and months, not today's lesson, returning at widening intervals.",
-        "why": "Bjork's spacing research is among the most robust findings in the field. Material revisited at intervals is retained far longer than material studied in a block, and retrieving it is what does the work. Rereading notes produces fluency and very little retention, which is why students who revise that way are so often surprised in June.",
+        "why": "Bjork's spacing research is among the most robust findings in the field. Material revisited at intervals is retained far longer than material studied in a block, and retrieving it's what does the work. Rereading notes produces fluency and very little retention, which is why students who revise that way are so often surprised in June.",
         "how": [
             "Quiz on prior content at the start of lessons as routine.",
             "Widen the intervals as material becomes secure.",
@@ -243,11 +243,11 @@ EXPANSIONS = {
             "Track which items keep failing and shorten their interval.",
         ],
         "tech": "Spaced repetition tools schedule the returns automatically, which is the part that otherwise collapses when a term gets busy.",
-        "watch": "Quizzing on today's content feels like retrieval practice and is not. Today's material is still in working memory; retrieving it strengthens little.",
+        "watch": "Quizzing on today's content feels like retrieval practice and isn't. Today's material is still in working memory; retrieving it strengthens little.",
     },
     "21": {
-        "what": "Quiz students on material before you teach it, so they experience not knowing before they are told.",
-        "why": "Bjork's work on desirable difficulties and Wiliam's on activating prior knowledge converge here. The unsuccessful attempt primes attention: a student who has just failed to retrieve something is measurably better prepared to encode it when it arrives. The failure is doing work, provided it is framed as expected.",
+        "what": "Quiz students on material before you teach it, so they experience not knowing before they're told.",
+        "why": "Bjork's work on desirable difficulties and Wiliam's on activating prior knowledge converge here. The unsuccessful attempt primes attention: a student who has just failed to retrieve something is measurably better prepared to encode it when it arrives. The failure is doing work, provided it's framed as expected.",
         "how": [
             "Four or five questions on today's content, before any teaching.",
             "Say clearly that you expect them to get most of it wrong.",
@@ -258,7 +258,7 @@ EXPANSIONS = {
         "watch": "If it feels like a test with consequences, the productive failure becomes threatening and students disengage rather than engage.",
     },
     "22": {
-        "what": "In the last two minutes, every student anonymously writes the one thing they are least clear about. You open the next lesson with the most common answers.",
+        "what": "In the last two minutes, every student anonymously writes the one thing they're least clear about. You open the next lesson with the most common answers.",
         "why": "Angelo and Cross designed it as a classroom assessment technique and its value is the cost-benefit ratio: two minutes of lesson time for a ranked list of what to reteach. Anonymity matters, because the students least likely to admit confusion publicly are usually the ones you most need to hear from.",
         "how": [
             "Ask for one thing only. Muddiest point, singular.",
@@ -271,9 +271,9 @@ EXPANSIONS = {
     },
     "23": {
         "what": "Start every lesson with a brief review of prior content: yesterday's, last week's, last month's. Short, routine, non-negotiable.",
-        "why": "Rosenshine put daily review first among his principles of instruction because the most effective teachers he observed did it consistently. It strengthens recall, surfaces gaps early and gives you a decision point: if most of the class cannot answer, the pace of new teaching needs to change today rather than after the assessment.",
+        "why": "Rosenshine put daily review first among his principles of instruction because the most effective teachers he observed did it consistently. It strengthens recall, surfaces gaps early and gives you a decision point: if most of the class can't answer, the pace of new teaching needs to change today rather than after the assessment.",
         "how": [
-            "Build it into the lesson template so it is never a decision.",
+            "Build it into the lesson template so it's never a decision.",
             "Keep it to five minutes.",
             "Use whole-class response so you see everyone, not the volunteers.",
             "Act on it. If most of the room is blank, reteach rather than continue.",
@@ -283,7 +283,7 @@ EXPANSIONS = {
     },
     "24": {
         "what": "Teach students to quiz themselves rather than reread their notes, and to space those self-quizzes over time.",
-        "why": "Bjork's research is consistent on this: self-testing feels harder and less productive than rereading, and produces substantially better retention. The discomfort is the signal that it is working. Most students have never been told this, and they interpret the difficulty as evidence that the method is not suiting them.",
+        "why": "Bjork's research is consistent on this: self-testing feels harder and less productive than rereading, and produces substantially better retention. The discomfort is the signal that it is working. Most students have never been told this, and they interpret the difficulty as evidence that the method isn't suiting them.",
         "how": [
             "Show them how: cover the notes, write what you remember, check, repeat on what was missing.",
             "Give them the schedule, not just the technique.",

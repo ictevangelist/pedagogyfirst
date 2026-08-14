@@ -6,8 +6,8 @@ Expansions for each of the 24 strategies on the infographic.
 
 EXPANSIONS = {
     "01": {
-        "what": "Anderson and Krathwohl's revision of Bloom sets out six cognitive processes: remembering, understanding, applying, analysing, evaluating and creating. It is a planning tool for questions, not a ladder to climb.",
-        "why": "The common misreading treats recall as the low-value bottom rung to be escaped as fast as possible. It is not. Analysis without secure knowledge produces confident nonsense, and Willingham's point that you cannot think critically about content you do not know applies directly. The taxonomy is useful for making sure your questions span the range, not for ranking them by worth.",
+        "what": "Anderson and Krathwohl's revision of Bloom sets out six cognitive processes: remembering, understanding, applying, analysing, evaluating and creating. It's a planning tool for questions, not a ladder to climb.",
+        "why": "The common misreading treats recall as the low-value bottom rung to be escaped as fast as possible. It is not. Analysis without secure knowledge produces confident nonsense, and Willingham's point that you can't think critically about content you don't know applies directly. The taxonomy is useful for making sure your questions span the range, not for ranking them by worth.",
         "how": [
             "Take a topic and write one question at each of the six levels.",
             "Notice which levels you find hard to write for. That is usually where your questioning is thin.",
@@ -15,22 +15,22 @@ EXPANSIONS = {
             "Keep returning to remembering later in the unit, not just at the start.",
         ],
         "tech": "A question bank organised by level makes the range visible and stops the same three question types recurring across a unit.",
-        "watch": "Treating the top three levels as the real teaching and recall as a warm-up produces students who can evaluate a topic they cannot describe.",
+        "watch": "Treating the top three levels as the real teaching and recall as a warm-up produces students who can evaluate a topic they can't describe.",
     },
     "02": {
         "what": "Hattie and Zierer separate surface questions, which establish what, deep questions, which establish why and how, and transfer questions, which ask students to apply the idea somewhere new.",
-        "why": "Each type suits a different point in a sequence, and the common failure is reaching for transfer too early. A student who cannot yet explain the mechanism will not transfer it to an unfamiliar context; they will pattern-match on surface features and get it wrong. Knowing which type you are asking tells you whether a poor answer means reteach or means keep going.",
+        "why": "Each type suits a different point in a sequence, and the common failure is reaching for transfer too early. A student who can't yet explain the mechanism won't transfer it to an unfamiliar context; they'll pattern-match on surface features and get it wrong. Knowing which type you're asking tells you whether a poor answer means reteach or means keep going.",
         "how": [
             "Label your planned questions surface, deep or transfer.",
             "Check the sequence moves in that order within a topic.",
-            "Do not abandon surface questions once you have moved on. Interleave them back in.",
+            "Do not abandon surface questions once you've moved on. Interleave them back in.",
             "When transfer questions fail, drop back to deep rather than repeating the transfer.",
         ],
         "tech": "A slide or prompt display that keeps the question visible while students think reduces the load of holding a complex question in working memory.",
-        "watch": "Deep questions asked of a class that has not secured the surface knowledge produce silence, which then gets misread as a discussion problem.",
+        "watch": "Deep questions asked of a class that hasn't secured the surface knowledge produce silence, which then gets misread as a discussion problem.",
     },
     "03": {
-        "what": "A genuinely open question is one where you do not already have the answer in mind. Not a guess-what-I-am-thinking question with a wide opening.",
+        "what": "A genuinely open question is one where you don't already have the answer in mind. Not a guess-what-I-am-thinking question with a wide opening.",
         "why": "Dillon's classroom research found that authentic questions, where the teacher was genuinely uncertain, produced markedly longer and more reasoned student responses. Students detect the difference quickly. When they sense a target answer, the task becomes finding it rather than thinking, and the reasoning shortens accordingly.",
         "how": [
             "Plan two or three genuinely open questions per unit, where multiple defensible answers exist.",
@@ -46,36 +46,36 @@ EXPANSIONS = {
         "why": "Improvised questions default to recall, not because teachers undervalue thinking but because recall questions are the ones you can compose while also managing a room. Planning three or four questions in advance is one of the highest-return preparation tasks available, and it takes a couple of minutes.",
         "how": [
             "Plan three or four questions per lesson, not thirty.",
-            "Write them where you will see them: on the slide, in the margin of the plan.",
+            "Write them where you'll see them: on the slide, in the margin of the plan.",
             "Include at least one you expect the class to find difficult.",
             "Note what a wrong answer to each would tell you.",
         ],
-        "tech": "Putting the questions on the slides means they are prepared, visible to students, and reusable next year.",
+        "tech": "Putting the questions on the slides means they're prepared, visible to students, and reusable next year.",
         "watch": "Planned questions still need responsive follow-ups. The plan is a floor for the quality of questioning, not a script to be read.",
     },
     "05": {
         "what": "Not every probe needs to be a question. Statements, invitations and silence often produce more than another question does.",
         "why": "Dillon found that non-question alternatives produced longer, more elaborated student responses than questions did. A question implies a specific answer is wanted and narrows the response. Tell me more, or a declarative statement offered for the class to react to, opens the space rather than closing it.",
         "how": [
-            "Try a statement: I had not thought of it that way.",
+            "Try a statement: I hadn't thought of it that way.",
             "Try an invitation: say more about that.",
             "Try silence. Count to five after an answer before speaking.",
             "Try reflecting back what was said and stopping.",
         ],
         "tech": "This is mostly a talk technique. Where technology helps is in recording a lesson so you can hear how often you ask versus how often you wait.",
-        "watch": "Silence is only productive if the class knows what it is for. Establish that a pause is thinking time, or it will be filled with fidgeting.",
+        "watch": "Silence is only productive if the class knows what it's for. Establish that a pause is thinking time, or it will be filled with fidgeting.",
     },
     "06": {
         "what": "The pause between asking a question and expecting an answer. Rowe found most teachers wait under a second; three seconds changes what comes back.",
-        "why": "Rowe's studies found that extending wait time to three seconds produced longer responses, more evidence and reasoning, more students volunteering, and fewer failures to respond. The mechanism is straightforward: complex answers take time to compose, and a one-second wait selects for whoever has an answer already, which is not the same as whoever is thinking hardest.",
+        "why": "Rowe's studies found that extending wait time to three seconds produced longer responses, more evidence and reasoning, more students volunteering, and fewer failures to respond. The mechanism is straightforward: complex answers take time to compose, and a one-second wait selects for whoever has an answer already, which isn't the same as whoever is thinking hardest.",
         "how": [
             "Ask, then count silently to three before taking any answer.",
-            "Tell the class you are doing it, so the silence is understood.",
+            "Tell the class you're doing it, so the silence is understood.",
             "Resist rephrasing during the pause. Rephrasing restarts the clock.",
             "Notice how uncomfortable it feels at first. It gets easier.",
         ],
         "tech": "A visible timer or countdown makes the wait a shared expectation rather than a test of your nerve.",
-        "watch": "Wait time is the first thing to disappear when a lesson is running late, and it is the change most likely to improve the quality of answers.",
+        "watch": "Wait time is the first thing to disappear when a lesson is running late, and it's the change most likely to improve the quality of answers.",
     },
     "07": {
         "what": "The second pause: after a student finishes speaking, before you respond. Also around three seconds.",
@@ -96,14 +96,14 @@ EXPANSIONS = {
             "Pose the question, then require writing before hands or nominations.",
             "Keep it short. A sentence is enough.",
             "Nominate after the writing, not before.",
-            "Occasionally ask a student to read exactly what they wrote, including if they have changed their mind since.",
+            "Occasionally ask a student to read exactly what they wrote, including if they've changed their mind since.",
         ],
         "tech": "A shared document, whiteboard or response tool lets you see the range of positions before the discussion starts, which changes who you choose to bring in.",
         "watch": "For students with significant writing difficulties, requiring writing can create the barrier it was meant to remove. Allow a drawn or dictated equivalent.",
     },
     "09": {
         "what": "Lyman's structure: think alone, discuss in pairs, then share with the class. All three stages, in order.",
-        "why": "The individual stage protects thinking time; the pair stage lets an idea be tested cheaply before public exposure; the share stage makes it accountable. It is one of the most widely used structures in teaching and one of the most frequently degraded, usually by dropping the first stage and turning it into unstructured chat.",
+        "why": "The individual stage protects thinking time; the pair stage lets an idea be tested cheaply before public exposure; the share stage makes it accountable. It's one of the most widely used structures in teaching and one of the most frequently degraded, usually by dropping the first stage and turning it into unstructured chat.",
         "how": [
             "Time each stage visibly. Think is silent.",
             "Give the pair stage a task: agree an answer, or find where you differ.",
@@ -115,12 +115,12 @@ EXPANSIONS = {
     },
     "10": {
         "what": "Stop taking hands. Direct questions to named students instead, with the norm established in advance.",
-        "why": "Wiliam's argument is that hands up creates a self-selecting minority who answer everything while the rest opt out, and that the opting out is invisible because the lesson appears to be going well. Removing hands makes participation a matter of your design rather than of student confidence, which is not evenly distributed.",
+        "why": "Wiliam's argument is that hands up creates a self-selecting minority who answer everything while the rest opt out, and that the opting out is invisible because the lesson appears to be going well. Removing hands makes participation a matter of your design rather than of student confidence, which isn't evenly distributed.",
         "how": [
             "Explain the change and why, before you start.",
-            "Pair it with wait time and with write-first, so being named is not an ambush.",
+            "Pair it with wait time and with write-first, so being named isn't an ambush.",
             "Allow a pass with a return: I will come back to you.",
-            "Track who you have asked so the distribution is real rather than felt.",
+            "Track who you've asked so the distribution is real rather than felt.",
         ],
         "tech": "A random name picker or class list tool removes unconscious bias in selection and makes the tracking automatic.",
         "watch": "Hands down without a supportive climate is exposure. The technique depends entirely on the norm that not knowing yet is acceptable.",
@@ -132,7 +132,7 @@ EXPANSIONS = {
             "Build the norms first: attempts are expected, not knowing yet is normal, we finish each other's thinking.",
             "Ask the same quality of question of every student.",
             "When an answer is wrong, work with it rather than moving on to someone else.",
-            "Return to a student who passed, so the pass is not an exit.",
+            "Return to a student who passed, so the pass isn't an exit.",
         ],
         "tech": "A random selector paired with a seating plan keeps selection visibly fair, which matters to students more than teachers often expect.",
         "watch": "Cold calling in a room where wrong answers get laughed at teaches students to stay silent, and the laughter is your responsibility to remove first.",
@@ -147,7 +147,7 @@ EXPANSIONS = {
             "Redesign your next unit's questioning around the gaps.",
         ],
         "tech": "A tracker or tally tool tied to your seating plan makes this survivable. Paper tallies work for a fortnight and rarely longer.",
-        "watch": "Counting questions alone can flatter you. The type of question matters more than the number, and that is where the gap usually sits.",
+        "watch": "Counting questions alone can flatter you. The type of question matters more than the number, and that's where the gap usually sits.",
     },
     "13": {
         "what": "Pose the question to everyone, pause for thinking, pounce on a named student, then bounce their answer to another student to extend or challenge.",
@@ -162,8 +162,8 @@ EXPANSIONS = {
         "watch": "Bouncing only to strong students to rescue an answer turns the technique into a repair mechanism and tells the class who is trusted.",
     },
     "14": {
-        "what": "Alexander's five criteria for dialogic teaching: talk that is collective, reciprocal, supportive, cumulative and purposeful.",
-        "why": "The five are useful as an audit because most classroom talk satisfies two or three. Talk is often collective and supportive and rarely cumulative, meaning ideas do not build across turns. Naming which criterion is missing gives you something specific to change rather than a general aspiration to have better discussions.",
+        "what": "Alexander's five criteria for dialogic teaching: talk that's collective, reciprocal, supportive, cumulative and purposeful.",
+        "why": "The five are useful as an audit because most classroom talk satisfies two or three. Talk is often collective and supportive and rarely cumulative, meaning ideas don't build across turns. Naming which criterion is missing gives you something specific to change rather than a general aspiration to have better discussions.",
         "how": [
             "Record or have a colleague observe fifteen minutes of your talk.",
             "Score it against the five criteria honestly.",
@@ -175,22 +175,22 @@ EXPANSIONS = {
     },
     "15": {
         "what": "Initiation, Response, Evaluation is the default pattern of classroom talk: teacher asks, student answers, teacher judges. Replacing the evaluation with a follow-up question changes what the talk does.",
-        "why": "Alexander and Mercer both identify IRE as the dominant and most limiting pattern. The evaluation closes the exchange: the answer has been judged, so there is nothing more to think about. Substituting a question keeps the thinking open and hands the next move back to the students.",
+        "why": "Alexander and Mercer both identify IRE as the dominant and most limiting pattern. The evaluation closes the exchange: the answer has been judged, so there's nothing more to think about. Substituting a question keeps the thinking open and hands the next move back to the students.",
         "how": [
             "After an answer, ask what makes you say that, rather than saying good.",
             "Or hand it on: what does anyone else think about that?",
             "Withhold your judgement until several contributions have accumulated.",
             "Record yourself and count how many exchanges end in your evaluation.",
         ],
-        "tech": "Video reflection or lesson capture is the only reliable way to see your own IRE rate, because it is almost invisible from the front of the room.",
-        "watch": "Never evaluating is its own problem. Students need to know when something is right; the point is not to end every exchange that way.",
+        "tech": "Video reflection or lesson capture is the only reliable way to see your own IRE rate, because it's almost invisible from the front of the room.",
+        "watch": "Never evaluating is its own problem. Students need to know when something is right; the point isn't to end every exchange that way.",
     },
     "16": {
         "what": "Mercer distinguishes three kinds of group talk: disputational, where students disagree without reasoning; cumulative, where they agree without challenge; and exploratory, where they challenge with reasons and build on each other.",
-        "why": "Only exploratory talk is associated with improved outcomes, and it is the rarest of the three. Groups left to themselves default to cumulative, which looks collaborative and involves very little thinking. The distinction is worth teaching to students directly, because they can recognise which one they are doing.",
+        "why": "Only exploratory talk is associated with improved outcomes, and it's the rarest of the three. Groups left to themselves default to cumulative, which looks collaborative and involves very little thinking. The distinction is worth teaching to students directly, because they can recognise which one they're doing.",
         "how": [
             "Teach the three types explicitly, with examples of each.",
-            "Give sentence stems that force reasons: I disagree because, the evidence for that is.",
+            "Give sentence stems that force reasons: I disagree because, the evidence for that's.",
             "Listen for challenge. If there is none, the group is being cumulative.",
             "Ask groups to self-identify which type they were doing.",
         ],
@@ -218,7 +218,7 @@ EXPANSIONS = {
             "Require their use in group work initially, then let it become natural.",
             "Praise the move when you hear it, so the class notices it working.",
         ],
-        "tech": "A sentence-starter display keeps the moves visible during discussion, which is when students need them and cannot recall them.",
+        "tech": "A sentence-starter display keeps the moves visible during discussion, which is when students need them and can't recall them.",
         "watch": "Talk moves recited without the thinking behind them become a formula. Push past I agree because to what the reason actually is.",
     },
     "19": {
@@ -231,11 +231,11 @@ EXPANSIONS = {
             "Return to the original student at the end to respond.",
         ],
         "tech": "A live display of contributions helps students track what has been said, which is what makes building on it possible in a long discussion.",
-        "watch": "Handing on an answer that was wrong, without eventually resolving it, leaves the misconception in the room with a class that cannot tell.",
+        "watch": "Handing on an answer that was wrong, without eventually resolving it, leaves the misconception in the room with a class that can't tell.",
     },
     "20": {
         "what": "Teach students the stems for generating their own questions: why does, what would happen if, how does X compare with Y.",
-        "why": "King's research found that students trained to generate questions using stems produced better discussion and better comprehension than students who only answered teacher questions. Generating a good question requires you to identify what matters, which is a substantially deeper act than answering one you have been given.",
+        "why": "King's research found that students trained to generate questions using stems produced better discussion and better comprehension than students who only answered teacher questions. Writing a good question makes you work out what's worth asking, which is a good deal harder than answering one you've been handed.",
         "how": [
             "Give a small set of stems, five or six, and display them.",
             "Model generating questions from a text or a diagram yourself.",
@@ -247,7 +247,7 @@ EXPANSIONS = {
     },
     "21": {
         "what": "Students generate questions and pose them to each other, with neither party holding a model answer.",
-        "why": "King's reciprocal peer questioning produces genuine enquiry rather than rehearsal, because there is no answer key to converge on. The questioner has to judge whether an answer is adequate, which requires them to understand the material at least as well as the responder. Both roles are cognitively demanding, which is the point.",
+        "why": "King's reciprocal peer questioning produces genuine enquiry rather than rehearsal, because there's no answer key to converge on. The questioner has to judge whether an answer is adequate, which requires them to understand the material at least as well as the responder. Both roles are cognitively demanding, which is the point.",
         "how": [
             "Teach the stems first. This does not work cold.",
             "Pair students and give each a section of content to question the other on.",
@@ -259,7 +259,7 @@ EXPANSIONS = {
     },
     "22": {
         "what": "Use the questions students ask as evidence of understanding. Ask for one written question at the end of a lesson.",
-        "why": "A question reveals the edge of what someone knows. Why does X cause Y demonstrates a grasp of the relationship; what is X demonstrates that the basics have not landed. King's work on question generation and Wiliam's on eliciting evidence meet here: the question is diagnostic data that costs two minutes to collect.",
+        "why": "A question reveals the edge of what someone knows. Why does X cause Y demonstrates a grasp of the relationship; what is X demonstrates that the basics haven't landed. King's work on question generation and Wiliam's on eliciting evidence meet here: the question is diagnostic data that costs two minutes to collect.",
         "how": [
             "One written question at the end of the lesson, from everyone.",
             "Sort them into recall, explanation and application before the next lesson.",
@@ -283,10 +283,10 @@ EXPANSIONS = {
     },
     "24": {
         "what": "Use student questions to open a topic. What do you already know, and what do you want to know, becomes the entry point for the enquiry.",
-        "why": "King found that connecting new questions to prior knowledge produced the strongest learning effects. Starting from what students actually wonder about does two things at once: it activates the prior knowledge you need them to connect to, and it tells you where their existing understanding is, before you have taught anything.",
+        "why": "King found that connecting new questions to prior knowledge produced the strongest learning effects. Starting from what students actually wonder about does two things at once: it activates the prior knowledge you need them to connect to, and it tells you where their existing understanding is, before you've taught anything.",
         "how": [
             "Open a topic by collecting what they know and what they want to know.",
-            "Sort their questions into ones the unit will answer and ones it will not.",
+            "Sort their questions into ones the unit will answer and ones it won't.",
             "Display the list and tick them off as the unit progresses.",
             "Return to the unanswered ones at the end and decide together what to do with them.",
         ],

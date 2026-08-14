@@ -270,7 +270,7 @@ section { scroll-margin-top: calc(var(--header-h, 4.2rem) + var(--clusternav-h, 
 .chapter-card__clusters { list-style: none; margin: 0 0 1.1rem; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem; }
 .chapter-card__clusters li { font-family: var(--font-meta); font-size: .76rem; color: var(--ink); border: 1px solid var(--border); border-radius: 999px; padding: .18rem .55rem; display: inline-flex; align-items: center; gap: .35rem; }
 .btn {
-  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; overflow-wrap: break-word;
   background: var(--accent-ink); color: #fff; font-weight: 600; text-decoration: none;
   padding: .6rem 1.1rem; border-radius: 9px; margin-top: auto; align-self: flex-start;
 }
@@ -582,3 +582,54 @@ html.is-filtering .cluster-head { border-bottom-color: var(--border); }
   .filter, .infographic-figure a { break-inside: avoid; }
   .hero-actions, .download-grid, .mini-quotes { display: none !important; }
 }
+
+/* =====================================================================
+   Third pass: the call to action, and the analytics consent banner.
+   ===================================================================== */
+
+/* ---------- CTA band ---------- */
+.cta-band {
+  background: var(--hero-bg); color: var(--hero-ink);
+  margin-top: 3rem; padding: 2.6rem 0; position: relative; overflow: hidden;
+}
+.cta-band::before {
+  content: ""; position: absolute; inset: 0 auto auto 0; right: 0; height: 4px;
+  background: var(--brand-grad);
+}
+.cta-band__inner { display: flex; flex-wrap: wrap; gap: 1.4rem 2.5rem; align-items: center; justify-content: space-between; }
+.cta-band__inner > div:first-child { flex: 1 1 24rem; min-width: 0; }
+.cta-band h2 { color: var(--hero-ink); font-size: clamp(1.35rem, 1.15rem + .8vw, 1.8rem); margin: 0 0 .5rem; }
+.cta-band p { color: var(--hero-ink); margin: 0; max-width: 56ch; font-size: 1.02rem; }
+.cta-band__actions { display: flex; flex-wrap: wrap; gap: .7rem; flex: 1 1 auto; min-width: 0; }
+/* .cta-band clips its decorative edge, so the buttons must wrap rather than
+   run past it and get cut off at large text sizes. */
+.cta-band__actions .btn { max-width: 100%; }
+.cta-band :focus-visible { outline-color: #ffd166; }
+
+/* ---------- Consent banner ---------- */
+.consent {
+  position: fixed; left: 1.1rem; right: 1.1rem; bottom: 1.1rem; z-index: 200;
+  max-width: 30rem; margin-inline: auto;
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  box-shadow: 0 14px 40px rgba(22,32,43,.28); padding: 1.2rem 1.3rem 1.3rem;
+}
+.consent::before { content: ""; display: block; height: 4px; border-radius: 3px; background: var(--brand-grad); margin: -.3rem 0 .9rem; }
+.consent__title { font-family: var(--font-head); font-size: 1.08rem; margin: 0 0 .45rem; }
+.consent__body { font-size: .93rem; color: var(--ink-soft); margin: 0 0 1rem; max-width: none; }
+.consent__actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.consent button {
+  min-height: 44px; cursor: pointer; border-radius: 8px;
+  font: 600 .92rem var(--font-body); padding: .6rem 1.1rem;
+}
+.consent__yes { background: var(--accent-ink); color: #fff; border: 0; }
+.consent__yes:hover { background: var(--ink); }
+.consent__no { background: var(--paper); color: var(--ink); border: 1px solid var(--border-strong); }
+.consent__no:hover { border-color: var(--accent); }
+
+@media (max-width: 620px) {
+  .cta-band__actions { width: 100%; }
+  .cta-band__actions .btn { flex: 1 1 12rem; justify-content: center; }
+}
+
+@media print { .consent, .cta-band { display: none !important; } }

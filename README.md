@@ -83,6 +83,29 @@ node source/nojs-test.cjs      # progressive enhancement
 node source/overflow-test.cjs  # locates any element breaking reflow
 ```
 
+## Analytics
+
+Off by default. Nothing loads, no banner appears, no cookie is set.
+
+To switch it on, put the GA4 measurement ID into `GA_MEASUREMENT_ID` at the top of
+`build.py` and rebuild. The script then loads behind a consent banner: nothing is
+requested from Google until the visitor agrees, and declining sticks. Advertising
+storage and personalisation are denied in Consent Mode regardless of the answer.
+
+Five events, chosen to answer questions worth asking of this site rather than to
+fill a dashboard:
+
+| Event | Question it answers |
+| --- | --- |
+| `guide_download` | Did the PDF actually get taken, and from which page |
+| `infographic_download` | Which of the six pulls its weight |
+| `cta_click` | Did anyone go on to make contact, and from where on the page |
+| `strategy_filter` | What people search for, which shows what they expected to find |
+| `chapter_depth` | Whether a chapter got read or bounced off the top |
+
+`source/analytics-test.cjs` checks that nothing reaches Google before consent,
+that declining persists across pages, and that each event fires.
+
 ## Deployment
 
 GitHub Pages from `main`, root folder.

@@ -4,26 +4,26 @@ Chapter 01 : Retrieval Practice.
 Expansions for each of the 24 strategies on the infographic.
 
 Keys map to the strategy number as printed on the card.
-Each entry: what it is, why it works, how to run it, where technology
+Each entry: what it's, why it works, how to run it, where technology
 serves, and the failure mode to watch for.
 """
 
 EXPANSIONS = {
     "01": {
-        "what": "Retrieval means getting knowledge out of memory rather than putting it in again. In practice it is the difference between a class rereading their notes on the water cycle and a class closing their books and writing down everything they can remember about it. The second one looks less productive and does considerably more.",
-        "why": "Roediger and Karpicke gave students the same material and the same amount of study time, then split them: one group restudied, the other was tested. On an immediate test the restudy group looked better. A week later the tested group remembered far more. The act of retrieving strengthens the memory trace in a way that reviewing does not, which is why the effect is called the testing effect even though no assessment is involved.",
+        "what": "Retrieval means getting knowledge out of memory rather than putting it in again. In practice it's the difference between a class rereading their notes on the water cycle and a class closing their books and writing down everything they can remember about it. The second one looks less productive and does considerably more.",
+        "why": "Roediger and Karpicke gave students the same material and the same amount of study time, then split them: one group restudied, the other was tested. On an immediate test the restudy group looked better. A week later the tested group remembered far more. The act of retrieving strengthens the memory trace in a way that reviewing doesn't, which is why the effect is called the testing effect even though no assessment is involved.",
         "how": [
-            "Pick the point in the lesson where you would normally say \"read over that again\" and replace it.",
+            "Pick the point in the lesson where you'd normally say \"read over that again\" and replace it.",
             "Books closed, screens down. Ask for everything they can remember about the topic, in whatever form suits: prose, bullets, a labelled sketch.",
             "Give it two or three minutes. The silence will feel long. Hold it.",
             "Only then let them open books to check and correct in a different colour.",
             "Scan a few. What is missing across the room is what you reteach.",
         ],
         "tech": "A quizzing or flashcard tool lowers the cost of doing this every lesson, because nothing needs marking. What technology must not do is supply the answer before the effort has happened. If your tool shows a hint by default, turn it off.",
-        "watch": "Retrieval with notes open is reading. If students can see the material while they answer, you have replaced the difficulty that makes this work with the comfort that undoes it.",
+        "watch": "Retrieval with notes open is reading. If students can see the material while they answer, you've replaced the difficulty that makes this work with the comfort that undoes it.",
     },
     "02": {
-        "what": "Five questions at the start of every lesson, all of them on content you taught before today, and none of them recorded as a grade. It takes four minutes and it is the single easiest way to get retrieval into a scheme of work without redesigning anything.",
+        "what": "Five questions at the start of every lesson, all of them on content you taught before today, and none of them recorded as a grade. It takes four minutes and it's the single easiest way to get retrieval into a scheme of work without redesigning anything.",
         "why": "Agarwal's classroom studies found that routine low-stakes quizzing reduced test anxiety rather than adding to it. When quizzing is normal, frequent and carries no weight, the stakes drain out of it. Students also arrive expecting to think, which changes the first four minutes of a lesson considerably.",
         "how": [
             "Write five questions from previous lessons, not today's.",
@@ -36,8 +36,8 @@ EXPANSIONS = {
         "watch": "The moment it counts towards a grade, it stops being low stakes and students start revising for it the night before. That is a different activity with different effects.",
     },
     "03": {
-        "what": "A blank page, two minutes, no notes: write down everything you remember about this topic. No structure imposed, no marks, no right way to lay it out. It is the purest form of free recall available in a classroom.",
-        "why": "The value sits in the gaps. What a class cannot produce without prompting is a precise map of where your teaching needs to return, and it is far more honest than asking whether everyone understood. The effortful, incomplete attempt is doing the work; the tidy version they could copy would not.",
+        "what": "A blank page, two minutes, no notes: write down everything you remember about this topic. No structure imposed, no marks, no right way to lay it out. It's the purest form of free recall available in a classroom.",
+        "why": "The value sits in the gaps. What a class can't produce without prompting is a precise map of where your teaching needs to return, and it's far more honest than asking whether everyone understood. The effortful, incomplete attempt is doing the work; the tidy version they could copy wouldn't.",
         "how": [
             "Name the topic and the time limit. Two minutes is usually enough.",
             "Books closed. Make clear that a messy, partial answer is the expected outcome.",
@@ -49,8 +49,8 @@ EXPANSIONS = {
         "watch": "Turning it into a competition for who wrote most rewards fast writers rather than secure knowledge, and it penalises anyone who finds writing effortful.",
     },
     "04": {
-        "what": "Quiz the class on material you have not taught yet. They will get most of it wrong, which is the point. The failed attempt primes them for the teaching that follows.",
-        "why": "Bjork's work on desirable difficulties and Kapur's on productive failure both point the same way: struggling to retrieve something you do not yet know improves how well you remember it once you are told. The brain that has just searched for an answer and come up empty is markedly better prepared to receive that answer than the brain that has not.",
+        "what": "Quiz the class on material you haven't taught yet. They will get most of it wrong, which is the point. The failed attempt primes them for the teaching that follows.",
+        "why": "Bjork's work on desirable difficulties and Kapur's on productive failure both point the same way: struggling to retrieve something you don't yet know improves how well you remember it once you're told. The brain that has just searched for an answer and come up empty is markedly better prepared to receive that answer than the brain that hasn't.",
         "how": [
             "Write four or five questions on the content of today's lesson.",
             "Set them before any teaching, and say plainly that you expect them not to know most of it.",
@@ -72,7 +72,7 @@ EXPANSIONS = {
             "Next lesson, start with those circled items.",
         ],
         "tech": "A document tool with colour annotation keeps the two passes visually distinct and makes the work easy to return to weeks later, which paper versions rarely are.",
-        "watch": "If they copy rather than reconstruct, you have a transcription exercise. Watch for books that open too early and for reconstructions that match the notes suspiciously closely.",
+        "watch": "If they copy rather than reconstruct, you've a transcription exercise. Watch for books that open too early and for reconstructions that match the notes suspiciously closely.",
     },
     "06": {
         "what": "Spread retrieval across days and weeks rather than concentrating it in one session. The same total practice time, distributed differently, produces substantially better retention.",
@@ -81,16 +81,16 @@ EXPANSIONS = {
             "When you plan a unit, mark the review points before you plan the lessons.",
             "Aim to return to significant content at widening intervals: a few days, then a couple of weeks, then a month.",
             "Keep each return short. Three questions is plenty.",
-            "Protect those slots when the scheme of work gets tight, because they are the bit that makes the rest stick.",
+            "Protect those slots when the scheme of work gets tight, because they're the bit that makes the rest stick.",
         ],
         "tech": "Spaced repetition tools schedule the return automatically, which is precisely the admin that otherwise makes spacing collapse under pressure. Let the tool own the calendar; keep the thinking with the student.",
-        "watch": "Spacing gets cut first when you are behind. That feels like efficiency and is the opposite, because blocked teaching produces confident students who cannot retrieve the material in June.",
+        "watch": "Spacing gets cut first when you are behind. That feels like efficiency and is the opposite, because blocked teaching produces confident students who can't retrieve the material in June.",
     },
     "07": {
-        "what": "Three questions at the start of a lesson: one on yesterday's content, one on last week's, one on last month's. It is the simplest possible implementation of spacing and it fits in five minutes.",
+        "what": "Three questions at the start of a lesson: one on yesterday's content, one on last week's, one on last month's. It's the simplest possible implementation of spacing and it fits in five minutes.",
         "why": "Rosenshine's principles put daily review at the top for good reason, and Bjork's spacing research explains why the three different intervals matter. Yesterday's question checks consolidation, last week's checks retention, last month's checks whether it has made it into long-term memory at all. The three together tell you more than any one of them.",
         "how": [
-            "Build the three-question slide into your lesson template so it is always there.",
+            "Build the three-question slide into your lesson template so it's always there.",
             "Draw the questions from your own scheme of work, not a generic bank.",
             "Whiteboards up, so you see the whole room rather than the one who volunteers.",
             "Adjust the intervals for difficulty. Genuinely hard content needs revisiting sooner than a month.",
@@ -124,7 +124,7 @@ EXPANSIONS = {
     },
     "10": {
         "what": "Build earlier content back into starters, homework and assessments across the year, so nothing is finished the moment the unit ends.",
-        "why": "Bjork's work on spacing, and the practical point Benedict Carey makes well, is that memory needs repeated retrieval at intervals to stay accessible. There is also a signalling effect worth taking seriously: when content never reappears, students correctly infer that it no longer matters, and they stop maintaining it.",
+        "why": "Bjork's work on spacing, and the practical point Benedict Carey makes well, is that memory needs repeated retrieval at intervals to stay accessible. There's also a signalling effect worth taking seriously: when content never reappears, students correctly infer that it no longer matters, and they stop maintaining it.",
         "how": [
             "Write your medium-term plan with cumulative review built in, not appended.",
             "Every assessment includes questions from earlier units, not just the current one.",
@@ -132,23 +132,23 @@ EXPANSIONS = {
             "Keep a running question bank per unit so pulling old material back is quick.",
         ],
         "tech": "A question bank or quiz builder with tagging by unit makes cumulative assessment a filtering job rather than a writing job.",
-        "watch": "Cumulative review that only ever appears in the final exam is not cumulative review. It has to show up in ordinary weeks to change what students maintain.",
+        "watch": "Cumulative review that only ever appears in the final exam isn't cumulative review. It has to show up in ordinary weeks to change what students maintain.",
     },
     "11": {
         "what": "Choose the version of a task that feels harder in the lesson when the evidence says it retains better. Effortful retrieval is the clearest example, but so are spacing, interleaving and reduced scaffolding.",
         "why": "Bjork coined desirable difficulties for exactly this: conditions that slow apparent learning during instruction but improve retention and transfer afterwards. The uncomfortable part is that fluency during a lesson is a poor guide to learning, and both teachers and students read it as a good one.",
         "how": [
-            "Notice where you have made something easier out of kindness and ask whether it removed the thinking.",
+            "Notice where you've made something easier out of kindness and ask whether it removed the thinking.",
             "Delay the hint. Count to five before you offer it.",
             "Let a struggle run a little longer than is comfortable before you intervene.",
-            "Explain to the class why the lesson feels harder, so it does not read as poor teaching.",
+            "Explain to the class why the lesson feels harder, so it doesn't read as poor teaching.",
         ],
         "tech": "Any retrieval tool works, with hints and multiple-choice options disabled. The default settings on most platforms are tuned for engagement, not for difficulty.",
-        "watch": "Desirable is doing real work in that phrase. Difficulty that a student has no route through is just difficulty, and it teaches them that the subject is not for them.",
+        "watch": "Desirable is doing real work in that phrase. Difficulty that a student has no route through is just difficulty, and it teaches them that the subject isn't for them.",
     },
     "12": {
         "what": "Fade the support across a sequence: full notes available, then headings only, then nothing. The transition to unaided retrieval is where the consolidation happens.",
-        "why": "Bjork and Kornell's work on scaffolding and retrieval shows that support which is never withdrawn produces performance that collapses the moment it is removed. Fading is not a nicety at the end; it is the mechanism by which the student takes over.",
+        "why": "Bjork and Kornell's work on scaffolding and retrieval shows that support which is never withdrawn produces performance that collapses the moment it's removed. Fading isn't a nicety at the end; it's the mechanism by which the student takes over.",
         "how": [
             "Plan three passes over the content with decreasing support.",
             "Pass one: notes available, focus on getting the shape right.",
@@ -156,35 +156,35 @@ EXPANSIONS = {
             "Pass three: blank page.",
             "Be explicit that the third pass is the one that counts for their own judgement of what they know.",
         ],
-        "tech": "A quiz tool with a closed-book or timed mode enforces the final pass in a way that trusting to willpower does not.",
+        "tech": "A quiz tool with a closed-book or timed mode enforces the final pass in a way that trusting to willpower doesn't.",
         "watch": "Fading only works if you actually do it. Scaffolds have a habit of becoming permanent because removing them makes the class look less successful for a week.",
     },
     "13": {
         "what": "Retrieve the same knowledge in different formats and settings: written one week, spoken the next, as a diagram the week after, in a different room or a different order.",
-        "why": "Godden and Baddeley's divers famously recalled better in the environment where they learned, which tells you memory picks up contextual cues you did not intend to teach. Varying the context decontextualises the knowledge, so it is not welded to one format, one room or one question style. It is harder for students, and that is precisely the point.",
+        "why": "Godden and Baddeley's divers famously recalled better in the environment where they learned, which tells you memory picks up contextual cues you didn't intend to teach. Varying the context decontextualises the knowledge, so it isn't welded to one format, one room or one question style. It's harder for students, and that's precisely the point.",
         "how": [
             "Rotate the format of your recall activities rather than settling on a favourite.",
             "Ask for the same content as prose, as a diagram, as an explanation to a partner.",
             "Occasionally change where or when the retrieval happens.",
-            "Vary the question wording so recall is not tied to a phrasing.",
+            "Vary the question wording so recall isn't tied to a phrasing.",
         ],
         "tech": "Multi-modal tools let you switch format without rebuilding the activity each time: the same content as a quiz, a mind map, a voice note.",
         "watch": "Variety for its own sake becomes novelty-chasing. The variation has to be in how the knowledge is retrieved, not in how entertaining the packaging is.",
     },
     "14": {
-        "what": "Have students produce an answer before they are given it, even when you know the answer will be wrong. Generating beats being told, and generating badly still beats being told.",
+        "what": "Have students produce an answer before they're given it, even when you know the answer will be wrong. Generating beats being told, and generating badly still beats being told.",
         "why": "Slamecka and Graf's generation effect showed that words a participant produced were remembered better than words they read, and McDaniel's later work extended it to classroom material. The effort of generation is what drives the encoding. Accuracy is close to irrelevant at that moment.",
         "how": [
             "Before defining a term, ask what they think it might mean.",
-            "Before giving the method, ask how they would approach it.",
+            "Before giving the method, ask how they'd approach it.",
             "Take a few answers without correcting them yet.",
             "Then teach, and explicitly connect back to what they guessed.",
         ],
-        "tech": "A response tool captures every student's guess rather than the three you have time to hear, and lets you show the spread of thinking before you resolve it.",
+        "tech": "A response tool captures every student's guess rather than the three you've time to hear, and lets you show the spread of thinking before you resolve it.",
         "watch": "If wrong guesses get visibly corrected in front of the class in a way that stings, students learn to stay quiet, and the generation stops happening.",
     },
     "15": {
-        "what": "Do not test immediately after teaching. Wait a day, then quiz. Wait a week, then quiz again. The gap is not a delay before the learning; it is part of it.",
+        "what": "Do not test immediately after teaching. Wait a day, then quiz. Wait a week, then quiz again. The gap isn't a delay before the learning; it's part of it.",
         "why": "Retrieval immediately after instruction is easy because the material is still in working memory, and easy retrieval strengthens little. Bjork's storage and retrieval strength distinction explains it: you need retrieval strength to have dropped somewhat for the act of retrieving to do useful work. Some forgetting is a precondition.",
         "how": [
             "Resist the end-of-lesson quiz on today's content as a measure of learning. Use it as a check of attention instead.",
@@ -197,7 +197,7 @@ EXPANSIONS = {
     },
     "16": {
         "what": "Retrieval is not only for facts. Once the factual base is secure, retrieve explanations, comparisons, causes and applications too.",
-        "why": "Agarwal's work found that higher-order retrieval practice supported higher-order performance, and that factual retrieval alone did not automatically transfer. The factual layer builds the schema you need; the higher-order questions test whether the student can use it. Both matter, and in that order.",
+        "why": "Agarwal's work found that higher-order retrieval practice supported higher-order performance, and that factual retrieval alone didn't automatically transfer. The factual layer builds the schema you need; the higher-order questions test whether the student can use it. Both matter, and in that order.",
         "how": [
             "Start a topic with factual recall to secure the foundations.",
             "Move to why and how questions once the facts are reliable.",
@@ -209,7 +209,7 @@ EXPANSIONS = {
     },
     "17": {
         "what": "Students draw a concept map of a topic from memory, showing not just the ideas but how they connect. Notes stay closed until the map is done.",
-        "why": "Karpicke and Blunt compared concept mapping while studying against retrieval practice, and found retrieval won. Mapping from memory combines both: it is a retrieval task that happens to produce a map. What it surfaces that a list does not is relational knowledge, whether the student can see how the parts hang together.",
+        "why": "Karpicke and Blunt compared concept mapping while studying against retrieval practice, and found retrieval won. Mapping from memory combines both: it's a retrieval task that happens to produce a map. What it surfaces that a list doesn't is relational knowledge, whether the student can see how the parts hang together.",
         "how": [
             "Give the topic and, at most, a handful of anchor terms.",
             "Closed book. The map is built from memory.",
@@ -221,7 +221,7 @@ EXPANSIONS = {
     },
     "18": {
         "what": "Have students prepare to teach a topic to someone else. The learning happens in the preparation, whether or not the teaching ever takes place.",
-        "why": "Nestojko and colleagues found that simply expecting to teach material changed how people studied it and improved recall, compared with expecting to be tested. Fiorella and Mayer's work on learning by teaching points the same way. Preparing to explain forces complete, organised retrieval in a way that answering questions does not.",
+        "why": "Nestojko and colleagues found that simply expecting to teach material changed how people studied it and improved recall, compared with expecting to be tested. Fiorella and Mayer's work on learning by teaching points the same way. Preparing to explain forces complete, organised retrieval in a way that answering questions doesn't.",
         "how": [
             "Assign a sub-topic each and set the expectation of teaching it.",
             "Insist on preparation from memory first, notes second.",
@@ -233,7 +233,7 @@ EXPANSIONS = {
     },
     "19": {
         "what": "Retrieval supported by a cue: a heading, a first letter, a keyword, a diagram with the labels removed. It triggers the search without doing the searching.",
-        "why": "Tulving and Thomson's encoding specificity principle established that what you can retrieve depends heavily on the cues available. Cued recall sits usefully between multiple choice, which offers too much, and free recall, which can be overwhelming for students who are not yet secure. It builds confidence on the way to unaided retrieval.",
+        "why": "Tulving and Thomson's encoding specificity principle established that what you can retrieve depends heavily on the cues available. Cued recall sits usefully between multiple choice, which offers too much, and free recall, which can be overwhelming for students who aren't yet secure. It builds confidence on the way to unaided retrieval.",
         "how": [
             "Use cued recall early in a sequence and free recall later.",
             "Cues can be structural: headings, a numbered skeleton, a stripped diagram.",
@@ -245,7 +245,7 @@ EXPANSIONS = {
     },
     "20": {
         "what": "Show students the difference between feeling like they know something and actually knowing it. Ask for a confidence rating before the answer is revealed, then let them see the mismatch.",
-        "why": "Koriat and Bjork called it the illusion of knowing: fluency with material, usually from rereading it recently, gets mistaken for secure knowledge. Dunlosky's work found students consistently overestimate what they will remember. Confident and wrong is the most useful diagnostic state there is, because it is the one the student cannot detect alone.",
+        "why": "Koriat and Bjork called it the illusion of knowing: fluency with material, usually from rereading it recently, gets mistaken for secure knowledge. Dunlosky's work found students consistently overestimate what they'll remember. Confident and wrong is the most useful diagnostic state there's, because it's the one the student can't detect alone.",
         "how": [
             "Ask for an answer and a confidence rating together, high, medium or low.",
             "Reveal the answer only afterwards.",
@@ -262,14 +262,14 @@ EXPANSIONS = {
             "For quick factual recall, reveal answers promptly.",
             "For harder reasoning, let the struggle run before you resolve it.",
             "Pay particular attention to answers given confidently and wrongly. Correct those clearly and immediately.",
-            "Tell students why the timing varies, so the delay does not read as withholding.",
+            "Tell students why the timing varies, so the delay doesn't read as withholding.",
         ],
         "tech": "Quiz tools with an instant reveal suit the factual case. For the harder work, turn the instant reveal off; the default is rarely what you want.",
         "watch": "Blanket immediate feedback on everything feels responsive and removes the productive struggle from the tasks that most needed it.",
     },
     "22": {
-        "what": "Students rate how confident they are in each answer, then check. Over time the gap between confidence and accuracy narrows, which is a skill in itself.",
-        "why": "Dunlosky and Metcalfe showed that students are most confident about material they have most recently read, which is a poor proxy for what they know. Calibration improves with repeated feedback on the mismatch. A well-calibrated student revises the right things; a poorly calibrated one revises what already feels comfortable.",
+        "what": "Students rate how confident they're in each answer, then check. Over time the gap between confidence and accuracy narrows, which is a skill in itself.",
+        "why": "Dunlosky and Metcalfe showed that students are most confident about material they've most recently read, which is a poor proxy for what they know. Calibration improves with repeated feedback on the mismatch. A well-calibrated student revises the right things; a poorly calibrated one revises what already feels comfortable.",
         "how": [
             "Two columns: the answer, and a confidence rating.",
             "Check answers, then look at the pattern rather than the score.",
@@ -280,20 +280,20 @@ EXPANSIONS = {
         "watch": "Confidence ratings only help if students act on them. The rating is data; the revision decision is the point.",
     },
     "23": {
-        "what": "A running log of what came back easily, what did not, and what needs revisiting. Kept by the student, not by you.",
-        "why": "Zimmerman's self-regulation research found that students who monitor their own performance make better subsequent study decisions. The journal externalises the monitoring so it does not depend on memory or honesty in the moment. It also gives a student something concrete to work from in the week before an assessment, rather than a vague sense that they should look at everything.",
+        "what": "A running log of what came back easily, what didn't, and what needs revisiting. Kept by the student, not by you.",
+        "why": "Zimmerman's self-regulation research found that students who monitor their own performance make better subsequent study decisions. The journal externalises the monitoring so it doesn't depend on memory or honesty in the moment. It also gives a student something concrete to work from in the week before an assessment, rather than a vague sense that they should look at everything.",
         "how": [
             "After each retrieval activity, three quick lines: solid, shaky, gone.",
             "Keep it in one place across the year rather than scattered through exercise books.",
             "Set revision from the shaky and gone columns, not from the start of the unit.",
-            "Review the journal with them occasionally so it does not become a ritual.",
+            "Review the journal with them occasionally so it doesn't become a ritual.",
         ],
         "tech": "A learning journal or digital notebook keeps it searchable and stops it living in a book that gets left at home.",
-        "watch": "Journals that are filled in because they are checked become fiction. The value depends on it being genuinely for the student.",
+        "watch": "Journals that are filled in because they're checked become fiction. The value depends on it being genuinely for the student.",
     },
     "24": {
         "what": "Ask students how they actually revise, then show them what the evidence says about those methods. The conversation is the intervention.",
-        "why": "Dunlosky and colleagues rated ten study techniques by the strength of evidence behind them. Practice testing and distributed practice came out on top. Highlighting, summarising and rereading, which is what most students do, came out low. Students are not being lazy; they are using the strategies that feel most productive, and feeling productive is exactly what those strategies are good at.",
+        "why": "Dunlosky and colleagues rated ten study techniques by the strength of evidence behind them. Practice testing and distributed practice came out on top. Highlighting, summarising and rereading, which is what most students do, came out low. Students aren't being lazy; they're using the strategies that feel most productive, and feeling productive is exactly what those strategies are good at.",
         "how": [
             "Survey the class anonymously on what they actually do.",
             "Show the ratings alongside their own results.",
