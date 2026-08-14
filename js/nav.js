@@ -31,18 +31,22 @@
   var nav = document.querySelector('.main-nav');
 
   if (toggle && nav) {
-    var isOpen = function () { return nav.classList.contains('open'); };
+    var isOpen = function () { return !nav.hasAttribute('hidden'); };
     var close = function (returnFocus) {
-      nav.classList.remove('open');
+      nav.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
       if (returnFocus) toggle.focus();
     };
     var open = function () {
-      nav.classList.add('open');
+      nav.hidden = false;
       toggle.setAttribute('aria-expanded', 'true');
       var first = nav.querySelector('a');
       if (first) first.focus();
     };
+
+    // Without JavaScript the panel stays open and reads as a plain list, so
+    // it is only collapsed once we know we can reopen it.
+    nav.hidden = true;
 
     toggle.addEventListener('click', function (e) {
       e.stopPropagation();
@@ -53,7 +57,14 @@
       if (isOpen() && !nav.contains(e.target) && !toggle.contains(e.target)) close(false);
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && isOpen()) close(true);
+      if (!isOpen()) return;
+      if (e.key === 'Escape') { close(true); return; }
+      if (e.key !== 'Tab') return;
+      var items = Array.prototype.slice.call(nav.querySelectorAll('a'));
+      items.unshift(toggle);
+      var first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     });
 
     // Arrow-key movement within the open menu, home/end to jump.

@@ -28,8 +28,13 @@ const { chromium } = require('playwright');
         if (!i.hasAttribute('alt')) out.push('img without alt: ' + i.getAttribute('src'));
       });
 
+      // A link's accessible name can come from its text, an aria-label, or
+      // the alt text of an image it wraps.
       document.querySelectorAll('a').forEach(a => {
-        const name = (a.innerText || '').trim() || a.getAttribute('aria-label') || '';
+        const img = a.querySelector('img[alt]');
+        const name = (a.innerText || '').trim()
+          || a.getAttribute('aria-label')
+          || (img ? img.getAttribute('alt').trim() : '');
         if (!name) out.push('link with no accessible name: ' + a.getAttribute('href'));
       });
 
