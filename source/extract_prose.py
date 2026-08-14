@@ -85,7 +85,26 @@ def opener_of(lines, name, number):
         m = re.match(r"^\u201c(.+?)\u201d\s*(.*)$", text, re.S)
         if m:
             text, attribution = m.group(1).strip(), m.group(2).strip()
-    return {"standfirst": text, "attribution": attribution, "is_quote": is_quote}
+    return {
+        "standfirst": normalise(text),
+        "attribution": normalise(attribution),
+        "is_quote": is_quote,
+    }
+
+
+LIGATURES = {
+    "\ufb00": "ff", "\ufb01": "fi", "\ufb02": "fl",
+    "\ufb03": "ffi", "\ufb04": "ffl", "\ufb05": "st", "\ufb06": "st",
+}
+
+
+def normalise(text):
+    """Undo PDF typesetting artefacts: ligatures and broken hyphenation."""
+    for lig, plain in LIGATURES.items():
+        text = text.replace(lig, plain)
+    # "two- minute" is a line-break hyphen that survived the rejoin
+    text = re.sub(r"(\w)-\s+(\w)", r"\1-\2", text)
+    return re.sub(r"\s{2,}", " ", text).strip()
 
 
 def page_lines(reader, index):
@@ -115,6 +134,7 @@ def body_of(lines):
         paras.append(cur)
     if not paras:
         return {"standfirst": "", "paragraphs": []}
+    paras = [normalise(x) for x in paras]
     return {"standfirst": paras[0], "paragraphs": paras[1:]}
 
 
