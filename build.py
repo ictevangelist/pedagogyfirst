@@ -425,7 +425,7 @@ def footer(research=None):
        <a href="https://ictevangelist.com/contact">Work with Mark</a> &middot;
        <a href="https://ictevangelist.com">ictevangelist.com</a></p>
     <p>Licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a>.
-       Last reviewed {REVIEWED}.</p>
+       Last reviewed {REVIEWED}. <a href="/privacy/">Privacy and cookies</a>.</p>
     <p class="licence" aria-label="Creative Commons Attribution NonCommercial ShareAlike 4.0">
       <span aria-hidden="true">CC</span><span aria-hidden="true">BY</span><span aria-hidden="true">NC</span><span aria-hidden="true">SA</span>
     </p>
@@ -1172,13 +1172,103 @@ def build_crossrefs(chapters):
     return {t: places for t, places in seen.items() if len(places) > 1}
 
 
+def build_privacy(chapters):
+    """
+    The privacy notice.
+
+    Kept honest by construction rather than by good intentions: the analytics
+    paragraphs only claim what analytics_tag() actually emits, and the control
+    for changing your mind is only rendered when there is something to change.
+    """
+    LEGAL = load_module("legal")
+    p = LEGAL.PRIVACY
+
+    blocks = []
+    for s in p["sections"]:
+        body = "".join(f"<p>{e(x)}</p>" for x in s["paras"])
+        note = f'<div class="callout"><p>{e(s["note"])}</p></div>' if s.get("note") else ""
+        blocks.append(
+            f'<section class="prose-block" id="{s["id"]}" aria-labelledby="{s["id"]}-h">\n'
+            f'  <div class="wrap wrap--narrow">\n'
+            f'    <h2 id="{s["id"]}-h">{e(s["heading"])}</h2>\n'
+            f'    {body}\n    {note}\n'
+            f'  </div>\n</section>'
+        )
+
+    # Only offer to change an answer that can exist in the first place.
+    if GA_MEASUREMENT_ID:
+        blocks.append(
+            '<section class="prose-block" id="your-choice" aria-labelledby="your-choice-h">\n'
+            '  <div class="wrap wrap--narrow">\n'
+            '    <h2 id="your-choice-h">Change your mind</h2>\n'
+            '    <p>Whatever you answered about analytics, you can change it here. '
+            'The banner comes back and nothing is loaded until you answer it again.</p>\n'
+            '    <p><button type="button" class="btn" id="resetConsent">Change my analytics choice</button></p>\n'
+            '    <p class="filter__status" id="consentStatus" role="status" aria-live="polite"></p>\n'
+            '  </div>\n</section>'
+        )
+
+    rows = "".join(
+        f"<tr><th scope=\"row\">{e(k)}</th><td>{e(v)}</td></tr>"
+        for k, v in p["controller"]["rows"]
+    )
+    blocks.append(
+        f'<section class="prose-block" id="controller" aria-labelledby="controller-h">\n'
+        f'  <div class="wrap wrap--narrow">\n'
+        f'    <h2 id="controller-h">{e(p["controller"]["heading"])}</h2>\n'
+        f'    <div class="table-scroll">\n'
+        f'      <table class="facts"><tbody>{rows}</tbody></table>\n'
+        f'    </div>\n'
+        f'    <p>{e(p["closing"])}</p>\n'
+        f'  </div>\n</section>'
+    )
+
+    intro = "".join(f'<p class="lead">{e(x)}</p>' for x in p["intro"][:1])
+    intro += "".join(f"<p>{e(x)}</p>" for x in p["intro"][1:])
+
+    out = [
+        head(f'{p["title"]} | {TITLE}', p["standfirst"], f"{SITE}/privacy/"),
+        header(chapters, current=None),
+        f"""<main id="main">
+  <nav class="crumbs wrap" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">All six guides</a></li>
+      <li aria-current="page">{e(p["title"])}</li>
+    </ol>
+  </nav>
+
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">{e(p["kicker"])}</p>
+      <h1>{e(p["title"])}</h1>
+      <p class="lead">{e(p["standfirst"])}</p>
+    </div>
+  </div>
+
+  <section class="prose-block" aria-labelledby="intro-h">
+    <div class="wrap wrap--narrow">
+      <h2 id="intro-h" class="sr-only">In short</h2>
+      {intro}
+    </div>
+  </section>
+
+{"".join(blocks)}
+</main>
+""",
+        footer(),
+    ]
+    target = ROOT / "privacy"
+    target.mkdir(exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
+
 def build_extras(chapters):
     (ROOT / "CNAME").write_text("pedagogyfirst.ictevangelist.com\n", encoding="utf-8")
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
     (ROOT / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8"
     )
-    urls = [f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/get-the-guide/"] + [f"{SITE}/{c['slug']}/" for c in chapters]
+    urls = [f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/get-the-guide/", f"{SITE}/privacy/"] + [f"{SITE}/{c['slug']}/" for c in chapters]
     body = "".join(
         f"<url><loc>{u}</loc><lastmod>{REVIEWED}</lastmod></url>" for u in urls
     )
@@ -1204,6 +1294,7 @@ def main():
     build_index(chapters, prose)
     build_guide_page(chapters)
     build_finder(chapters)
+    build_privacy(chapters)
     written = total_gaps = total_restated = 0
     for i, c in enumerate(chapters):
         refs = {

@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
   const ctx = await b.newContext({ viewport: { width: 1280, height: 900 } });
   const p = await ctx.newPage();
   const BASE = 'http://localhost:8899';
-  const pages = ['/', '/find-a-strategy/', '/get-the-guide/', '/retrieval-practice/', '/feedback/', '/metacognition-and-self-regulation/'];
+  const pages = ['/', '/find-a-strategy/', '/get-the-guide/', '/privacy/', '/retrieval-practice/', '/feedback/', '/metacognition-and-self-regulation/'];
   let total = 0;
 
   for (const url of pages) {

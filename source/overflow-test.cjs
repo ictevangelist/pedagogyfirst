@@ -8,7 +8,7 @@
 const { chromium } = require('playwright');
 
 const PAGES = [
-  '/', '/find-a-strategy/', '/get-the-guide/',
+  '/', '/find-a-strategy/', '/get-the-guide/', '/privacy/',
   '/retrieval-practice/', '/formative-assessment/', '/feedback/',
   '/questioning-and-discussion/', '/explanations-and-modelling/',
   '/metacognition-and-self-regulation/',

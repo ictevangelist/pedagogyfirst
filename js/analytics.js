@@ -224,6 +224,37 @@
     }
   }
 
+  /* ---------- Changing your mind, from the privacy page ---------- */
+  function wireReset() {
+    var btn = document.getElementById('resetConsent');
+    if (!btn) return;
+    var out = document.getElementById('consentStatus');
+    var current = null;
+    try { current = localStorage.getItem(KEY); } catch (e) {}
+    if (out) {
+      out.textContent = current === 'granted'
+        ? 'Right now you have analytics switched on.'
+        : current === 'denied'
+          ? 'Right now you have analytics switched off.'
+          : "You haven't answered yet.";
+    }
+    btn.addEventListener('click', function () {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      // Anything already loaded stays loaded until the page reloads, so say so
+      // rather than implying the tag has been pulled back out of the page.
+      if (window.gtag) {
+        window.gtag('consent', 'update', { analytics_storage: 'denied' });
+      }
+      if (out) out.textContent = 'Cleared. The question comes back when the page reloads.';
+      banner();
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wireReset);
+  } else {
+    wireReset();
+  }
+
   if (granted === 'granted') {
     load('granted');
   } else if (granted === 'denied') {

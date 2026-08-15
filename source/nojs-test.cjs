@@ -46,6 +46,7 @@ const { chromium } = require('playwright');
     ['/', '.chapter-card', 6],
     ['/find-a-strategy/', '.finding', 144],
     ['/get-the-guide/', 'a[href$=".pdf"]', 1],
+    ['/privacy/', '.prose-block', 8],
   ]) {
     await p.goto(BASE + path, { waitUntil: 'load' });
     const count = await p.locator(sel).count();

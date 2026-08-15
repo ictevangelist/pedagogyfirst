@@ -729,6 +729,32 @@ html.is-filtering .cluster-head { border-bottom-color: var(--border); }
   .principle { flex-direction: column; gap: .7rem; }
 }
 
+/* ---------- Privacy notice ---------- */
+/* The two-column table is nicer to read when there is room for it, and turns
+   into a sideways scroll when there isn't. A container query means the switch
+   follows the space actually available rather than the viewport, so it also
+   does the right thing at 200% text on a small screen. */
+.table-scroll { margin: 1.4rem 0; max-width: 100%; container-type: inline-size; }
+.facts { border-collapse: collapse; width: 100%; font-size: .96rem; }
+.facts th, .facts td { text-align: left; vertical-align: top; padding: .8rem .9rem; border-bottom: 1px solid var(--border); }
+.facts th { width: 34%; font-family: var(--font-meta); font-weight: 600; color: var(--ink); background: var(--paper-alt); }
+.facts tr:last-child th, .facts tr:last-child td { border-bottom: 0; }
+
+.facts, .facts tbody, .facts tr, .facts th, .facts td { display: block; width: auto; }
+.facts th { border-bottom: 0; padding-bottom: .3rem; }
+.facts td { padding-top: 0; }
+.facts tr { border-bottom: 1px solid var(--border); }
+.facts tr:last-child { border-bottom: 0; }
+
+@container (min-width: 34rem) {
+  .facts { display: table; width: 100%; }
+  .facts tbody { display: table-row-group; }
+  .facts tr { display: table-row; border-bottom: 0; }
+  .facts th, .facts td { display: table-cell; border-bottom: 1px solid var(--border); padding: .8rem .9rem; }
+  .facts th { width: 34%; }
+  .facts tr:last-child th, .facts tr:last-child td { border-bottom: 0; }
+}
+
 @media print {
   .finder, .finder__starters, .finder__chips { display: none !important; }
   .session, .principle { break-inside: avoid; }

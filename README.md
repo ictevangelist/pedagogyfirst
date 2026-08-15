@@ -17,6 +17,7 @@ across all three.
 | `index.html` | Home: the five principles, the six chapters, running it with a team |
 | `find-a-strategy/` | All 144 searchable at once: by problem, by chapter, or by phrase |
 | `get-the-guide/` | The PDF, as a real page so the download can actually be counted |
+| `privacy/` | Privacy and cookies, written to match what the site actually does |
 | `retrieval-practice/` | 01 - the testing effect, spacing, desirable difficulties, formats, calibration |
 | `formative-assessment/` | 02 - intentions, eliciting evidence, feedback, peers, ownership |
 | `feedback/` | 03 - what feedback is, timing, source, the learner, closing the gap |
@@ -164,6 +165,10 @@ next infographic.
 
 `source/analytics-test.cjs` checks that nothing reaches Google before consent,
 that declining persists across pages, and that each event fires.
+
+`/privacy/` describes exactly this behaviour and carries a control to change the
+answer. That control only renders when `GA_MEASUREMENT_ID` is set, so the page
+never offers to change a choice that cannot exist.
 
 ## Deployment
 
