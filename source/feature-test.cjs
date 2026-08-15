@@ -47,10 +47,17 @@ const { chromium } = require('playwright');
     Array.from(document.querySelectorAll('.cluster')).filter(c => !c.hidden && !c.querySelector('.strategy:not([hidden])')).length);
   check('hides clusters left with nothing', emptyClusters === 0);
 
-  await p.locator('#strategyFilter').fill('Rosenshine');
+  // "Wiliam" appears in the written expansions and in no card title or summary,
+  // so a hit proves the filter is reading the whole card and not just the top of it.
+  await p.locator('#strategyFilter').fill('Wiliam');
   await p.waitForTimeout(400);
   visible = await p.locator('.strategy:not([hidden])').count();
-  check('searches the expansion text too, not just titles', visible >= 0, visible + ' match "Rosenshine"');
+  check('searches the expansion text too, not just titles', visible >= 3, visible + ' match "Wiliam"');
+  check('and at least one hit has it only in the expansion, not the card top',
+    await p.evaluate(() => Array.from(document.querySelectorAll('.strategy:not([hidden])'))
+      .some(a => /wiliam/i.test(a.querySelector('.strategy__body').textContent)
+             && !/wiliam/i.test((a.querySelector('h3').textContent || '')
+                              + (a.querySelector('.strategy__sum') || {}).textContent))));
 
   await p.locator('#strategyFilter').fill('zzzznothing');
   await p.waitForTimeout(400);

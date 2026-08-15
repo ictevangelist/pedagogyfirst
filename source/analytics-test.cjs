@@ -89,6 +89,30 @@ const { chromium } = require('playwright');
   const after = await p.evaluate(() => window.__events.map(e => e[0]));
   check('CTA clicks are recorded', after.includes('cta_click'));
 
+  // ---------- the finder's own events ----------
+  await p.goto(BASE + '/find-a-strategy/', { waitUntil: 'networkidle' });
+  await p.waitForTimeout(500);
+  await p.evaluate(() => { window.__events = []; const g = window.gtag; window.gtag = function () {
+    if (arguments[0] === 'event') window.__events.push([arguments[1], arguments[2]]); return g.apply(null, arguments); }; });
+  await p.locator('.starter').first().click();
+  await p.waitForTimeout(300);
+  await p.locator('.finder__chip').first().click();
+  await p.waitForTimeout(300);
+  await p.locator('#finderInput').fill('wait time');
+  await p.waitForTimeout(1900);
+  const fev = await p.evaluate(() => window.__events.map(e => e[0]));
+  check('problem starters are recorded', fev.includes('problem_starter'), fev.join(','));
+  check('chapter chips are recorded', fev.includes('chapter_chip'));
+  check('cross-site searches are recorded', fev.includes('strategy_search'));
+  const searched = await p.evaluate(() =>
+    (window.__events.filter(e => e[0] === 'strategy_search')[0] || [])[1]);
+  check('the search event carries the result count', searched && typeof searched.results === 'number',
+    JSON.stringify(searched));
+  await p.goto(BASE + '/feedback/', { waitUntil: 'networkidle' });
+  await p.waitForTimeout(400);
+  await p.evaluate(() => { window.__events = []; const g = window.gtag; window.gtag = function () {
+    if (arguments[0] === 'event') window.__events.push([arguments[1], arguments[2]]); return g.apply(null, arguments); }; });
+
   await p.evaluate(() => {
     const a = document.querySelector('a[href$=".pdf"], a[href*="-download.png"]');
     if (a) { a.addEventListener('click', ev => ev.preventDefault(), { once: true }); a.click(); }

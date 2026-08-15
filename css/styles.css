@@ -633,3 +633,103 @@ html.is-filtering .cluster-head { border-bottom-color: var(--border); }
 }
 
 @media print { .consent, .cta-band { display: none !important; } }
+
+/* =====================================================================
+   Fourth pass: written in response to the people who endorsed the guide.
+   Principles (Elder), measurement (Kingsley), CPD sessions (Sale, Hughes),
+   and a cross-chapter finder (Gwilliam, Fletcher-Saxon).
+   ===================================================================== */
+
+/* ---------- Principles ---------- */
+.principles { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
+.principles > li { max-width: none; }
+.principle {
+  display: flex; gap: 1.1rem; align-items: flex-start;
+  background: var(--paper); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+}
+.principle__no {
+  font-family: var(--font-head); font-weight: 700; font-size: 1.5rem; line-height: 1;
+  color: #fff; background: var(--accent-ink); border-radius: 9px;
+  min-width: 2.3rem; height: 2.3rem; display: grid; place-items: center; flex: none;
+}
+.principle h3 { font-size: 1.12rem; margin: .2rem 0 .35rem; }
+.principle p { margin: 0 0 .5rem; font-size: .99rem; }
+.principle__seen { font-family: var(--font-meta); font-size: .82rem; color: var(--ink-soft); margin: 0; }
+.principle__seen span { text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; margin-right: .35rem; }
+.principle__seen a + a { margin-left: .5rem; }
+
+/* ---------- CPD sessions ---------- */
+.sessions { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
+.sessions > li { max-width: none; }
+.session { background: var(--paper); border: 1px solid var(--border); border-top: 5px solid var(--accent); border-radius: var(--radius); padding: 1.2rem 1.3rem 1.3rem; }
+.session__len { font-family: var(--font-meta); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 .3rem; }
+.session h3 { font-size: 1.1rem; margin: 0 0 .7rem; }
+.session ol { margin: 0; padding-left: 1.2rem; }
+.session li { font-size: .95rem; margin-bottom: .45rem; }
+
+/* ---------- Find a strategy ---------- */
+.finder { background: var(--paper-alt); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.3rem 1.4rem 1.4rem; margin-bottom: 2rem; }
+.finder h3 { font-family: var(--font-meta); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; margin: 0 0 .55rem; }
+.finder__search { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.finder__search label { width: 100%; font-family: var(--font-meta); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+.finder__search input {
+  flex: 1 1 16rem; min-width: 0; max-width: 100%; min-height: 48px;
+  font: 400 1.02rem var(--font-body); padding: .55rem .8rem; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--border-strong); border-radius: 9px;
+}
+.finder__search input:disabled { opacity: .55; }
+.finder__starters, .finder__chapters { margin-top: 1.2rem; }
+.finder__starters ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .45rem; }
+.finder__starters li { max-width: none; }
+.starter, .finder__chip {
+  min-height: 40px; cursor: pointer; text-align: left;
+  font: 500 .9rem var(--font-body); padding: .45rem .8rem;
+  color: var(--ink); background: var(--paper);
+  border: 1px solid var(--border-strong); border-radius: 999px;
+}
+.starter:hover, .finder__chip:hover { border-color: var(--accent); background: var(--paper); }
+.finder__chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.finder__chip { display: inline-flex; align-items: center; gap: .45rem; }
+.finder__chip[aria-pressed="true"] { border-color: var(--accent-ink); box-shadow: inset 0 0 0 1px var(--accent-ink); font-weight: 600; }
+.finder__status { margin: 1.1rem 0 0; font-size: .92rem; color: var(--ink-soft); min-height: 1.3em; }
+
+.findings-group + .findings-group { margin-top: 2rem; }
+.findings-group__head {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem .7rem;
+  font-family: var(--font-head); font-size: 1.08rem; margin: 0 0 .8rem;
+  padding-bottom: .45rem; border-bottom: 2px solid var(--border);
+}
+.findings-group__head .dot { align-self: center; }
+.findings-group__link { margin-left: auto; font-family: var(--font-meta); font-size: .82rem; font-weight: 600; }
+
+.findings { list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
+.findings > li { max-width: none; }
+.finding a {
+  display: flex; gap: .8rem; align-items: flex-start; height: 100%;
+  padding: .9rem 1rem; text-decoration: none; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--border); border-radius: 10px;
+}
+.finding a:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+.finding__icon { font-size: 1.3rem; line-height: 1.2; flex: none; }
+.finding__text { display: block; min-width: 0; }
+.finding__text strong { display: block; font-family: var(--font-head); font-size: 1.02rem; margin-bottom: .2rem; }
+.finding__sum { display: block; font-size: .9rem; color: var(--ink-soft); margin-bottom: .45rem; }
+.finding__where { display: flex; align-items: center; gap: .4rem; font-family: var(--font-meta); font-size: .78rem; color: var(--ink-soft); }
+
+/* ---------- Sign-up, when Mark switches it on ---------- */
+.signup { margin-top: 2rem; padding: 1.3rem 1.4rem; background: var(--paper-alt); border: 1px solid var(--border); border-radius: var(--radius); }
+.signup h2 { font-size: 1.15rem; margin: 0 0 .4rem; }
+.signup p { margin: 0 0 1rem; font-size: .97rem; color: var(--ink-soft); }
+.signup iframe { border: 0; width: 100%; }
+
+@media (max-width: 560px) {
+  .principle { flex-direction: column; gap: .7rem; }
+}
+
+@media print {
+  .finder, .finder__starters, .finder__chips { display: none !important; }
+  .session, .principle { break-inside: avoid; }
+}

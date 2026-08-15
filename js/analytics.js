@@ -7,8 +7,23 @@
 
    To switch it on, put the measurement ID into the data attribute on the
    script tag in the page head:
-       <script src="/js/analytics.js" data-ga="G-XXXXXXXXXX" defer></script>
+       <script src="/js/analytics.js" data-ga="G-XXXXXXXXXX" data-mode="strict" defer></script>
    With no ID present nothing happens at all, not even the banner.
+
+   Two modes, because the trade-off is a judgement call rather than a technical one:
+
+     strict    Nothing loads until the visitor agrees. The most protective
+               option, and the one that matches the position on the AI
+               governance site. Cost: anyone who declines is invisible, so
+               the totals understate reality by however many that is.
+
+     advanced  Google's Consent Mode v2. gtag loads with every storage type
+               denied, so no cookie is written and nobody is identified, but
+               a cookieless ping is sent and GA4 models the missing visits.
+               Cost: a request goes to Google before anyone has agreed, which
+               some people object to on principle even with no cookie.
+
+   Advertising storage and personalisation stay denied in both modes.
 
    Events sent, chosen to answer the questions worth asking of this site:
      guide_download        did the PDF actually get taken
@@ -22,6 +37,7 @@
     document.querySelector('script[src*="analytics.js"]');
   var GA_ID = script && script.getAttribute('data-ga');
   if (!GA_ID) return;                      // not configured, so do nothing
+  var MODE = (script.getAttribute('data-mode') || 'strict').toLowerCase();
 
   var KEY = 'pf-analytics-consent';
   var granted = null;
@@ -31,21 +47,28 @@
     try { localStorage.setItem(KEY, value); } catch (e) {}
   }
 
-  /* ---------- Load GA only once consent is given ---------- */
+  /* ---------- Load GA ---------- */
   var loaded = false;
-  function load() {
-    if (loaded) return;
+  function load(analyticsStorage) {
+    if (loaded) {
+      // Already running in cookieless mode and the visitor has now agreed:
+      // upgrade rather than load a second copy.
+      if (window.gtag) {
+        window.gtag('consent', 'update', { analytics_storage: analyticsStorage });
+      }
+      return;
+    }
     loaded = true;
 
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     gtag('js', new Date());
-    // Consent Mode: analytics on, everything else off. No ads, no personalisation.
+    // Advertising is denied in both modes and whatever the visitor chooses.
     gtag('consent', 'default', {
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied',
-      analytics_storage: 'granted',
+      analytics_storage: analyticsStorage,
     });
     gtag('config', GA_ID, { anonymize_ip: true });
 
@@ -103,6 +126,33 @@
       });
     }
 
+    // The same again on the finder, where it's worth even more: a search that
+    // runs across all 144 and comes back with nothing is a gap in the guide.
+    var finder = document.getElementById('finderInput');
+    if (finder) {
+      var fTimer = null;
+      finder.addEventListener('input', function () {
+        window.clearTimeout(fTimer);
+        fTimer = window.setTimeout(function () {
+          var term = finder.value.trim().toLowerCase();
+          if (term.length < 3) return;
+          track('strategy_search', {
+            term: term,
+            results: document.querySelectorAll('.finding:not([hidden])').length,
+          });
+        }, 1500);
+      });
+    }
+
+    // Which problems teachers actually arrive with. This is the one number here
+    // that could change what gets written next.
+    document.addEventListener('click', function (ev) {
+      var s = ev.target.closest('.starter');
+      if (s) track('problem_starter', { problem: s.textContent.trim() });
+      var chip = ev.target.closest('.finder__chip');
+      if (chip) track('chapter_chip', { chapter: chip.getAttribute('data-chapter') });
+    });
+
     // Depth, so a long chapter page can be told apart from a bounce.
     var marks = [25, 50, 75, 100];
     var sent = {};
@@ -144,7 +194,13 @@
       var yes = btn.getAttribute('data-consent') === 'yes';
       store(yes ? 'granted' : 'denied');
       el.remove();
-      if (yes) load();
+      if (yes) {
+        load('granted');
+      } else if (MODE === 'advanced') {
+        // Already loaded cookielessly; keep it denied rather than loading more.
+        load('denied');
+      }
+      // In strict mode a no means nothing loads at all.
     });
 
     // Keep Tab inside the banner while it is open.
@@ -160,13 +216,21 @@
     });
   }
 
-  if (granted === 'granted') {
-    load();
-  } else if (granted !== 'denied') {
+  function showBanner() {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', banner);
     } else {
       banner();
     }
+  }
+
+  if (granted === 'granted') {
+    load('granted');
+  } else if (granted === 'denied') {
+    // In advanced mode a declined visitor is still counted, cookielessly.
+    if (MODE === 'advanced') load('denied');
+  } else {
+    if (MODE === 'advanced') load('denied');
+    showBanner();
   }
 })();

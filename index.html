@@ -18,7 +18,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://pedagogyfirst.ictevangelist.com/assets/og/home.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css?v=7da6c3aa">
+<link rel="stylesheet" href="/css/styles.css?v=8165cc92">
+<noscript><style>
+  /* The chapters panel is opened by its button, and without JavaScript that
+     button can't do anything. So drop the panel open and take the button away
+     rather than leaving a dead control and an unreachable menu. */
+  .nav-toggle { display: none !important; }
+  .main-nav[hidden] { display: block !important; position: static; box-shadow: none;
+                       border: 0; border-top: 1px solid var(--border); padding: .6rem 0 .8rem;
+                       max-height: none; width: 100%; }
+</style></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Pedagogy First. Technology Second. | Mark Anderson", "description": "One hundred and forty four evidence informed teaching strategies, with or without technology, across retrieval practice, formative assessment, feedback, questioning and discussion, explanations and modelling, and metacognition. Each one expanded in full.", "url": "https://pedagogyfirst.ictevangelist.com/", "inLanguage": "en-GB", "isPartOf": {"@type": "WebSite", "name": "Pedagogy First. Technology Second.", "url": "https://pedagogyfirst.ictevangelist.com/"}, "author": {"@type": "Person", "name": "Mark Anderson", "url": "https://ictevangelist.com", "jobTitle": "Education technology consultant, author and keynote speaker"}, "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/", "dateModified": "2026-08-15"}</script>
 </head>
 <body>
@@ -35,7 +44,7 @@
       <span>Chapters</span>
     </button>
     <nav class="main-nav" id="site-nav" aria-label="Chapters" hidden>
-      <ul><li><a href="/" aria-current="page"><span class="nav-no" aria-hidden="true">&#9632;</span><span class="nav-title">All six guides</span></a></li><li><a href="/retrieval-practice/"><span class="nav-no" aria-hidden="true">01</span><span class="nav-title">Retrieval Practice</span></a></li><li><a href="/formative-assessment/"><span class="nav-no" aria-hidden="true">02</span><span class="nav-title">Formative Assessment</span></a></li><li><a href="/feedback/"><span class="nav-no" aria-hidden="true">03</span><span class="nav-title">Feedback</span></a></li><li><a href="/questioning-and-discussion/"><span class="nav-no" aria-hidden="true">04</span><span class="nav-title">Questioning &amp; Discussion</span></a></li><li><a href="/explanations-and-modelling/"><span class="nav-no" aria-hidden="true">05</span><span class="nav-title">Explanations &amp; Modelling</span></a></li><li><a href="/metacognition-and-self-regulation/"><span class="nav-no" aria-hidden="true">06</span><span class="nav-title">Metacognition &amp; Self-Regulation</span></a></li></ul>
+      <ul><li><a href="/" aria-current="page"><span class="nav-no" aria-hidden="true">&#9632;</span><span class="nav-title">All six guides</span></a></li><li><a href="/retrieval-practice/"><span class="nav-no" aria-hidden="true">01</span><span class="nav-title">Retrieval Practice</span></a></li><li><a href="/formative-assessment/"><span class="nav-no" aria-hidden="true">02</span><span class="nav-title">Formative Assessment</span></a></li><li><a href="/feedback/"><span class="nav-no" aria-hidden="true">03</span><span class="nav-title">Feedback</span></a></li><li><a href="/questioning-and-discussion/"><span class="nav-no" aria-hidden="true">04</span><span class="nav-title">Questioning &amp; Discussion</span></a></li><li><a href="/explanations-and-modelling/"><span class="nav-no" aria-hidden="true">05</span><span class="nav-title">Explanations &amp; Modelling</span></a></li><li><a href="/metacognition-and-self-regulation/"><span class="nav-no" aria-hidden="true">06</span><span class="nav-title">Metacognition &amp; Self-Regulation</span></a></li><li class="nav-sep"><a href="/find-a-strategy/"><span class="nav-no" aria-hidden="true">&#9906;</span><span class="nav-title">Find a strategy</span></a></li><li><a href="/get-the-guide/"><span class="nav-no" aria-hidden="true">&#8615;</span><span class="nav-title">Download the guide</span></a></li></ul>
     </nav>
   </div>
 </header>
@@ -47,7 +56,7 @@
       <p class="lead">Six evidence informed guides to teaching and learning, and the thinking behind them. 144 strategies to try, with or without technology, every one expanded in full.</p>
       <p class="hero-actions">
         <a class="btn btn--light" href="#chapters">Start reading</a>
-        <a class="btn btn--outline" href="#downloads">Download the guide</a>
+        <a class="btn btn--outline" href="/get-the-guide/">Download the guide</a>
       </p>
       <blockquote>
         <p>Technology should enhance teaching and learning, not dictate teaching and learning.</p>
@@ -75,7 +84,7 @@
         <h3>Retrieval Practice</h3>
       </a>
       <div class="chapter-card__body">
-        <p>The act of pulling knowledge out of memory does more for learning than putting it back in. This chapter is about making that effort happen, on purpose, again and again.</p>
+        <p data-source="guide">The act of pulling knowledge out of memory does more for learning than putting it back in. This chapter is about making that effort happen, on purpose, again and again.</p>
         <ul class="chapter-card__clusters"><li><span class="dot" style="--cluster:#e17055" aria-hidden="true"></span>The Testing Effect</li><li><span class="dot" style="--cluster:#00b894" aria-hidden="true"></span>Spacing &amp; Interleaving</li><li><span class="dot" style="--cluster:#fdcb6e" aria-hidden="true"></span>Desirable Difficulties</li><li><span class="dot" style="--cluster:#6c5ce7" aria-hidden="true"></span>Retrieval Formats</li><li><span class="dot" style="--cluster:#fd79a8" aria-hidden="true"></span>Metacognition &amp; Calibration</li></ul>
         <a class="btn" href="/retrieval-practice/">All 24 strategies<span class="sr-only"> for Retrieval Practice</span></a>
       </div>
@@ -85,7 +94,7 @@
         <h3>Formative Assessment</h3>
       </a>
       <div class="chapter-card__body">
-        <p>“The term formative should apply not to the assessment but to the function that the evidence generated by the assessment actually serves.” Dylan Wiliam, Assessment: The Bridge between Teaching and Learning, 2013</p>
+        <p data-source="guide">“The term formative should apply not to the assessment but to the function that the evidence generated by the assessment actually serves.” Dylan Wiliam, Assessment: The Bridge between Teaching and Learning, 2013</p>
         <ul class="chapter-card__clusters"><li><span class="dot" style="--cluster:#3498db" aria-hidden="true"></span>Clarify Learning Intentions</li><li><span class="dot" style="--cluster:#2ecc71" aria-hidden="true"></span>Elicit Evidence of Learning</li><li><span class="dot" style="--cluster:#e67e22" aria-hidden="true"></span>Feedback That Moves Learning Forward</li><li><span class="dot" style="--cluster:#9b59b6" aria-hidden="true"></span>Students as Learning Resources</li><li><span class="dot" style="--cluster:#f1c40f" aria-hidden="true"></span>Students as Owners of Their Learning</li></ul>
         <a class="btn" href="/formative-assessment/">All 24 strategies<span class="sr-only"> for Formative Assessment</span></a>
       </div>
@@ -95,7 +104,7 @@
         <h3>Feedback</h3>
       </a>
       <div class="chapter-card__body">
-        <p>Feedback is too often treated as another word for marking. It isn’t. Good feedback gives pupils information they can use to improve what they do next, and that is a far higher bar than writing a comment in the margin.</p>
+        <p data-source="guide">Feedback is too often treated as another word for marking. It isn’t. Good feedback gives pupils information they can use to improve what they do next, and that is a far higher bar than writing a comment in the margin.</p>
         <ul class="chapter-card__clusters"><li><span class="dot" style="--cluster:#c2185b" aria-hidden="true"></span>What Feedback Is</li><li><span class="dot" style="--cluster:#0277bd" aria-hidden="true"></span>Timing &amp; Frequency</li><li><span class="dot" style="--cluster:#00796b" aria-hidden="true"></span>Source &amp; Direction</li><li><span class="dot" style="--cluster:#6a1b9a" aria-hidden="true"></span>Feedback &amp; the Learner</li><li><span class="dot" style="--cluster:#e65100" aria-hidden="true"></span>Closing the Gap</li></ul>
         <a class="btn" href="/feedback/">All 24 strategies<span class="sr-only"> for Feedback</span></a>
       </div>
@@ -105,7 +114,7 @@
         <h3>Questioning &amp; Discussion</h3>
       </a>
       <div class="chapter-card__body">
-        <p>The questions a teacher asks, and the talk they allow to follow, shape what thinking happens in a room.</p>
+        <p data-source="guide">The questions a teacher asks, and the talk they allow to follow, shape what thinking happens in a room.</p>
         <ul class="chapter-card__clusters"><li><span class="dot" style="--cluster:#e53935" aria-hidden="true"></span>The Quality of Questions</li><li><span class="dot" style="--cluster:#f57c00" aria-hidden="true"></span>Wait Time &amp; Thinking Space</li><li><span class="dot" style="--cluster:#7b1fa2" aria-hidden="true"></span>Participation &amp; Equity</li><li><span class="dot" style="--cluster:#1565c0" aria-hidden="true"></span>Dialogic Teaching &amp; Discussion</li><li><span class="dot" style="--cluster:#2e7d32" aria-hidden="true"></span>Student-Generated Questions</li></ul>
         <a class="btn" href="/questioning-and-discussion/">All 24 strategies<span class="sr-only"> for Questioning &amp; Discussion</span></a>
       </div>
@@ -115,7 +124,7 @@
         <h3>Explanations &amp; Modelling</h3>
       </a>
       <div class="chapter-card__body">
-        <p>Telling is not explaining, and showing is not modelling. This chapter is about helping teaching work framed around how attention and memory actually work.</p>
+        <p data-source="guide">Telling is not explaining, and showing is not modelling. This chapter is about helping teaching work framed around how attention and memory actually work.</p>
         <ul class="chapter-card__clusters"><li><span class="dot" style="--cluster:#b33939" aria-hidden="true"></span>Structuring Explanations</li><li><span class="dot" style="--cluster:#cd6133" aria-hidden="true"></span>Managing Cognitive Load</li><li><span class="dot" style="--cluster:#34ace0" aria-hidden="true"></span>Multimedia &amp; Dual Coding</li><li><span class="dot" style="--cluster:#706fd3" aria-hidden="true"></span>Modelling &amp; Worked Examples</li></ul>
         <a class="btn" href="/explanations-and-modelling/">All 24 strategies<span class="sr-only"> for Explanations &amp; Modelling</span></a>
       </div>
@@ -125,7 +134,7 @@
         <h3>Metacognition &amp; Self-Regulation</h3>
       </a>
       <div class="chapter-card__body">
-        <p>Students who can orchestrate their own thinking processes consistently outperform those who cannot. This chapter explores how to cultivate that ability explicitly, ensuring self-regulation is a taught skill rather than a fortunate byproduct. It involves empowering learners to dissect the challenge, select the right cognitive tools, evaluate their ongoing progress, and pivot effectively when obstacles arise.</p>
+        <p data-source="guide">Students who can orchestrate their own thinking processes consistently outperform those who cannot. This chapter explores how to cultivate that ability explicitly, ensuring self-regulation is a taught skill rather than a fortunate byproduct. It involves empowering learners to dissect the challenge, select the right cognitive tools, evaluate their ongoing progress, and pivot effectively when obstacles arise.</p>
         <ul class="chapter-card__clusters"><li><span class="dot" style="--cluster:#2980b9" aria-hidden="true"></span>Forethought &amp; Planning</li><li><span class="dot" style="--cluster:#16a085" aria-hidden="true"></span>Performance &amp; Monitoring</li><li><span class="dot" style="--cluster:#8e44ad" aria-hidden="true"></span>Self-Reflection &amp; Evaluation</li><li><span class="dot" style="--cluster:#d35400" aria-hidden="true"></span>Strategy Knowledge &amp; Use</li><li><span class="dot" style="--cluster:#c2185b" aria-hidden="true"></span>Digital Cognition</li></ul>
         <a class="btn" href="/metacognition-and-self-regulation/">All 24 strategies<span class="sr-only"> for Metacognition &amp; Self-Regulation</span></a>
       </div>
@@ -133,6 +142,52 @@
       </ul>
     </div>
   </section>
+
+  <section class="prose-block band" id="principles" aria-labelledby="pr-h">
+  <div class="wrap">
+    <p class="kicker">The thread</p>
+    <h2 id="pr-h">Six guides, one argument.</h2>
+    <p class="standfirst">Any of these 144 strategies will work on its own. They hang together because the same handful of ideas keeps turning up underneath them, whichever chapter you&#x27;re in. If you only take five things from the whole thing, take these.</p>
+    <ol class="principles">
+      <li class="principle">
+        <span class="principle__no" aria-hidden="true">1</span>
+        <div>
+          <h3>Thinking is the thing being managed</h3>
+          <p>Working memory is narrow and attention is finite. Nearly every strategy here is doing one of two jobs: making room for thinking, or making sure the thinking lands on what you want learned.</p>
+          <p class="principle__seen"><span>Runs through</span> <a href="/explanations-and-modelling/">05. Cognitive load</a> <a href="/retrieval-practice/">01. Desirable difficulties</a></p>
+        </div>
+      </li>      <li class="principle">
+        <span class="principle__no" aria-hidden="true">2</span>
+        <div>
+          <h3>Effort in the right place beats comfort</h3>
+          <p>Retrieval feels worse than rereading and works better. Feedback that asks a question is harder than feedback that corrects, and it teaches more. When a strategy feels inefficient in the lesson, that&#x27;s often the point.</p>
+          <p class="principle__seen"><span>Runs through</span> <a href="/retrieval-practice/">01. The testing effect</a> <a href="/feedback/">03. Closing the gap</a></p>
+        </div>
+      </li>      <li class="principle">
+        <span class="principle__no" aria-hidden="true">3</span>
+        <div>
+          <h3>The work belongs to the learner</h3>
+          <p>If you supply the answer, the missing evidence, or the improved sentence, you have done the thinking. Every chapter has a version of this: the effort has to stay where the learning is meant to happen.</p>
+          <p class="principle__seen"><span>Runs through</span> <a href="/feedback/">03. Feedback and the learner</a> <a href="/metacognition-and-self-regulation/">06. Strategy knowledge and use</a></p>
+        </div>
+      </li>      <li class="principle">
+        <span class="principle__no" aria-hidden="true">4</span>
+        <div>
+          <h3>You cannot teach what you haven&#x27;t checked</h3>
+          <p>Listening isn&#x27;t learning, a nod isn&#x27;t understanding, and the students who signal confusion aren&#x27;t the ones you most need to hear from. Every strategy that works assumes you know where the class actually is.</p>
+          <p class="principle__seen"><span>Runs through</span> <a href="/formative-assessment/">02. Eliciting evidence</a> <a href="/questioning-and-discussion/">04. Participation and equity</a></p>
+        </div>
+      </li>      <li class="principle">
+        <span class="principle__no" aria-hidden="true">5</span>
+        <div>
+          <h3>Scaffolds are meant to come down</h3>
+          <p>Support that never fades produces students who can do it with you and not without you. Plan the withdrawal at the same time as you plan the help.</p>
+          <p class="principle__seen"><span>Runs through</span> <a href="/explanations-and-modelling/">05. Modelling and worked examples</a> <a href="/metacognition-and-self-regulation/">06. Forethought and planning</a></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
 
   <section class="prose-block band" id="praise" aria-labelledby="praise-h">
     <div class="wrap">
@@ -156,13 +211,37 @@
     </div>
   </section>
 
+  <section class="prose-block" id="with-your-team" aria-labelledby="team-h">
+  <div class="wrap">
+    <p class="kicker">For staff development</p>
+    <h2 id="team-h">Using this with your team</h2>
+    <p class="standfirst">If you&#x27;re taking this to a team rather than reading it on your own, here&#x27;s how I&#x27;d actually run it, whether you&#x27;ve got twenty minutes in a briefing or a full INSET day.</p>
+    <ol class="sessions">
+      <li class="session">
+        <p class="session__len">20 minutes, department meeting</p>
+        <h3>One chapter, one strategy each</h3>
+        <ol><li>Pick the chapter closest to your department&#x27;s current priority.</li><li>Everyone reads the infographic for five minutes and picks one strategy they don&#x27;t already do.</li><li>Round the table: which one, and what would you have to change to run it?</li><li>Agree to try it twice before the next meeting. Nothing else.</li><li>Open the next meeting by asking what happened, including what didn&#x27;t work.</li></ol>
+      </li>      <li class="session">
+        <p class="session__len">An hour, twilight</p>
+        <h3>The thinking, not just the tips</h3>
+        <ol><li>Read the chapter&#x27;s opening section together, the part on why these strategies.</li><li>Discuss the idea underneath rather than the list: why does effortful retrieval beat rereading?</li><li>In pairs, find two strategies in the chapter that share that mechanism.</li><li>Each pair plans one into a specific lesson next week, with the checking built in.</li><li>Set a date to look at what came back. Without that, nothing happens.</li></ol>
+      </li>      <li class="session">
+        <p class="session__len">A day, INSET</p>
+        <h3>Across the six</h3>
+        <ol><li>Morning: the five principles that run through all six guides, with staff finding examples of each in their own practice.</li><li>Split into six groups, one chapter each, thirty minutes to become the department expert.</li><li>Each group teaches their chapter back in ten minutes, using their own subject&#x27;s examples.</li><li>Afternoon: everyone commits to one strategy and one way of knowing whether it worked.</li><li>Collect the commitments. Revisit them in six weeks, in public.</li></ol>
+      </li>
+    </ol>
+    <div class="callout"><p>Everything on this site is free to use and share under Creative Commons for anything other than commercial use, so put the infographics in your slides, print them for the staffroom wall, put the chapters in your CPD library. No sign-up, no gate, no need to ask.</p></div>
+  </div>
+</section>
+
   <section class="prose-block" id="downloads" aria-labelledby="dl-h">
     <div class="wrap">
       <p class="kicker">Take it with you</p>
       <h2 id="dl-h">Download the guide and the infographics</h2>
       <p class="standfirst">Free to use and share under Creative Commons, for anything
          other than commercial use.</p>
-      <p><a class="btn btn--big" href="/downloads/pedagogy-first-technology-second.pdf" download>
+      <p><a class="btn btn--big" href="/get-the-guide/">
         Download the full guide <span class="btn__meta">PDF, 35 pages</span></a></p>
       <ul class="download-grid">
         <li>
@@ -204,7 +283,7 @@
     <div class="wrap wrap--narrow">
       <p class="kicker">About Mark</p>
       <h2 id="about-h">Mark Anderson. Thirty years in education, and a leading voice on pedagogy and technology.</h2>
-      <p>An award winning author, globally sought after keynote speaker, trainer and strategic consultant in education technology, AI and digital strategy. Mark works independently as ICT Evangelist and part time as Principal Education Consultant at NetSupport. He was the lead education and AI consultant on the BBC Bitesize Guide to AI.</p><p>He co-authored the Amazon chart topping The EdTech Playbook with Olly Lewis, and his earlier Perfect ICT Every Lesson topped the Amazon charts too. He is a Founding Fellow of the Chartered College of Teaching, an Independent Thinking Associate, a member of the BCS Schools and Colleges committee, and an Apple Distinguished Educator, Google Certified Innovator and Microsoft Certified Educator.</p><p>His blog won UK Education Blog of the Year, he co-founded the Digital Leader Network and the GESS award winning LearnLiveUAE, and he keynotes at the world&#x27;s major education events, among them BETT and GESS.</p><p>That reach is built on decades in the classroom and in a range of middle and senior leadership roles, from head of department to senior leader, alongside a spell as a local authority lead teacher for computing and the teaching and learning lead on Clevedon School&#x27;s pioneering one-to-one rollout. One idea runs through all of it: good teaching comes first, and technology earns its place only when it serves the learning.</p>
+      <p>An award winning author, globally sought after keynote speaker, trainer and strategic consultant in education technology, AI and digital strategy. Mark works independently as ICT Evangelist and part time as Principal Education Consultant at NetSupport. He was the lead education and AI consultant on the BBC Bitesize Guide to AI.</p><p>He co-authored the Amazon chart topping The EdTech Playbook with Olly Lewis, and his earlier Perfect ICT Every Lesson topped the Amazon charts too. He is a Founding Fellow of the Chartered College of Teaching, an Independent Thinking Associate, a member of the BCS Schools and Colleges committee, and an Apple Distinguished Educator, Google Certified Innovator and Microsoft Certified Educator.</p><p>His blog won UK Education Blog of the Year, he co-founded the Digital Leader Network and the GESS award winning LearnLiveUAE, and he keynotes at the world&#x27;s major education events, among them BETT and GESS.</p><p>That reach is built on decades in the classroom and in a range of middle and senior leadership roles, from head of department to senior leader, alongside a spell as a local authority lead teacher for computing and the teaching and learning lead on Clevedon School&#x27;s pioneering one-to-one rollout. One idea runs through all of it: good teaching comes first, and technology only helps once the teaching is right.</p>
       <div class="callout"><p>Pedagogy first. Technology second. Always.</p></div>
     </div>
   </section>
@@ -225,7 +304,7 @@
        expanding the six <em>Pedagogy First, Technology Second</em> infographics and the guide that
        accompanies them.</p>
     
-    <p><a href="/#downloads">Download the guide and the infographics</a> &middot;
+    <p><a href="/get-the-guide/">Download the guide and the infographics</a> &middot;
        <a href="https://ictevangelist.com/contact">Work with Mark</a> &middot;
        <a href="https://ictevangelist.com">ictevangelist.com</a></p>
     <p>Licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a>.
@@ -239,9 +318,10 @@
   <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false" fill="currentColor"><path d="M7 2l5 6H9v4H5V8H2z"/></svg>
   Back to top
 </a>
-<script src="/js/nav.js?v=7da6c3aa" defer></script>
-<script src="/js/filter.js?v=7da6c3aa" defer></script>
-<script src="/js/a11y.js?v=7da6c3aa" defer></script>
+<script src="/js/nav.js?v=8165cc92" defer></script>
+<script src="/js/filter.js?v=8165cc92" defer></script>
+<script src="/js/finder.js?v=8165cc92" defer></script>
+<script src="/js/a11y.js?v=8165cc92" defer></script>
 <!-- analytics off: set GA_MEASUREMENT_ID in build.py -->
 </body>
 </html>

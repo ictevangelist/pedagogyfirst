@@ -119,7 +119,7 @@ ABOUT = {
         "leadership roles, from head of department to senior leader, alongside a spell as a local "
         "authority lead teacher for computing and the teaching and learning lead on Clevedon "
         "School's pioneering one-to-one rollout. One idea runs through all of it: good teaching "
-        "comes first, and technology earns its place only when it serves the learning.",
+        "comes first, and technology only helps once the teaching is right.",
     ],
 }
 

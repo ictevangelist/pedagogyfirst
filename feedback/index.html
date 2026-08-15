@@ -18,7 +18,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://pedagogyfirst.ictevangelist.com/assets/og/feedback.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css?v=7da6c3aa">
+<link rel="stylesheet" href="/css/styles.css?v=8165cc92">
+<noscript><style>
+  /* The chapters panel is opened by its button, and without JavaScript that
+     button can't do anything. So drop the panel open and take the button away
+     rather than leaving a dead control and an unreachable menu. */
+  .nav-toggle { display: none !important; }
+  .main-nav[hidden] { display: block !important; position: static; box-shadow: none;
+                       border: 0; border-top: 1px solid var(--border); padding: .6rem 0 .8rem;
+                       max-height: none; width: 100%; }
+</style></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Feedback: 24 ways to embed it | Pedagogy First. Technology Second.", "description": "All 24 feedback strategies from the Pedagogy First, Technology Second infographic, each expanded: why it works, how to run it and where technology serves. 5 on what feedback is, 5 on timing & frequency, 5 on source & direction, 5 on feedback & the learner, 4 on closing the gap.", "url": "https://pedagogyfirst.ictevangelist.com/feedback/", "inLanguage": "en-GB", "isPartOf": {"@type": "WebSite", "name": "Pedagogy First. Technology Second.", "url": "https://pedagogyfirst.ictevangelist.com/"}, "author": {"@type": "Person", "name": "Mark Anderson", "url": "https://ictevangelist.com", "jobTitle": "Education technology consultant, author and keynote speaker"}, "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/", "dateModified": "2026-08-15", "hasPart": {"@type": "ItemList", "numberOfItems": 24, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Feedback Is Not Marking", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#01-feedback-is-not-marking"}, {"@type": "ListItem", "position": 2, "name": "Feed Up, Feed Back, Feed Forward", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#02-feed-up-feed-back-feed-forward"}, {"@type": "ListItem", "position": 3, "name": "Four Levels of Feedback", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#03-four-levels-of-feedback"}, {"@type": "ListItem", "position": 4, "name": "One Third Makes It Worse", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#04-one-third-makes-it-worse"}, {"@type": "ListItem", "position": 5, "name": "Sadler's Three Conditions", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#05-sadler-s-three-conditions"}, {"@type": "ListItem", "position": 6, "name": "Immediate for Simple Tasks", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#06-immediate-for-simple-tasks"}, {"@type": "ListItem", "position": 7, "name": "Delayed for Complex Tasks", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#07-delayed-for-complex-tasks"}, {"@type": "ListItem", "position": 8, "name": "During, Not Just After", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#08-during-not-just-after"}, {"@type": "ListItem", "position": 9, "name": "Comment Only, No Grades", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#09-comment-only-no-grades"}, {"@type": "ListItem", "position": 10, "name": "Reduce Volume, Raise Focus", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#10-reduce-volume-raise-focus"}, {"@type": "ListItem", "position": 11, "name": "Peer Feedback with Structure", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#11-peer-feedback-with-structure"}, {"@type": "ListItem", "position": 12, "name": "Self-Assessment as Process", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#12-self-assessment-as-process"}, {"@type": "ListItem", "position": 13, "name": "Dialogic Feedback", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#13-dialogic-feedback"}, {"@type": "ListItem", "position": 14, "name": "Technology as Feedback Source", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#14-technology-as-feedback-source"}, {"@type": "ListItem", "position": 15, "name": "Whole Class Feedback", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#15-whole-class-feedback"}, {"@type": "ListItem", "position": 16, "name": "Task, Not Person", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#16-task-not-person"}, {"@type": "ListItem", "position": 17, "name": "Feedback Must Cause Thinking", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#17-feedback-must-cause-thinking"}, {"@type": "ListItem", "position": 18, "name": "Praise the Strategy, Not the Trait", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#18-praise-the-strategy-not-the-trait"}, {"@type": "ListItem", "position": 19, "name": "Build Feedback Literacy", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#19-build-feedback-literacy"}, {"@type": "ListItem", "position": 20, "name": "Seven Principles of Good Practice", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#20-seven-principles-of-good-practice"}, {"@type": "ListItem", "position": 21, "name": "Build In Time to Act", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#21-build-in-time-to-act"}, {"@type": "ListItem", "position": 22, "name": "Questions, Not Corrections", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#22-questions-not-corrections"}, {"@type": "ListItem", "position": 23, "name": "Sustainable Feedback", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#23-sustainable-feedback"}, {"@type": "ListItem", "position": 24, "name": "Feedback as Design, Not Event", "url": "https://pedagogyfirst.ictevangelist.com/feedback/#24-feedback-as-design-not-event"}]}}</script>
 </head>
 <body>
@@ -35,7 +44,7 @@
       <span>Chapters</span>
     </button>
     <nav class="main-nav" id="site-nav" aria-label="Chapters" hidden>
-      <ul><li><a href="/"><span class="nav-no" aria-hidden="true">&#9632;</span><span class="nav-title">All six guides</span></a></li><li><a href="/retrieval-practice/"><span class="nav-no" aria-hidden="true">01</span><span class="nav-title">Retrieval Practice</span></a></li><li><a href="/formative-assessment/"><span class="nav-no" aria-hidden="true">02</span><span class="nav-title">Formative Assessment</span></a></li><li><a href="/feedback/" aria-current="page"><span class="nav-no" aria-hidden="true">03</span><span class="nav-title">Feedback</span></a></li><li><a href="/questioning-and-discussion/"><span class="nav-no" aria-hidden="true">04</span><span class="nav-title">Questioning &amp; Discussion</span></a></li><li><a href="/explanations-and-modelling/"><span class="nav-no" aria-hidden="true">05</span><span class="nav-title">Explanations &amp; Modelling</span></a></li><li><a href="/metacognition-and-self-regulation/"><span class="nav-no" aria-hidden="true">06</span><span class="nav-title">Metacognition &amp; Self-Regulation</span></a></li></ul>
+      <ul><li><a href="/"><span class="nav-no" aria-hidden="true">&#9632;</span><span class="nav-title">All six guides</span></a></li><li><a href="/retrieval-practice/"><span class="nav-no" aria-hidden="true">01</span><span class="nav-title">Retrieval Practice</span></a></li><li><a href="/formative-assessment/"><span class="nav-no" aria-hidden="true">02</span><span class="nav-title">Formative Assessment</span></a></li><li><a href="/feedback/" aria-current="page"><span class="nav-no" aria-hidden="true">03</span><span class="nav-title">Feedback</span></a></li><li><a href="/questioning-and-discussion/"><span class="nav-no" aria-hidden="true">04</span><span class="nav-title">Questioning &amp; Discussion</span></a></li><li><a href="/explanations-and-modelling/"><span class="nav-no" aria-hidden="true">05</span><span class="nav-title">Explanations &amp; Modelling</span></a></li><li><a href="/metacognition-and-self-regulation/"><span class="nav-no" aria-hidden="true">06</span><span class="nav-title">Metacognition &amp; Self-Regulation</span></a></li><li class="nav-sep"><a href="/find-a-strategy/"><span class="nav-no" aria-hidden="true">&#9906;</span><span class="nav-title">Find a strategy</span></a></li><li><a href="/get-the-guide/"><span class="nav-no" aria-hidden="true">&#8615;</span><span class="nav-title">Download the guide</span></a></li></ul>
     </nav>
   </div>
 </header>
@@ -52,7 +61,7 @@
       <p class="eyebrow">Chapter Three of six</p>
       <span class="chapter-no" aria-hidden="true">03</span>
       <h1>Feedback</h1>
-      <p class="lead">Feedback is too often treated as another word for marking. It isn’t. Good feedback gives pupils information they can use to improve what they do next, and that is a far higher bar than writing a comment in the margin.</p>
+      <p class="lead" data-source="guide">Feedback is too often treated as another word for marking. It isn’t. Good feedback gives pupils information they can use to improve what they do next, and that is a far higher bar than writing a comment in the margin.</p>
       <p class="meta">Rooted in the work of Hattie &amp; Timperley, Sadler, Butler, Nicol &amp; Macfarlane-Dick, Wiliam, Kluger &amp; DeNisi, Shute, Topping, Andrade, Carless and Boud</p>
       <blockquote><p>Feedback is one of the most powerful influences on learning and achievement, but this impact can be either positive or negative.</p><cite>Hattie &amp; Timperley, 2007</cite></blockquote>
       <p class="hero-facts">
@@ -77,7 +86,7 @@
       </figcaption>
     </figure>
   </div>
-</section><section class="prose-block" id="the-thinking" aria-labelledby="the-thinking-h">
+</section><section class="prose-block" data-source="guide" id="the-thinking" aria-labelledby="the-thinking-h">
   <div class="wrap wrap--narrow">
     <p class="kicker">The thinking</p>
     <h2 id="the-thinking-h">Why these strategies</h2>
@@ -85,13 +94,20 @@
     <p>Hattie and Timperley’s work showed us that feedback can have a powerful effect on achievement, but it is not automatically useful. Some feedback helps, some does very little, and some can make things worse.</p><p>Sadler’s work found the important bit that is often missed. Feedback only works when learners understand what quality looks like, can compare their work against it, and know how to close the gap. Nicol and Macfarlane Dick took this further by placing feedback within self-regulation, helping pupils become better at judging and improving their own work.</p>
     <div class="callout"><p>Butler’s study is a useful warning too. When grades sit alongside comments, pupils often look at the grade and miss the guidance.</p></div>
   </div>
-</section><section class="prose-block" id="in-practice" aria-labelledby="in-practice-h">
+</section><section class="prose-block" data-source="guide" id="in-practice" aria-labelledby="in-practice-h">
   <div class="wrap wrap--narrow">
     <p class="kicker">In practice</p>
     <h2 id="in-practice-h">Where technology serves</h2>
     <p class="standfirst">Technology can make feedback faster. That only matters if pupils use it.</p>
     <p>Digital annotation, audio comments and shared documents can shorten the gap between work and response to almost nothing. That matters. Feedback given while the work is still fresh has a far better chance of shaping what pupils do next than feedback returned two weeks later.</p><p>Used well, the same tools also make whole-class feedback more manageable. You can spot common patterns, address them quickly, and avoid writing the same comment thirty times.</p><p>The trap is automated feedback that gives a score, a tick, or a badge and stops there. That may be useful information, but it is ultimately unhelpful. Feedback earns its keep when pupils have time to think, improve, redraft, correct, compare or try again.</p>
     <div class="callout"><p>The win is not faster feedback. The win is better work because pupils had time to use it.</p></div>
+  </div>
+</section><section class="prose-block" id="how-would-you-know" aria-labelledby="hwyk-h">
+  <div class="wrap wrap--narrow">
+    <p class="kicker">Knowing whether it worked</p>
+    <h2 id="hwyk-h">How would you know?</h2>
+    <p class="standfirst">What students do next, not what you wrote.</p>
+    <p>Look at the work after the feedback, not the feedback itself. Sample a set and count how many pieces show a specific response to a specific comment. Time is the other measure worth having: marking hours per class per week, before and after moving to whole-class feedback, alongside whether the response rate held up.</p>
   </div>
 </section>  <nav class="cluster-nav" id="clusters" aria-label="Strategy groups and search">
     <div class="wrap">
@@ -122,9 +138,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🔍</span>
         <span class="strategy__no">01</span>
-        <h3 id="01-feedback-is-not-marking-h"><a href="#01-feedback-is-not-marking">Feedback Is Not Marking</a></h3>
+        <h3 id="01-feedback-is-not-marking-h" data-source="infographic"><a href="#01-feedback-is-not-marking">Feedback Is Not Marking</a></h3>
       </div>
-      <p class="strategy__summary">If a student never reads or acts on your comments, you have marked but not given feedback. Before returning work, plan how students will engage with it. No engagement, no feedback.</p><p class="strategy__picture">Marking is what you do to a piece of work. Feedback is what the student does next as a result. If nothing happens after the comment, you have marked.</p>
+      <p class="strategy__summary" data-source="infographic">If a student never reads or acts on your comments, you have marked but not given feedback. Before returning work, plan how students will engage with it. No engagement, no feedback.</p><p class="strategy__picture">Marking is what you do to a piece of work. Feedback is what the student does next as a result. If nothing happens after the comment, you have marked.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Wiliam&#x27;s distinction matters because most workload debates are about marking while most learning gains come from the response. A comment that&#x27;s never read, or read and not acted on, has cost you time and changed nothing. Planning the response before you write the comment reverses the usual order and is far more efficient.</p>
@@ -141,9 +157,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🎯</span>
         <span class="strategy__no">02</span>
-        <h3 id="02-feed-up-feed-back-feed-forward-h"><a href="#02-feed-up-feed-back-feed-forward">Feed Up, Feed Back, Feed Forward</a></h3>
+        <h3 id="02-feed-up-feed-back-feed-forward-h" data-source="infographic"><a href="#02-feed-up-feed-back-feed-forward">Feed Up, Feed Back, Feed Forward</a></h3>
       </div>
-      <p class="strategy__summary">Every comment should answer three questions: where am I going, how am I doing, what next? Most feedback answers only the second. Check yours covers all three before you hand it back.</p>
+      <p class="strategy__summary" data-source="infographic">Every comment should answer three questions: where am I going, how am I doing, what next? Most feedback answers only the second. Check yours covers all three before you hand it back.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Hattie and Timperley&#x27;s model is useful precisely because it exposes the imbalance. Comments cluster around evaluation of the current work. Without the goal restated, the student can&#x27;t judge the gap; without the next step, they can&#x27;t close it. All three together turn a comment into something actionable.</p>
@@ -160,9 +176,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">📈</span>
         <span class="strategy__no">03</span>
-        <h3 id="03-four-levels-of-feedback-h"><a href="#03-four-levels-of-feedback">Four Levels of Feedback</a></h3>
+        <h3 id="03-four-levels-of-feedback-h" data-source="infographic"><a href="#03-four-levels-of-feedback">Four Levels of Feedback</a></h3>
       </div>
-      <p class="strategy__summary">Before writing a comment, ask: am I addressing the task, the process or the person? Task and process feedback improve learning. Self-level praise undermines it. Name your target.</p><p class="strategy__picture">Feedback lands at one of four levels: the task, the process, the student&#x27;s self-regulation, or the person. The first three help. The fourth does not.</p>
+      <p class="strategy__summary" data-source="infographic">Before writing a comment, ask: am I addressing the task, the process or the person? Task and process feedback improve learning. Self-level praise undermines it. Name your target.</p><p class="strategy__picture">Feedback lands at one of four levels: the task, the process, the student&#x27;s self-regulation, or the person. The first three help. The fourth does not.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Hattie and Timperley found task and process feedback most effective for improving work, self-regulation feedback powerful for developing independent learners, and self-level feedback, praise directed at the person, largely ineffective and sometimes harmful. Naming which level you&#x27;re aiming at before you write is a fast way to raise the quality.</p>
@@ -179,9 +195,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">⚠️</span>
         <span class="strategy__no">04</span>
-        <h3 id="04-one-third-makes-it-worse-h"><a href="#04-one-third-makes-it-worse">One Third Makes It Worse</a></h3>
+        <h3 id="04-one-third-makes-it-worse-h" data-source="infographic"><a href="#04-one-third-makes-it-worse">One Third Makes It Worse</a></h3>
       </div>
-      <p class="strategy__summary">Over a third of feedback interventions decrease performance. Before giving feedback, check: does this comment address the work or the student? If it is about the student, rewrite it.</p><p class="strategy__picture">Feedback is not automatically beneficial. A substantial proportion of feedback interventions make performance worse.</p>
+      <p class="strategy__summary" data-source="infographic">Over a third of feedback interventions decrease performance. Before giving feedback, check: does this comment address the work or the student? If it is about the student, rewrite it.</p><p class="strategy__picture">Feedback is not automatically beneficial. A substantial proportion of feedback interventions make performance worse.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Kluger and DeNisi&#x27;s meta-analysis of over six hundred studies found that around a third of feedback interventions decreased performance. The pattern was clearest where feedback drew attention to the self rather than the task. This is the single most useful corrective to the assumption that more feedback is always better.</p>
@@ -198,9 +214,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">📜</span>
         <span class="strategy__no">05</span>
-        <h3 id="05-sadler-s-three-conditions-h"><a href="#05-sadler-s-three-conditions">Sadler&#x27;s Three Conditions</a></h3>
+        <h3 id="05-sadler-s-three-conditions-h" data-source="infographic"><a href="#05-sadler-s-three-conditions">Sadler&#x27;s Three Conditions</a></h3>
       </div>
-      <p class="strategy__summary">Share the criteria before students begin. Show them how to compare their work against it. Give them time to act on what they find. Without all three steps, feedback cannot function.</p><p class="strategy__picture">Sadler set out three conditions for feedback to work: the student must know the standard, be able to compare their work to it, and have the means to close the gap. All three, or none of it functions.</p>
+      <p class="strategy__summary" data-source="infographic">Share the criteria before students begin. Show them how to compare their work against it. Give them time to act on what they find. Without all three steps, feedback cannot function.</p><p class="strategy__picture">Sadler set out three conditions for feedback to work: the student must know the standard, be able to compare their work to it, and have the means to close the gap. All three, or none of it functions.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>The conditions explain most feedback failures. Students who don&#x27;t know the standard can&#x27;t interpret the comment. Students who can&#x27;t compare can&#x27;t see the gap you&#x27;re describing. Students with no time or means to act can&#x27;t close it. Diagnosing which condition is missing is more productive than writing more comments.</p>
@@ -227,9 +243,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">⏰</span>
         <span class="strategy__no">06</span>
-        <h3 id="06-immediate-for-simple-tasks-h"><a href="#06-immediate-for-simple-tasks">Immediate for Simple Tasks</a></h3>
+        <h3 id="06-immediate-for-simple-tasks-h" data-source="infographic"><a href="#06-immediate-for-simple-tasks">Immediate for Simple Tasks</a></h3>
       </div>
-      <p class="strategy__summary">For simple or procedural tasks, correct errors immediately. Shute found quick feedback prevents mistakes from embedding. Do not wait until next lesson to fix what can be fixed now.</p><p class="strategy__picture">For simple, procedural or factual work, correct errors quickly, before they get practised.</p>
+      <p class="strategy__summary" data-source="infographic">For simple or procedural tasks, correct errors immediately. Shute found quick feedback prevents mistakes from embedding. Do not wait until next lesson to fix what can be fixed now.</p><p class="strategy__picture">For simple, procedural or factual work, correct errors quickly, before they get practised.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Shute&#x27;s review found immediate feedback most effective for lower-level tasks, where an uncorrected error simply becomes a rehearsed error. There&#x27;s no productive struggle to protect in the spelling of a technical term or the sign convention in a calculation. Waiting a week to correct it means a week of practising it wrongly.</p>
@@ -246,9 +262,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🕐</span>
         <span class="strategy__no">07</span>
-        <h3 id="07-delayed-for-complex-tasks-h"><a href="#07-delayed-for-complex-tasks">Delayed for Complex Tasks</a></h3>
+        <h3 id="07-delayed-for-complex-tasks-h" data-source="infographic"><a href="#07-delayed-for-complex-tasks">Delayed for Complex Tasks</a></h3>
       </div>
-      <p class="strategy__summary">For complex work, a short delay before feedback lets the learner process first. Immediate correction on difficult tasks can short-circuit thinking. Let the struggle do its work.</p><p class="strategy__picture">For complex work, leave a gap between the attempt and the feedback so the learner has processed it first.</p>
+      <p class="strategy__summary" data-source="infographic">For complex work, a short delay before feedback lets the learner process first. Immediate correction on difficult tasks can short-circuit thinking. Let the struggle do its work.</p><p class="strategy__picture">For complex work, leave a gap between the attempt and the feedback so the learner has processed it first.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Shute, drawing on Kulhavy among others, found delayed feedback more effective for complex tasks and transfer. Correcting a student mid-thought on a difficult problem interrupts the very reasoning you want them to develop. The delay lets them commit to an approach, which is what makes the subsequent feedback meaningful.</p>
@@ -265,9 +281,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🔄</span>
         <span class="strategy__no">08</span>
-        <h3 id="08-during-not-just-after-h"><a href="#08-during-not-just-after">During, Not Just After</a></h3>
+        <h3 id="08-during-not-just-after-h" data-source="infographic"><a href="#08-during-not-just-after">During, Not Just After</a></h3>
       </div>
-      <p class="strategy__summary">Feedback given while students are still working is formative. Feedback returned weeks later is a post-mortem. Move around the room, intervene in the moment. Proximity is strategy.</p><p class="strategy__picture">Feedback given while students are still working is formative. Feedback given after the work is finished and moved on from is a report.</p>
+      <p class="strategy__summary" data-source="infographic">Feedback given while students are still working is formative. Feedback returned weeks later is a post-mortem. Move around the room, intervene in the moment. Proximity is strategy.</p><p class="strategy__picture">Feedback given while students are still working is formative. Feedback given after the work is finished and moved on from is a report.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Black and Wiliam&#x27;s central case for formative assessment is about the timing of the information relative to the decision it should influence. A comment that arrives while the work can still change is worth several that arrive afterwards. Circulating during independent work is the highest-yield feedback slot in most lessons, and it costs no marking time at all.</p>
@@ -284,9 +300,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">📋</span>
         <span class="strategy__no">09</span>
-        <h3 id="09-comment-only-no-grades-h"><a href="#09-comment-only-no-grades">Comment Only, No Grades</a></h3>
+        <h3 id="09-comment-only-no-grades-h" data-source="infographic"><a href="#09-comment-only-no-grades">Comment Only, No Grades</a></h3>
       </div>
-      <p class="strategy__summary">Butler found comments alone produced the greatest gains. A grade cancels the comment: students see the score and skip the words. If grades are mandated, delay until feedback is used.</p><p class="strategy__picture">Comments alone on formative work. No grade, or a grade delayed until the feedback has been used.</p>
+      <p class="strategy__summary" data-source="infographic">Butler found comments alone produced the greatest gains. A grade cancels the comment: students see the score and skip the words. If grades are mandated, delay until feedback is used.</p><p class="strategy__picture">Comments alone on formative work. No grade, or a grade delayed until the feedback has been used.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Butler&#x27;s experiment gave three groups comments, grades, or both. Comments alone produced the largest gains; grades alone produced none; both together performed like grades alone. The grade appears to switch attention from the task to the self and to comparison with peers, which is exactly the shift Kluger and DeNisi found to be damaging.</p>
@@ -303,9 +319,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">📊</span>
         <span class="strategy__no">10</span>
-        <h3 id="10-reduce-volume-raise-focus-h"><a href="#10-reduce-volume-raise-focus">Reduce Volume, Raise Focus</a></h3>
+        <h3 id="10-reduce-volume-raise-focus-h" data-source="infographic"><a href="#10-reduce-volume-raise-focus">Reduce Volume, Raise Focus</a></h3>
       </div>
-      <p class="strategy__summary">A page of comments overwhelms. One or two precise targets land. Identify the one thing that would make the biggest difference right now and focus entirely on that.</p><p class="strategy__picture">Fewer comments, more precisely aimed. One or two things that would make the biggest difference, rather than everything that could be improved.</p>
+      <p class="strategy__summary" data-source="infographic">A page of comments overwhelms. One or two precise targets land. Identify the one thing that would make the biggest difference right now and focus entirely on that.</p><p class="strategy__picture">Fewer comments, more precisely aimed. One or two things that would make the biggest difference, rather than everything that could be improved.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Shute and Wiliam both point to the cognitive load problem: a page covered in comments gives the student no basis for deciding where to start, so many start nowhere. Working out the one change that would make the biggest difference is harder work for you and far more useful for them.</p>
@@ -332,9 +348,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">👥</span>
         <span class="strategy__no">11</span>
-        <h3 id="11-peer-feedback-with-structure-h"><a href="#11-peer-feedback-with-structure">Peer Feedback with Structure</a></h3>
+        <h3 id="11-peer-feedback-with-structure-h" data-source="infographic"><a href="#11-peer-feedback-with-structure">Peer Feedback with Structure</a></h3>
       </div>
-      <p class="strategy__summary">Give students criteria and a protocol before they assess each other&#x27;s work. Topping showed peer feedback improves learning for both, but without scaffolding it becomes empty praise.</p><p class="strategy__picture">Peer feedback with a protocol: agreed criteria, a defined order, and required evidence from the work.</p>
+      <p class="strategy__summary" data-source="infographic">Give students criteria and a protocol before they assess each other&#x27;s work. Topping showed peer feedback improves learning for both, but without scaffolding it becomes empty praise.</p><p class="strategy__picture">Peer feedback with a protocol: agreed criteria, a defined order, and required evidence from the work.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Topping&#x27;s reviews found peer assessment can produce gains for both the giver and the receiver, and that the giver often benefits more. The condition is structure. Without criteria and a protocol, students default to encouragement, because being critical of a friend&#x27;s work is socially costly and nobody has taught them how to do it kindly and usefully.</p>
@@ -351,9 +367,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🔬</span>
         <span class="strategy__no">12</span>
-        <h3 id="12-self-assessment-as-process-h"><a href="#12-self-assessment-as-process">Self-Assessment as Process</a></h3>
+        <h3 id="12-self-assessment-as-process-h" data-source="infographic"><a href="#12-self-assessment-as-process">Self-Assessment as Process</a></h3>
       </div>
-      <p class="strategy__summary">Ask students to assess their work against criteria before you mark it. Andrade found the act of comparing, not the accuracy of the judgment, improves performance. Process is the point.</p>
+      <p class="strategy__summary" data-source="infographic">Ask students to assess their work against criteria before you mark it. Andrade found the act of comparing, not the accuracy of the judgment, improves performance. Process is the point.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Andrade&#x27;s research found that the act of comparing work to criteria improved subsequent performance, whether or not the self-assessment was accurate. The student is being made to do the thing that feedback usually does for them: locate the gap. That&#x27;s a transferable skill; receiving a comment isn&#x27;t.</p>
@@ -370,9 +386,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">💬</span>
         <span class="strategy__no">13</span>
-        <h3 id="13-dialogic-feedback-h"><a href="#13-dialogic-feedback">Dialogic Feedback</a></h3>
+        <h3 id="13-dialogic-feedback-h" data-source="infographic"><a href="#13-dialogic-feedback">Dialogic Feedback</a></h3>
       </div>
-      <p class="strategy__summary">Build reply loops into feedback. Let students question and clarify comments over time rather than receive a final judgment. Carless showed uptake rises when feedback is a conversation.</p>
+      <p class="strategy__summary" data-source="infographic">Build reply loops into feedback. Let students question and clarify comments over time rather than receive a final judgment. Carless showed uptake rises when feedback is a conversation.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Carless&#x27;s work on feedback dialogue found that uptake rises substantially when students can respond. A single written comment is a guess at what will be understood; a thread lets the misunderstanding surface. It also changes the power dynamic in a way that makes students more likely to admit they don&#x27;t follow.</p>
@@ -389,9 +405,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🤖</span>
         <span class="strategy__no">14</span>
-        <h3 id="14-technology-as-feedback-source-h"><a href="#14-technology-as-feedback-source">Technology as Feedback Source</a></h3>
+        <h3 id="14-technology-as-feedback-source-h" data-source="infographic"><a href="#14-technology-as-feedback-source">Technology as Feedback Source</a></h3>
       </div>
-      <p class="strategy__summary">Use automated tools for factual accuracy and procedural correctness; reserve your time for voice, argument and creativity. Match the feedback source to what is being assessed.</p>
+      <p class="strategy__summary" data-source="infographic">Use automated tools for factual accuracy and procedural correctness; reserve your time for voice, argument and creativity. Match the feedback source to what is being assessed.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Shute&#x27;s and Black and Wiliam&#x27;s work both point to matching the feedback source to what is being assessed. A machine is reliable on whether an equation balances and unreliable on whether an argument persuades. Spending teacher time on the first while the second goes uncommented is a poor use of the scarcest resource in the building.</p>
@@ -408,9 +424,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">📋</span>
         <span class="strategy__no">15</span>
-        <h3 id="15-whole-class-feedback-h"><a href="#15-whole-class-feedback">Whole Class Feedback</a></h3>
+        <h3 id="15-whole-class-feedback-h" data-source="infographic"><a href="#15-whole-class-feedback">Whole Class Feedback</a></h3>
       </div>
-      <p class="strategy__summary">Read the set and identify patterns: common strengths, recurring errors, one priority next step. Teach to the gap, not to each paper. Sustainable for teachers; precise for students.</p>
+      <p class="strategy__summary" data-source="infographic">Read the set and identify patterns: common strengths, recurring errors, one priority next step. Teach to the gap, not to each paper. Sustainable for teachers; precise for students.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Wiliam and Hattie both push towards feedback that changes teaching rather than annotating outcomes. Thirty individual comments on the same recurring error is thirty times the work for the same effect as teaching it once, well, to the class. The sustainability matters: a system that survives a whole year beats a better system that collapses in November.</p>
@@ -437,9 +453,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🧠</span>
         <span class="strategy__no">16</span>
-        <h3 id="16-task-not-person-h"><a href="#16-task-not-person">Task, Not Person</a></h3>
+        <h3 id="16-task-not-person-h" data-source="infographic"><a href="#16-task-not-person">Task, Not Person</a></h3>
       </div>
-      <p class="strategy__summary">Feedback that threatens self-concept decreases performance. &quot;This paragraph needs restructuring&quot; works. &quot;You need to try harder&quot; does not. Direct feedback at the work, not the person.</p>
+      <p class="strategy__summary" data-source="infographic">Feedback that threatens self-concept decreases performance. &quot;This paragraph needs restructuring&quot; works. &quot;You need to try harder&quot; does not. Direct feedback at the work, not the person.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Kluger and DeNisi found that feedback which draws attention to the self, whether critical or complimentary, tends to reduce performance, because attention moves from the task to managing self-image. The work is fixable and impersonal; the person is neither. The rewrite is usually mechanical and the difference in how it lands isn&#x27;t.</p>
@@ -456,9 +472,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">💡</span>
         <span class="strategy__no">17</span>
-        <h3 id="17-feedback-must-cause-thinking-h"><a href="#17-feedback-must-cause-thinking">Feedback Must Cause Thinking</a></h3>
+        <h3 id="17-feedback-must-cause-thinking-h" data-source="infographic"><a href="#17-feedback-must-cause-thinking">Feedback Must Cause Thinking</a></h3>
       </div>
-      <p class="strategy__summary">Write &quot;why might this be stronger with evidence?&quot; not insert the evidence yourself. If feedback needs no effort from the learner, it is information, not feedback. Thinking is the point.</p><p class="strategy__picture">Write feedback that requires the student to think. A question they must answer, not a correction they can read.</p>
+      <p class="strategy__summary" data-source="infographic">Write &quot;why might this be stronger with evidence?&quot; not insert the evidence yourself. If feedback needs no effort from the learner, it is information, not feedback. Thinking is the point.</p><p class="strategy__picture">Write feedback that requires the student to think. A question they must answer, not a correction they can read.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Wiliam&#x27;s formulation, that feedback should be more work for the recipient than the donor, is a practical test you can apply to any comment. If the response is nodding, the cognitive work stayed with you. Supplying the missing evidence is efficient and leaves the student no better able to notice its absence next time.</p>
@@ -475,9 +491,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🔔</span>
         <span class="strategy__no">18</span>
-        <h3 id="18-praise-the-strategy-not-the-trait-h"><a href="#18-praise-the-strategy-not-the-trait">Praise the Strategy, Not the Trait</a></h3>
+        <h3 id="18-praise-the-strategy-not-the-trait-h" data-source="infographic"><a href="#18-praise-the-strategy-not-the-trait">Praise the Strategy, Not the Trait</a></h3>
       </div>
-      <p class="strategy__summary">Butler found task-involving feedback improves performance. Ego-involving feedback shifts attention from learning to self-image. Praise what the student did, not who the student is.</p><p class="strategy__picture">Praise what the student did rather than what they&#x27;re. The strategy, the effort in a specific place, the decision that worked.</p>
+      <p class="strategy__summary" data-source="infographic">Butler found task-involving feedback improves performance. Ego-involving feedback shifts attention from learning to self-image. Praise what the student did, not who the student is.</p><p class="strategy__picture">Praise what the student did rather than what they&#x27;re. The strategy, the effort in a specific place, the decision that worked.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Butler distinguished task-involving from ego-involving feedback and found the first improved performance while the second shifted attention to self-image. Kluger and DeNisi&#x27;s meta-analysis points the same way. Praising a trait gives a student nothing to repeat; praising a strategy tells them exactly what to do again.</p>
@@ -494,9 +510,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🌱</span>
         <span class="strategy__no">19</span>
-        <h3 id="19-build-feedback-literacy-h"><a href="#19-build-feedback-literacy">Build Feedback Literacy</a></h3>
+        <h3 id="19-build-feedback-literacy-h" data-source="infographic"><a href="#19-build-feedback-literacy">Build Feedback Literacy</a></h3>
       </div>
-      <p class="strategy__summary">Teach students how to read and act on feedback before you give it. Model with an exemplar: here is the comment, what it means, what to do next. Feedback literacy is taught, not assumed.</p>
+      <p class="strategy__summary" data-source="infographic">Teach students how to read and act on feedback before you give it. Model with an exemplar: here is the comment, what it means, what to do next. Feedback literacy is taught, not assumed.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Carless and Boud&#x27;s work on feedback literacy argues that students need to be taught to appreciate feedback, make judgements, manage affect and take action. None of that&#x27;s automatic, and the students least likely to have it are the ones who most need the feedback. Assuming the skill exists is the reason a great deal of careful marking goes unread.</p>
@@ -513,9 +529,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">💪</span>
         <span class="strategy__no">20</span>
-        <h3 id="20-seven-principles-of-good-practice-h"><a href="#20-seven-principles-of-good-practice">Seven Principles of Good Practice</a></h3>
+        <h3 id="20-seven-principles-of-good-practice-h" data-source="infographic"><a href="#20-seven-principles-of-good-practice">Seven Principles of Good Practice</a></h3>
       </div>
-      <p class="strategy__summary">Audit your practice against Nicol and Macfarlane-Dick&#x27;s seven principles. Do you clarify criteria? Enable self-assessment? Encourage dialogue? Close the gap? Redesign where you do not.</p>
+      <p class="strategy__summary" data-source="infographic">Audit your practice against Nicol and Macfarlane-Dick&#x27;s seven principles. Do you clarify criteria? Enable self-assessment? Encourage dialogue? Close the gap? Redesign where you do not.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>The seven principles are useful because they describe a system rather than an act: clarifying what good performance is, facilitating self-assessment, delivering high-quality information, encouraging dialogue, motivating, closing the gap, and using the information to shape teaching. Most practice does two or three well. The audit tells you which four are missing.</p>
@@ -542,9 +558,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">⏱️</span>
         <span class="strategy__no">21</span>
-        <h3 id="21-build-in-time-to-act-h"><a href="#21-build-in-time-to-act">Build In Time to Act</a></h3>
+        <h3 id="21-build-in-time-to-act-h" data-source="infographic"><a href="#21-build-in-time-to-act">Build In Time to Act</a></h3>
       </div>
-      <p class="strategy__summary">Feedback with no time to act on it is wasted. Begin the next lesson with students reading and responding to comments before anything new. The response is the learning event.</p>
+      <p class="strategy__summary" data-source="infographic">Feedback with no time to act on it is wasted. Begin the next lesson with students reading and responding to comments before anything new. The response is the learning event.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Wiliam and Leahy are blunt about this: if there&#x27;s no time to act, the feedback has no route into learning. The response is the learning event, not the comment. Ten minutes of curriculum time is a small cost against the hours already spent producing the feedback it makes usable.</p>
@@ -561,9 +577,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">❓</span>
         <span class="strategy__no">22</span>
-        <h3 id="22-questions-not-corrections-h"><a href="#22-questions-not-corrections">Questions, Not Corrections</a></h3>
+        <h3 id="22-questions-not-corrections-h" data-source="infographic"><a href="#22-questions-not-corrections">Questions, Not Corrections</a></h3>
       </div>
-      <p class="strategy__summary">Return work with questions, not corrections. &quot;What evidence supports this claim?&quot; demands more thinking than rewriting it for them. The cognitive work belongs with the learner.</p><p class="strategy__picture">Return work with questions rather than corrections, so the cognitive work of improving it stays with the student.</p>
+      <p class="strategy__summary" data-source="infographic">Return work with questions, not corrections. &quot;What evidence supports this claim?&quot; demands more thinking than rewriting it for them. The cognitive work belongs with the learner.</p><p class="strategy__picture">Return work with questions rather than corrections, so the cognitive work of improving it stays with the student.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>This is Wiliam&#x27;s causes thinking principle applied at the level of the individual comment. Rewriting a sentence for a student produces a better sentence and no better writer. Asking what evidence supports this claim requires them to reread, judge and decide, which is the process you actually want them to internalise.</p>
@@ -580,9 +596,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">📄</span>
         <span class="strategy__no">23</span>
-        <h3 id="23-sustainable-feedback-h"><a href="#23-sustainable-feedback">Sustainable Feedback</a></h3>
+        <h3 id="23-sustainable-feedback-h" data-source="infographic"><a href="#23-sustainable-feedback">Sustainable Feedback</a></h3>
       </div>
-      <p class="strategy__summary">Boud argues feedback should build the learner&#x27;s capacity to judge quality. If students always need you to tell them how they did, the system has failed. Design for independence.</p><p class="strategy__picture">Design feedback to build the student&#x27;s own capacity to judge quality, so they need you less over time.</p>
+      <p class="strategy__summary" data-source="infographic">Boud argues feedback should build the learner&#x27;s capacity to judge quality. If students always need you to tell them how they did, the system has failed. Design for independence.</p><p class="strategy__picture">Design feedback to build the student&#x27;s own capacity to judge quality, so they need you less over time.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Boud&#x27;s argument for sustainable feedback is that the purpose isn&#x27;t this piece of work but the student&#x27;s future independence. If a class still can&#x27;t tell good from bad without you in July, the system has produced dependency rather than learning, however good the individual comments were.</p>
@@ -599,9 +615,9 @@
       <div class="strategy__top">
         <span class="strategy__icon" aria-hidden="true">🛠️</span>
         <span class="strategy__no">24</span>
-        <h3 id="24-feedback-as-design-not-event-h"><a href="#24-feedback-as-design-not-event">Feedback as Design, Not Event</a></h3>
+        <h3 id="24-feedback-as-design-not-event-h" data-source="infographic"><a href="#24-feedback-as-design-not-event">Feedback as Design, Not Event</a></h3>
       </div>
-      <p class="strategy__summary">Plan feedback into your scheme of work: who gives it, when, in what form, and when students act on it. Feedback designed into learning from the start works. Left to chance, it does not.</p>
+      <p class="strategy__summary" data-source="infographic">Plan feedback into your scheme of work: who gives it, when, in what form, and when students act on it. Feedback designed into learning from the start works. Left to chance, it does not.</p>
       <div class="strategy__body">
         <h4>Why it works</h4>
         <p>Boud, Sadler and Carless converge on the point that feedback is a design problem rather than an event. Left to chance, it happens when there&#x27;s time, which is rarely when it would be most useful. Designed in, it lands at the points where students can still change what they&#x27;re doing.</p>
@@ -633,7 +649,7 @@
       <div class="cta-band__actions">
         <a class="btn btn--light" href="https://ictevangelist.com/contact"
            data-cta="feedback">Talk to me about it</a>
-        <a class="btn btn--outline" href="/#downloads">Download the guide first</a>
+        <a class="btn btn--outline" href="/get-the-guide/">Download the guide first</a>
       </div>
     </div>
   </div>
@@ -645,7 +661,7 @@
        expanding the six <em>Pedagogy First, Technology Second</em> infographics and the guide that
        accompanies them.</p>
     <p class="footer-research">Rooted in the work of Hattie &amp; Timperley, Sadler, Butler, Nicol &amp; Macfarlane-Dick, Wiliam, Kluger &amp; DeNisi, Shute, Topping, Andrade, Carless and Boud</p>
-    <p><a href="/#downloads">Download the guide and the infographics</a> &middot;
+    <p><a href="/get-the-guide/">Download the guide and the infographics</a> &middot;
        <a href="https://ictevangelist.com/contact">Work with Mark</a> &middot;
        <a href="https://ictevangelist.com">ictevangelist.com</a></p>
     <p>Licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a>.
@@ -659,9 +675,10 @@
   <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false" fill="currentColor"><path d="M7 2l5 6H9v4H5V8H2z"/></svg>
   Back to top
 </a>
-<script src="/js/nav.js?v=7da6c3aa" defer></script>
-<script src="/js/filter.js?v=7da6c3aa" defer></script>
-<script src="/js/a11y.js?v=7da6c3aa" defer></script>
+<script src="/js/nav.js?v=8165cc92" defer></script>
+<script src="/js/filter.js?v=8165cc92" defer></script>
+<script src="/js/finder.js?v=8165cc92" defer></script>
+<script src="/js/a11y.js?v=8165cc92" defer></script>
 <!-- analytics off: set GA_MEASUREMENT_ID in build.py -->
 </body>
 </html>

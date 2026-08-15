@@ -26,8 +26,9 @@ SLOP = [
     "testament to", "it's worth noting", "it is worth noting", "in today's",
     "landscape of", "navigate the", "unlock", "harness", "leverage",
     "game changer", "game-changer", "seamless", "robust solution", "deep dive",
-    "at the end of the day", "when it comes to", "more than just", "not just a",
-    "isn't just", "is not just", "the reality is", "the truth is",
+    "at the end of the day", "when it comes to", "more than just a",
+    "not just another", "isn't just a", "is not just a", "it's not just",
+    "the reality is", "the truth is",
     "let's be honest", "make no mistake", "crucially", "importantly",
     "significantly", "notably", "ultimately", "fundamentally", "essentially",
     "arguably", "vital", "crucial", "pivotal", "paramount", "myriad",
@@ -153,5 +154,84 @@ def main():
         print(f"    {len(s.split())}w: {s[:110]}...")
 
 
+def audit_built_pages():
+    """
+    The same checks again, but against what a reader actually sees.
+
+    The chapter modules are only part of the site. Headings, standfirsts, the
+    home page, the principles, the CPD sessions and the calls to action all
+    live elsewhere, and slop in any of them is still slop.
+
+    Three kinds of text are separated out rather than silently ignored:
+
+      quoted      other people's words, in blockquotes. Not ours to edit, ever.
+      guide       Mark's published guide prose, extracted from the PDF. His
+                  call whether to change it, not a build script's.
+      infographic the strategy titles and summaries as printed on the original
+                  six. Changing them would break the link back to the artwork.
+
+    Everything else is site copy that was written here, and that is held to the
+    full standard.
+    """
+    import html as _html
+
+    def strip(pattern, text):
+        return re.sub(pattern, " ", text, flags=re.S | re.I)
+
+    def visible(raw):
+        raw = strip(r"<script.*?</script>", raw)
+        raw = strip(r"<style.*?</style>", raw)
+        raw = strip(r"<!--.*?-->", raw)
+        return re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", " ", raw)))
+
+    QUOTED = r"<(blockquote|figure class=\"(?:praise|mini-quote)[^\"]*\").*?</\1>"
+    SOURCED = r"<([a-z][a-z0-9]*)[^>]*data-source=\"[^\"]*\".*?</\1>"
+
+    pages = sorted(ROOT.glob("*/index.html")) + [ROOT / "index.html"]
+    pages = [p for p in pages if p.exists() and "source" not in p.parts]
+    print("\n" + "=" * 62)
+    print(f"The built site: {len(pages)} pages")
+
+    problems = 0
+    words = 0
+    inherited = collections.Counter()
+
+    for page in pages:
+        raw = page.read_text(encoding="utf-8")
+        label = "/" + (page.parent.name + "/" if page.parent != ROOT else "")
+
+        # Everything on the page, and then everything we actually wrote.
+        all_text = visible(raw)
+        words += len(all_text.split())
+        ours = visible(strip(SOURCED, strip(QUOTED, raw)))
+        theirs = all_text.lower()
+
+        hits = [ph for ph in SLOP if ph in ours.lower()]
+        # Mark's hard rule: no em dashes, anywhere, ever, whoever wrote it.
+        dashes = all_text.count("\u2014") + all_text.count("\u2013")
+        for ph in SLOP:
+            if ph in theirs and ph not in ours.lower():
+                inherited[ph] += 1
+
+        if hits or dashes:
+            problems += len(hits) + dashes
+            print(f"  FAIL {label}")
+            for ph in hits:
+                print(f'         slop in our own copy: "{ph}"')
+            if dashes:
+                print(f"         {dashes} em or en dash(es)")
+        else:
+            print(f"  ok   {label}")
+
+    print(f"\n  {words:,} words of visible copy across the site")
+    print("  " + ("our own copy is clean" if not problems else f"{problems} PROBLEM(S)"))
+
+    if inherited:
+        print("\n  Present only in quoted, published or infographic text, so left alone:")
+        for ph, n in inherited.most_common():
+            print(f'    {n:>2} page(s)  "{ph}"')
+
+
 if __name__ == "__main__":
     main()
+    audit_built_pages()
