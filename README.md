@@ -94,7 +94,7 @@ WCAG 2.2 AA is the floor, with AAA where it was achievable.
   the WCAG 2.2 inline exception.
 - **Preferences.** `prefers-reduced-motion`, `prefers-contrast` and `forced-colors` are all
   handled, plus a print stylesheet.
-- **Without JavaScript.** All content, navigation and in-page links work, on all nine pages.
+- **Without JavaScript.** All content, navigation and in-page links work, on all ten pages.
   The chapters panel is opened by a button, so a `<noscript>` rule drops it open and removes
   the button rather than leaving a dead control. The two search boxes ship `disabled` and are
   enabled by their scripts. Only the reading-controls widget needs JavaScript, and everything
@@ -104,9 +104,9 @@ Tests live in `source/` and run against a local server:
 
 ```sh
 python3 -m http.server 8899 &
-node source/a11y-test.cjs      # structure, keyboard, reflow, target size, 6 pages
-node source/nojs-test.cjs      # progressive enhancement across all 9 pages
-node source/overflow-test.cjs  # reflow at 640px/200% and 320px/100%, all 9 pages
+node source/a11y-test.cjs      # structure, keyboard, reflow, target size, 7 pages
+node source/nojs-test.cjs      # progressive enhancement across all 10 pages
+node source/overflow-test.cjs  # reflow at 640px/200% and 320px/100%, all 10 pages
 node source/feature-test.cjs   # chapters panel, per-chapter filter, assets
 node source/finder-test.cjs    # /find-a-strategy/ search, chips, starters, deep links
 ```
