@@ -39,44 +39,60 @@ a:hover { text-decoration-thickness: 2px; }
 .skip { position: absolute; left: 0; top: 0; z-index: 10; background: var(--ink); color: #fff; padding: .8rem 1.2rem; font-weight: 600; clip-path: inset(50%); white-space: nowrap; }
 .skip:focus { clip-path: none; }
 
-/* ---------- header: brand bar + chapter strip ---------- */
-.site-header { background: var(--paper); border-bottom: 1px solid var(--border); }
+/* ---------- header: one dark unit, brand row + guide row ----------
+   The header shares the hero's charcoal so the top of every page is a
+   single calm block instead of stacked bars. One link treatment for
+   everything except the single gold call to action. */
+.site-header { background: #161b20; color: #fff; }
 .site-header::before { content: ""; display: block; height: 4px; background: var(--grad); }
-.bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem 0; }
-.brand { font-family: var(--head); font-weight: 700; font-size: 1.12rem; color: var(--ink); text-decoration: none; }
-.brand span { color: var(--accent); }
-.find-pill { display: inline-flex; align-items: center; gap: .45rem; min-height: 44px;
-  padding: .5rem 1.05rem; border-radius: 999px; background: var(--ink); color: #fff;
-  font-weight: 600; font-size: .92rem; text-decoration: none; }
-.find-pill:hover { background: var(--accent); }
-.find-pill svg { flex: none; }
-.tools { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-.dl-link { font-weight: 600; font-size: .92rem; color: var(--ink); text-underline-offset: 4px; }
-.dl-link:hover, .dl-link[aria-current="page"] { color: var(--accent); }
-.btn-quiet { background: var(--paper); color: var(--ink); border: 1px solid var(--border); }
-.btn-quiet:hover { border-color: var(--accent); color: var(--accent); filter: none; }
-.dl-grid li { padding: 1.1rem 1.2rem 1.2rem; border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: 12px; }
-.dl-grid h3 { font-size: 1.12rem; margin: .15rem 0 .3rem; }
-.dl-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 0; max-width: none; }
-.chapters { border-top: 1px solid var(--border); background: var(--paper-alt); }
-.chapters ul { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0; list-style: none; margin: 0; padding: .25rem 0;
-  width: min(100% - 2.5rem, 1360px); }
+.site-header :focus-visible { outline-color: #ffd166; }
+.bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .6rem 1.5rem; padding: .95rem 0 .8rem; }
+.brand { font-family: var(--head); font-weight: 700; font-size: 1.14rem; color: #fff; text-decoration: none; letter-spacing: .01em; }
+.brand span { color: var(--gold); }
+.brand:hover span { color: #fff; }
+.tools { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; }
+.dl-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: .93rem;
+  color: #e6ecf0; text-decoration: none; }
+.dl-link:hover { color: var(--gold); }
+.dl-link[aria-current="page"] { color: var(--gold); box-shadow: inset 0 -2px 0 var(--gold); }
+.find-pill { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  padding: .5rem 1.15rem; border-radius: 999px; background: var(--gold); color: #16202b;
+  font-weight: 600; font-size: .93rem; text-decoration: none; }
+.find-pill:hover { background: #fff; }
+.find-pill[aria-current="page"] { outline: 2px solid #fff; outline-offset: 2px; }
+
+.chapters { border-top: 1px solid rgba(255,255,255,.14); }
+.chapters ul { display: flex; flex-wrap: wrap; justify-content: space-between; column-gap: .6rem;
+  list-style: none; margin-block: 0; padding: .15rem 0; }
 .chapters li { max-width: none; }
-.chapters a { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px;
-  padding: .45rem .5rem; border-radius: 8px; font-size: .88rem; font-weight: 600;
-  color: var(--ink); text-decoration: none; }
-.chapters a:hover { background: var(--paper); color: var(--accent); }
-.chapters a[aria-current="page"] { color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); border-radius: 8px 8px 0 0; }
-.chapters .n { font-family: var(--head); font-size: .78rem; color: var(--gold); background: var(--ink);
-  border-radius: 6px; padding: .1rem .35rem; line-height: 1.4; }
-.chapters a[aria-current="page"] .n { background: var(--accent); color: #fff; }
-@media (max-width: 1300px) {
-  .chapters a { font-size: .84rem; padding: .45rem .4rem; gap: .3rem; }
-  .chapters .n { font-size: .7rem; padding: .1rem .28rem; }
+.chapters a { display: inline-flex; align-items: baseline; gap: .4rem; min-height: 44px; align-items: center;
+  padding: .5rem 0; font-size: .9rem; font-weight: 600; color: #e6ecf0; text-decoration: none;
+  box-shadow: inset 0 -3px 0 transparent; }
+.chapters a:hover { color: #fff; box-shadow: inset 0 -3px 0 rgba(255,255,255,.45); }
+.chapters a[aria-current="page"] { color: var(--gold); box-shadow: inset 0 -3px 0 var(--gold); }
+.chapters .n { font-family: var(--head); font-size: .74rem; font-weight: 700; color: var(--gold); opacity: .9; }
+.chapters a[aria-current="page"] .n { color: var(--gold); }
+
+@media (max-width: 1266px) {
+  .chapters a { font-size: .85rem; }
+}
+@media (max-width: 1179px) {
+  /* two tidy rows of three instead of a ragged 5 + 1 */
+  .chapters ul { display: grid; grid-template-columns: repeat(3, auto); justify-content: space-between; }
+}
+@media (max-width: 800px) {
+  /* phones: natural left-packed wrap */
+  .chapters ul { display: flex; justify-content: flex-start; column-gap: 1.4rem; }
+}
+@media (max-width: 520px) {
+  /* one shared row for the two tools instead of two stacked ones */
+  .tools { width: 100%; justify-content: space-between; gap: .8rem; }
+  .dl-link, .find-pill { font-size: .88rem; }
+  .find-pill { padding: .45rem .9rem; }
 }
 
 /* ---------- hero ---------- */
-.hero { background: var(--charcoal); color: #fff; padding: 2.8rem 0 2.5rem; }
+.hero { background: var(--charcoal); color: #fff; padding: 2.6rem 0 2.5rem; }
 .hero-grid { display: grid; gap: 2.2rem; align-items: center; }
 @media (min-width: 56rem) { .hero-grid { grid-template-columns: 1fr minmax(15rem, 21rem); } }
 .hero-cover { margin: 0; justify-self: center; }
