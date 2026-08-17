@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://pedagogyfirst.ictevangelist.com/sitemap.xml

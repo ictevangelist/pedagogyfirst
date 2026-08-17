@@ -1,63 +1,73 @@
 # Pedagogy First. Technology Second. — `pedagogyfirst.ictevangelist.com`
 
-Mark Anderson's six infographics and the full guide. One page. No generator, no
-build step, no JavaScript.
+Mark Anderson's guide, web based. Nothing more, nothing less.
+
+Eight pages: home, find-a-strategy, and one page per chapter. Every content
+string on the site is Mark's own text, verbatim, from three sources:
 
 ```
-index.html                     the whole site
-assets/infographics/*.webp     the six infographics
-assets/fonts/*.woff2           Poppins and Exo 2, served from here not Google
-downloads/*.pdf                the full guide, plus each infographic as its
-                               own PDF, split out of the guide's pages
-source/                        Mark's originals: the six infographics as HTML,
-                               the guide and mini guide as PDF
-_archive/                      the previous version of the site, see below
+source/strategies.json   the 144 strategy cards, extracted from his six infographics
+source/prose.json        his prose, extracted from the definitive guide PDF
+source/front.json        his front and back matter, transcribed from the same PDF
 ```
 
-## Why this is one page
+## The rule, enforced
 
-The previous version expanded all 144 strategies into six long chapters. That
-prose was written from model memory and never checked against the research it
-described: 52 of the 144 expansions stated what a study found, and none of
-those statements were verified at source. It was published under Mark's name,
-so it came down.
+`source/verify.py` proves it in both directions:
 
-Everything now on the site is Mark's own work: his artwork, his guide, his
-words. Nothing on this page paraphrases or interprets a paper.
+1. **Transcription.** Every string in those three files must appear verbatim in
+   the guide PDF or the infographic HTML (whitespace and typography normalised).
+2. **Site.** Every visible string on the built pages must come from those
+   verified files, or appear on the `NAVIGATION` whitelist printed inside
+   `verify.py`. That list is the complete inventory of words on the site that
+   Mark did not write: labels, buttons, image descriptions. It is short.
 
-`_archive/` holds the old generator and content so nothing is lost. It is not
-built or served. `git tag pre-reset-2026-08-17` marks the last commit before
-the reset.
+Nothing on the site reports what research found beyond what Mark's own cards
+and prose say. If a claim cannot be verified, it is not on the site.
 
-## The six single-guide PDFs
+```sh
+python3 build.py                    # rebuild the eight pages
+python3 source/verify.py --site     # prove the content rule holds
+node source/site-test.cjs           # behaviour, reflow, keyboard, no-JS
+```
 
-Pages 10, 14, 18, 22, 26 and 30 of the guide are the six infographics. They are
-live text, not images, so `source/split-guide.py` lifts each page out into its
-own PDF, keeping the text layer intact, and sets `/Lang` and a document title.
+## Downloads
 
-They are **not tagged PDFs**. The guide has no `StructTreeRoot`, so there are no
-heading, list or reading-order tags and no alt text on the icons. The text is
-selectable, searchable and readable aloud, and the extraction order is sensible,
-but assistive technology gets no structure. Two known artefacts, both inherited
-from the guide: the letter-spaced running heads read out letter by letter, and
-the coloured word in each title sits in a separate text run so the H1 extracts as
-"24 Ways to Embed Effective  in Your Classroom".
+`downloads/` holds the full guide plus each infographic as its own PDF, split
+out of the guide's pages by `source/split-guide.py`. The pages are live text,
+so the PDFs are selectable, searchable and readable aloud. They are not tagged
+(the guide itself has no structure tree); the site labels them accordingly.
 
-If tagged masters exist, drop them into `downloads/` over the top and they win.
+Licences as printed on the artefacts themselves: the guide's back cover says
+CC BY-NC-ND, the infographics carry CC BY-NC-SA.
 
-## Rules for anything added from here
+## Structure
 
-1. If it makes a claim about what research found, the source is read first and
-   cited, or the claim is not made.
-2. If it cannot be verified, it does not go on the site.
-3. Mark's own writing needs no verification. Anything else does.
+```
+index.html                 home: cover, why, the idea, the six guides, how to
+                           use, praise, about, work with Mark, download
+find-a-strategy/           all 144 cards searchable at once; results are the
+                           exact card text and link to the strategy's anchor
+<chapter>/                 opener, infographic at full size with downloads,
+                           the 24 strategies as accessible text, the thinking,
+                           in practice
+css/styles.css             one stylesheet, vendored fonts, no external requests
+js/finder.js               the only JavaScript; the finder works without it
+_archive/                  the pre-reset site, kept for reference, not served
+```
+
+## Accessibility
+
+WCAG 2.2 AA floor: AAA body contrast, visible focus, skip link, one h1 per
+page, alt text throughout, 44px targets, no sideways scroll at 640px/200% or
+320px/100%, `prefers-reduced-motion`, `prefers-contrast`, `forced-colors`,
+print styles. The finder is progressive enhancement; without JavaScript the
+full list is simply readable.
 
 ## Deployment
 
-GitHub Pages from `main`, root folder. `CNAME` holds the custom domain. DNS is a
-`CNAME` record for `pedagogyfirst` pointing at `ictevangelist.github.io`.
+GitHub Pages from `main`, root. `CNAME` holds the custom domain.
 
 ## Licence
 
-Content © Mark Anderson, licensed
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Content © Mark Anderson. Guide: CC BY-NC-ND 4.0. Infographics: CC BY-NC-SA 4.0.

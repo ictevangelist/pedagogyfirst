@@ -1,0 +1,149 @@
+{
+  "_note": "Front and back matter of the definitive guide, transcribed verbatim. Every string here must pass source/verify.py, which checks it against the PDF text. Nothing in this file is written by anyone but Mark or the named endorsers.",
+
+  "cover": {
+    "eyebrow": "An evidence informed resource by Mark Anderson",
+    "strapline": "Six guides exploring the science of learning, and the thinking behind one hundred and forty four strategies to try, with or without technology, because that is how it should be: a cognisant, informed choice.",
+    "copyright": "© Mark Anderson 2026 CC BY NC ND"
+  },
+
+  "praise_heading": "What Others Say About This Guide",
+
+  "praise": [
+    {
+      "lead": true,
+      "quote": "Pedagogy should always be our North Star in education. Learning remains the core business of every classroom, for every student, in every context. Anderson’s guide keeps this principle firmly in view, offering a rich collection of evidence-informed, pedagogy-first strategies that can be applied across classrooms, curricula and systems. Practical, thoughtful and rooted in what matters most, this is a must-read for educators who want technology, strategy and classroom practice to truly and impactfully serve learning.",
+      "name": "Olly Lewis",
+      "role": "Head of School, Amity International School Abu Dhabi"
+    },
+    {
+      "quote": "Mark has done the hard thinking, so the rest of us don’t have to. Every strategy here starts with the learning and treats technology as something that has to genuinely add value that can be measured, which is exactly the order schools keep getting wrong.",
+      "name": "Al Kingsley MBE",
+      "role": "MAT Chair & EdTech CEO, NetSupport"
+    },
+    {
+      "quote": "This is an excellent and much needed resource for all school staff looking to use technology with care and purpose. It avoids gimmicks and trends, focusing instead on evidence-informed practice across areas such as retrieval, formative assessment, feedback, questioning, modelling and metacognition. Above all, it keeps the focus firmly where it belongs, on learners and learning.",
+      "name": "Emma Darcy",
+      "role": "Director of Technology for Learning, Denbigh High School"
+    },
+    {
+      "quote": "This is a really strong, evidence-informed guide that keeps the focus exactly where it should be, on teaching and learning first. The strategies are practical and usable straight away, which makes it particularly helpful as we continue embedding digital across the curriculum in a purposeful and meaningful way. It supports staff to build confidence while developing students’ digital skills with real intent.",
+      "name": "Jacqui Hughes",
+      "role": "Head of Digital Innovation, Moulton College"
+    },
+    {
+      "lead": true,
+      "quote": "These guides provide an elegant set of evidence-informed design principles. They offer learning experiences that are served by technology, not driven by it. From these first principles, the guide offers a rich and full menu of evidence-informed, easily navigable ideas, all beautifully organised and codified. This guide opens up learning to the rich possibilities that can follow from a pedagogy-first approach for learners and practitioners alike.",
+      "name": "Dr Zoë Elder",
+      "role": "Director of Education, Research & Innovation, ASDAN"
+    },
+    {
+      "quote": "This is another strong example of pedagogy led by purpose, grounded in cognitive science and focused on what genuinely supports learning rather than what is fashionable. It reflects a clear commitment to making thoughtful use of whatever tools are available, ensuring the right approach is chosen for the right activity at the right moment in time, helping practitioners make informed, deliberate choices.",
+      "name": "Gemma Gwilliam",
+      "role": "Head of Digital Learning, Education and Innovation, Portsmouth: The Digital City"
+    },
+    {
+      "quote": "Each guide Mark has produced is perfect for any teacher to pick and use straight away. The use of evidence-informed pedagogy and practical classroom strategies provides a clear link before any discussion of technology. I will use this guide to support staff development, inspire classroom practice and support teachers to make purposeful decisions about when technology genuinely adds value rather than using it for its own sake.",
+      "name": "Tom Sale",
+      "role": "Whole School Assistant Head for Data, Reporting, Edtech and Innovation, North Gate British School, Ajman"
+    },
+    {
+      "quote": "I’m always on the lookout for resources that cut through the noise and get straight to what matters in the classroom. Mark’s Pedagogy First guides are not tool or tech with learning theory bolted on; the pedagogy genuinely leads. Each guide distils a substantial body of research into strategies teachers can actually use on Monday morning. And as ever, Mark is generous with his sharing; no gatekeeping. Thanks, Mark.",
+      "name": "Jo Fletcher-Saxon",
+      "role": "Assistant Principal, Teaching & Learning, Ashton Sixth Form College"
+    }
+  ],
+
+  "about": {
+    "standfirst": "Mark Anderson. Thirty years in education, and a leading voice on pedagogy and technology.",
+    "paragraphs": [
+      "An award winning author, globally sought after keynote speaker, trainer and strategic consultant in education technology, AI and digital strategy, Mark works independently as ICT Evangelist and part time as Principal Education Consultant at NetSupport. He was the lead education and AI consultant on the BBC Bitesize Guide to AI.",
+      "He co-authored the Amazon chart topping The EdTech Playbook with Olly Lewis, and his earlier Perfect ICT Every Lesson topped the Amazon charts too. He is a Founding Fellow of the Chartered College of Teaching, an Independent Thinking Associate, a member of the BCS Schools and Colleges committee, and an Apple Distinguished Educator, Google Certified Innovator and Microsoft Certified Educator.",
+      "His blog won UK Education Blog of the Year, he co-founded the Digital Leader Network and the GESS award winning LearnLiveUAE, and he keynotes at the world’s major education events, among them BETT and GESS. He works with leading schools and trusts including the British School of Barcelona, Downe House, Dubai College and JESS Dubai, and ACT, Woodland, Black Pear, Stamford Park, Gloucestershire Learning Alliance, Oak Trees and Nova Education Trust.",
+      "That work sits alongside long relationships with many of the EdTech companies shaping the sector, among them Microsoft, Apple, Google, ClickView, Now Press Play, IRIS, CENTURY Tech, Adobe and NetSupport. It was this work that first led him to join NetSupport as their Head of Education, and now as their Principal Education Consultant.",
+      "That reach is built on decades in the classroom and in a range of middle and senior leadership roles, from head of department to senior leader, alongside a spell as a local authority lead teacher for computing and the teaching and learning lead on Clevedon School’s pioneering 1:1 rollout. One idea runs through all of it: good teaching comes first, and technology earns its place only when it serves the learning."
+    ],
+    "motto": "Pedagogy first. Technology second. Always."
+  },
+
+  "openers": {
+    "retrieval-practice": {
+      "label": "Chapter One",
+      "display_title": "Retrieval Practice & Memory",
+      "rooted": "Rooted in the work of Bjork, Roediger & Karpicke, Dunlosky, Agarwal and others"
+    },
+    "formative-assessment": {
+      "label": "Chapter Two",
+      "display_title": "Formative Assessment",
+      "rooted": "Rooted in the work of Black, Wiliam, Sadler and others"
+    },
+    "feedback": {
+      "label": "Chapter Three",
+      "display_title": "Feedback",
+      "rooted": "Rooted in the work of Hattie & Timperley, Sadler, Nicol & Macfarlane-Dick and others"
+    },
+    "questioning-and-discussion": {
+      "label": "Chapter Four",
+      "display_title": "Questioning & Discussion",
+      "rooted": "Rooted in the work of Alexander, Rowe, Mercer and others"
+    },
+    "explanations-and-modelling": {
+      "label": "Chapter Five",
+      "display_title": "Explanations & Modelling",
+      "rooted": "Rooted in the work of Rosenshine, Sweller, Mayer and others"
+    },
+    "metacognition-and-self-regulation": {
+      "label": "Chapter Six",
+      "display_title": "Metacognition & Self-Regulation",
+      "rooted": "Rooted in the work of Zimmerman, Flavell, Winne and others"
+    }
+  },
+
+  "work_with": {
+    "standfirst": "Bring this thinking to your school or trust.",
+    "lede": "Keynotes, INSET, workshops and strategic consultancy on pedagogy, AI and digital strategy, tailored to where your team is and built on a relationship over time.",
+    "quotes": [
+      {
+        "lead": true,
+        "quote": "Don’t just book a one off. The magic comes from building a relationship over time where he can understand your needs and help you develop digital strategy in a sustainable way.",
+        "name": "Robbie McGrath",
+        "role": "School Improvement Director, Nova Education Trust"
+      },
+      {
+        "quote": "Mark is an excellent communicator who delivers a clear and meaningful message. He exudes confidence and brings people with him.",
+        "name": "Paul Rickeard",
+        "role": "CEO, DND Learning Trust"
+      },
+      {
+        "quote": "He used his wide scope of knowledge and expertise to support and train, as well as write up, publish and share. His values are clear and shine through in all his interactions.",
+        "name": "Julie Carson",
+        "role": "DoE and DCEO, Woodland Academy Trust"
+      },
+      {
+        "quote": "Mark was a great addition to our conference and would definitely be a positive addition to other trusts for a keynote, CPD or twilight session.",
+        "name": "Helen Lloyd",
+        "role": "Marches Academy Trust"
+      },
+      {
+        "quote": "Mark is a true edtech pioneer and a constant source of innovation, inspiration and support. The response from our staff was universally positive.",
+        "name": "Steve Bambury",
+        "role": "Head of Digital Learning, JESS Dubai"
+      },
+      {
+        "quote": "He presented a wealth of ideas and personalised the session. I highly recommend Mark to any organisation looking to begin, extend or refine their use of technology to impact learning.",
+        "name": "Martha McCleary",
+        "role": "Head of Digital Literacy, Foremarke Dubai"
+      },
+      {
+        "quote": "Mark is one of those truly genuine people who inspire and support in equal measure. I cannot recommend him highly enough.",
+        "name": "James Donaldson",
+        "role": "Assistant Principal, Cardiff and Vale College"
+      }
+    ]
+  },
+
+  "contact": {
+    "line": "Work with Mark, or just say hello.",
+    "url": "https://ictevangelist.com/contact"
+  }
+}
