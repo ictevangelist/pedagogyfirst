@@ -28,6 +28,9 @@ TITLE = "Pedagogy First. Technology Second."
 CHAPTERS = json.loads((SRC / "strategies.json").read_text())
 PROSE = json.loads((SRC / "prose.json").read_text())
 FRONT = json.loads((SRC / "front.json").read_text())
+# Real pixel sizes of the six renders, so the browser reserves the right
+# space and the page does not jump as they load. They are not all the same.
+SIZES = json.loads((SRC / "image-sizes.json").read_text())
 
 
 def e(s):
@@ -153,8 +156,9 @@ def infographic_figure(c, on_chapter_page=True):
         dl = (f'<a href="/downloads/{slug}.pdf">Download this guide as a PDF</a> '
               f'<span class="meta">({mb:.1f}&nbsp;MB, text is selectable and searchable)</span> · '
               f'<a href="/assets/infographics/{slug}-download.png">Download the infographic as an image</a>')
+    w, h = SIZES.get(slug, [1600, 1194])
     return f"""<figure class="infographic">
-      <img src="/assets/infographics/{slug}.webp" width="1600" height="1194"
+      <img src="/assets/infographics/{slug}.webp" width="{w}" height="{h}"
            alt="{e(alt)}" decoding="async"{"" if on_chapter_page else ' loading="lazy"'}>
       <figcaption>{dl}</figcaption>
     </figure>"""
