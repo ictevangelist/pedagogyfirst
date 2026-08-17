@@ -729,6 +729,19 @@ html.is-filtering .cluster-head { border-bottom-color: var(--border); }
   .principle { flex-direction: column; gap: .7rem; }
 }
 
+/* ---------- "Why I made these": full width, still readable ----------
+   Full bleed to the same wrap as the chapter grid below it, so the two line up
+   instead of the prose sitting in a narrower column. The body runs in two
+   columns on wide screens, which fills the width while keeping each line at a
+   sensible length. One column as soon as there isn't room for two. */
+.why__body { column-gap: 3rem; }
+.why__body p { max-width: none; }
+@media (min-width: 60rem) {
+  .why__body { columns: 2; }
+  .why__body p { break-inside: avoid; }
+  .why__body p:first-child { margin-top: 0; }
+}
+
 /* ---------- Privacy notice ---------- */
 /* The two-column table is nicer to read when there is room for it, and turns
    into a sideways scroll when there isn't. A container query means the switch

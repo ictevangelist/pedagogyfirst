@@ -272,9 +272,8 @@ def header(chapters, current=None):
     items.append('<li class="nav-sep"><a href="/find-a-strategy/">'
                  '<span class="nav-no" aria-hidden="true">&#9906;</span>'
                  '<span class="nav-title">Find a strategy</span></a></li>')
-    items.append('<li><a href="/get-the-guide/">'
-                 '<span class="nav-no" aria-hidden="true">&#8615;</span>'
-                 '<span class="nav-title">Download the guide</span></a></li>')
+    # The download deliberately isn't in here. This panel is where to read;
+    # the PDF is signposted at the foot of the home page and in the footer.
     return f"""<header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/">Pedagogy First. <span>Technology Second.</span></a>
@@ -834,9 +833,13 @@ def build_index(chapters, prose):
       <p class="eyebrow">An evidence informed resource by {e(AUTHOR)}</p>
       <h1>Pedagogy First.<br>Technology Second.</h1>
       <p class="lead">{e(TAGLINE)} {total} strategies to try, with or without technology, every one expanded in full.</p>
+      <!-- No download link up here on purpose. The PDF is the exit door: put it
+           beside the front door and people take it and never read the 144
+           expansions, which are the actual work. It lives at the bottom of this
+           page and in the footer, once someone has had a reason to want it. -->
       <p class="hero-actions">
         <a class="btn btn--light" href="#chapters">Start reading</a>
-        <a class="btn btn--outline" href="/get-the-guide/">Download the guide</a>
+        <a class="btn btn--outline" href="/find-a-strategy/">Find a strategy</a>
       </p>
       <blockquote>
         <p>{e(idea.get("standfirst", "Technology should enhance teaching and learning, not dictate teaching and learning."))}</p>
@@ -845,18 +848,20 @@ def build_index(chapters, prose):
     </div>
   </div>
 
-  <section class="prose-block" aria-labelledby="why-h">
-    <div class="wrap wrap--narrow">
+  <section class="prose-block why" aria-labelledby="why-h">
+    <div class="wrap">
       <p class="kicker">Why I made these</p>
       <h2 id="why-h">{e(why.get("standfirst", "Why I made these."))}</h2>
-      {paras(why)}
+      <div class="why__body">
+        {paras(why)}
+      </div>
     </div>
   </section>
 
   <section class="prose-block" id="chapters" aria-labelledby="chapters-h">
     <div class="wrap">
       <p class="kicker">The six guides</p>
-      <h2 id="chapters-h">Six areas the evidence keeps returning to</h2>
+      <h2 id="chapters-h">Start with whichever one you need</h2>
       <ul class="chapter-grid">
 {"".join(cards)}
       </ul>
