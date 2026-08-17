@@ -7,7 +7,8 @@ build step, no JavaScript.
 index.html                     the whole site
 assets/infographics/*.webp     the six infographics
 assets/fonts/*.woff2           Poppins and Exo 2, served from here not Google
-downloads/*.pdf                the full guide
+downloads/*.pdf                the full guide, plus each infographic as its
+                               own PDF, split out of the guide's pages
 source/                        Mark's originals: the six infographics as HTML,
                                the guide and mini guide as PDF
 _archive/                      the previous version of the site, see below
@@ -27,6 +28,22 @@ words. Nothing on this page paraphrases or interprets a paper.
 `_archive/` holds the old generator and content so nothing is lost. It is not
 built or served. `git tag pre-reset-2026-08-17` marks the last commit before
 the reset.
+
+## The six single-guide PDFs
+
+Pages 10, 14, 18, 22, 26 and 30 of the guide are the six infographics. They are
+live text, not images, so `source/split-guide.py` lifts each page out into its
+own PDF, keeping the text layer intact, and sets `/Lang` and a document title.
+
+They are **not tagged PDFs**. The guide has no `StructTreeRoot`, so there are no
+heading, list or reading-order tags and no alt text on the icons. The text is
+selectable, searchable and readable aloud, and the extraction order is sensible,
+but assistive technology gets no structure. Two known artefacts, both inherited
+from the guide: the letter-spaced running heads read out letter by letter, and
+the coloured word in each title sits in a separate text run so the H1 extracts as
+"24 Ways to Embed Effective  in Your Classroom".
+
+If tagged masters exist, drop them into `downloads/` over the top and they win.
 
 ## Rules for anything added from here
 
