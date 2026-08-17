@@ -113,6 +113,23 @@ def img_size(slug):
     return f'width="{w}" height="{h}"' 
 
 
+def guide_pdf(slug):
+    """
+    Path to a guide's own accessible PDF, when Mark has supplied one.
+
+    The six infographics were authored as tagged, screen-reader-readable PDFs.
+    A rendered PNG is not a substitute: it carries no text layer, so assistive
+    technology gets the alt attribute and nothing more. Drop the file in as
+    downloads/<slug>.pdf and it is picked up here with no other change.
+    """
+    rel = f"/downloads/{slug}.pdf"
+    return rel if (ROOT / "downloads" / f"{slug}.pdf").exists() else None
+
+
+def guide_download_label(slug):
+    return "Read it and download the PDF" if guide_pdf(slug) else "Read it in full"
+
+
 def asset_version():
     """Fingerprint css/js so GitHub Pages cannot serve a stale bundle."""
     blob = b"".join(
@@ -551,28 +568,45 @@ def cluster_section(cluster, strategies, expansions, crossrefs):
 
 
 def infographic_figure(chapter):
+    """
+    The artwork, full width and unframed, plus the real download.
+
+    It used to sit inside a rounded, bordered, shadowed box, which made a
+    beautifully designed A-something poster look like a screenshot in a window.
+    The PDF is the download that matters: Mark authored these as tagged,
+    accessible PDFs, and a rendered PNG throws that away. The image is offered
+    second, for slides and staffroom walls.
+    """
     slug = chapter["slug"]
+    pdf = guide_pdf(slug)
+    if pdf:
+        primary = (f'<a class="btn" href="{pdf}" download>Download the accessible PDF'
+                   f'<span class="btn__meta">Tagged for screen readers</span></a>')
+        secondary = (f'<a href="/assets/infographics/{slug}-download.png" download>'
+                     f'or the image, for slides and printing</a>')
+    else:
+        primary = (f'<a class="btn" href="/assets/infographics/{slug}-download.png" download>'
+                   f'Download the image<span class="btn__meta">PNG, full size</span></a>')
+        secondary = ''
     return f"""<section class="prose-block" id="the-infographic" aria-labelledby="info-h">
   <div class="wrap">
     <p class="kicker">The original</p>
     <h2 id="info-h">The infographic this chapter expands</h2>
     <figure class="infographic-figure">
-      <a href="/assets/infographics/{slug}-download.png">
-        <img src="/assets/infographics/{slug}.webp" {img_size(slug)}
-             alt="The {e(chapter['name'])} infographic: 24 strategies laid out in colour coded groups, each with a title, a short description, a suggested technology and the researchers behind it. Every strategy is written out in full further down this page."
-             loading="lazy" decoding="async">
-      </a>
+      <img src="/assets/infographics/{slug}.webp" {img_size(slug)}
+           alt="The {e(chapter['name'])} infographic: 24 strategies laid out in colour coded groups, each with a title, a short description, a suggested technology and the researchers behind it. Every strategy is written out in full further down this page."
+           decoding="async">
       <figcaption>
-        All 24 on one page.
-        <a href="/assets/infographics/{slug}-download.png" download>Download the full size image</a>
-        for printing or sharing, or read every strategy expanded below.
+        <span class="infographic-figure__note">All 24 on one page. Every strategy is
+          expanded in full below.</span>
+        <span class="infographic-figure__get">{primary}{secondary}</span>
       </figcaption>
     </figure>
   </div>
-</section>"""
+</section>
+"""
 
 
-# ---------------------------------------------------------------- pages
 def build_chapter(chapter, prose, chapters, index, crossrefs):
     slug = chapter["slug"]
     name = chapter["name"]
@@ -807,13 +841,15 @@ def build_index(chapters, prose):
         for q in FRONT.PRAISE if not q.get("lead")
     )
 
+    # A plain list, not cropped thumbnails. A 4:3 crop of a tall infographic
+    # shows the top fifth of it and tells nobody anything, and each guide has a
+    # page of its own where the artwork sits full size with its own download.
     downloads = "".join(
-        f"""        <li>
-          <a href="/assets/infographics/{c['slug']}-download.png" download>
-            <img src="/assets/infographics/{c['slug']}.webp" alt="" {img_size(c['slug'])} loading="lazy" decoding="async">
-            <span><strong>{c['number']}. {e(c['name'])}</strong>Infographic, PNG</span>
-          </a>
-        </li>"""
+        f"""        <li><a href="/{c['slug']}/">
+          <span class="dl-no" aria-hidden="true">{c['number']}</span>
+          <span class="dl-name">{e(c['name'])}</span>
+          <span class="dl-meta">{guide_download_label(c['slug'])}</span>
+        </a></li>"""
         for c in chapters
     )
 
@@ -868,6 +904,23 @@ def build_index(chapters, prose):
     </div>
   </section>
 
+  <section class="prose-block" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <p class="kicker">How to use these</p>
+      <h2 id="how-h">{e(how.get("standfirst", "How to use this guide."))}</h2>
+      <div class="why__body">
+        {paras(how)}
+      </div>
+      <ul class="stats">
+        <li><span class="n">6</span><span class="l">guides, one per area of practice</span></li>
+        <li><span class="n">{total}</span><span class="l">strategies, each expanded in full</span></li>
+        <li><span class="n">1</span><span class="l">to pick and try tomorrow morning</span></li>
+      </ul>
+    </div>
+  </section>
+
+  {with_your_team()}
+
   {principles_section(chapters)}
 
   <section class="prose-block band" id="praise" aria-labelledby="praise-h">
@@ -879,43 +932,32 @@ def build_index(chapters, prose):
     </div>
   </section>
 
-  <section class="prose-block" id="how" aria-labelledby="how-h">
-    <div class="wrap wrap--narrow">
-      <p class="kicker">How to use this</p>
-      <h2 id="how-h">{e(how.get("standfirst", "How to use this guide."))}</h2>
-      {paras(how)}
-      <ul class="stats">
-        <li><span class="n">6</span><span class="l">guides, one per area of practice</span></li>
-        <li><span class="n">{total}</span><span class="l">strategies, each expanded in full</span></li>
-        <li><span class="n">1</span><span class="l">to pick and try tomorrow morning</span></li>
-      </ul>
+  <section class="prose-block" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <p class="kicker">About Mark</p>
+      <h2 id="about-h">{e(about["standfirst"])}</h2>
+      <div class="why__body">
+        {"".join(f"<p>{e(p)}</p>" for p in about["paragraphs"])}
+      </div>
+      <div class="callout"><p>Pedagogy first. Technology second. Always.</p></div>
     </div>
   </section>
-
-  {with_your_team()}
-
   <section class="prose-block" id="downloads" aria-labelledby="dl-h">
     <div class="wrap">
       <p class="kicker">Take it with you</p>
-      <h2 id="dl-h">Download the guide and the infographics</h2>
+      <h2 id="dl-h">Take it away with you</h2>
       <p class="standfirst">Free to use and share under Creative Commons, for anything
-         other than commercial use.</p>
+         other than commercial use. No sign-up, no form.</p>
       <p><a class="btn btn--big" href="/get-the-guide/">
         Download the full guide <span class="btn__meta">PDF, 35 pages</span></a></p>
+      <p>Or take one at a time. Each guide has a page of its own, with the infographic
+         at full size and its own download.</p>
       <ul class="download-grid">
 {downloads}
       </ul>
     </div>
   </section>
 
-  <section class="prose-block" id="about" aria-labelledby="about-h">
-    <div class="wrap wrap--narrow">
-      <p class="kicker">About Mark</p>
-      <h2 id="about-h">{e(about["standfirst"])}</h2>
-      {"".join(f"<p>{e(p)}</p>" for p in about["paragraphs"])}
-      <div class="callout"><p>Pedagogy first. Technology second. Always.</p></div>
-    </div>
-  </section>
 </main>
 """,
         work_with_mark(),
