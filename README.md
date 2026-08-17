@@ -13,7 +13,8 @@ source/front.json        his front and back matter, transcribed from the same PD
 
 ## The rule, enforced
 
-`source/verify.py` proves it in both directions:
+`source/verify.py` proves it in both directions (the pre-reset site was
+removed from the tree; the tag `pre-reset-2026-08-17` keeps it in history):
 
 1. **Transcription.** Every string in those three files must appear verbatim in
    the guide PDF or the infographic HTML (whitespace and typography normalised).
@@ -46,14 +47,17 @@ CC BY-NC-ND, the infographics carry CC BY-NC-SA.
 ```
 index.html                 home: cover, why, the idea, the six guides, how to
                            use, praise, about, work with Mark, download
+download-resources/        the full guide and each of the six as its own PDF
 find-a-strategy/           all 144 cards searchable at once; results are the
                            exact card text and link to the strategy's anchor
 <chapter>/                 opener, infographic at full size with downloads,
                            the 24 strategies as accessible text, the thinking,
                            in practice
 css/styles.css             one stylesheet, vendored fonts, no external requests
-js/finder.js               the only JavaScript; the finder works without it
-_archive/                  the pre-reset site, kept for reference, not served
+js/finder.js               the finder; works without JavaScript as a plain list
+js/a11y.js                 the reading-controls widget shared with Mark's other
+                           microsites: text size, high contrast, extra spacing,
+                           listen aloud; preferences stay on the visitor's device
 ```
 
 ## Accessibility
@@ -62,7 +66,9 @@ WCAG 2.2 AA floor: AAA body contrast, visible focus, skip link, one h1 per
 page, alt text throughout, 44px targets, no sideways scroll at 640px/200% or
 320px/100%, `prefers-reduced-motion`, `prefers-contrast`, `forced-colors`,
 print styles. The finder is progressive enhancement; without JavaScript the
-full list is simply readable.
+full list is simply readable. The reading-controls widget (text size, high
+contrast, extra spacing, listen aloud) is a focus-trapped dialog, identical in
+behaviour to the aigovernance and Woodland microsites.
 
 ## Deployment
 

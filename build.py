@@ -86,21 +86,31 @@ def head(title, description, canonical):
 """
 
 
+SEARCH_ICON = ('<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" '
+               'fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">'
+               '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>')
+
+
 def header(current=None):
-    items = ['<li><a href="/"%s>Home</a></li>' % (' aria-current="page"' if current == "home" else "")]
+    # The brand is the home link; the strip is the six guides.
+    items = []
     for c in CHAPTERS:
         cur = ' aria-current="page"' if current == c["slug"] else ""
         items.append(f'<li><a href="/{c["slug"]}/"{cur}>'
                      f'<span class="n" aria-hidden="true">{c["number"]}</span>{e(c["name"])}</a></li>')
-    cur = ' aria-current="page"' if current == "find" else ""
-    items.append(f'<li><a href="/find-a-strategy/"{cur}>Find a strategy</a></li>')
+    dl_cur = ' aria-current="page"' if current == "downloads" else ""
+    find_cur = ' aria-current="page"' if current == "find" else ""
     return f"""<header class="site-header">
-  <div class="wrap">
+  <div class="wrap bar">
     <a class="brand" href="/">Pedagogy First. <span>Technology Second.</span></a>
-    <nav aria-label="Site">
-      <ul>{"".join(items)}</ul>
+    <nav class="tools" aria-label="Tools">
+      <a class="dl-link" href="/download-resources/"{dl_cur}>Download resources</a>
+      <a class="find-pill" href="/find-a-strategy/"{find_cur}>{SEARCH_ICON}Find a strategy</a>
     </nav>
   </div>
+  <nav class="chapters" aria-label="Guides">
+    <ul class="wrap">{"".join(items)}</ul>
+  </nav>
 </header>
 """
 
@@ -115,6 +125,7 @@ def footer():
        The guide is licensed CC BY-NC-ND 4.0. The infographics are licensed CC BY-NC-SA 4.0.</p>
   </div>
 </footer>
+<script src="/js/a11y.js" defer></script>
 </body>
 </html>
 """
@@ -205,14 +216,22 @@ def build_home():
              SITE + "/"),
         header("home"),
         f"""<div class="hero">
-  <div class="wrap">
-    <p class="eyebrow">{e(f["cover"]["eyebrow"])}</p>
-    <h1>Pedagogy First.<br>Technology Second.</h1>
-    <p class="lead">{e(f["cover"]["strapline"])}</p>
-    <p class="actions">
-      <a class="btn btn-light" href="#guides">Start reading</a>
-      <a class="btn btn-outline" href="/find-a-strategy/">Find a strategy</a>
-    </p>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">{e(f["cover"]["eyebrow"])}</p>
+      <h1>Pedagogy First.<br>Technology Second.</h1>
+      <p class="lead">{e(f["cover"]["strapline"])}</p>
+      <p class="actions">
+        <a class="btn btn-light" href="#guides">Start reading</a>
+        <a class="btn btn-outline" href="/find-a-strategy/">Find a strategy</a>
+      </p>
+    </div>
+    <figure class="hero-cover">
+      <a href="/download-resources/">
+        <img src="/assets/guide-cover.webp" width="840" height="630"
+             alt="The front cover of the guide. Download resources." decoding="async">
+      </a>
+    </figure>
   </div>
 </div>
 <main id="main">
@@ -267,6 +286,7 @@ def build_home():
     <p class="actions">
       <a class="btn" href="/downloads/pedagogy-first-technology-second.pdf">
         Download the full guide <span>PDF, 35 pages</span></a>
+      <a class="btn btn-quiet" href="/download-resources/">Download resources</a>
     </p>
     <p class="fine">{e(f["cover"]["copyright"])}</p>
   </div>
@@ -456,9 +476,83 @@ def build_finder():
     (target / "index.html").write_text("".join(out), encoding="utf-8")
 
 
+# ---------------------------------------------------------------- downloads
+def build_downloads():
+    full_mb = (ROOT / "downloads" / "pedagogy-first-technology-second.pdf").stat().st_size / 1024 / 1024
+    rows = []
+    for c in CHAPTERS:
+        slug = c["slug"]
+        mb = pdf_size_mb(slug)
+        fr = FRONT["openers"][slug]
+        links = []
+        if mb:
+            links.append(f'<a class="btn" href="/downloads/{slug}.pdf">Download this guide as a PDF '
+                         f'<span>{mb:.1f}&nbsp;MB</span></a>')
+        links.append(f'<a class="btn btn-quiet" href="/assets/infographics/{slug}-download.png">'
+                     f'Download the infographic as an image</a>')
+        rows.append(f"""      <li style="--accent:{darken_for_white(c["clusters"][0]["colour"])}">
+        <span class="card-no" aria-hidden="true">{c['number']}</span>
+        <h3>{e(fr['display_title'])}</h3>
+        <p class="note">{e(c['title'])}</p>
+        <p class="dl-actions">{" ".join(links)}</p>
+      </li>""")
+
+    out = [
+        head(f"Download resources | {TITLE}",
+             "Download the full Pedagogy First, Technology Second guide and each of the "
+             "six guides as its own PDF, free, with no sign-up.",
+             SITE + "/download-resources/"),
+        header("downloads"),
+        f"""<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">The guide and the six infographics</p>
+      <h1>Download resources</h1>
+      <p class="lead">Free to download and share. No sign-up, no form.</p>
+    </div>
+    <figure class="hero-cover">
+      <a href="/downloads/pedagogy-first-technology-second.pdf">
+        <img src="/assets/guide-cover.webp" width="840" height="630"
+             alt="The front cover of the guide. Download the full guide." decoding="async">
+      </a>
+    </figure>
+  </div>
+</div>
+<main id="main">
+  <section id="full" aria-labelledby="full-h">
+    <div class="wrap">
+      <p class="kicker">The guide</p>
+      <h2 id="full-h">Download the full guide</h2>
+      <p>The full 35 page guide, including all six infographics.</p>
+      <p class="actions">
+        <a class="btn" href="/downloads/pedagogy-first-technology-second.pdf">
+          Download the full guide <span>PDF, 35 pages, {full_mb:.1f}&nbsp;MB</span></a>
+      </p>
+      <p class="fine">{e(FRONT["cover"]["copyright"])}</p>
+    </div>
+  </section>
+  <section id="each" aria-labelledby="each-h">
+    <div class="wrap">
+      <p class="kicker">The six guides</p>
+      <h2 id="each-h">Six Guides</h2>
+      <p class="note">Text is selectable and searchable in every PDF.</p>
+      <ul class="guide-grid dl-grid">
+{"".join(rows)}
+      </ul>
+    </div>
+  </section>
+</main>
+""",
+        footer(),
+    ]
+    target = ROOT / "download-resources"
+    target.mkdir(exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
+
 # ---------------------------------------------------------------- extras
 def build_extras():
-    urls = [f"{SITE}/", f"{SITE}/find-a-strategy/"] + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
+    urls = [f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/"] + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
     body = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>'
@@ -475,6 +569,7 @@ def main():
     for i, c in enumerate(CHAPTERS):
         build_chapter(c, i)
     build_finder()
+    build_downloads()
     build_extras()
     n = sum(len(c["strategies"]) for c in CHAPTERS)
     print(f"Built home, find-a-strategy and {len(CHAPTERS)} chapter pages ({n} strategies).")

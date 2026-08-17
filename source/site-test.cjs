@@ -2,7 +2,7 @@
    Run:  python3 -m http.server 8899 &  then  node source/site-test.cjs  */
 const { chromium } = require('playwright');
 
-const PAGES = ['/', '/find-a-strategy/', '/retrieval-practice/', '/formative-assessment/',
+const PAGES = ['/', '/find-a-strategy/', '/download-resources/', '/retrieval-practice/', '/formative-assessment/',
   '/feedback/', '/questioning-and-discussion/', '/explanations-and-modelling/',
   '/metacognition-and-self-regulation/'];
 const BASE = 'http://localhost:8899';
@@ -104,7 +104,9 @@ const BASE = 'http://localhost:8899';
   check('input disabled rather than broken', await np.locator('#q').isDisabled());
   await np.goto(BASE + '/feedback/', { waitUntil: 'load' });
   check('chapter strategies all present', await np.locator('.strategy').count() === 24);
-  check('nav reaches every chapter', await np.locator('.site-header nav a').count() === 8);
+  check('chapter strip reaches every chapter', await np.locator('.chapters a').count() === 6);
+  check('brand links home', await np.locator('.brand[href="/"]').count() === 1);
+  check('find and downloads links present', await np.locator('.find-pill').count() === 1 && await np.locator('.dl-link').count() === 1);
   await nj.close();
 
   // ---------- keyboard ----------
