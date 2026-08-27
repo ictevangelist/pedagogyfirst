@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 Ways to Embed Formative Assessment in Your Classroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", sans-serif; background: #1e272e; width: 1400px; margin: 0 auto; }
+  .infographic { width: 1400px; background: linear-gradient(135deg, #2c3e50 0%, #1a2530 50%, #0f1922 100%); padding: 34px 40px 28px; position: relative; overflow: hidden; }
+  .infographic::before { content: ""; position: absolute; top: -160px; right: -120px; width: 520px; height: 520px; background: radial-gradient(circle, rgba(52,152,219,0.13) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+  .infographic::after { content: ""; position: absolute; bottom: -120px; left: -120px; width: 440px; height: 440px; background: radial-gradient(circle, rgba(241,196,15,0.08) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
+
+  /* HEADER */
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; position: relative; z-index: 1; }
+  .header-left { display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1; }
+  .header-icon { width: 68px; height: 68px; flex-shrink: 0; }
+  .header-text h1 { font-family: "Exo 2", sans-serif; font-size: 29px; font-weight: 900; color: #ffffff; line-height: 1.1; letter-spacing: -0.5px; }
+  .header-text .subtitle { font-size: 11px; color: #b2bec3; font-family: "Poppins", sans-serif; margin-top: 5px; font-weight: 400; }
+  .header-text .quote { font-size: 11px; color: #74b9ff; font-style: italic; margin-top: 4px; font-weight: 500; font-family: "Poppins", sans-serif; }
+  .header-badge { background: #ecf0f1; border: 2px solid #3498db; border-radius: 12px; padding: 10px 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(52,152,219,0.3); flex-shrink: 0; width: 115px; }
+
+  /* LEGEND */
+  .legend { display: flex; flex-wrap: nowrap; gap: 20px; margin-bottom: 12px; position: relative; z-index: 1; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #dfe6e9; font-weight: 600; white-space: nowrap; font-family: "Poppins", sans-serif; }
+  .legend-dot { width: 13px; height: 13px; border-radius: 4px; flex-shrink: 0; }
+  .legend-dot.clarify   { background: #3498db; }
+  .legend-dot.elicit    { background: #2ecc71; }
+  .legend-dot.feedback  { background: #e67e22; }
+  .legend-dot.peers     { background: #9b59b6; }
+  .legend-dot.ownership { background: #f1c40f; }
+
+  /* GRID */
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; position: relative; z-index: 1; align-items: stretch; }
+
+  /* CARDS */
+  .card { border-radius: 10px; padding: 10px 10px 9px; position: relative; display: flex; flex-direction: column; }
+  .card-number { position: absolute; top: 7px; right: 8px; font-family: "Exo 2", sans-serif; font-size: 10px; font-weight: 800; opacity: 0.5; color: #fff; }
+  .card-icon { font-size: 19px; line-height: 1; height: 22px; display: flex; align-items: center; margin-bottom: 4px; flex-shrink: 0; }
+  .card-category { font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #fff; opacity: 0.7; line-height: 11px; margin-bottom: 3px; flex-shrink: 0; }
+  .card-title { font-family: "Exo 2", sans-serif; font-size: 11px; font-weight: 800; color: #ffffff; line-height: 1.3; margin-bottom: 5px; flex-shrink: 0; }
+  .card-desc { font-size: 9px; color: #dfe6e9; line-height: 1.45; font-weight: 400; margin-bottom: 6px; height: 70px; overflow: hidden; flex-shrink: 0; }
+  .card-meta { display: flex; flex-direction: column; gap: 2px; margin-top: auto; flex-shrink: 0; }
+  .meta-chip { display: flex; align-items: center; gap: 3px; background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; padding: 1px 5px; height: 14px; font-size: 7.5px; font-family: "Inter", sans-serif; font-weight: 500; color: #dfe6e9; white-space: nowrap; overflow: hidden; }
+  .meta-label { font-size: 6.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #fff; opacity: 0.55; flex-shrink: 0; }
+  .cat-clarify  { background: linear-gradient(135deg, rgba(52,152,219,0.38) 0%, rgba(52,152,219,0.26) 100%); border: 1px solid rgba(52,152,219,0.32); border-left: 4px solid #3498db; }
+  .cat-elicit   { background: linear-gradient(135deg, rgba(46,204,113,0.38) 0%, rgba(46,204,113,0.26) 100%); border: 1px solid rgba(46,204,113,0.32); border-left: 4px solid #2ecc71; }
+  .cat-feedback { background: linear-gradient(135deg, rgba(230,126,34,0.38) 0%, rgba(230,126,34,0.26) 100%); border: 1px solid rgba(230,126,34,0.32); border-left: 4px solid #e67e22; }
+  .cat-peers    { background: linear-gradient(135deg, rgba(155,89,182,0.38) 0%, rgba(155,89,182,0.26) 100%); border: 1px solid rgba(155,89,182,0.32); border-left: 4px solid #9b59b6; }
+  .cat-ownership{ background: linear-gradient(135deg, rgba(241,196,15,0.38) 0%, rgba(241,196,15,0.26) 100%); border: 1px solid rgba(241,196,15,0.32); border-left: 4px solid #f1c40f; }
+
+  /* FOOTER */
+  .footer { display: flex; align-items: flex-start; justify-content: space-between; margin-top: 14px; padding-top: 10px; border-top: 2px solid rgba(255,255,255,0.1); position: relative; z-index: 1; gap: 20px; }
+  .footer-left { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .footer-motto { font-family: "Exo 2", sans-serif; font-size: 11.5px; font-weight: 800; color: #ffffff; }
+  .footer-motto span { color: #74b9ff; text-transform: uppercase; }
+  .footer-research { font-size: 9.5px; color: #b2bec3; font-weight: 400; font-family: "Poppins", sans-serif; }
+  .footer-cta { font-size: 9.5px; color: #b2bec3; font-weight: 400; margin-top: 1px; font-family: "Poppins", sans-serif; }
+  .footer-cta a { color: #74b9ff; font-weight: 600; text-decoration: none; }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; min-width: 180px; }
+  .footer-created-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #fff; opacity: 0.45; font-family: "Poppins", sans-serif; }
+  .footer-author { font-family: "Exo 2", sans-serif; font-size: 20px; font-weight: 900; line-height: 1.1; color: #e67e22; }
+</style>
+</head>
+<body>
+<div class="infographic">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" width="68" height="68">
+        <rect width="68" height="68" rx="12" fill="#ecf0f1"/>
+        <circle cx="28" cy="27" r="19" fill="none" stroke="#3498db" stroke-width="5"/>
+        <circle cx="28" cy="27" r="16.5" fill="#3498db"/>
+        <circle cx="28" cy="20" r="5" fill="white"/>
+        <path d="M18 36 Q18 28 28 28 Q38 28 38 36" fill="white"/>
+        <line x1="42" y1="41" x2="57" y2="57" stroke="#3498db" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+      <div class="header-text">
+        <h1>24 Ways to Embed <span style="background: linear-gradient(90deg, #e67e22 0%, #f39c12 50%, #e67e22 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Formative Assessment</span> in Your Classroom</h1>
+        <p class="subtitle">Evidence informed strategies, with or without technology &nbsp;&middot;&nbsp; Rooted in the work of Black, Wiliam, Butler, Sadler, Berger, Hattie, Bjork, Rosenshine, Angelo &amp; Cross and CAST</p>
+        <p class="quote">"We should view technology as a tool to amplify good teaching practices, not replace them." &mdash; Mark Anderson, RISE Edu Magazine</p>
+      </div>
+    </div>
+    <div class="header-badge">
+      <div style="text-align:center;">
+        <div style="font-family:'Poppins',sans-serif; font-size:15px; font-weight:600; color:#3498db; line-height:1.1; margin-bottom:4px;">Pedagogy<br>First</div>
+        <div style="font-size:8px; font-weight:700; color:#2c3e50; text-transform:uppercase; letter-spacing:0.5px; line-height:1.5;">24 Strategies to<br>Try Today</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot clarify"></div>Clarify Learning Intentions</div>
+    <div class="legend-item"><div class="legend-dot elicit"></div>Elicit Evidence of Learning</div>
+    <div class="legend-item"><div class="legend-dot feedback"></div>Feedback That Moves Learning Forward</div>
+    <div class="legend-item"><div class="legend-dot peers"></div>Students as Learning Resources</div>
+    <div class="legend-item"><div class="legend-dot ownership"></div>Students as Owners of Their Learning</div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <div class="card cat-clarify">
+      <span class="card-number">01</span>
+      <div class="card-icon">&#127919;</div>
+      <div class="card-category">Clarify Intentions</div>
+      <div class="card-title">Separate Intention from Task</div>
+      <div class="card-desc">The learning intention is what to learn, not what to do. Finishing the task is not the same as achieving the learning. Keep them distinct in your planning and in what you say to students at every stage of the lesson.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> presentation or display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-clarify">
+      <span class="card-number">02</span>
+      <div class="card-icon">&#129309;</div>
+      <div class="card-category">Clarify Intentions</div>
+      <div class="card-title">Build Success Criteria Together</div>
+      <div class="card-desc">Ask students what excellent looks like before they begin. Their language, not yours, becomes the standard. Criteria they articulate themselves land far more deeply than criteria handed to them.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> collaborative document tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam &amp; Leahy</span>
+      </div>
+    </div>
+
+    <div class="card cat-clarify">
+      <span class="card-number">03</span>
+      <div class="card-icon">&#128196;</div>
+      <div class="card-category">Clarify Intentions</div>
+      <div class="card-title">Exemplars Before Rubrics</div>
+      <div class="card-desc">Show work at different standards before students start their own. Students spot quality in someone else&#39;s work more readily than in their own. A rubric tells students what quality is; an exemplar shows them.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> visualiser or document camera</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sadler, Berger</span>
+      </div>
+    </div>
+
+    <div class="card cat-clarify">
+      <span class="card-number">04</span>
+      <div class="card-icon">&#128302;</div>
+      <div class="card-category">Clarify Intentions</div>
+      <div class="card-title">Withhold the Objective</div>
+      <div class="card-desc">Ask students to name what they learned at the end rather than copy an objective at the start. Generating the answer embeds it far more reliably than copying from the board.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> polling tool; whole class response</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">05</span>
+      <div class="card-icon">&#128256;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">Hinge Questions</div>
+      <div class="card-desc">A hinge question is a diagnostic question at a lesson turning point. Wrong answers each map to a known misconception. Responses tell you whether to move on or go back. Never improvise it.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> polling or quiz tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">06</span>
+      <div class="card-icon">&#129513;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">Plausible Distractors</div>
+      <div class="card-desc">Engineer wrong answers as carefully as the right one. Each distractor should map to a real misconception. Every wrong answer a student gives tells you something precise. Wrong answers are the diagnostic data.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> quiz tool; full response view</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam, Black</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">07</span>
+      <div class="card-icon">&#127897;&#65039;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">Deliberate Cold Call</div>
+      <div class="card-desc">Select who answers deliberately, not at random. Track participation so nobody stays invisible across lessons. Where appropriate, target the students whose thinking you most need to hear.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> participation tracking tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam, Black</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">08</span>
+      <div class="card-icon">&#9997;&#65039;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">Mini Whiteboards</div>
+      <div class="card-desc">All students write their response and hold it up simultaneously. The teacher reads the room in seconds: full participation, no waiting, no dominant voices. Works across all subjects.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> multimodal response tools</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">09</span>
+      <div class="card-icon">&#127183;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">ABCD Response Cards</div>
+      <div class="card-desc">Give each student a card: A, B, C and D. Pose a question and all students hold up their answer at once. No hands, no opt-out. The spread of responses shows instantly where misconceptions lie.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> multimodal audience response tools</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">10</span>
+      <div class="card-icon">&#127758;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">Every Voice, Every Time</div>
+      <div class="card-desc">Eliciting evidence only works if every student can respond. Offer written, verbal, visual and digital means of expression. The method you choose decides who gets to show what they know.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> multimodal and anonymous response tools</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> CAST</span>
+      </div>
+    </div>
+
+    <div class="card cat-elicit">
+      <span class="card-number">11</span>
+      <div class="card-icon">&#128172;</div>
+      <div class="card-category">Elicit Evidence</div>
+      <div class="card-title">Think, Pair, Share: Disciplined</div>
+      <div class="card-desc">Individual thinking first; paired discussion second; nominated response third. Nomination makes the report-back evidence, not just the most confident voice. Without it, the share is optional.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> timer for paired discussion</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-feedback">
+      <span class="card-number">12</span>
+      <div class="card-icon">&#9999;&#65039;</div>
+      <div class="card-category">Feedback</div>
+      <div class="card-title">Comment Only Marking</div>
+      <div class="card-desc">Remove grades from work in progress. Research showed comments alone produced the greatest gains. Adding a score to a comment cancels it out: students read the grade and ignore the feedback entirely.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> digital annotation or LMS tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Butler, Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-feedback">
+      <span class="card-number">13</span>
+      <div class="card-icon">&#129504;</div>
+      <div class="card-category">Feedback</div>
+      <div class="card-title">Feedback Must Cause Thinking</div>
+      <div class="card-desc">Feedback must be more work for the recipient than the donor. Pose questions rather than writing corrections. If feedback requires no response from the learner, it is not feedback; it is merely information.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotation tool with reply function</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-feedback">
+      <span class="card-number">14</span>
+      <div class="card-icon">&#9200;</div>
+      <div class="card-category">Feedback</div>
+      <div class="card-title">Build In Time to Act</div>
+      <div class="card-desc">Feedback with no time to act on it has no value. Begin the next lesson with students reading and responding to feedback before anything new. Time to act is where the learning happens.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> LMS; share feedback in advance</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam &amp; Leahy</span>
+      </div>
+    </div>
+
+    <div class="card cat-feedback">
+      <span class="card-number">15</span>
+      <div class="card-icon">&#128203;</div>
+      <div class="card-category">Feedback</div>
+      <div class="card-title">Whole Class Feedback</div>
+      <div class="card-desc">Record class patterns rather than individual comments: common strengths, recurring errors and two or three next steps. Teach to the gap, not to the individual paper. Workload stays manageable.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared document or display tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam &amp; Hattie</span>
+      </div>
+    </div>
+
+    <div class="card cat-feedback">
+      <span class="card-number">16</span>
+      <div class="card-icon">&#10067;</div>
+      <div class="card-category">Feedback</div>
+      <div class="card-title">3 Questions, Not Corrections</div>
+      <div class="card-desc">Return work with three questions rather than corrections. Students must respond before moving on. Cognitive effort belongs with the learner. Feedback that corrects for them removes the struggle.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> digital annotation tool or LMS</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-peers">
+      <span class="card-number">17</span>
+      <div class="card-icon">&#128101;</div>
+      <div class="card-category">Students as Learning Resources</div>
+      <div class="card-title">Guided Practice Together</div>
+      <div class="card-desc">Independence is the destination, not the starting point. Before students work alone, have them practise with peers in structured steps, checking each other&#39;s responses at every stage before moving forward.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> collaborative document tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-peers">
+      <span class="card-number">18</span>
+      <div class="card-icon">&#128161;</div>
+      <div class="card-category">Students as Learning Resources</div>
+      <div class="card-title">Student Generated Questions</div>
+      <div class="card-desc">Ask students to write questions that could appear in an assessment on this topic. Collate the best and use them for review. Generating questions demands higher order thinking than simply answering them.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared doc or quiz builder tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Black &amp; Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-peers">
+      <span class="card-number">19</span>
+      <div class="card-icon">&#128269;</div>
+      <div class="card-category">Students as Learning Resources</div>
+      <div class="card-title">Structured Peer Assessment</div>
+      <div class="card-desc">Peer feedback only works when students understand quality. Use exemplars first so students assess against shared criteria. Without shared criteria, peer feedback is opinion, not evidence.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> peer assessment tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Sadler, Berger</span>
+      </div>
+    </div>
+
+    <div class="card cat-ownership">
+      <span class="card-number">20</span>
+      <div class="card-icon">&#128257;</div>
+      <div class="card-category">Student Ownership</div>
+      <div class="card-title">Spaced Retrieval Practice</div>
+      <div class="card-desc">Low stakes quizzing on prior content, not today&#39;s lesson. Returning to older material at increasing intervals is one of the most robust findings in memory research. Re-reading notes is not the same as retrieving.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> spaced repetition quiz tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Bjork</span>
+      </div>
+    </div>
+
+    <div class="card cat-ownership">
+      <span class="card-number">21</span>
+      <div class="card-icon">&#128221;</div>
+      <div class="card-category">Student Ownership</div>
+      <div class="card-title">Test Before You Teach</div>
+      <div class="card-desc">Quiz students on material before you teach it. Triggering the feeling of not knowing primes attention and improves retention. Students who struggle before instruction remember the answer better.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> quiz tool; lesson start</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Bjork, Wiliam</span>
+      </div>
+    </div>
+
+    <div class="card cat-ownership">
+      <span class="card-number">22</span>
+      <div class="card-icon">&#127783;&#65039;</div>
+      <div class="card-category">Student Ownership</div>
+      <div class="card-title">The Muddiest Point</div>
+      <div class="card-desc">At lesson close, each student anonymously writes the one thing they are least clear about. The teacher addresses the most common muddy points publicly at the start of the next lesson. Two minutes; high value.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> anonymous response tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Angelo &amp; Cross</span>
+      </div>
+    </div>
+
+    <div class="card cat-ownership">
+      <span class="card-number">23</span>
+      <div class="card-icon">&#128197;</div>
+      <div class="card-category">Student Ownership</div>
+      <div class="card-title">Review Little and Often</div>
+      <div class="card-desc">Begin every lesson with a brief review of prior content: yesterday&#39;s, last week&#39;s, last month&#39;s. The most effective teachers check understanding constantly. If most students cannot answer, adjust the pace of teaching.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> low stakes quiz tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Rosenshine</span>
+      </div>
+    </div>
+
+    <div class="card cat-ownership">
+      <span class="card-number">24</span>
+      <div class="card-icon">&#129514;</div>
+      <div class="card-category">Student Ownership</div>
+      <div class="card-title">Spaced Self Quizzing</div>
+      <div class="card-desc">Teach students to quiz themselves rather than re-read notes. Re-reading feels productive but produces weak retention. Self quizzing feels harder but works. Retrieval effort drives long term memory.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> quizzing or flashcard tool</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Bjork</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-motto"><span>Pedagogy first, technology second.</span> Always.</div>
+      <div class="footer-research">Rooted in the work of Black, Wiliam, Butler, Sadler, Berger, Hattie, Bjork, Rosenshine, Angelo &amp; Cross and CAST</div>
+      <div class="footer-cta">Want to work together? <a href="https://ictevangelist.com/contact">ictevangelist.com/contact</a></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 721 85" width="200" height="24" style="display:block;margin-top:3px;"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtEAAABVCAMAAAC4qUjSAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAABXUExURQAAAMzM/zPMzDOZzJnMzJn//2bMzACZmQCZzJnM/////8zMzADMzDPM/2bM/8z//wDM/wCZZgDMmTPMmQBmZjOZmQBmMwCZM2bMmZn/zDOZZsz/zAAAAJ6yYyYAAAABdFJOUwBA5thmAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+oFCwc2INPXPQ0AABZOelRYdFJhdyBwcm9maWxlIHR5cGUgOGJpbQAAeJylXFm25Cqu/WcUNQTTw3DovNb7ePP/LW0ZYcIRcfJkll13ndoKm0ZIQg1Oler//b/6D105paRscsZl14/Yj8P5I+joQjr4MiEO+hOOX1zqA8395sXtMltDo/jo0/3bwpbvY1SXa5svBb6P0WzjNjJuamh0M5IVwobNRvM1V/sBS6NeTYLZepeHZHQ/4cWGTzz6xoc5Gu1s128YDRW+7wfwX+X7pjW+v2NuSIiaXtUfsDQq2GydC42YfQ1vER74hQ8/XTuPtnm3EEsvH/AcycKLDWojzil9xRtvmnWp7c9YNQmTD+uBjQ+LJqP7iGVq/6IWIpzDntapJ+Ee7hinO8d86eT7GGcpDYthcIMcjuyA1SsBL8lDwwyT0js+Rj4q465LF4arVC1GY059xG101vbQP+CvbPhJRbZVOqw1LFYP7DpuYDUfoJfSwH0/1M528iC+YLyzaDKim3Bdq9FtdKt3uWR0q6EXwrz8D1P+yIZdaYMf0XzA3ZHFBC7R+Wt0Wuvs8DcdhpffqmyzBcG40fFwjQZ/k+dF5Jeap/fob6wav7E0MCb5joLVTcBL8tBRShj6HWvvzooOqs8jyehyzwFT6zmzjRZejZGL/oBxfVWlb3K08cqUXJN7x9rhFqyED7jvh4zD/R0zGyZN53wkrNor4W5UMHc0e180WdmF1YPwIx9+YsNsyB351BuDBctI1u/biIV2zUg9Ca8vCU2U/4mlUWvVtA4bH5bFmKP7ii/aH5b/B3Fw/jTpDUOys/GuglCSnRbPhENDcl00HsttdaUb2A8dMf3CvpOL119WWtfC2UkZXfJsOn3BDdwycIgxOfScbWlTLaLLPgTQmiedPpJWSSf0VKx3bNxstOixFNPr9VIuuQc0XDEJUruE+4nVTTj2h5K24xPW2gWwIdmxOqp2nFBaF3PTZOCz13TffEhjlNSYT9hmLnOcRrUYXRi20jtp+lQuqMLzJz/PpgyCWWoR4hlgq5yvRtuNd962iun3Qh4h/XXtjH4qrT19qXjIkTVkWcJF2BZbaDSGeIqpOUuMmL6kid6y1NOuytqvz0w3CLr6CHHQI2IBzFlPEVbqSWOVjKGtdpMhE3xqu64JAVc//u7aldZ7WvR89yRYl1phy9fvrH/jjDQl71xtQ4SVpsa8s+BT8OEEdjrPpXWdhkrT9KZ3a26Ge2MNxCAE2v7wjlZ5DS86NyITj2pZWi9h9UfOgTpK8ags+UfIeXop6Sw9J9CU6X6XoXNY/JCTH2iM9ozQtEh4G3Bp3EkxAZ4Zmm5g01unqRVDzj5eGmdNU5eKa47177Rn1puEc1jwjllpb905a+3vONdgwFTBl8NxevZGWnZOQ8LVFPFOPmdnCdcFw+/0wPQlA7HKQkSGbyFvEj5H47qG9mP4zsfJPHfEzHbnbO3YJNwfdiCgo6FVjwWhpSlh2a5uG5afFin3W8L9cToHly+XE6PyULQoEg7hAG2QuGxyp1Up2u6EiXH9lWujjhd77E8yDO4dk5fiEmPHPOUpmbNlwyGbYyfCdNwgZAuz8MT80qT5Ys7sPmCyR/HklSDxG9JTiKaCVipv3S3TDTw8GK1j7zALvpIQT5OiD+UCuE+2K7RdaSlINJ8wrv/FPQ69BrbRD6y7PwP41FU/vchDPKuvWGnXI/Vu4RVmYPJvwztmyzppoSiTh98JFzYF942ZDzA7daPJ6BirJ+FfZOh4dY8jWaER37EduLffYbv4vmnFKMxhJ7xiNilCS74jG/HECZsldhEhXD2NDtmI5Ih3ashH3Ddeo5uYF8njVhtRpvQN/8i7X7jHaQTt8gfck+kJuEfdxT2mTQYClkm0sKNoixuYwn+oSaL502iyNu2YBk9TQIXdOdPGdLrNPYZfW8o73n3JxI72O9Ze9ZYDbG5Od2wRMralFFznZJZMKZ5917+Fcbnf+pAfeFeMszEIVjdBvNr1wOZTC02m9I7V/dLijSdx9O9YGhW8u9TZq0mcw10PPTHz4ac5f+LRzofse/iAnce9/Q6ljQP3TawR93d87LRgKrbcGtUrYTU68bH3LjQZ3QtWG+GPfPiJDdRQTbQ/j7snwZIwWL9v2QqhSeKhJvUk3C8tmm+ljne8GmU8lXb1DmLfRjdfesNvbPiNiuy5teS09+9Yw/VrNIJGkY9YSR1zQATZSgjYniSJ0LI3MGxPfCUe1EWsAx7Q/ZBg7c8M/6ie+hgzHqHw5hwYDdmusS9/Q2Jk83UW/itxEB5tfKC5ZtfesSjo+n2zDr2piyiaLg898W4dGvn7CF1fsbpblQd287BoMu1vmKc2Pkz5D+Kw8pA6aveShxTC2QIYTF5oE003KRIgWjKe9rjDBtyEyf+Gm2wbsp80orNR/DNdPBdJxmhJzzMVYE+bEG1DotIUxJAXZIFTKvOdcJaoERyfw0dNLcdpY0ilKkaTGwWzNO0ztNqnDNXkDISVJMkjzu0zhhlZ6YxhdhJjyM6I5IpPO0SbPO2KKBZEctRR4iAvsYJOIQ/Hy9Q1GqXYJtWptBRZ2EAtd/LVKRpaU+l95LO9Ybxz01hE1JNAjVrHGk6+6zGmOAzSGbg5/aQ9p2BU4DgWvGkDelaVXkfS16Yy3ZR2uoAtlqZgETW2aWpZ/WjVqu4N5njEdmpJIiTlDdIVgyI1LL/Y7NF9PQMio5iwpY8xSpvi4IpPJ0aDjf2Ez4R3FDPYVGrZkpteuZxzVhEHS/MA74ZL6UT8X0YZPDWSEDgcoWd4L4O2o2v/M/y/jrCzn7SSY0uITz48MV/1qf2/UIuVWp01k1esLkedI6tB7JXcWqcl4HLFyeUx22tnW15rzJwmIq5iKqWMIDGtrxRJg4gcHRjccN84Nk6LLHxtSyZoNFw8B0W5qsubv7YHotdWMo+E9HTGZdXGYjhnS2sIs1sqJ2T0dAsvrG4CvzQf4pyBfsdluIY45SCVldCimJho7ycQy4GYVpIIpGwZEp0oOuH5Bw5LLj+cuBCxYqGiAgLz3wcXPNVF8CN3c94PsAmx5F6i93BqPOyYeegocurfHcays0o248pnQ/AKsR8NJa2R20a+icNQcot5UUbRg/FZl6ebDBlATLvHhKndWXTkGt4xX3/clp4CuQteDKf5hCVtPfEVNCoTWfzloRnwfcPHTgs1I+C5sNoIZP46e/EjikkxJNKcEPc6xb0CMYuYN1azqonrH3Jry6GQit9NmLh0BxVoZC18lJX1Rw1wKGpE567hOtgWBJSgfck0GyIYm9tUC0+WH5kupKMgo8ENlmSpR5J8VRTxWkzmSqIryJvngKalHFm+whnOePs/5LLbk/2hmmsRCSdxQke5wSYeaVWzCtf7KUrStqOnQuZ6ji4lilRR1CSZRaonyb5PTiIUPPezcAm6VW3PqRalaf6/rcSA1RKlbcjUlXd8Kzoacp7ntB4SbGJMAXxxTYKY4kJlDzfZBCOVp/ltUZF591Axw5kNMkJNXDzS9JPrsM5XpKmjPS10ixYlMSZusguobT7iVFrqp6KHdtiMiDrwhaUO7DvSxtJgUmif1NKRz8nAOpJj0PgEgjvhioOQC3KwtPBcRSYfqkhsbzEO8KPTNMO70/rm1f5O0z9JuPrZhzaumMQ4mCEvxSsL1rKzWIyltC2dXGoUrRa8a7p4+G/YB817RVTFy+EKWox6rdwwflfIoEnh3vErG/5mp5Vinb28kVcMpYWb2O8H2E0JuG+ahFjfMCvtInLp8x2vRidmGZLOJ804NYe3CK/49+LwOFyxCnGRdMW/Y1SWUFsSfDleuNVNlOF+w/uUpFh341nxu1rdqnlm6/1L2fAVy9T+IR5ZOSRsxkM9CYTraSGQidS9zFWypmamkcWPXPC8qtPJ1hK4bKZo8JyIMqkI8zqZtIJs1VlzXPHIyl757BOyx8mkEIR3TUUDI55ou4WqzHNJB1ftgVH6MDdm2zWd9fUM7zBqI8TcUEVPJjg7jRdqMuV6ycO3DnCP4Tvp06KmFMklQS0ladVOGV6kycHFS7R9wIOTI1vSEfnuNvLowrCyw4yUDbNBFee2kg8y/PDeSjBMT5b88um8k3+puaYUKNbTd+qH4kLjrHoSrpcWjavl77iUxpFAgoFuU2mLTgXlwXiWE7skp7ZRCjlRdEUHGoESxSnj7FKnbcbA746j0Y+cYb+cSSH4k5zpdOMrHD0PSH2kdgIXflFNQEcxosZkKwV5yEMi0dkliCHPgldOz0MaIqxzlZ74tg5/k9DcU4xv6Vg1CQE3J32dl8J4wg2a4+yNGP5M+0hzTzx3WiEmTgB8wLPRNGozU1il8ystvSvtoJ3aveObDz9dn9xjmTcz4h2LnRJ8WUl1GTQhisX7hncrKenXC6ubIFZyT+qu3r8kgm+sfpvU/VkcelCanLCdcGEZvuB90xSa7H8XVk/C9dKimdSRfn3i1ejEV0wrvU/iGt0XzFd+zvNPKsIR9ywTdg4L37CtzlirbsKViMoDAbAnrxS2nNMiKMnDmeRyIVkgxjVZSURpQ8LN4brTHKYixZHuWiPFqw2OOoUY1s5af0S6A3XagtozR6F0A6urqnkTLny5x5MWyJ7ZD5i8QRg8H7PxSdzjQf45eorRp3MbHdfHMHzy7CDF8TRuduQLjRm0hIMxauNDouici98Ua4EfafiV6onwj7E52oLyh+y0FCOwtbSFfEg+opBrtDOpZE3gGM1nCn2O44/F3ksc/qHk87nSrG6CNTTM81rONFeJZKAjKxP0welumRJMGQpVNGXDO7BWKUVxHoYtjYm9c9lw8i4Y0ypPJToEM8HEeoofoHPjjozqByJqWaUwU17kajcc/QjWnYfsZbQXIzoiUe19Ew/4c41rkC+EVxmi3Tlhum+YHP98eS9VSyIq9FMjoCGh5cM0S4ZmrT/owKdZaThazm2j8s5nTE6KhWB2nJoyNFrnc0W0PWLn9Uj9ibdWEvwt0snM2ZlbaWF3tlUTAl//YCWvOjhP7eDQfRXGJw4V943ZSnbcN00MHjkRT8L90qLNYvkTr0ZXdd1svZfPZfsnvtRin+MvSz73oYGREFk/MW2QsSLUjMadp0TPzfCpsWjTiZyJJOSQWWuR7VBAfiT64MtUdIrXTvK+8KP2KL2Tw0k3cI58+IZsGJyrSK6EmOOcaSvAy3HgnNcs22/V9buOf5fgF40Pt71jHIaDikWnci1y2G2QgmAK1vAJ6DRPQpNLfyKZkI5+QlnJRTZuCivNpMHDjVrRRtc3PkzmBW/YQScrMdIcne82Ic8WzuzPbYcJfCCcTx9SXAILMEI+pRJK5rxrdBBzCLuwXpn3J76W/x/UYgV858iXr6BeCcHjvjELaw8c6QmNj0n4J1avL62HZpT4xKvRLdK8Olef4tPPmK+vbPjhcIU0RCFGhwQ/sbDhwqK0c8jykEzpG97ZcLmB6km4G919Sen91QHdsXol/MyH72wIQV25tKyzRfVOcmsLD9w3vtQC902LUvJ5JTxemrSUm0Vs+4Znoymri3C5Nlfv8pCM7ht+ZcNfJKKWcM5cyStG4FdxvyZTisZ90ySm/YZ5p13EKcFPvBrd1GJ1vlRJ/axbvxeHRyJqCeeMhp5YRrJHS9eI1U2UKX3Dez5ABPjGMzoSPuxqsXqftKcqvena7/nwYMOfHK1kvEb2PDiakSRT2pkRUgQKErCDSLYCZ514VPKZhxB4A5wP+eAiqqRPnIpvKEh5ik7kRHBySmdsy+RX2zL+HDZ8Z8MfjjE+FfmJ6a9GcTPTBrk0nWNjdz+0lvYLfkkPkRnhJMFNuHDpp+GE3KljO0QcShgr87CZFMlEvBLmtNLXCX9hg9pWZUY6b5jcF97rcwozrUxun7Y4Ruwz+cG8acycv8/kFWNKoUQ4WRRiRT9lqNQRYQUpDOOjHXV+zuBTyAgparFxcGI86fVpQguHQanLU3OoC4kDiu80USF94ttp3Y6er4cEl5j4/LqtWo5+tFAKdNJbiliQD+BYnj1/HKdHMaU2HGMgj6ePLEsbr4PwrgS4O2tKrnM0WbKpfCjeG4qblDCPojbwJphedjXh2OId8xX3Zfule/yupA8c1bW0AWfI5dD7XFraohOfX5/1kOCthkTLytImnuQUBzkR19IGXzV8RuEDfyjmZWmxp1kvhwtlZQM54lCptWohnLHvscbEL/GIDQXHYt6wJ08UMyJ7VPX0WmtxjXPapnTo1xqdQWCO0/anRSaURMHLOaXcWsxXcOzK2Jk3o+cn5utfjjE+T/w+sYz2PhGs1impRRQ+fMM77yTcaKd6JdSzZwh2JIZHkXBrDi5eego8XuKRK1q6g5pJ4OtXH3M/2LA+F/ryoUQ5S+BPg0YzeSpt9d0hSeWG73zysNl2fd6gdOcqunH5+gZiHHba45YyVxhctywhwhfWCvPE6pV5WOwYP+DYB7KmLlcv+18zLeG7LZdG1tD+Nbz5LVYNB1coXSpcBGY+DLJzOPKRnMVucH8hFQYzPKlXwp8F7wvDh0Lp5S748jmlDVfXEiS7nsYWYTiiXkz3MB5b2F1d56MIW3V94kv/Llrt9uRVemJOGACri8AvGdz3Q2t0X/ArG/7CPRb9kjMkrxirZnG/HjKpvnLecb00t/Rv+MU91khX9Q9YGiWnwEwZWp2H2JBnqlrN4c3TLGu4E/9eHB7u8T3k6xvbN8we6us3uBXHQPL2Ye46e/UF7+IgZ2tuPM/WXK2+/qsDq3d5SUb3Ef8P7rE05Mgn5a8OXwl8CIfTiIJZ0yPd6aYt67CweiXsJkUCmzc8G92jpXqqq/dvIdYTf2fDH9zj5aTmkFjwnnguCMW0F+HYVm49NJf2G97FIWl11RJvwsTSqNQaN3FYz6ySK7B6Ev5VHLaGvnr8cyQvHv8c8XqmqGtKN+EVv/ChIdP0AYuuCeGFD/KQTPsLvtnwl3Xa9Q0EUrZ1x2oSplrIA7taCE0k/DN+7LQS+L7h2egePEvnKzj+HoL/TU7pQ51WGqrmZPfvDc+RCL7YoK4hC3F9OPEF72yQz0OWe7wIwtzto5O1COtLleeXK4LV9tHJX3/8ttt19cXwn77hjLaO5ZScUqPoEKUenVxJ7IiRk5Pkn4a4zvodlrfecwSxkoN2Q3t9kWm3gE/+EYonfjkRdf1bIB9w8XwWglqvq9Thm+VgsCKdvSmtHH1dR4T3o7C/4t1zpy0/WwOcz+NvADbr0FyqvXEesujMJzTpzvfHb632bPngxLGqWK2no3N1glyETZXSUFfS4CbMJMLGUHYv8wdcW+FP8zzFTU2UlqJBxwd0cHx+M17zgM4T8/UvX/ncRzyvw4RP3LxKfGQTJ1jlhDjF+/xFdItBh83uyBm/J77YMLdsPpW98WHhPHTlU5jl0JKtSNXhXCg+XinLhqsn4cbvfPiNHO1iP/2fJ+649asP1RETmc3R4nqk3V564GOjoZILi/GK1d2qPHBsvQtt6d8X/M8lnyWcpXMhaq2aEGQkgnc+rGfmlF6xerwkD810/BuWRvOd4r86VzdxDfcL/lkcfij5LAmeh5qfWNhwYfXKh/XQnNI3vLOhHa3xv1zxStganXgXB6Gt0S2sdsL61+Jq3dNeYf+X49R/AQbSVJGuqo4sAAALd0lEQVR42u2di5aiOBCGbUCCqDB0b8/07rz/ey53AiR1SxDFlIc545hL1Z/PmiKgnk7Bgu1vH1EUxe2RnD/2diZYMGdLVdQ8svqI6z+Ty94OBQvmZHGPctxn6vo4J4+ZOh9sbw2CPdC2W/Vrkl6SJO1z9JSpswbvNN3U19xk8KuAMecx9aYMthoTnE8+iEhRY7BOkvA9QNuCUzmvejLmZHVrYI6mHN0c96hgZ2r2alq8dI6Nv3xEwpCmNKcY85G9oovDFJSuC9oWmc151c9aXu4sG8qP4YiZUFOip/jpHBt/+SiDrcYEp6MOkpOaUQfD9WEKStcFaYtO57Dq5TmpH9FYPTePGuhbfejV9J2dqfHoaX46xMaeb60nNUiEaDKEbopSNRVIQvaA0Ja1AtxVj7vcHLd5OR4zdTZl6myeqS9XQjSk6IluymPjT+hANDIbcRQarR4ilHWgygK35a0Ad9XHannIy6p/XkN9ax81yGOOvjdHdCbEI66jVm7KY5OvN2U0rCHVqxM5m2NNBPIwe1BlAdsyV4C76tquxpCXVV9BZ32WHvP0+LinpUNETPXlsUnmxEk1j4jORhuG5r88vCcgmrsA3LBSpVXQqsvUTXYe9j2y8fl9nqkTDGowesinxb/IY5MsOQFV44joZLRhwJZwC5E8zB40VeC25sHtC8AOK5nvP6vJmudZm6X7TB3PMzVymghFjy43IhtHWdOsvppuQjR+4kFQ1PqfvVgSru6E95Cph/Oa1Jaks73nSA0V9C3r8vTw7JYNlXTzKOqjLAkOYPJb+/tRViIJcfeBATRng8JZUaAukUvC1d3cFnZSqvba0v76YJeHtbycjXk6G553lfRwpBfUAVh+kpIuysok2ZNo9MwPG2EbSZi6o0TTvRT5ek77YiJaVdAqGv7e7H9kYyXdHnWmviAOgOpzw+IrK5PEF9GyTWRu1GJJdySa46as6zXV7uSIxn2O7qH/PVPjnkd71Fh/QA74Ul+orEwSio8EoHPSpK5EyyV9NNEuKy/oW6baNcL4plfQYyU9PIZKujuKAlpUq/z8qATKCiXxRTTF1xXRyG4G0F0q5DGJbm5Y0u7myGZ5eZazW5tytDFPW+Z3kF+mrFCS1yRaLOSjieY6yvd1sLO+7zFV01mHcldJZ1l3RHo1HRdFaXbAm/yuwngmmgY0562BtN1A0Tcg+lTGbSXdV9NAllZdnp6ydA311eSAN/ldheFNjbYmEs24HQNRZwNF34Ho8V7p9vrgrIIe8vX0+JW1+bmppKPi3tTT5doBT265C/P8RMOTBqLFndPxTrsoyxY7HkqrpDu7x/rjsnLAm/yuwvglmgJ0ThnITDS06ewQlZMkL3hmONhZvy9a24ue4O4q6XHfo6uk7/cmU39sFJFQWfHkSHMK0cRptddz8rArNwLRkPXV9GrPY5altUytV9P3qzUiN/llyooloRKNvsQhmv5GkQXlSRJp2/2Ibi6Mj3faRfpe9LT70VfSzVHX00Mlfa8fF1tEnoB+BqIp5OWUgU42ou0XUoxzvRjRD7hmuLRE/5hWZr5+qNkvrZ5ukX55oomnaXguZRENLPoGij6a6AfunRusnPY8Im0veo7zsOfxq9v36CrpqNnyeBeiCS8Fog0Tbn1902RX7ROG4NVDw66HMSJfQD8B0cBr65ewieevWtf8aERvvHxGK8bPrETaPrReSWdajq6z9FBJ388HIJqHLeTcZkS7Kvpwoh2Q9kNPEZtqaVslPWXpupJ+E6JJzrGItiJ9CKJXN7Fs5avNivHThdF0V8cCZz1Lt1cQ60xdPjXRNiNrSGGdHvjyRYtHmxJNkmQLon3kF5al4714sbmSNl9BTASpSrAQsl5Uou0iUoimO/xWRJ+wSXBfZbGOVox32EXGPenuWFbS+ZsQTfSNR7QF6YMQfcLnQXyVxTpZOlTSmaWSVutKupCUk4KFkPVyJhoQF0EBvFpj9BQcGlllNMpdiBYy7Y/ocrx6uLq7Y8B5ytL9vXinYxBtU5FNNOwxRCqRaE7Eckl8ES1C2h/R0760XkfbKunxPum3IJrsGpNoI9IHIlrCtEeiT2mfo+f70cZKutnpuAj1p9vORFM6cJbjHYk2z01bPsaaW+zSV9J6hjZX0k2GLqX60+1hRLPP86wvMYkGkSYL8dREc3c9fBJd6nd3KOOJ4fiJlgKI6GmIduzjRDTQydIht7dDQmIQ7V13WlsG0j6JPsXTpw51W1bStziaPml4XKKBcQivBKJhH1lLIbWky9HdZw6V9n1L87s75t8szUOBZ48jmvnGzAlm72Udy9ruAESvvPS6fBYr2k+0qEWGVosMHc2/VfpoRINnaOvWHKRRonNbO05IT0v0QjbGSkitbO6Tbq8UGnEevg1v8f13hyWagKYXotdJ+rBEk5D2SHQ0/oJWpSxZOoqLZa+DEL2eCxjFL9ErpI9LtP2GQ7GvgKXD9yvpIGvVdFtBr79I+nBEL6tZMdFWcoHhbO0YMQWie7t2d3S0Gdqco7PI9G3/INGOTu1JNDAKEWgy0UvBjkw0DocveNpPG7Z7HEacmwq6MH7TvwcBvanlNLuNaGgCT0QvXD400agvnuBJtBq66rN0pUMdxZZfrjge0fP/+h2Itp0CgiOeEKLp967JJTkA0R/Dbx0uTwu7SrquoFOZgG5I70g0MIh4SYBuGNGMoALRp6aGVlE2y9AzrG9Zav8F2txNf79qOU1uJpo/vhvROf3+D7poz0Q0/SYV8ogruw6/Er4uN1T7G4fQr8/mbvp7VstFEjbRXAegfoFooa8mu46/b1jNHj3akeD3DHP6AvhVy0USE1SCFC0jWu9kbEdWNBDd7HLESn2q9SnhZ12MFMiPzuZu+ntWy0mSVyGaeJubXJJNicZ8cSYn6TN0DXO1zNE10Ogvg6NEOyD93ESzPaCuJPx+wAJ7d6JLQ8nRZ+kbVnBAEXlBen+iZaOLiF4jDbzMFO2NiO4ydJufO9MzdEoZwVF/v2o5SoKlSeromxBNlfTJiUZdccOm2eVoKmi1LDfqCjpFCw4wIh9IPzXRfBewntjkNEnfmujrPENrlbQCdqCJEWFobKCWqyQcoPcmGidCLokz0RRetyDadlKovsAdaGr01AXwo6wXSfYlGlUMd+/0NERjF5LYO0UEi8YM/U/VHV2mJhbQaPRL/W0h+lHWiyQMogU+4F3p7yfeW24XooVlk3z50g7oz8Wm3aei52ck+txgLM9diQaM1FUu90ZEm2PDvWdKwmkNET37Z9ICMCRe2XcNdKXvcvQ7Hd/MccD5SUoGoi0OyBW1zUxsz2ktnI4pHcEi40mhIm5wmBzAV4gdnSw2lzmxRmSPIFCozsujEyD2WKKZyhHsu8f5d6VV0eqbzTPjKr0gPFls3OW29nVRGwKF6rxLfFzE8ocSzVUOtbLOz19tBa2VG4L8bIuIuwDiseUrTunrojYECtV7twifmGi2cpiV6qsGurU/I9KS/GyLiLsADmNL15vQ2U1sQ1vmgpLrbTxApiSc1sYJZdrzRe6tXFz4rjgXVOwOEJeJEyA/NsHyWTu7iW1o63VFWdE9mmhoCIFwiCXtRZW6gv7TVtG/HfIzEBF1BbyM7bR81s5uYouJZkRNjuzxRFtGYS0fcb3TVYYm3GDny5jBBaPZE6u5+Xpf066C/tNW0M3xs3fMwYLJ7drscSjthPDfvT0KFszB0raCrtoKuj6+HlhvBAvm39Jx064xl9PBYMH2t/L7S1VDDf0npOdgL27NZZXvqj8hDKeDwV7dfoY9jt/VfyE/B3t1+5uOl71//u7tTLBgrpa0BUdbboTTwWCvb1/9HkcoN4Idwr6/lKpPCMPuc7BDWLPHES52BzuMldV3pUK5EewollZfKhHf+xws2JPZT/UTyo1gx7E02Xyz7n+m1ZAptII9OAAAABV0RVh0dGlmZjphbHBoYQBhc3NvY2lhdGVkaH+j/gAAAA90RVh0dGlmZjplbmRpYW4AbHNiVbcXQwAAABh0RVh0dGlmZjpwaG90b21ldHJpYwBwYWxldHRlOXm3awAAABV0RVh0dGlmZjpyb3dzLXBlci1zdHJpcAA1el8RpAAAAABJRU5ErkJggg==" x="0" y="0" width="721" height="85"/></svg>
+    </div>
+    <div class="footer-right">
+      <svg width="112" height="24" viewBox="0 0 112 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:3px;">
+        <circle cx="12" cy="12" r="11" fill="#636e72" stroke="#a0b8cc" stroke-width="0.8"/>
+        <text x="12" y="16" text-anchor="middle" font-size="8.5" fill="#ffffff" font-family="Arial,sans-serif" font-weight="800">CC</text>
+        <circle cx="40" cy="12" r="11" fill="#636e72" stroke="#a0b8cc" stroke-width="0.8"/>
+        <text x="40" y="16" text-anchor="middle" font-size="8.5" fill="#ffffff" font-family="Arial,sans-serif" font-weight="800">BY</text>
+        <circle cx="68" cy="12" r="11" fill="#636e72" stroke="#a0b8cc" stroke-width="0.8"/>
+        <text x="68" y="16" text-anchor="middle" font-size="8.5" fill="#ffffff" font-family="Arial,sans-serif" font-weight="800">NC</text>
+        <circle cx="96" cy="12" r="11" fill="#636e72" stroke="#a0b8cc" stroke-width="0.8"/>
+        <text x="96" y="16" text-anchor="middle" font-size="8.5" fill="#ffffff" font-family="Arial,sans-serif" font-weight="800">SA</text>
+      </svg>
+      <div class="footer-created-label">Created by</div>
+      <div class="footer-author">Mark Anderson</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

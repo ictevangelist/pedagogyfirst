@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 Ways to Embed Metacognition and Self-Regulation in Your Classroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", sans-serif; background: #f2bc36; width: 1400px; margin: 0 auto; }
+  .infographic { width: 1400px; background: #f2bc36; padding: 30px 40px 28px; position: relative; }
+
+  /* HEADER (off-white, black text, pink accent word) */
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; position: relative; z-index: 1; }
+  .header-left { display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1; }
+  .header-icon { width: 68px; height: 68px; flex-shrink: 0; }
+  .header-text h1 { font-family: "Exo 2", sans-serif; font-size: 29px; font-weight: 900; color: #1a1a1a; line-height: 1.1; letter-spacing: -0.5px; }
+  .header-text .subtitle { font-size: 11px; color: #1a1a1a; font-family: "Poppins", sans-serif; margin-top: 5px; font-weight: 400; }
+  .header-text .scholars { font-size: 10px; color: #1a1a1a; font-family: "Poppins", sans-serif; margin-top: 3px; font-weight: 400; }
+  .header-text .quote { font-size: 11px; color: #1a1a1a; font-style: italic; margin-top: 4px; font-weight: 500; font-family: "Poppins", sans-serif; }
+  .header-badge { background: #f2bc36; border: 2px solid #c2185b; border-radius: 12px; padding: 10px 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 115px; }
+
+  .legend { display: flex; flex-wrap: nowrap; gap: 22px; margin-bottom: 12px; position: relative; z-index: 1; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #1a1a1a; font-weight: 600; white-space: nowrap; font-family: "Poppins", sans-serif; }
+  .legend-dot { width: 13px; height: 13px; border-radius: 4px; flex-shrink: 0; }
+  .legend-dot.fore     { background: #2980b9; }
+  .legend-dot.perform  { background: #16a085; }
+  .legend-dot.reflect  { background: #8e44ad; }
+  .legend-dot.strategy { background: #d35400; }
+  .legend-dot.digital  { background: #c2185b; }
+
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; position: relative; z-index: 1; align-items: stretch; }
+
+  /* FLAT CARDS: solid key colour, white text */
+  .card { border-radius: 10px; padding: 10px 10px 9px; position: relative; display: flex; flex-direction: column; }
+  .card-number { position: absolute; top: 7px; right: 8px; font-family: "Exo 2", sans-serif; font-size: 10px; font-weight: 800; opacity: 0.45; color: #ffffff; }
+  .card-icon { font-size: 19px; line-height: 1; height: 22px; display: flex; align-items: center; margin-bottom: 4px; flex-shrink: 0; }
+  .card-category { font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #ffffff; opacity: 0.78; line-height: 11px; margin-bottom: 3px; flex-shrink: 0; }
+  .card-title { font-family: "Exo 2", sans-serif; font-size: 11px; font-weight: 800; color: #ffffff; line-height: 1.3; margin-bottom: 5px; flex-shrink: 0; }
+  .card-desc { font-size: 9px; color: #ffffff; line-height: 1.45; font-weight: 400; margin-bottom: 6px; height: 70px; overflow: hidden; flex-shrink: 0; }
+  .card-meta { display: flex; flex-direction: column; gap: 2px; margin-top: auto; flex-shrink: 0; }
+  .meta-chip { display: flex; align-items: center; gap: 3px; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; padding: 1px 5px; height: 14px; font-size: 7.5px; font-family: "Inter", sans-serif; font-weight: 500; color: #ffffff; white-space: nowrap; overflow: hidden; }
+  .meta-label { font-size: 6.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #ffffff; opacity: 0.7; flex-shrink: 0; }
+
+  .cat-fore     { background: #2980b9; }
+  .cat-perform  { background: #16a085; }
+  .cat-reflect  { background: #8e44ad; }
+  .cat-strategy { background: #d35400; }
+  .cat-digital  { background: #c2185b; }
+
+  .footer { display: flex; align-items: flex-start; justify-content: space-between; margin-top: 16px; padding-top: 16px; border-top: 3px solid #c2185b; position: relative; z-index: 1; gap: 20px; }
+  .footer-left { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .footer-motto { font-family: "Exo 2", sans-serif; font-size: 11.5px; font-weight: 800; color: #1a1a1a; }
+  .footer-motto span { color: #c2185b; text-transform: uppercase; }
+  .footer-research { font-size: 9.5px; color: #1a1a1a; font-weight: 400; font-family: "Poppins", sans-serif; }
+  .footer-cta { font-size: 9.5px; color: #1a1a1a; font-weight: 400; margin-top: 1px; font-family: "Poppins", sans-serif; }
+  .footer-cta a { color: #c2185b; font-weight: 600; text-decoration: none; }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; min-width: 180px; }
+  .footer-created-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #1a1a1a; font-family: "Poppins", sans-serif; }
+  .footer-author { font-family: "Exo 2", sans-serif; font-size: 20px; font-weight: 900; line-height: 1.1; color: #c2185b; }
+</style>
+</head>
+<body>
+<div class="infographic">
+
+  <div class="header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg" width="68" height="68">
+        <rect width="68" height="68" rx="12" fill="#c2185b"/>
+        <circle cx="34" cy="30" r="16" fill="none" stroke="#ffffff" stroke-width="2.2"/>
+        <path d="M34 14 a16 16 0 0 1 0 32" fill="none" stroke="#d99a00" stroke-width="2.2"/>
+        <circle cx="34" cy="30" r="6" fill="#d99a00"/>
+        <path d="M34 46 L34 54 M28 54 L40 54" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="34" cy="30" r="22" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1" stroke-dasharray="3 3"/>
+      </svg>
+      <div class="header-text">
+        <h1>24 Ways to Embed <span style="color:#c2185b;">Metacognition &amp; Self-Regulation</span> in Your Classroom</h1>
+        <p class="subtitle">Evidence-informed strategies, with or without technology &nbsp;&#183;&nbsp; Rooted in cognitive and educational research</p>
+        <p class="scholars">Rooted in the work of Zimmerman, Flavell, Winne, Butler, and Willingham</p>
+        <p class="quote">&#8220;As children should learn about metacognition and how best to learn, they should also be taught how to use technology to support their learning.&#8221; &#8212; Anderson &amp; Lewis, The EdTech Playbook, 2025</p>
+      </div>
+    </div>
+    <div class="header-badge">
+      <div style="text-align:center;">
+        <div style="font-family:'Poppins',sans-serif; font-size:15px; font-weight:600; color:#c2185b; line-height:1.1; margin-bottom:4px;">Pedagogy<br>First</div>
+        <div style="font-size:8px; font-weight:700; color:#1a1a1a; text-transform:uppercase; letter-spacing:0.5px; line-height:1.5;">24 Strategies to<br>Try Today</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot fore"></div>Forethought &amp; Planning</div>
+    <div class="legend-item"><div class="legend-dot perform"></div>Performance &amp; Monitoring</div>
+    <div class="legend-item"><div class="legend-dot reflect"></div>Self-Reflection &amp; Evaluation</div>
+    <div class="legend-item"><div class="legend-dot strategy"></div>Strategy Knowledge &amp; Use</div>
+    <div class="legend-item"><div class="legend-dot digital"></div>Digital Cognition</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- CAT 1: FORETHOUGHT & PLANNING (5 cards) -->
+
+    <div class="card cat-fore"><span class="card-number">01</span>
+      <div class="card-icon">&#127919;</div>
+      <div class="card-category">Forethought &amp; Planning</div>
+      <div class="card-title">Set the Goal First</div>
+      <div class="card-desc">Zimmerman: planning begins with a specific, proximal goal, not a vague aim. Have students state what a good answer to this question looks like before they start writing it.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared success criteria on screen</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-fore"><span class="card-number">02</span>
+      <div class="card-icon">&#129504;</div>
+      <div class="card-category">Forethought &amp; Planning</div>
+      <div class="card-title">Knowledge Comes First</div>
+      <div class="card-desc">Willingham: you cannot plan or monitor a task you know nothing about. Teach the content first; metacognition works on knowledge, never instead of it. Build the base, then regulate.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> retrieval starter to check the base</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Willingham</span>
+      </div>
+    </div>
+
+    <div class="card cat-fore"><span class="card-number">03</span>
+      <div class="card-icon">&#128269;</div>
+      <div class="card-category">Forethought &amp; Planning</div>
+      <div class="card-title">Analyse the Task First</div>
+      <div class="card-desc">Zimmerman: strong learners break a task into its demands before starting. Ask students what this question is really asking and which prior topics it draws on before they answer.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> annotate the question on a board</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-fore"><span class="card-number">04</span>
+      <div class="card-icon">&#128220;</div>
+      <div class="card-category">Forethought &amp; Planning</div>
+      <div class="card-title">Pick a Strategy on Purpose</div>
+      <div class="card-desc">Flavell: planning means selecting an approach, not defaulting to one. Have students name which method they will use for this problem and why, before the first line goes down.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> strategy menu in a shared doc</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Flavell</span>
+      </div>
+    </div>
+
+    <div class="card cat-fore"><span class="card-number">05</span>
+      <div class="card-icon">&#128170;</div>
+      <div class="card-category">Forethought &amp; Planning</div>
+      <div class="card-title">Build Realistic Confidence</div>
+      <div class="card-desc">Zimmerman: self-efficacy drives effort, but it must be earned by past success, not pep talks. Point students to a recent task they mastered to set a credible expectation for this one.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> portfolio of prior work to revisit</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <!-- CAT 2: PERFORMANCE & MONITORING (5 cards) -->
+
+    <div class="card cat-perform"><span class="card-number">06</span>
+      <div class="card-icon">&#128064;</div>
+      <div class="card-category">Performance &amp; Monitoring</div>
+      <div class="card-title">Check, Don't Just Feel</div>
+      <div class="card-desc">Winne: a novice's sense of understanding is unreliable. Pair every self-check with an external test, a quiz or worked answer, so monitoring rests on evidence rather than confidence.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> self-marking quiz with feedback</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Winne</span>
+      </div>
+    </div>
+
+    <div class="card cat-perform"><span class="card-number">07</span>
+      <div class="card-icon">&#128274;</div>
+      <div class="card-category">Performance &amp; Monitoring</div>
+      <div class="card-title">Scaffold Focus, Then Fade</div>
+      <div class="card-desc">Zimmerman: monitoring needs a low-distraction environment first. Use classroom.cloud to scaffold focus while students are learning, then withdraw it as they manage attention themselves.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> classroom.cloud</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-perform"><span class="card-number">08</span>
+      <div class="card-icon">&#9200;</div>
+      <div class="card-category">Performance &amp; Monitoring</div>
+      <div class="card-title">Build in Stop Points</div>
+      <div class="card-desc">Winne: monitoring fades without prompts. Insert planned pauses where students ask whether the approach is still working, before sunk effort makes a wrong method hard to abandon.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> timed checkpoint prompts</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Winne</span>
+      </div>
+    </div>
+
+    <div class="card cat-perform"><span class="card-number">09</span>
+      <div class="card-icon">&#10068;</div>
+      <div class="card-category">Performance &amp; Monitoring</div>
+      <div class="card-title">Ask Yourself As You Go</div>
+      <div class="card-desc">Flavell: monitoring means questioning your understanding mid-task. Teach students to pause and ask &ldquo;do I actually understand this?&rdquo;, so gaps surface in time to fix them.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> self-check prompts mid-task</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Flavell</span>
+      </div>
+    </div>
+
+    <div class="card cat-perform"><span class="card-number">10</span>
+      <div class="card-icon">&#128221;</div>
+      <div class="card-category">Performance &amp; Monitoring</div>
+      <div class="card-title">Make Thinking Visible</div>
+      <div class="card-desc">Flavell: regulation you cannot see, you cannot coach. Have students leave a brief trace of their reasoning as they work, so you and they can inspect the process, not just the product.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> shared doc showing working e.g. OneNote</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Flavell</span>
+      </div>
+    </div>
+
+    <!-- CAT 3: SELF-REFLECTION & EVALUATION (5 cards) -->
+
+    <div class="card cat-reflect"><span class="card-number">11</span>
+      <div class="card-icon">&#128207;</div>
+      <div class="card-category">Self-Reflection &amp; Evaluation</div>
+      <div class="card-title">Judge Against a Standard</div>
+      <div class="card-desc">Zimmerman: self-judgement needs a reference, not a hunch. Give students the mark scheme or an exemplar to compare their work against, so evaluation is anchored to a real standard.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> exemplar shown beside own work</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-reflect"><span class="card-number">12</span>
+      <div class="card-icon">&#128279;</div>
+      <div class="card-category">Self-Reflection &amp; Evaluation</div>
+      <div class="card-title">Credit the Method, Not the Gift</div>
+      <div class="card-desc">Zimmerman: how students explain a result shapes the next attempt. Steer attribution toward the method used, which they can change, rather than fixed ability, which they cannot.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> reflection prompt after results</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-reflect"><span class="card-number">13</span>
+      <div class="card-icon">&#128260;</div>
+      <div class="card-category">Self-Reflection &amp; Evaluation</div>
+      <div class="card-title">Turn Reflection Into a Plan</div>
+      <div class="card-desc">Butler: feedback only regulates learning if it changes the next action. Have students convert each reflection into one concrete adjustment they will make on the very next task.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> action log carried forward</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Butler</span>
+      </div>
+    </div>
+
+    <div class="card cat-reflect"><span class="card-number">14</span>
+      <div class="card-icon">&#128202;</div>
+      <div class="card-category">Self-Reflection &amp; Evaluation</div>
+      <div class="card-title">Compare Predicted to Actual</div>
+      <div class="card-desc">Winne: calibration improves when students see the gap between expected and real scores. Have them predict a mark, then compare, so monitoring is corrected by evidence over time.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> prediction logged before marking</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Winne</span>
+      </div>
+    </div>
+
+    <div class="card cat-reflect"><span class="card-number">15</span>
+      <div class="card-icon">&#128172;</div>
+      <div class="card-category">Self-Reflection &amp; Evaluation</div>
+      <div class="card-title">Reflection Feeds Teaching</div>
+      <div class="card-desc">Butler: self-regulation and instruction are a loop. Use what students notice about their own errors to decide what you reteach, so their reflection shapes the next lesson.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> exit poll of common errors</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Butler</span>
+      </div>
+    </div>
+
+    <!-- CAT 4: STRATEGY KNOWLEDGE & SELF-REGULATED USE (5 cards) -->
+
+    <div class="card cat-strategy"><span class="card-number">16</span>
+      <div class="card-icon">&#128218;</div>
+      <div class="card-category">Strategy Knowledge &amp; Use</div>
+      <div class="card-title">Know the Strategy Itself</div>
+      <div class="card-desc">Flavell: students cannot deploy a strategy they have never been taught. Teach retrieval, spacing or self-explanation explicitly as named methods before expecting independent use.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> strategy reference sheet</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Flavell</span>
+      </div>
+    </div>
+
+    <div class="card cat-strategy"><span class="card-number">17</span>
+      <div class="card-icon">&#129520;</div>
+      <div class="card-category">Strategy Knowledge &amp; Use</div>
+      <div class="card-title">Know When to Use Each</div>
+      <div class="card-desc">Winne: conditional knowledge, knowing which strategy suits which task, is what separates skilled learners. Teach not just the method but the cues that signal when it is the right one.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> worked cases matched to methods</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Winne</span>
+      </div>
+    </div>
+
+    <div class="card cat-strategy"><span class="card-number">18</span>
+      <div class="card-icon">&#127891;</div>
+      <div class="card-category">Strategy Knowledge &amp; Use</div>
+      <div class="card-title">Fade the Scaffold</div>
+      <div class="card-desc">Zimmerman: support must be withdrawn for self-regulation to develop. Move from modelled to guided to independent use, removing prompts as students show they no longer need them.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> prompts gradually removed</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-strategy"><span class="card-number">19</span>
+      <div class="card-icon">&#129529;</div>
+      <div class="card-category">Strategy Knowledge &amp; Use</div>
+      <div class="card-title">Keep What Works, Drop the Rest</div>
+      <div class="card-desc">Winne: learners refine an approach by checking whether it worked. Have students trial a study method, judge it against results, and keep only what the evidence supports.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> method log with outcomes</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Winne</span>
+      </div>
+    </div>
+
+    <div class="card cat-strategy"><span class="card-number">20</span>
+      <div class="card-icon">&#128161;</div>
+      <div class="card-category">Strategy Knowledge &amp; Use</div>
+      <div class="card-title">Tie Strategies to Content</div>
+      <div class="card-desc">Willingham: strategies do not float free of subjects. Teach each one inside the content it serves, so students learn to self-regulate this topic, not metacognition in the abstract.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> subject-specific strategy banks</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Willingham</span>
+      </div>
+    </div>
+
+    <!-- CAT 5: DIGITAL COGNITION (4 cards) -->
+
+    <div class="card cat-digital"><span class="card-number">21</span>
+      <div class="card-icon">&#128197;</div>
+      <div class="card-category">Digital Cognition</div>
+      <div class="card-title">Schedule Your Own Spacing</div>
+      <div class="card-desc">Regulating when you study is a planning act. Teach students to set their own calendar reminders to revisit topics over time, owning the spacing rather than waiting to be told.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> calendar reminders for review</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-digital"><span class="card-number">22</span>
+      <div class="card-icon">&#127183;</div>
+      <div class="card-category">Digital Cognition</div>
+      <div class="card-title">Make Your Own Questions</div>
+      <div class="card-desc">Writing a good question forces you to judge what matters. Have students build low-stakes quizzes and flashcards from their own notes, so the tool supports retrieval they have authored.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> self-built quizzes; flashcard app</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Winne</span>
+      </div>
+    </div>
+
+    <div class="card cat-digital"><span class="card-number">23</span>
+      <div class="card-icon">&#128241;</div>
+      <div class="card-category">Digital Cognition</div>
+      <div class="card-title">Regulate the Device Too</div>
+      <div class="card-desc">Self-regulation now includes the screen. Teach students to use focus modes and silence alerts as a deliberate choice, regulating the tool so it serves attention instead of stealing it.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> focus mode; app limits</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Zimmerman</span>
+      </div>
+    </div>
+
+    <div class="card cat-digital"><span class="card-number">24</span>
+      <div class="card-icon">&#129302;</div>
+      <div class="card-category">Digital Cognition</div>
+      <div class="card-title">Partner, Not Substitute</div>
+      <div class="card-desc">Willingham: memory is the residue of thought. Offload the thinking to AI and nothing is learned. Have students use it to check and challenge their reasoning, not to do it for them.</div>
+      <div class="card-meta">
+        <span class="meta-chip"><span class="meta-label">Tech</span> AI as a critic of own work</span>
+        <span class="meta-chip"><span class="meta-label">Informed by</span> Willingham</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-motto"><span>Pedagogy first, technology second.</span> Always.</div>
+      <div class="footer-research">Rooted in the work of Zimmerman, Flavell, Winne, Butler, and Willingham</div>
+      <div class="footer-cta">Want to work together? <a href="https://ictevangelist.com">ictevangelist.com</a></div>
+    </div>
+    <div class="footer-right">
+      <svg width="112" height="24" viewBox="0 0 112 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:3px;">
+        <circle cx="12" cy="12" r="11" fill="rgba(194,24,91,0.12)" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="12" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">CC</text>
+        <circle cx="40" cy="12" r="11" fill="rgba(194,24,91,0.12)" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="40" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">BY</text>
+        <circle cx="68" cy="12" r="11" fill="rgba(194,24,91,0.12)" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="68" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">NC</text>
+        <circle cx="96" cy="12" r="11" fill="rgba(194,24,91,0.12)" stroke="#c2185b" stroke-width="0.8"/>
+        <text x="96" y="16" text-anchor="middle" font-size="8.5" fill="#c2185b" font-family="Arial,sans-serif" font-weight="800">SA</text>
+      </svg>
+      <div class="footer-created-label">Created by</div>
+      <div class="footer-author">Mark Anderson</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
