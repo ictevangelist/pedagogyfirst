@@ -201,7 +201,6 @@ def build_home():
     why = PROSE["front"]["why"]
     idea = PROSE["front"]["idea"]
     how = PROSE["front"]["how"]
-    closing = PROSE["closing"]
 
     cards = []
     for c in CHAPTERS:
@@ -292,8 +291,6 @@ def build_home():
   </div>
 </section>
 """,
-        section("closing", "The idea behind it", closing["standfirst"],
-                prose_paras(closing["paragraphs"])),
         section("about", "About Mark", f["about"]["standfirst"],
                 prose_paras(f["about"]["paragraphs"])),
         f"""<section id="work" class="band" aria-labelledby="work-h">
