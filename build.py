@@ -59,6 +59,14 @@ def darken_for_white(hex_colour, target=4.6):
 
 
 # ---------------------------------------------------------------- chrome
+# The stylesheet is linked with a content hash so browsers pick up CSS
+# changes with the page instead of serving a stale cached copy.
+import hashlib
+CSS_V = hashlib.sha256((ROOT / "css" / "styles.css").read_bytes()).hexdigest()[:8]
+A11Y_V = hashlib.sha256((ROOT / "js" / "a11y.js").read_bytes()).hexdigest()[:8]
+FINDER_V = hashlib.sha256((ROOT / "js" / "finder.js").read_bytes()).hexdigest()[:8]
+
+
 def head(title, description, canonical):
     return f"""<!DOCTYPE html>
 <html lang="en-GB">
@@ -74,7 +82,7 @@ def head(title, description, canonical):
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{e(canonical)}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css?v={CSS_V}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -120,7 +128,7 @@ def footer():
        The guide is licensed CC BY-NC-ND 4.0. The infographics are licensed CC BY-NC-SA 4.0.</p>
   </div>
 </footer>
-<script src="/js/a11y.js" defer></script>
+<script src="/js/a11y.js?v={A11Y_V}" defer></script>
 </body>
 </html>
 """
@@ -486,7 +494,7 @@ def build_finder():
       <button type="button" class="linkish" id="reset">Show all 144</button></p>
   </div>
 </main>
-<script src="/js/finder.js" defer></script>
+<script src="/js/finder.js?v={FINDER_V}" defer></script>
 """,
         footer(),
     ]
