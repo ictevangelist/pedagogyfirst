@@ -387,11 +387,18 @@ def build_chapter(c, index):
     practice = ch_prose.get("practice", {})
     thinking_html = practice_html = ""
     if thinking.get("standfirst"):
-        thinking_html = section(f"thinking", "The thinking", thinking["standfirst"],
-                                prose_paras(thinking["paragraphs"]))
+        thinking_html = split_section(
+            "thinking", "The thinking", thinking["standfirst"],
+            "".join(f"<p>{e(p)}</p>" for p in thinking["paragraphs"]),
+            f"guide-page-{slug}-thinking.webp",
+            f"The thinking page for {c['name']} from the guide.")
     if practice.get("standfirst"):
-        practice_html = section(f"practice", "In practice", practice["standfirst"],
-                                prose_paras(practice["paragraphs"]))
+        practice_html = split_section(
+            "practice", "In practice", practice["standfirst"],
+            "".join(f"<p>{e(p)}</p>" for p in practice["paragraphs"]),
+            f"guide-page-{slug}-practice.webp",
+            f"The in practice page for {c['name']} from the guide.",
+            img_left=True)
 
     out = [
         head(f'{fr["display_title"]} | {TITLE}',
