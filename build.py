@@ -149,7 +149,7 @@ def split_section(sec_id, kicker, heading, inner, img, alt, img_left=False):
       {inner}
     </div>
     <figure class="split-fig">
-      <img src="/assets/{img}" width="1200" height="900" alt="{e(alt)}" loading="lazy" decoding="async">
+      <img src="/assets/{img}" width="1200" height="900" alt="{e(alt)}" decoding="async">
     </figure>
   </div>
 </section>
