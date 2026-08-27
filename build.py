@@ -139,15 +139,14 @@ def prose_paras(paras, cols=True):
     return f'<div class="{"cols" if cols else "plain"}">{body}</div>'
 
 
-def split_section(sec_id, kicker, heading, paras, img, alt, img_left=False):
-    body = "".join(f"<p>{e(p)}</p>" for p in paras)
+def split_section(sec_id, kicker, heading, inner, img, alt, img_left=False):
     side = "split-imgleft" if img_left else "split-imgright"
     return f"""<section id="{sec_id}" aria-labelledby="{sec_id}-h">
   <div class="wrap split {side}">
     <div class="split-text">
       <p class="kicker">{e(kicker)}</p>
       <h2 id="{sec_id}-h">{e(heading)}</h2>
-      {body}
+      {inner}
     </div>
     <figure class="split-fig">
       <img src="/assets/{img}" width="1200" height="900" alt="{e(alt)}" loading="lazy" decoding="async">
@@ -257,11 +256,13 @@ def build_home():
 </div>
 <main id="main">
 """,
-        split_section("why", "Why I made these", why["standfirst"], why["paragraphs"],
+        split_section("why", "Why I made these", why["standfirst"],
+                      "".join(f"<p>{e(p)}</p>" for p in why["paragraphs"]),
                       "guide-page-strategies.webp",
                       "A strategies page from the guide: 24 retrieval practice "
                       "strategies on a single page."),
-        split_section("idea", "The idea", idea["standfirst"], idea["paragraphs"],
+        split_section("idea", "The idea", idea["standfirst"],
+                      "".join(f"<p>{e(p)}</p>" for p in idea["paragraphs"]),
                       "guide-page-contents.webp",
                       "The contents page of the guide: the six guides, numbered "
                       "one to six.", img_left=True),
@@ -275,10 +276,13 @@ def build_home():
   </div>
 </section>
 """,
-        section("how", "How to use this guide", how["standfirst"],
-                prose_paras(how["paragraphs"], cols=False)
-                + f'<ol class="steps">{steps}</ol>'
-                + f'<p class="callout">{e(how["motto"])}</p>'),
+        split_section("how", "How to use this guide", how["standfirst"],
+                      prose_paras(how["paragraphs"], cols=False)
+                      + f'<ol class="steps">{steps}</ol>'
+                      + f'<p class="callout">{e(how["motto"])}</p>',
+                      "guide-page-how.webp",
+                      "The how to use this guide page from the guide, with the "
+                      "six guides linked online."),
         f"""<section id="praise" class="band" aria-labelledby="praise-h">
   <div class="wrap">
     <p class="kicker">Praise</p>
