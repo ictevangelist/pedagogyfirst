@@ -131,6 +131,24 @@ def prose_paras(paras, cols=True):
     return f'<div class="{"cols" if cols else "plain"}">{body}</div>'
 
 
+def split_section(sec_id, kicker, heading, paras, img, alt, img_left=False):
+    body = "".join(f"<p>{e(p)}</p>" for p in paras)
+    side = "split-imgleft" if img_left else "split-imgright"
+    return f"""<section id="{sec_id}" aria-labelledby="{sec_id}-h">
+  <div class="wrap split {side}">
+    <div class="split-text">
+      <p class="kicker">{e(kicker)}</p>
+      <h2 id="{sec_id}-h">{e(heading)}</h2>
+      {body}
+    </div>
+    <figure class="split-fig">
+      <img src="/assets/{img}" width="1200" height="900" alt="{e(alt)}" loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
+"""
+
+
 def section(sec_id, kicker, heading, inner):
     return f"""<section id="{sec_id}" aria-labelledby="{sec_id}-h">
   <div class="wrap">
@@ -231,8 +249,14 @@ def build_home():
 </div>
 <main id="main">
 """,
-        section("why", "Why I made these", why["standfirst"], prose_paras(why["paragraphs"])),
-        section("idea", "The idea", idea["standfirst"], prose_paras(idea["paragraphs"])),
+        split_section("why", "Why I made these", why["standfirst"], why["paragraphs"],
+                      "guide-page-strategies.webp",
+                      "A strategies page from the guide: 24 retrieval practice "
+                      "strategies on a single page."),
+        split_section("idea", "The idea", idea["standfirst"], idea["paragraphs"],
+                      "guide-page-contents.webp",
+                      "The contents page of the guide: the six guides, numbered "
+                      "one to six.", img_left=True),
         f"""<section id="guides" aria-labelledby="guides-h">
   <div class="wrap">
     <p class="kicker">The six guides</p>
