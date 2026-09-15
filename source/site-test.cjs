@@ -106,7 +106,7 @@ const BASE = 'http://localhost:8899';
   check('chapter strategies all present', await np.locator('.strategy').count() === 24);
   check('chapter strip reaches every chapter', await np.locator('.chapters a').count() === 6);
   check('brand links home', await np.locator('.brand[href="/"]').count() === 1);
-  check('find and downloads links present', await np.locator('.find-pill').count() === 1 && await np.locator('.dl-link').count() === 1);
+  check('find, needs and downloads links present', await np.locator('.find-pill').count() === 1 && await np.locator('.dl-link[href="/download-resources/"]').count() === 1 && await np.locator('.dl-link[href="/classroom-needs/"]').count() === 1);
   await nj.close();
 
   // ---------- keyboard ----------

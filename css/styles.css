@@ -298,3 +298,69 @@ html.a11y-spacing figcaption, html.a11y-spacing .lead {
 html.a11y-spacing p { margin-bottom: 1.4rem; }
 
 @media print { .a11y-widget { display: none !important; } }
+
+
+/* ---------- Companion: routes, chips, reading lists, support ---------- */
+.route-grid { list-style: none; margin: 1.2rem 0 0; padding: 0; display: grid; gap: .9rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.route-grid li { max-width: none; }
+.route-grid a { display: block; height: 100%; padding: 1.1rem 1.25rem; text-decoration: none;
+  color: var(--ink); background: var(--paper); border: 1px solid var(--border); border-radius: 12px; }
+.route-grid a:hover { border-color: var(--gold); }
+.route-grid h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
+.route-grid p { margin: 0; color: var(--ink-soft); font-size: .95rem; max-width: none; }
+
+.chips { list-style: none; margin: 1.1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.chips li { max-width: none; }
+.chips a { display: inline-flex; align-items: center; min-height: 40px; padding: .3rem .85rem;
+  border: 1px solid var(--border); border-radius: 999px; text-decoration: none; font-weight: 600;
+  font-size: .9rem; color: var(--ink); background: var(--paper); }
+.chips a:hover { border-color: var(--gold); }
+
+.reading { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .8rem; }
+.reading li { max-width: 75ch; padding-left: 1rem; border-left: 3px solid var(--border); }
+.reading .ref-t { font-weight: 600; }
+.reading .ref-n { display: block; color: var(--ink-soft); font-size: .95rem; margin-top: .15rem; }
+
+.related { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .8rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+.related li { max-width: none; }
+.related a { display: block; height: 100%; padding: .95rem 1.1rem; text-decoration: none;
+  color: var(--ink); background: var(--paper); border: 1px solid var(--border); border-radius: 10px; }
+.related a:hover { border-color: var(--gold); }
+.related strong { display: block; margin-bottom: .25rem; }
+.related strong .n { color: var(--ink-soft); font-size: .85rem; margin-right: .3rem; }
+.related a > span, .related a strong + span { color: var(--ink-soft); font-size: .95rem; }
+
+.support { background: var(--ink); color: #fff; padding: 2.4rem 0; margin-top: 2.5rem; }
+.support .kicker { color: var(--gold); }
+.support h2 { color: #fff; margin: .1rem 0 .5rem; }
+.support p { color: #d7dee4; max-width: 62ch; }
+.support .btn { background: var(--gold); color: var(--ink); }
+.support :focus-visible { outline-color: #ffd166; }
+
+.guide-links { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
+.guide-links li { max-width: none; }
+.guide-links a { display: flex; align-items: baseline; gap: .5rem; padding: .65rem .9rem;
+  border: 1px solid var(--border); border-radius: 10px; text-decoration: none; font-weight: 600; color: var(--ink); }
+.guide-links a:hover { border-color: var(--gold); }
+.guide-links .n { color: var(--ink-soft); font-size: .85rem; }
+
+.updates { margin: 1rem 0 0; padding-left: 1.2rem; display: grid; gap: .5rem; }
+.updates li { max-width: 75ch; }
+
+.finder-more { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: .8rem 0 0; }
+.finder-more span { color: var(--ink-soft); font-size: .92rem; }
+#tomorrow { min-height: 40px; padding: .3rem .85rem; border: 1px solid var(--border); border-radius: 999px;
+  background: var(--paper); font: 600 .9rem/1.4 inherit; font-family: inherit; color: var(--ink); cursor: pointer; }
+#tomorrow[disabled] { display: none; }
+#tomorrow[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.footer-nav { display: grid; gap: 1.4rem 2.2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  margin: 1.6rem 0; padding: 1.2rem 0; border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.footer-nav h2 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 .5rem; color: #b7c3cc; }
+.footer-nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .35rem; }
+.footer-nav li { max-width: none; }
+.footer-nav a { color: #fff; text-decoration: none; font-size: .95rem; }
+.footer-nav a:hover { text-decoration: underline; }

@@ -26,6 +26,18 @@ FRONT = json.loads((SRC / "front.json").read_text())
 # Real pixel sizes of the six renders, so the browser reserves the right
 # space and the page does not jump as they load. They are not all the same.
 SIZES = json.loads((SRC / "image-sizes.json").read_text())
+# Non-canonical discovery metadata: classroom needs, inclusive practice
+# lenses, the try-tomorrow shortlist and related areas. Maps existing
+# strategies to routes; never carries strategy wording of its own.
+LENSES = json.loads((SRC / "lenses.json").read_text())
+CH_BY_SLUG = {c["slug"]: c for c in CHAPTERS}
+STRAT = {}
+for _c in CHAPTERS:
+    _cl = {x["key"]: x for x in _c["clusters"]}
+    for _s in _c["strategies"]:
+        STRAT[f"{_c['slug']}/{_s['slug']}"] = (_c, _s, _cl[_s["cluster"]])
+TRY_TOMORROW = set(LENSES["try_tomorrow"])
+REVIEW_LABEL = "September 2026"
 
 
 def e(s):
@@ -103,10 +115,12 @@ def header(current=None):
                      f'<span class="n" aria-hidden="true">{c["number"]}</span>{e(c["name"])}</a></li>')
     dl_cur = ' aria-current="page"' if current == "downloads" else ""
     find_cur = ' aria-current="page"' if current == "find" else ""
+    needs_cur = ' aria-current="page"' if current == "needs" else ""
     return f"""<header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="/">Pedagogy First. <span>Technology Second.</span></a>
     <nav class="tools" aria-label="Tools">
+      <a class="dl-link" href="/classroom-needs/"{needs_cur}>Classroom needs</a>
       <a class="dl-link" href="/download-resources/"{dl_cur}>Download resources</a>
       <a class="find-pill" href="/find-a-strategy/"{find_cur}>{SEARCH_ICON}Find a strategy</a>
     </nav>
@@ -122,10 +136,43 @@ def footer():
     return f"""<footer class="site-footer">
   <div class="wrap">
     <p class="motto">{e(FRONT["about"]["motto"])}</p>
+    <nav class="footer-nav" aria-label="More from this site">
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="/find-a-strategy/">Find a strategy</a></li>
+          <li><a href="/classroom-needs/">Classroom needs</a></li>
+          <li><a href="/inclusive-practice/">Inclusive practice</a></li>
+          <li><a href="/try-this-tomorrow/">Try this tomorrow</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Professional learning</h2>
+        <ul>
+          <li><a href="/professional-learning/">Using Pedagogy First with colleagues</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Understand</h2>
+        <ul>
+          <li><a href="/about-the-evidence/">About the evidence</a></li>
+          <li><a href="/updates/">Updates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="/download-resources/">Downloads</a></li>
+        </ul>
+      </div>
+    </nav>
     <p>{e(FRONT["contact"]["line"])}
        <a href="{e(FRONT["contact"]["url"])}">ictevangelist.com/contact</a></p>
     <p class="fine">Content &copy; Mark Anderson.
-       The guide is licensed CC BY-NC-ND 4.0. The infographics are licensed CC BY-NC-SA 4.0.</p>
+       The guide is licensed CC BY-NC-ND 4.0. The infographics are licensed CC BY-NC-SA 4.0.
+       The six infographics and 144 strategies are the fixed published resource; this site is the
+       living companion around them. Companion guidance reviewed: {REVIEW_LABEL} &middot;
+       <a href="/updates/">updates</a>.</p>
   </div>
 </footer>
 <script src="/js/a11y.js?v={A11Y_V}" defer></script>
@@ -195,6 +242,507 @@ def infographic_figure(c, on_chapter_page=True):
     </figure>"""
 
 
+# ---------------------------------------------------------------- companion
+def companion_section(sec_id, kicker, heading, inner):
+    """Like section(), marked data-companion so verification tooling can
+    separate companion additions from canonical guide content."""
+    return f"""<section id="{sec_id}" data-companion aria-labelledby="{sec_id}-h">
+  <div class="wrap">
+    <p class="kicker">{e(kicker)}</p>
+    <h2 id="{sec_id}-h">{e(heading)}</h2>
+    {inner}
+  </div>
+</section>
+"""
+
+
+def finding_row(ref, tag_tomorrow=False):
+    """One strategy as a linked card row, identical to the finder's rows.
+    Renders from canonical data only."""
+    c, st, cl = STRAT[ref]
+    tom = ' data-tomorrow="1"' if tag_tomorrow and ref in TRY_TOMORROW else ""
+    return f"""        <li class="finding"{tom}>
+          <a href="/{c['slug']}/#{st['slug']}">
+            <span class="sicon" aria-hidden="true">{st['icon']}</span>
+            <span class="ftext"><strong>{e(st['title'])}</strong>
+              <span class="fsum">{e(st['summary'])}</span>
+              <span class="fwhere">{c['number']} {e(c['name'])} &middot; {e(cl['label'])}</span>
+            </span>
+          </a>
+        </li>"""
+
+
+def findings_list(refs):
+    rows = "\n".join(finding_row(r) for r in refs)
+    return f'<ul class="findings">\n{rows}\n      </ul>'
+
+
+def support_block(lede, strong=False):
+    cls = "support support-strong" if strong else "support"
+    return f"""<section class="{cls}" aria-labelledby="support-h">
+  <div class="wrap">
+    <p class="kicker">Want to take this further?</p>
+    <h2 id="support-h">Support is available</h2>
+    <p>{lede}</p>
+    <p class="actions"><a class="btn" href="https://ictevangelist.com/contact/">Work with Mark</a></p>
+  </div>
+</section>
+"""
+
+
+def simple_page(slug, title, desc, hero_eyebrow, hero_h1, hero_lead, body, current=None):
+    out = [
+        head(f"{title} | {TITLE}", desc, f"{SITE}/{slug}/"),
+        header(current),
+        f"""<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">{e(hero_eyebrow)}</p>
+    <h1>{hero_h1}</h1>
+    <p class="lead">{hero_lead}</p>
+  </div>
+</div>
+<main id="main">
+""",
+        body,
+        "</main>\n",
+        footer(),
+    ]
+    target = ROOT / slug
+    target.mkdir(exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
+
+def build_needs():
+    chips = "".join(f'<li><a href="#{n["key"]}">{e(n["label"])}</a></li>' for n in LENSES["needs"])
+    sections = []
+    for n in LENSES["needs"]:
+        sections.append(f"""<section id="{n['key']}" aria-labelledby="{n['key']}-h">
+  <div class="wrap">
+    <h2 id="{n['key']}-h">{e(n['label'])}</h2>
+    {findings_list(n['strategies'])}
+  </div>
+</section>
+""")
+    body = f"""<section id="how-this-works" aria-labelledby="how-h">
+  <div class="wrap">
+    <p class="kicker">How this works</p>
+    <h2 id="how-h">Start with the learning need</h2>
+    <p class="wide">Explore the approaches that speak to it. Think about your subject, your phase and your pupils. Decide what might help. Then, and only then, ask whether technology adds anything useful.</p>
+    <p class="note">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
+    <nav aria-label="Classroom needs">
+      <ul class="chips">{chips}</ul>
+    </nav>
+  </div>
+</section>
+""" + "".join(sections)
+    simple_page("classroom-needs", "What are you trying to improve?",
+        "Start with a classroom need and go straight to the relevant Pedagogy First strategies: "
+        "remembering more, checking understanding, better questioning, useful feedback and more.",
+        "Start with the need", "What are you trying to improve?",
+        "You don't need to know a strategy's name or which guide it lives in. "
+        "Start with what's happening in your classroom.",
+        body, current="needs")
+
+
+def build_inclusive():
+    sections = []
+    for n in LENSES["inclusive"]:
+        sections.append(f"""<section id="{n['key']}" aria-labelledby="{n['key']}-h">
+  <div class="wrap">
+    <p class="kicker">A lens on the 144</p>
+    <h2 id="{n['key']}-h">{e(n['label'])}</h2>
+    <p>{e(n['blurb'])}</p>
+    {findings_list(n['strategies'])}
+  </div>
+</section>
+""")
+    body = f"""<section id="intro" aria-labelledby="intro-h">
+  <div class="wrap">
+    <p class="kicker">What this page is</p>
+    <h2 id="intro-h">A curated lens across the existing 144 strategies</h2>
+    <div class="plain">
+      <p>Inclusive practice begins with responsive teaching: identifying the barriers pupils may experience and making thoughtful decisions about how best to support access, participation and independence.</p>
+      <p>This page brings together existing Pedagogy First strategies that may help. It doesn't introduce a new set of strategies, and it isn't a SEND intervention framework. Everything here comes from the original 144, seen through six practical lenses, and should be used thoughtfully, responsively and in context. If your school thinks about inclusion through ideas like universal design for learning, these lenses will feel familiar: reduce the barriers, and more pupils can show what they know.</p>
+    </div>
+  </div>
+</section>
+""" + "".join(sections) + f"""<section id="judgement" aria-labelledby="judgement-h">
+  <div class="wrap">
+    <p class="kicker">Professional judgement matters</p>
+    <h2 id="judgement-h">No strategy works for every pupil</h2>
+    <p class="wide">No strategy works for every pupil, subject or context. Inclusive practice depends on understanding your pupils, identifying the barriers they experience, evaluating what helps and adapting your teaching accordingly. The lenses above are places to look, not prescriptions.</p>
+  </div>
+</section>
+<section id="team" aria-labelledby="team-h">
+  <div class="wrap">
+    <p class="kicker">Use this with your team</p>
+    <h2 id="team-h">A 30 minute team activity</h2>
+    <ol class="steps">
+      <li>Identify a barrier to participation or learning that pupils are actually experiencing.</li>
+      <li>Explore the lens above that speaks to it.</li>
+      <li>Select two or three strategies that look relevant.</li>
+      <li>Discuss why each might help, not just whether it looks appealing.</li>
+      <li>Consider what adaptation your subject, phase and pupils would need.</li>
+      <li>Agree one approach to trial.</li>
+      <li>Look at what happens to learning and participation.</li>
+      <li>Decide together whether to continue, adapt or stop.</li>
+    </ol>
+  </div>
+</section>
+""" + support_block(
+        "If your school or trust wants help thinking through inclusive teaching in context, "
+        "that's work I do with leaders and teams.")
+    simple_page("inclusive-practice", "Inclusive Practice",
+        "Inclusive classroom practice through six practical lenses on the 144 Pedagogy First "
+        "strategies: access, participation, working memory and cognitive load, language, "
+        "independence, self regulation and feedback. Not a SEND framework; a thoughtful way in.",
+        "A lens, not a seventh guide", "Inclusive Practice",
+        "Approaches from across the 144 strategies that may support access, participation, "
+        "clarity, independence and manageable cognitive demand.",
+        body)
+
+
+def build_tomorrow():
+    body = f"""<section id="list" aria-labelledby="list-h">
+  <div class="wrap">
+    <p class="kicker">Deliberately curated</p>
+    <h2 id="list-h">Fourteen you could trial within ordinary teaching</h2>
+    <p class="wide">Chosen from the 144 because they're easy to understand, need little or no preparation, respond to common classroom needs, and don't require buying or adopting anything. Each links to its card on the guide page.</p>
+    {findings_list(LENSES['try_tomorrow'])}
+    <p class="note">This list is curated, not rotated for novelty. Want to start from a specific need instead? <a href="/classroom-needs/">What are you trying to improve?</a></p>
+  </div>
+</section>
+"""
+    simple_page("try-this-tomorrow", "Something to try tomorrow",
+        "Low preparation Pedagogy First strategies you could sensibly trial in tomorrow's "
+        "lessons: retrieval, questioning, feedback and metacognition approaches that need "
+        "nothing new bought or installed.",
+        "Ten minutes to choose", "Something to try tomorrow",
+        "The promise of this whole resource in one page: something here may help you tomorrow morning.",
+        body)
+
+
+def build_evidence():
+    body = """<section id="means" aria-labelledby="means-h">
+  <div class="wrap">
+    <p class="kicker">What evidence informed means here</p>
+    <h2 id="means-h">Research, theory and professional knowledge, translated</h2>
+    <div class="plain">
+      <p>Pedagogy First draws on a wide body of educational research, theory and professional practice. Its purpose isn't to attach a citation to every classroom technique. It's to translate established thinking about teaching and learning into practical approaches teachers can consider in their own contexts.</p>
+      <p>Several kinds of knowledge sit behind the guides, and they do different jobs. Original research studies establish mechanisms, like the testing effect or the limits of working memory. Theories of learning and instruction organise those mechanisms into something a teacher can plan with. Reviews and syntheses weigh the evidence across many studies. And professional knowledge, mine and that of the hundreds of schools I've worked with, shapes how any of it survives contact with a real classroom. A strategy earns a place on a card when those lines of evidence and experience point the same way.</p>
+    </div>
+  </div>
+</section>
+<section id="informed-by" aria-labelledby="informed-h">
+  <div class="wrap">
+    <p class="kicker">What informed by means</p>
+    <h2 id="informed-h">An influence, not a warranty</h2>
+    <div class="plain">
+      <p>Each card names the thinking it draws on: Rooted in the work of, or the researcher named in the strategy itself. That attribution identifies an important intellectual influence on the strategy. It doesn't mean the named researcher personally proposed that exact classroom routine, and it doesn't mean every precise strategy has been independently tested as a standalone intervention in the form written here.</p>
+      <p>Individual strategies may draw on several overlapping evidence bases. Where the research is nuanced or contested, the further reading on each guide page says so plainly.</p>
+    </div>
+  </div>
+</section>
+<section id="fixed" aria-labelledby="fixed-h">
+  <div class="wrap">
+    <p class="kicker">Why the original 144 stay fixed</p>
+    <h2 id="fixed-h">A fixed resource, and a living companion</h2>
+    <div class="plain">
+      <p>The six infographics and 144 strategies form the core published resource. They've been downloaded, shared, printed and used in real schools, and they don't shift underneath the people using them.</p>
+      <p>This microsite is the living companion around them: it helps you explore, connect and apply the ideas, and it gives the wider evidence and supporting thinking space to keep developing. The strategies stay put. The support around them grows.</p>
+    </div>
+  </div>
+</section>
+<section id="selection" aria-labelledby="selection-h">
+  <div class="wrap">
+    <p class="kicker">How evidence is selected</p>
+    <h2 id="selection-h">A small number of strong sources</h2>
+    <p class="wide">The further reading on each guide page is deliberately short. Priority goes to original research where it matters, significant reviews and syntheses, established researchers, reputable evidence organisations and high quality professional guidance. A handful of strong sources beats a long list of weak ones.</p>
+  </div>
+</section>
+<section id="recipe" aria-labelledby="recipe-h">
+  <div class="wrap">
+    <p class="kicker">Research is not a recipe</p>
+    <h2 id="recipe-h">The decision stays professional</h2>
+    <p class="wide">Research can tell us a great deal about mechanisms, patterns and approaches that may support learning. It can't remove the need for teachers to understand their pupils, subject, curriculum and context. That's why every guide asks you to decide what fits, trial it, and look at what actually happens.</p>
+    <p class="note">Companion guidance reviewed: """ + REVIEW_LABEL + """ &middot; <a href="/updates/">see what's changed</a>.</p>
+  </div>
+</section>
+""" + support_block(
+        "If you're a leader wanting help translating this evidence into professional learning "
+        "or teaching and learning strategy, that's exactly the work I do.")
+    simple_page("about-the-evidence", "About the evidence",
+        "How Pedagogy First uses evidence: what evidence informed means, what the attributions "
+        "on the 144 strategy cards do and don't claim, how sources are selected, and why "
+        "research informs rather than replaces professional judgement.",
+        "Evidence informed, not evidence decorated", "About the evidence",
+        "What the research behind these guides can tell you, what it can't, "
+        "and how to read the attributions on the cards.",
+        body)
+
+
+def build_pl():
+    model = [
+        ("Explore", "Identify the learning problem or the area of practice you care about."),
+        ("Choose", "Select a small number of relevant Pedagogy First strategies."),
+        ("Discuss", "Consider why they might help, rather than simply whether they look attractive."),
+        ("Trial", "Agree one approach to try."),
+        ("Notice", "Look at what happens to pupil learning, participation or understanding."),
+        ("Review", "Decide whether to continue, adapt or stop."),
+    ]
+    steps = "".join(f"<li><strong>{t}.</strong> {d}</li>" for t, d in model)
+    guides = "".join(
+        f'<li><a href="/{c["slug"]}/#pl-activity"><span class="n" aria-hidden="true">{c["number"]}</span>'
+        f'{e(c["name"])}</a></li>' for c in CHAPTERS)
+    body = f"""<section id="who" aria-labelledby="who-h">
+  <div class="wrap">
+    <p class="kicker">Who it works for</p>
+    <h2 id="who-h">Built for discussion, not delivery</h2>
+    <div class="plain">
+      <p>Pedagogy First works as professional learning material for individual teachers, departments, subject and phase teams, professional learning groups and senior leaders. The guides give you the thinking and the strategies; what turns them into professional learning is discussion, trial, reflection and honest evaluation.</p>
+      <p>You don't need a licence, a login or a course. You need the guide, a genuine teaching and learning need, and half an hour with colleagues.</p>
+    </div>
+  </div>
+</section>
+<section id="model" aria-labelledby="model-h">
+  <div class="wrap">
+    <p class="kicker">A reusable model</p>
+    <h2 id="model-h">Explore, choose, discuss, trial, notice, review</h2>
+    <ol class="steps">{steps}</ol>
+    <p class="note">Implementation isn't linear and trying something is never a guarantee of improvement. The point of notice and review is to find out what actually happened, and to be willing to stop.</p>
+  </div>
+</section>
+<section id="activities" aria-labelledby="activities-h">
+  <div class="wrap">
+    <p class="kicker">Ready-made starting points</p>
+    <h2 id="activities-h">A 30 minute activity on every guide</h2>
+    <p>Each of the six guide pages carries a professional learning activity tailored to its area, ready to use with a team:</p>
+    <ul class="guide-links">{guides}</ul>
+    <p class="note">Exploring inclusion? <a href="/inclusive-practice/#team">Inclusive Practice has its own team activity</a>.</p>
+  </div>
+</section>
+<section id="further-support" aria-labelledby="fs-h">
+  <div class="wrap">
+    <p class="kicker">Taking this further across your school or trust</p>
+    <h2 id="fs-h">When you want more than the free activities</h2>
+    <p class="wide">Everything on this page can be used independently, and schools do. Facilitated support is for organisations that want to develop a coherent professional learning programme around these ideas, connect them to existing teaching and learning priorities, help leaders and teams choose the right areas of focus, move from isolated strategies towards sustained implementation, and evaluate what's actually changing in classrooms.</p>
+  </div>
+</section>
+""" + support_block(
+        "Pedagogy First is designed to give teachers and leaders practical ideas they can "
+        "explore and use. If you want support applying the thinking across a school or trust, "
+        "developing professional learning around it, or embedding it into wider teaching and "
+        "learning strategy, I can help.", strong=True)
+    simple_page("professional-learning", "Using Pedagogy First for professional learning",
+        "How to use the Pedagogy First guides for professional learning: a simple "
+        "explore-choose-discuss-trial-notice-review model, 30 minute activities on every "
+        "guide, and support for whole school or trust implementation.",
+        "Professional learning", "Using Pedagogy First for professional learning",
+        "The guides were made for discussion as much as for reading. "
+        "Here's how to use them with colleagues.",
+        body)
+
+
+def build_updates():
+    body = """<section id="log" aria-labelledby="log-h">
+  <div class="wrap">
+    <p class="kicker">The companion changes; the resource doesn't</p>
+    <h2 id="log-h">September 2026</h2>
+    <ul class="updates">
+      <li>Added classroom need based discovery: <a href="/classroom-needs/">What are you trying to improve?</a></li>
+      <li>Added the <a href="/inclusive-practice/">Inclusive Practice</a> lens across the 144 strategies.</li>
+      <li>Added <a href="/about-the-evidence/">About the evidence</a>.</li>
+      <li>Added <a href="/professional-learning/">professional learning support</a>, with a 30 minute activity on every guide.</li>
+      <li>Added <a href="/try-this-tomorrow/">Something to try tomorrow</a>.</li>
+      <li>Added further reading and evidence to all six guides.</li>
+    </ul>
+    <p class="note">The six infographics and 144 strategies are the fixed published resource and are unchanged. This page records significant changes to the companion material around them.</p>
+  </div>
+</section>
+"""
+    simple_page("updates", "Updates",
+        "Significant changes to the Pedagogy First companion site. The published guide, "
+        "infographics and 144 strategies remain fixed.",
+        "The companion, evolving", "Updates",
+        "Significant changes to the companion material on this site, most recent first.",
+        body)
+
+
+# Further reading per guide: a small number of strong sources, with honest
+# notes. Links use DOIs or stable organisation pages.
+FURTHER = {
+ "retrieval-practice": [
+  ('<a href="https://doi.org/10.1111/j.1467-9280.2006.01693.x">Roediger &amp; Karpicke (2006), Test-Enhanced Learning</a>, <em>Psychological Science</em>',
+   "The modern starting point for the testing effect: retrieving beats restudying."),
+  ('<a href="https://doi.org/10.1177/1529100612453266">Dunlosky, Rawson, Marsh, Nathan &amp; Willingham (2013), Improving Students\u2019 Learning With Effective Learning Techniques</a>, <em>PSPI</em>',
+   "The review that ranked practice testing and distributed practice highest, and re-reading among the least effective."),
+  ('<a href="https://doi.org/10.1126/science.1199327">Karpicke &amp; Blunt (2011), Retrieval Practice Produces More Learning than Elaborative Studying</a>, <em>Science</em>',
+   "Retrieval outperformed concept mapping from the text, and even improved later concept mapping."),
+  ('<a href="https://www.retrievalpractice.org/">Agarwal &amp; Bain, retrievalpractice.org</a>',
+   "Free, practical guides translating the research for classrooms."),
+  ('<a href="https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/cognitive-science-approaches-in-the-classroom">EEF (2021), Cognitive Science Approaches in the Classroom</a>',
+   "Supportive on retrieval and spacing, and honest that classroom evidence is thinner than laboratory evidence."),
+ ],
+ "formative-assessment": [
+  ('<a href="https://doi.org/10.1080/0969595980050102">Black &amp; Wiliam (1998), Assessment and Classroom Learning</a>, <em>Assessment in Education</em>',
+   "The review that put formative assessment on the map. The original effect sizes have been debated since; the direction of travel has held."),
+  ('<a href="https://doi.org/10.1177/003172171009200119">Black &amp; Wiliam, Inside the Black Box</a>, <em>Phi Delta Kappan</em>',
+   "The short version written for teachers, still the clearest statement of the argument."),
+  ('<a href="https://www.ascd.org/el/articles/classroom-assessment-minute-by-minute-day-by-day">Leahy, Lyon, Thompson &amp; Wiliam (2005), Classroom Assessment: Minute by Minute, Day by Day</a>, <em>Educational Leadership</em>',
+   "The five formative assessment strategies most schools now use, in their original form."),
+  ('<a href="https://www.dylanwiliam.org/">Wiliam (2011), Embedded Formative Assessment</a>',
+   "The book-length treatment, with the practical techniques behind many of these cards."),
+ ],
+ "feedback": [
+  ('<a href="https://doi.org/10.3102/003465430298487">Hattie &amp; Timperley (2007), The Power of Feedback</a>, <em>Review of Educational Research</em>',
+   "The feed up, feed back, feed forward model and the four levels of feedback."),
+  ('<a href="https://doi.org/10.1037/0033-2909.119.2.254">Kluger &amp; DeNisi (1996), The Effects of Feedback Interventions on Performance</a>, <em>Psychological Bulletin</em>',
+   "The meta-analysis behind the sobering finding that over a third of feedback interventions made performance worse."),
+  ('<a href="https://doi.org/10.1111/j.2044-8279.1988.tb00874.x">Butler (1988), Task-involving and ego-involving properties of evaluation</a>, <em>BJEP</em>',
+   "Comments alone beat grades, and grades cancel comments. A small study with a long shadow; its pattern has replicated in spirit if not always in size."),
+  ('<a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/feedback">EEF (2021), Teacher Feedback to Improve Pupil Learning</a>',
+   "The guidance report: six recommendations, including laying foundations before feedback and planning for how pupils use it."),
+ ],
+ "questioning-and-discussion": [
+  ('<a href="https://doi.org/10.1177/002248718603700110">Rowe (1986), Wait Time: Slowing Down May Be a Way of Speeding Up</a>, <em>Journal of Teacher Education</em>',
+   "The wait time research: what changes when teachers pause for three seconds."),
+  ('<a href="https://doi.org/10.1080/02671522.2018.1481140">Alexander (2018), Developing dialogic teaching: genesis, process, trial</a>, <em>Research Papers in Education</em>',
+   "Reports the EEF randomised trial of dialogic teaching, with gains in English, maths and science."),
+  ('<a href="https://robinalexander.org.uk/dialogic-teaching/">Robin Alexander, dialogic teaching</a>',
+   "The five principles and the wider framework, from the source."),
+  ('<a href="https://thinkingtogether.educ.cam.ac.uk/">Mercer and colleagues, Thinking Together, University of Cambridge</a>',
+   "Exploratory talk and ground rules for talk, with free classroom materials."),
+  ('<a href="https://doi.org/10.1007/s11217-007-9071-1">Michaels, O\u2019Connor &amp; Resnick (2008), Deliberative Discourse Idealized and Realized</a>, <em>Studies in Philosophy and Education</em>',
+   "The thinking behind accountable talk."),
+ ],
+ "explanations-and-modelling": [
+  ('<a href="https://www.aft.org/sites/default/files/Rosenshine.pdf">Rosenshine (2012), Principles of Instruction</a>, <em>American Educator</em>',
+   "Ten principles, small steps and guided practice among them, drawn from cognitive science and studies of effective teachers."),
+  ('<a href="https://doi.org/10.1007/s10648-019-09465-5">Sweller, van Merri\u00ebnboer &amp; Paas (2019), Cognitive Architecture and Instructional Design: 20 Years Later</a>, <em>Educational Psychology Review</em>',
+   "Cognitive load theory reviewed by its authors, including where the theory has been revised."),
+  ('<a href="https://doi.org/10.1017/9781316941355">Mayer, Multimedia Learning</a> (Cambridge University Press)',
+   "The principles behind dual coding done properly: coherence, signalling, segmenting, modality and the rest."),
+  ('<a href="https://www.danielwillingham.com/">Willingham, Why Don\u2019t Students Like School?</a>',
+   "Memory is the residue of thought, and why concrete examples and stories work."),
+ ],
+ "metacognition-and-self-regulation": [
+  ('<a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition">EEF, Metacognition and Self-Regulated Learning</a>',
+   "The guidance report most schools start with: seven recommendations, explicit strategy teaching among them."),
+  ('<a href="https://doi.org/10.1207/s15430421tip4102_2">Zimmerman (2002), Becoming a Self-Regulated Learner: An Overview</a>, <em>Theory Into Practice</em>',
+   "The forethought, performance and self-reflection cycle behind many of these cards."),
+  ('<a href="https://doi.org/10.1037/0003-066X.34.10.906">Flavell (1979), Metacognition and Cognitive Monitoring</a>, <em>American Psychologist</em>',
+   "Where the term begins: knowledge and regulation of one\u2019s own thinking."),
+  ('<a href="https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/metacognition-and-self-regulated-learning">Muijs &amp; Bokhove (2020), Metacognition and Self-Regulation: Evidence Review</a> (EEF)',
+   "The fuller review behind the guidance, honest about where evidence is strong and where it thins."),
+ ],
+}
+
+# A 30 minute professional learning activity per guide, tailored to its area.
+PL_ACT = {
+ "retrieval-practice": (
+  "How does revision actually happen in your classrooms?",
+  ["Read the thinking section above together, ten minutes at most.",
+   "Individually, note how your students currently revise and how your lessons currently revisit prior content.",
+   "Explore the strategies above and pick two or three that respond to what you noticed.",
+   "Discuss the mechanism: why would retrieval, spacing or the struggle itself help your subject?",
+   "Talk honestly about context: exam classes, practical subjects, younger pupils.",
+   "Ask whether technology adds anything useful here, a quiz tool perhaps, or whether paper does the job.",
+   "Choose one strategy each to trial for two weeks.",
+   "Agree what you'll look at to judge it: what students retain, not just what they enjoyed."]),
+ "formative-assessment": (
+  "How do you know what they know, lesson by lesson?",
+  ["Read the thinking section above together.",
+   "Each colleague brings one moment from this week where they discovered too late that students hadn't understood.",
+   "Explore the strategies and pick two or three that would have caught it earlier.",
+   "Discuss the mechanism: what makes evidence of understanding visible while there's still time to act?",
+   "Consider your context: class sizes, subjects, the students who never volunteer.",
+   "Ask whether technology helps here, a response tool perhaps, or whether whiteboards do the job.",
+   "Choose one strategy to trial in the same class next week.",
+   "Agree the evidence you'll compare: what you knew about their understanding before and after."]),
+ "feedback": (
+  "Is the effort you spend marking coming back as learning?",
+  ["Read the thinking section above together.",
+   "Estimate, honestly, the hours your team spent on written feedback last fortnight, and what students did with it.",
+   "Explore the strategies and pick two or three that shift effort from writing feedback to acting on it.",
+   "Discuss the mechanism: why does feedback only work when it causes thinking?",
+   "Consider context: subjects with extended writing, practical work, your marking policy as it stands.",
+   "Ask whether technology genuinely helps here, audio comments perhaps, or whether it just moves the work.",
+   "Choose one change to trial across one class set.",
+   "Agree how you'll judge it: the quality of student responses to feedback, not the volume of feedback given."]),
+ "questioning-and-discussion": (
+  "Who does the thinking when you ask a question?",
+  ["Read the thinking section above together.",
+   "In pairs, recall this week's lessons: who answered, who never did, and how long the silence lasted before someone spoke.",
+   "Explore the strategies and pick two or three that would spread the thinking wider.",
+   "Discuss the mechanism: what changes when every student must compose an answer before any student gives one?",
+   "Consider context: seminar-sized sixth form groups, classes of 32, students anxious about speaking.",
+   "Ask whether technology helps, anonymous response perhaps, or whether hands-down and wait time cost nothing.",
+   "Choose one strategy to trial for a week in one class.",
+   "Agree what you'll count: who participates, and the length and quality of answers."]),
+ "explanations-and-modelling": (
+  "Bring a real explanation, and make it clearer",
+  ["Read the thinking section above together.",
+   "Each colleague brings one explanation or slide deck they'll teach next week.",
+   "Explore the strategies, especially the cognitive load group, and audit the materials against them.",
+   "Discuss the mechanism: what is competing for your students' working memory in each example?",
+   "Strip one slide deck as a group: fewer words, integrated labels, one idea per reveal.",
+   "Ask where technology genuinely helps, a visualiser or a short screencast, and where it adds noise.",
+   "Each colleague commits to one revised explanation next week.",
+   "Agree how you'll judge it: what students could do unaided afterwards, compared with the last topic."]),
+ "metacognition-and-self-regulation": (
+  "Teach one strategy explicitly, then watch what happens",
+  ["Read the thinking section above together, noting that metacognition works on knowledge, never instead of it.",
+   "Discuss where your students currently regulate their own learning, and where they wait to be told.",
+   "Explore the strategies and pick two or three that teach a named method explicitly.",
+   "Discuss the mechanism: why does naming and modelling a strategy beat telling students to reflect more?",
+   "Consider context: which topic next fortnight gives a natural home for one strategy?",
+   "Ask whether technology helps, a self-marking quiz for calibration perhaps, or whether prediction on paper does it.",
+   "Choose one strategy to teach explicitly, inside subject content, within two weeks.",
+   "Agree the evidence: do students use the method unprompted the following week?"]),
+}
+
+
+def further_block(slug):
+    refs = FURTHER[slug]
+    lis = "".join(f'<li><span class="ref-t">{t}.</span> <span class="ref-n">{e(n)}</span></li>'
+                  for t, n in refs)
+    inner = (f'<p>The wider evidence around this area, kept deliberately short. '
+             f'No single study validates all 24 strategies; these are the traditions the '
+             f'thinking comes from, and good places to read further. '
+             f'<a href="/about-the-evidence/">How this site uses evidence</a>.</p>'
+             f'<ul class="reading">{lis}</ul>')
+    return companion_section("further-reading", "Further reading and evidence",
+                   "Where this thinking comes from", inner)
+
+
+def pl_block(slug, name):
+    intro, steps = PL_ACT[slug]
+    lis = "".join(f"<li>{e(st)}</li>" for st in steps)
+    inner = (f'<p class="wide">{e(intro)}. A 30 minute activity for a department, phase or '
+             f'professional learning group, using this guide as it stands.</p>'
+             f'<ol class="steps">{lis}</ol>'
+             f'<p class="note">The model behind this, and how to run it across a school or trust, '
+             f'is on the <a href="/professional-learning/">professional learning</a> page.</p>')
+    return f"""<section id="pl-activity" data-companion aria-labelledby="pl-h">
+  <div class="wrap">
+    <p class="kicker">Use this for professional learning</p>
+    <h2 id="pl-h">A 30 minute activity for your team</h2>
+    {inner}
+  </div>
+</section>
+"""
+
+
+def related_block(slug):
+    lis = []
+    for target, why in LENSES["related_areas"][slug]:
+        t = CH_BY_SLUG[target]
+        lis.append(f'<li><a href="/{target}/"><strong><span class="n" aria-hidden="true">'
+                   f'{t["number"]}</span> {e(t["name"])}</strong><span>{e(why)}</span></a></li>')
+    return companion_section("related", "Related thinking", "You may also find useful",
+                   f'<ul class="related">{"".join(lis)}</ul>')
+
+
 # ---------------------------------------------------------------- home
 def build_home():
     f = FRONT
@@ -254,6 +802,18 @@ def build_home():
   </div>
 </div>
 <main id="main">
+<section id="routes" data-companion aria-labelledby="routes-h">
+  <div class="wrap">
+    <p class="kicker">Three ways in</p>
+    <h2 id="routes-h">Where do you want to start?</h2>
+    <ul class="route-grid">
+      <li><a href="/classroom-needs/"><h3>Explore by classroom need</h3><p>Start with what you're trying to improve, from remembering more to acting on feedback.</p></a></li>
+      <li><a href="#guides"><h3>Browse the 144 strategies</h3><p>Read the six guides in full, exactly as published, or search all 144 at once.</p></a></li>
+      <li><a href="/download-resources/"><h3>Download the full guide</h3><p>The complete guide and all six infographics, free, no sign-up.</p></a></li>
+    </ul>
+    <p class="note">Also here: <a href="/inclusive-practice/">inclusive practice</a>, <a href="/professional-learning/">professional learning</a>, <a href="/try-this-tomorrow/">something to try tomorrow</a> and <a href="/about-the-evidence/">the evidence behind it all</a>.</p>
+  </div>
+</section>
 """,
         split_section("why", "Why I made these", why["standfirst"],
                       "".join(f"<p>{e(p)}</p>" for p in why["paragraphs"]),
@@ -433,6 +993,9 @@ def build_chapter(c, index):
 """,
         thinking_html,
         practice_html,
+        further_block(slug),
+        pl_block(slug, c["name"]),
+        related_block(slug),
         "".join(pager),
         "</main>\n",
         footer(),
@@ -456,7 +1019,8 @@ def build_finder():
                 st["title"], st["summary"], st.get("tech", ""),
                 st.get("informed_by", ""), cl["label"], c["name"],
             ])).lower()
-            rows.append(f"""        <li class="finding" data-search="{e(blob)}">
+            tom = ' data-tomorrow="1"' if f"{c['slug']}/{st['slug']}" in TRY_TOMORROW else ""
+            rows.append(f"""        <li class="finding" data-search="{e(blob)}"{tom}>
           <a href="/{c['slug']}/#{st['slug']}">
             <span class="sicon" aria-hidden="true">{st['icon']}</span>
             <span class="ftext"><strong>{e(st['title'])}</strong>
@@ -496,6 +1060,10 @@ def build_finder():
         <button type="button" id="clear" hidden>Clear</button>
       </div>
       <p id="status" role="status" aria-live="polite"></p>
+      <p class="finder-more" data-companion>
+        <button type="button" id="tomorrow" aria-pressed="false" disabled>Only things to try tomorrow</button>
+        <span>Or start from a <a href="/classroom-needs/">classroom need</a> or the <a href="/inclusive-practice/">inclusive practice lenses</a>.</span>
+      </p>
     </div>
 {"".join(groups)}
     <p class="empty" id="empty" hidden>Nothing matches that.
@@ -587,7 +1155,10 @@ def build_downloads():
 
 # ---------------------------------------------------------------- extras
 def build_extras():
-    urls = [f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/"] + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
+    urls = ([f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/",
+             f"{SITE}/classroom-needs/", f"{SITE}/inclusive-practice/", f"{SITE}/try-this-tomorrow/",
+             f"{SITE}/about-the-evidence/", f"{SITE}/professional-learning/", f"{SITE}/updates/"]
+            + [f"{SITE}/{c['slug']}/" for c in CHAPTERS])
     body = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>'
@@ -605,9 +1176,16 @@ def main():
         build_chapter(c, i)
     build_finder()
     build_downloads()
+    build_needs()
+    build_inclusive()
+    build_tomorrow()
+    build_evidence()
+    build_pl()
+    build_updates()
     build_extras()
     n = sum(len(c["strategies"]) for c in CHAPTERS)
-    print(f"Built home, find-a-strategy and {len(CHAPTERS)} chapter pages ({n} strategies).")
+    print(f"Built home, find-a-strategy, {len(CHAPTERS)} chapter pages ({n} strategies) "
+          f"and 6 companion pages.")
 
 
 if __name__ == "__main__":

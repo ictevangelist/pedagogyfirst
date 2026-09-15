@@ -1,0 +1,396 @@
+{
+ "_note": "Non-canonical discovery metadata. Strategy references are chapter-slug/strategy-slug. This file never changes canonical strategy wording; it only maps existing strategies to routes.",
+ "needs": [
+  {
+   "key": "remember-more",
+   "label": "Help pupils remember more",
+   "strategies": [
+    "retrieval-practice/01-retrieval-beats-re-reading",
+    "retrieval-practice/02-low-stakes-starter-quizzes",
+    "retrieval-practice/06-distribute-practice-over-time",
+    "retrieval-practice/07-yesterday-last-week-last-month",
+    "retrieval-practice/09-the-retrieval-schedule",
+    "retrieval-practice/10-cumulative-review",
+    "retrieval-practice/15-forget-before-you-retrieve",
+    "retrieval-practice/24-study-strategy-audit",
+    "formative-assessment/20-spaced-retrieval-practice",
+    "formative-assessment/24-spaced-self-quizzing"
+   ]
+  },
+  {
+   "key": "check-understanding",
+   "label": "Check understanding",
+   "strategies": [
+    "formative-assessment/05-hinge-questions",
+    "formative-assessment/06-plausible-distractors",
+    "formative-assessment/08-mini-whiteboards",
+    "formative-assessment/09-abcd-response-cards",
+    "formative-assessment/22-the-muddiest-point",
+    "formative-assessment/23-review-little-and-often",
+    "explanations-and-modelling/05-check-don-t-assume",
+    "retrieval-practice/20-teach-the-illusion-of-knowing",
+    "retrieval-practice/22-confidence-ratings"
+   ]
+  },
+  {
+   "key": "improve-discussion",
+   "label": "Improve classroom discussion",
+   "strategies": [
+    "questioning-and-discussion/09-think-pair-share",
+    "questioning-and-discussion/14-five-principles-of-dialogic-talk",
+    "questioning-and-discussion/15-break-the-ire-pattern",
+    "questioning-and-discussion/16-exploratory-talk",
+    "questioning-and-discussion/17-ground-rules-for-talk",
+    "questioning-and-discussion/18-accountable-talk",
+    "questioning-and-discussion/19-build-on-student-responses",
+    "questioning-and-discussion/23-interthinking-through-questions"
+   ]
+  },
+  {
+   "key": "better-questions",
+   "label": "Ask better questions",
+   "strategies": [
+    "questioning-and-discussion/01-questions-that-make-thinking-visible",
+    "questioning-and-discussion/02-surface-deep-and-transfer",
+    "questioning-and-discussion/04-plan-questions-before-the-lesson",
+    "questioning-and-discussion/05-alternatives-to-questions",
+    "questioning-and-discussion/06-wait-time-1-after-you-ask",
+    "questioning-and-discussion/07-wait-time-2-after-a-student-speaks",
+    "questioning-and-discussion/13-pose-pause-pounce-bounce",
+    "questioning-and-discussion/20-teach-question-stems"
+   ]
+  },
+  {
+   "key": "increase-participation",
+   "label": "Increase participation",
+   "strategies": [
+    "formative-assessment/07-deliberate-cold-call",
+    "formative-assessment/08-mini-whiteboards",
+    "formative-assessment/09-abcd-response-cards",
+    "formative-assessment/10-every-voice-every-time",
+    "formative-assessment/11-think-pair-share-disciplined",
+    "questioning-and-discussion/08-write-before-you-speak",
+    "questioning-and-discussion/10-hands-down",
+    "questioning-and-discussion/11-cold-call-without-threat",
+    "questioning-and-discussion/12-track-who-you-ask"
+   ]
+  },
+  {
+   "key": "explain-difficult-ideas",
+   "label": "Explain difficult ideas",
+   "strategies": [
+    "explanations-and-modelling/01-small-steps-always",
+    "explanations-and-modelling/02-concrete-before-abstract",
+    "explanations-and-modelling/03-connect-to-prior-knowledge",
+    "explanations-and-modelling/04-clarity-over-novelty",
+    "explanations-and-modelling/07-four-slots-no-more",
+    "explanations-and-modelling/12-chunk-and-reveal",
+    "explanations-and-modelling/13-words-and-images-together",
+    "explanations-and-modelling/18-pre-train-the-vocabulary"
+   ]
+  },
+  {
+   "key": "clearer-modelling",
+   "label": "Make modelling clearer",
+   "strategies": [
+    "explanations-and-modelling/19-think-aloud",
+    "explanations-and-modelling/20-the-visualiser-as-stage",
+    "explanations-and-modelling/21-worked-examples-on-replay",
+    "explanations-and-modelling/22-alternate-examples-and-practice",
+    "explanations-and-modelling/23-fade-the-scaffolds",
+    "formative-assessment/03-exemplars-before-rubrics"
+   ]
+  },
+  {
+   "key": "useful-feedback",
+   "label": "Make feedback more useful",
+   "strategies": [
+    "feedback/01-feedback-is-not-marking",
+    "feedback/02-feed-up-feed-back-feed-forward",
+    "feedback/03-four-levels-of-feedback",
+    "feedback/09-comment-only-no-grades",
+    "feedback/10-reduce-volume-raise-focus",
+    "feedback/15-whole-class-feedback",
+    "feedback/16-task-not-person",
+    "formative-assessment/12-comment-only-marking"
+   ]
+  },
+  {
+   "key": "act-on-feedback",
+   "label": "Help pupils act on feedback",
+   "strategies": [
+    "feedback/13-dialogic-feedback",
+    "feedback/17-feedback-must-cause-thinking",
+    "feedback/19-build-feedback-literacy",
+    "feedback/21-build-in-time-to-act",
+    "feedback/22-questions-not-corrections",
+    "formative-assessment/14-build-in-time-to-act",
+    "formative-assessment/16-3-questions-not-corrections"
+   ]
+  },
+  {
+   "key": "build-independence",
+   "label": "Build independence",
+   "strategies": [
+    "feedback/12-self-assessment-as-process",
+    "feedback/23-sustainable-feedback",
+    "metacognition-and-self-regulation/16-know-the-strategy-itself",
+    "metacognition-and-self-regulation/18-fade-the-scaffold",
+    "metacognition-and-self-regulation/21-schedule-your-own-spacing",
+    "metacognition-and-self-regulation/22-make-your-own-questions",
+    "retrieval-practice/23-retrieval-journals",
+    "explanations-and-modelling/23-fade-the-scaffolds"
+   ]
+  },
+  {
+   "key": "develop-metacognition",
+   "label": "Develop metacognition",
+   "strategies": [
+    "metacognition-and-self-regulation/01-set-the-goal-first",
+    "metacognition-and-self-regulation/03-analyse-the-task-first",
+    "metacognition-and-self-regulation/04-pick-a-strategy-on-purpose",
+    "metacognition-and-self-regulation/09-ask-yourself-as-you-go",
+    "metacognition-and-self-regulation/12-credit-the-method-not-the-gift",
+    "metacognition-and-self-regulation/13-turn-reflection-into-a-plan",
+    "metacognition-and-self-regulation/14-compare-predicted-to-actual",
+    "metacognition-and-self-regulation/17-know-when-to-use-each",
+    "retrieval-practice/20-teach-the-illusion-of-knowing"
+   ]
+  },
+  {
+   "key": "reduce-cognitive-demand",
+   "label": "Reduce unnecessary cognitive demand",
+   "strategies": [
+    "explanations-and-modelling/01-small-steps-always",
+    "explanations-and-modelling/07-four-slots-no-more",
+    "explanations-and-modelling/08-avoid-split-attention",
+    "explanations-and-modelling/09-say-it-or-show-it-not-both",
+    "explanations-and-modelling/10-remove-the-clutter",
+    "explanations-and-modelling/11-signal-what-matters",
+    "explanations-and-modelling/12-chunk-and-reveal",
+    "explanations-and-modelling/15-keep-words-near-images",
+    "explanations-and-modelling/18-pre-train-the-vocabulary"
+   ]
+  },
+  {
+   "key": "thinking-visible",
+   "label": "Make thinking visible",
+   "strategies": [
+    "metacognition-and-self-regulation/10-make-thinking-visible",
+    "questioning-and-discussion/01-questions-that-make-thinking-visible",
+    "questioning-and-discussion/08-write-before-you-speak",
+    "questioning-and-discussion/22-questions-as-evidence-of-understanding",
+    "formative-assessment/08-mini-whiteboards",
+    "explanations-and-modelling/19-think-aloud",
+    "retrieval-practice/17-concept-mapping-from-memory"
+   ]
+  },
+  {
+   "key": "access-participation-need",
+   "label": "Support access and participation",
+   "strategies": [
+    "formative-assessment/10-every-voice-every-time",
+    "formative-assessment/08-mini-whiteboards",
+    "explanations-and-modelling/02-concrete-before-abstract",
+    "explanations-and-modelling/13-words-and-images-together",
+    "explanations-and-modelling/15-keep-words-near-images",
+    "explanations-and-modelling/18-pre-train-the-vocabulary",
+    "questioning-and-discussion/08-write-before-you-speak",
+    "questioning-and-discussion/09-think-pair-share"
+   ]
+  },
+  {
+   "key": "connect-prior-learning",
+   "label": "Help pupils connect prior and new learning",
+   "strategies": [
+    "explanations-and-modelling/03-connect-to-prior-knowledge",
+    "retrieval-practice/07-yesterday-last-week-last-month",
+    "retrieval-practice/13-vary-the-retrieval-context",
+    "retrieval-practice/17-concept-mapping-from-memory",
+    "formative-assessment/20-spaced-retrieval-practice",
+    "questioning-and-discussion/24-questions-that-drive-enquiry",
+    "metacognition-and-self-regulation/03-analyse-the-task-first"
+   ]
+  },
+  {
+   "key": "tech-with-purpose",
+   "label": "Use technology with greater purpose",
+   "strategies": [
+    "explanations-and-modelling/04-clarity-over-novelty",
+    "explanations-and-modelling/06-supplement-never-substitute",
+    "explanations-and-modelling/24-simulations-beyond-physical-limits",
+    "feedback/14-technology-as-feedback-source",
+    "metacognition-and-self-regulation/07-scaffold-focus-then-fade",
+    "metacognition-and-self-regulation/23-regulate-the-device-too",
+    "metacognition-and-self-regulation/24-partner-not-substitute"
+   ]
+  }
+ ],
+ "inclusive": [
+  {
+   "key": "access-and-participation",
+   "label": "Access and participation",
+   "blurb": "Existing approaches that may help more pupils engage, contribute and participate meaningfully.",
+   "strategies": [
+    "formative-assessment/10-every-voice-every-time",
+    "formative-assessment/08-mini-whiteboards",
+    "formative-assessment/09-abcd-response-cards",
+    "formative-assessment/22-the-muddiest-point",
+    "questioning-and-discussion/08-write-before-you-speak",
+    "questioning-and-discussion/09-think-pair-share",
+    "questioning-and-discussion/10-hands-down",
+    "questioning-and-discussion/11-cold-call-without-threat"
+   ]
+  },
+  {
+   "key": "working-memory",
+   "label": "Working memory and cognitive demand",
+   "blurb": "Existing approaches that may help teachers manage complexity, sequencing, scaffolding and unnecessary cognitive demand.",
+   "strategies": [
+    "explanations-and-modelling/01-small-steps-always",
+    "explanations-and-modelling/07-four-slots-no-more",
+    "explanations-and-modelling/08-avoid-split-attention",
+    "explanations-and-modelling/10-remove-the-clutter",
+    "explanations-and-modelling/12-chunk-and-reveal",
+    "explanations-and-modelling/18-pre-train-the-vocabulary",
+    "explanations-and-modelling/23-fade-the-scaffolds",
+    "metacognition-and-self-regulation/08-build-in-stop-points"
+   ]
+  },
+  {
+   "key": "language-and-explanation",
+   "label": "Language and explanation",
+   "blurb": "Existing approaches supporting clarity, vocabulary, examples, explanations and modelling.",
+   "strategies": [
+    "explanations-and-modelling/02-concrete-before-abstract",
+    "explanations-and-modelling/13-words-and-images-together",
+    "explanations-and-modelling/14-narrate-don-t-label",
+    "explanations-and-modelling/15-keep-words-near-images",
+    "explanations-and-modelling/18-pre-train-the-vocabulary",
+    "explanations-and-modelling/19-think-aloud",
+    "questioning-and-discussion/18-accountable-talk"
+   ]
+  },
+  {
+   "key": "participation-and-response",
+   "label": "Participation and response",
+   "blurb": "Existing approaches creating wider opportunities for pupils to think, answer, discuss and make understanding visible.",
+   "strategies": [
+    "formative-assessment/07-deliberate-cold-call",
+    "formative-assessment/11-think-pair-share-disciplined",
+    "questioning-and-discussion/06-wait-time-1-after-you-ask",
+    "questioning-and-discussion/07-wait-time-2-after-a-student-speaks",
+    "questioning-and-discussion/12-track-who-you-ask",
+    "questioning-and-discussion/13-pose-pause-pounce-bounce",
+    "formative-assessment/10-every-voice-every-time"
+   ]
+  },
+  {
+   "key": "independence",
+   "label": "Independence and self regulation",
+   "blurb": "Existing approaches helping pupils plan, monitor, reflect and gradually take greater ownership.",
+   "strategies": [
+    "metacognition-and-self-regulation/01-set-the-goal-first",
+    "metacognition-and-self-regulation/04-pick-a-strategy-on-purpose",
+    "metacognition-and-self-regulation/09-ask-yourself-as-you-go",
+    "metacognition-and-self-regulation/13-turn-reflection-into-a-plan",
+    "metacognition-and-self-regulation/16-know-the-strategy-itself",
+    "metacognition-and-self-regulation/18-fade-the-scaffold",
+    "feedback/12-self-assessment-as-process",
+    "feedback/23-sustainable-feedback"
+   ]
+  },
+  {
+   "key": "feedback-next-steps",
+   "label": "Feedback and next steps",
+   "blurb": "Existing approaches helping pupils understand feedback and know what to do with it.",
+   "strategies": [
+    "feedback/10-reduce-volume-raise-focus",
+    "feedback/16-task-not-person",
+    "feedback/19-build-feedback-literacy",
+    "feedback/21-build-in-time-to-act",
+    "feedback/22-questions-not-corrections",
+    "formative-assessment/14-build-in-time-to-act",
+    "metacognition-and-self-regulation/13-turn-reflection-into-a-plan"
+   ]
+  }
+ ],
+ "try_tomorrow": [
+  "retrieval-practice/03-brain-dump",
+  "retrieval-practice/07-yesterday-last-week-last-month",
+  "formative-assessment/04-withhold-the-objective",
+  "formative-assessment/08-mini-whiteboards",
+  "formative-assessment/22-the-muddiest-point",
+  "questioning-and-discussion/06-wait-time-1-after-you-ask",
+  "questioning-and-discussion/08-write-before-you-speak",
+  "questioning-and-discussion/10-hands-down",
+  "feedback/10-reduce-volume-raise-focus",
+  "feedback/22-questions-not-corrections",
+  "explanations-and-modelling/09-say-it-or-show-it-not-both",
+  "explanations-and-modelling/19-think-aloud",
+  "metacognition-and-self-regulation/09-ask-yourself-as-you-go",
+  "metacognition-and-self-regulation/14-compare-predicted-to-actual"
+ ],
+ "related_areas": {
+  "retrieval-practice": [
+   [
+    "formative-assessment",
+    "Low-stakes quizzing sits in both: retrieval builds memory, and the same responses are evidence of understanding."
+   ],
+   [
+    "metacognition-and-self-regulation",
+    "Students who schedule and monitor their own retrieval revise better. The self-quizzing strategies meet in the middle."
+   ]
+  ],
+  "formative-assessment": [
+   [
+    "questioning-and-discussion",
+    "Most evidence of understanding arrives through questions. Better questions mean better evidence."
+   ],
+   [
+    "feedback",
+    "Once you have the evidence, the next decision is what you and your students do with it."
+   ]
+  ],
+  "feedback": [
+   [
+    "formative-assessment",
+    "Feedback is the acting-on half of formative assessment: the evidence comes first."
+   ],
+   [
+    "metacognition-and-self-regulation",
+    "Sustainable feedback builds students' own ability to judge quality, which is self-regulation by another name."
+   ]
+  ],
+  "questioning-and-discussion": [
+   [
+    "formative-assessment",
+    "Questioning generates the evidence formative assessment runs on."
+   ],
+   [
+    "metacognition-and-self-regulation",
+    "Talk that makes thinking visible is also how students learn to inspect their own thinking."
+   ]
+  ],
+  "explanations-and-modelling": [
+   [
+    "metacognition-and-self-regulation",
+    "Thinking aloud while you model is metacognition made audible."
+   ],
+   [
+    "formative-assessment",
+    "Every explanation needs its check. Checking for understanding decides whether to move on or reteach."
+   ]
+  ],
+  "metacognition-and-self-regulation": [
+   [
+    "retrieval-practice",
+    "Self-regulated revision is mostly well-scheduled retrieval. The two guides share their foundations."
+   ],
+   [
+    "feedback",
+    "Reflection only regulates learning when it changes the next action, which is what good feedback is for."
+   ]
+  ]
+ }
+}

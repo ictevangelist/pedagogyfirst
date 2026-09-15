@@ -11,6 +11,8 @@
   var empty = document.getElementById('empty');
   var clearBtn = document.getElementById('clear');
   var resetBtn = document.getElementById('reset');
+  var tomBtn = document.getElementById('tomorrow');
+  var tomorrowOnly = false;
   var total = items.length;
   var timer = null;
 
@@ -22,26 +24,40 @@
       var hit = terms.every(function (t) {
         return li.getAttribute('data-search').indexOf(t) !== -1;
       });
+      if (tomorrowOnly && !li.hasAttribute('data-tomorrow')) hit = false;
       li.hidden = !hit;
       if (hit) shown++;
     });
     groups.forEach(function (g) {
       g.hidden = g.querySelectorAll('.finding:not([hidden])').length === 0;
     });
+    var scope = tomorrowOnly ? ' to try tomorrow' : '';
     status.textContent = raw
-      ? shown + (shown === 1 ? ' strategy' : ' strategies') + ' for “' + raw + '”'
-      : 'Showing all ' + total + ' strategies';
+      ? shown + (shown === 1 ? ' strategy' : ' strategies') + scope + ' for “' + raw + '”'
+      : (tomorrowOnly ? shown + ' strategies to try tomorrow' : 'Showing all ' + total + ' strategies');
     if (empty) empty.hidden = shown !== 0;
     if (clearBtn) clearBtn.hidden = !raw;
   }
 
   function clearAll() {
     input.value = '';
+    if (tomorrowOnly) {
+      tomorrowOnly = false;
+      if (tomBtn) tomBtn.setAttribute('aria-pressed', 'false');
+    }
     apply();
     input.focus();
   }
 
   input.removeAttribute('disabled');
+  if (tomBtn) {
+    tomBtn.removeAttribute('disabled');
+    tomBtn.addEventListener('click', function () {
+      tomorrowOnly = !tomorrowOnly;
+      tomBtn.setAttribute('aria-pressed', String(tomorrowOnly));
+      apply();
+    });
+  }
   input.addEventListener('input', function () {
     window.clearTimeout(timer);
     timer = window.setTimeout(apply, 180);
