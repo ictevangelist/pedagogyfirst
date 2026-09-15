@@ -48,6 +48,15 @@ for _n in LENSES["inclusive"]:
 for _r in LENSES["try_tomorrow"]:
     ALSO_UNDER.setdefault(_r, []).append(("Try this tomorrow", "/try-this-tomorrow/"))
 REVIEW_LABEL = "September 2026"
+STRATEGY_PAGES = json.loads((SRC / "strategy-pages.json").read_text())["pages"]
+PILOT = {p["ref"]: p for p in STRATEGY_PAGES}
+def canonical_strategy_url(ref):
+    """The one permanent home for a strategy: its own page if it has one,
+    otherwise its anchor on the strand page."""
+    if ref in PILOT:
+        return f"/strategies/{PILOT[ref]['slug']}/"
+    c, st, _ = STRAT[ref]
+    return f"/{c['slug']}/#{st['slug']}"
 
 
 def e(s):
@@ -317,7 +326,7 @@ def finding_row(ref, tag_tomorrow=False):
     c, st, cl = STRAT[ref]
     tom = ' data-tomorrow="1"' if tag_tomorrow and ref in TRY_TOMORROW else ""
     return f"""        <li class="finding"{tom}>
-          <a href="/{c['slug']}/#{st['slug']}">
+          <a href="{canonical_strategy_url(ref)}">
             <span class="sicon" aria-hidden="true">{st['icon']}</span>
             <span class="ftext"><strong>{e(st['title'])}</strong>
               <span class="fsum">{e(st['summary'])}</span>
@@ -478,6 +487,109 @@ def build_tomorrow():
         body)
 
 
+def build_strategy_page(page):
+    ref = page["ref"]
+    c, st, cl = STRAT[ref]
+    url = f"/strategies/{page['slug']}/"
+    accent = darken_for_white(cl["colour"])
+
+    def paras(key):
+        v = page.get(key)
+        if not v:
+            return ""
+        items = v if isinstance(v, list) else [v]
+        return "".join(f"<p>{e(tie(t))}</p>" for t in items)
+
+    def bullets(key):
+        v = page.get(key) or []
+        return "".join(f"<li>{e(tie(t))}</li>" for t in v)
+
+    card = strategy_article(st, cl, c["slug"])
+    sections = [f"""<section id="the-strategy" aria-labelledby="ts-h">
+  <div class="wrap">
+    <p class="kicker">The strategy, as published</p>
+    <h2 id="ts-h">Exactly as it appears on the card</h2>
+    <div class="strategy-grid strategy-single" style="--accent:{accent}">
+{card}
+    </div>
+    <p class="note" data-companion>Part of {e(cl["label"])} in <a href="/{c["slug"]}/#{st["slug"]}">{c["number"]} {e(c["name"])}</a>, where it sits alongside its neighbouring strategies, the infographic and the thinking for the whole area.</p>
+  </div>
+</section>
+"""]
+    if page.get("why"):
+        sections.append(companion_section("why-use-it", "Why you might use it",
+            "The problem it may help with", paras("why")))
+    if page.get("example"):
+        sections.append(companion_section("example", "What it might look like",
+            "One version of it, in a classroom", paras("example")))
+    if page.get("try"):
+        sections.append(companion_section("try-it", "Try it",
+            "A way to begin", paras("try")))
+    if page.get("notice"):
+        sections.append(companion_section("notice", "What to notice",
+            "Reading what happens", '<ul class="prompts">' + bullets("notice") + "</ul>"))
+    if page.get("consider"):
+        sections.append(companion_section("consider", "Things to think about",
+            "Before and while you use it", '<ul class="prompts">' + bullets("consider") + "</ul>"))
+    if page.get("related"):
+        sections.append(companion_section("related", "Related strategies",
+            "Where this connects", findings_list(page["related"])))
+    if page.get("lenses"):
+        lens_by_key = {n["key"]: n for n in LENSES["inclusive"]}
+        lis = "".join(
+            f'<li><a href="/inclusive-practice/#{k}">{e(lens_by_key[k]["label"])}</a></li>'
+            for k in page["lenses"])
+        sections.append(companion_section("inclusive", "Inclusive practice",
+            "The lens this connects with",
+            "<p>Through the inclusive practice lens, this is one of the approaches that may reduce barriers around:</p>"
+            + '<ul class="prompts">' + lis + "</ul>"))
+    wider = ""
+    if page.get("wider"):
+        informed = ""
+        if st.get("informed_by"):
+            informed = " The card\u2019s attribution stands as published: " + e(st["informed_by"]) + "."
+        wider = companion_section("wider", "The wider thinking", "Where the evidence sits",
+            "<p>" + e(tie(page["wider"])) + informed + "</p>"
+            + f'<p class="note">The fuller picture, sources included, is in <a href="/{c["slug"]}/#further-reading">further reading and evidence for {e(c["name"])}</a>.</p>')
+    support = """<section class="support" data-companion aria-labelledby="support-h">
+  <div class="wrap">
+    <p class="kicker">Want to take this further?</p>
+    <h2 id="support-h">Support is available</h2>
+    <p>Pedagogy First gives you a starting point. If you want support exploring how approaches like this can work across your school, trust or professional learning programme, that work is available.</p>
+    <p class="actions"><a class="btn" href="https://ictevangelist.com/contact/">Work with Mark</a></p>
+  </div>
+</section>
+"""
+    ld = {"@context": "https://schema.org", "@graph": [PERSON_LD, {
+        "@type": "WebPage", "@id": SITE + url, "url": SITE + url,
+        "name": st["title"], "inLanguage": "en-GB",
+        "isPartOf": SITE + "/" + c["slug"] + "/",
+        "author": {"@id": PERSON_LD["@id"]}}]}
+    out = [
+        head(st["title"] + " | " + TITLE,
+             st["title"] + ": one of the 144 Pedagogy First strategies, from " + c["name"]
+             + ", with why you might use it, what it can look like, and a way to begin.",
+             SITE + url, ld),
+        header(c["slug"]),
+        f"""<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">{c["number"]} {e(c["name"])} &middot; {e(cl["label"])}</p>
+    <h1>{e(st["title"])}</h1>
+  </div>
+</div>
+<main id="main">
+""",
+        "".join(sections),
+        wider,
+        support,
+        "</main>\n",
+        footer(),
+    ]
+    target = ROOT / "strategies" / page["slug"]
+    target.mkdir(parents=True, exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
+
 def build_evidence():
     body = """<section id="means" aria-labelledby="means-h">
   <div class="wrap">
@@ -611,6 +723,7 @@ def build_updates():
       <li>Added <a href="/professional-learning/">professional learning support</a>, with a 30 minute activity on every guide.</li>
       <li>Added <a href="/try-this-tomorrow/">Something to try tomorrow</a>.</li>
       <li>Added further reading and evidence to all six guides.</li>
+      <li>Added individual pages for sixteen strategies as a pilot, each with why you might use it, an example, a way to begin and what to notice.</li>
     </ul>
     <p class="note">The six infographics and 144 strategies are the fixed published resource and are unchanged. This page records significant changes to the companion material around them.</p>
   </div>
@@ -962,15 +1075,23 @@ def strategy_article(st, cluster, chapter_slug=None):
         if routes:
             links = " · ".join(f'<a href="{u}">{e(l)}</a>' for l, u in routes)
             also_html = f'\n        <p class="also-under" data-companion><span class="mlabel">Find this under</span> {links}</p>'
-    copy_btn = (f'<button class="copylink" type="button" hidden '
-                f'data-path="/{chapter_slug}/#{st["slug"]}" '
-                f'aria-label="Copy a link to {e(st["title"])}">Copy link</button>') if chapter_slug else ""
+    copy_btn = ""
+    more_link = ""
+    if chapter_slug:
+        _ref = f"{chapter_slug}/{st['slug']}"
+        _target = canonical_strategy_url(_ref)
+        copy_btn = (f'<button class="copylink" type="button" hidden '
+                    f'data-path="{_target}" '
+                    f'aria-label="Copy a link to {e(st["title"])}">Copy link</button>')
+        if _ref in PILOT:
+            more_link = (f' <a class="more-link" data-companion href="{_target}">'
+                         f'More on this strategy</a>')
     return f"""      <article class="strategy" id="{st['slug']}" style="--accent:{accent}">
         <h3><a href="#{st['slug']}"><span class="sno" aria-hidden="true">{st['number']}</span>
           <span class="sicon" aria-hidden="true">{st['icon']}</span>{e(st['title'])}</a></h3>
         <p>{e(st['summary'])}</p>
         {meta_html}{also_html}
-        {copy_btn}
+        {copy_btn}{more_link}
       </article>"""
 
 
@@ -1092,7 +1213,7 @@ def build_finder():
             ])).lower()
             tom = ' data-tomorrow="1"' if f"{c['slug']}/{st['slug']}" in TRY_TOMORROW else ""
             rows.append(f"""        <li class="finding" data-search="{e(blob)}"{tom}>
-          <a href="/{c['slug']}/#{st['slug']}">
+          <a href="{canonical_strategy_url(f"{c['slug']}/{st['slug']}")}">
             <span class="sicon" aria-hidden="true">{st['icon']}</span>
             <span class="ftext"><strong>{e(st['title'])}</strong>
               <span class="fsum">{e(st['summary'])}</span>
@@ -1229,7 +1350,8 @@ def build_extras():
     urls = ([f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/",
              f"{SITE}/classroom-needs/", f"{SITE}/inclusive-practice/", f"{SITE}/try-this-tomorrow/",
              f"{SITE}/about-the-evidence/", f"{SITE}/professional-learning/", f"{SITE}/updates/"]
-            + [f"{SITE}/{c['slug']}/" for c in CHAPTERS])
+            + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
+            + [f"{SITE}/strategies/{p['slug']}/" for p in STRATEGY_PAGES])
     body = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>'
@@ -1253,6 +1375,8 @@ def main():
     build_evidence()
     build_pl()
     build_updates()
+    for _p in STRATEGY_PAGES:
+        build_strategy_page(_p)
     build_extras()
     n = sum(len(c["strategies"]) for c in CHAPTERS)
     print(f"Built home, find-a-strategy, {len(CHAPTERS)} chapter pages ({n} strategies) "

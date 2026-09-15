@@ -88,10 +88,15 @@ const BASE = 'http://localhost:8899';
   const seen = {};
   for (const href of links) {
     const [page, anchor] = href.split('#');
-    if (!seen[page]) seen[page] = await (await p.request.get(BASE + page)).text();
-    if (!seen[page].includes(`id="${anchor}"`)) missing++;
+    if (!seen[page]) {
+      const resp = await p.request.get(BASE + page);
+      seen[page] = resp.ok() ? await resp.text() : '';
+    }
+    // a link resolves if its page exists and, when it carries an anchor,
+    // the anchor exists on that page (strategy pages carry no anchor)
+    if (!seen[page] || (anchor && !seen[page].includes(`id="${anchor}"`))) missing++;
   }
-  check('all 144 finder links resolve to anchors', missing === 0, missing + ' missing');
+  check('all 144 finder links resolve', missing === 0, missing + ' missing');
   await ctx.close();
 
   // ---------- without JavaScript ----------

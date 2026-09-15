@@ -1,0 +1,375 @@
+{
+ "_note": "Companion content for the pilot strategy pages. The canonical strategy is rendered from strategies.json; nothing here restates or redefines it. Written to Mark's voice rules; provenance for every section is held outside the repository for Mark's review.",
+ "pages": [
+  {
+   "ref": "retrieval-practice/03-brain-dump",
+   "slug": "brain-dump",
+   "why": [
+    "Most revision defaults to putting information back in front of pupils: re-reading, highlighting, copying notes. The research in this guide points the other way. Retrieval, getting knowledge out, does more for long term memory than another pass over the page.",
+    "A brain dump is the simplest possible version of that. It needs no preparation, no question writing and no technology, and it gives you something a quiz cannot: a picture of what pupils reach for unprompted, and in what order."
+   ],
+   "example": [
+    "Two lessons into a new topic, a class gets a blank page and two minutes: write everything you remember about last lesson. No notes, no talking. Afterwards, pupils open their books and check what they missed. The teacher asks for one thing that did not come back, and the answers shape the start of the next lesson."
+   ],
+   "try": "End one lesson this week with it. Two minutes, blank page, everything you remember from today. Keep it out of any book you mark; the point is the retrieval, not the record.",
+   "notice": [
+    "What most of the class could not recall. The card says it plainly: that is precisely where teaching needs to return.",
+    "Who writes steadily and who freezes at the blank page. Freezing is information too, and cued recall is a gentler step back.",
+    "Whether what comes back is what you would have predicted. It often is not."
+   ],
+   "consider": [
+    "There has to be something to retrieve. If the material was only met once, a brain dump measures the teaching more than the pupils.",
+    "The imperfect attempt is the point, so resist tidying it into a marked task. The moment it carries stakes, pupils play safe and you lose the honest picture."
+   ],
+   "related": ["retrieval-practice/05-closed-book-reconstruction", "retrieval-practice/19-cued-recall", "retrieval-practice/01-retrieval-beats-re-reading", "formative-assessment/22-the-muddiest-point"],
+   "lenses": [],
+   "wider": "This sits squarely in the testing effect tradition: Roediger and Karpicke showed that the act of retrieving is itself a learning event, not just a measure of one."
+  },
+  {
+   "ref": "retrieval-practice/07-yesterday-last-week-last-month",
+   "slug": "yesterday-last-week-last-month",
+   "why": [
+    "Spacing retrieval out over time is one of the most robust findings in memory research, and one of the hardest to do consistently, because it needs the calendar as much as the lesson plan.",
+    "This routine solves the consistency problem by making the spacing automatic. Three questions per lesson, at three distances, and older material keeps reappearing without you having to track anything."
+   ],
+   "example": [
+    "A geography teacher's starter slide carries the same three headings every lesson: yesterday, last week, last month. Writing tomorrow's slide takes two minutes with the medium term plan open. Pupils answer from memory before any books come out."
+   ],
+   "try": "Add the three headings to your existing starter template and fill them for one class tomorrow. The routine matters more than the perfect choice of questions.",
+   "notice": [
+    "Which distance fails. If yesterday's question lands but last month's does not, that is the spacing doing its diagnostic work.",
+    "Whether the same older topic keeps failing. The card is explicit that the intervals are a starting point, and complex topics may need revisiting more often."
+   ],
+   "consider": [
+    "It only works if the older material genuinely reappears, which makes this a planning habit as much as a lesson habit. The guide puts it well: the calendar is part of the pedagogy.",
+    "When content never returns after being taught, pupils conclude it no longer matters. This routine is the antidote, but only if you protect it when time is tight."
+   ],
+   "related": ["retrieval-practice/06-distribute-practice-over-time", "retrieval-practice/10-cumulative-review", "retrieval-practice/09-the-retrieval-schedule", "formative-assessment/23-review-little-and-often"],
+   "lenses": [],
+   "wider": "The spacing effect runs from Ebbinghaus through Cepeda's work on optimal gaps; Dunlosky's reviews rank distributed practice among the most effective techniques available."
+  },
+  {
+   "ref": "retrieval-practice/11-embrace-the-struggle",
+   "slug": "embrace-the-struggle",
+   "why": [
+    "This is the idea underneath the whole retrieval guide, so it is worth meeting on its own terms. The conditions that make learning feel hard and slow in the moment, spacing it out, mixing it up, testing instead of reviewing, are often the very conditions that make it last. The conditions that feel smooth and productive mostly produce confidence without retention.",
+    "That runs against every instinct in a helpful profession. When a pupil struggles to retrieve, the natural move is to make it easier: a hint, a prompt, a quicker reveal. Bjork's work says the struggle is doing the useful work, provided what is being asked for was genuinely taught."
+   ],
+   "example": [
+    "A teacher running a retrieval quiz turns the hints off and lengthens the silence before revealing answers. Pupils grumble that it feels harder than last term's version. Weeks later, the harder version is the one they remember."
+   ],
+   "try": "Take one retrieval activity you already run and remove one support: the hints, the word bank, or the notes-open first pass. Change nothing else, so you can see what the added difficulty does.",
+   "notice": [
+    "The gap between how the activity feels and what it produces. Pupils rating it harder while recalling more, later, is the effect working as described.",
+    "Confident wrong answers. Difficulty exposes the illusion of knowing in a way smooth practice never does."
+   ],
+   "consider": [
+    "Desirable difficulty is not the same as confusion. Difficulty from an unclear task or untaught content is just a barrier; the struggle has to be in the retrieving, not in working out what is being asked.",
+    "Secure the foundations first. Effortful retrieval works on knowledge that exists, which is why the guide pairs this idea with checking that the basics are in place before pushing beyond them."
+   ],
+   "related": ["retrieval-practice/12-remove-the-scaffolding", "retrieval-practice/15-forget-before-you-retrieve", "retrieval-practice/20-teach-the-illusion-of-knowing", "retrieval-practice/14-the-generation-effect"],
+   "lenses": [],
+   "wider": "Bjork coined desirable difficulties for exactly this pattern, and the EEF's cognitive science review is a fair guide to how far the laboratory findings have travelled into classrooms."
+  },
+  {
+   "ref": "formative-assessment/04-withhold-the-objective",
+   "slug": "withhold-the-objective",
+   "why": [
+    "Copying an objective from the board at the start of a lesson produces writing, not thinking. Asking pupils to name what they learned at the end demands both: they have to survey the lesson and generate the answer themselves.",
+    "It also hands you a small piece of evidence you cannot get any other way: whether what they think the lesson was about matches what you think you taught. The two are not always the same."
+   ],
+   "example": [
+    "At the end of a science lesson, pupils write one sentence: what was today actually about? The teacher reads a handful aloud. Half the class describe the activity rather than the idea behind it, which tells the teacher exactly what to sharpen next lesson."
+   ],
+   "try": "Once this week, skip the copied objective and ask for the sentence at the end instead. Compare what they write with what you had planned on the board.",
+   "notice": [
+    "Answers that describe the task rather than the learning. The guide draws that line deliberately: finishing the task is not the same as achieving the learning.",
+    "How close the class's version is to yours. A wide gap is not a failed lesson; it is unusually honest feedback on the teaching."
+   ],
+   "consider": [
+    "Withholding the objective is not the same as hiding the point. Pupils still need clarity about what they are doing and why while they work; what changes is who articulates the learning, and when."
+   ],
+   "related": ["formative-assessment/01-separate-intention-from-task", "formative-assessment/02-build-success-criteria-together", "retrieval-practice/14-the-generation-effect", "formative-assessment/22-the-muddiest-point"],
+   "lenses": [],
+   "wider": "The mechanism is the generation effect: Slamecka and Graf found that producing an answer embeds it more reliably than copying one, even when the produced answer needs correcting."
+  },
+  {
+   "ref": "formative-assessment/05-hinge-questions",
+   "slug": "hinge-questions",
+   "why": [
+    "Every lesson has a turning point where you decide, usually on a feeling, whether the class is ready to move on. A hinge question replaces the feeling with evidence: one diagnostic question, placed at the hinge, answered by everyone.",
+    "What makes it a hinge question rather than just a question is the design of the wrong answers. Each one maps to a misconception you already know pupils hold, so the spread of responses tells you not just how many are stuck but why."
+   ],
+   "example": [
+    "A maths teacher planning a lesson on adding fractions writes one question for the midpoint, with four responses: the right answer, the classic add-tops-and-bottoms error, a common denominator slip, and a simplification mistake. Every pupil answers at once on whiteboards. The room's spread decides the second half of the lesson."
+   ],
+   "try": "Plan a single hinge question for one lesson next week. Write the wrong answers first, from the errors you already see in books, then build the question around them.",
+   "notice": [
+    "Which distractor gets chosen. That is the diagnosis, and it is more useful than the count of correct answers.",
+    "What you actually did next. As the guide has it, evidence has done nothing until it changes what happens in the following five minutes."
+   ],
+   "consider": [
+    "The card's warning deserves its own line: never improvise it. An improvised hinge question collapses into a recall check with no diagnostic power.",
+    "It needs an all-pupil response method to work; a hinge answered by three volunteers is a hinge in name only.",
+    "One good hinge per lesson is plenty. The cost is planning time, which is exactly why the wrong answers are worth engineering carefully once and reusing."
+   ],
+   "related": ["formative-assessment/06-plausible-distractors", "formative-assessment/08-mini-whiteboards", "formative-assessment/09-abcd-response-cards", "explanations-and-modelling/05-check-don-t-assume"],
+   "lenses": [],
+   "wider": "This comes from Dylan Wiliam's formative assessment work: assessment moved out of the marking pile and into the lesson, where it can still change the teaching."
+  },
+  {
+   "ref": "formative-assessment/08-mini-whiteboards",
+   "slug": "mini-whiteboards",
+   "why": [
+    "The classic weakness of classroom questioning is that you hear from a handful of pupils and make assumptions about the rest. Mini whiteboards remove the assumption: every pupil answers, every answer is visible, and you read the whole room in seconds.",
+    "They also change who participates. There is no waiting for a turn and no hiding behind the confident few, which is why this one strategy appears in so many of the routes through this site."
+   ],
+   "example": [
+    "A languages teacher checking verb endings asks the class to write the conjugation and hold boards up together on a count of three. Thirty answers appear at once. Two errors dominate, so the next five minutes deal with those two errors rather than moving on."
+   ],
+   "try": "One all-write, all-show question at tomorrow's key checkpoint. Showing together matters; staggered reveals let pupils copy the early boards.",
+   "notice": [
+    "The answers from pupils you would never have called on. That is the evidence you have been missing.",
+    "How quickly you can read the room, and what you do when the room disagrees with your plan."
+   ],
+   "consider": [
+    "Boards suit short-form answers. For extended reasoning you will need a different route to the same visibility.",
+    "The point is the evidence, not the equipment. If the routine drifts into a game of speed, the quality of the answers, and the diagnosis, goes with it."
+   ],
+   "related": ["formative-assessment/09-abcd-response-cards", "formative-assessment/10-every-voice-every-time", "formative-assessment/05-hinge-questions", "questioning-and-discussion/08-write-before-you-speak"],
+   "lenses": ["access-and-participation"],
+   "wider": "Eliciting evidence from every pupil is one of Wiliam and Black's core formative assessment moves; the whiteboard is simply the cheapest reliable way to do it."
+  },
+  {
+   "ref": "formative-assessment/22-the-muddiest-point",
+   "slug": "the-muddiest-point",
+   "why": [
+    "Asking a class whether they understand invites the least reliable answer in teaching. Asking each pupil, anonymously, what they are least clear about gets you the truth, because nobody has to own a confusion publicly.",
+    "Two minutes at the end of a lesson buys you the agenda for the start of the next one, drawn from the pupils' actual sticking points rather than your guess at them."
+   ],
+   "example": [
+    "Last two minutes: every pupil writes the one thing from today they are least sure about, no names, slips in a box on the way out. Three pupils name the same step in the method. The next lesson opens by reteaching that step to everyone."
+   ],
+   "try": "Run it tomorrow with slips of paper or an anonymous form, whichever is less fuss. The only rule that matters is that the most common muddy point gets addressed, publicly, next lesson.",
+   "notice": [
+    "Clusters. One pupil's confusion is individual; eight naming the same idea is a teaching point.",
+    "The pupils who write nothing is muddy, every time. Certainty that consistent deserves a quiet check of its own."
+   ],
+   "consider": [
+    "The loop has to close. If muddy points vanish into the box and never resurface, pupils stop telling you the truth within a fortnight.",
+    "Keep it anonymous. The honesty is the entire value, and it evaporates the moment names go on slips."
+   ],
+   "related": ["formative-assessment/14-build-in-time-to-act", "questioning-and-discussion/22-questions-as-evidence-of-understanding", "formative-assessment/15-whole-class-feedback", "retrieval-practice/03-brain-dump"],
+   "lenses": ["access-and-participation"],
+   "wider": "The technique comes from the classroom assessment tradition Angelo and Cross documented in higher education; it earns its keep in schools for the same reason, honest evidence at almost no cost."
+  },
+  {
+   "ref": "questioning-and-discussion/06-wait-time-1-after-you-ask",
+   "slug": "wait-time-1",
+   "why": [
+    "Mary Budd Rowe timed teachers waiting after their questions and found most give less than a second before speaking again: rephrasing, prompting, or answering themselves. Under a second is not thinking time for anyone.",
+    "Extending the pause to three seconds costs nothing, needs no resources, and changes the answers. Silence after a question is not dead air; it is where better thinking often begins."
+   ],
+   "example": [
+    "A teacher asks why the character makes the choice she does, then counts three in their head. The silence feels far longer from the front than it does from the desks. The first answer that comes is a sentence rather than a word, and a second pupil builds on it unprompted."
+   ],
+   "try": "Pick one lesson and hold three seconds after every substantive question. Counting silently is not a gimmick; the urge to fill the gap is strong enough to need a mechanism.",
+   "notice": [
+    "The length and complexity of answers, which is exactly what Rowe measured improving.",
+    "Who answers. The extra seconds bring in pupils who compose before speaking and were always beaten to it.",
+    "Your own discomfort. It fades with practice, and it is the price of the better answers."
+   ],
+   "consider": [
+    "The pause after a pupil answers matters too, and is its own strategy; the pair are stronger together.",
+    "Three seconds of silence only helps in a room where a slow answer is safe. If cold calling feels threatening in your class, the climate work comes first."
+   ],
+   "related": ["questioning-and-discussion/07-wait-time-2-after-a-student-speaks", "questioning-and-discussion/10-hands-down", "questioning-and-discussion/08-write-before-you-speak", "questioning-and-discussion/05-alternatives-to-questions"],
+   "lenses": ["participation-and-response"],
+   "wider": "Rowe's wait time studies are the origin; her line that slowing down may be a way of speeding up is still the best one-sentence case for it."
+  },
+  {
+   "ref": "questioning-and-discussion/08-write-before-you-speak",
+   "slug": "write-before-you-speak",
+   "why": [
+    "In open discussion, the quickest thinkers set the terms before anyone else has finished forming a view. A short burst of silent writing before any voice is heard gives every pupil a position of their own to speak from.",
+    "The card's phrase is the argument: the pen democratises the room before the voice takes over. It also leaves you thirty written answers to glance at, instead of three spoken ones to remember."
+   ],
+   "example": [
+    "Before a discussion on whether the experiment's results support the hypothesis, ninety seconds of silent writing. The teacher then opens the discussion by asking a mid-attaining pupil to read what they wrote, not to improvise something new."
+   ],
+   "try": "One discussion question tomorrow: ninety seconds of writing first, and take the first contribution from the page, not the hand.",
+   "notice": [
+    "Who contributes after writing who would not have contributed before.",
+    "The difference in quality between read-from-the-page answers and improvised ones."
+   ],
+   "consider": [
+    "Keep the writing short and rough. The moment it becomes a task to complete, it stops being thinking time and starts being work to mark.",
+    "It pairs naturally with think, pair, share: write alone, test it on a partner, then speak."
+   ],
+   "related": ["questioning-and-discussion/09-think-pair-share", "formative-assessment/08-mini-whiteboards", "questioning-and-discussion/06-wait-time-1-after-you-ask", "formative-assessment/10-every-voice-every-time"],
+   "lenses": ["access-and-participation"],
+   "wider": "This belongs to the same body of work as think, pair, share: structures that give thinking a protected space before public exposure, so discussion draws on the whole room."
+  },
+  {
+   "ref": "questioning-and-discussion/10-hands-down",
+   "slug": "hands-down",
+   "why": [
+    "Hand-raising looks like participation, but Wiliam's point is that it distorts it: a small group volunteers repeatedly and the rest learn that waiting quietly works. The pupils you most need to hear from are usually not the ones with their hands up.",
+    "Removing hands and directing questions to named pupils changes the contract. Every pupil now owns the possibility of being asked, which changes how they listen."
+   ],
+   "example": [
+    "A teacher tells the class the new normal: hands down unless I ask for them, and I will be choosing. Questions go to named pupils across the fortnight, tracked loosely on a class list so nobody stays invisible. The volunteers grumble for a week; the room's attention changes within days."
+   ],
+   "try": "One class, one week, hands down. Pair it with a visible norm that a wrong attempt is thinking, not failure, or the quiet pupils will experience it as exposure rather than inclusion.",
+   "notice": [
+    "The listening. When anyone might be asked, the question belongs to everyone.",
+    "Your own selection pattern. Tracking who you ask, even roughly, tends to reveal habits you did not know you had."
+   ],
+   "consider": [
+    "Climate first. The card on cold calling without threat is the necessary companion; direct questioning is only equitable when the room is safe for wrong answers.",
+    "Hands still have a place for genuine volunteering, questions to you, and contributions you have not asked for. The change is who controls the distribution of answering."
+   ],
+   "related": ["questioning-and-discussion/11-cold-call-without-threat", "questioning-and-discussion/12-track-who-you-ask", "questioning-and-discussion/13-pose-pause-pounce-bounce", "formative-assessment/07-deliberate-cold-call"],
+   "lenses": ["access-and-participation", "participation-and-response"],
+   "wider": "Good and Brophy's classroom studies documented how questioning patterns quietly reinforce attainment gaps, which is the problem this routine exists to interrupt."
+  },
+  {
+   "ref": "feedback/10-reduce-volume-raise-focus",
+   "slug": "reduce-volume-raise-focus",
+   "why": [
+    "A page of comments overwhelms the pupil and exhausts the teacher, and much of it goes unread. The evidence in this guide is blunt about that: feedback is not what the teacher gives, it is what the learner does with it, and nobody does thirty things with thirty comments.",
+    "One or two precise targets land. Choosing them is harder than writing many, because it forces the judgement about what would make the biggest difference to this pupil right now."
+   ],
+   "example": [
+    "Marking a set of essays, a teacher writes one sentence per script: the single change that would most improve the next draft. Marking time halves. The following lesson starts with ten minutes acting on the target, and for once every pupil knows exactly what theirs is."
+   ],
+   "try": "Mark your next class set with a one-target rule. If you catch yourself writing a second comment, ask whether it matters more than the first; if it does, swap them.",
+   "notice": [
+    "Whether pupils can tell you their target the next day. With a page of comments they usually cannot; with one they usually can.",
+    "What happens to the quality of your chosen targets when choosing is the whole job."
+   ],
+   "consider": [
+    "Less volume only works alongside time to act. One precise target that pupils never get a lesson minute to address is still wasted effort.",
+    "This is about work in progress. Summative points where fuller commentary is required are a different job."
+   ],
+   "related": ["feedback/15-whole-class-feedback", "feedback/21-build-in-time-to-act", "feedback/16-task-not-person", "feedback/09-comment-only-no-grades"],
+   "lenses": ["feedback-next-steps"],
+   "wider": "Kluger and DeNisi's meta-analysis found over a third of feedback interventions made performance worse; precision and focus are much of what separates the feedback that helps."
+  },
+  {
+   "ref": "feedback/22-questions-not-corrections",
+   "slug": "questions-not-corrections",
+   "why": [
+    "When you correct a pupil's work for them, you do the thinking and they watch. Returning work with questions instead keeps the cognitive work where the learning is: with the pupil.",
+    "What evidence supports this claim? demands something of the writer that inserting the missing evidence never will. If feedback requires no response from the learner, it is information, not feedback."
+   ],
+   "example": [
+    "An English teacher returns paragraphs with a margin question each: which word here tells the reader how to feel, or what is your evidence for this? The lesson opens with pupils answering their question in a different colour before any new content begins."
+   ],
+   "try": "On the next piece you mark, replace the corrections on one section with questions, and give five minutes next lesson for written answers. The answers will tell you whether the questions were any good.",
+   "notice": [
+    "The quality of pupils' responses. A question that gets a one-word answer back was probably a correction wearing a question mark.",
+    "Whether the same question stops being needed over time, which is the point of asking rather than fixing."
+   ],
+   "consider": [
+    "Simple procedural slips are often better corrected immediately; the guide is clear that quick feedback stops mistakes embedding on simple tasks. Save the questions for the thinking, not the typos.",
+    "Pupils need to know how to act on a question, which is feedback literacy and has to be taught with an exemplar at least once."
+   ],
+   "related": ["feedback/17-feedback-must-cause-thinking", "feedback/21-build-in-time-to-act", "feedback/19-build-feedback-literacy", "feedback/06-immediate-for-simple-tasks", "formative-assessment/16-3-questions-not-corrections"],
+   "lenses": ["feedback-next-steps"],
+   "wider": "This is Hattie and Timperley's territory: feedback that works answers where next, and a good question is often the most honest form that answer can take."
+  },
+  {
+   "ref": "explanations-and-modelling/09-say-it-or-show-it-not-both",
+   "slug": "say-it-or-show-it-not-both",
+   "why": [
+    "Reading text aloud while the same text sits on the screen feels thorough. Sweller's redundancy effect says it is the opposite: pupils process the written and spoken versions at once, the two streams compete, and working memory pays for both.",
+    "The fix costs nothing. Say it, or show it, and stop doing both at the same time. Explaining is an act of load management, and this is the single easiest load to remove."
+   ],
+   "example": [
+    "Mid-explanation, a teacher presses B. The screen goes black, thirty pairs of eyes come up, and the idea gets explained in speech with nothing competing for attention. When the diagram is needed, the screen comes back, and the teacher talks over the image rather than reading beside it."
+   ],
+   "try": "Take one slide you will teach this week, delete the sentences and keep the image. Say the deleted words instead. The B key, or W for a white screen, does the same job mid-flow.",
+   "notice": [
+    "Where pupils look when the screen is blank against when it is full of text.",
+    "What the checks for understanding say afterwards. Cleaner explanation should show up as cleaner recall, and if it does not, that is worth knowing too."
+   ],
+   "consider": [
+    "The effect is about simultaneous duplication. Text pupils need to read silently, in their own time, is a different situation and a legitimate one.",
+    "A blank screen puts the weight on your spoken explanation, which is exactly why this pairs with small steps and the other load principles in the strand."
+   ],
+   "related": ["explanations-and-modelling/07-four-slots-no-more", "explanations-and-modelling/10-remove-the-clutter", "explanations-and-modelling/14-narrate-don-t-label", "explanations-and-modelling/13-words-and-images-together"],
+   "lenses": ["working-memory"],
+   "wider": "Sweller's cognitive load theory explains the mechanism, and Mayer's multimedia principles map when words and images combine well and when they collide; the strand's further reading covers both."
+  },
+  {
+   "ref": "explanations-and-modelling/19-think-aloud",
+   "slug": "think-aloud",
+   "why": [
+    "Experts make invisible decisions constantly: where to start, what to check, when something looks wrong. Pupils see the finished product and none of the decisions, then are asked to produce the same kind of product themselves.",
+    "Thinking aloud while you work makes the invisible expertise visible. It is modelling the process rather than the product, and the process is what novices actually need to copy."
+   ],
+   "example": [
+    "Under a visualiser, a teacher annotates an unseen source, narrating the decisions: I am reading the provenance line first, because it changes how I weigh everything else. I am not sure about this phrase yet, so I am marking it and moving on. The narration is the lesson; the finished annotation is just its residue."
+   ],
+   "try": "Choose one task this week that you would normally demonstrate silently or show finished, and narrate your way through it live: the choices, the checks, and what you do when unsure.",
+   "notice": [
+    "What shows up in pupils' subsequent attempts. Copied structure and copied self-checks are the strategy working; copied surface features are a sign the narration stayed too shallow.",
+    "The questions pupils ask afterwards, which tend to move from what is the answer towards how did you know to do that."
+   ],
+   "consider": [
+    "Narrating decisions is different from narrating actions. Now I underline the date is a caption; I am underlining the date because it tells me which rules apply is thinking made audible.",
+    "This is the start of a handover, not the whole of one. The strand's scaffolding strategies describe the fade from modelled to guided to independent."
+   ],
+   "related": ["explanations-and-modelling/20-the-visualiser-as-stage", "explanations-and-modelling/21-worked-examples-on-replay", "explanations-and-modelling/23-fade-the-scaffolds", "metacognition-and-self-regulation/10-make-thinking-visible"],
+   "lenses": ["language-and-explanation"],
+   "wider": "Rosenshine's principles put modelling and worked examples at the centre of effective instruction; thinking aloud is those principles applied to the parts of expertise pupils cannot otherwise see."
+  },
+  {
+   "ref": "metacognition-and-self-regulation/09-ask-yourself-as-you-go",
+   "slug": "ask-yourself-as-you-go",
+   "why": [
+    "Pupils usually discover they did not understand something when the work comes back marked, which is the most expensive possible moment to find out. Monitoring during the task, do I actually understand this, surfaces the gap while there is still time to do something about it.",
+    "The question sounds trivial. The habit is not, because self-regulation has to be taught, modelled and practised rather than picked up from being told to reflect."
+   ],
+   "example": [
+    "Before an extended task, a teacher plants two checkpoints in it. At each one, pupils stop and answer in the margin: am I sure about what I have just done, or am I guessing? A pupil who writes guessing at checkpoint one has saved twenty minutes of confidently wrong work."
+   ],
+   "try": "Plant one checkpoint in one task this week, with the question written where pupils will hit it. Asking them to answer it in writing, even one word, stops the check being skipped.",
+   "notice": [
+    "Pupils who answer yes and are wrong. A novice's sense of understanding is unreliable, which is why this pairs with an external check rather than replacing one.",
+    "Whether anyone changes course after a checkpoint. Monitoring that never alters behaviour is not yet doing its job."
+   ],
+   "consider": [
+    "There must be something to monitor. Metacognition works on knowledge, never instead of it, so the content has to be taught before the checking of it can mean anything.",
+    "The prompts are scaffolding, and scaffolding is for fading. The long term aim is pupils who ask the question without the checkpoint."
+   ],
+   "related": ["metacognition-and-self-regulation/06-check-don-t-just-feel", "metacognition-and-self-regulation/08-build-in-stop-points", "retrieval-practice/20-teach-the-illusion-of-knowing", "metacognition-and-self-regulation/13-turn-reflection-into-a-plan"],
+   "lenses": ["independence"],
+   "wider": "Flavell gave us the language of metacognition; Winne showed why the monitoring has to happen while the work is happening, not just after it is finished."
+  },
+  {
+   "ref": "metacognition-and-self-regulation/14-compare-predicted-to-actual",
+   "slug": "compare-predicted-to-actual",
+   "why": [
+    "Pupils are usually most confident about the material they met most recently, not the material they actually know. That miscalibration drives bad revision decisions all the way to the exam hall.",
+    "Prediction makes calibration visible. Write the score you expect, see the score you got, and the gap between the two becomes evidence a pupil can learn from, week on week."
+   ],
+   "example": [
+    "Before handing in a low-stakes quiz, every pupil writes a predicted score in the corner. When the quizzes come back, they log predicted against actual and note the direction they missed in. After four quizzes, one pupil can see he always overestimates on definitions and underestimates on application, which quietly rewrites his revision plan."
+   ],
+   "try": "Add the predicted-score corner to your next low-stakes quiz. The comparison takes one minute when the quiz is returned, and the value builds over repetitions rather than arriving in week one.",
+   "notice": [
+    "The direction of error, which matters more than its size. Systematic overconfidence and systematic underconfidence need different conversations.",
+    "Whether gaps narrow over time. The card's phrase is the goal: monitoring corrected by evidence."
+   ],
+   "consider": [
+    "Keep the stakes low. The moment a prediction affects anything that counts, pupils manage the prediction instead of learning from it.",
+    "This works best attached to a regular quizzing routine that already exists, rather than as a reason to invent one."
+   ],
+   "related": ["retrieval-practice/22-confidence-ratings", "retrieval-practice/20-teach-the-illusion-of-knowing", "metacognition-and-self-regulation/06-check-don-t-just-feel", "metacognition-and-self-regulation/13-turn-reflection-into-a-plan"],
+   "lenses": [],
+   "wider": "Winne's work on calibration sits behind this, alongside Dunlosky and Metcalfe's finding that confidence tracks recency rather than knowledge; the strand's further reading takes both further."
+  }
+ ]
+}

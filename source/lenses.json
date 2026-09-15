@@ -265,6 +265,7 @@
    "strategies": [
     "explanations-and-modelling/01-small-steps-always",
     "explanations-and-modelling/07-four-slots-no-more",
+    "explanations-and-modelling/09-say-it-or-show-it-not-both",
     "explanations-and-modelling/08-avoid-split-attention",
     "explanations-and-modelling/10-remove-the-clutter",
     "explanations-and-modelling/12-chunk-and-reveal",

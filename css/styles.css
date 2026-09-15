@@ -388,3 +388,10 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .copylink.is-copied { background: var(--ink); border-color: var(--ink); color: #fff; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+
+/* Individual strategy pages */
+.strategy-single { display: grid; grid-template-columns: minmax(0, 34rem); margin-top: 1rem; }
+.prompts { margin: 1rem 0 0; padding-left: 1.2rem; display: grid; gap: .55rem; }
+.prompts li { max-width: 70ch; }
+.more-link { display: inline-block; margin: .55rem 0 0 .5rem; font-size: .85rem; font-weight: 600; }
