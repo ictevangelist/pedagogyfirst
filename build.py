@@ -87,9 +87,10 @@ import hashlib
 CSS_V = hashlib.sha256((ROOT / "css" / "styles.css").read_bytes()).hexdigest()[:8]
 A11Y_V = hashlib.sha256((ROOT / "js" / "a11y.js").read_bytes()).hexdigest()[:8]
 FINDER_V = hashlib.sha256((ROOT / "js" / "finder.js").read_bytes()).hexdigest()[:8]
+COPY_V = hashlib.sha256((ROOT / "js" / "copylink.js").read_bytes()).hexdigest()[:8]
 
 
-def head(title, description, canonical):
+def head(title, description, canonical, jsonld=None):
     return f"""<!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -104,7 +105,7 @@ def head(title, description, canonical):
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{e(canonical)}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css?v={CSS_V}">
+<link rel="stylesheet" href="/css/styles.css?v={CSS_V}">{_ld(jsonld)}
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -114,6 +115,42 @@ def head(title, description, canonical):
 SEARCH_ICON = ('<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" '
                'fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">'
                '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>')
+
+
+def _ld(jsonld):
+    if not jsonld:
+        return ""
+    return '\n<script type="application/ld+json">' + json.dumps(jsonld, ensure_ascii=False) + "</script>"
+
+
+PERSON_LD = {
+    "@type": "Person",
+    "@id": "https://ictevangelist.com/#mark-anderson",
+    "name": "Mark Anderson",
+    "url": "https://ictevangelist.com",
+}
+
+
+def strand_jsonld(c):
+    """Accurate structured data for a strand page: the page, its author, and
+    an ItemList naming each strategy at its anchor. Describes the existing
+    structure; it does not pretend each strategy is a separate page."""
+    canonical = f"{SITE}/{c['slug']}/"
+    items = [{
+        "@type": "ListItem", "position": i + 1,
+        "name": st["title"], "url": f"{canonical}#{st['slug']}",
+    } for i, st in enumerate(c["strategies"])]
+    return {
+        "@context": "https://schema.org",
+        "@graph": [
+            PERSON_LD,
+            {"@type": "WebPage", "@id": canonical, "url": canonical,
+             "name": c["title"], "inLanguage": "en-GB",
+             "author": {"@id": PERSON_LD["@id"]}},
+            {"@type": "ItemList", "name": c["title"],
+             "numberOfItems": len(c["strategies"]), "itemListElement": items},
+        ],
+    }
 
 
 def header(current=None):
@@ -186,6 +223,7 @@ def footer():
   </div>
 </footer>
 <script src="/js/a11y.js?v={A11Y_V}" defer></script>
+<script src="/js/copylink.js?v={COPY_V}" defer></script>
 </body>
 </html>
 """
@@ -924,11 +962,15 @@ def strategy_article(st, cluster, chapter_slug=None):
         if routes:
             links = " · ".join(f'<a href="{u}">{e(l)}</a>' for l, u in routes)
             also_html = f'\n        <p class="also-under" data-companion><span class="mlabel">Find this under</span> {links}</p>'
+    copy_btn = (f'<button class="copylink" type="button" hidden '
+                f'data-path="/{chapter_slug}/#{st["slug"]}" '
+                f'aria-label="Copy a link to {e(st["title"])}">Copy link</button>') if chapter_slug else ""
     return f"""      <article class="strategy" id="{st['slug']}" style="--accent:{accent}">
         <h3><a href="#{st['slug']}"><span class="sno" aria-hidden="true">{st['number']}</span>
           <span class="sicon" aria-hidden="true">{st['icon']}</span>{e(st['title'])}</a></h3>
         <p>{e(st['summary'])}</p>
         {meta_html}{also_html}
+        {copy_btn}
       </article>"""
 
 
@@ -993,7 +1035,7 @@ def build_chapter(c, index):
         head(f'{fr["display_title"]} | {TITLE}',
              f'{c["title"]}. Every strategy from the infographic as accessible text, '
              f'with the thinking behind the guide, by Mark Anderson.',
-             f"{SITE}/{slug}/"),
+             f"{SITE}/{slug}/", strand_jsonld(c)),
         header(slug),
         f"""<div class="hero">
   <div class="wrap">

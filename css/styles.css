@@ -378,3 +378,13 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .also-under { font-size: .85rem; color: var(--ink-soft); max-width: none; margin: .5rem 0 0; }
 .also-under a { color: inherit; }
 .also-under a:hover { color: var(--ink); }
+
+
+/* Copy link on strategy cards */
+.copylink { margin-top: .55rem; padding: .25rem .7rem; min-height: 34px; border: 1px solid var(--border);
+  border-radius: 999px; background: var(--paper); color: var(--ink-soft); font: 600 .8rem/1.4 inherit;
+  font-family: inherit; cursor: pointer; }
+.copylink:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+.copylink.is-copied { background: var(--ink); border-color: var(--ink); color: #fff; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
