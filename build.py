@@ -253,6 +253,13 @@ def infographic_figure(c, on_chapter_page=True):
 
 
 # ---------------------------------------------------------------- companion
+def tie(text):
+    """Join the final two words of a companion string with a non-breaking
+    space so its last line can never be a single orphaned word."""
+    i = text.rstrip().rfind(" ")
+    return text if i < 0 else text[:i] + "\u00a0" + text[i + 1:]
+
+
 def companion_section(sec_id, kicker, heading, inner):
     """Like section(), marked data-companion so verification tooling can
     separate companion additions from canonical guide content."""
@@ -329,7 +336,7 @@ def build_needs():
         sections.append(f"""<section id="{n['key']}" aria-labelledby="{n['key']}-h">
   <div class="wrap">
     <h2 id="{n['key']}-h">{e(n['label'])}</h2>
-    <p class="wide">{e(n['blurb'])}</p>
+    <p class="wide">{e(tie(n['blurb']))}</p>
     {findings_list(n['strategies'])}
   </div>
 </section>
@@ -362,7 +369,7 @@ def build_inclusive():
   <div class="wrap">
     <p class="kicker">A lens on the 144</p>
     <h2 id="{n['key']}-h">{e(n['label'])}</h2>
-    <p>{e(n['blurb'])}</p>
+    <p class="wide">{e(tie(n['blurb']))}</p>
     {findings_list(n['strategies'])}
   </div>
 </section>
@@ -733,7 +740,7 @@ def pl_block(slug, name):
              f'professional learning group, using this guide as it stands.</p>'
              f'<ol class="steps">{lis}</ol>'
              f'<p class="note">The model behind this, and how to run it across a school or trust, '
-             f'is on the <a href="/professional-learning/">professional learning</a> page.</p>')
+             f'is on the <a href="/professional-learning/">professional learning\u00a0page</a>.</p>')
     return f"""<section id="pl-activity" data-companion aria-labelledby="pl-h">
   <div class="wrap">
     <p class="kicker">Use this for professional learning</p>

@@ -28,7 +28,7 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.65 var(--body); }
 h1, h2, h3 { font-family: var(--head); font-weight: 700; line-height: 1.2; margin: 0 0 .5rem; overflow-wrap: break-word; text-wrap: balance; }
-p, li { max-width: var(--measure); overflow-wrap: break-word; }
+p, li { max-width: var(--measure); overflow-wrap: break-word; text-wrap: pretty; }
 img { max-width: 100%; height: auto; }
 a { color: var(--accent); text-underline-offset: 3px; }
 a:hover { text-decoration-thickness: 2px; }
