@@ -412,3 +412,24 @@ body.text-page main .wrap { width: min(100% - 2.5rem, 62rem); }
   text-transform: uppercase; color: var(--ink-soft); margin-bottom: .6rem; }
 .prompt-block pre { margin: 0; white-space: pre-wrap; font-family: inherit; font-size: .97rem; line-height: 1.55; }
 .prompt-block .copyprompt { margin-top: .8rem; }
+
+/* ---------- UX refactor: hero note, primary routes, colleagues, crumbs ---------- */
+.hero .hero-note { margin: 1rem 0 0; max-width: none; color: #ced8de; font-size: 1rem; }
+.route-primary { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+.route-primary a { padding: 1.4rem 1.4rem 1.2rem; border-width: 2px; display: flex; flex-direction: column; }
+.route-primary h3 { font-size: 1.18rem; }
+.route-primary p { font-size: .97rem; }
+.route-primary .go { margin-top: auto; padding-top: .9rem; font-weight: 600; font-size: .9rem; color: var(--accent); }
+.route-primary .go::after { content: " \203A"; }
+.route-primary a:hover .go { color: var(--ink); }
+.colleagues { margin: 1.6rem 0 0; padding: .9rem 1.1rem; background: var(--paper-alt);
+  border-radius: 10px; font-size: .95rem; color: var(--ink-soft); max-width: none; }
+.colleagues strong { color: var(--ink); }
+
+.hero .crumbs { font-size: .86rem; margin: 0 0 .8rem; color: #ced8de; }
+.hero .crumbs a { color: #ced8de; text-decoration-color: rgba(255,255,255,.4); }
+.hero .crumbs a:hover { color: #fff; }
+.hero .crumbs .sep { color: var(--gold); padding: 0 .25rem; }
+.hero .crumbs [aria-current="page"] { color: #fff; font-weight: 600; }
+
+.keep-exploring { padding-bottom: 1.6rem; }

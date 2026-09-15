@@ -2,7 +2,7 @@
    Run:  python3 -m http.server 8899 &  then  node source/site-test.cjs  */
 const { chromium } = require('playwright');
 
-const PAGES = ['/', '/find-a-strategy/', '/download-resources/', '/retrieval-practice/', '/formative-assessment/',
+const PAGES = ['/', '/about-pedagogy-first/', '/find-a-strategy/', '/download-resources/', '/retrieval-practice/', '/formative-assessment/',
   '/feedback/', '/questioning-and-discussion/', '/explanations-and-modelling/',
   '/metacognition-and-self-regulation/'];
 const BASE = 'http://localhost:8899';
@@ -111,7 +111,7 @@ const BASE = 'http://localhost:8899';
   check('chapter strategies all present', await np.locator('.strategy').count() === 24);
   check('chapter strip reaches every chapter', await np.locator('.chapters a').count() === 6);
   check('brand links home', await np.locator('.brand[href="/"]').count() === 1);
-  check('find, needs and downloads links present', await np.locator('.find-pill').count() === 1 && await np.locator('.dl-link[href="/download-resources/"]').count() === 1 && await np.locator('.dl-link[href="/classroom-needs/"]').count() === 1);
+  check('find, improve and tomorrow links present', await np.locator('.find-pill').count() === 1 && await np.locator('.dl-link[href="/classroom-needs/"]').count() === 1 && await np.locator('.dl-link[href="/try-this-tomorrow/"]').count() === 1);
   await nj.close();
 
   // ---------- text width invariant ----------
@@ -121,7 +121,7 @@ const BASE = 'http://localhost:8899';
   const twc = await b.newContext({ viewport: { width: 1440, height: 900 } });
   const twp = await twc.newPage();
   let capped = 0;
-  for (const path of ['/', '/retrieval-practice/', '/classroom-needs/', '/about-the-evidence/', '/strategies/brain-dump/', '/professional-learning/']) {
+  for (const path of ['/', '/about-pedagogy-first/', '/retrieval-practice/', '/classroom-needs/', '/about-the-evidence/', '/strategies/brain-dump/', '/professional-learning/']) {
     await twp.goto(BASE + path, { waitUntil: 'load' });
     capped += await twp.evaluate(() => {
       let n = 0;

@@ -169,15 +169,15 @@ def header(current=None):
         cur = ' aria-current="page"' if current == c["slug"] else ""
         items.append(f'<li><a href="/{c["slug"]}/"{cur}>'
                      f'<span class="n" aria-hidden="true">{c["number"]}</span>{e(c["name"])}</a></li>')
-    dl_cur = ' aria-current="page"' if current == "downloads" else ""
     find_cur = ' aria-current="page"' if current == "find" else ""
     needs_cur = ' aria-current="page"' if current == "needs" else ""
+    tom_cur = ' aria-current="page"' if current == "tomorrow" else ""
     return f"""<header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="/">Pedagogy First. <span>Technology Second.</span></a>
     <nav class="tools" aria-label="Tools">
-      <a class="dl-link" href="/classroom-needs/"{needs_cur}>Classroom needs</a>
-      <a class="dl-link" href="/download-resources/"{dl_cur}>Download resources</a>
+      <a class="dl-link" href="/classroom-needs/"{needs_cur}>What are you trying to improve?</a>
+      <a class="dl-link" href="/try-this-tomorrow/"{tom_cur}>Try tomorrow</a>
       <a class="find-pill" href="/find-a-strategy/"{find_cur}>{SEARCH_ICON}Find a strategy</a>
     </nav>
   </div>
@@ -211,6 +211,7 @@ def footer():
       <div>
         <h2>Understand</h2>
         <ul>
+          <li><a href="/about-pedagogy-first/">About Pedagogy First</a></li>
           <li><a href="/about-the-evidence/">About the evidence</a></li>
           <li><a href="/updates/">Updates</a></li>
         </ul>
@@ -394,7 +395,7 @@ def build_needs():
     <p class="kicker">How this works</p>
     <h2 id="how-h">Start with the learning need</h2>
     <p class="wide">Explore the approaches that speak to it. Think about your subject, your phase and your pupils. Decide what might help. Then, and only then, ask whether technology adds anything useful.</p>
-    <p class="note wide">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Each link takes you to the strategy on its guide page, where you'll also find its suggested technology, the research behind it, its neighbouring strategies and the thinking for the whole area. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
+    <p class="note wide">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Each link takes you to the strategy's own page, with why you might use it, what it can look like in a classroom and a way to begin. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
     <nav aria-label="Classroom needs">
       <ul class="chips">{chips}</ul>
     </nav>
@@ -473,7 +474,7 @@ def build_tomorrow():
   <div class="wrap">
     <p class="kicker">Deliberately curated</p>
     <h2 id="list-h">Fourteen you could trial within ordinary teaching</h2>
-    <p class="wide">Chosen from the 144 because they're easy to understand, need little or no preparation, respond to common classroom needs, and don't require buying or adopting anything. Each links to its card on the guide page.</p>
+    <p class="wide">Chosen from the 144 because they're easy to understand, need little or no preparation, respond to common classroom needs, and don't require buying or adopting anything. Each links to its own page.</p>
     {findings_list(LENSES['try_tomorrow'])}
     <p class="note">This list is curated, not rotated for novelty. Want to start from a specific need instead? <a href="/classroom-needs/">What are you trying to improve?</a></p>
   </div>
@@ -485,7 +486,7 @@ def build_tomorrow():
         "nothing new bought or installed.",
         "Ten minutes to choose", "Something to try tomorrow",
         "The promise of this whole resource in one page: something here may help you tomorrow morning.",
-        body)
+        body, current="tomorrow")
 
 
 def build_strategy_page(page):
@@ -569,6 +570,14 @@ def build_strategy_page(page):
         wider = companion_section("wider", "The wider thinking", "Where the evidence sits",
             "<p>" + e(tie(page["wider"])) + informed + "</p>"
             + f'<p class="note">The fuller picture, sources included, is in <a href="/{c["slug"]}/#further-reading">further reading and evidence for {e(c["name"])}</a>.</p>')
+    keep = f"""<section class="keep-exploring" data-companion aria-labelledby="keep-h">
+  <div class="wrap">
+    <p class="kicker">Keep exploring</p>
+    <h2 id="keep-h">Where next?</h2>
+    <p>Back to <a href="/{c["slug"]}/#{st["slug"]}">this strategy in {c["number"]} {e(c["name"])}</a>, across to <a href="/classroom-needs/">what you're trying to improve</a>, or into <a href="/find-a-strategy/">all 144 at once</a>.</p>
+  </div>
+</section>
+"""
     support = """<section class="support" data-companion aria-labelledby="support-h">
   <div class="wrap">
     <p class="kicker">Want to take this further?</p>
@@ -591,7 +600,7 @@ def build_strategy_page(page):
         header(c["slug"]),
         f"""<div class="hero">
   <div class="wrap">
-    <p class="eyebrow">{c["number"]} {e(c["name"])} &middot; {e(cl["label"])}</p>
+    <nav class="crumbs" aria-label="You are here"><a href="/">Pedagogy First</a> <span class="sep" aria-hidden="true">›</span> <a href="/{c["slug"]}/">{c["number"]} {e(c["name"])}</a> <span class="sep" aria-hidden="true">›</span> <span aria-current="page">{e(st["title"])}</span></nav>
     <h1>{e(st["title"])}</h1>
   </div>
 </div>
@@ -599,6 +608,7 @@ def build_strategy_page(page):
 """,
         "".join(sections),
         wider,
+        keep,
         support,
         "</main>\n",
         footer(),
@@ -742,6 +752,7 @@ def build_updates():
       <li>Added <a href="/try-this-tomorrow/">Something to try tomorrow</a>.</li>
       <li>Added further reading and evidence to all six guides.</li>
       <li>Added an individual page for every one of the 144 strategies, each with why you might use it, an example, a way to begin and what to notice. Where a tool type genuinely helps, the page says how; a handful carry an AI prompt shaped by the STAIR approach.</li>
+      <li>Reorganised the homepage and navigation around three ways in: <a href="/classroom-needs/">what you're trying to improve</a>, <a href="/try-this-tomorrow/">something to try tomorrow</a> and exploring the 144. The story behind the guides moved to <a href="/about-pedagogy-first/">About Pedagogy First</a>, every strategy page gained a breadcrumb trail, and the search now also matches classroom needs and inclusive practice terms. No content was removed and no addresses changed.</li>
     </ul>
     <p class="note">The six infographics and 144 strategies are the fixed published resource and are unchanged. This page records significant changes to the companion material around them.</p>
   </div>
@@ -933,9 +944,6 @@ def related_block(slug):
 # ---------------------------------------------------------------- home
 def build_home():
     f = FRONT
-    why = PROSE["front"]["why"]
-    idea = PROSE["front"]["idea"]
-    how = PROSE["front"]["how"]
 
     cards = []
     for c in CHAPTERS:
@@ -956,13 +964,6 @@ def build_home():
         </a>
       </li>""")
 
-    steps = "".join(f"<li>{e(s)}</li>" for s in how["steps"])
-    lead_praise = "".join(quote_fig(q, "praise praise-lead") for q in f["praise"] if q.get("lead"))
-    rest_praise = "".join(quote_fig(q) for q in f["praise"] if not q.get("lead"))
-    ww = f["work_with"]
-    ww_lead = "".join(quote_fig(q, "praise praise-lead") for q in ww["quotes"] if q.get("lead"))
-    ww_rest = "".join(quote_fig(q) for q in ww["quotes"][1:4])
-
     out = [
         head(TITLE + " | Mark Anderson",
              "Six evidence informed guides to teaching and learning by Mark Anderson, "
@@ -975,10 +976,7 @@ def build_home():
       <p class="eyebrow">{e(f["cover"]["eyebrow"])}</p>
       <h1>Pedagogy First.<br>Technology Second.</h1>
       <p class="lead">{e(f["cover"]["strapline"])}</p>
-      <p class="actions">
-        <a class="btn btn-light" href="#guides">Start reading</a>
-        <a class="btn btn-outline" href="/find-a-strategy/">Find a strategy</a>
-      </p>
+      <p class="hero-note">You don't need all 144. Pedagogy First is designed to be explored according to what you need, not read from beginning to end.</p>
     </div>
     <figure class="hero-cover">
       <a href="/download-resources/">
@@ -991,21 +989,75 @@ def build_home():
 <main id="main">
 <section id="routes" data-companion aria-labelledby="routes-h">
   <div class="wrap">
-    <p class="kicker">Three ways in</p>
-    <h2 id="routes-h">Where do you want to start?</h2>
-    <ul class="route-grid">
-      <li><a href="/classroom-needs/"><h3>Explore by classroom need</h3><p>Start with what you're trying to improve, from remembering more to acting on feedback.</p></a></li>
-      <li><a href="#guides"><h3>Browse the 144 strategies</h3><p>Read the six guides in full, exactly as published, or search all 144 at once.</p></a></li>
-      <li><a href="/download-resources/"><h3>Download the full guide</h3><p>The complete guide and all six infographics, free, no sign-up.</p></a></li>
+    <p class="kicker">Where do you want to start?</p>
+    <h2 id="routes-h">One clear way in, whatever you need</h2>
+    <ul class="route-grid route-primary">
+      <li><a href="/classroom-needs/"><h3>What are you trying to improve?</h3><p>Start with the classroom problem or the aspect of practice you're working on.</p><span class="go">Start here</span></a></li>
+      <li><a href="/try-this-tomorrow/"><h3>Try something tomorrow</h3><p>A deliberately small, practical selection of ideas you can explore quickly.</p><span class="go">See the shortlist</span></a></li>
+      <li><a href="#guides"><h3>Explore the 144</h3><p>Browse the six areas and the wider collection at your own pace.</p><span class="go">Browse the areas</span></a></li>
     </ul>
-    <ul class="route-grid route-secondary">
-      <li><a href="/inclusive-practice/"><h3>Inclusive practice</h3><p>Six lenses across the 144 for access, participation and independence.</p></a></li>
-      <li><a href="/professional-learning/"><h3>Professional learning</h3><p>Use the guides with your team, with a 30 minute activity on every one.</p></a></li>
-      <li><a href="/try-this-tomorrow/"><h3>Try this tomorrow</h3><p>Fourteen low preparation strategies you could trial straight away.</p></a></li>
-      <li><a href="/about-the-evidence/"><h3>About the evidence</h3><p>What the research behind the guides can tell you, and what it can't.</p></a></li>
-    </ul>
+    <p class="colleagues"><strong>Using Pedagogy First with colleagues?</strong> Explore ways to use the resource for professional learning, discussion and development across teams, schools and trusts. <a href="/professional-learning/">Start here</a>.</p>
   </div>
 </section>
+""",
+        f"""<section id="guides" aria-labelledby="guides-h">
+  <div class="wrap">
+    <p class="kicker">Explore the 144</p>
+    <h2 id="guides-h">Six Guides</h2>
+    <ul class="guide-grid">
+{"".join(cards)}
+    </ul>
+    <p class="note" data-companion>The story behind the guides, the thinking, and how to use them well: <a href="/about-pedagogy-first/">About Pedagogy First</a>.</p>
+  </div>
+</section>
+""",
+        f"""<section id="download" aria-labelledby="download-h">
+  <div class="wrap">
+    <p class="kicker">The guide</p>
+    <h2 id="download-h">Download the full guide</h2>
+    <p>The full 35 page guide, including all six infographics.</p>
+    <p class="actions">
+      <a class="btn" href="/downloads/pedagogy-first-technology-second.pdf">
+        Download the full guide <span>PDF, 35 pages</span></a>
+      <a class="btn btn-quiet" href="/download-resources/">Download resources</a>
+    </p>
+    <p class="fine">{e(f["cover"]["copyright"])}</p>
+  </div>
+</section>
+</main>
+""",
+        footer(),
+    ]
+    (ROOT / "index.html").write_text("".join(out), encoding="utf-8")
+
+
+
+def build_about():
+    f = FRONT
+    why = PROSE["front"]["why"]
+    idea = PROSE["front"]["idea"]
+    how = PROSE["front"]["how"]
+    steps = "".join(f"<li>{e(s)}</li>" for s in how["steps"])
+    lead_praise = "".join(quote_fig(q, "praise praise-lead") for q in f["praise"] if q.get("lead"))
+    rest_praise = "".join(quote_fig(q) for q in f["praise"] if not q.get("lead"))
+    ww = f["work_with"]
+    ww_lead = "".join(quote_fig(q, "praise praise-lead") for q in ww["quotes"] if q.get("lead"))
+    ww_rest = "".join(quote_fig(q) for q in ww["quotes"][1:4])
+
+    out = [
+        head("About Pedagogy First | " + TITLE,
+             "The story behind Pedagogy First, Technology Second: why Mark Anderson made "
+             "the guides, the idea that shapes them, how to use them, and the work behind them.",
+             SITE + "/about-pedagogy-first/"),
+        header(None),
+        f"""<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">The story behind the site</p>
+    <h1>About Pedagogy First</h1>
+    <p class="lead">Why the guides exist, the idea that shapes them, and how to use them well.</p>
+  </div>
+</div>
+<main id="main">
 """,
         split_section("why", "Why I made these", why["standfirst"],
                       "".join(f"<p>{e(p)}</p>" for p in why["paragraphs"]),
@@ -1017,16 +1069,6 @@ def build_home():
                       "guide-page-contents.webp",
                       "The contents page of the guide: the six guides, numbered "
                       "one to six.", img_left=True),
-        f"""<section id="guides" aria-labelledby="guides-h">
-  <div class="wrap">
-    <p class="kicker">The six guides</p>
-    <h2 id="guides-h">Six Guides</h2>
-    <ul class="guide-grid">
-{"".join(cards)}
-    </ul>
-  </div>
-</section>
-""",
         split_section("how", "How to use this guide", how["standfirst"],
                       prose_paras(how["paragraphs"], cols=False)
                       + f'<ol class="steps">{steps}</ol>'
@@ -1058,24 +1100,13 @@ def build_home():
   </div>
 </section>
 """,
-        f"""<section id="download" aria-labelledby="download-h">
-  <div class="wrap">
-    <p class="kicker">The guide</p>
-    <h2 id="download-h">Download the full guide</h2>
-    <p>The full 35 page guide, including all six infographics.</p>
-    <p class="actions">
-      <a class="btn" href="/downloads/pedagogy-first-technology-second.pdf">
-        Download the full guide <span>PDF, 35 pages</span></a>
-      <a class="btn btn-quiet" href="/download-resources/">Download resources</a>
-    </p>
-    <p class="fine">{e(f["cover"]["copyright"])}</p>
-  </div>
-</section>
-</main>
-""",
+        "</main>\n",
         footer(),
     ]
-    (ROOT / "index.html").write_text("".join(out), encoding="utf-8")
+    target = ROOT / "about-pedagogy-first"
+    target.mkdir(exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
 
 
 # ---------------------------------------------------------------- chapters
@@ -1217,6 +1248,10 @@ def build_chapter(c, index):
 
 # ---------------------------------------------------------------- finder
 def build_finder():
+    extra_terms = {}
+    for _n in LENSES["needs"] + LENSES["inclusive"]:
+        for _r in _n["strategies"]:
+            extra_terms.setdefault(_r, []).append(_n["label"])
     groups = []
     total = 0
     for c in CHAPTERS:
@@ -1228,7 +1263,7 @@ def build_finder():
             blob = " ".join(filter(None, [
                 st["title"], st["summary"], st.get("tech", ""),
                 st.get("informed_by", ""), cl["label"], c["name"],
-            ])).lower()
+            ] + extra_terms.get(f"{c['slug']}/{st['slug']}", []))).lower()
             tom = ' data-tomorrow="1"' if f"{c['slug']}/{st['slug']}" in TRY_TOMORROW else ""
             rows.append(f"""        <li class="finding" data-search="{e(blob)}"{tom}>
           <a href="{canonical_strategy_url(f"{c['slug']}/{st['slug']}")}">
@@ -1257,7 +1292,7 @@ def build_finder():
   <div class="wrap">
     <p class="eyebrow">All 144, in one place</p>
     <h1>Find a strategy</h1>
-    <p class="lead">Searches the exact text of the cards. Results link to the strategy on its chapter page.</p>
+    <p class="lead">Searches the exact text of the cards, plus the classroom needs and inclusive practice lenses each strategy sits under. Results link to each strategy's own page.</p>
   </div>
 </div>
 <main id="main">
@@ -1365,7 +1400,8 @@ def build_downloads():
 
 # ---------------------------------------------------------------- extras
 def build_extras():
-    urls = ([f"{SITE}/", f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/",
+    urls = ([f"{SITE}/", f"{SITE}/about-pedagogy-first/",
+             f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/",
              f"{SITE}/classroom-needs/", f"{SITE}/inclusive-practice/", f"{SITE}/try-this-tomorrow/",
              f"{SITE}/about-the-evidence/", f"{SITE}/professional-learning/", f"{SITE}/updates/"]
             + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
@@ -1383,6 +1419,7 @@ def build_extras():
 
 def main():
     build_home()
+    build_about()
     for i, c in enumerate(CHAPTERS):
         build_chapter(c, i)
     build_finder()
