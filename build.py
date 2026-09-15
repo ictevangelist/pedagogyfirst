@@ -37,6 +37,16 @@ for _c in CHAPTERS:
     for _s in _c["strategies"]:
         STRAT[f"{_c['slug']}/{_s['slug']}"] = (_c, _s, _cl[_s["cluster"]])
 TRY_TOMORROW = set(LENSES["try_tomorrow"])
+# Reverse index: strategy ref -> the companion routes that surface it.
+ALSO_UNDER = {}
+for _n in LENSES["needs"]:
+    for _r in _n["strategies"]:
+        ALSO_UNDER.setdefault(_r, []).append((_n["label"], f"/classroom-needs/#{_n['key']}"))
+for _n in LENSES["inclusive"]:
+    for _r in _n["strategies"]:
+        ALSO_UNDER.setdefault(_r, []).append((f"Inclusive practice: {_n['label'].lower()}", f"/inclusive-practice/#{_n['key']}"))
+for _r in LENSES["try_tomorrow"]:
+    ALSO_UNDER.setdefault(_r, []).append(("Try this tomorrow", "/try-this-tomorrow/"))
 REVIEW_LABEL = "September 2026"
 
 
@@ -319,6 +329,7 @@ def build_needs():
         sections.append(f"""<section id="{n['key']}" aria-labelledby="{n['key']}-h">
   <div class="wrap">
     <h2 id="{n['key']}-h">{e(n['label'])}</h2>
+    <p class="wide">{e(n['blurb'])}</p>
     {findings_list(n['strategies'])}
   </div>
 </section>
@@ -328,7 +339,7 @@ def build_needs():
     <p class="kicker">How this works</p>
     <h2 id="how-h">Start with the learning need</h2>
     <p class="wide">Explore the approaches that speak to it. Think about your subject, your phase and your pupils. Decide what might help. Then, and only then, ask whether technology adds anything useful.</p>
-    <p class="note">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
+    <p class="note wide">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Each link takes you to the strategy on its guide page, where you'll also find its suggested technology, the research behind it, its neighbouring strategies and the thinking for the whole area. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
     <nav aria-label="Classroom needs">
       <ul class="chips">{chips}</ul>
     </nav>
@@ -811,7 +822,12 @@ def build_home():
       <li><a href="#guides"><h3>Browse the 144 strategies</h3><p>Read the six guides in full, exactly as published, or search all 144 at once.</p></a></li>
       <li><a href="/download-resources/"><h3>Download the full guide</h3><p>The complete guide and all six infographics, free, no sign-up.</p></a></li>
     </ul>
-    <p class="note">Also here: <a href="/inclusive-practice/">inclusive practice</a>, <a href="/professional-learning/">professional learning</a>, <a href="/try-this-tomorrow/">something to try tomorrow</a> and <a href="/about-the-evidence/">the evidence behind it all</a>.</p>
+    <ul class="route-grid route-secondary">
+      <li><a href="/inclusive-practice/"><h3>Inclusive practice</h3><p>Six lenses across the 144 for access, participation and independence.</p></a></li>
+      <li><a href="/professional-learning/"><h3>Professional learning</h3><p>Use the guides with your team, with a 30 minute activity on every one.</p></a></li>
+      <li><a href="/try-this-tomorrow/"><h3>Try this tomorrow</h3><p>Fourteen low preparation strategies you could trial straight away.</p></a></li>
+      <li><a href="/about-the-evidence/"><h3>About the evidence</h3><p>What the research behind the guides can tell you, and what it can't.</p></a></li>
+    </ul>
   </div>
 </section>
 """,
@@ -887,7 +903,7 @@ def build_home():
 
 
 # ---------------------------------------------------------------- chapters
-def strategy_article(st, cluster):
+def strategy_article(st, cluster, chapter_slug=None):
     accent = darken_for_white(cluster["colour"])
     meta = []
     if st.get("tech"):
@@ -895,11 +911,17 @@ def strategy_article(st, cluster):
     if st.get("informed_by"):
         meta.append(f'<span class="mlabel">Informed by</span> {e(st["informed_by"])}')
     meta_html = f'<p class="smeta">{" · ".join(meta)}</p>' if meta else ""
+    also_html = ""
+    if chapter_slug:
+        routes = ALSO_UNDER.get(f"{chapter_slug}/{st['slug']}", [])
+        if routes:
+            links = " · ".join(f'<a href="{u}">{e(l)}</a>' for l, u in routes)
+            also_html = f'\n        <p class="also-under" data-companion><span class="mlabel">Find this under</span> {links}</p>'
     return f"""      <article class="strategy" id="{st['slug']}" style="--accent:{accent}">
         <h3><a href="#{st['slug']}"><span class="sno" aria-hidden="true">{st['number']}</span>
           <span class="sicon" aria-hidden="true">{st['icon']}</span>{e(st['title'])}</a></h3>
         <p>{e(st['summary'])}</p>
-        {meta_html}
+        {meta_html}{also_html}
       </article>"""
 
 
@@ -919,7 +941,7 @@ def build_chapter(c, index):
     groups = []
     for cl in c["clusters"]:
         sts = [s for s in c["strategies"] if s["cluster"] == cl["key"]]
-        arts = "\n".join(strategy_article(s, cl) for s in sts)
+        arts = "\n".join(strategy_article(s, cl, slug) for s in sts)
         accent = darken_for_white(cl["colour"])
         groups.append(f"""    <section class="cluster" style="--accent:{accent}" aria-labelledby="g-{cl['key']}">
       <h3 id="g-{cl['key']}"><span class="dot" aria-hidden="true"></span>{e(cl['label'])}</h3>

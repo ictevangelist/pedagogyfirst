@@ -15,7 +15,8 @@
     "retrieval-practice/24-study-strategy-audit",
     "formative-assessment/20-spaced-retrieval-practice",
     "formative-assessment/24-spaced-self-quizzing"
-   ]
+   ],
+   "blurb": "These strategies all work the same muscle: getting knowledge back out, repeatedly, with gaps in between. Start with one routine you can sustain every lesson, like a three-question starter, before adding anything else."
   },
   {
    "key": "check-understanding",
@@ -30,7 +31,8 @@
     "explanations-and-modelling/05-check-don-t-assume",
     "retrieval-practice/20-teach-the-illusion-of-knowing",
     "retrieval-practice/22-confidence-ratings"
-   ]
+   ],
+   "blurb": "The common thread here is evidence from every pupil, not just the confident ones. Pick one strategy that shows you the whole room at once, and plan what you'll do when the answers reveal a misconception."
   },
   {
    "key": "improve-discussion",
@@ -44,7 +46,8 @@
     "questioning-and-discussion/18-accountable-talk",
     "questioning-and-discussion/19-build-on-student-responses",
     "questioning-and-discussion/23-interthinking-through-questions"
-   ]
+   ],
+   "blurb": "Talk improves when the ground rules, the questions and the follow-up moves change together. Start with how you respond to answers; it shapes everything pupils say next."
   },
   {
    "key": "better-questions",
@@ -58,7 +61,8 @@
     "questioning-and-discussion/07-wait-time-2-after-a-student-speaks",
     "questioning-and-discussion/13-pose-pause-pounce-bounce",
     "questioning-and-discussion/20-teach-question-stems"
-   ]
+   ],
+   "blurb": "Better questions are mostly planned questions. Choose one strategy for planning and one for what happens in the moment, and give both a fortnight before judging either."
   },
   {
    "key": "increase-participation",
@@ -73,7 +77,8 @@
     "questioning-and-discussion/10-hands-down",
     "questioning-and-discussion/11-cold-call-without-threat",
     "questioning-and-discussion/12-track-who-you-ask"
-   ]
+   ],
+   "blurb": "Every strategy here removes the option to opt out, kindly. The pairing that works: a way for everyone to compose an answer, then a way for anyone to be asked for it."
   },
   {
    "key": "explain-difficult-ideas",
@@ -87,7 +92,8 @@
     "explanations-and-modelling/12-chunk-and-reveal",
     "explanations-and-modelling/13-words-and-images-together",
     "explanations-and-modelling/18-pre-train-the-vocabulary"
-   ]
+   ],
+   "blurb": "These come from the same body of research: working memory is small, so explanations succeed when they respect it. Start with the strategy that removes something from your current explanations rather than the one that adds something new."
   },
   {
    "key": "clearer-modelling",
@@ -99,7 +105,8 @@
     "explanations-and-modelling/22-alternate-examples-and-practice",
     "explanations-and-modelling/23-fade-the-scaffolds",
     "formative-assessment/03-exemplars-before-rubrics"
-   ]
+   ],
+   "blurb": "Modelling works when pupils see the thinking, not just the finished product. Combine one strategy for showing the process with one for fading the support afterwards."
   },
   {
    "key": "useful-feedback",
@@ -113,7 +120,8 @@
     "feedback/15-whole-class-feedback",
     "feedback/16-task-not-person",
     "formative-assessment/12-comment-only-marking"
-   ]
+   ],
+   "blurb": "The theme is focus: less feedback, better aimed, directed at the work rather than the pupil. If marking workload is the pressure, start with the whole class and comment-only approaches."
   },
   {
    "key": "act-on-feedback",
@@ -126,7 +134,8 @@
     "feedback/22-questions-not-corrections",
     "formative-assessment/14-build-in-time-to-act",
     "formative-assessment/16-3-questions-not-corrections"
-   ]
+   ],
+   "blurb": "Feedback only counts when the pupil does something with it. Every strategy here builds the response in; choose one and protect the lesson time it needs."
   },
   {
    "key": "build-independence",
@@ -140,7 +149,8 @@
     "metacognition-and-self-regulation/22-make-your-own-questions",
     "retrieval-practice/23-retrieval-journals",
     "explanations-and-modelling/23-fade-the-scaffolds"
-   ]
+   ],
+   "blurb": "Independence is built by handing over deliberately, not by stepping back and hoping. Choose one strategy that teaches pupils a method, then one that fades your support."
   },
   {
    "key": "develop-metacognition",
@@ -155,7 +165,8 @@
     "metacognition-and-self-regulation/14-compare-predicted-to-actual",
     "metacognition-and-self-regulation/17-know-when-to-use-each",
     "retrieval-practice/20-teach-the-illusion-of-knowing"
-   ]
+   ],
+   "blurb": "Metacognition works on knowledge, so anchor whichever strategy you choose inside a topic you're teaching now. Naming the method explicitly for pupils does more than it sounds like it would."
   },
   {
    "key": "reduce-cognitive-demand",
@@ -170,7 +181,8 @@
     "explanations-and-modelling/12-chunk-and-reveal",
     "explanations-and-modelling/15-keep-words-near-images",
     "explanations-and-modelling/18-pre-train-the-vocabulary"
-   ]
+   ],
+   "blurb": "Almost all of these subtract: fewer words, fewer competing elements, smaller steps. Audit one existing explanation or slide deck against them before building anything new."
   },
   {
    "key": "thinking-visible",
@@ -183,7 +195,8 @@
     "formative-assessment/08-mini-whiteboards",
     "explanations-and-modelling/19-think-aloud",
     "retrieval-practice/17-concept-mapping-from-memory"
-   ]
+   ],
+   "blurb": "You can't respond to thinking you can't see. Pick one strategy that makes every pupil's thinking inspectable, then treat what it reveals as the most useful data in the lesson."
   },
   {
    "key": "access-participation-need",
@@ -197,7 +210,8 @@
     "explanations-and-modelling/18-pre-train-the-vocabulary",
     "questioning-and-discussion/08-write-before-you-speak",
     "questioning-and-discussion/09-think-pair-share"
-   ]
+   ],
+   "blurb": "Small changes to how pupils receive ideas and how they show understanding widen who can take part. Start where the barrier actually is: receiving the explanation, or responding to it."
   },
   {
    "key": "connect-prior-learning",
@@ -210,7 +224,8 @@
     "formative-assessment/20-spaced-retrieval-practice",
     "questioning-and-discussion/24-questions-that-drive-enquiry",
     "metacognition-and-self-regulation/03-analyse-the-task-first"
-   ]
+   ],
+   "blurb": "New learning sticks when it attaches to something already there. These strategies either surface prior knowledge before you teach or force connections back across time."
   },
   {
    "key": "tech-with-purpose",
@@ -223,7 +238,8 @@
     "metacognition-and-self-regulation/07-scaffold-focus-then-fade",
     "metacognition-and-self-regulation/23-regulate-the-device-too",
     "metacognition-and-self-regulation/24-partner-not-substitute"
-   ]
+   ],
+   "blurb": "The question is never the tool; it's whether the tool serves the learning in front of you. These strategies show what purposeful use looks like, including when the right choice is to switch it off."
   }
  ],
  "inclusive": [

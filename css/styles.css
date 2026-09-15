@@ -221,7 +221,8 @@ html.a11y-contrast .guide-grid > li > a, html.a11y-contrast .dl-grid > li { back
 .findings { list-style: none; margin: .8rem 0 0; padding: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
 .findings li { max-width: none; }
 .finding a { display: flex; gap: .7rem; height: 100%; padding: .8rem .95rem; text-decoration: none; color: var(--ink); background: var(--paper); border: 1px solid var(--border); border-radius: 10px; }
-.finding a:hover { border-color: var(--accent); }
+.finding a:hover { background: var(--gold); border-color: var(--gold); }
+.finding a:hover, .finding a:hover .fsum, .finding a:hover .fwhere { color: var(--ink); }
 .ftext strong { font-family: var(--head); font-size: 1rem; display: block; }
 .fsum { display: block; font-size: .89rem; color: var(--ink-soft); margin: .15rem 0 .35rem; }
 .fwhere { display: block; font-size: .78rem; color: var(--ink-soft); }
@@ -306,7 +307,11 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .route-grid li { max-width: none; }
 .route-grid a { display: block; height: 100%; padding: 1.1rem 1.25rem; text-decoration: none;
   color: var(--ink); background: var(--paper); border: 1px solid var(--border); border-radius: 12px; }
-.route-grid a:hover { border-color: var(--gold); }
+.route-grid a:hover { background: var(--gold); border-color: var(--gold); }
+.route-grid a:hover h3, .route-grid a:hover p { color: var(--ink); }
+.route-secondary a { padding: .85rem 1.05rem; }
+.route-secondary h3 { font-size: .98rem; }
+.route-secondary p { font-size: .9rem; }
 .route-grid h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
 .route-grid p { margin: 0; color: var(--ink-soft); font-size: .95rem; max-width: none; }
 
@@ -315,7 +320,7 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .chips a { display: inline-flex; align-items: center; min-height: 40px; padding: .3rem .85rem;
   border: 1px solid var(--border); border-radius: 999px; text-decoration: none; font-weight: 600;
   font-size: .9rem; color: var(--ink); background: var(--paper); }
-.chips a:hover { border-color: var(--gold); }
+.chips a:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
 
 .reading { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .8rem; }
 .reading li { max-width: 75ch; padding-left: 1rem; border-left: 3px solid var(--border); }
@@ -327,7 +332,8 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .related li { max-width: none; }
 .related a { display: block; height: 100%; padding: .95rem 1.1rem; text-decoration: none;
   color: var(--ink); background: var(--paper); border: 1px solid var(--border); border-radius: 10px; }
-.related a:hover { border-color: var(--gold); }
+.related a:hover { background: var(--gold); border-color: var(--gold); }
+.related a:hover, .related a:hover > span, .related a:hover strong, .related a:hover strong .n { color: var(--ink); }
 .related strong { display: block; margin-bottom: .25rem; }
 .related strong .n { color: var(--ink-soft); font-size: .85rem; margin-right: .3rem; }
 .related a > span, .related a strong + span { color: var(--ink-soft); font-size: .95rem; }
@@ -344,7 +350,8 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .guide-links li { max-width: none; }
 .guide-links a { display: flex; align-items: baseline; gap: .5rem; padding: .65rem .9rem;
   border: 1px solid var(--border); border-radius: 10px; text-decoration: none; font-weight: 600; color: var(--ink); }
-.guide-links a:hover { border-color: var(--gold); }
+.guide-links a:hover { background: var(--gold); border-color: var(--gold); }
+.guide-links a:hover, .guide-links a:hover .n { color: var(--ink); }
 .guide-links .n { color: var(--ink-soft); font-size: .85rem; }
 
 .updates { margin: 1rem 0 0; padding-left: 1.2rem; display: grid; gap: .5rem; }
@@ -364,3 +371,10 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .footer-nav li { max-width: none; }
 .footer-nav a { color: #fff; text-decoration: none; font-size: .95rem; }
 .footer-nav a:hover { text-decoration: underline; }
+
+
+/* Arriving at a strategy from a companion route */
+.strategy:target { outline: 3px solid var(--gold); outline-offset: 5px; border-radius: 6px; }
+.also-under { font-size: .85rem; color: var(--ink-soft); max-width: none; margin: .5rem 0 0; }
+.also-under a { color: inherit; }
+.also-under a:hover { color: var(--ink); }
