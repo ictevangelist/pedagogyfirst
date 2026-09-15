@@ -544,6 +544,23 @@ def build_strategy_page(page):
             "The lens this connects with",
             "<p>Through the inclusive practice lens, this is one of the approaches that may reduce barriers around:</p>"
             + '<ul class="prompts">' + lis + "</ul>"))
+    if page.get("tech"):
+        tech_inner = paras("tech")
+        st_block = ""
+        stair = page.get("stair")
+        if stair:
+            st_block = (
+                "<p>" + e(tie(stair["lede"])) + "</p>"
+                + '<figure class="prompt-block">'
+                + '<figcaption>A prompt to start from, shaped by the STAIR approach '
+                + '(Specific, Tell, Actionable, Iterate, Role)</figcaption>'
+                + "<pre>" + e(stair["prompt"]) + "</pre>"
+                + '<button class="copylink copyprompt" type="button" hidden '
+                + 'aria-label="Copy this prompt">Copy prompt</button>'
+                + "</figure>"
+                + "<p>" + e(tie(stair["after"])) + "</p>")
+        sections.append(companion_section("tech", "Technology second",
+            "Where technology fits", tech_inner + st_block))
     wider = ""
     if page.get("wider"):
         informed = ""
@@ -724,7 +741,7 @@ def build_updates():
       <li>Added <a href="/professional-learning/">professional learning support</a>, with a 30 minute activity on every guide.</li>
       <li>Added <a href="/try-this-tomorrow/">Something to try tomorrow</a>.</li>
       <li>Added further reading and evidence to all six guides.</li>
-      <li>Added individual pages for sixteen strategies as a pilot, each with why you might use it, an example, a way to begin and what to notice.</li>
+      <li>Added an individual page for every one of the 144 strategies, each with why you might use it, an example, a way to begin and what to notice. Where a tool type genuinely helps, the page says how; a handful carry an AI prompt shaped by the STAIR approach.</li>
     </ul>
     <p class="note">The six infographics and 144 strategies are the fixed published resource and are unchanged. This page records significant changes to the companion material around them.</p>
   </div>

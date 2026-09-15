@@ -403,3 +403,12 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
    the full visible column. */
 body.text-page .hero .wrap,
 body.text-page main .wrap { width: min(100% - 2.5rem, 62rem); }
+
+
+/* AI prompt block on the few pages that carry one */
+.prompt-block { margin: 1.2rem 0; border: 1px solid var(--border); border-left: 4px solid var(--gold);
+  border-radius: 0 10px 10px 0; background: var(--paper); padding: 1rem 1.2rem; }
+.prompt-block figcaption { font-size: .8rem; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-soft); margin-bottom: .6rem; }
+.prompt-block pre { margin: 0; white-space: pre-wrap; font-family: inherit; font-size: .97rem; line-height: 1.55; }
+.prompt-block .copyprompt { margin-top: .8rem; }

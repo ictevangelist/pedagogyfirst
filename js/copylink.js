@@ -30,7 +30,8 @@
   btns.forEach(function (btn) {
     btn.hidden = false;
     btn.addEventListener('click', function () {
-      var url = window.location.origin + btn.getAttribute('data-path');
+      var pre = btn.classList.contains('copyprompt') ? btn.parentElement.querySelector('pre') : null;
+      var url = pre ? pre.textContent : window.location.origin + btn.getAttribute('data-path');
       copy(url).then(function () {
         var was = btn.textContent;
         btn.textContent = 'Copied';
