@@ -1095,17 +1095,17 @@ def strategy_article(st, cluster, chapter_slug=None, on_own_page=False):
             also_html = f'\n        <p class="also-under" data-companion><span class="mlabel">Find this under</span> {links}</p>'
     copy_btn = ""
     more_link = ""
+    title_href = f"#{st['slug']}"
     if chapter_slug:
-        _ref = f"{chapter_slug}/{st['slug']}"
-        _target = canonical_strategy_url(_ref)
-        copy_btn = (f'<button class="copylink" type="button" hidden '
-                    f'data-path="{_target}" '
-                    f'aria-label="Copy a link to {e(st["title"])}">Copy link</button>')
-        if _ref in PILOT and not on_own_page:
-            more_link = (f' <a class="more-link" data-companion href="{_target}">'
-                         f'More on this strategy</a>')
+        _target = canonical_strategy_url(f"{chapter_slug}/{st['slug']}")
+        if on_own_page:
+            copy_btn = (f'<button class="copylink" type="button" hidden '
+                        f'data-path="{_target}" '
+                        f'aria-label="Copy a link to {e(st["title"])}">Copy link</button>')
+        else:
+            title_href = _target
     return f"""      <article class="strategy" id="{st['slug']}" style="--accent:{accent}">
-        <h3><a href="#{st['slug']}"><span class="sno" aria-hidden="true">{st['number']}</span>
+        <h3><a href="{title_href}"><span class="sno" aria-hidden="true">{st['number']}</span>
           <span class="sicon" aria-hidden="true">{st['icon']}</span>{e(st['title'])}</a></h3>
         <p>{e(st['summary'])}</p>
         {meta_html}{also_html}
