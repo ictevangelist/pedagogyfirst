@@ -99,7 +99,7 @@ FINDER_V = hashlib.sha256((ROOT / "js" / "finder.js").read_bytes()).hexdigest()[
 COPY_V = hashlib.sha256((ROOT / "js" / "copylink.js").read_bytes()).hexdigest()[:8]
 
 
-def head(title, description, canonical, jsonld=None):
+def head(title, description, canonical, jsonld=None, body_class=None):
     return f"""<!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -116,7 +116,7 @@ def head(title, description, canonical, jsonld=None):
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/styles.css?v={CSS_V}">{_ld(jsonld)}
 </head>
-<body>
+<body{' class="' + body_class + '"' if body_class else ''}>
 <a class="skip" href="#main">Skip to main content</a>
 """
 
@@ -354,9 +354,10 @@ def support_block(lede, strong=False):
 """
 
 
-def simple_page(slug, title, desc, hero_eyebrow, hero_h1, hero_lead, body, current=None):
+def simple_page(slug, title, desc, hero_eyebrow, hero_h1, hero_lead, body, current=None, narrow=False):
     out = [
-        head(f"{title} | {TITLE}", desc, f"{SITE}/{slug}/"),
+        head(f"{title} | {TITLE}", desc, f"{SITE}/{slug}/",
+             body_class="text-page" if narrow else None),
         header(current),
         f"""<div class="hero">
   <div class="wrap">
@@ -504,7 +505,7 @@ def build_strategy_page(page):
         v = page.get(key) or []
         return "".join(f"<li>{e(tie(t))}</li>" for t in v)
 
-    card = strategy_article(st, cl, c["slug"])
+    card = strategy_article(st, cl, c["slug"], on_own_page=True)
     sections = [f"""<section id="the-strategy" aria-labelledby="ts-h">
   <div class="wrap">
     <p class="kicker">The strategy, as published</p>
@@ -569,7 +570,7 @@ def build_strategy_page(page):
         head(st["title"] + " | " + TITLE,
              st["title"] + ": one of the 144 Pedagogy First strategies, from " + c["name"]
              + ", with why you might use it, what it can look like, and a way to begin.",
-             SITE + url, ld),
+             SITE + url, ld, body_class="text-page"),
         header(c["slug"]),
         f"""<div class="hero">
   <div class="wrap">
@@ -646,7 +647,7 @@ def build_evidence():
         "Evidence informed, not evidence decorated", "About the evidence",
         "What the research behind these guides can tell you, what it can't, "
         "and how to read the attributions on the cards.",
-        body)
+        body, narrow=True)
 
 
 def build_pl():
@@ -708,7 +709,7 @@ def build_pl():
         "Professional learning", "Using Pedagogy First for professional learning",
         "The guides were made for discussion as much as for reading. "
         "Here's how to use them with colleagues.",
-        body)
+        body, narrow=True)
 
 
 def build_updates():
@@ -734,7 +735,7 @@ def build_updates():
         "infographics and 144 strategies remain fixed.",
         "The companion, evolving", "Updates",
         "Significant changes to the companion material on this site, most recent first.",
-        body)
+        body, narrow=True)
 
 
 # Further reading per guide: a small number of strong sources, with honest
@@ -1061,7 +1062,7 @@ def build_home():
 
 
 # ---------------------------------------------------------------- chapters
-def strategy_article(st, cluster, chapter_slug=None):
+def strategy_article(st, cluster, chapter_slug=None, on_own_page=False):
     accent = darken_for_white(cluster["colour"])
     meta = []
     if st.get("tech"):
@@ -1083,7 +1084,7 @@ def strategy_article(st, cluster, chapter_slug=None):
         copy_btn = (f'<button class="copylink" type="button" hidden '
                     f'data-path="{_target}" '
                     f'aria-label="Copy a link to {e(st["title"])}">Copy link</button>')
-        if _ref in PILOT:
+        if _ref in PILOT and not on_own_page:
             more_link = (f' <a class="more-link" data-companion href="{_target}">'
                          f'More on this strategy</a>')
     return f"""      <article class="strategy" id="{st['slug']}" style="--accent:{accent}">

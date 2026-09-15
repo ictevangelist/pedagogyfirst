@@ -114,6 +114,27 @@ const BASE = 'http://localhost:8899';
   check('find, needs and downloads links present', await np.locator('.find-pill').count() === 1 && await np.locator('.dl-link[href="/download-resources/"]').count() === 1 && await np.locator('.dl-link[href="/classroom-needs/"]').count() === 1);
   await nj.close();
 
+  // ---------- text width invariant ----------
+  // Body text is never character-capped: a reintroduced max-width on p/li
+  // fails the build. The container, not the text, carries the page width.
+  console.log('\nText width');
+  const twc = await b.newContext({ viewport: { width: 1440, height: 900 } });
+  const twp = await twc.newPage();
+  let capped = 0;
+  for (const path of ['/', '/retrieval-practice/', '/classroom-needs/', '/about-the-evidence/', '/strategies/brain-dump/', '/professional-learning/']) {
+    await twp.goto(BASE + path, { waitUntil: 'load' });
+    capped += await twp.evaluate(() => {
+      let n = 0;
+      for (const el of document.querySelectorAll('p, li')) {
+        const mw = getComputedStyle(el).maxWidth;
+        if (mw !== 'none' && mw !== '100%') n++;
+      }
+      return n;
+    });
+  }
+  check('no character-capped text anywhere', capped === 0, capped + ' capped elements');
+  await twc.close();
+
   // ---------- keyboard ----------
   console.log('\nKeyboard');
   const kc = await b.newContext({ viewport: { width: 1280, height: 900 } });

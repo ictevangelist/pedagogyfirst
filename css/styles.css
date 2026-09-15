@@ -28,7 +28,7 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.65 var(--body); }
 h1, h2, h3 { font-family: var(--head); font-weight: 700; line-height: 1.2; margin: 0 0 .5rem; overflow-wrap: break-word; text-wrap: balance; }
-p, li { max-width: var(--measure); overflow-wrap: break-word; text-wrap: pretty; }
+p, li { max-width: none; overflow-wrap: break-word; text-wrap: pretty; }
 img { max-width: 100%; height: auto; }
 a { color: var(--accent); text-underline-offset: 3px; }
 a:hover { text-decoration-thickness: 2px; }
@@ -102,7 +102,7 @@ a:hover { text-decoration-thickness: 2px; }
 .hero-cover a:hover img { box-shadow: 0 18px 46px rgba(0,0,0,.7); }
 .hero h1 { color: #fff; font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3rem); }
 .hero .eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin: 0 0 .7rem; }
-.hero .lead { font-size: clamp(1.05rem, .98rem + .4vw, 1.26rem); max-width: 62ch; margin: .8rem 0 0; }
+.hero .lead { font-size: clamp(1.05rem, .98rem + .4vw, 1.26rem); max-width: none; margin: .8rem 0 0; }
 .hero .rooted { color: #ced8de; font-size: .92rem; margin-top: 1rem; }
 .hero .ch-no { display: block; font-size: .55em; color: var(--gold); letter-spacing: .1em; }
 .hero blockquote.lead { margin: .8rem 0 0; padding-left: 1rem; border-left: 4px solid var(--gold); font-style: italic; }
@@ -124,7 +124,7 @@ section { padding: 2.4rem 0 .6rem; }
 section h2 { font-size: clamp(1.4rem, 1.2rem + .8vw, 1.9rem); }
 .band { background: var(--paper-alt); padding-bottom: 2rem; margin-top: 1.6rem; }
 .note, .fine { color: var(--ink-soft); font-size: .95rem; }
-.wide { max-width: 80ch; }
+.wide { max-width: none; }
 .callout { border-left: 4px solid var(--gold); background: var(--paper-alt); padding: .8rem 1rem; font-weight: 600; }
 
 /* Prose runs the full content width, one column, in reading order. */
@@ -145,7 +145,7 @@ section h2 { font-size: clamp(1.4rem, 1.2rem + .8vw, 1.9rem); }
 }
 
 .steps { counter-reset: s; list-style: none; margin: 1.2rem 0; padding: 0; display: grid; gap: .8rem; }
-.steps li { counter-increment: s; padding-left: 2.6rem; position: relative; max-width: 75ch; min-height: 2rem; }
+.steps li { counter-increment: s; padding-left: 2.6rem; position: relative; min-height: 2rem; }
 .steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--ink); color: #fff; font: 700 .95rem/1.9rem var(--head); text-align: center; }
 
 /* ---------- guide cards ---------- */
@@ -323,7 +323,7 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .chips a:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
 
 .reading { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .8rem; }
-.reading li { max-width: 75ch; padding-left: 1rem; border-left: 3px solid var(--border); }
+.reading li { padding-left: 1rem; border-left: 3px solid var(--border); }
 .reading .ref-t { font-weight: 600; }
 .reading .ref-n { display: block; color: var(--ink-soft); font-size: .95rem; margin-top: .15rem; }
 
@@ -341,7 +341,7 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .support { background: var(--ink); color: #fff; padding: 2.4rem 0; margin-top: 2.5rem; }
 .support .kicker { color: var(--gold); }
 .support h2 { color: #fff; margin: .1rem 0 .5rem; }
-.support p { color: #d7dee4; max-width: 62ch; }
+.support p { color: #d7dee4; max-width: none; }
 .support .btn { background: var(--gold); color: var(--ink); }
 .support :focus-visible { outline-color: #ffd166; }
 
@@ -355,7 +355,7 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 .guide-links .n { color: var(--ink-soft); font-size: .85rem; }
 
 .updates { margin: 1rem 0 0; padding-left: 1.2rem; display: grid; gap: .5rem; }
-.updates li { max-width: 75ch; }
+.updates li { max-width: none; }
 
 .finder-more { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: .8rem 0 0; }
 .finder-more span { color: var(--ink-soft); font-size: .92rem; }
@@ -393,5 +393,13 @@ html.a11y-spacing p { margin-bottom: 1.4rem; }
 /* Individual strategy pages */
 .strategy-single { display: grid; grid-template-columns: minmax(0, 34rem); margin-top: 1rem; }
 .prompts { margin: 1rem 0 0; padding-left: 1.2rem; display: grid; gap: .55rem; }
-.prompts li { max-width: 70ch; }
+.prompts li { max-width: none; }
 .more-link { display: inline-block; margin: .55rem 0 0 .5rem; font-size: .85rem; font-weight: 600; }
+
+
+/* Text-led pages: the container carries the width, and text fills it.
+   Body text is never character-capped anywhere on this site; pages whose
+   main content is prose narrow the wrap instead, so the text always spans
+   the full visible column. */
+body.text-page .hero .wrap,
+body.text-page main .wrap { width: min(100% - 2.5rem, 62rem); }
