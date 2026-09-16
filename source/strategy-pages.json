@@ -132,20 +132,20 @@
    "ref": "retrieval-practice/05-closed-book-reconstruction",
    "slug": "closed-book-reconstruction",
    "why": [
-    "Reconstruction sits somewhere between a brain dump and a formal test. Pupils rebuild the key ideas of a topic from memory, and then they open their notes and correct what they wrote in a different colour. Karpicke and Blunt found this does more for retention than re-reading.",
-    "The second colour is what makes it more than just a memory exercise. For the pupil, the corrections are a precise record of what didn't come back, and for you, they turn every page into something you can read at a glance."
+    "Reconstruction sits somewhere between a brain dump and a formal test. Pupils rebuild the key ideas of a topic from memory, and then they open their notes and correct what they wrote in a different colour. Karpicke and Blunt found this does more for retention than re-reading does.",
+    "The second colour is what makes it more than a memory exercise. For the pupil, the corrections are a record of exactly what didn't come back, and for you, every page becomes something you can read at a glance."
    ],
    "example": [
     "At the end of a unit on rivers, pupils close their books and write out the processes of erosion from memory. Ten minutes later they open their notes and add whatever they missed in green pen. Flicking through the books afterwards, the teacher can see the same two processes missing in green across half the class."
    ],
-   "try": "Try running it once at the end of a current topic, with pupils reconstructing from memory and then correcting in colour. The colour really does matter here, because without it the gaps just disappear into the page.",
+   "try": "Try running it once at the end of a current topic, with pupils reconstructing from memory and then correcting in colour. The colour genuinely matters here, because without it the gaps just disappear into the page.",
    "notice": [
-    "Where the second colour clusters. Whole-class gaps give you a reteaching list, and it's one the pupils have written for you themselves.",
-    "Whether the corrections are additions or fixes, because missing knowledge and mangled knowledge need different responses from you."
+    "Where the second colour keeps appearing. If the same gaps show up across the class, that's your reteaching list, and the pupils have written it for you themselves.",
+    "Whether the corrections are additions or fixes, because missing knowledge and muddled knowledge are different problems, and they need different responses from you."
    ],
    "consider": [
-    "Try to resist marking the reconstruction itself. The imperfect first attempt is what makes it work, and stakes push pupils back towards playing safe.",
-    "The check against the notes is part of the learning rather than an admin step at the end, so give it proper time."
+    "Try to resist marking the reconstruction itself. The imperfect first attempt is what makes it work, and as soon as it carries stakes, pupils start playing safe.",
+    "The check against the notes is part of the learning rather than an admin step at the end, so it's worth giving it proper time."
    ],
    "related": [
     "retrieval-practice/03-brain-dump",
@@ -161,8 +161,8 @@
    "ref": "retrieval-practice/06-distribute-practice-over-time",
    "slug": "distribute-practice-over-time",
    "why": [
-    "Ebbinghaus mapped the forgetting curve well over a century ago, and Cepeda's work put numbers on the gaps that help most. The finding hasn't really changed in all that time: retrieval spread across days and weeks does more for retention than the same amount of practice squeezed into one session.",
-    "The hard part isn't believing it, it's timetabling it, which is why the card aims this at your medium-term plan rather than your lesson plan. The calendar is part of the pedagogy."
+    "Ebbinghaus mapped the forgetting curve well over a century ago, and Cepeda's work put numbers on the gaps that help most. The finding hasn't really changed in all that time. Retrieval spread across days and weeks does more for retention than the same amount of practice squeezed into one session.",
+    "The hard part isn't believing it, it's timetabling it, and that's why the card aims this at your medium-term plan rather than your lesson plan. As the guide puts it, the calendar is part of the pedagogy."
    ],
    "example": [
     "Planning a six-week unit, a teacher pencils the review points in before the content, so week three revisits week one, week five revisits weeks two and three, and the following unit opens by retrieving this one. Nothing about any single lesson changes very much, but the shape of the term does."
@@ -170,10 +170,10 @@
    "try": "Take the medium-term plan for your next unit and mark two points where earlier content will come back. Booking the slots is the habit worth building, and the questions themselves can always be written later.",
    "notice": [
     "What the first spaced review reveals. Material that seemed really secure at the time will have faded, and that's the forgetting curve doing what it does, not a failure of your teaching.",
-    "Whether the review points survive contact with a busy term. If they're the first thing to get cut, they were never really planned in at all."
+    "Whether the review points survive contact with a busy term. They tend to be the first thing squeezed out when time is tight, so it's worth protecting them deliberately."
    ],
    "consider": [
-    "Massed practice feels better in the room, for you and for pupils, so expect the spaced version to look worse lesson by lesson while it does more across the term."
+    "Massed practice feels better in the room, for you and for pupils, so it helps to know in advance that the spaced version will look worse lesson by lesson while doing more across the term."
    ],
    "related": [
     "retrieval-practice/07-yesterday-last-week-last-month",
@@ -201,12 +201,12 @@
    ],
    "try": "Add the three headings to your existing starter template and fill them in for one class tomorrow. Getting the routine going helps far more than agonising over the perfect choice of questions.",
    "notice": [
-    "Which distance fails. If yesterday's question lands but last month's doesn't, that's the spacing doing its diagnostic job for you.",
+    "Which distance the class struggles with. If yesterday's question lands but last month's doesn't, that's really useful information, because it shows you exactly how far back the forgetting reaches.",
     "Whether the same older topic keeps failing. The card is explicit that the intervals are a starting point, and complex topics may well need revisiting more often."
    ],
    "consider": [
     "It only works if the older material genuinely comes back around, which makes this a planning habit as much as a lesson habit. The guide puts it well: the calendar is part of the pedagogy.",
-    "When content never returns after it's been taught, pupils decide it no longer matters. This routine is the antidote, but only if you protect it when time gets tight."
+    "When content never returns after it's been taught, pupils decide it no longer matters. This routine works against that, but only if you protect it when time gets tight."
    ],
    "related": [
     "retrieval-practice/06-distribute-practice-over-time",
@@ -230,18 +230,18 @@
    "slug": "interleave-topics-don-t-block",
    "why": [
     "Blocked practice, where you finish one topic before starting the next, feels organised, and pupils working through a block feel fluent. Kornell and Bjork found that the feeling misleads, because mixing topics up produces stronger retention than blocking them does.",
-    "The card names the mechanism: discriminating. When the question types arrive shuffled together, pupils have to decide first what kind of problem they're actually looking at, and that decision is exactly the one that blocked practice never asks them to make."
+    "The card names the mechanism, which is discriminating. When the question types arrive shuffled together, pupils have to decide first what kind of problem they're actually looking at, and that decision is exactly the one that blocked practice never asks them to make."
    ],
    "example": [
-    "A maths teacher setting practice on area swaps a page of fifteen area questions for a mixed set, with area, perimeter and volume shuffled together. Pupils now have to choose the method before they can apply it. The work is slower and scrappier than the blocked version would be, but having to choose is the extra ingredient the blocked page was missing."
+    "A maths teacher setting practice on area swaps a page of fifteen area questions for a mixed set, with area, perimeter and volume shuffled together. Pupils now have to choose the method before they can apply it. The work is slower and scrappier than the blocked version would have been, but the choosing is the extra ingredient the blocked page was missing."
    ],
-   "try": "Shuffle one existing practice set so that two or three related topics arrive mixed together. Topics pupils can genuinely confuse with each other give the discrimination something to bite on.",
+   "try": "Shuffle one existing practice set so that two or three related topics arrive mixed together. It works best with topics pupils can genuinely confuse with each other, because that's where the deciding has something to do.",
    "notice": [
-    "Accuracy dipping during the practice. Kornell and Bjork's point is that the dip in the lesson and the gain in retention tend to arrive together.",
+    "Accuracy dipping during the practice. That's normal, and Kornell and Bjork's point is that the dip in the lesson tends to go along with the gain in retention later.",
     "Whether pupils pause to work out what kind of question they're looking at before answering it, because that little pause is exactly what the mixing is meant to bring about."
    ],
    "consider": [
-    "Tell pupils why the practice feels harder. Without the explanation, interleaving can read as disorganisation, to them and sometimes to observers too."
+    "Tell pupils why the practice feels harder. Without the explanation, interleaving can look like disorganisation, to them and sometimes to observers too."
    ],
    "related": [
     "retrieval-practice/06-distribute-practice-over-time",
