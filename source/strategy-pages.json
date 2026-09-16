@@ -3706,7 +3706,7 @@
    "try": "Put a retrieval starter in front of your next task that asks for planning or self-checking, and let the results tell you who's ready to regulate and who still needs more time with the content.",
    "notice": [
     "Pupils whose reflections are vague or generic. Often the gap is in the knowledge rather than in the reflective skill.",
-    "Whether the quality of pupils' plans follows how secure their content is. It usually does, and that's really the card's argument in miniature."
+    "Whether the quality of pupils' plans follows how secure their content is. It usually does, and once you've seen that pattern for yourself, the card's point rather makes itself."
    ],
    "consider": [
     "This does cut against bolt-on study skills lessons taught separately from subjects. Build the base first, then regulate, and do both inside the topic itself."
@@ -3785,7 +3785,7 @@
    "ref": "metacognition-and-self-regulation/05-build-realistic-confidence",
    "slug": "build-realistic-confidence",
    "why": [
-    "Confidence that's built on pep talks doesn't tend to survive contact with a hard task. Zimmerman's finding is that self-efficacy drives effort, but it has to be earned through past success rather than simply asserted.",
+    "Confidence that's built on pep talks tends to fall apart the moment the task gets hard. Zimmerman's finding is that self-efficacy drives effort, but it has to be earned through past success rather than simply asserted.",
     "Pointing a pupil back to a recent task they genuinely mastered sets a credible expectation for the one in front of them. It's not \"you can do anything\", it's \"you did something like this three weeks ago, and here it is\"."
    ],
    "example": [
@@ -3820,7 +3820,7 @@
    "example": [
     "At the end of a topic segment, pupils rate how secure they feel on it, then straight away take a five-question quiz. The two results sit side by side. For some pupils they'll agree, but for others the quiz disagrees with the feeling, and that disagreement is really the most useful thing the lesson produces."
    ],
-   "try": "Next time you hear yourself ask \"are we happy with this?\", follow it up with three quick questions and let the answers do the replying.",
+   "try": "Next time you hear yourself ask \"are we happy with this?\", follow it up with three quick questions, and let the answers tell you how happy anyone should really be.",
    "notice": [
     "Pupils who were confident and wrong. They're the reason the external check exists in the first place.",
     "Whether pupils start asking for the check themselves, because that's the habit starting to become their own."
@@ -3858,8 +3858,8 @@
     "Pupils who only work while they know the tool is active. That's exactly the dependency the fading is designed to avoid."
    ],
    "consider": [
-    "Don't skip the fading. A monitoring tool that's used permanently takes away the very work that builds the capacity, and a guide that always hands you the answer just leaves you needing the guide.",
-    "When to fade, and for whom, is a judgement call, and you know your class far better than any website does."
+    "Don't skip the fading. A monitoring tool that's used permanently takes away the very work that builds the capacity, and a pupil who always has the tool doing the regulating never gets to practise doing it themselves.",
+    "When to fade, and for whom, is a judgement call, and you know your class far better than any guide does."
    ],
    "related": [
     "metacognition-and-self-regulation/23-regulate-the-device-too",
@@ -3886,7 +3886,7 @@
    "try": "Add one timed pause to the longest task you set this week, with the question written on the board so pupils actually meet it rather than skip past it.",
    "notice": [
     "Whether anyone actually changes course at a stop point, because pauses that never alter what pupils do aren't really monitoring yet.",
-    "Answers that become routine. \"Yes, fine\" written in four seconds means the check has turned into a ritual, and rituals need refreshing."
+    "Answers that become routine. \"Yes, fine\" written in four seconds means the check has turned into a habit of ticking the box, and it's worth changing the question when that happens."
    ],
    "consider": [
     "Too many stop points just become noise, and they interrupt the very concentration they're meant to protect. One or two per task is plenty, placed where a wrong turn would be costly.",
@@ -3908,7 +3908,7 @@
    "ref": "metacognition-and-self-regulation/09-ask-yourself-as-you-go",
    "slug": "ask-yourself-as-you-go",
    "why": [
-    "Pupils usually discover they didn't understand something when the work comes back marked, and that's the most expensive possible moment to find out. Monitoring during the task, asking do I actually understand this, brings the gap to light while there's still time to do something about it.",
+    "Pupils usually discover they didn't understand something when the work comes back marked, and by then the misunderstanding has had days to settle in. Monitoring during the task, asking do I actually understand this, brings the gap to light while there's still time to do something about it.",
     "The question sounds trivial, but the habit isn't, because self-regulation has to be taught, modelled and practised rather than picked up from simply being told to reflect."
    ],
    "example": [
@@ -3960,7 +3960,7 @@
     "feedback/13-dialogic-feedback"
    ],
    "tech": [
-    "A shared document in your setting's approved platform lets the trace build up where you can see it during the task, rather than after the books close. That's invisible thinking made visible while there's still time to act on it, and the document shows you the process, but the coaching of it stays with you."
+    "A shared document in your setting's approved platform lets the trace build up where you can see it during the task, rather than after the books close, so you can act on what you're seeing while it still matters. The document shows you the process, but the coaching of it stays with you."
    ],
    "lenses": [],
    "stair": null,
@@ -3970,7 +3970,7 @@
    "ref": "metacognition-and-self-regulation/11-judge-against-a-standard",
    "slug": "judge-against-a-standard",
    "why": [
-    "When you ask pupils to check their work, most of them check how it feels, and \"it feels done\" tends to win. Zimmerman's point is that self-judgement needs a reference rather than a hunch, because evaluating without a standard is really just mood.",
+    "When you ask pupils to check their work, most of them check how it feels, and \"it feels done\" tends to win. Zimmerman's point is that self-judgement needs a reference rather than a hunch, because without a standard to compare against, pupils are really just reporting their mood.",
     "Giving pupils the mark scheme or an exemplar to compare against turns \"is it good?\" into \"does it do what this does?\", and that's a question they can actually answer."
    ],
    "example": [
@@ -4006,7 +4006,7 @@
    "example": [
     "When an assessment comes back, the reflection prompt asks which part of how you prepared helped most, and what would you change about how you prepare next time. A pupil who writes \"self-quizzing worked, I left the second topic too late\" has produced something they can actually use. \"I'm not a science person\" would have produced nothing at all."
    ],
-   "try": "Change the question you ask after results, starting with your written comments. Method questions model method attributions.",
+   "try": "Change the question you ask after results, starting with your written comments. When your questions are about the method, pupils' explanations start to be about the method too.",
    "notice": [
     "The language pupils reach for unprompted after results. Ability talk and method talk are easy to tell apart once you start listening for them.",
     "Whether a changed explanation changes the next preparation, because attribution is only doing its work when it feeds forward."
@@ -4029,7 +4029,7 @@
    "ref": "metacognition-and-self-regulation/13-turn-reflection-into-a-plan",
    "slug": "turn-reflection-into-a-plan",
    "why": [
-    "A great deal of classroom reflection ends at the reflection. \"I should be more careful\" gets written, the book closes, and nothing is different on Monday. Butler is really clear on this, that feedback only regulates learning if it changes the next action.",
+    "A great deal of classroom reflection stops just where it should be starting. \"I should be more careful\" gets written, the book closes, and nothing is different on Monday. Butler is really clear on this, that feedback only regulates learning if it changes the next action.",
     "So each reflection gets turned into one concrete adjustment, named and attached to the very next task. Reflection only really counts as metacognition when it changes what the learner does next."
    ],
    "example": [
@@ -4100,10 +4100,10 @@
    "try": "Ask one exit question this week, such as \"which part are you least sure of?\", and then act on the tally where the class can see you doing it.",
    "notice": [
     "Whether what pupils report matches the errors actually in their work. When it doesn't, that mismatch is your next teaching point about self-monitoring.",
-    "Whether the self-diagnosis gets sharper once pupils see their reports being used. Consequences tend to improve the reporting."
+    "Whether the self-diagnosis gets sharper once pupils see their reports being used, because it usually does when reporting honestly visibly leads somewhere."
    ],
    "consider": [
-    "The visible acting-on is what makes this work, because collected reflections that just vanish teach pupils that reflection is paperwork.",
+    "The visible acting-on is what makes this work, because collected reflections that just vanish teach pupils that reflecting isn't worth their effort.",
     "Where the reports and the work disagree, the reflection is still useful, just in a different way, because it tells you the monitoring needs teaching, and not only the content."
    ],
    "related": [
@@ -4160,7 +4160,7 @@
    ],
    "try": "Next time you name a strategy in class, add the when as well, which means the one or two task features that make it the right call here.",
    "notice": [
-    "Pupils' answers to \"why this method for this task?\". Answers that mention features of the task are conditional knowledge arriving.",
+    "Pupils' answers to \"why this method for this task?\". When the answers start mentioning features of the task, that's the conditional knowledge you're after beginning to form.",
     "Strategies misapplied with full confidence, such as flashcards aimed at essay skills. The method is fine, but the matching is where the gap is."
    ],
    "consider": [
@@ -4212,11 +4212,11 @@
    "ref": "metacognition-and-self-regulation/19-keep-what-works-drop-the-rest",
    "slug": "keep-what-works-drop-the-rest",
    "why": [
-    "Pupils keep study methods the way anyone keeps habits, because they're familiar and they feel productive, not because they've actually checked. Re-reading survives on exactly this. Winne's finding is that learners refine an approach by checking whether it worked, which means the checking has to be arranged.",
+    "Pupils keep study methods the way anyone keeps habits, because they're familiar and they feel productive, not because they've actually checked, and re-reading survives on exactly that. Winne's finding is that learners refine an approach by checking whether it worked, which means the checking has to be arranged.",
     "So the idea is that pupils trial a method, judge it against their results, and keep only what the evidence supports, so they're testing their own studying in the same way they'd test anything else."
    ],
    "example": [
-    "For three weeks, pupils log one line before each weekly quiz saying which method they used to prepare. Afterwards they add the score. At the end they read their own log, and one pupil finds that the evenings spent recopying notes went with their lowest scores, and the ten-minute self-quiz with their highest. The log makes the case, so the teacher doesn't have to."
+    "For three weeks, pupils log one line before each weekly quiz saying which method they used to prepare. Afterwards they add the score. At the end they read their own log, and one pupil finds that the evenings spent recopying notes went with their lowest scores, and the ten-minute self-quiz with their highest. Evidence they collected themselves tends to persuade far better than anything you could have told them."
    ],
    "try": "Attach a one-line method log to a quiz routine you already run. The routine is already there, so the logging is the only new bit.",
    "notice": [
@@ -4302,7 +4302,7 @@
     "The tool then supports retrieval the pupil has authored themselves, rather than serving up someone else's judgement of what counts."
    ],
    "example": [
-    "Pupils turn their notes on a topic into ten flashcards. The constraint does the teaching here, because each card front has to be answerable without giving the answer away, which forces decisions about what the essential knowledge actually is. The finished deck then drives their retrieval practice for the weeks that follow."
+    "Pupils turn their notes on a topic into ten flashcards. Each card front has to be answerable without giving the answer away, and meeting that constraint forces decisions about what the essential knowledge actually is. The finished deck then drives their retrieval practice for the weeks that follow."
    ],
    "try": "End a topic with \"write five questions a classmate should be able to answer\", then swap them over and answer. That's authoring and retrieval in one move, and there's no technology needed to start.",
    "notice": [
@@ -4338,7 +4338,7 @@
    ],
    "notice": [
     "Who reaches for focus mode unprompted once the cueing stops, because that's the habit either forming or not.",
-    "What pupils say when you ask them why they do it. A rule being followed and a choice being understood sound really different, and only the second one survives leaving school."
+    "What pupils say when you ask them why they do it. A rule being followed and a choice being understood sound really different, and it's the choice that pupils carry with them when they leave you."
    ],
    "consider": [
     "The point is that the pupil makes the choice deliberately. A block imposed from above does the regulating for them, and that has its place as an early scaffold, but this card is about handing that job over to the pupil.",
@@ -4358,7 +4358,7 @@
    "slug": "partner-not-substitute",
    "why": [
     "Willingham's line, that memory is the residue of thought, is the whole argument here. A pupil who offloads the thinking to AI hasn't done any thinking, so there's no residue, and nothing gets learned, however polished the work looks.",
-    "The distinction the card draws is between AI producing the reasoning and AI challenging reasoning the pupil has already done. The first is substitution, and it hollows out the very capacity this strand is trying to build. The second can work like an external check, provided the judging of the critique stays with the pupil."
+    "The distinction the card draws is between AI producing the reasoning and AI challenging reasoning the pupil has already done. The first is substitution, and it takes away the very capacity this strand is trying to build. The second can work like an external check, provided the judging of the critique stays with the pupil."
    ],
    "example": [
     "A pupil finishes a written argument, then asks the approved AI tool to find the weakest step in their reasoning. The tool points at a paragraph, and the pupil now has a decision to make, which is whether the critique is right and, if so, what changes. They revise, or they reject the critique with a reason, and either way the reasoning, both rounds of it, was theirs."
