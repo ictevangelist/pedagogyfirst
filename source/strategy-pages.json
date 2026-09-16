@@ -1464,7 +1464,7 @@
    "notice": [
     "Whether pupils read comments without being prompted, or wait to be told to.",
     "How many of your comments actually lead to a visible change in the work.",
-    "How long the engagement takes compared with how long the marking took, because the gap can be really telling."
+    "How long the engagement takes compared with how long the marking took, because the gap between the two can be really telling."
    ],
    "consider": [
     "Engagement needs lesson time, which means something else has to give way, and that trade-off is a planning decision rather than an afterthought.",
@@ -1488,7 +1488,7 @@
    "slug": "feed-up-feed-back-feed-forward",
    "why": [
     "Most comments tell a pupil how they did and then stop there. Hattie and Timperley's three questions, where am I going, how am I doing, and what next, are a really quick test of whether a comment can actually move the work on.",
-    "A comment that only answers the second question leaves the pupil holding a judgement with nowhere to take it. The first question needs criteria that have been shared, and the third needs a next step the pupil can actually act on."
+    "A comment that only answers the second question leaves the pupil holding a judgement with nothing to do about it. The first question needs criteria that have been shared, and the third needs a next step the pupil can actually act on."
    ],
    "example": [
     "A science teacher marking investigation write-ups checks each comment against the three questions before handing the books back. Where a comment reads only as a verdict, she adds a line naming the goal and a line naming the next move, so a pupil might read: your conclusion describes the pattern, the criteria ask you to explain it, so use your graph to say why it happens."
@@ -1500,7 +1500,7 @@
    ],
    "consider": [
     "Where am I going only works when criteria have been shared and understood first, which is Sadler's territory as much as this card's.",
-    "What next needs time to act built in, otherwise the third question gets answered and then wasted."
+    "What next needs time to act built in, because otherwise the third question gets answered and then nothing happens with the answer."
    ],
    "related": [
     "feedback/05-sadler-s-three-conditions",
@@ -1520,15 +1520,15 @@
     "Naming your target before you write is a small habit that makes a really big difference to what ends up on the page, and a comment about the person is usually easy to spot once you start looking for it."
    ],
    "example": [
-    "Marking a set of maths books, a teacher catches himself about to write that a pupil is a natural at this, and replaces it with a process comment instead: checking your answer against an estimate is what caught the error here. The warmth is just the same, but the target is different."
+    "Marking a set of maths books, a teacher catches himself about to write that a pupil is a natural at this, and replaces it with a process comment instead: checking your answer against an estimate is what caught the error here. The comment is just as warm, and now it tells the pupil what to do again next time."
    ],
-   "try": "For one class set, label each comment T, P or S as you write it, for task, process or self. The labels are for you rather than the pupils.",
+   "try": "For one class set, label each comment T, P or S as you write it, for task, process or self. The labels are for you rather than the pupils, and a week of them tells you a lot.",
    "notice": [
     "How much of your praise, when you label it honestly, turns out to be aimed at the person.",
     "Whether pupils can say what a comment was about, whether that's the answer, the method, or them."
    ],
    "consider": [
-    "Warmth belongs in the classroom, it just shouldn't be doing the job of feedback on the learning, and the two can happily live in the same conversation without living in the same sentence."
+    "Warmth absolutely belongs in the classroom. It just shouldn't be doing the job of feedback on the learning, and there's plenty of room for both in the same conversation."
    ],
    "related": [
     "feedback/18-praise-the-strategy-not-the-trait",
@@ -1544,7 +1544,7 @@
    "ref": "feedback/04-one-third-makes-it-worse",
    "slug": "one-third-makes-it-worse",
    "why": [
-    "Kluger and DeNisi's finding is one of the most sobering in this strand, because over a third of the feedback interventions they looked at actually made performance worse. Feedback is powerful, but the power runs in both directions.",
+    "Kluger and DeNisi's finding is one of the most sobering in this strand, because over a third of the feedback interventions they looked at actually made performance worse. Feedback is powerful, and it turns out it can be powerful in the wrong direction too.",
     "The dividing line in their analysis is where the attention goes. Comments that keep a pupil's attention on the work tend to help, and comments that pull attention onto the self tend not to. The check on the card, work or student, is simply the practical version of that finding."
    ],
    "example": [
@@ -1552,7 +1552,7 @@
    ],
    "notice": [
     "How pupils respond in the moment work is returned, whether that's heads down into the work or looking around comparing themselves with others.",
-    "Which of your comments you'd be glad to receive about your own work."
+    "Which of your comments you'd be glad to receive about your own work, because reading them that way round is a quick and honest check."
    ],
    "consider": [
     "A comment can be about the student without ever naming them. Try harder, more effort needed and you can do better are all self-directed, whatever the phrasing."
@@ -1571,15 +1571,15 @@
    "ref": "feedback/05-sadler-s-three-conditions",
    "slug": "sadler-s-three-conditions",
    "why": [
-    "Before feedback can do anything, three conditions have to hold. Sadler's argument, which anchors so much of this strand, is that pupils must know what quality looks like, be able to compare their own work against it, and have the chance to close the gap they find.",
-    "Miss any one of them and the rest stalls. Criteria shared after the work is finished can't guide it, a comparison pupils can't make wastes the criteria, and a gap identified with no time to close it just sits there."
+    "Before feedback can do anything, three conditions have to hold. Sadler's argument, which so much of this strand rests on, is that pupils must know what quality looks like, be able to compare their own work against it, and have the chance to close the gap they find.",
+    "If any one of them is missing, the others can't do much on their own. Criteria shared after the work is finished can't guide it, a comparison pupils can't make wastes the criteria, and a gap identified with no time to close it just stays a gap."
    ],
    "example": [
     "Before a design and technology project begins, the class looks at the criteria alongside two finished products of different quality and talks about which criteria separate them. Halfway through making, pupils stop and place their own work against the same criteria before deciding what to do next."
    ],
    "try": "Check one upcoming task against the three conditions, so criteria shared first, a built-in moment to compare, and time to act on what the comparison shows. Add whichever one is missing before changing anything else.",
    "notice": [
-    "Whether pupils' judgements of their own work start to look more like yours, which is the comparison condition beginning to work.",
+    "Whether pupils' judgements of their own work start to look more like yours, because that's the comparison condition beginning to work.",
     "Which of the three conditions your current routine handles least well, because there's usually one."
    ],
    "consider": [
@@ -1601,8 +1601,8 @@
    "ref": "feedback/06-immediate-for-simple-tasks",
    "slug": "immediate-for-simple-tasks",
    "why": [
-    "Some errors really shouldn't be left to sit. On simple and procedural tasks, Shute found that quick feedback stops mistakes embedding, because every repetition of a wrong method is practice at being wrong.",
-    "Waiting until next lesson to fix something that could be fixed now gives the error a whole week of rehearsal."
+    "Some errors really shouldn't be left to sit. On simple and procedural tasks, Shute found that quick feedback stops mistakes embedding, because every time a pupil repeats a wrong method, they're getting more practice at doing it wrong.",
+    "Waiting until next lesson to fix something that could be fixed now means the error gets a whole week of that practice before anyone touches it."
    ],
    "example": [
     "During column subtraction practice, a teacher checks answers as pupils work rather than collecting the books in. A pupil subtracting the smaller digit from the larger regardless of position gets caught on question three rather than question thirty."
@@ -1610,11 +1610,11 @@
    "try": "Pick one procedural practice task this week and mark it live, in the room, instead of taking it away. Books stay open and errors get fixed at the desk.",
    "notice": [
     "Whether the same procedural errors come back later in the week, which is the real test of whether the correction landed.",
-    "What pupils do immediately after a correction, whether they redo the question or move straight on."
+    "What pupils do immediately after a correction, whether they redo the question or move straight on, because the redo is where the fix actually happens."
    ],
    "consider": [
     "Immediate correction is for the simple and procedural. On complex work the guide's advice runs the other way, which is to let the struggle do its work first.",
-    "Deciding which tasks count as simple is a judgement about your class and your subject, and the teacher in the room knows that far better than a website does."
+    "Deciding which tasks count as simple is a judgement about your class and your subject, and the teacher in the room knows that far better than any guide does."
    ],
    "related": [
     "feedback/07-delayed-for-complex-tasks",
@@ -1633,20 +1633,20 @@
    "ref": "feedback/07-delayed-for-complex-tasks",
    "slug": "delayed-for-complex-tasks",
    "why": [
-    "Speed isn't always a virtue. On complex work, the research Shute and Kulhavy report points to a short delay before feedback, because immediate correction can short-circuit the very thinking the task was set to provoke.",
-    "A pupil midway through wrestling with a hard problem doesn't need the answer arriving, they need the wrestle, and feedback that lands too early can turn a thinking task into a copying one."
+    "Being quick with feedback isn't always the right call. On complex work, the research Shute and Kulhavy report points to a short delay before feedback, because immediate correction can cut off the very thinking the task was set to provoke.",
+    "A pupil midway through a genuinely hard problem doesn't need the answer arriving. They need the time to work at it, and feedback that lands too early can turn a thinking task into a copying one."
    ],
    "example": [
     "After pupils attempt a multi-step physics problem, the teacher collects the attempts in and says nothing that lesson. The feedback comes at the start of the next one, once pupils have a bit of distance from their own reasoning, and it begins by asking them to name their sticking point before they read the comment."
    ],
-   "try": "Choose one genuinely complex task and deliberately hold your feedback back for a day, and notice what you would have interrupted.",
+   "try": "Choose one genuinely complex task and deliberately hold your feedback back for a day. It's worth noticing what you would have interrupted if you'd stepped in straight away.",
    "notice": [
-    "Whether pupils persist for longer when they know correction isn't imminent.",
-    "What pupils ask you during the task when they can't hand the struggle straight back to you."
+    "Whether pupils persist for longer when they know correction isn't coming immediately.",
+    "What pupils ask you during the task when they can't hand the struggle straight back to you, because the questions change, and usually for the better."
    ],
    "consider": [
-    "This card and Immediate for Simple Tasks are really one principle rather than two, which is to match the timing to the complexity of the task, and which is which is a judgement for the teacher who knows the class and the content.",
-    "Delay means short here. A day or a lesson lets the processing happen, but two weeks is just slow marking."
+    "This card and Immediate for Simple Tasks are really one principle rather than two, which is to match the timing to the complexity of the task. Which task counts as which is a judgement for the teacher who knows the class and the content.",
+    "Delay means a short delay here. A day or a lesson lets the processing happen, and two weeks is just slow marking."
    ],
    "related": [
     "feedback/06-immediate-for-simple-tasks",
@@ -1663,7 +1663,7 @@
    "slug": "during-not-just-after",
    "why": [
     "Feedback returned weeks after the work is a bit of a post-mortem, accurate perhaps, but too late to change anything. Feedback given while pupils are still working shapes the work itself, which is the formative case Black and Wiliam made.",
-    "There's a lot to be said for proximity too. Moving around the room during the task puts you exactly where feedback is cheapest and most usable, at the point of the error and in the moment it happens."
+    "There's a lot to be said for simply being nearby too. Moving around the room during the task puts you exactly where feedback is cheapest and most usable, at the point of the error and in the moment it happens."
    ],
    "example": [
     "While pupils draft persuasive letters, the teacher circulates on a deliberate route rather than answering hands. Reading over shoulders, she catches the same weak opening in four books and pauses the room for ninety seconds to deal with it before it spreads any further."
@@ -1671,7 +1671,7 @@
    "try": "In your next extended task, plan your route around the room the way you'd plan a question, so you know who you'll reach first and what you're looking for when you arrive.",
    "notice": [
     "How many errors you catch mid-task that would otherwise have travelled home with you in thirty books.",
-    "Which pupils you naturally reach and which you consistently miss, because a deliberate route usually shows up a pattern."
+    "Which pupils you naturally reach and which you consistently miss, because a deliberate route usually shows up a pattern you didn't know you had."
    ],
    "consider": [
     "Stepping in during the moment suits some errors and not others, and on complex thinking the guide advises letting the struggle run first, so in-the-moment feedback is a timing choice rather than a default."
@@ -1691,7 +1691,7 @@
    "slug": "comment-only-no-grades",
    "why": [
     "Butler's study gives this strand one of its clearest warnings. When a grade sits alongside a comment, pupils look at the grade and miss the guidance, and it was comments alone that produced the greatest gains.",
-    "The grade doesn't just distract from the comment, it cancels it, and two lines of careful writing in the margin simply can't compete with a number at the top of the page."
+    "It's worth being clear about how strong the effect is, because the grade doesn't just distract a bit from the comment. In Butler's study, adding the grade wiped the comment's benefit out altogether, and two lines of careful writing in the margin simply can't compete with a number at the top of the page."
    ],
    "example": [
     "A geography teacher returns assessed work with comments only. Pupils respond to the comments and improve one section, and only then, at the end of the week, do the grades go into the gradebook and become visible."
@@ -1702,8 +1702,8 @@
     "Whether the talk between pupils starts to shift from comparing scores to comparing responses."
    ],
    "consider": [
-    "If your school mandates grades, the card's advice is about sequencing rather than defiance, so delay the grade until the feedback has been used.",
-    "Comment-only work still needs comments worth acting on, and taking the grade away really exposes the quality of what's left."
+    "If your school expects grades, the card's advice is about sequencing rather than defiance, so delay the grade until the feedback has been used.",
+    "Comment-only work still needs comments worth acting on, and taking the grade away shows you very quickly what the comments on their own are actually worth."
    ],
    "related": [
     "feedback/21-build-in-time-to-act",
@@ -1723,15 +1723,15 @@
    "slug": "reduce-volume-raise-focus",
    "why": [
     "A page of comments overwhelms the pupil and exhausts the teacher, and lots of it goes unread anyway. The evidence in this guide is blunt about that: feedback is not what the teacher gives, it is what the learner does with it, and nobody does thirty things with thirty comments.",
-    "One or two precise targets land. Choosing them is actually harder than writing many, because it forces you to make a judgement about what would make the biggest difference to this pupil right now."
+    "One or two precise targets are a different story, because a pupil can actually hold them. Choosing them is harder than writing many, and that's rather the value of it, because it makes you decide what would make the biggest difference to this pupil right now."
    ],
    "example": [
     "Marking a set of essays, a teacher writes one sentence per script, which is the single change that would most improve the next draft. The marking gets noticeably quicker, but the real change comes next lesson, when pupils spend ten minutes acting on the target and for once every pupil knows exactly what theirs is."
    ],
    "try": "Mark your next class set with a one-target rule. If you catch yourself writing a second comment, ask whether it's more important than the first, and if it is, swap them over.",
    "notice": [
-    "Whether pupils can tell you their target the next day. With a page of comments they usually can't, but with one they usually can.",
-    "What happens to the quality of the targets you choose when the choosing is the whole job."
+    "Whether pupils can tell you their target the next day. With a page of comments they usually can't, and with one they usually can.",
+    "What happens to the quality of the targets you choose when choosing well is the main job rather than an afterthought."
    ],
    "consider": [
     "Less volume only works alongside time to act, so one precise target that pupils never get a lesson minute to work on is still wasted effort.",
@@ -1756,14 +1756,14 @@
    "slug": "peer-feedback-with-structure",
    "why": [
     "Handing assessment over to pupils without structure produces exactly what Topping's research predicts, so you get empty praise, vague niceness and the occasional unkindness. With criteria and a protocol though, peer feedback becomes learning for both the giver and the receiver.",
-    "There's a second benefit hiding in it too. Judging another pupil's work against criteria is practice at the very comparison Sadler says pupils must learn to make about their own."
+    "There's a second benefit tucked inside it too, because judging another pupil's work against criteria is practice at the very comparison Sadler says pupils must learn to make about their own."
    ],
    "example": [
-    "Pupils swap lab reports with a fixed protocol. They check the report against two named criteria, mark where each one is met, and write one question for the author, with no general comments allowed. The teacher then samples the peer feedback itself, because the quality of the judging is evidence too."
+    "Pupils swap lab reports with a fixed protocol. They check the report against two named criteria, mark where each one is met, and write one question for the author, with no general comments allowed. The teacher then samples the peer feedback itself, because how well pupils judge is evidence too."
    ],
    "try": "Start with one criterion rather than a rubric. Pupils check a partner's work against a single shared criterion and mark exactly where it is or isn't met.",
    "notice": [
-    "The language pupils use about work, because criteria words appearing in their talk is the structure doing its job.",
+    "The language pupils use about work, because when the criteria words start turning up in their talk, the structure is doing its job.",
     "Whether the feedback stays on the work or drifts to the person, which pupils find just as hard as adults do."
    ],
    "consider": [
@@ -1778,14 +1778,14 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "Topping's work on peer assessment found benefits flowing to the assessor and the assessed alike, provided the structure holds, and the structure isn't an optional extra, it's the part that makes the whole thing work."
+   "wider": "Topping's work on peer assessment found benefits flowing to the assessor and the assessed alike, provided the structure holds, and the structure isn't an optional extra, it's what makes the whole thing work."
   },
   {
    "ref": "feedback/12-self-assessment-as-process",
    "slug": "self-assessment-as-process",
    "why": [
-    "Andrade's finding rearranges the usual worry about self-assessment. Pupils' judgements don't need to be accurate for the practice to work, because it's the act of comparing work against criteria that improves performance, so the process really is the point.",
-    "That takes a lot of the pressure off. You're not training examiners, you're giving pupils repeated practice at holding their work up against a standard, which is exactly the comparison Sadler's conditions require."
+    "Andrade's finding takes a lot of the usual worry out of self-assessment. Pupils' judgements don't need to be accurate for the practice to work, because it's the act of comparing work against criteria that improves performance, so the comparing itself is what you're after.",
+    "That takes the pressure off you as well as them. You're not trying to turn pupils into examiners. You're giving them repeated practice at holding their work up against a standard, which is exactly the comparison Sadler's conditions require."
    ],
    "example": [
     "Before handing in an essay, pupils complete a short self-review against the criteria, saying where each one is met, where it isn't, and one change they've made as a result. The teacher marks the essay afterwards as usual, but reads the self-review first."
@@ -1814,7 +1814,7 @@
    "ref": "feedback/13-dialogic-feedback",
    "slug": "dialogic-feedback",
    "why": [
-    "A written comment is usually a full stop. Carless's research argues for making it a turn in a conversation instead, so pupils question, clarify and respond to comments over time rather than receiving a final judgement.",
+    "A written comment usually ends the exchange, because the pupil reads it, or doesn't, and that's that. Carless's research argues for making the comment a turn in a conversation instead, so pupils question, clarify and respond to comments over time rather than receiving a final judgement.",
     "Uptake really does rise when feedback works this way, partly because a pupil who can ask what a comment means no longer has to guess, and a pupil who has replied to a comment has already begun to act on it."
    ],
    "example": [
@@ -1823,10 +1823,10 @@
    "try": "End one comment per pupil with a question that needs an answer, and collect the answers in. The replies will show you which comments were understood.",
    "notice": [
     "Which comments get genuine replies and which get token ones, because the difference maps really closely onto which comments were worth writing.",
-    "Whether pupils start initiating, because asking about a comment is feedback literacy showing itself."
+    "Whether pupils start asking about comments without being prompted, because that's their feedback literacy growing, and it's worth encouraging when it appears."
    ],
    "consider": [
-    "Dialogue takes longer than delivery, so it can't be every piece. Choosing where a feedback conversation pays its way, usually a draft heading for redraft rather than a finished piece, is the design decision."
+    "Dialogue takes longer than delivery, so it can't be every piece. Choosing where a feedback conversation is worth the time, usually a draft heading for redraft rather than a finished piece, is the design decision."
    ],
    "related": [
     "feedback/17-feedback-must-cause-thinking",
@@ -1843,7 +1843,7 @@
    "slug": "technology-as-feedback-source",
    "why": [
     "Not every kind of feedback needs you. Automated tools can check factual accuracy and procedural correctness faster than any teacher can, but what they can't do is respond to voice, argument or creativity. The card's advice is a division of labour, so you match the feedback source to what's being assessed.",
-    "Done well, this buys back the scarcest resource in the system, which is teacher attention, and spends it where automation simply can't go."
+    "Done well, this gives you back some of the scarcest thing in teaching, which is your attention, and lets you spend it on the parts of the work no tool can read."
    ],
    "example": [
     "In a languages classroom, the approved practice tool handles vocabulary and conjugation accuracy, correcting as pupils go. The teacher's written feedback on the same unit leaves those layers alone and looks instead at how convincingly the pupil's letter argues its case."
@@ -1874,18 +1874,18 @@
    "slug": "whole-class-feedback",
    "why": [
     "Reading a class set shows you things no single script can, such as the same misconception in eleven books, a strength half the class shares, or one gap that would repay some whole-class teaching. Whole class feedback works from those patterns, so you teach to the gap, not to each paper.",
-    "It's sustainable for you and precise for pupils, which is a rare combination in feedback, and thirty individual paragraphs saying the same thing serve nobody better than one well-taught response to the pattern."
+    "It's sustainable for you and precise for pupils, which is a rare combination in feedback, and thirty individual paragraphs saying the same thing don't serve anyone better than one well-taught response to the pattern."
    ],
    "example": [
     "After reading a set of essays without writing in them, a teacher notes three recurring issues and one common strength. The next lesson opens with the pattern, which covers what this class does well, the error many of them share, and the one improvement to make now, and pupils then find and fix that issue in their own work."
    ],
    "try": "Read your next set with a blank sheet beside you and nothing in your pen for the books. Record the patterns only, and build the follow-up lesson from the sheet.",
    "notice": [
-    "Whether pupils can find the general point in their own work, which is the step where whole class feedback succeeds or fails.",
-    "How your reading changes when you're hunting for patterns rather than composing comments."
+    "Whether pupils can find the general point in their own work, because that's the step where whole class feedback succeeds or fails.",
+    "How your reading changes when you're looking for patterns rather than composing comments."
    ],
    "consider": [
-    "Some pupils will need the bridge built for them, because the class-level point and their own page aren't automatically connected, so a quick check on who has found their own example is well worth the two minutes.",
+    "Some pupils will need help connecting the class-level point to their own page, because the two aren't automatically joined up for them, so a quick check on who has found their own example is well worth the two minutes.",
     "Whole class feedback replaces some individual marking rather than all of it, and which pieces still need an individual response is a judgement about the work and the class."
    ],
    "related": [
@@ -1905,8 +1905,8 @@
    "ref": "feedback/16-task-not-person",
    "slug": "task-not-person",
    "why": [
-    "The fastest way to make feedback backfire is to aim it at the person. Kluger and DeNisi found that comments which threaten self-concept decrease performance, because attention pulled to the self is attention pulled off the work.",
-    "The card's two examples carry the rule. This paragraph needs restructuring gives the pupil somewhere to go, but you need to try harder gives them somewhere to hide."
+    "The fastest way to make feedback backfire is to aim it at the person. Kluger and DeNisi found that comments which threaten self-concept decrease performance, because once a pupil's attention is on themselves, it isn't on the work any more.",
+    "The card's two examples show the difference really clearly. This paragraph needs restructuring tells the pupil what to work on, and you need to try harder tells them nothing except how they've been judged."
    ],
    "example": [
     "Rereading his comments before returning books, a teacher rewrites each one whose subject is the pupil until its subject is the work, so you have not explained this becomes this step needs the reason it works, and you must check your work becomes three of these answers fail the estimate test."
@@ -1935,8 +1935,8 @@
    "ref": "feedback/17-feedback-must-cause-thinking",
    "slug": "feedback-must-cause-thinking",
    "why": [
-    "If a comment asks nothing of the pupil, it's information rather than feedback. Wiliam's test is a demanding one, because the measure of feedback is the thinking it causes, and a comment that does the pupil's thinking for them causes none.",
-    "Why might this be stronger with evidence leaves work for the learner to do, but inserting the evidence yourself finishes the job and ends the learning."
+    "If a comment asks nothing of the pupil, it's information rather than feedback. Wiliam's test is a demanding one, because the measure of feedback is the thinking it causes, and a comment that does the pupil's thinking for them doesn't cause any.",
+    "Why might this be stronger with evidence leaves work for the learner to do. Inserting the evidence yourself finishes the job for them, and once the job is finished there's nothing left for them to learn from."
    ],
    "example": [
     "A computing teacher stops writing the fix beside broken code. Instead each comment names the symptom and asks a question, such as this loop never ends, so what condition would stop it? Pupils write the answer down, and then they make the change."
@@ -1948,7 +1948,7 @@
    ],
    "consider": [
     "Causing thinking presupposes time to think, so this card falls flat without lesson minutes set aside for the response.",
-    "Not every comment needs to be a puzzle. Simple procedural slips are better corrected than pondered, so save the thinking for where the thinking pays."
+    "Not every comment needs to be a puzzle. Simple procedural slips are better corrected than pondered, so keep the questions for the parts of the work where thinking will actually help."
    ],
    "related": [
     "feedback/22-questions-not-corrections",
@@ -1958,14 +1958,14 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "This is Wiliam's contribution to the strand in a nutshell, which is that feedback exists to change the learner's thinking, and anything that bypasses the thinking bypasses the learning."
+   "wider": "This is the heart of Wiliam's contribution to the strand, which is that feedback exists to change the learner's thinking, and a comment that skips past the thinking skips past the learning too."
   },
   {
    "ref": "feedback/18-praise-the-strategy-not-the-trait",
    "slug": "praise-the-strategy-not-the-trait",
    "why": [
     "Praise feels safe, and that's exactly why it needs some care. Butler found that task-involving feedback improves performance while ego-involving feedback shifts attention from the learning to the self-image, and praise of traits, such as cleverness, talent or being a natural, is ego-involving however kindly it's meant.",
-    "Praise the strategy and the praise becomes reusable, because a pupil told their method worked can use that method again, but a pupil told they're gifted has nothing to act on."
+    "Praising the strategy gives the pupil something they can use again, because a pupil told their method worked can go back to that method next time, and a pupil told they're gifted has been given nothing they can act on at all."
    ],
    "example": [
     "A music teacher watching a pupil finally manage a difficult passage says: slowing it right down and only speeding up when it was clean, that is what got you there. The praise names something the pupil chose to do and can choose to do again."
@@ -1976,7 +1976,7 @@
     "What happens to pupils' willingness to have a go at hard tasks when praise attaches to methods rather than ability."
    ],
    "consider": [
-    "This is a phrasing habit more than a policy, and habits shift slowly, so a short list of strategy-praise stems kept where you can see it, for you rather than the pupils, does a lot of the early lifting."
+    "This is a phrasing habit more than a policy, and habits shift slowly, so a short list of strategy-praise stems kept where you can see it, for you rather than the pupils, helps a lot in the early weeks."
    ],
    "related": [
     "feedback/16-task-not-person",
@@ -1992,7 +1992,7 @@
    "ref": "feedback/19-build-feedback-literacy",
    "slug": "build-feedback-literacy",
    "why": [
-    "Pupils are rarely taught how to read feedback, and it really shows. A comment that seems perfectly clear to the teacher who wrote it can be opaque to the pupil holding it, and acting on feedback is a skill with steps, because you have to understand the comment, find where it applies in the work, and know the move it's asking for.",
+    "Pupils are rarely taught how to read feedback, and it really shows. A comment that seems perfectly clear to the teacher who wrote it can be baffling to the pupil holding it, and acting on feedback is a skill with steps, because you have to understand the comment, find where it applies in the work, and know the move it's asking for.",
     "Carless and Boud call this feedback literacy, and their point is right there on the card: it is taught, not assumed."
    ],
    "example": [
@@ -2000,11 +2000,11 @@
    ],
    "try": "Take the card's own script into your next return-of-work lesson, so one comment, modelled aloud, with the meaning and the next move included, before pupils touch their own.",
    "notice": [
-    "The questions pupils ask about comments, because fewer what-does-this-mean questions over a term is the literacy building.",
+    "The questions pupils ask about comments, because fewer what-does-this-mean questions over a term means the literacy is building.",
     "Whether the modelling transfers, so can pupils decode a comment shaped differently from the one you modelled?"
    ],
    "consider": [
-    "Literacy is easier to build when there's a consistent shape to read. If your comments follow a predictable pattern, pupils can learn that pattern, but comments written differently every time keep them beginners."
+    "Literacy is easier to build when there's a consistent shape to read. If your comments follow a predictable pattern, pupils can learn that pattern, and comments written differently every time make the learning start again each round."
    ],
    "related": [
     "feedback/22-questions-not-corrections",
@@ -2050,8 +2050,8 @@
    "ref": "feedback/21-build-in-time-to-act",
    "slug": "build-in-time-to-act",
    "why": [
-    "Time to act is the part that gets squeezed out most often, and the strand is blunt about the cost: feedback with no time to act on it is wasted. Every hour you spend marking either pays off or gets lost in the ten minutes after the work goes back.",
-    "Beginning the next lesson with pupils reading and responding to comments before anything new makes the priority structural rather than something you just hope for, because the response is the learning event and the comments were only ever the preparation for it."
+    "Time to act is the part that gets squeezed out most often, and the strand is blunt about the cost: feedback with no time to act on it is wasted. However many hours the marking took, what pupils do in the ten minutes after the work goes back is where any of it turns into learning.",
+    "Beginning the next lesson with pupils reading and responding to comments before anything new arrives makes the priority structural rather than something you just hope for. The response is where the learning happens, and the comments were only ever the preparation for it."
    ],
    "example": [
     "Work goes back at the start of the lesson rather than the end. Pupils read their comments, rewrite one section in response, and only then does new content begin. There's nothing complicated about the routine, and its value is simply that it happens every time work is returned."
@@ -2083,19 +2083,19 @@
    "ref": "feedback/22-questions-not-corrections",
    "slug": "questions-not-corrections",
    "why": [
-    "When you correct a pupil's work for them, you do the thinking and they watch you do it. Returning work with questions instead keeps the cognitive work where the learning is, which is with the pupil.",
-    "What evidence supports this claim? asks something of the writer that inserting the missing evidence never will, and if feedback requires no response from the learner, it is information, not feedback."
+    "When you correct a pupil's work for them, the thinking has been done by the time they read it. Returning work with questions instead keeps the cognitive work where the learning is, which is with the pupil.",
+    "What evidence supports this claim? asks something of the writer that inserting the missing evidence never will, and as the strand keeps saying, if feedback requires no response from the learner, it is information, not feedback."
    ],
    "example": [
     "An English teacher returns paragraphs with one margin question each, such as which word here tells the reader how to feel, or what is your evidence for this? The lesson opens with pupils answering their question in a different colour before any new content begins."
    ],
    "try": "On the next piece you mark, swap the corrections on one section for questions, and give five minutes next lesson for written answers. The answers will tell you whether the questions were any good.",
    "notice": [
-    "The quality of pupils' responses, because a question that gets a one-word answer back was probably just a correction with a question mark on the end.",
+    "The quality of pupils' responses, because a question that gets a one-word answer back was probably doing the same job as a correction, just less directly.",
     "Whether the same question stops being needed over time, which is the whole point of asking rather than fixing."
    ],
    "consider": [
-    "Simple procedural slips are often better corrected straight away, and the guide is clear that quick feedback stops mistakes embedding on simple tasks, so save the questions for the thinking rather than the typos.",
+    "Simple procedural slips are often better corrected straight away, and the guide is clear that quick feedback stops mistakes embedding on simple tasks, so keep the questions for the thinking rather than the typos.",
     "Pupils need to know how to act on a question, which is feedback literacy, and it has to be taught with an exemplar at least once."
    ],
    "related": [
@@ -2110,15 +2110,15 @@
    ],
    "wider": "This is Hattie and Timperley's territory, because feedback that works answers where next, and a good question is often the most honest form that answer can take.",
    "tech": [
-    "An annotation tool with a reply function, through your setting's approved platform, turns each margin question into a visible exchange, with your question and their written answer in one place. The reply is the point, because a question with nowhere to answer it is really just a correction in disguise."
+    "An annotation tool with a reply function, through your setting's approved platform, turns each margin question into a visible exchange, with your question and their written answer in one place. The reply is the point, because a question with nowhere to answer it ends up working just like a correction."
    ]
   },
   {
    "ref": "feedback/23-sustainable-feedback",
    "slug": "sustainable-feedback",
    "why": [
-    "Boud's argument reaches past the next piece of work. If pupils always need you to tell them how they did, the system has failed, however good the telling, because feedback should be building the learner's capacity to judge quality for themselves.",
-    "That reframes the goal of much of this strand. Criteria, self-assessment, dialogue and time to act aren't only ways to improve this essay, they're an apprenticeship in judging quality, and an apprenticeship is supposed to come to an end."
+    "Boud's argument reaches past the next piece of work. If pupils always need you to tell them how they did, then however good the telling is, something important hasn't happened, because feedback should be building the learner's capacity to judge quality for themselves.",
+    "That changes what a lot of this strand is for. Criteria, self-assessment, dialogue and time to act aren't only ways to improve this essay. They're also how pupils gradually learn to judge quality without you, and the aim is that one day they can."
    ],
    "example": [
     "Across a term, pupils build a portfolio in which every submitted piece carries their own prior judgement against the criteria. The teacher's response engages with the judgement as much as the work, so where the pupil's assessment was sound it says so and steps back, and where it missed, that gap becomes the feedback."
@@ -2126,10 +2126,10 @@
    "try": "Before your next round of marking, ask pupils to predict the feedback they'll get. Your marking then confirms, refines or corrects their judgement, which is exactly the capacity you're trying to build.",
    "notice": [
     "Whether pupils' predictions of their feedback sharpen up over time.",
-    "Who still can't start work without asking whether it's right, and whether that number falls."
+    "Who still can't start work without asking whether it's right, and whether that number falls across the term."
    ],
    "consider": [
-    "Independence is designed in gradually rather than declared. The scaffolds of criteria and structured self-review come first and fade later, and how fast to fade them is a judgement about the class in front of you."
+    "Independence is built up gradually rather than announced. The scaffolds of criteria and structured self-review come first and fade later, and how fast to fade them is a judgement about the class in front of you."
    ],
    "related": [
     "feedback/12-self-assessment-as-process",
@@ -2148,18 +2148,18 @@
    "slug": "feedback-as-design-not-event",
    "why": [
     "Good feedback rarely happens by accident, and the closing card of the strand says why: feedback designed into learning from the start works, and left to chance, it doesn't. Who gives it, when it comes, what form it takes and when pupils act on it are all scheme-of-work decisions rather than things you improvise on marking night.",
-    "Designing it in also makes the rest of the strand affordable, because comment-only pieces, peer review, whole class feedback and response time stop competing for lesson minutes when the scheme already holds a place for each of them."
+    "Designing it in also makes the rest of the strand possible in the time you actually have, because comment-only pieces, peer review, whole class feedback and response time stop competing for lesson minutes when the scheme already holds a place for each of them."
    ],
    "example": [
     "Planning a six-week unit, a teacher fixes two feedback points before sequencing any content, so a mid-unit draft that gets whole class feedback with a response lesson, and a final piece that gets individual comments with time to act. Everything else in the unit is arranged around those fixed points."
    ],
    "try": "Open your next unit plan and look for the moment pupils act on feedback. If you can't point to it, add it before you add anything else.",
    "notice": [
-    "How the designed feedback points survive contact with the term, because what gets skipped under pressure shows you where the design needs protecting, or rethinking.",
+    "Which of the designed feedback points get skipped when the term is under pressure, because those are the ones that need protecting, or rethinking.",
     "Whether pupils know the rhythm, so when feedback is coming and what they'll be expected to do with it."
    ],
    "consider": [
-    "Design includes deciding what won't get detailed feedback, because a scheme that promises rich feedback on everything is unlikely to deliver it on anything."
+    "Design includes deciding what won't get detailed feedback, because a scheme that promises rich feedback on everything usually ends up delivering it on very little."
    ],
    "related": [
     "feedback/21-build-in-time-to-act",
