@@ -5,20 +5,20 @@
    "ref": "retrieval-practice/01-retrieval-beats-re-reading",
    "slug": "retrieval-beats-re-reading",
    "why": [
-    "Ask a class how they revise and most of them will describe some version of reading their notes again. It feels productive, and that's really the problem, because the conditions that feel smooth and productive, such as rereading and massed practice, mostly give pupils confidence without much retention.",
-    "Roediger and Karpicke showed that students who were tested on material remembered far more of it weeks later than students who spent the same time restudying it. The card puts the implication plainly: the testing is the learning, not the preparation for it."
+    "Ask a class how they revise and most of them will describe some version of reading their notes again. It's completely understandable, because re-reading feels productive while you're doing it. The trouble is that the feeling is misleading. Reading something again mostly gives pupils a sense of familiarity with the page, and familiarity isn't the same thing as being able to remember the material when they need it.",
+    "Roediger and Karpicke showed this really clearly. Students who were tested on material remembered far more of it weeks later than students who spent the same amount of time re-reading it. The card puts the implication plainly: the testing is the learning, not the preparation for it."
    ],
    "example": [
-    "Before an end-of-topic check, an English class spends ten minutes writing down what they can remember about a poem's imagery rather than re-reading their anthology notes, and then they check what they've written against the notes. It takes just the same amount of time as a read-through would, but the effort is now in the remembering rather than the reading, and that's where the research says it needs to be."
+    "Before an end-of-topic check, an English class spends ten minutes writing down what they can remember about a poem's imagery, with their anthology notes closed. Then they open the notes and check what they've written against them. It takes the same amount of time as a read-through would have done, but the effort has gone into remembering rather than reading, and the research says that's the effort that makes the difference."
    ],
    "notice": [
-    "How pupils react when the notes close. If they're reluctant to have a go without them, that's often the illusion of knowing at work.",
-    "What the checking stage turns up. The gaps pupils find for themselves are exactly the ones that re-reading would have hidden from them.",
-    "Whether confidence and recall actually match up. Pupils who felt they knew the material from reading it may well find they can't produce it when asked."
+    "How pupils react when the notes close. If they're reluctant to have a go without them, that often tells you they've mistaken familiarity for knowing.",
+    "What the checking stage turns up. The gaps pupils find for themselves here are the ones that re-reading would have hidden from them, so they're worth paying attention to.",
+    "Whether confidence and recall actually match up. Pupils who felt they knew the material from reading it can be surprised by how little of it they can produce when asked."
    ],
    "consider": [
-    "This works as a swap for re-reading rather than something extra on top. The time pupils would have spent going over their notes becomes the retrieval attempt plus the check, so nothing new is being added to anyone's workload.",
-    "You can expect a bit of resistance at first, because retrieval feels harder than reading. The research suggests that difficulty is actually doing the useful work though, so it isn't a sign that something has gone wrong."
+    "This works best as a straight swap for re-reading rather than something extra on top. The time pupils would have spent going over their notes becomes the retrieval attempt plus the check, so it doesn't add anything to anyone's workload.",
+    "You can expect a bit of resistance at first, because retrieving feels harder than reading. That difficulty is normal, and the research suggests it's actually part of what makes the practice work, so it isn't a sign that something has gone wrong."
    ],
    "related": [
     "retrieval-practice/03-brain-dump",
@@ -28,27 +28,27 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "This is the testing effect at its most direct. Roediger and Karpicke found that retrieval did more for retention weeks later than restudying did, and Dunlosky's reviews rank practice testing among the most effective techniques available."
+   "wider": "This is the testing effect, and it's one of the best evidenced findings in the guide. Roediger and Karpicke found that retrieval did more for retention weeks later than re-studying did, and Dunlosky's reviews rank practice testing among the most effective study techniques available."
   },
   {
    "ref": "retrieval-practice/02-low-stakes-starter-quizzes",
    "slug": "low-stakes-starter-quizzes",
    "why": [
-    "You ask five questions at the start of the lesson on things you've taught before, and nothing goes in the gradebook. It isn't much to watch, but that's rather the point, because it makes regular retrieval a habit rather than an event.",
-    "The low stakes are doing a lot of the work too. Agarwal found routine quizzing reduces test anxiety rather than causing it, because when it happens often and nothing rides on it, it stops being a threat and becomes practice. As the card says, the quiz is not the assessment. It is the learning."
+    "Five questions at the start of the lesson, on things you've taught before, with nothing going in the gradebook. It doesn't look like much, and that's fine, because the value is in the routine. A little retrieval done regularly, lesson after lesson, does far more for remembering than the occasional big revision session.",
+    "The low stakes are doing a lot of the work too. Agarwal found that routine quizzing reduces test anxiety rather than causing it, because when it happens often and nothing rides on it, pupils stop seeing it as a threat and start treating it as practice. As the card says, the quiz is not the assessment. It is the learning."
    ],
    "example": [
-    "A science class starts every lesson the same way, with five questions on the board covering earlier topics, answered from memory in the back of books and self-marked in a minute. Nothing is collected in and nothing is graded, and the teacher notes which questions caused trouble and moves on."
+    "A science class starts every lesson the same way, with five questions on the board covering earlier topics. Pupils answer from memory in the back of their books and self-mark in a minute or so. Nothing is collected in and nothing is graded. The teacher notes which questions caused trouble, and moves on."
    ],
-   "try": "Pick one class and try five questions tomorrow, self-marked. It's absolutely fine to reuse questions from earlier lessons, because doing it regularly helps far more than fresh questions every time.",
+   "try": "Pick one class and try five questions tomorrow, self-marked. It's absolutely fine to reuse questions from earlier lessons, because it's the doing it regularly that helps, far more than having fresh questions every time.",
    "notice": [
     "Which questions the class keeps getting wrong. Those topics need reteaching, not just quizzing again.",
-    "Whether the routine feels low-stakes to the pupils as well as being low-stakes on paper. Agarwal's finding shows up as pupils treating the quiz as a normal part of the lesson.",
-    "How long it really takes. If the starter is swallowing fifteen minutes, it's the admin that needs trimming, not the retrieval."
+    "Whether the routine feels low stakes to the pupils, not just on paper. You'll know Agarwal's finding is holding when pupils treat the quiz as a normal part of the lesson rather than something to worry about.",
+    "How long it actually takes. If the starter is swallowing fifteen minutes, it's usually the admin that needs trimming rather than the retrieval."
    ],
    "consider": [
-    "Keeping it out of the gradebook isn't an optional extra. The low stakes are why the anxiety finding holds, so the moment marks ride on it, you've changed the activity.",
-    "Self-marking keeps the workload at zero and puts the checking where it's most useful, in the pupil's own hands, straight away."
+    "Keeping it out of the gradebook isn't an optional extra. The low stakes are the reason the anxiety finding holds, so the moment marks ride on it, it becomes a different activity.",
+    "Self-marking keeps the workload at zero, and it puts the checking where it's most useful, in the pupil's own hands, straight away."
    ],
    "related": [
     "retrieval-practice/07-yesterday-last-week-last-month",
@@ -58,34 +58,34 @@
    ],
    "lenses": [],
    "tech": [
-    "This is the routine where an approved quiz or response tool in your setting can genuinely help, with quick two-minute starters every lesson, no marking, and results you can glance at while pupils move on. Let the tool look after the admin, the collecting in and the scoring, and keep the retrieval effort with the pupils. If it starts to feel like a fastest finger first round though, rewarding speed over thought, it's taking away the very difficulty that makes the practice worthwhile."
+    "This is a routine where the approved quiz or response tool in your setting can genuinely help, with quick starters every lesson, no marking, and results you can glance at while pupils move on. Let the tool look after the admin, the collecting in and the scoring, and keep the retrieval effort with the pupils. One thing to watch for is pace, because if it turns into a race, rewarding speed over thought, it takes away the very difficulty that makes the practice worthwhile."
    ],
    "stair": {
-    "lede": "Writing five fresh questions every lesson is the sort of drafting job AI does well, through the approved tool in your setting, and this is Mark's own STAIR example for exactly this job:",
+    "lede": "Writing five fresh questions every lesson is the sort of drafting job AI does well, through the approved tool in your setting. This is Mark's own STAIR example for exactly this job:",
     "prompt": "Act as a primary teacher who is a science specialist. Create retrieval questions on the water cycle for Year 5. Keep tightly to evaporation, condensation, precipitation and collection. Present the output in clearly labelled sections.\n\nPupils should be able to demonstrate confident explanations and supply short applied questions.\n\nEvery question must include plausible distractors based on age-appropriate misconceptions.\n\nKeep all questions concise with no added detail, definitions or answers.",
-    "after": "Swap the role, topic and year group for your own, then iterate until the questions match what you actually taught, because that's the I in STAIR. The judgement about which questions make the cut stays with you."
+    "after": "Swap the role, topic and year group for your own, and then go back and forth with it until the questions match what you actually taught, because that's the I in STAIR. The judgement about which questions make the cut stays with you."
    },
-   "wider": "Roediger and Karpicke supply the memory case for frequent testing, and Agarwal's classroom studies supply the reassurance that, done routinely and without stakes, quizzing reduces test anxiety rather than feeding it."
+   "wider": "Roediger and Karpicke supply the memory case for frequent testing, and Agarwal's classroom studies supply the reassurance that quizzing, done routinely and without stakes, reduces test anxiety rather than feeding it."
   },
   {
    "ref": "retrieval-practice/03-brain-dump",
    "slug": "brain-dump",
    "why": [
-    "Most revision defaults to putting information back in front of pupils, so they re-read, they highlight and they copy out notes. The research in this guide points the other way, because retrieval, getting the knowledge out, does more for long term memory than another pass over the page.",
-    "A brain dump is the simplest possible version of that. It needs no preparation, no question writing and no technology, and it gives you something a quiz can't, which is a picture of what pupils reach for when nothing prompts them, and the order it comes out in."
+    "Most revision defaults to putting information back in front of pupils, so they re-read, they highlight, and they copy out their notes. The research in this guide points the other way. Getting the knowledge out, retrieving it, does more for long term memory than another pass over the page.",
+    "A brain dump is the simplest possible version of that. It needs no preparation, no question writing and no technology, and it shows you something a quiz can't, which is what pupils reach for when nothing prompts them, and the order it comes out in."
    ],
    "example": [
-    "Two lessons into a new topic, a class gets a blank page and two minutes to write everything they can remember about last lesson, with no notes and no talking. Afterwards, pupils open their books and check what they missed. The teacher asks for one thing that didn't come back, and the answers help to shape the start of the next lesson."
+    "Two lessons into a new topic, a class gets a blank page and two minutes to write down everything they can remember about last lesson, with no notes and no talking. Afterwards, pupils open their books and check what they missed. The teacher asks for one thing that didn't come back, and the answers help shape the start of the next lesson."
    ],
-   "try": "Try ending one lesson this week with it. Give pupils two minutes and a blank page to write everything they can remember from today, and keep it out of any book you mark, because the point is the retrieval rather than the record.",
+   "try": "Try ending one lesson this week with it. Give pupils two minutes and a blank page to write everything they can remember from today, and keep it out of any book you mark, because the value is in the retrieving rather than in the record it leaves.",
    "notice": [
     "What most of the class couldn't recall. The card says it plainly: that is precisely where teaching needs to return.",
     "Who writes steadily and who freezes at the blank page. Freezing tells you something useful too, and cued recall is a gentler step back for those pupils.",
-    "Whether what comes back is what you'd have predicted, because it often isn't."
+    "Whether what comes back is what you'd have predicted, because quite often it isn't."
    ],
    "consider": [
-    "There has to be something there to retrieve. If pupils have only met the material once, a brain dump ends up measuring the teaching more than the pupils.",
-    "The imperfect attempt is the whole point, so try to resist tidying it up into a marked task. As soon as it carries stakes, pupils play safe and you lose the honest picture."
+    "There has to be something there to retrieve. If pupils have only met the material once, a brain dump tells you more about the teaching so far than about the pupils.",
+    "The imperfect attempt is the point of the exercise, so try to resist tidying it up into a marked task. As soon as it carries stakes, pupils start playing safe, and you lose the honest picture."
    ],
    "related": [
     "retrieval-practice/05-closed-book-reconstruction",
@@ -94,29 +94,29 @@
     "formative-assessment/22-the-muddiest-point"
    ],
    "lenses": [],
-   "wider": "This sits squarely in the testing effect tradition. Roediger and Karpicke showed that the act of retrieving is itself a learning event, not just a way of measuring one.",
+   "wider": "This sits squarely in the testing effect tradition. Roediger and Karpicke showed that the act of retrieving is itself a learning event, and not just a way of measuring one.",
    "tech": [
-    "Paper does this job perfectly well. Where the approved shared document or whiteboard tool in your setting can add something is the speed of reading, because you can see thirty attempts at once and skim them for the gaps without collecting in a single book. The retrieval effort is the important part though, not the admin around it."
+    "Paper does this job perfectly well. Where the approved shared document or whiteboard tool in your setting can add something is in the reading, because you can see thirty attempts at once and skim them for gaps without collecting in a single book. The retrieval effort is the important part though, not the admin around it."
    ]
   },
   {
    "ref": "retrieval-practice/04-test-before-you-teach",
    "slug": "test-before-you-teach",
    "why": [
-    "Quizzing pupils on content you haven't taught them yet sounds backwards, but that is exactly the card's claim: struggling to retrieve primes the brain, and students who fail before instruction remember the answer more reliably once it's taught.",
-    "It's also a different way of thinking about failure, because here the wrong answers aren't a problem you have to manage. The struggling itself is doing the priming."
+    "Quizzing pupils on content you haven't taught them yet sounds backwards, but that is exactly what the card is describing. Struggling to retrieve primes the brain, and students who fail before instruction remember the answer more reliably once it's taught.",
+    "It's also a helpful way of thinking about failure, because here the wrong answers aren't a problem you have to manage. The struggle to answer is doing useful work before the teaching even starts."
    ],
    "example": [
-    "Before a lesson introducing the causes of the First World War, a history teacher poses three questions the class can't yet answer well and asks for best guesses. There are no marks and no discussion beyond a brief reveal. The lesson then teaches the material, and those earlier guesses give the new content something to attach itself to."
+    "Before a lesson introducing the causes of the First World War, a history teacher poses three questions the class can't yet answer well and asks for best guesses. There are no marks, and no discussion beyond a brief reveal. The lesson then teaches the material, and those early guesses give the new content something to attach itself to."
    ],
-   "try": "Try opening one new topic with two or three questions pupils can't yet answer, asked for best guesses, before any of the teaching happens. Keep it brief, because the priming is the point rather than the score.",
+   "try": "Try opening one new topic with two or three questions pupils can't yet answer, asked for best guesses, before any of the teaching happens. Keep it brief, because it's the priming you're after rather than the scores.",
    "notice": [
-    "How pupils handle being asked about things they don't know. The activity only really works if guessing wrong is visibly safe in your classroom.",
-    "Whether the pre-tested material comes back more reliably later on than material you introduced without the quiz."
+    "How pupils handle being asked about things they don't know yet. This only really works if guessing wrong is visibly safe in your classroom.",
+    "Whether the material you pre-tested comes back more reliably later on than material you introduced without the quiz."
    ],
    "consider": [
-    "Be explicit with the class about why you're doing it. Pupils who are told that failing here is productive respond really differently from pupils who suspect they're being caught out.",
-    "This pairs naturally with the generation effect, because a wrong answer generated before the right one is revealed is doing useful encoding work."
+    "It's worth being explicit with the class about why you're doing it. Pupils who are told that failing here is productive respond really differently from pupils who suspect they're being caught out.",
+    "This pairs naturally with the generation effect, because a wrong answer generated before the right one is revealed is doing useful work for memory."
    ],
    "related": [
     "retrieval-practice/14-the-generation-effect",
@@ -126,7 +126,7 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "Bjork's work on pretesting and Kapur's on productive failure point the same way: unsuccessful retrieval before instruction can prepare memory for what comes next."
+   "wider": "Bjork's work on pretesting and Kapur's on productive failure point the same way, which is that unsuccessful retrieval before instruction can prepare memory for what comes next."
   },
   {
    "ref": "retrieval-practice/05-closed-book-reconstruction",
@@ -257,19 +257,19 @@
    "ref": "retrieval-practice/09-the-retrieval-schedule",
    "slug": "the-retrieval-schedule",
    "why": [
-    "The revision pattern the evidence ranks lowest, a single heavy session of re-reading close to the exam, is the one most pupils default to. Dunlosky's review placed re-reading among the least effective strategies, and as the card says, many students do the opposite of what works.",
-    "This strategy is a little unusual in this guide because the audience for it is the pupils themselves. You teach them the schedule itself, which is to study something, come back to it after two days, then after a week, and then after a month. It's knowledge about learning, and it can be taught like any other knowledge."
+    "The revision most pupils do by default, a single heavy session of re-reading close to the exam, is the pattern the evidence ranks lowest. Dunlosky's review placed re-reading among the least effective strategies there are, and as the card says, many students do the opposite of what works.",
+    "This strategy is a little unusual in this guide, because the audience for it is the pupils themselves. You teach them the schedule directly, which is to study something, come back to it after two days, then after a week, and then after a month. It's knowledge about learning, and it can be taught like any other knowledge."
    ],
    "example": [
-    "Ahead of mocks, a form tutor walks the class through building a revision timetable that returns to each subject at growing intervals rather than blocking one subject per evening. Pupils compare the plan with how they revised last time, and most of them find they'd been doing the reverse."
+    "Ahead of mocks, a form tutor walks the class through building a revision timetable that comes back to each subject at growing intervals, rather than blocking one subject per evening. Pupils compare the plan with how they revised last time, and most of them find they'd been doing the reverse."
    ],
-   "try": "Next time you set revision, make the schedule part of the task itself, so pupils know which nights they're revising, what they're returning to, and how big the gaps are. The gap sizes are a starting point rather than a law.",
+   "try": "Next time you set revision, make the schedule part of the task itself, so pupils know which nights they're revising, what they're returning to, and how big the gaps are. The gap sizes are a starting point, and you can adjust them to fit your subject and your class.",
    "notice": [
-    "What pupils' current schedules actually look like. Ask before you teach the alternative, because the contrast between the two is the persuasive part.",
-    "Whether the schedule survives when pupils are on their own or collapses back into cramming. One walkthrough rarely changes habits all by itself."
+    "What pupils' current schedules actually look like. It's worth asking before you teach the alternative, because seeing the difference between the two is what tends to persuade them.",
+    "Whether the schedule survives when pupils are on their own, or collapses back into cramming. One walkthrough rarely changes habits all by itself, so expect to come back to it."
    ],
    "consider": [
-    "Spacing feels less productive than cramming while you're actually doing it, which is partly why pupils abandon it. Teaching the schedule works better alongside teaching why it feels wrong."
+    "Spacing feels less productive than cramming while you're actually doing it, and that's partly why pupils abandon it. Teaching the schedule works better when you also explain why it's going to feel wrong at first."
    ],
    "related": [
     "retrieval-practice/06-distribute-practice-over-time",
@@ -286,19 +286,19 @@
    "ref": "retrieval-practice/10-cumulative-review",
    "slug": "cumulative-review",
    "why": [
-    "When a topic is taught, assessed and never seen again, pupils draw the sensible conclusion that it no longer matters. The card is blunt about this, and the fix is a structural one. You bring earlier content back in starters and assessments, and you plan it at the level of the term rather than improvising it lesson by lesson.",
-    "Cumulative review is really just spacing applied to your planning documents. Nothing new gets taught, and what changes is simply that older material keeps its place in the room."
+    "When a topic is taught, assessed and never seen again, pupils draw the sensible conclusion that it no longer matters. The card is blunt about this, and the fix is structural rather than clever. You bring earlier content back in starters and assessments, and you plan for that at the level of the term rather than trying to improvise it lesson by lesson.",
+    "Cumulative review is really just spacing applied to your planning documents. Nothing new gets taught. What changes is that older material keeps its place in the room, so pupils keep meeting it and keep retrieving it."
    ],
    "example": [
-    "A languages department agrees that every end-of-unit assessment will draw a quarter of its marks from earlier units, so vocabulary from September keeps appearing in January. Pupils stop treating each unit as disposable, because they can see for themselves that it isn't."
+    "A languages department agrees that every end-of-unit assessment will draw a quarter of its marks from earlier units, so vocabulary from September keeps appearing in January. Pupils stop treating each unit as something to be finished with, because they can see for themselves that it isn't."
    ],
-   "try": "Look at your next planned assessment and add a small section drawn from a previous unit. Announce it in advance too, because the aim is to change what pupils keep revisiting, not to catch them out.",
+   "try": "Look at your next planned assessment and add a small section drawn from a previous unit. It's worth announcing it in advance too, because the aim is to change what pupils keep revisiting, not to catch them out.",
    "notice": [
-    "How pupils respond when old content reappears. Surprise is evidence of the very expectation you're trying to change.",
-    "Which earlier topics have faded furthest, because they're first in line for the next review slot."
+    "How pupils respond when old content reappears. If they're surprised, that tells you they'd already decided the old material was finished with, which is exactly the expectation you're working on.",
+    "Which earlier topics have faded furthest, because those are the ones to bring back first."
    ],
    "consider": [
-    "A question bank grows more useful every term you do this. Writing cumulative questions from scratch every time is the version of this strategy that doesn't survive a busy year."
+    "A question bank grows more useful every term you do this. Writing cumulative questions from scratch every time adds workload, and it's the sort of workload that gets this dropped in a busy year, so build the bank as you go and let it accumulate."
    ],
    "related": [
     "retrieval-practice/06-distribute-practice-over-time",
@@ -314,19 +314,19 @@
    "ref": "retrieval-practice/11-embrace-the-struggle",
    "slug": "embrace-the-struggle",
    "why": [
-    "This is the idea that sits underneath the whole retrieval guide, so it's worth meeting on its own terms. The conditions that make learning feel hard and slow in the moment, such as spacing it out, mixing it up and testing instead of reviewing, are often the very conditions that make it last, and the conditions that feel smooth and productive mostly produce confidence without much retention.",
-    "That runs against every instinct in a helpful profession. When a pupil struggles to retrieve something, the natural move is to make it easier with a hint, a prompt or a quicker reveal. Bjork's work says the struggle is doing the useful work, provided that what's being asked for was genuinely taught in the first place."
+    "This is the idea that sits underneath the whole retrieval guide, so it's worth taking a moment on it. The conditions that make learning feel hard and slow in the moment, such as spacing it out, mixing it up and testing rather than reviewing, are often the very conditions that make it last. And the conditions that feel smooth and productive tend to give pupils confidence without much retention to back it up.",
+    "That runs against every instinct in a helpful profession. When a pupil struggles to retrieve something, the natural move is to make it easier with a hint, a prompt or a quicker reveal. Bjork's work suggests the struggle is doing useful work, provided that what's being asked for was genuinely taught in the first place."
    ],
    "example": [
-    "A teacher running a retrieval quiz turns the hints off and lets the silence run a little longer before revealing the answers. Pupils grumble that it feels harder than last term's version did, but weeks later it's the harder version they can still remember."
+    "A teacher running a retrieval quiz turns the hints off and lets the silence run a little longer before revealing the answers. Pupils grumble that it feels harder than last term's version, and it is. But weeks later, it's the harder version they can still remember."
    ],
-   "try": "Take one retrieval activity you already run and remove one support from it, such as the hints, the word bank, or the notes-open first pass. Change nothing else, so you can see what the added difficulty actually does.",
+   "try": "Take one retrieval activity you already run and remove one support from it, such as the hints, the word bank, or the notes-open first pass. Change nothing else, so you can see what the added difficulty actually does for your class.",
    "notice": [
-    "The gap between how the activity feels and what it produces. Pupils rating it as harder while recalling more later on is the effect working just as described.",
-    "Confident wrong answers. Difficulty shows up the illusion of knowing in a way that smooth practice never does."
+    "The gap between how the activity feels and what it produces. If pupils rate it as harder but recall more later on, that's the effect working just as described.",
+    "Confident wrong answers. These are worth watching for, because difficulty brings the illusion of knowing out into the open, and smooth practice tends to leave it hidden."
    ],
    "consider": [
-    "Desirable difficulty isn't the same thing as confusion. Difficulty that comes from an unclear task or untaught content is just a barrier, and the struggle has to be in the retrieving rather than in working out what's being asked.",
+    "Desirable difficulty isn't the same thing as confusion. Difficulty that comes from an unclear task or untaught content is just a barrier, so the struggle has to be in the retrieving, not in working out what's being asked.",
     "Secure the foundations first, because effortful retrieval works on knowledge that actually exists. That's why the guide pairs this idea with checking the basics are in place before pushing beyond them.",
     "How long to let the struggle run isn't a rule anyone can hand you. It's a judgement made in the room, by the teacher who knows these students, watching whether the effort is still productive."
    ],
@@ -339,27 +339,27 @@
    "lenses": [],
    "wider": "Bjork coined the phrase desirable difficulties for exactly this pattern, and the EEF's cognitive science review is a fair guide to how far the laboratory findings have travelled into real classrooms.",
    "tech": [
-    "The card's tech line says it all: any retrieval tool, hints disabled. If the approved tool in your setting rewards speed, streaks or fastest-finger reveals, it's removing the desirable difficulty that makes the practice worthwhile, so those settings are worth checking before you rely on it."
+    "The card's tech line says it all: any retrieval tool, hints disabled. If the approved tool in your setting rewards speed, streaks or fastest-finger reveals, it's taking away the very difficulty that makes the practice worthwhile, so those settings are worth checking before you rely on it."
    ]
   },
   {
    "ref": "retrieval-practice/12-remove-the-scaffolding",
    "slug": "remove-the-scaffolding",
    "why": [
-    "Retrieval with notes open is reading, not retrieval. The card's line is worth keeping whole, because it names the failure mode of plenty of well-intentioned practice, where the format looks like a quiz while the support does the remembering.",
-    "The answer isn't to ban support but to fade it on a schedule, so notes first, then headings only, then nothing at all. The move to unaided retrieval is where the consolidation happens, so it's worth planning the fade just as deliberately as you planned the support."
+    "Retrieval with notes open is reading, not retrieval. The card's line is worth keeping whole, because it describes something that happens in plenty of well-intentioned classrooms, where the activity looks like a quiz but the notes on the desk are doing the remembering.",
+    "The answer isn't to ban support. It's to fade it on a schedule, so notes first, then headings only, then nothing at all. The move to unaided retrieval is where the memory gets its strengthening, so the fade deserves as much planning as the support did."
    ],
    "example": [
-    "Reviewing a topic across three lessons, a teacher runs the same retrieval task each time with a little less on the table, so full notes in the first lesson, a five-heading skeleton in the second, and a blank page in the third. The questions stay the same while the support shrinks."
+    "Reviewing a topic across three lessons, a teacher runs the same retrieval task each time with a little less on the table, so full notes in the first lesson, a five-heading skeleton in the second, and a blank page in the third. The questions stay the same all the way through. It's only the support that shrinks."
    ],
-   "try": "Take a retrieval activity your class currently does with the notes open and run it next time with headings only. One step of the fade is plenty to start with.",
+   "try": "Take a retrieval activity your class currently does with the notes open, and run it next time with headings only. One step of the fade is plenty to start with, and you can see how it goes from there.",
    "notice": [
-    "What happens at each step down, because a sharp drop between the notes and the headings tells you the notes were doing the remembering.",
-    "Who freezes when the last support goes, because cued recall is the gentler step back for those pupils."
+    "What happens at each step down. A sharp drop between the notes and the headings tells you the notes were doing the remembering, which is useful to know.",
+    "Who freezes when the last support goes. Cued recall is a gentler step back for those pupils, so nobody has to jump straight to the blank page."
    ],
    "consider": [
-    "How fast to fade is a judgement made in the room. The teacher who knows the class can see whether the struggle is still productive, and no schedule on a website can do that for you.",
-    "Support removed too early produces confusion rather than desirable difficulty, and the struggle has to be in the retrieving, not in guessing what's wanted."
+    "How fast to fade is a judgement made in the room. The teacher who knows the class can see whether the struggle is still productive, and no schedule on a website can make that call for you.",
+    "Support removed too early produces confusion rather than desirable difficulty. The struggle has to be in the retrieving, not in guessing what's wanted."
    ],
    "related": [
     "retrieval-practice/11-embrace-the-struggle",
@@ -369,7 +369,7 @@
    ],
    "lenses": [],
    "tech": [
-    "If you use an approved quiz tool for retrieval, its settings are part of the fade too, so hints off, closed-book or timed mode on, and anything that supplies the answer at the first hesitation disabled. The tool should manage the activity for you, but it should never manage the struggle."
+    "If you use an approved quiz tool for retrieval, its settings are part of the fade too, so hints off, closed-book or timed mode on, and anything that supplies the answer at the first hesitation switched off. Let the tool run the activity for you, but keep the struggle with the pupils."
    ],
    "stair": null,
    "wider": "Bjork's desirable difficulties frame the case for withdrawing support, and Kornell's work with him on how learners misread easy practice explains why the faded version feels worse than it really is."
@@ -379,18 +379,18 @@
    "slug": "vary-the-retrieval-context",
    "why": [
     "There are lots of ways knowledge can get stuck in the format it was practised in. A pupil who can answer a question in a quiz can really struggle to recognise the same question when it turns up in an essay, and it's not that the knowledge isn't there, it's that it's tied to the situation they learned it in.",
-    "Godden and Baddeley showed decades ago that recall is bound to context. The card's response is to retrieve the same content in different formats and settings, deliberately loosening the knowledge from the context it was learned in. It's harder for students, but that difficulty is the part doing the useful work."
+    "Godden and Baddeley showed decades ago that recall is bound to context. The card's response is to retrieve the same content in different formats and settings, so the knowledge gradually comes loose from any one of them. It does make things harder for students, but this is one of those places where the harder version is the one doing them some good."
    ],
    "example": [
-    "One week a class retrieves the digestive system by labelling a diagram, the next by writing a paragraph from memory, and later on by answering spoken questions with no image in sight. The content itself stays exactly the same each time, and it's just the format around it that keeps moving."
+    "One week a class retrieves the digestive system by labelling a diagram, the next by writing a paragraph from memory, and later on by answering spoken questions with no image in sight. The content stays exactly the same each time, and it's just the format around it that keeps moving."
    ],
-   "try": "Take some content the class has only ever retrieved one way and switch the format once, such as diagram to prose, written to spoken, or multiple choice to free recall.",
+   "try": "Take some content the class has only ever retrieved one way and switch the format once, such as diagram to prose, written to spoken, or multiple choice to free recall. See what travels and what doesn't.",
    "notice": [
-    "The performance drop when the format changes. That gap is the context dependence you're trying to loosen, showing itself.",
-    "Whose knowledge already travels across formats and whose is bound to just one. The second group had learned the format as much as the content."
+    "How pupils do when the format changes. Some drop in performance is completely normal, and it shows you how much of the knowledge was tied to the old format.",
+    "Whose knowledge already travels across formats and whose is bound to just one. For that second group, it's worth remembering they may have learned the format as much as the content."
    ],
    "consider": [
-    "Vary the retrieval rather than the goal. What's being retrieved stays the same, and it's only the packaging that moves."
+    "Vary the retrieval rather than the goal. What's being retrieved stays the same, and it's only the packaging around it that moves, because otherwise you're testing something new rather than strengthening something taught."
    ],
    "related": [
     "retrieval-practice/08-interleave-topics-don-t-block",
@@ -400,25 +400,25 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "Godden and Baddeley's diving study is the classic demonstration that recall is tied to the context it was encoded in, and Bjork's work on varied practice turns that constraint into something you can teach with."
+   "wider": "Godden and Baddeley's diving study is the classic demonstration that recall is tied to the context it was learned in, and Bjork's work on varied practice shows how teachers can put that finding to use."
   },
   {
    "ref": "retrieval-practice/14-the-generation-effect",
    "slug": "the-generation-effect",
    "why": [
-    "Slamecka and Graf found that generating an answer, even a wrong one, before being told it produces stronger retention than passive exposure does. Even a wrong one is worth dwelling on, because it's the effort of generating that drives the encoding, not the accuracy of the attempt.",
-    "This is the finding that gives you permission to ask before telling. Whenever the answer arrives before pupils have had a go at one of their own, that useful effort simply never happens."
+    "Slamecka and Graf found that generating an answer before being told it, even a wrong answer, produces stronger retention than passive exposure does. The wrong answers part is worth sitting with for a moment, because it's the effort of coming up with an attempt that does the good, not whether the attempt was right.",
+    "In practice, this is the finding that makes it worth asking before telling. Whenever the answer arrives before pupils have had a go at one of their own, that useful effort simply never happens, and it costs almost nothing to let it happen."
    ],
    "example": [
-    "Introducing a new French verb, the teacher shows the infinitive and asks the class to guess the first-person form before revealing it. Half the guesses are wrong, but every pupil now has an attempt of their own to compare the answer against."
+    "Introducing a new French verb, the teacher shows the infinitive and asks the class to guess the first-person form before revealing it. Half the guesses are wrong, but every pupil now has an attempt of their own to compare the answer against, and that comparison is where the learning gets its grip."
    ],
-   "try": "Build one ask-before-tell moment into an explanation you already give, so pose the question, take some guesses, and then reveal. The guess only costs you a few seconds.",
+   "try": "Build one ask-before-tell moment into an explanation you already give, so pose the question, take some guesses, and then reveal. It only costs you a few seconds, and you can use it almost anywhere.",
    "notice": [
-    "Whether pupils will commit to a guess. A class trained to wait for the answer will need convincing that wrong attempts are genuinely welcome.",
-    "What the wrong guesses show you about how pupils are thinking. They're a window into that as well as an encoding aid."
+    "Whether pupils will actually commit to a guess. A class that's been trained to wait for the answer will need convincing that wrong attempts are genuinely welcome, so it can take a little while to bed in.",
+    "What the wrong guesses tell you about how pupils are thinking, because they're useful evidence for you as well as useful effort for them."
    ],
    "consider": [
-    "The attempt must come before the answer, not instead of it. Generation works because the correction follows, and leaving errors uncorrected is a different activity with different risks."
+    "The attempt has to come before the answer, not instead of it. Generation works because the correction follows, and leaving errors uncorrected is a different activity with different risks."
    ],
    "related": [
     "retrieval-practice/04-test-before-you-teach",
@@ -434,19 +434,19 @@
    "ref": "retrieval-practice/15-forget-before-you-retrieve",
    "slug": "forget-before-you-retrieve",
    "why": [
-    "The instinct after teaching something is to check it straight away, while it's fresh, but the freshness is the problem. Quizzing straight after teaching mostly confirms what was said a few minutes ago, and the card is direct about the alternative: wait a day, then quiz. Wait a week, then quiz again.",
-    "A little forgetting first makes the retrieval effortful, and that effort is what strengthens the memory. The gap between the learning and the retrieval is where the consolidation happens."
+    "The instinct after teaching something is to check it straight away, while it's fresh. The trouble is that a quiz straight after teaching mostly confirms what was said a few minutes ago, rather than telling you what's actually been learned. The card is direct about the alternative: wait a day, then quiz. Wait a week, then quiz again.",
+    "A little forgetting first makes the retrieval effortful, and that effort is what strengthens the memory. So the gap isn't dead time before the real work. The gap is doing some of the work."
    ],
    "example": [
-    "A teacher finishes explaining photosynthesis and, instead of quizzing on it in the plenary, quizzes on last week's respiration work instead. Photosynthesis gets its first quiz tomorrow and its second the following week."
+    "A teacher finishes explaining photosynthesis and, instead of quizzing on it in the plenary, quizzes on last week's respiration work instead. Photosynthesis gets its first quiz tomorrow, and its second the following week."
    ],
-   "try": "Move one end-of-lesson quiz to the start of the next lesson. Nothing else needs to change except the gap.",
+   "try": "Move one end-of-lesson quiz to the start of the next lesson. Nothing else needs to change except the gap, which makes this one of the easier things in the guide to try.",
    "notice": [
-    "Scores dropping compared with same-lesson quizzing. That drop is the point, because the quiz is now measuring memory rather than echo.",
+    "Scores dropping compared with same-lesson quizzing. That's expected, and it's actually the reason for the change, because the quiz is now measuring what's remembered rather than what's still echoing from the lesson.",
     "Whether the week-later quiz shows the material coming back more securely than the day-later one did, because that's the spacing beginning to pay off."
    ],
    "consider": [
-    "Explain the delay to pupils too. The gap is a design choice, and knowing that can help the harder quiz feel fair rather than punitive.",
+    "It's worth explaining the delay to pupils too. The gap is a deliberate choice, and knowing that can help the harder quiz feel fair rather than punitive.",
     "Checking understanding within the lesson still has its place, and that's formative assessment doing a different job. It's the retrieval practice that waits."
    ],
    "related": [
@@ -457,25 +457,25 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "Bjork's work on spacing and Roediger's on the testing effect meet here: a test strengthens memory most when a little forgetting has been allowed to happen first."
+   "wider": "Bjork's work on spacing and Roediger's on the testing effect come together here, because a test strengthens memory most when a little forgetting has been allowed to happen first."
   },
   {
    "ref": "retrieval-practice/16-retrieval-beyond-facts",
    "slug": "retrieval-beyond-facts",
    "why": [
-    "Retrieval is not a pub quiz. The card's warning is aimed at a real drift, where retrieval routines settle permanently at the level of dates, definitions and labelled diagrams, simply because those questions are the easiest ones to write and mark.",
-    "Agarwal's work behind this card cuts both ways. Factual retrieval builds the schema, so it isn't beneath anyone, and higher-order retrieval then tests whether students can actually use what all those facts add up to. Secure the foundations first, then push beyond them."
+    "Retrieval is not a pub quiz. The card's warning is aimed at a drift that's easy to fall into, where retrieval routines settle permanently at the level of dates, definitions and labelled diagrams, simply because those questions are the easiest ones to write and mark.",
+    "Agarwal's work behind this card cuts both ways though. Factual retrieval builds the foundations, so it isn't beneath anyone, and higher-order retrieval then checks whether students can actually use what all those facts add up to. Secure the foundations first, then push beyond them."
    ],
    "example": [
     "After several factual quizzes on the causes of the Wall Street Crash, a history teacher's retrieval question changes shape, and pupils are asked which cause mattered most, argued from memory in five sentences. The facts they've been retrieving for weeks become the material for a judgement."
    ],
-   "try": "Audit a week of your retrieval questions against one simple test: could pupils answer these without understanding the topic? Then add one question that asks them to use the knowledge rather than just produce it.",
+   "try": "Have a look at a week of your retrieval questions and ask yourself a simple question: could pupils answer these without understanding the topic? Then add one question that asks them to use the knowledge rather than just produce it.",
    "notice": [
-    "Pupils who are fluent in the factual rounds but stall at application. The knowledge may well be there, just unpractised in use.",
-    "What your question mix has drifted towards over a term. It's worth actually checking rather than assuming."
+    "Pupils who are fluent in the factual rounds but stall when asked to apply. The knowledge may well be there, and it's the using of it that's unpractised.",
+    "What your question mix has drifted towards over a term. It's worth actually checking rather than assuming, because the drift is usually invisible from the inside."
    ],
    "consider": [
-    "Sequence really matters here. Higher-order retrieval on insecure foundations produces guessing rather than thinking, so the card's order, foundations first, is doing a lot of the work."
+    "The order matters here. Higher-order retrieval on insecure foundations produces guessing rather than thinking, so the card's sequence, foundations first, is there for a reason."
    ],
    "related": [
     "retrieval-practice/17-concept-mapping-from-memory",
@@ -491,19 +491,19 @@
    "ref": "retrieval-practice/17-concept-mapping-from-memory",
    "slug": "concept-mapping-from-memory",
    "why": [
-    "The from-memory qualifier is what carries this strategy. Concept mapping with the notes open is an organising task, but concept mapping from memory is retrieval, and Karpicke and Blunt found it outperformed re-reading for retention.",
+    "The important part of this one is the from-memory bit. Concept mapping with the notes open is an organising task, and a perfectly good one, but concept mapping from memory is retrieval, and Karpicke and Blunt found it outperformed re-reading for retention.",
     "It also retrieves something a quiz rarely touches, which is the connections, so not just what students know but how the ideas relate to each other. As the card has it, relational knowledge beats isolated facts."
    ],
    "example": [
-    "Closing a unit on ecosystems, pupils get a blank page and one instruction, which is to map the topic from memory with the ideas in boxes and the relationships written on the lines between them. Books stay shut the whole time. Afterwards they compare maps in pairs and add the missing links in another colour."
+    "Closing a unit on ecosystems, pupils get a blank page and one instruction, which is to map the topic from memory, with the ideas in boxes and the relationships written on the lines between them. Books stay shut the whole time. Afterwards they compare maps in pairs and add the missing links in another colour."
    ],
-   "try": "Run one from-memory map at the end of a current topic, and ask for the connecting lines to be labelled, because an unlabelled line is a relationship nobody has had to retrieve.",
+   "try": "Run one from-memory map at the end of a current topic, and ask for the connecting lines to be labelled, because a labelled line means the relationship has actually been retrieved rather than just implied.",
    "notice": [
-    "The links, even more than the boxes. Missing ideas show gaps in the knowledge, but missing links show gaps in how it all fits together.",
-    "Whether the maps improve across the year. Mapping is a skill in itself, and early attempts will understate what pupils actually know."
+    "The links, even more than the boxes. Missing ideas show gaps in the knowledge, and missing links show gaps in how it all fits together, which is often the more useful thing to know.",
+    "Whether the maps improve across the year. Mapping is a skill in itself, so early attempts will understate what pupils actually know, and that's worth allowing for."
    ],
    "consider": [
-    "The from-memory condition is what makes it work, so try to resist the merciful instinct to allow a quick peek at the notes. The checking comes afterwards, as its own step."
+    "The from-memory condition is what makes it work, so try to resist the merciful instinct to allow a quick peek at the notes. The checking comes afterwards, as its own step, and it's better for being separate."
    ],
    "related": [
     "retrieval-practice/05-closed-book-reconstruction",
@@ -519,19 +519,19 @@
    "ref": "retrieval-practice/18-retrieval-through-teaching",
    "slug": "retrieval-through-teaching",
    "why": [
-    "Anyone who has prepared to teach a topic knows that experience of discovering, halfway through the preparation, what they don't actually know. Preparing to teach demands complete, organised retrieval, and the gaps a quiz might skirt around become impossible to ignore when the whole thing has to be explained in order.",
-    "The card's emphasis is worth holding on to, which is that the learning happens during the preparation rather than the delivery. The audience is almost incidental, because organising knowledge so you can explain it is where the consolidation happens."
+    "Anyone who has prepared to teach a topic will know that moment, halfway through the preparation, of discovering what they don't actually know. Preparing to teach demands complete, organised retrieval, and the gaps a quiz might skirt around become impossible to ignore when the whole thing has to be explained in order.",
+    "The card's emphasis is worth holding on to, which is that the learning happens during the preparation rather than the delivery. Organising knowledge so you can explain it to someone else is where the consolidation happens, and that's true whether or not the explaining ever takes place."
    ],
    "example": [
     "Pairs in a physics class each prepare a three-minute explanation of one circuit concept for another pair, from memory, with one diagram allowed. Most of the retrieval work is done before anyone speaks, in deciding what comes first, what connects to what, and what they had to go back and check."
    ],
-   "try": "Set preparing-to-teach as the task without necessarily running the teaching itself. Planning an explanation of last month's topic is a complete retrieval activity all on its own.",
+   "try": "Set preparing-to-teach as the task, without necessarily running the teaching itself. Planning an explanation of last month's topic is a complete retrieval activity all on its own.",
    "notice": [
-    "What pupils look up while they're preparing. Every check against the notes is a gap they've identified for themselves.",
-    "The order pupils choose to explain things in, because the sequencing choices show you how their knowledge is organised."
+    "What pupils look up while they're preparing, because every check against the notes is a gap they've found for themselves.",
+    "The order pupils choose to explain things in. The sequencing choices show you how their knowledge is organised, which is hard to see any other way."
    ],
    "consider": [
-    "Delivery adds a pressure that preparation doesn't, and whether a class is ready for peer teaching is the teacher's call rather than the strategy's."
+    "Delivery adds a pressure that preparation doesn't, and whether a class is ready for peer teaching is your call, not the strategy's. The preparation on its own still does most of the good."
    ],
    "related": [
     "retrieval-practice/17-concept-mapping-from-memory",
@@ -553,13 +553,13 @@
    "example": [
     "A pupil who produced almost nothing in a free brain dump gets the same task again with the topic's five subheadings printed down the margin. The headings cue what order things come in, but the remembering in between them is still the pupil's own."
    ],
-   "try": "Keep a cued version of your usual retrieval task ready, so the same questions with a keyword or a first letter alongside. Moving one pupil down to it costs you nothing.",
+   "try": "Keep a cued version of your usual retrieval task ready, so the same questions with a keyword or a first letter alongside. Moving one pupil down to it costs you nothing, and it keeps everyone retrieving.",
    "notice": [
-    "Which cues bring the memory back and which just draw blank looks. A cue that does nothing suggests the memory it points at was never secure in the first place.",
-    "Who still needs the cues after several rounds, because the aim is to retire them, pupil by pupil."
+    "Which cues bring the memory back and which just draw blank looks, because a cue that does nothing suggests the memory it points at was never secure in the first place.",
+    "Who still needs the cues after several rounds. The aim is to retire them gradually, pupil by pupil, rather than all at once."
    ],
    "consider": [
-    "Cues can drift into being answers. A sentence starter that contains the key term has crossed the line from triggering the retrieval to replacing it.",
+    "Cues can drift into being answers. A sentence starter that contains the key term has crossed the line from triggering the retrieval to replacing it, so it's worth checking your cues now and again.",
     "Pair this with a plan to fade the cues away, because cued recall that never becomes unaided recall stops short of where the consolidation happens."
    ],
    "related": [
@@ -572,7 +572,7 @@
    "stair": {
     "lede": "Turning your notes into gapped versions is repetitive drafting work, which makes it a fair job for AI through the approved tool in your setting:",
     "prompt": "Act as a secondary history teacher. Take the key points below about the causes of the First World War and create a gapped version for Year 9 cued recall, removing one key term per sentence and listing the removed words separately.\n\nKeep every sentence otherwise word for word as supplied. Do not add new content, explanations or answers beside the gaps.\n\n[paste your key points here]",
-    "after": "Because the tool only removes words from text you supply, what pupils retrieve is still exactly what you taught. Check that the gaps target the terms that carry the meaning, and iterate if they don't, because they often won't be right first time."
+    "after": "Because the tool only removes words from text you supply, what pupils retrieve is still exactly what you taught. Check that the gaps target the terms that carry the meaning, and go back and forth with it if they don't, because they often won't be right first time."
    },
    "wider": "Tulving and Thomson's encoding specificity work established that what can be recalled depends on the cues present at retrieval, and this strategy simply puts that finding to deliberate use.",
    "tech": [
@@ -583,20 +583,20 @@
    "ref": "retrieval-practice/20-teach-the-illusion-of-knowing",
    "slug": "teach-the-illusion-of-knowing",
    "why": [
-    "Pupils' judgements of what they know are systematically off, and they're mostly off in one direction. Familiar material feels known, and Koriat and Bjork traced how that feeling misleads. The result is revision effort spent in all the wrong places, and with complete sincerity too.",
-    "You can't simply lecture the illusion away. The card's move is to let pupils catch themselves in it, by rating their confidence before the answer is revealed and then looking at where the certainty and the correctness came apart. The moments when they were certain and wrong are exactly the ones to step in on."
+    "Pupils' judgements of what they know tend to be off, and mostly off in one direction. Familiar material feels known, and Koriat and Bjork traced how that feeling misleads. The result is revision effort spent in all the wrong places, by pupils who genuinely believe they're revising well.",
+    "You can't simply lecture the illusion away. The card's move is to let pupils catch themselves in it, by rating their confidence before the answer is revealed and then looking at where the certainty and the correctness came apart. The moments when they were certain and wrong are exactly the ones to spend time on."
    ],
    "example": [
-    "Before each answer in a quiz review is revealed, pupils hold up one to five fingers to show their confidence. On question four, half the class shows five fingers and the revealed answer proves most of them wrong, so the teacher stops the quiz right there. That question, rather than the quiz score, becomes the discussion."
+    "Before each answer in a quiz review is revealed, pupils hold up one to five fingers to show their confidence. On question four, half the class shows five fingers and the revealed answer proves most of them wrong, so the teacher stops the quiz right there, and that question, rather than the quiz score, becomes the discussion."
    ],
-   "try": "Add a confidence rating to one quiz you already run, and a simple scale of sure, unsure or guessing is plenty. The comparison with the revealed answers does the teaching for you.",
+   "try": "Add a confidence rating to one quiz you already run, and a simple scale of sure, unsure or guessing is plenty. The comparison with the revealed answers does most of the teaching for you.",
    "notice": [
-    "Where high confidence meets wrong answers. Those items are what this whole strategy is aiming at.",
-    "Whether the calibration improves over the weeks, because fewer certain-and-wrong moments is what progress looks like here."
+    "Where high confidence meets wrong answers, because those items are what this whole strategy is aiming at.",
+    "Whether the calibration improves over the weeks. Fewer certain-and-wrong moments is what progress looks like here, and it tends to come gradually."
    ],
    "consider": [
     "Confident errors want fast correction, and Metcalfe's finding on instant feedback applies most exactly here.",
-    "Keep the ratings private at first if being wrong in public carries a social cost in this class. The teacher knows whether a class can be wrong out loud, and a website doesn't."
+    "It may be worth keeping the ratings private at first, if being wrong in public carries a social cost in this class. That's a judgement for the teacher who knows the room, because you can see whether this class can be wrong out loud, and no guide can see that for you."
    ],
    "related": [
     "retrieval-practice/22-confidence-ratings",
@@ -612,16 +612,16 @@
    "ref": "retrieval-practice/21-provide-instant-feedback",
    "slug": "provide-instant-feedback",
    "why": [
-    "This card holds two instructions in tension, and it does so on purpose. Metcalfe shows that instant feedback is essential for confident errors, because the more certain a pupil was, the more the fast correction helps. For general retrieval though, a processing gap before revealing the answers gives the retrieval attempt room to finish.",
-    "So the rule the card offers is really about targeting, and speed matters most when the confidence is highest."
+    "This card carries two instructions at once, and that's deliberate. Metcalfe shows that instant feedback is essential for confident errors, because the more certain a pupil was, the more the fast correction helps. For general retrieval though, it's worth leaving a little gap before revealing the answers, so the retrieval attempt has room to finish.",
+    "So the rule the card offers is really about knowing when to be quick. Speed matters most when the confidence is highest, and the rest of the time a pause does no harm at all."
    ],
    "example": [
-    "Running a review quiz, a teacher reveals each answer a beat or two after the question rather than instantly, which lets pupils commit to an answer. When a show of hands exposes a confidently wrong majority on one item, the delay disappears and that misconception gets corrected on the spot."
+    "Running a review quiz, a teacher reveals each answer a beat or two after the question rather than instantly, which lets pupils commit to an answer. When a show of hands turns up a confidently wrong majority on one item, the delay disappears and that misconception gets corrected on the spot."
    ],
    "try": "Next quiz, delay each reveal until every pupil has committed to an answer, and then break your own rule the moment you spot a confident error.",
    "notice": [
-    "What pupils do in the gap before the reveal. Reconsidering and committing means the gap is being used, and passive waiting suggests it's just dead air.",
-    "Whether the corrected confident errors stay corrected the following week. Metcalfe's work suggests they often may."
+    "What pupils do in the gap before the reveal. If they're reconsidering and committing, the gap is being used well, and if they're just waiting, it isn't doing much for them.",
+    "Whether the corrected confident errors stay corrected the following week. Metcalfe's work suggests they often may, and it's worth seeing whether that holds for your class."
    ],
    "consider": [
     "Instant feedback and instant answers are different things. Feedback follows an attempt, and a tool that supplies the answer at the first pause has replaced the attempt altogether."
@@ -635,7 +635,7 @@
    ],
    "lenses": [],
    "tech": [
-    "Quiz tools with instant answer reveal are built for exactly half of this card. The reveal speed is usually a setting, so it's worth checking whether the approved tool in your setting can hold the answers back until the responses are in. And if the format starts to resemble a fastest finger first round, rewarding speed over thought, it's stripping out the difficulty that makes the retrieval worth doing."
+    "Quiz tools with instant answer reveal are built for exactly half of this card. The reveal speed is usually a setting, so it's worth checking whether the approved tool in your setting can hold the answers back until the responses are in. And if the format starts to resemble a fastest finger first round, rewarding speed over thought, it's taking away the difficulty that makes the retrieval worth doing."
    ],
    "stair": null,
    "wider": "Metcalfe's research on error correction is the direct source for the card's distinction, including the finding that high-confidence errors are especially correctable."
@@ -644,15 +644,15 @@
    "ref": "retrieval-practice/22-confidence-ratings",
    "slug": "confidence-ratings",
    "why": [
-    "Students are most confident about the things they read most recently, not the things they actually know. That's Dunlosky and Metcalfe's finding, and it explains a great deal of misdirected revision, because recency feels like mastery and the revision decisions get made on the feeling.",
-    "Rating confidence after each retrieval attempt, and then revealing the answer, turns that private feeling into something that can actually be checked. The gap between the rating and the result is the thing you're after."
+    "Students tend to be most confident about the things they read most recently, not the things they actually know. That's Dunlosky and Metcalfe's finding, and it explains a great deal of misdirected revision, because recently-seen material feels secure, and pupils make their revision decisions on that feeling.",
+    "Rating confidence after each retrieval attempt, and then revealing the answer, turns that private feeling into something that can actually be checked. What you're looking for is the gap between the rating and the result."
    ],
    "example": [
-    "In a self-quizzing routine, pupils answer each question, write 1 to 5 for how sure they are, and then check. One pupil finds her 5s are mostly right, but so are her 2s, so she knows more than she feels she does, and her revision list changes accordingly."
+    "In a self-quizzing routine, pupils answer each question, write 1 to 5 for how sure they are, and then check. One pupil finds her 5s are mostly right, but so are her 2s. She knows more than she feels she does, and her revision list changes accordingly."
    ],
-   "try": "Add a one-number confidence column to any answer-then-check activity the class already does. It only takes a few seconds per question.",
+   "try": "Add a one-number confidence column to any answer-then-check activity the class already does. It only takes a few seconds per question, and the pattern builds up quickly.",
    "notice": [
-    "Systematic patterns, such as pupils who are always certain and pupils who are never certain. Both are calibration problems, and they need different conversations.",
+    "Patterns that keep repeating, such as pupils who are always certain and pupils who are never certain. Both are calibration problems, and they need different conversations.",
     "Whether the ratings change what pupils choose to revise. The number is only worth collecting if it changes a decision somewhere."
    ],
    "consider": [
@@ -667,25 +667,25 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "Dunlosky and Metcalfe's work on metacognitive monitoring is the direct source here: judgements of learning track recency and fluency more faithfully than they track actual knowledge."
+   "wider": "Dunlosky and Metcalfe's work on metacognitive monitoring is the direct source here, and their finding is that judgements of learning track recency and fluency more faithfully than they track actual knowledge."
   },
   {
    "ref": "retrieval-practice/23-retrieval-journals",
    "slug": "retrieval-journals",
    "why": [
-    "Most retrieval activity evaporates the moment it ends. The quiz happened, some things came back and some didn't, and by next week nobody, the pupil included, can remember which was which.",
+    "Most retrieval activity leaves nothing behind. The quiz happened, some things came back and some didn't, and by next week nobody, the pupil included, can remember which was which.",
     "A retrieval journal keeps that record of what came back, what didn't, and what needs revisiting. Zimmerman showed that students who monitor their performance make better revision decisions, and the card frames the journal accordingly: it is a map of what to do next, not a diary."
    ],
    "example": [
     "After each Friday quiz, pupils spend three minutes on a simple two-column log, with what came back on one side and what didn't on the other. The did-not column from the last month becomes their personal starter list for revision week, and no teacher marking is involved at any point."
    ],
-   "try": "Two columns in the back of the exercise book is a complete version of this, so start after your next retrieval activity.",
+   "try": "Two columns in the back of the exercise book is a complete version of this, so you can start after your next retrieval activity with no preparation at all.",
    "notice": [
-    "Whether the journal actually changes behaviour. A log nobody consults is just admin, and the real test is what pupils choose to revisit.",
-    "Recurring entries in the did-not column, because content a pupil logs as missing three times is a message addressed to you as much as to them."
+    "Whether the journal actually changes what pupils do. A log nobody looks back at is just admin, and the real test is what pupils choose to revisit.",
+    "Entries that keep appearing in the did-not column. If a pupil logs the same content as missing three times, that's useful information for you as well as for them."
    ],
    "consider": [
-    "Keep the logging light. Three minutes of honest record does more good than ten minutes of decorated reflection, and marking it changes what pupils are willing to record."
+    "Keep the logging light. Three minutes of honest record does more good than ten minutes of carefully presented reflection, and marking it changes what pupils are willing to write down."
    ],
    "related": [
     "retrieval-practice/24-study-strategy-audit",
@@ -701,18 +701,18 @@
    "ref": "retrieval-practice/24-study-strategy-audit",
    "slug": "study-strategy-audit",
    "why": [
-    "Dunlosky's review rated ten common study strategies, and re-reading scored low while practice testing scored highest. Most pupils have never seen that table, and their revision habits show it.",
+    "Dunlosky's review rated ten common study strategies, and re-reading scored low while practice testing scored highest. Most pupils have never seen that table, and you can usually tell, because their revision defaults to the strategies at the bottom of it.",
     "The strategy is a structured comparison, so you ask students how they revise, and then you show them the evidence. As the card puts it, that conversation is the intervention."
    ],
    "example": [
     "Before study leave, a tutor group lists their revision methods anonymously on slips. The tally goes up on the board next to a summary of Dunlosky's ratings, and re-reading and highlighting dominate the class list while sitting near the bottom of the evidence table. The session is spent on the gap between the two columns."
    ],
    "notice": [
-    "The reasons pupils give for their current habits. It feels productive and I have always done it this way are exactly what the desirable difficulties research predicts, and they're worth naming aloud.",
-    "Whether anything shifts by the next audit. Run it twice a year, because the second tally is your evidence of movement."
+    "The reasons pupils give for their current habits. It feels productive and I have always done it this way come up again and again, and they're worth naming aloud, because the desirable difficulties research explains exactly why effective practice doesn't feel effective.",
+    "Whether anything shifts by the next audit. It's worth running twice a year, because the second tally shows you whether the conversation changed anything."
    ],
    "consider": [
-    "The point isn't to shame the current habits but to replace them, so pair the audit with teaching an alternative, such as the retrieval schedule, and the conversation ends with something to actually do."
+    "The point isn't to make pupils feel bad about their current habits but to give them something better, so pair the audit with teaching an alternative, such as the retrieval schedule, and the conversation ends with something to actually do."
    ],
    "related": [
     "retrieval-practice/09-the-retrieval-schedule",
@@ -1306,20 +1306,20 @@
    "ref": "formative-assessment/20-spaced-retrieval-practice",
    "slug": "spaced-retrieval-practice",
    "why": [
-    "Quizzing on today's lesson checks whether the teaching landed, but quizzing on last month's checks something this strand cares about more, which is whether the learning survived. Returning to older material at increasing intervals is, as the card notes, one of the most robust findings in memory research.",
-    "It sits in a formative assessment strand because the results are evidence. What the class has forgotten tells you what needs revisiting before it's needed again."
+    "Most quizzing looks at what was taught today or this week, which is really useful for checking the teaching worked, but it can't tell you whether pupils will still have that learning next month. That's where spaced retrieval comes in. As the card notes, returning to older material at increasing intervals is one of the most robust findings in memory research, and the idea at the heart of it is simple: coming back to something after you've had time to forget a little of it does far more for remembering than going over it again straight away.",
+    "The reason it sits with formative assessment is that the results tell you something you can use. If lots of the class have forgotten something, you know what needs revisiting, and you know in good time, before that knowledge is needed again."
    ],
    "example": [
-    "A weekly low stakes quiz in history draws two questions from last week, two from the last unit, and one from the autumn term. The autumn question is the one most pupils miss, so it comes back in a different form the following week."
+    "A weekly low stakes quiz in history might have two questions from last week, two from the last unit, and one from all the way back in the autumn term. If the autumn question is the one most pupils get wrong, it goes back into the quiz in a different form the following week."
    ],
-   "try": "Add one deliberately old question to a quiz routine you already run. Even just one question is enough to start seeing what has faded.",
+   "try": "Have a go by adding one deliberately old question to a quiz routine you already run. Even one question will start to show you what's faded, and you can build up from there.",
    "notice": [
-    "The gap between performance on recent and older material, because that gap is the forgetting the spacing works against.",
-    "Whether pupils treat wrong answers as information or as failure. The low stakes framing has to be real, not just announced."
+    "How pupils do on recent material compared with older material. It's completely normal for the older material to be weaker, and that difference is exactly what the spacing is there to help with.",
+    "How pupils react to getting the older questions wrong. For this to work they need to feel that a wrong answer is fine and just shows what needs another look, so it's worth keeping an eye on whether the low stakes genuinely feel low stakes to them."
    ],
    "consider": [
-    "Increasing intervals is the principle, and re-reading is the trap. The card is explicit that re-reading notes is not the same as retrieving, and pupils will default to it because it feels easier.",
-    "How far apart the returns come is a professional judgement for the teacher in the room, made with this class and this content in front of them. The increasing intervals are the fixed principle, but the calendar that delivers them is yours."
+    "It can be tempting for pupils to prepare by re-reading their notes, and the card is explicit that re-reading notes is not the same as retrieving. Pupils will often default to re-reading because it feels easier, so it's worth being clear with them about the difference.",
+    "How far apart to space the returns is a professional judgement for the teacher in the room, made with this class and this content in front of them. The increasing intervals are the principle, but when the returns actually happen is up to you, because you know your class and your content better than any schedule written by someone else."
    ],
    "related": [
     "retrieval-practice/06-distribute-practice-over-time",
@@ -1330,7 +1330,7 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "The tradition here is Bjork's work on desirable difficulties, where spacing and retrieval both make practice feel harder now in exchange for retention later."
+   "wider": "The thinking behind this comes from Bjork's work on desirable difficulties, which found that spacing and retrieval both make practice feel harder in the moment, but that this difficulty is a good sign, because it's doing the work that helps the learning stick for the longer term."
   },
   {
    "ref": "formative-assessment/21-test-before-you-teach",
