@@ -2919,7 +2919,7 @@
    "slug": "small-steps-always",
    "why": [
     "New material has a habit of arriving faster than pupils can process it, and Rosenshine's first principle is really clear about the remedy, which is to present new material in small steps with practice after each one, because working memory is narrow and it's easily overwhelmed.",
-    "The important thing is the practice after each step, because a step without a check is really just a pause, and telling a class something isn't the same as explaining it to them."
+    "The important thing is the practice after each step, because without the check a step is just a pause in the talking, and telling a class something isn't the same as explaining it to them."
    ],
    "example": [
     "Introducing balancing equations, a science teacher builds the method up one move per slide, using animation to reveal each step as it's needed. After each reveal, pupils have a go at one line of a parallel problem on mini whiteboards before the next step comes up."
@@ -2930,7 +2930,7 @@
     "Whether the practice after each step is being done by everyone, or just by the pupils who were already keeping up."
    ],
    "consider": [
-    "Step size is a judgement about this class and what they already know, and what's one step for a second teaching might be three steps for a first. You know the class, and a website doesn't.",
+    "Step size is a judgement about this class and what they already know, and what's one step for a second teaching might be three steps for a first. You know the class, and no guide does.",
     "Small steps aren't the same as slow teaching, because checking as you go can save you a much longer reteach later on."
    ],
    "related": [
@@ -2991,7 +2991,7 @@
     "Whether pupils use the retrieved ideas of their own accord when they meet the new material."
    ],
    "consider": [
-    "The starter is there to tell you something, not to decorate the lesson, so be ready to act on what it shows, even if that means reteaching before you launch into the new content.",
+    "The starter is there to tell you something, not to fill the first five minutes, so be ready to act on what it shows, even if that means reteaching before you launch into the new content.",
     "Choose retrieval targets that genuinely underpin the new content, because activating unrelated knowledge just fills working memory without helping the explanation along."
    ],
    "related": [
@@ -3036,7 +3036,7 @@
    "ref": "explanations-and-modelling/05-check-don-t-assume",
    "slug": "check-don-t-assume",
    "why": [
-    "A class that's listening politely looks exactly the same as a class that understands, but listening isn't learning, and an explanation that's never checked is really just a guess about thirty minds.",
+    "A class that's listening politely looks exactly the same as a class that understands, but listening isn't learning, and if you never check, you're really just guessing about what thirty different pupils have taken in.",
     "Rosenshine's answer is to check understanding at every step and to reteach before moving on, so the explanation is the start of the process rather than the finish."
    ],
    "example": [
@@ -3046,7 +3046,7 @@
    "notice": [
     "The gap between who looked like they were following and who actually showed you they were.",
     "What the wrong answers have in common, because a shared error usually points at the explanation rather than the pupils.",
-    "How often the check changes what you do next. If it never does, it's become a ritual rather than a check."
+    "How often the check changes what you do next, because a check that never changes anything has stopped doing its job."
    ],
    "consider": [
     "Checking every step changes your pacing, and that's the point rather than a cost, because Rosenshine's sequence assumes you'll sometimes need to reteach.",
@@ -3088,7 +3088,7 @@
    ],
    "lenses": [],
    "tech": [
-    "A screencast made with the approved screen recording tool in your setting, shared through your school's learning platform, gives an explanation a second life, because pupils can pause it, rewind it and come back to it whenever they need to. That's the supplement. The moment it becomes the first and only telling, it's a substitute, and that isn't where the EEF's evidence says technology works best."
+    "A screencast made with the approved screen recording tool in your setting, shared through your school's learning platform, lets pupils pause an explanation, rewind it and come back to it whenever they need to, which the live version can never offer. That's the supplement doing its job. The moment it becomes the first and only telling, it's a substitute, and that isn't where the EEF's evidence says technology works best."
    ],
    "stair": null,
    "wider": "The EEF's digital technology guidance is the direct source, and supplement, never substitute is its finding compressed into four words."
@@ -3097,19 +3097,19 @@
    "ref": "explanations-and-modelling/07-four-slots-no-more",
    "slug": "four-slots-no-more",
    "why": [
-    "Working memory holds around four items at a time, and every element on your screen is bidding for one of those slots. A logo, a border or a sentence nobody needs right now is taking up space the explanation really requires.",
-    "Sweller's point is about how the mind works rather than how slides look. Stripping slides back to the essentials is load management, and so is pressing B to blank the screen when you want the attention on you."
+    "Working memory holds around four items at a time, and every element on your screen takes up one of those slots. A logo, a border or a sentence nobody needs right now is taking up space the explanation really requires.",
+    "Sweller's point is about how the mind works rather than how slides look. Stripping slides back to the essentials is looking after your pupils' working memory, and so is pressing B to blank the screen when you want the attention on you."
    ],
    "example": [
     "A teacher preparing to explain supply and demand cuts the slide down to one graph and a four-word heading. When the discussion moves beyond the graph, the B key blanks the screen and the class's four slots can go to the voice doing the explaining."
    ],
-   "try": "Count the elements on each slide of the deck you'll teach next. Anything beyond the essentials is a candidate for deletion, and the B key covers the moments when the essential thing is you.",
+   "try": "Count the elements on each slide of the deck you'll teach next. Anything beyond the essentials is a candidate for deletion, and the B key covers the moments when the essential thing is the explanation itself.",
    "notice": [
     "Where pupils look during the explanation, both with a full screen and with a blank one.",
     "Whether recall improves on the ideas you taught from stripped-back slides. If nothing changes, have a look at what else is loading the moment."
    ],
    "consider": [
-    "What counts as essential depends on the idea and the class, so the four-item limit is general but the editing is local.",
+    "What counts as essential depends on the idea and the class, so the four-item limit is general but the editing is yours to do.",
     "A blank screen shifts the whole load onto your spoken explanation, which is why this pairs so well with small steps."
    ],
    "related": [
@@ -3122,14 +3122,14 @@
     "working-memory"
    ],
    "stair": null,
-   "wider": "Sweller's cognitive load theory supplies the mechanism here. Working memory is narrow and easily overwhelmed, and explaining is really an act of load management."
+   "wider": "Sweller's cognitive load theory supplies the mechanism here. Working memory is narrow and easily overwhelmed, and a good explanation is planned with that limit in mind."
   },
   {
    "ref": "explanations-and-modelling/08-avoid-split-attention",
    "slug": "avoid-split-attention",
    "why": [
-    "Put the labels in one place and the diagram in another and pupils have to search between them, holding fragments in mind while their eyes travel. Sweller calls this split attention, and all that searching spends exactly the working memory the explanation needs.",
-    "Integrating the labels directly into the image takes the searching away. Nothing about the content changes, but reading it costs a lot less."
+    "Put the labels in one place and the diagram in another and pupils have to search between them, holding fragments in mind while their eyes travel. Sweller calls this split attention, and all that searching uses up exactly the working memory the explanation needs.",
+    "Integrating the labels directly into the image takes the searching away. Nothing about the content changes, but reading it becomes much less effortful."
    ],
    "example": [
     "Teaching the water cycle, a teacher shows the diagram unlabelled and then adds each label live with an annotation tool, placing the word on the part it names while that stage is being explained. The class never has to go matching a numbered key to the picture."
@@ -3159,8 +3159,8 @@
    "ref": "explanations-and-modelling/09-say-it-or-show-it-not-both",
    "slug": "say-it-or-show-it-not-both",
    "why": [
-    "Reading text aloud while the same text sits on the screen feels thorough, but Sweller's redundancy effect says it's the opposite. Pupils end up processing the written and spoken versions at once, the two streams compete with each other, and working memory pays for both.",
-    "The fix costs nothing at all. Say it, or show it, and stop doing both at the same time. Explaining is an act of load management, and this is just about the easiest load there is to remove."
+    "Reading text aloud while the same text sits on the screen feels thorough, but Sweller's redundancy effect says it's the opposite. Pupils end up processing the written and spoken versions at once, the two streams compete with each other, and working memory ends up carrying both.",
+    "The fix costs nothing at all. Say it, or show it, and stop doing both at the same time. Of all the things in this strand that lighten the load on working memory, this is probably the easiest one to do tomorrow."
    ],
    "example": [
     "Mid-explanation, a teacher presses B, the screen goes black, thirty pairs of eyes come up, and the idea gets explained in speech with nothing competing for attention. When the diagram is needed the screen comes back, and the teacher talks over the image rather than reading beside it."
@@ -3189,11 +3189,11 @@
    "ref": "explanations-and-modelling/10-remove-the-clutter",
    "slug": "remove-the-clutter",
    "why": [
-    "Busy slides feel rich but they don't teach much. Mayer's coherence principle is really firm on this, so remove every word, image and sound that doesn't support the learning, because each one competes for attention just when the explanation needs the space.",
-    "Clip art, background music and a themed border aren't neutral. If it's on the screen, it's being processed."
+    "Busy slides feel rich, but most of what makes them busy isn't helping anyone learn. Mayer's coherence principle is really firm on this, so remove every word, image and sound that doesn't support the learning, because each one competes for attention just when the explanation needs the space.",
+    "Clip art, background music and a themed border aren't neutral either, because if something is on the screen, pupils are processing it, whether you wanted them to or not."
    ],
    "example": [
-    "Rebuilding a slide sequence on the digestive system, a teacher deletes the cartoon stomach, the sound effects and two of the three photographs, leaving one clear diagram and a handful of words. The content being taught is exactly the same, but the competition for attention isn't."
+    "Rebuilding a slide sequence on the digestive system, a teacher deletes the cartoon stomach, the sound effects and two of the three photographs, leaving one clear diagram and a handful of words. The content being taught is exactly the same, and there's simply less for it to compete with."
    ],
    "try": "Open tomorrow's deck and remove everything decorative from a single slide. Teach it, and see whether anything is actually missed.",
    "notice": [
@@ -3291,7 +3291,7 @@
     "Whether the image comes back when the words are tested later on."
    ],
    "consider": [
-    "This is two routes to the same idea rather than two ideas at once, so an unrelated image is clutter rather than coding.",
+    "The aim is two routes to the same idea, so an unrelated image doesn't help, it's just clutter wearing the theory's name.",
     "Minimal text is part of the theory rather than a style preference, and the redundancy and coherence cards explain what fuller text costs."
    ],
    "related": [
@@ -3319,7 +3319,7 @@
    "try": "Take one diagram you usually present with a written explanation beside it, strip the text back to bare labels, and speak the explanation instead, either live or recorded.",
    "notice": [
     "Where pupils look while you're narrating, compared with when there was text to read.",
-    "On a recorded version, where pupils pause and replay, because those points can map the difficult moments."
+    "On a recorded version, where pupils pause and replay, because those points can show you where the difficult moments are."
    ],
    "consider": [
     "Modality moves the explanatory prose to the voice, but short labels that simply name the parts still belong on the image, and that's what the contiguity card covers."
@@ -3340,11 +3340,11 @@
    "ref": "explanations-and-modelling/15-keep-words-near-images",
    "slug": "keep-words-near-images",
    "why": [
-    "Every stretch of screen between a label and the thing it names has to be crossed by the eye and bridged by memory. Mayer's spatial contiguity principle keeps words next to the images they describe, so nothing needs holding on to during the journey.",
-    "A numbered key below a diagram is the classic offender, because it's accurate and complete and simply in the wrong place."
+    "When a label sits away from the thing it names, the eye has to travel between them and the memory has to hold the label all the way across. Mayer's spatial contiguity principle keeps words next to the images they describe, so nothing needs holding on to during the journey.",
+    "A numbered key below a diagram is the classic offender, because it's accurate, it's complete, and it's simply in the wrong place."
    ],
    "example": [
-    "Laying out a slide on the parts of a flower, a teacher places each label beside its structure with a short connecting line, rather than listing the names in a panel down the side, so reading the slide and reading the diagram become the same act."
+    "Laying out a slide on the parts of a flower, a teacher places each label beside its structure with a short connecting line, rather than listing the names in a panel down the side, so pupils read the diagram and the words together rather than hopping between the two."
    ],
    "try": "Have a look through the resources for your next topic for separated captions, keys and label lists, and move each word next to the thing it names.",
    "notice": [
@@ -3383,8 +3383,8 @@
     "Which reveals you hold back longest when you're teaching live, because those are the steps your explanation needs the most time on."
    ],
    "consider": [
-    "The reveal serves the narration rather than the spectacle, so a plain appear does the job, and movement for its own sake is really just more clutter.",
-    "One idea per click keeps you honest about how much each step is carrying, which is really small steps by another route."
+    "The reveal is there to serve the explanation rather than to impress anybody, so a plain appear does the job, and movement for its own sake is really just more clutter.",
+    "One idea per click also shows you how much each step is carrying, which gets you to small steps by another route."
    ],
    "related": [
     "explanations-and-modelling/12-chunk-and-reveal",
@@ -3394,14 +3394,14 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "The card draws on both Mayer's segmenting principle and Sweller's account of working memory, because pacing the display is pacing the load."
+   "wider": "The card draws on both Mayer's segmenting principle and Sweller's account of working memory, because a display revealed at the right pace keeps the load manageable."
   },
   {
    "ref": "explanations-and-modelling/17-short-screencasts",
    "slug": "short-screencasts",
    "why": [
-    "A long recorded explanation is easy to make and hard to use. Mayer's evidence points at images plus voice outperforming text-heavy slides, and the card adds the discipline that goes with it, which is one idea per video, because brevity beats completeness.",
-    "Completeness is what the whole library is for, so each clip only has to do one job."
+    "A long recorded explanation is easy to make, but pupils rarely get much out of one. Mayer's evidence points at images plus voice outperforming text-heavy slides, and the card adds the discipline that goes with it, which is one idea per video, because brevity beats completeness.",
+    "You don't need any single clip to cover everything, because that's what the growing library is for, so each clip only has to do one job."
    ],
    "example": [
     "A maths teacher records one screencast on expanding a single bracket, with the working shown on screen and the voice narrating over it, and nothing else. The next idea, a second bracket, gets its own separate recording."
@@ -3433,11 +3433,11 @@
    "ref": "explanations-and-modelling/18-pre-train-the-vocabulary",
    "slug": "pre-train-the-vocabulary",
    "why": [
-    "An explanation delivered in unfamiliar terms is really two lessons squeezed into one, and working memory pays for both at once. Mayer's pre-training principle separates them, so you teach the key terms first and then the ideas.",
+    "An explanation delivered in unfamiliar terms is really two lessons squeezed into one, because pupils are learning the words and the ideas at the same time, and working memory has to carry both. Mayer's pre-training principle separates them, so you teach the key terms first and then the ideas.",
     "Learners who already know the words can give the explanation their full attention, and as the card puts it, they can focus on the ideas."
    ],
    "example": [
-    "Before a lesson on electrical circuits, pupils meet current, voltage and resistance on a vocabulary slide, or in a short pre-lesson video, with a picture for each one. When the main explanation uses the terms, they label something that's already half-known rather than arriving as new noise."
+    "Before a lesson on electrical circuits, pupils meet current, voltage and resistance on a vocabulary slide, or in a short pre-lesson video, with a picture for each one. When the main explanation uses the terms, they label something that's already half-known rather than something brand new."
    ],
    "try": "List the terms your next explanation can't be given without, and teach the unfamiliar ones before it starts rather than pausing to define them mid-flow.",
    "notice": [
@@ -3476,7 +3476,7 @@
     "Thinking aloud while you work makes that invisible expertise visible. It's modelling the process rather than the product, and the process is the thing novices actually need to copy."
    ],
    "example": [
-    "Under a visualiser, a teacher annotates an unseen source and narrates the decisions as they go: I am reading the provenance line first, because it changes how I weigh everything else. I am not sure about this phrase yet, so I am marking it and moving on. The narration is the lesson, and the finished annotation is really just what's left behind afterwards."
+    "Under a visualiser, a teacher annotates an unseen source and narrates the decisions as they go: I am reading the provenance line first, because it changes how I weigh everything else. I am not sure about this phrase yet, so I am marking it and moving on. It's the narration the class is really there to learn from, and the finished annotation just records where it went."
    ],
    "try": "Choose one task this week that you'd normally demonstrate silently or show finished, and narrate your way through it live, with the choices, the checks and what you do when you're not sure.",
    "notice": [
@@ -3484,7 +3484,7 @@
     "The questions pupils ask afterwards, which tend to move away from what is the answer and towards how did you know to do that."
    ],
    "consider": [
-    "Narrating decisions is different from narrating actions. Now I underline the date is just a caption, but I am underlining the date because it tells me which rules apply is thinking made audible.",
+    "Narrating decisions is different from narrating actions. Now I underline the date is just a caption, but I am underlining the date because it tells me which rules apply shows the class the thinking they came for.",
     "This is the start of a handover rather than the whole of one, and the strand's scaffolding strategies describe the fade from modelled to guided to independent."
    ],
    "related": [
@@ -3517,7 +3517,7 @@
     "What changes when the work on the stage is a pupil's rather than your own."
    ],
    "consider": [
-    "The stage is for process. Rosenshine's advice is to model the working rather than display the finished product, and a visualiser makes the crossings-out public, which is really where its value sits.",
+    "The stage is for process. Rosenshine's advice is to model the working rather than display the finished product, and a visualiser makes the crossings-out public, which is where so much of its value comes from.",
     "Sharing pupil work under the camera depends on the culture in the room, and you're the judge of when a class is ready for it."
    ],
    "related": [
@@ -3566,7 +3566,7 @@
    "ref": "explanations-and-modelling/22-alternate-examples-and-practice",
    "slug": "alternate-examples-and-practice",
    "why": [
-    "Teach five examples and then set ten problems and the method has faded before the first attempt. Atkinson's research supports a much tighter weave, which is to alternate worked examples with practice, so an example, then a try, then another example, then another try.",
+    "Teach five examples and then set ten problems, and the method has faded before the first attempt. Atkinson's research supports a much tighter pattern, which is to alternate worked examples with practice, so an example, then a try, then another example, then another try.",
     "Each attempt comes while the example is still fresh in mind, and each fresh example arrives just after pupils have discovered what they needed it for."
    ],
    "example": [
@@ -3577,7 +3577,7 @@
     "Whether pupils look back at the example mid-attempt, and what they look for when they do."
    ],
    "consider": [
-    "Parallel means genuinely parallel, so the same structure with a different surface. A task that changes the structure is a new example pretending to be practice.",
+    "Parallel means genuinely parallel, so the same structure with a different surface, because a task that changes the structure isn't practice of the example, it's a new problem altogether.",
     "How long to keep alternating before you move to unsupported problems is a fading decision, and that judgement belongs with the teacher who can see the attempts."
    ],
    "related": [
@@ -3602,14 +3602,14 @@
    "slug": "fade-the-scaffolds",
    "why": [
     "Support that never fades teaches pupils to depend on the support, but support removed all at once tips them into overload. Rosenshine's resolution is a gradient, so a complete example first, then a partial one with gaps, then independent practice.",
-    "The fading is where the teaching happens, because each piece you remove hands one more part of the thinking over to the pupil, at a rate working memory can absorb."
+    "Each piece you remove hands one more part of the thinking over to the pupil, at a rate working memory can cope with, and that gradual handover is what all the scaffolding was for in the first place."
    ],
    "example": [
-    "A fillable template structures a science evaluation three times over, first fully modelled, then with the reasoning sentences gapped, then blank. The same document, with more taken out each time, walks the class from watching to doing."
+    "A fillable template structures a science evaluation three times over, first fully modelled, then with the reasoning sentences gapped, then blank. The same document, with more taken out each time, takes the class from watching to doing."
    ],
    "try": "Take one task you currently model in full and build the middle version, which is the same example with strategic gaps for pupils to complete.",
    "notice": [
-    "Which gaps get filled confidently and which ones stall a row of pens, because the stalls show you where the thinking actually lives.",
+    "Which gaps get filled confidently and which ones bring the room to a stop, because the stopping points show you where the hard thinking actually is.",
     "Who still reaches for the complete version, and how long they carry on doing so."
    ],
    "consider": [
