@@ -395,7 +395,7 @@ def build_needs():
     <p class="kicker">How this works</p>
     <h2 id="how-h">Start with the learning need</h2>
     <p class="wide">Explore the approaches that speak to it. Think about your subject, your phase and your pupils. Decide what might help. Then, and only then, ask whether technology adds anything useful.</p>
-    <p class="note wide">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Each link takes you to the strategy's own page, with why you might use it, what it can look like in a classroom and a way to begin. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
+    <p class="note wide">Every strategy below is one of the original 144, written exactly as it appears on its card. Nothing has been renamed or rewritten; a strategy can appear under more than one need. Each link takes you to the strategy's own page, with why you might use it, what it could look like in your classroom and a way to begin. Prefer the original structure? <a href="/#guides">Browse the six guides</a> or <a href="/find-a-strategy/">search all 144</a>.</p>
     <nav aria-label="Classroom needs">
       <ul class="chips">{chips}</ul>
     </nav>
@@ -522,8 +522,8 @@ def build_strategy_page(page):
         sections.append(companion_section("why-use-it", "Why you might use it",
             "The problem it may help with", paras("why")))
     if page.get("example"):
-        sections.append(companion_section("example", "What it might look like",
-            "One version of it, in a classroom", paras("example")))
+        sections.append(companion_section("example", "What it could look like",
+            "One way in your classroom", paras("example")))
     if page.get("try"):
         sections.append(companion_section("try-it", "Try it",
             "A way to begin", paras("try")))
@@ -595,7 +595,7 @@ def build_strategy_page(page):
     out = [
         head(st["title"] + " | " + TITLE,
              st["title"] + ": one of the 144 Pedagogy First strategies, from " + c["name"]
-             + ", with why you might use it, what it can look like, and a way to begin.",
+             + ", with why you might use it, what it could look like in your classroom, and a way to begin.",
              SITE + url, ld, body_class="text-page"),
         header(c["slug"]),
         f"""<div class="hero">
