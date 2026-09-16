@@ -2175,7 +2175,7 @@
    "ref": "questioning-and-discussion/01-questions-that-make-thinking-visible",
    "slug": "questions-that-make-thinking-visible",
    "why": [
-    "Anderson and Krathwohl give you a really useful map of what a question is asking a learner to do, whether that's remembering, understanding, applying, analysing, evaluating or creating. Without a map like this, questioning tends to settle into one register, and the talk in your classroom can end up much thinner than the thinking you're actually after.",
+    "Anderson and Krathwohl give you a really useful map of what a question is asking a learner to do, whether that's remembering, understanding, applying, analysing, evaluating or creating. Without a map like this, questioning tends to settle into one register, and the talk in your classroom can end up asking for much less thinking than you actually want.",
     "The card's caution is just as important as the taxonomy itself, which is that these are not a hierarchy of worth. Recall is foundational, not inferior, and a lesson full of analysis questions built on insecure knowledge doesn't really help anybody."
    ],
    "example": [
@@ -2206,7 +2206,7 @@
    "slug": "surface-deep-and-transfer",
    "why": [
     "Not every good question suits every moment, and Hattie and Zierer make a really helpful distinction here. Surface questions establish what, deep questions probe why, and transfer questions ask where else this applies, and each one serves a different stage of learning.",
-    "The thing that tends to go wrong is reaching for transfer too early. If you ask students to apply a concept elsewhere before the surface knowledge is secure, you're setting them up to fail, and that failure can look like inability when it's really just sequencing."
+    "The thing that tends to go wrong is reaching for transfer too early. If you ask students to apply a concept elsewhere before the surface knowledge is secure, you're setting them up to fail, and that failure can look like inability when it's really just a matter of asking too soon."
    ],
    "example": [
     "Early in a unit on electricity you might ask what the components of this circuit are. Once that's secure, you can ask why the bulb dims when a second one is added. Later still, you can ask where else the idea of sharing a limited supply turns up. It's the same topic all the way through, but three stages and three different kinds of question."
@@ -2214,7 +2214,7 @@
    "try": "Before writing the key questions for your next lesson, ask yourself one question first, which is what stage this class is at with this content.",
    "notice": [
     "How students handle why questions, because struggle there often tells you the surface layer isn't secure yet.",
-    "Whether the discussion changes when the question matches the stage the class is at rather than the ambitions of the scheme of work."
+    "Whether the discussion changes when the question matches the stage the class is actually at, rather than the stage the scheme of work says they should be at."
    ],
    "consider": [
     "Stage is about this class and this content right now, not about ability. The same lesson can hold students at different stages, and only you can see where each one is.",
@@ -2235,7 +2235,7 @@
    "slug": "open-questions-demand-more",
    "why": [
     "Most classroom questions have a destination the teacher already holds, and students know it. Dillon found that genuine open questions, the ones where the teacher really doesn't know the answer, produce the most extended student reasoning.",
-    "That's a different thing from a closed question dressed up in open clothing. Guess what I'm thinking is a game rather than an enquiry, and students play it efficiently rather than thoughtfully."
+    "That's a different thing from a closed question that just looks open. Guess what I'm thinking is a game rather than an enquiry, and students learn to play it quickly, which is not the same as learning to think."
    ],
    "example": [
     "An English teacher asks which character in the novel changes most, and she genuinely hasn't decided herself. Students take different positions, and because there's no answer to converge on, they have to argue from the text. The discussion runs longer than planned and doesn't resolve, and that's fine."
@@ -2244,10 +2244,10 @@
    "notice": [
     "The length of the reasoning compared with your closed questions, which is exactly what Dillon measured.",
     "Whether students start addressing each other rather than routing everything through you.",
-    "Your own urge to steer the room towards a view you privately hold."
+    "Your own urge to steer the room towards a view you privately hold, because it's stronger than most of us expect."
    ],
    "consider": [
-    "Not every question needs a predetermined destination, but lots of them still will. Open questions do their work partly because they're occasional and genuine rather than the default.",
+    "Not every question needs to be open, and lots of them still won't be. Open questions do their work partly because they're occasional and genuine rather than the default.",
     "An open question still needs something to reason with, so a class without secure knowledge of the novel can't really argue about it."
    ],
    "related": [
@@ -2280,7 +2280,7 @@
    ],
    "consider": [
     "Plan the pivotal questions rather than a script. The point is to have the harder questions ready, not to close down where the discussion goes.",
-    "Improvised questions keep their place too, because responsiveness is part of the craft. Planning removes the ceiling, it doesn't remove the improvising."
+    "Improvised questions keep their place too, because responsiveness is part of the craft. Planning gives you better questions to reach for, and it doesn't stop you reaching for others."
    ],
    "related": [
     "questioning-and-discussion/01-questions-that-make-thinking-visible",
@@ -2292,7 +2292,7 @@
    "stair": {
     "lede": "Drafting a ladder of questions across the levels is planning work AI can really help to speed up, through the approved tool in your setting, with the framework the card names built into the prompt:",
     "prompt": "Act as a secondary English teacher. Create a set of questions on the poem I am teaching to Year 10, one question at each of these levels: remembering, understanding, applying, analysing, evaluating, creating.\n\nLabel each question with its level. Keep every question concise and answerable in discussion, not as an essay task.\n\nDo not include answers, model responses or commentary.\n\n[paste the poem or topic details here]",
-    "after": "The levels are a planning tool rather than a hierarchy of worth, and recall is foundational, not inferior. Draft with the tool, then choose and reorder for your class, and keep iterating until the ladder fits the lesson you're actually teaching."
+    "after": "The levels are a planning tool rather than a hierarchy of worth, and recall is foundational, not inferior. Draft with the tool, then choose and reorder for your class, and keep going back and forth until the ladder fits the lesson you're actually teaching."
    },
    "wider": "This is Anderson and Krathwohl put to work, with the taxonomy read not so much as a description of questions, but as a discipline for writing them.",
    "tech": [
@@ -2332,8 +2332,8 @@
    "ref": "questioning-and-discussion/06-wait-time-1-after-you-ask",
    "slug": "wait-time-1",
    "why": [
-    "Mary Budd Rowe timed teachers waiting after their questions and found that most give less than a second before speaking again, whether that's rephrasing, prompting or answering the question themselves. Under a second isn't thinking time for anyone.",
-    "Extending the pause to three seconds costs nothing, needs no resources, and it changes the answers you get. The silence after a question isn't dead air, it's often where the better thinking gets started."
+    "Mary Budd Rowe timed teachers waiting after their questions and found that most give less than a second before speaking again, whether that's rephrasing, prompting or answering the question themselves. A second isn't enough time for anyone to think anything through.",
+    "Extending the pause to three seconds costs nothing, needs no resources, and it changes the answers you get, because the silence after a question is when a lot of the thinking actually happens."
    ],
    "example": [
     "A teacher asks why the character makes the choice she does, and then counts to three in their head. The silence feels far longer from the front than it does from the desks. The first answer that comes is a sentence rather than a single word, and a second pupil builds on it without being prompted."
@@ -2371,7 +2371,7 @@
    ],
    "try": "Run both wait times together for a lesson, so three seconds after you ask and three seconds after they answer. The second pause is the harder habit to build, because an answer feels like your cue to speak.",
    "notice": [
-    "The self-corrections you didn't have to make for them.",
+    "The self-corrections you didn't have to make for them, because they're the clearest sign the pause is working.",
     "Whether answers keep growing past their first full stop.",
     "Whether other pupils come in during the pause without being asked to."
    ],
@@ -2425,7 +2425,7 @@
    "ref": "questioning-and-discussion/09-think-pair-share",
    "slug": "think-pair-share",
    "why": [
-    "Whole-class questioning exposes first-draft thinking to public judgement, which is one reason so many students simply decline to offer any. Lyman's think-pair-share changes the sequence, so there's thinking time alone, then a partner to test the idea on, and only then the room.",
+    "Whole-class questioning asks pupils to share their very first version of an idea with the whole room, which is one reason so many students simply decline to offer any. Lyman's think-pair-share changes the sequence, so there's thinking time alone, then a partner to test the idea on, and only then the room.",
     "By the time an idea is spoken publicly it's already been formed and rehearsed once, and the card's claim is a modest one you can see for yourself: discussion becomes more considered and more substantive."
    ],
    "example": [
@@ -2458,7 +2458,7 @@
    "slug": "hands-down",
    "why": [
     "Hand-raising looks like participation, but Wiliam's point is that it actually distorts it, because a small group volunteers over and over again and the rest learn that waiting patiently works. The pupils you most need to hear from are usually not the ones with their hands up.",
-    "Removing hands and directing questions to named pupils changes the contract, because every pupil now owns the possibility of being asked, and that changes how they listen."
+    "Removing hands and directing questions to named pupils changes the arrangement for everyone, because any pupil might now be asked, and knowing that changes how they listen."
    ],
    "example": [
     "A teacher tells the class the new normal, which is hands down unless they're asked for, and the teacher will be choosing who answers. Questions go to named pupils across the fortnight, tracked loosely on a class list so nobody stays invisible. The volunteers grumble for a week or so, but the room's attention changes within days."
@@ -2497,11 +2497,11 @@
    "try": "Establish the norm before you lean on it. Name it with the class, and hold the room to it the first time a wrong answer draws a reaction.",
    "notice": [
     "What actually happens after a wrong answer, both your response and the room's.",
-    "The body language of your quieter pupils when names are used, because relief and dread look different.",
+    "How your quieter pupils look when names are used, because you can usually tell the difference between a pupil who's relieved to be included and one who's dreading it.",
     "Whether your harder questions still drift towards the same few students."
    ],
    "consider": [
-    "Climate is the precondition rather than an optional extra. If cold calling in this class would feel like exposure, the norms come first, and how fast to move with a particular anxious pupil is a call for the teacher who knows the class, not a website.",
+    "Climate is the precondition rather than an optional extra. If cold calling in this class would feel like exposure, the norms come first, and how fast to move with a particular anxious pupil is a call for the teacher who knows the class, and no guide can make it for you.",
     "Hands down is the companion routine, and this card supplies the conditions that make it fair."
    ],
    "related": [
@@ -2526,7 +2526,7 @@
    "example": [
     "A teacher prints the seating plan and keeps a rough tally for a week, with a mark for each question asked and a second mark when the question was a demanding one. By Friday the plan shows two desks that were never asked anything at all, and the demanding marks clustered on one side of the room."
    ],
-   "try": "One class, one week, and tally marks on a printed class list or seating plan. Rough is absolutely fine, because rough data you actually collect beats precise data you never do.",
+   "try": "One class, one week, and tally marks on a printed class list or seating plan. Rough is absolutely fine, because a rough record you actually keep is worth far more than a precise one you never get round to.",
    "notice": [
     "Who was never asked anything at all.",
     "Where the harder questions land, and whether the pattern follows attainment, which is what Good and Brophy found.",
@@ -2556,7 +2556,7 @@
     "The bounce is the part that makes this different from ordinary questioning. Because an answer might arrive at anyone, everyone has a reason to listen to it, and the card describes it as keeping all students alert and spreading thinking across the whole room."
    ],
    "example": [
-    "What was the turning point in this experiment? Then a pause while everyone thinks. Then Jacob is asked, and Jacob answers. The teacher doesn't evaluate, but bounces it on instead, asking Priya whether she'd add anything to Jacob's reason or push back on it. The judgement that would normally come from the front comes from the room instead."
+    "What was the turning point in this experiment? Then a pause while everyone thinks. Then Jacob is asked, and Jacob answers. The teacher doesn't evaluate, but bounces it on instead, asking Priya whether she'd add anything to Jacob's reason or push back on it, so it's the room doing the judging rather than the teacher."
    ],
    "try": "Script one question through all four steps for tomorrow, including who you might pounce to and who you might bounce to. Improvising the routine can come later, so start deliberate.",
    "notice": [
@@ -2584,8 +2584,8 @@
    "ref": "questioning-and-discussion/14-five-principles-of-dialogic-talk",
    "slug": "five-principles-of-dialogic-talk",
    "why": [
-    "Alexander names five qualities of dialogic talk, which are collective, reciprocal, supportive, cumulative and purposeful. The list works really well as a diagnostic, because most classroom talk already meets two or three of the five.",
-    "That's what makes this card practical rather than aspirational. You're not building dialogic talk from nothing, you're finding the missing qualities and working on those, so audit first and start with the gaps."
+    "Alexander names five qualities of dialogic talk, which are collective, reciprocal, supportive, cumulative and purposeful. The list works really well as a way of taking stock, because most classroom talk already meets two or three of the five.",
+    "That's what makes this card genuinely usable. You're not building dialogic talk from nothing, you're finding the missing qualities and working on those, so audit first and start with the gaps."
    ],
    "example": [
     "A teacher asks a colleague to observe a discussion lesson with just the five words on a slip of paper. The verdict comes back that the talk was clearly collective and supportive, sometimes reciprocal, but rarely cumulative, because contributions sat side by side without building on each other. That one word, cumulative, becomes the focus for the term."
@@ -2614,7 +2614,7 @@
    "ref": "questioning-and-discussion/15-break-the-ire-pattern",
    "slug": "break-the-ire-pattern",
    "why": [
-    "The IRE pattern of initiation, response and evaluation, or ask, answer and judge, is the default grammar of classroom talk, and Alexander shows that it limits thinking, because every exchange is three moves long and ends with a verdict from the front.",
+    "The IRE pattern of initiation, response and evaluation, or ask, answer and judge, is the default pattern of classroom talk, and Alexander shows that it limits thinking, because every exchange is three moves long and ends with a verdict from the front.",
     "The fix on the card is small enough to try today. Replace the evaluation with a follow-up question, such as what makes you say that, so the exchange stays open and the reasoning has to come out."
    ],
    "example": [
@@ -2678,19 +2678,19 @@
    "slug": "ground-rules-for-talk",
    "why": [
     "Groups don't fall into exploratory talk by accident. Mercer found that teaching its norms transforms discussion, and there's one detail that changes how you should go about it, which is that norms co-constructed with the class outperform norms that are just displayed or modelled.",
-    "The making of the rules is part of the mechanism, because rules a class wrote together are rules they can hold each other to."
+    "Writing the rules together is part of what makes them work, because rules a class wrote for themselves are rules they can hold each other to."
    ],
    "example": [
-    "A class spends ten minutes drafting its own rules for discussion, such as everyone's ideas get considered, reasons are asked for, and we try to agree before we move on. The wording is the pupils' own. It goes on the wall afterwards because they wrote it, not so that they'll read it."
+    "A class spends ten minutes drafting its own rules for discussion, such as everyone's ideas get considered, reasons are asked for, and we try to agree before we move on. The wording is the pupils' own, and that's what gives the poster on the wall any force it has."
    ],
    "try": "Before the next discussion-heavy topic, give ten minutes to agreeing the ground rules with the class instead of presenting yours to them.",
    "notice": [
     "Whether pupils bring up the rules unprompted during group work.",
-    "Who enforces them when they get broken, you or the group."
+    "Who enforces them when they get broken, you or the group, because the second one is the sign they've really taken hold."
    ],
    "consider": [
     "It really does need to be co-constructed. The card is explicit that displayed or modelled norms underperform, so it's worth resisting the efficient shortcut even when time is tight.",
-    "Success criteria built with the class work by a similar mechanism, which is why the formative assessment strand has a sibling card."
+    "Success criteria built with the class work in a similar way, which is why the formative assessment strand has a sibling card."
    ],
    "related": [
     "questioning-and-discussion/16-exploratory-talk",
@@ -2707,10 +2707,10 @@
    "slug": "accountable-talk",
    "why": [
     "Michaels, O'Connor and Resnick's accountable talk holds discussion to two standards at once, which are accurate knowledge and rigorous reasoning. The way in is language, so you teach the moves explicitly, such as I agree because, the evidence is, and say more.",
-    "The card's last three words carry the theory: language shapes thinking. If you give pupils the sentence shapes of reasoning, you give the reasoning somewhere to go."
+    "The card's last three words carry the theory: language shapes thinking. When pupils have the sentence shapes of reasoning, it becomes much easier for them to actually do the reasoning."
    ],
    "example": [
-    "During a discussion of a historical source, the sentence starters sit on the board. A pupil begins with the evidence is, and then has to find some in the source before the sentence can end. The stem isn't decorating the claim, it's obliging the pupil to complete it."
+    "During a discussion of a historical source, the sentence starters sit on the board. A pupil begins with the evidence is, and then has to find some in the source before the sentence can end, so the stem is gently insisting on the very thing you wanted from the answer."
    ],
    "try": "Introduce two of the moves rather than the whole set, and ask for them in one discussion this week.",
    "notice": [
@@ -2738,7 +2738,7 @@
    "slug": "build-on-student-responses",
    "why": [
     "When Alexander's dialogic teaching approach was trialled with the EEF, one teacher move stood out, which was extending student responses rather than evaluating them. The card's image is exactly right: conductor, not judge.",
-    "Returning an answer to the room, so Aisha says X, does anyone want to add or challenge, does two things at once. It relieves you of the verdict, and it makes the class the audience for each other's thinking rather than spectators to yours."
+    "Returning an answer to the room, so Aisha says X, does anyone want to add or challenge, does two things at once. It takes the verdict away from you, and it makes the class the audience for each other's thinking rather than just for yours."
    ],
    "example": [
     "Discussing a poem's ending, a pupil says it feels hopeful. The teacher returns it to the room, saying Sam thinks the ending is hopeful, and asking who wants to add to that or push against it. Three more contributions arrive before the teacher speaks again, and the third one disagrees with the first, politely, with a line from the poem to back it up."
@@ -2768,7 +2768,7 @@
    "slug": "teach-question-stems",
    "why": [
     "King's finding turns the usual direction of classroom questioning around, because students trained to generate questions from stems produce richer discussion than students who only answer the teacher's questions. Generating a question demands deeper processing than answering one does.",
-    "The stems do the heavy lifting here. Without them, student questions tend towards what is X, but with them, pupils reach for connections and consequences they wouldn't have phrased on their own."
+    "The stems are doing a lot of the work here. Without them, student questions tend towards what is X, but with them, pupils reach for connections and consequences they wouldn't have phrased on their own."
    ],
    "example": [
     "At the end of an explanation in science, three stems go up on the board, how does ... affect ...?, what would happen if ...?, and how does ... connect to what we learned about ...? Every pupil writes one question about the topic, and a handful get posed back to the class."
@@ -2776,7 +2776,7 @@
    "try": "Put two or three stems up after your next explanation and ask every pupil to write one question before any discussion starts.",
    "notice": [
     "The level of the questions against what the stems demand, so are pupils really using the stems, or writing what is X underneath them?",
-    "Questions that reveal gaps or misconceptions, because a generated question is evidence as well as enquiry.",
+    "Questions that reveal gaps or misconceptions, because a generated question tells you things as well as asking them.",
     "How discussion of a pupil's question differs from discussion of one of yours."
    ],
    "consider": [
@@ -2806,12 +2806,12 @@
    "try": "Run it first on content you've already taught, with the stems provided and ten minutes protected for it, so one question each, then swap, then talk through the answers together.",
    "notice": [
     "Whether pairs are enquiring or rehearsing, because questions they already know the answers to are practice rather than this.",
-    "The talk while they're answering, which at its best sounds like exploratory talk in miniature.",
+    "The talk while they're answering, which at its best sounds like exploratory talk on a small scale.",
     "The questions neither pupil can answer, which are really useful information for you."
    ],
    "consider": [
     "Teaching the stems comes first, so this card assumes the previous one.",
-    "When a pair is stuck, the temptation to hand over the answer is strong, but a good question is meant to be wrestled with, so give the struggle a little room before you shorten it."
+    "When a pair is stuck, the temptation to hand over the answer is strong, but a good question is meant to be worked at, so give the struggle a little room before you step in."
    ],
    "related": [
     "questioning-and-discussion/20-teach-question-stems",
@@ -2827,7 +2827,7 @@
    "ref": "questioning-and-discussion/22-questions-as-evidence-of-understanding",
    "slug": "questions-as-evidence-of-understanding",
    "why": [
-    "A student's question reveals the depth of their understanding, and often more precisely than their answer to yours does. Why does X cause Y comes from a different place than what is X, and that difference is diagnostic, so a question works as a window into where a learner actually is.",
+    "A student's question shows you the depth of their understanding, and often more precisely than their answer to yours does. Why does X cause Y comes from a different place than what is X, and that difference is diagnostic, so the questions pupils ask tell you a great deal about where each learner actually is.",
     "The routine on the card is deliberately small, which is just one written question from each student before they leave."
    ],
    "example": [
@@ -2836,7 +2836,7 @@
    "notice": [
     "The level of the questions, what against why, and how it shifts across a topic.",
     "Pupils whose questions sit a long way above or below what their written work suggested.",
-    "Which questions repeat across the class, because a question lots of pupils ask is a teaching point rather than a coincidence."
+    "Which questions repeat across the class, because a question lots of pupils ask is a teaching point, and it needs answering for everyone."
    ],
    "consider": [
     "The questions are only evidence if they change something, so reading them into the next lesson's plan is the other half of the routine.",
@@ -2859,7 +2859,7 @@
    "ref": "questioning-and-discussion/23-interthinking-through-questions",
    "slug": "interthinking-through-questions",
    "why": [
-    "Interthinking is Mercer's word for something classrooms can be unusually good at, which is cognition genuinely shared, built between people through language. Student questions are what keep that joint enquiry moving along.",
+    "Interthinking is Mercer's word for something classrooms can be unusually good at, which is thinking genuinely shared, built between people through language. Student questions are what keep that joint enquiry moving along.",
     "The distinction the card draws is the one to hold onto here: the goal is thinking in common, not performance for the teacher."
    ],
    "example": [
@@ -2868,8 +2868,8 @@
    "try": "Sit yourself near one group during a task and count how many of the questions being asked are pupil-to-pupil rather than pupil-to-you.",
    "notice": [
     "Whether the questions route through you or pass across the group.",
-    "Whether a pupil's question ever changes the group's direction, because that's joint enquiry doing its work.",
-    "How the talk changes when you come near, because a group performing for the teacher sounds different from a group that's thinking."
+    "Whether a pupil's question ever changes the group's direction, because that's the joint enquiry actually working.",
+    "How the talk changes when you come near, because a group performing for the teacher sounds different from a group that's genuinely thinking together."
    ],
    "consider": [
     "Exploratory talk is the ground this grows in, so groups that haven't learned its norms will find it hard to interthink, whatever the task is."
@@ -2882,13 +2882,13 @@
    ],
    "lenses": [],
    "stair": null,
-   "wider": "Interthinking is where Mercer's work on classroom talk ends up, with language not just expressing thought but doing the thinking, jointly."
+   "wider": "Interthinking is where Mercer's work on classroom talk ends up, with language doing the thinking jointly rather than just expressing it afterwards."
   },
   {
    "ref": "questioning-and-discussion/24-questions-that-drive-enquiry",
    "slug": "questions-that-drive-enquiry",
    "why": [
-    "The know and want-to-know routine is familiar enough to feel like habit, but King's research gives it a firmer footing, because questions connected to prior knowledge produce the most powerful learning, and asking students to write what they know and what they want to know surfaces both halves at once.",
+    "The know and want-to-know routine is familiar enough to feel like habit, but King's research gives it a firmer footing, because questions connected to prior knowledge produce the most powerful learning, and asking students to write what they know and what they want to know brings both halves out at once.",
     "Their questions become the way into the content, rather than an opening activity that gets filed away and forgotten."
    ],
    "example": [
@@ -2901,7 +2901,7 @@
     "Whether pupils spot their own questions being answered as the unit unfolds."
    ],
    "consider": [
-    "It's an entry point rather than an itinerary. The scheme of work still sets the destination, and what to do with the questions it can't accommodate is your call.",
+    "It's a starting point rather than the whole route. The scheme of work still sets the destination, and what to do with the questions it can't accommodate is your call.",
     "Collecting the lists in writing keeps every pupil's starting point visible, and not just the confident talkers'."
    ],
    "related": [
