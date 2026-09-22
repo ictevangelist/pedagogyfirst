@@ -105,6 +105,7 @@ def head(title, description, canonical, jsonld=None, body_class=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(/[?&]_gl=/.test(location.search)){{var p=new URLSearchParams(location.search);p.delete("_gl");var q=p.toString();history.replaceState(null,"",location.pathname+(q?"?"+q:"")+location.hash);}}</script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 <meta name="author" content="Mark Anderson">
