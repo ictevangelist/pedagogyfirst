@@ -96,6 +96,7 @@ import hashlib
 CSS_V = hashlib.sha256((ROOT / "css" / "styles.css").read_bytes()).hexdigest()[:8]
 A11Y_V = hashlib.sha256((ROOT / "js" / "a11y.js").read_bytes()).hexdigest()[:8]
 FINDER_V = hashlib.sha256((ROOT / "js" / "finder.js").read_bytes()).hexdigest()[:8]
+GA_V = hashlib.sha256((ROOT / "js" / "ga-optout.js").read_bytes()).hexdigest()[:8]
 COPY_V = hashlib.sha256((ROOT / "js" / "copylink.js").read_bytes()).hexdigest()[:8]
 
 
@@ -106,7 +107,7 @@ def head(title, description, canonical, jsonld=None, body_class=None):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H68TL4KVNG"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("consent","default",{{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"}});gtag("js",new Date());gtag("config","G-H68TL4KVNG");</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}var gaOff=false;try{{gaOff=localStorage.getItem("ga-optout")==="1";}}catch(e){{}}gtag("consent","default",{{"analytics_storage":gaOff?"denied":"granted","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"}});gtag("js",new Date());gtag("config","G-H68TL4KVNG");</script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 <meta name="author" content="Mark Anderson">
@@ -238,10 +239,12 @@ def footer():
        The six infographics and 144 strategies are the fixed published resource; this site is the
        living companion around them. Companion guidance reviewed: {REVIEW_LABEL} &middot;
        <a href="/updates/">updates</a>.</p>
+    <p class="fine ga-note"><span class="ga-msg">This site uses Google Analytics to count visits.</span> <button type="button" class="ga-toggle">Turn off</button></p>
   </div>
 </footer>
 <script src="/js/a11y.js?v={A11Y_V}" defer></script>
 <script src="/js/copylink.js?v={COPY_V}" defer></script>
+<script src="/js/ga-optout.js?v={GA_V}" defer></script>
 </body>
 </html>
 """
