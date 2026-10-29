@@ -106,8 +106,8 @@ def head(title, description, canonical, jsonld=None, body_class=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H68TL4KVNG"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}var gaOff=false;try{{gaOff=localStorage.getItem("ga-optout")==="1";}}catch(e){{}}gtag("consent","default",{{"analytics_storage":gaOff?"denied":"granted","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"}});gtag("js",new Date());gtag("config","G-H68TL4KVNG");</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCVNKJXC63"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}var gaOff=false;try{{gaOff=localStorage.getItem("ga-optout")==="1";}}catch(e){{}}gtag("consent","default",{{"analytics_storage":gaOff?"denied":"granted","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"}});gtag("js",new Date());gtag("config","G-RCVNKJXC63");</script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 <meta name="author" content="Mark Anderson">
