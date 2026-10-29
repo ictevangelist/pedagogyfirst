@@ -239,7 +239,7 @@ def footer():
        The six infographics and 144 strategies are the fixed published resource; this site is the
        living companion around them. Companion guidance reviewed: {REVIEW_LABEL} &middot;
        <a href="/updates/">updates</a>.</p>
-    <p class="fine ga-note"><span class="ga-msg">This site uses Google Analytics to count visits.</span> <button type="button" class="ga-toggle">Turn off</button></p>
+    <p class="fine ga-note"><span class="ga-msg">This site uses Google Analytics to count visits and improve the site. Nothing is used for advertising.</span> <button type="button" class="ga-toggle">Turn off</button></p>
   </div>
 </footer>
 <script src="/js/a11y.js?v={A11Y_V}" defer></script>
