@@ -223,6 +223,7 @@ def footer():
           <li><a href="/about-pedagogy-first/">About Pedagogy First</a></li>
           <li><a href="/about-the-evidence/">About the evidence</a></li>
           <li><a href="/updates/">Updates</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
         </ul>
       </div>
       <div>
@@ -754,7 +755,11 @@ def build_updates():
     body = """<section id="log" aria-labelledby="log-h">
   <div class="wrap">
     <p class="kicker">The companion changes; the resource doesn't</p>
-    <h2 id="log-h">September 2026</h2>
+    <h2 id="log-h">October 2026</h2>
+    <ul class="updates">
+      <li>Added a <a href="/privacy/">privacy</a> page. Google Analytics now counts visits by default, for statistics only and never for advertising, and you can turn it off at the bottom of any page.</li>
+    </ul>
+    <h2>September 2026</h2>
     <ul class="updates">
       <li>Added classroom need based discovery: <a href="/classroom-needs/">What are you trying to improve?</a></li>
       <li>Added the <a href="/inclusive-practice/">Inclusive Practice</a> lens across the 144 strategies.</li>
@@ -1410,11 +1415,58 @@ def build_downloads():
 
 
 # ---------------------------------------------------------------- extras
+def build_privacy():
+    body = """<section id="collect" aria-labelledby="collect-h">
+  <div class="wrap">
+    <p class="kicker">The short version</p>
+    <h2 id="collect-h">What this site collects</h2>
+    <div class="plain">
+      <p>Very little. There are no accounts, no sign-in, no forms and no comments, and I never ask for or want information about pupils. Your reading-controls choices (text size, contrast, spacing) and your analytics choice are kept in your own browser, on your device, and are never sent anywhere.</p>
+    </div>
+  </div>
+</section>
+<section id="analytics" aria-labelledby="analytics-h">
+  <div class="wrap">
+    <p class="kicker">Google Analytics</p>
+    <h2 id="analytics-h">Counting visits, for statistics only</h2>
+    <div class="plain">
+      <p>I use Google Analytics to count visits and improve the site: how many people visit, which pages get read and roughly where in the world they're reading from. It is used only for statistics. Nothing is used for advertising: advertising features are switched off and no data is shared for ads.</p>
+      <p>Google Analytics sets its own cookies (_ga and one starting _ga_) so that repeat visits can be counted. The data goes to Google, which processes it on my behalf. What I see is aggregated (page views, visit counts, general location, device type) and I can't identify you from it. Google Analytics 4 doesn't log or store IP addresses.</p>
+    </div>
+  </div>
+</section>
+<section id="turn-off" aria-labelledby="turn-off-h">
+  <div class="wrap">
+    <p class="kicker">Your choice</p>
+    <h2 id="turn-off-h">How to turn it off</h2>
+    <div class="plain">
+      <p>Use <strong>Turn off</strong> at the bottom of any page. Your choice is saved in your browser, on your device only, and you can turn analytics back on in the same place. With JavaScript switched off, analytics never loads at all.</p>
+    </div>
+  </div>
+</section>
+<section id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <p class="kicker">Questions and complaints</p>
+    <h2 id="contact-h">Get in touch</h2>
+    <div class="plain">
+      <p>This site is run by Mark Anderson (ICT Evangelist). To ask a question about this notice, contact me via <a href="https://ictevangelist.com/contact/">ictevangelist.com/contact</a>. If you're unhappy with how I've handled your information, you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk">ico.org.uk</a>.</p>
+    </div>
+  </div>
+</section>
+"""
+    simple_page("privacy", "Privacy",
+        "How Pedagogy First handles information: no accounts or forms, and Google Analytics "
+        "for statistics only, never for advertising, which you can turn off at any time.",
+        "Privacy", "Privacy",
+        "What this site collects, why, and how to turn analytics off.",
+        body, narrow=True)
+
+
 def build_extras():
     urls = ([f"{SITE}/", f"{SITE}/about-pedagogy-first/",
              f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/",
              f"{SITE}/classroom-needs/", f"{SITE}/inclusive-practice/", f"{SITE}/try-this-tomorrow/",
-             f"{SITE}/about-the-evidence/", f"{SITE}/professional-learning/", f"{SITE}/updates/"]
+             f"{SITE}/about-the-evidence/", f"{SITE}/professional-learning/", f"{SITE}/updates/", f"{SITE}/privacy/"]
             + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
             + [f"{SITE}/strategies/{p['slug']}/" for p in STRATEGY_PAGES])
     body = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
@@ -1439,6 +1491,7 @@ def main():
     build_inclusive()
     build_tomorrow()
     build_evidence()
+    build_privacy()
     build_pl()
     build_updates()
     for _p in STRATEGY_PAGES:
