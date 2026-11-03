@@ -50,6 +50,12 @@ for _r in LENSES["try_tomorrow"]:
 REVIEW_LABEL = "September 2026"
 STRATEGY_PAGES = json.loads((SRC / "strategy-pages.json").read_text())["pages"]
 PILOT = {p["ref"]: p for p in STRATEGY_PAGES}
+# One teacher's guide ("pillar" page) per strand: question-led, for search
+# and answer engines. Keyed by strand slug.
+PILLARS = {json.loads(f.read_text())["slug"]: json.loads(f.read_text())
+           for f in sorted((SRC / "pillars").glob("*.json"))}
+PILLAR_PUBLISHED = "2026-11-03"
+FLAGSHIP = json.loads((SRC / "flagship.json").read_text())
 def canonical_strategy_url(ref):
     """The one permanent home for a strategy: its own page if it has one,
     otherwise its anchor on the strand page."""
@@ -100,7 +106,7 @@ GA_V = hashlib.sha256((ROOT / "js" / "ga-optout.js").read_bytes()).hexdigest()[:
 COPY_V = hashlib.sha256((ROOT / "js" / "copylink.js").read_bytes()).hexdigest()[:8]
 
 
-def head(title, description, canonical, jsonld=None, body_class=None):
+def head(title, description, canonical, jsonld=None, body_class=None, og_image=None, og_alt=None):
     return f"""<!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -116,18 +122,27 @@ def head(title, description, canonical, jsonld=None, body_class=None):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{e(canonical)}">
-<meta property="og:image" content="{SITE}/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Pedagogy First. Technology Second. Six guides, 144 strategies, by Mark Anderson.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{SITE}/assets/og-image.png">
+{_og(og_image, og_alt)}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/styles.css?v={CSS_V}">{_ld(jsonld)}
 </head>
 <body{' class="' + body_class + '"' if body_class else ''}>
 <a class="skip" href="#main">Skip to main content</a>
 """
+
+
+def _og(img, alt):
+    if not img:
+        return f"""<meta property="og:image" content="{SITE}/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pedagogy First. Technology Second. Six guides, 144 strategies, by Mark Anderson.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}/assets/og-image.png">"""
+    return f"""<meta property="og:image" content="{SITE}{img}">
+<meta property="og:image:alt" content="{e(alt)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}{img}">"""
 
 
 SEARCH_ICON = ('<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" '
@@ -210,6 +225,12 @@ def footer():
           <li><a href="/inclusive-practice/">Inclusive practice</a></li>
           <li><a href="/try-this-tomorrow/">Try this tomorrow</a></li>
         </ul>
+      </div>
+      <div>
+        <h2>Teacher's guides</h2>
+        <ul>
+          <li><a href="/what-is-pedagogy-first/">What is Pedagogy First?</a></li>
+{"".join(f'          <li><a href="/{PILLARS[c["slug"]]["path"]}/">{e(c["name"])}</a></li>' + chr(10) for c in CHAPTERS if c["slug"] in PILLARS)}        </ul>
       </div>
       <div>
         <h2>Professional learning</h2>
@@ -510,6 +531,11 @@ def build_tomorrow():
         body, current="tomorrow")
 
 
+def _guide_note(slug):
+    pl = PILLARS.get(slug)
+    return (f' New to the idea? Read <a href="/{pl["path"]}/">{e(pl["h1"])}</a>.') if pl else ""
+
+
 def build_strategy_page(page):
     ref = page["ref"]
     c, st, cl = STRAT[ref]
@@ -535,7 +561,7 @@ def build_strategy_page(page):
     <div class="strategy-grid strategy-single" style="--accent:{accent}">
 {card}
     </div>
-    <p class="note" data-companion>Part of {e(cl["label"])} in <a href="/{c["slug"]}/#{st["slug"]}">{c["number"]} {e(c["name"])}</a>, where it sits alongside its neighbouring strategies, the infographic and the thinking for the whole area.</p>
+    <p class="note" data-companion>Part of {e(cl["label"])} in <a href="/{c["slug"]}/#{st["slug"]}">{c["number"]} {e(c["name"])}</a>, where it sits alongside its neighbouring strategies, the infographic and the thinking for the whole area.{_guide_note(c["slug"])}</p>
   </div>
 </section>
 """]
@@ -966,6 +992,261 @@ def related_block(slug):
                    f'<ul class="related">{"".join(lis)}</ul>')
 
 
+# ---------------------------------------------------------------- teacher's guides
+def pillar_url(slug):
+    return f"/{PILLARS[slug]['path']}/" if slug in PILLARS else None
+
+
+def build_pillar(pl):
+    c = CH_BY_SLUG[pl["slug"]]
+    url = f"/{pl['path']}/"
+    canonical = SITE + url
+
+    toc = "".join(f'<li><a href="#{x["id"]}">{e(x["q"])}</a></li>' for x in pl["sections"])
+    toc += f'<li><a href="#strategies">All 24 {e(pl["term"])} strategies</a></li>'
+    toc += '<li><a href="#faq">Quick questions</a></li>'
+
+    secs = []
+    for x in pl["sections"]:
+        body = "".join(f"<p>{e(tie(t))}</p>" for t in x.get("body", []))
+        if x.get("list"):
+            body += (f'<p class="list-h">{e(x["list_heading"])}</p>' if x.get("list_heading") else "")
+            body += '<ul class="prompts">' + "".join(f"<li>{e(t)}</li>" for t in x["list"]) + "</ul>"
+        secs.append(f"""<section id="{x['id']}" class="qa" aria-labelledby="{x['id']}-h">
+  <div class="wrap">
+    <h2 id="{x['id']}-h">{e(x['q'])}</h2>
+    <p class="answer">{e(tie(x['answer']))}</p>
+    {body}
+  </div>
+</section>
+""")
+
+    groups = []
+    for cl in c["clusters"]:
+        refs = [f"{c['slug']}/{st['slug']}" for st in c["strategies"] if st["cluster"] == cl["key"]]
+        groups.append(f'<h3 class="group-h">{e(cl["label"])}</h3>\n{findings_list(refs)}')
+    strategies = f"""<section id="strategies" aria-labelledby="strategies-h">
+  <div class="wrap">
+    <p class="kicker">From the guide</p>
+    <h2 id="strategies-h">All 24 {e(pl['term'])} strategies</h2>
+    <p>Each one has its own page, with why you might use it, an example and a way to begin. You'll find them all, with the infographic, in <a href="/{c['slug']}/">{c['number']} {e(c['name'])}</a>.</p>
+    {"".join(groups)}
+{infographic_figure(c, on_chapter_page=False)}
+  </div>
+</section>
+"""
+    faq = "".join(f'<div class="faq-item"><h3>{e(f["q"])}</h3><p>{e(tie(f["a"]))}</p></div>'
+                  for f in pl["faq"])
+    faq_sec = f"""<section id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <p class="kicker">Quick questions</p>
+    <h2 id="faq-h">{e(pl['term'].capitalize())}: quick questions</h2>
+    <div class="faq">{faq}</div>
+  </div>
+</section>
+"""
+    more_sec = companion_section("more-guides", "More teacher's guides", "The other guides, and the model behind them",
+                                 guides_list(include_flagship=True))
+
+    qas = ([{"@type": "Question", "name": x["q"],
+             "acceptedAnswer": {"@type": "Answer", "text": x["answer"]}} for x in pl["sections"]]
+           + [{"@type": "Question", "name": f["q"],
+               "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in pl["faq"]])
+    img = infographic_file(c["slug"], "png")
+    ld = {"@context": "https://schema.org", "@graph": [
+        PERSON_LD,
+        {"@type": "Article", "@id": canonical + "#article", "headline": pl["h1"],
+         "description": pl["description"], "url": canonical, "inLanguage": "en-GB",
+         "datePublished": PILLAR_PUBLISHED, "dateModified": PILLAR_PUBLISHED,
+         "author": {"@id": PERSON_LD["@id"]}, "publisher": {"@id": PERSON_LD["@id"]},
+         "image": SITE + img,
+         "about": {"@type": "DefinedTerm", "name": pl["term"], "description": pl["short_answer"]},
+         "isPartOf": {"@type": "WebSite", "name": TITLE, "url": SITE + "/"}},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Pedagogy First", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": c["name"], "item": f"{SITE}/{c['slug']}/"},
+            {"@type": "ListItem", "position": 3, "name": pl["h1"], "item": canonical}]},
+        {"@type": "FAQPage", "@id": canonical + "#faq", "mainEntity": qas},
+    ]}
+    out = [
+        head(f"{pl['title']} | Pedagogy First", pl["description"], canonical, ld,
+             body_class="text-page", og_image=img,
+             og_alt=f"{c['title']}, the infographic by Mark Anderson."),
+        header(c["slug"]),
+        f"""<div class="hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="You are here"><a href="/">Pedagogy First</a> <span class="sep" aria-hidden="true">›</span> <a href="/{c['slug']}/">{c['number']} {e(c['name'])}</a> <span class="sep" aria-hidden="true">›</span> <span aria-current="page">A teacher's guide</span></nav>
+    <p class="eyebrow">A teacher's guide</p>
+    <h1>{e(pl['h1'])}</h1>
+    <p class="byline">By <a href="https://ictevangelist.com/about/">Mark Anderson</a> &middot; Published {_nice_date(PILLAR_PUBLISHED)} &middot; Reviewed {REVIEW_LABEL_NOW}</p>
+  </div>
+</div>
+<main id="main">
+<section id="short-answer" aria-labelledby="short-h">
+  <div class="wrap">
+    <div class="short-answer">
+      <h2 id="short-h">The short answer</h2>
+      <p>{e(tie(pl['short_answer']))}</p>
+    </div>
+    <nav class="toc" aria-label="On this page"><p class="list-h">On this page</p><ol>{toc}</ol></nav>
+  </div>
+</section>
+""",
+        "".join(secs),
+        strategies,
+        faq_sec,
+        further_block(c["slug"]),
+        more_sec,
+        support_block("If you're a leader wanting help to turn this into professional learning across your school or trust, that's exactly the work I do."),
+        "</main>\n",
+        footer(),
+    ]
+    target = ROOT / pl["path"]
+    target.mkdir(exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
+
+def guides_list(include_flagship=False):
+    lis = []
+    if include_flagship:
+        lis.append(f'<li><a href="/{FLAGSHIP["path"]}/"><strong>{e(FLAGSHIP["h1"])}</strong>'
+                   f'<span>The model behind the whole site, and why it counts with AI.</span></a></li>')
+    for c in CHAPTERS:
+        pl = PILLARS.get(c["slug"])
+        if pl:
+            lis.append(f'<li><a href="/{pl["path"]}/"><strong><span class="n" aria-hidden="true">'
+                       f'{c["number"]}</span> {e(pl["h1"])}</strong>'
+                       f'<span>{e(pl["description"])}</span></a></li>')
+    return f'<ul class="related">{"".join(lis)}</ul>'
+
+
+def build_flagship():
+    fl = FLAGSHIP
+    url = f"/{fl['path']}/"
+    canonical = SITE + url
+    m = fl["model"]
+    steps_html = "".join(
+        f'<li><strong>{e(st["label"])}: {e(st["q"])}</strong> {e(tie(st["detail"]))}</li>'
+        for st in m["steps"])
+    alt = ("The Pedagogy First model by Mark Anderson: four questions, in this order. "
+           + " ".join(f'{i + 1}, {st["label"]}: {st["q"]}' for i, st in enumerate(m["steps"]))
+           + " " + m["ai_line"])
+    figure = f"""<figure class="model-fig">
+      <img src="/assets/pedagogy-first-model-1600.jpg" width="1600" height="1000" alt="{e(alt)}" decoding="async">
+      <figcaption><a href="/assets/pedagogy-first-model.png">Download the diagram as an image</a>
+        <p class="share-note">Free to use and share in your school (CC BY-NC-SA 4.0). Please credit Mark Anderson and link back to this page. <button class="copylink" type="button" hidden data-path="{url}" aria-label="Copy a link to this page">Copy link</button></p></figcaption>
+    </figure>
+    <h3 class="group-h">{e(m['heading'])}</h3>
+    <ol class="steps model-steps">{steps_html}</ol>
+    <p class="ai-line"><strong>With AI:</strong> {e(m['ai_line'].split(': ', 1)[1])}</p>"""
+
+    toc = "".join(f'<li><a href="#{x["id"]}">{e(x["q"])}</a></li>' for x in fl["sections"])
+    toc += '<li><a href="#faq">Quick questions</a></li><li><a href="#cite">How to cite Pedagogy First</a></li>'
+    secs = []
+    for x in fl["sections"]:
+        if x.get("html_body"):
+            body = "".join(f"<p>{t}</p>" for t in x.get("body", []))
+        else:
+            body = "".join(f"<p>{e(tie(t))}</p>" for t in x.get("body", []))
+        if x.get("model"):
+            body += figure
+        if x.get("guides"):
+            body += guides_list()
+        secs.append(f"""<section id="{x['id']}" class="qa" aria-labelledby="{x['id']}-h">
+  <div class="wrap">
+    <h2 id="{x['id']}-h">{e(x['q'])}</h2>
+    <p class="answer">{e(tie(x['answer']))}</p>
+    {body}
+  </div>
+</section>
+""")
+    faq = "".join(f'<div class="faq-item"><h3>{e(f["q"])}</h3><p>{e(tie(f["a"]))}</p></div>'
+                  for f in fl["faq"])
+    cite = f"""<section id="cite" aria-labelledby="cite-h">
+  <div class="wrap">
+    <p class="kicker">Using it in your own work</p>
+    <h2 id="cite-h">How to cite Pedagogy First</h2>
+    <p>If you use the model or the diagram in a presentation, policy, assignment or article, please credit it like this:</p>
+    <figure class="prompt-block"><pre>{e(fl['cite'])}</pre><button class="copylink copyprompt" type="button" hidden aria-label="Copy this citation">Copy citation</button></figure>
+  </div>
+</section>
+"""
+    qas = ([{"@type": "Question", "name": x["q"],
+             "acceptedAnswer": {"@type": "Answer", "text": x["answer"]}} for x in fl["sections"]]
+           + [{"@type": "Question", "name": f["q"],
+               "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in fl["faq"]])
+    ld = {"@context": "https://schema.org", "@graph": [
+        PERSON_LD,
+        {"@type": "Article", "@id": canonical + "#article", "headline": fl["h1"],
+         "description": fl["description"], "url": canonical, "inLanguage": "en-GB",
+         "datePublished": PILLAR_PUBLISHED, "dateModified": PILLAR_PUBLISHED,
+         "author": {"@id": PERSON_LD["@id"]}, "publisher": {"@id": PERSON_LD["@id"]},
+         "image": SITE + "/assets/pedagogy-first-model.png",
+         "about": {"@type": "DefinedTerm", "name": "Pedagogy First, Technology Second",
+                   "description": fl["short_answer"]},
+         "isPartOf": {"@type": "WebSite", "name": TITLE, "url": SITE + "/"}},
+        {"@type": "ImageObject", "contentUrl": SITE + "/assets/pedagogy-first-model.png",
+         "name": "The Pedagogy First model", "creator": {"@id": PERSON_LD["@id"]},
+         "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+         "acquireLicensePage": canonical + "#cite",
+         "creditText": "Mark Anderson, Pedagogy First, Technology Second"},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Pedagogy First", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": fl["h1"], "item": canonical}]},
+        {"@type": "FAQPage", "@id": canonical + "#faq", "mainEntity": qas},
+    ]}
+    out = [
+        head(f"{fl['title']} | Pedagogy First", fl["description"], canonical, ld,
+             body_class="text-page", og_image="/assets/pedagogy-first-model-1600.jpg",
+             og_alt="The Pedagogy First model by Mark Anderson: four questions, in this order."),
+        header(),
+        f"""<div class="hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="You are here"><a href="/">Pedagogy First</a> <span class="sep" aria-hidden="true">›</span> <span aria-current="page">What is Pedagogy First?</span></nav>
+    <p class="eyebrow">The model</p>
+    <h1>{e(fl['h1'])}</h1>
+    <p class="byline">By <a href="https://ictevangelist.com/about/">Mark Anderson</a> &middot; Published {_nice_date(PILLAR_PUBLISHED)} &middot; Reviewed {REVIEW_LABEL_NOW}</p>
+  </div>
+</div>
+<main id="main">
+<section id="short-answer" aria-labelledby="short-h">
+  <div class="wrap">
+    <div class="short-answer">
+      <h2 id="short-h">The short answer</h2>
+      <p>{e(tie(fl['short_answer']))}</p>
+    </div>
+    <nav class="toc" aria-label="On this page"><p class="list-h">On this page</p><ol>{toc}</ol></nav>
+  </div>
+</section>
+""",
+        "".join(secs),
+        f"""<section id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <p class="kicker">Quick questions</p>
+    <h2 id="faq-h">Pedagogy First: quick questions</h2>
+    <div class="faq">{faq}</div>
+  </div>
+</section>
+""",
+        cite,
+        support_block("If you're a leader wanting help to put pedagogy first across your school or trust, from digital strategy to professional learning, that's exactly the work I do."),
+        "</main>\n",
+        footer(),
+    ]
+    target = ROOT / fl["path"]
+    target.mkdir(exist_ok=True)
+    (target / "index.html").write_text("".join(out), encoding="utf-8")
+
+
+def _nice_date(iso):
+    import datetime
+    d = datetime.date.fromisoformat(iso)
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+
+REVIEW_LABEL_NOW = "November 2026"
+
+
 # ---------------------------------------------------------------- home
 def build_home():
     f = FRONT
@@ -1021,6 +1302,7 @@ def build_home():
       <li><a href="/try-this-tomorrow/"><h3>Try something tomorrow</h3><p>A deliberately small, practical selection of ideas you can explore quickly.</p><span class="go">See the shortlist</span></a></li>
       <li><a href="#guides"><h3>Explore the 144</h3><p>Browse the six areas and the wider collection at your own pace.</p><span class="go">Browse the areas</span></a></li>
     </ul>
+    <p class="colleagues"><strong>New to Pedagogy First?</strong> Start with <a href="/what-is-pedagogy-first/">what Pedagogy First, Technology Second is</a>: the four question model, and why it counts with AI.</p>
     <p class="colleagues"><strong>Using Pedagogy First with colleagues?</strong> Explore ways to use the resource for professional learning, discussion and development across teams, schools and trusts. <a href="/professional-learning/">Start here</a>.</p>
   </div>
 </section>
@@ -1033,6 +1315,8 @@ def build_home():
 {"".join(cards)}
     </ul>
     <p class="note" data-companion>The story behind the guides, the thinking, and how to use them well: <a href="/about-pedagogy-first/">About Pedagogy First</a>.</p>
+    <h3 class="group-h" data-companion>Teacher's guides to the six areas</h3>
+    {guides_list()}
   </div>
 </section>
 """,
@@ -1169,6 +1453,11 @@ def strategy_article(st, cluster, chapter_slug=None, on_own_page=False):
       </article>"""
 
 
+def _chapter_guide_link(slug):
+    pl = PILLARS.get(slug)
+    return (f'\n    <p class="guide-link">New to this? Start with <a href="/{pl["path"]}/">{e(pl["h1"])}</a></p>') if pl else ""
+
+
 def build_chapter(c, index):
     slug = c["slug"]
     ch_prose = PROSE["chapters"][slug]
@@ -1237,7 +1526,7 @@ def build_chapter(c, index):
     <p class="eyebrow">{e(fr['label'])}</p>
     <h1><span class="ch-no" aria-hidden="true">{c['number']}</span>{e(fr['display_title'])}</h1>
     {opener}
-    <p class="rooted">{e(fr['rooted'])}</p>
+    <p class="rooted">{e(fr['rooted'])}</p>{_chapter_guide_link(slug)}
   </div>
 </div>
 <main id="main">
@@ -1471,12 +1760,38 @@ def build_privacy():
         body, narrow=True)
 
 
+def llms_txt():
+    """A plain map of the site for AI answer engines (llmstxt.org)."""
+    lines = [f"# {TITLE}", "",
+             "> " + FLAGSHIP["short_answer"], "",
+             "Free, evidence-informed teaching guidance by Mark Anderson (ICT Evangelist): six areas, "
+             "144 classroom strategies, each with its own page. Licensed CC BY-NC-SA 4.0 (infographics) "
+             "and CC BY-NC-ND 4.0 (the guide). Please credit Mark Anderson and link to the page you use.", "",
+             "## The model", "",
+             f"- [{FLAGSHIP['h1']}]({SITE}/{FLAGSHIP['path']}/): {FLAGSHIP['description']}", "",
+             "## Teacher's guides", ""]
+    for c in CHAPTERS:
+        pl = PILLARS.get(c["slug"])
+        if pl:
+            lines.append(f"- [{pl['h1']}]({SITE}/{pl['path']}/): {pl['description']}")
+    lines += ["", "## The six areas and their 24 strategies", ""]
+    for c in CHAPTERS:
+        lines.append(f"- [{c['title']}]({SITE}/{c['slug']}/)")
+    lines += ["", "## Optional", "",
+              f"- [Find a strategy]({SITE}/find-a-strategy/): all 144 strategies, searchable",
+              f"- [About the evidence]({SITE}/about-the-evidence/): how the site uses research",
+              f"- [Download resources]({SITE}/download-resources/): the full guide and infographics, free", ""]
+    return "\n".join(lines)
+
+
 def build_extras():
     urls = ([f"{SITE}/", f"{SITE}/about-pedagogy-first/",
              f"{SITE}/find-a-strategy/", f"{SITE}/download-resources/",
              f"{SITE}/classroom-needs/", f"{SITE}/inclusive-practice/", f"{SITE}/try-this-tomorrow/",
              f"{SITE}/about-the-evidence/", f"{SITE}/professional-learning/", f"{SITE}/updates/", f"{SITE}/privacy/"]
             + [f"{SITE}/{c['slug']}/" for c in CHAPTERS]
+            + [f"{SITE}/{FLAGSHIP['path']}/"]
+            + [f"{SITE}/{p['path']}/" for p in PILLARS.values()]
             + [f"{SITE}/strategies/{p['slug']}/" for p in STRATEGY_PAGES])
     body = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
@@ -1485,6 +1800,7 @@ def build_extras():
         encoding="utf-8")
     (ROOT / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
+    (ROOT / "llms.txt").write_text(llms_txt(), encoding="utf-8")
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
     (ROOT / "CNAME").write_text("pedagogyfirst.ictevangelist.com\n", encoding="utf-8")
 
@@ -1505,6 +1821,9 @@ def main():
     build_updates()
     for _p in STRATEGY_PAGES:
         build_strategy_page(_p)
+    for _pl in PILLARS.values():
+        build_pillar(_pl)
+    build_flagship()
     build_extras()
     n = sum(len(c["strategies"]) for c in CHAPTERS)
     print(f"Built home, find-a-strategy, {len(CHAPTERS)} chapter pages ({n} strategies) "

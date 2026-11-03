@@ -444,3 +444,26 @@ body.text-page main .wrap { width: min(100% - 2.5rem, 62rem); }
 .ga-pop .ga-close { font: inherit; font-weight: 600; background: none; color: #ffffff; border: 2px solid #ffffff; border-radius: 6px; padding: .2rem .9rem; cursor: pointer; }
 .ga-pop :focus-visible, .ga-note :focus-visible { outline: 3px solid #ffd166; outline-offset: 2px; }
 @media print { .ga-pop, .ga-note { display: none !important; } }
+
+/* Teacher's guides (pillar pages): question-led, a direct answer first */
+.hero .byline { font-size: .9rem; color: #ced8de; margin: .9rem 0 0; }
+.hero .byline a { color: #fff; }
+.short-answer { background: var(--paper-alt); border-left: 5px solid var(--gold); border-radius: 0 10px 10px 0; padding: 1.2rem 1.4rem; }
+.short-answer h2 { font-size: 1.15rem; margin-bottom: .4rem; }
+.short-answer p { margin: 0; font-size: 1.12rem; }
+.list-h { font-weight: 600; margin: 1.2rem 0 .3rem; }
+.toc ol { margin: 0; padding-left: 1.3rem; display: grid; gap: .3rem; }
+section.qa { padding-top: 2rem; }
+.qa .answer { font-size: 1.12rem; font-weight: 600; }
+.group-h { font-size: 1.1rem; margin: 1.6rem 0 .2rem; }
+.faq { display: grid; gap: 1rem; margin-top: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.faq-item { border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; }
+.faq-item h3 { font-size: 1.05rem; }
+.faq-item p { margin: 0; }
+.hero .guide-link { margin: .9rem 0 0; color: #ced8de; }
+.hero .guide-link a { color: #fff; font-weight: 600; }
+.model-fig { margin: 1.4rem 0 0; }
+.model-fig img { display: block; width: 100%; border-radius: 12px; }
+.model-fig figcaption { margin-top: .9rem; font-size: .95rem; }
+.model-steps { display: grid; gap: .6rem; padding-left: 1.3rem; }
+.ai-line { border-left: 5px solid var(--gold); padding: .2rem 0 .2rem 1rem; }

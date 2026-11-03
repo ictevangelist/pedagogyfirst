@@ -1,0 +1,83 @@
+{
+  "path": "what-is-pedagogy-first",
+  "h1": "What is Pedagogy First, Technology Second?",
+  "title": "What is Pedagogy First? The Model, and Why It Counts With AI",
+  "description": "Pedagogy First, Technology Second explained: Mark Anderson's four question model for teaching with technology and AI, with a free diagram to share.",
+  "short_answer": "Pedagogy First, Technology Second is an approach to using technology in schools, AI included, created by Mark Anderson. It starts with what pupils need to learn and the teaching that best helps them learn it, and only then asks whether a tool helps. If it does, you use it on purpose. If it doesn't, you leave it out.",
+  "model": {
+    "heading": "Four questions, in this order",
+    "steps": [
+      {"label": "The learning", "q": "What do my pupils need to learn, and where are they now?", "detail": "Start with the need in front of you: the knowledge, the skill or the misconception."},
+      {"label": "The pedagogy", "q": "Which evidence-informed approach fits that need?", "detail": "Retrieval practice, formative assessment, feedback, questioning and discussion, explanations and modelling, or metacognition. Each has 24 strategies in the guide."},
+      {"label": "The technology", "q": "Will a tool support teaching, enhance learning or reduce workload?", "detail": "If it does one of those three things, use it, on purpose. If it doesn't, leave it out. Sometimes a mini whiteboard beats anything that needs Wi-Fi and a battery."},
+      {"label": "The impact", "q": "What actually happened?", "detail": "Look at what pupils can now do. Keep it, adapt it or drop it, and start again from the learning."}
+    ],
+    "ai_line": "With AI: use it to help manage the activity, but never the struggle for learners. Check its work, like every child in your classroom."
+  },
+  "sections": [
+    {
+      "id": "meaning",
+      "q": "What does pedagogy first, technology second mean?",
+      "answer": "It means the teaching decision comes before the technology decision. Technology should enhance teaching and learning, not dictate teaching and learning. You work out what the learning needs first, and then you ask whether a tool genuinely helps with it.",
+      "body": [
+        "It sounds obvious, but it's the step most often skipped. Tools often get chosen for their features rather than for careful thinking about how they solve a problem or serve learning, and the result is effort and budget spent without much impact in the classroom.",
+        "What changes the picture is the order. Start with the pedagogy, work out what the learning or teaching actually needs, and then consider whether a technology helps. Using technology in the classroom is a teaching and learning consideration, not a technology consideration."
+      ]
+    },
+    {
+      "id": "the-model",
+      "q": "What is the Pedagogy First model?",
+      "answer": "The model is four questions, asked in order. What do my pupils need to learn? Which evidence-informed approach fits? Will a tool support teaching, enhance learning or reduce workload? What actually happened? Technology only comes in at the third question, and only if it helps.",
+      "model": true
+    },
+    {
+      "id": "ai",
+      "q": "Why is pedagogy first even more important with AI?",
+      "answer": "Because generative AI can do the thinking for pupils. It can write the answer, summarise the reading and fill in the quiz, and that can take away exactly the effort that makes learning stick. Starting with the pedagogy keeps the focus on whether pupils are doing the thinking.",
+      "body": [
+        "A lot of what works in classrooms depends on effort. Retrieval practice works because remembering is hard. Feedback works when pupils act on it. Metacognition works when pupils plan, monitor and check their own thinking. A tool that does any of that for them can look impressive and still leave them learning less.",
+        "So my rule with AI is the same as with any tool. Use technology to help manage the activity, but never the struggle for learners. AI can be brilliant for the teacher side, like drafting question sets, adapting a reading or saving time on admin, and that's reducing workload, one of the three purposes. Check its work, like every child in your classroom."
+      ]
+    },
+    {
+      "id": "not-anti-tech",
+      "q": "Is Pedagogy First against technology?",
+      "answer": "No. When used well, technology helps us go further. Pedagogy First is about careful, considered, cognisant choices: choosing to use technology when it serves a purpose that helps with learning or teaching, and being just as happy to leave it out when it doesn't.",
+      "body": [
+        "Every strategy in the guide has a suggested technology alongside it, and plenty of them work brilliantly with a quiz tool, a shared document or a spaced repetition app. Just as many work perfectly well with paper, a mini whiteboard and a good question. The strategy comes first either way."
+      ]
+    },
+    {
+      "id": "tpack",
+      "q": "How does Pedagogy First relate to TPACK?",
+      "answer": "TPACK, from Mishra and Koehler (2006), describes the knowledge teachers draw on when they teach with technology: technological, pedagogical and content knowledge, and the places they overlap. Pedagogy First is a practical order for using that knowledge when you plan: content and pedagogy first, technology where it fits.",
+      "body": [
+        "I first wrote about TPACK on my blog in 2013, in a post on <a href=\"https://ictevangelist.com/technological-pedagogical-and-content-knowledge/\">technological, pedagogical and content knowledge</a>. TPACK describes the knowledge, and Pedagogy First is a way of putting it to work when you're planning a lesson."
+      ],
+      "html_body": true
+    },
+    {
+      "id": "six-areas",
+      "q": "What are the six areas of Pedagogy First?",
+      "answer": "The six areas are retrieval practice, formative assessment, feedback, questioning and discussion, explanations and modelling, and metacognition and self-regulation. Each one has a free infographic of 24 evidence-informed strategies, 144 in all, and a teacher's guide that explains it.",
+      "guides": true
+    },
+    {
+      "id": "in-school",
+      "q": "How do I use Pedagogy First in my school?",
+      "answer": "Start with a real classroom need, pick one or two strategies that fit it, try them deliberately and look at what happens. For leaders, the same order works for bigger decisions: start with the teaching and learning you want to improve, and only then decide which technology, if any, will help.",
+      "body": [
+        "The site is built to help with this. You can start from <a href=\"/classroom-needs/\">what you're trying to improve</a>, browse <a href=\"/find-a-strategy/\">all 144 strategies</a> or pick something from <a href=\"/try-this-tomorrow/\">try this tomorrow</a>. If you're planning professional learning, there's a ready-made 30 minute activity for each area on the <a href=\"/professional-learning/\">professional learning page</a>."
+      ],
+      "html_body": true
+    }
+  ],
+  "faq": [
+    {"q": "Who created Pedagogy First, Technology Second?", "a": "Mark Anderson, known online as ICT Evangelist, who works with schools and trusts on digital strategy and teaching with technology. The guide, the six infographics and this site are all his work."},
+    {"q": "Is Pedagogy First free?", "a": "Yes. The full guide, the six infographics and all 144 strategies are free to download, with no sign-up and no form."},
+    {"q": "Can I use the Pedagogy First diagram in my training?", "a": "Yes. It's licensed CC BY-NC-SA 4.0, so you can use and share it for non-commercial purposes, as long as you credit Mark Anderson and link back to this page."},
+    {"q": "Does Pedagogy First mean not using AI?", "a": "No. It means AI comes after the teaching decision. Use it where it supports teaching, enhances learning or reduces workload, and keep the thinking with the pupils."},
+    {"q": "Does Pedagogy First work in primary and secondary schools?", "a": "Yes. The six areas apply in any phase, and the strategies are written so you can adapt them to your pupils, your subject and your setting."}
+  ],
+  "cite": "Anderson, M. (2026) Pedagogy First, Technology Second. Available at: https://pedagogyfirst.ictevangelist.com/what-is-pedagogy-first/"
+}

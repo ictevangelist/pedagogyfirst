@@ -1,0 +1,128 @@
+{
+  "slug": "feedback",
+  "path": "what-is-effective-feedback",
+  "term": "effective feedback",
+  "h1": "What is effective feedback? A teacher's guide",
+  "title": "What is Effective Feedback? A Teacher's Guide",
+  "description": "What effective feedback is, why it can backfire, what the research says and how to do it well, with 24 classroom strategies, by Mark Anderson.",
+  "short_answer": "Effective feedback is information pupils can use to improve what they do next, and then actually do use. It tells them where they're going, how they're doing and what to do next, it's aimed at the work rather than the person, and it comes with time to act on it. A comment nobody acts on is marking, and that's all.",
+  "sections": [
+    {
+      "id": "what-makes-it-effective",
+      "q": "What makes feedback effective?",
+      "answer": "Feedback is effective when pupils do something with it. That means it's aimed at the task or the process, it gives one or two clear next steps, pupils understand what good work looks like, and there's time in the lesson for them to act on it. If any of those is missing, it struggles to work.",
+      "body": [
+        "Feedback is too often treated as another word for marking. Good feedback gives pupils information they can use to improve what they do next, and that's a far higher bar than writing a comment in the margin. Marking is finished when you put the pen down, but feedback isn't finished until the pupil has done something because of it.",
+        "Hattie and Timperley's three questions are a really quick test of any comment: where am I going, how am I doing, and what next? Most comments answer only the middle one, which leaves the pupil holding a judgement with nothing to do about it."
+      ]
+    },
+    {
+      "id": "examples",
+      "q": "What are some examples of effective feedback?",
+      "answer": "Good examples point at the work and ask the pupil to think. \"Why might this be stronger with evidence?\" in the margin, a single target per piece, whole class feedback built from the patterns in a set of books, peer feedback against one shared criterion, and ten minutes next lesson to respond.",
+      "body": [
+        "Compare \"this paragraph needs restructuring\" with \"you need to try harder\". The first tells the pupil what to work on; the second only tells them how they've been judged. Praise works the same way, so name the decision the pupil made, such as the method they chose, and they've got something they can use again.",
+        "In the guide I've grouped 24 strategies into five families: what feedback is, timing and frequency, source and direction, feedback and the learner, and closing the gap. The full list is further down this page, and each one has its own page with an example, a way to begin and what to look out for."
+      ]
+    },
+    {
+      "id": "why-it-backfires",
+      "q": "Why does feedback sometimes make things worse?",
+      "answer": "Feedback backfires when it pulls a pupil's attention onto themselves and away from the work. Kluger and DeNisi found that over a third of the feedback interventions they looked at made performance worse. Comments about the person, grades sitting next to comments, and too much feedback at once are the usual culprits.",
+      "body": [
+        "A comment can be about the pupil without ever naming them. Try harder, more effort needed and you can do better are all aimed at the self, however kindly they're meant, and so is praise of traits like cleverness or talent. Once a pupil's attention is on themselves, it isn't on the work any more.",
+        "The other common mistakes are about volume and time. A page of comments overwhelms the pupil and exhausts you, and lots of it goes unread. And feedback with no time to act on it is wasted, however many hours the marking took."
+      ],
+      "list_heading": "Common feedback mistakes",
+      "list": [
+        "Comments aimed at the person rather than the work",
+        "A grade on the page alongside the comment",
+        "Too many targets at once",
+        "Correcting the work for the pupil, so there's nothing left to think about",
+        "No lesson time set aside to respond"
+      ]
+    },
+    {
+      "id": "research",
+      "q": "What does the research say about feedback?",
+      "answer": "Hattie and Timperley (2007) describe feedback as one of the most powerful influences on learning, and are clear that the effect can be positive or negative. Sadler showed it only works when pupils know what quality looks like, can compare their work against it and have the chance to close the gap.",
+      "body": [
+        "Kluger and DeNisi's 1996 meta-analysis is the sobering part, because over a third of the feedback interventions they looked at made performance worse. Butler's 1988 study found that comments alone produced the greatest gains, and that adding a grade wiped out the comment's benefit. It was a small study, and its pattern has replicated in spirit if not always in size, so it's fair to treat it as a strong warning without leaning too hard on the exact size of the effect.",
+        "Nicol and Macfarlane-Dick took Sadler's work further by placing feedback within self-regulation, so its job is to help pupils get better at judging and improving their own work. The Education Endowment Foundation's 2021 guidance report on teacher feedback makes six recommendations, including laying the foundations before feedback is given and planning for how pupils will use it."
+      ],
+      "list_heading": "Where this research comes from",
+      "list": [
+        "Feed up, feed back, feed forward and the four levels: Hattie and Timperley",
+        "Knowing what quality looks like and closing the gap: Sadler",
+        "Comments, grades and praise: Butler",
+        "When feedback backfires: Kluger and DeNisi",
+        "Feedback and self-regulation: Nicol and Macfarlane-Dick",
+        "Timing of feedback: Shute",
+        "Formative assessment in the classroom: Black and Wiliam",
+        "Peer and self-assessment: Topping and Andrade",
+        "Dialogue and feedback literacy: Carless and Boud"
+      ]
+    },
+    {
+      "id": "grades-and-comments",
+      "q": "Should feedback include a grade?",
+      "answer": "Where you can, keep grades and comments apart. Butler found that when a grade sits alongside a comment, pupils look at the grade and miss the guidance. If your school expects grades, give the comments first, let pupils act on them, and share the grade afterwards.",
+      "body": [
+        "Two lines of careful writing in the margin simply can't compete with a number at the top of the page. Taking the grade away for one low-stakes piece is a quick way to see what pupils do with the comments on their own, and also a quick way to find out what your comments are actually worth.",
+        "Many digital gradebooks show pupils a score the moment work is returned, which puts Butler's problem straight back on the screen. If your approved tool has a hide grades or scheduled release option, it's well worth using."
+      ]
+    },
+    {
+      "id": "act-on-feedback",
+      "q": "How do I get pupils to act on feedback?",
+      "answer": "Give them the time and show them how. Start the next lesson with pupils reading and responding to their comments before anything new, write comments that ask them to think, and model what acting on a comment looks like. Feedback literacy is taught; you can't assume it.",
+      "body": [
+        "Acting on feedback is a skill with steps: understand the comment, find where it applies in the work, and know the move it's asking for. Carless and Boud call this feedback literacy. Modelling one comment aloud, with what it means and what to do next, before pupils touch their own work, makes a real difference to what happens next.",
+        "Questions help too, because \"What evidence supports this claim?\" asks something of the pupil that inserting the evidence yourself never will. Over time the aim, as Boud puts it, is pupils who can judge the quality of their own work, so self-assessment and structured peer feedback belong in the plan as well."
+      ]
+    },
+    {
+      "id": "technology-and-ai",
+      "q": "How can technology and AI help with feedback?",
+      "answer": "Technology helps most when it shortens the gap between the work and the response, and frees your time for the feedback only you can give. Audio comments, digital annotation and shared documents make feedback faster, and auto-marked quizzes can handle factual accuracy and procedural slips. Faster feedback only helps if pupils use it.",
+      "body": [
+        "Feedback given while the work is still fresh has a far better chance of shaping what pupils do next than feedback returned two weeks later. The same tools make whole class feedback more manageable, because you can spot common patterns quickly and avoid writing the same comment thirty times. The trap is automated feedback that gives a score, a tick or a badge and stops there. That's information, and pupils still need the time and the expectation to improve, redraft, correct or try again.",
+        "Pedagogy first, technology second. Use automated and AI-assisted tools for accuracy and correctness, and keep yourself for argument, voice and creativity. If AI helps you draft comments or question prompts, check its work, like every child in your classroom."
+      ]
+    },
+    {
+      "id": "start-tomorrow",
+      "q": "How do I start giving better feedback tomorrow?",
+      "answer": "Mark your next set with a one target rule, write each target as a question or a clear next step about the work, and protect the first ten minutes of the following lesson for pupils to respond. It costs nothing, and it'll probably save you some marking time too.",
+      "body": [
+        "Before you start marking, decide what pupils will do with the comments and when they'll do it. If you can't find that time, it's worth marking less and protecting it. Then look at what happens: how many comments lead to a visible change in the work, and whether pupils read them without being prompted."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is feedback the same as marking?",
+      "a": "No. Marking is what happens to the work; feedback is what pupils do because of it. You can spend hours marking and produce no feedback at all if pupils never read or act on the comments."
+    },
+    {
+      "q": "Is verbal feedback better than written feedback?",
+      "a": "Neither is better in itself. What counts is whether pupils understand it and act on it. Verbal feedback while pupils are still working is quick and catches errors in the moment; written feedback needs time set aside to respond."
+    },
+    {
+      "q": "What is whole class feedback?",
+      "a": "You read a set of work and note the patterns, such as common strengths, recurring errors and one priority next step, then teach to those in the next lesson. It's sustainable for you and precise for pupils, though some will need help finding the point in their own work."
+    },
+    {
+      "q": "Should feedback be immediate or delayed?",
+      "a": "It depends on the task. Shute found quick feedback stops mistakes embedding on simple, procedural tasks. On complex work, a short delay of a day or a lesson lets pupils think first. Two weeks is just slow marking."
+    },
+    {
+      "q": "How much feedback should I give?",
+      "a": "Less than you think. One or two precise targets land; a page of comments overwhelms. Pick the one thing that would make the biggest difference right now and give pupils time to work on it."
+    },
+    {
+      "q": "Does peer feedback work?",
+      "a": "It can, with structure. Topping showed peer feedback helps both the giver and the receiver, but without criteria and a protocol it tends to become empty praise. Start with one shared criterion and model what a useful comment looks like."
+    }
+  ]
+}

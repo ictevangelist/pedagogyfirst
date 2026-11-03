@@ -1,0 +1,120 @@
+{
+  "slug": "questioning-and-discussion",
+  "path": "effective-questioning-in-the-classroom",
+  "term": "effective questioning",
+  "h1": "Effective questioning in the classroom: a teacher's guide",
+  "title": "Effective Questioning in the Classroom: A Teacher's Guide",
+  "description": "Effective questioning in the classroom: wait time, cold calling, dialogic teaching and better discussion, with 24 strategies, by Mark Anderson.",
+  "short_answer": "Effective questioning is asking questions in a way that makes every pupil in the room think. It means planning questions at different levels, giving pupils time to think before anyone answers, spreading questions across the whole class and building on answers so pupils reason together. Done well, it shows you what pupils understand and turns classroom talk into learning.",
+  "sections": [
+    {
+      "id": "techniques",
+      "q": "What are the most effective questioning techniques?",
+      "answer": "The most effective techniques give every pupil time to think and a reason to listen. Planning questions at different levels, wait time, hands down with named pupils, think, pair, share, pose, pause, pounce, bounce, and following an answer with \"what makes you say that?\" are all good places to start.",
+      "body": [
+        "In the guide I've grouped 24 strategies into five families: the quality of questions, wait time and thinking space, participation and equity, dialogic teaching and discussion, and student-generated questions. The full list is further down this page, and each one has its own page with an example, a way to begin and what to look out for.",
+        "The families move from better questions, to better talk, to the routines that help every voice count, and the last one hands the questions over to pupils. If you're starting from scratch, pick one. Wait time is a really good first step, because it costs nothing and needs no resources."
+      ],
+      "list_heading": "Where this research comes from",
+      "list": [
+        "Levels of thinking in questions: Anderson and Krathwohl",
+        "Surface, deep and transfer questions: Hattie and Zierer",
+        "Open questions and alternatives to questions: Dillon",
+        "Wait time: Mary Budd Rowe, and Tobin",
+        "Think, pair, share: Lyman",
+        "Hands down and who gets asked: Dylan Wiliam, and Good and Brophy",
+        "Dialogic teaching: Robin Alexander",
+        "Exploratory talk and accountable talk: Neil Mercer, and Michaels, O'Connor and Resnick",
+        "Pupils asking the questions: King"
+      ]
+    },
+    {
+      "id": "wait-time",
+      "q": "What is wait time in teaching?",
+      "answer": "Wait time is the pause between asking a question and anyone speaking. Mary Budd Rowe found most teachers wait less than a second before rephrasing, prompting or answering it themselves. Stretching that pause to about three seconds gives pupils time to think, and the answers that follow tend to be longer and more complex.",
+      "body": [
+        "Rowe also identified a second wait time, the pause after a pupil answers. Hold three seconds there too, instead of responding straight away, and pupils often add to what they said or correct themselves. Silence after an answer tells them more is expected.",
+        "The pause feels far longer from the front than it does from the desks, so count in your head. You can go further by asking everyone to write for a minute before anyone speaks, so the quickest thinkers don't set the terms for everybody else. Silence after a question is not dead air; it is where better thinking often begins."
+      ]
+    },
+    {
+      "id": "cold-calling",
+      "q": "Is cold calling better than hands up?",
+      "answer": "Usually, yes, as long as the climate is right. With hands up, a small group answers again and again while the rest learn that waiting works. With hands down and questions directed to named pupils, anyone might be asked, so everyone has a reason to think. It only works when a wrong answer costs nothing.",
+      "body": [
+        "Dylan Wiliam's point is that hand-raising looks like participation but distorts it. Good and Brophy add a warning: teachers tend to direct more questions, and harder ones, to the pupils they expect most from, without realising it. A rough tally on a seating plan for a week will show you your own pattern.",
+        "Climate comes first. Name the norm with your class, that a wrong attempt is still thinking, and hold the room to it the first time a wrong answer gets a reaction. Pose, pause, pounce, bounce then brings it together: ask everyone, wait, direct it to one pupil, and bounce their answer to another to add to or challenge."
+      ]
+    },
+    {
+      "id": "dialogic-teaching",
+      "q": "What is dialogic teaching?",
+      "answer": "Dialogic teaching is Robin Alexander's approach to classroom talk, where pupils and teacher build ideas together through extended discussion. He describes five qualities of dialogic talk: collective, reciprocal, supportive, cumulative and purposeful. In practice it means fewer quick-fire questions and more extending, challenging and building on what pupils say.",
+      "body": [
+        "Alexander also names the pattern most classroom talk falls into, known as IRE: initiation, response, evaluation. The teacher asks, a pupil answers, the teacher judges, and the exchange is over. Swap the judgement for a follow-up question, like \"what makes you say that?\", or hand the answer back to the room for others to add to or challenge, and the reasoning has to come out.",
+        "Alexander's approach was tested in a randomised trial with the EEF, which reported gains in English, maths and science. It's one trial, so treat it as a good reason to try it deliberately and look at what happens with your own pupils. A useful first step is to audit one discussion against the five qualities. Most talk already meets two or three of them, so start with the gaps."
+      ]
+    },
+    {
+      "id": "better-discussion",
+      "q": "How do I get better classroom discussion?",
+      "answer": "Give pupils time to think first, teach them how to talk together, and step back from judging every answer. Ground rules agreed with the class, sentence starters like \"I agree because\" and \"the evidence is\", and returning answers to the room for others to build on all help pupils reason with each other.",
+      "body": [
+        "Neil Mercer describes three kinds of group talk. Disputational talk is I'm right and you're wrong. Cumulative talk is agreement piled on agreement, with nothing examined. Exploratory talk is where pupils challenge ideas with evidence and build on each other's, and that's the kind to teach. Mercer found that teaching its ground rules transforms discussion, and that rules a class writes together work better than rules you display or model.",
+        "Getting pupils to ask the questions helps too. King found that pupils taught to write their own questions from stems, such as \"what would happen if...?\", produced richer discussion than pupils who only answered the teacher's questions. Michaels, O'Connor and Resnick's accountable talk adds the language for it, holding pupils to accurate knowledge and careful reasoning."
+      ]
+    },
+    {
+      "id": "mistakes",
+      "q": "What are the common mistakes with questioning in the classroom?",
+      "answer": "The common mistakes are not waiting long enough, letting the same few hands answer every time, judging every answer straight away, only asking recall questions because nothing else was planned, and asking pupils to apply an idea elsewhere before the basics are secure. Each one cuts the thinking short or leaves it with a few pupils.",
+      "body": [
+        "Most of these come from asking questions on the spur of the moment. Improvised questions default to recall, simply because that's the easiest kind to form in the middle of an explanation. Write a few questions into your slides beforehand, at levels you know you wouldn't improvise. Recall is foundational, so keep it; just make sure it isn't the only kind of question your pupils get.",
+        "The other one is guess what I'm thinking: a question that looks open but has an answer you already hold. Pupils learn to play that game quickly. Dillon found that genuinely open questions, where you don't know the answer either, produce the most extended reasoning, and that statements such as \"tell me more\" can draw out richer answers than another question."
+      ]
+    },
+    {
+      "id": "technology-and-ai",
+      "q": "How can technology and AI help with questioning and discussion?",
+      "answer": "Technology helps most when it brings more voices in and leaves the thinking with pupils. Anonymous response tools, shared documents and structured digital discussion can include pupils who might never raise a hand, and give the class something to come back to. AI can help you plan questions at different levels, as long as you check them.",
+      "body": [
+        "The risk, especially with AI, is that the tool answers the question pupils should be wrestling with. A good question slows thinking down. It gives pupils something to try, explain, challenge, refine and improve, and when the tool removes that struggle, it can remove the learning too. Pedagogy first, technology second.",
+        "So a random name picker can help with hands down, a timer with wait time, and a shared board lets everyone write before anyone speaks. If AI drafts questions for you, check its work, like every child in your classroom. And a set of mini whiteboards does a lot of this without needing Wi-Fi."
+      ]
+    },
+    {
+      "id": "start-tomorrow",
+      "q": "How do I start improving my questioning tomorrow?",
+      "answer": "Pick one lesson and hold three seconds of silence after every question that needs thinking, then ask a named pupil instead of taking hands. When they answer, hold off on judging it; ask \"what makes you say that?\" or bounce it to someone else. It needs no resources, just remembering to count.",
+      "body": [
+        "Keep it going for a few weeks before you judge it. The silence will feel uncomfortable at first, mostly for you, and that fades with practice. Then look at what's happening: who's answering now who wasn't before, and whether the answers are getting longer. If you want a record, keep a rough tally of who you ask on a seating plan for a week."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between open and closed questions?",
+      "a": "A closed question has one right answer, like a date or a definition. An open question has many possible answers and asks pupils to explain, argue or reason. Both have their place, and Dillon found genuinely open questions, where even you don't know the answer, produce the most extended reasoning."
+    },
+    {
+      "q": "How long should wait time be?",
+      "a": "About three seconds, after you ask and again after a pupil answers. That's the pause Mary Budd Rowe found made answers longer and more complex. Count it silently in your head, because it'll feel much longer than it is."
+    },
+    {
+      "q": "What is pose, pause, pounce, bounce?",
+      "a": "It's Dylan Wiliam's questioning routine. Pose a question to the whole class, pause so everyone thinks, pounce on a named pupil to answer, then bounce their answer to another pupil to add to or challenge. Everyone listens, because anyone might be next."
+    },
+    {
+      "q": "What is think, pair, share?",
+      "a": "It's Lyman's routine: pupils think alone, test their idea with a partner, then share with the class. By the time an idea is spoken in front of everyone it's been formed and tried out once, so discussion tends to be more considered. Protect the think stage."
+    },
+    {
+      "q": "What is the IRE pattern in classroom talk?",
+      "a": "IRE stands for initiation, response, evaluation: the teacher asks, a pupil answers, the teacher judges. It's the default pattern of classroom talk, and Robin Alexander shows it limits thinking. Replace the evaluation with a follow-up question to keep the exchange going."
+    },
+    {
+      "q": "Should pupils ask their own questions?",
+      "a": "Yes. Writing a question takes deeper thinking than answering one, and a pupil's question shows you how well they understand. Try asking every pupil for one written question before they leave, and use them to plan your next lesson."
+    }
+  ]
+}

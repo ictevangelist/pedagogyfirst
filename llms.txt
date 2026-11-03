@@ -1,0 +1,33 @@
+# Pedagogy First. Technology Second.
+
+> Pedagogy First, Technology Second is an approach to using technology in schools, AI included, created by Mark Anderson. It starts with what pupils need to learn and the teaching that best helps them learn it, and only then asks whether a tool helps. If it does, you use it on purpose. If it doesn't, you leave it out.
+
+Free, evidence-informed teaching guidance by Mark Anderson (ICT Evangelist): six areas, 144 classroom strategies, each with its own page. Licensed CC BY-NC-SA 4.0 (infographics) and CC BY-NC-ND 4.0 (the guide). Please credit Mark Anderson and link to the page you use.
+
+## The model
+
+- [What is Pedagogy First, Technology Second?](https://pedagogyfirst.ictevangelist.com/what-is-pedagogy-first/): Pedagogy First, Technology Second explained: Mark Anderson's four question model for teaching with technology and AI, with a free diagram to share.
+
+## Teacher's guides
+
+- [What is retrieval practice? A teacher's guide](https://pedagogyfirst.ictevangelist.com/what-is-retrieval-practice/): What retrieval practice is, why it works, what the research says and how to do it well, with 24 classroom strategies, by Mark Anderson.
+- [What is formative assessment? A teacher's guide](https://pedagogyfirst.ictevangelist.com/what-is-formative-assessment/): What formative assessment is, why it works, what the research says and how to do it well, with 24 classroom strategies, by Mark Anderson.
+- [What is effective feedback? A teacher's guide](https://pedagogyfirst.ictevangelist.com/what-is-effective-feedback/): What effective feedback is, why it can backfire, what the research says and how to do it well, with 24 classroom strategies, by Mark Anderson.
+- [Effective questioning in the classroom: a teacher's guide](https://pedagogyfirst.ictevangelist.com/effective-questioning-in-the-classroom/): Effective questioning in the classroom: wait time, cold calling, dialogic teaching and better discussion, with 24 strategies, by Mark Anderson.
+- [Explanation and modelling in teaching: a teacher's guide](https://pedagogyfirst.ictevangelist.com/explanation-and-modelling-in-teaching/): How to explain clearly and model well, using worked examples, cognitive load theory and dual coding, with 24 classroom strategies, by Mark Anderson.
+- [What is metacognition? A teacher's guide](https://pedagogyfirst.ictevangelist.com/what-is-metacognition/): What metacognition and self-regulation are, what the EEF says and how to teach them, with 24 classroom strategies, by Mark Anderson.
+
+## The six areas and their 24 strategies
+
+- [24 Ways to Embed Retrieval Practice in Your Classroom](https://pedagogyfirst.ictevangelist.com/retrieval-practice/)
+- [24 Ways to Embed Formative Assessment in Your Classroom](https://pedagogyfirst.ictevangelist.com/formative-assessment/)
+- [24 Ways to Embed Effective Feedback in Your Classroom](https://pedagogyfirst.ictevangelist.com/feedback/)
+- [24 Ways to Embed Effective Questioning & Discussion in Your Classroom](https://pedagogyfirst.ictevangelist.com/questioning-and-discussion/)
+- [24 Ways to Embed Effective Explanations & Modelling in Your Classroom](https://pedagogyfirst.ictevangelist.com/explanations-and-modelling/)
+- [24 Ways to Embed Metacognition & Self-Regulation in Your Classroom](https://pedagogyfirst.ictevangelist.com/metacognition-and-self-regulation/)
+
+## Optional
+
+- [Find a strategy](https://pedagogyfirst.ictevangelist.com/find-a-strategy/): all 144 strategies, searchable
+- [About the evidence](https://pedagogyfirst.ictevangelist.com/about-the-evidence/): how the site uses research
+- [Download resources](https://pedagogyfirst.ictevangelist.com/download-resources/): the full guide and infographics, free

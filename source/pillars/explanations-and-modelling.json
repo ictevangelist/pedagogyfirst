@@ -1,0 +1,118 @@
+{
+  "slug": "explanations-and-modelling",
+  "path": "explanation-and-modelling-in-teaching",
+  "term": "explanation and modelling",
+  "h1": "Explanation and modelling in teaching: a teacher's guide",
+  "title": "Explanation and Modelling in Teaching: A Teacher's Guide",
+  "description": "How to explain clearly and model well, using worked examples, cognitive load theory and dual coding, with 24 classroom strategies, by Mark Anderson.",
+  "short_answer": "Explanation and modelling is how a teacher gets new ideas and processes into pupils' heads. Explaining means presenting new material in small, clear steps that working memory can cope with. Modelling means showing how an expert actually does the task, thinking aloud as you go, then handing the work over gradually through worked examples, guided practice and independent practice.",
+  "sections": [
+    {
+      "id": "what-is-modelling",
+      "q": "What is modelling in teaching?",
+      "answer": "Modelling is showing pupils how an expert does a task, step by step, while saying the thinking out loud. You make the invisible decisions visible: where to start, what to check, what to do when something looks wrong. Pupils then copy the process, with your support fading as they get more confident.",
+      "body": [
+        "Experts make decisions all the time without noticing, and pupils usually only see the finished product. Then they're asked to produce the same kind of product themselves. Thinking aloud while you work, under a visualiser or on a shared screen, shows them the part they actually need to copy, which is the process.",
+        "Narrating decisions is different from narrating actions. \"Now I underline the date\" is just a caption. \"I'm underlining the date because it tells me which rules apply\" shows the class the thinking they came for."
+      ]
+    },
+    {
+      "id": "how-to-explain-well",
+      "q": "How do you explain something well to a class?",
+      "answer": "Connect to what pupils already know, start with something concrete, then give the new idea in small steps with a quick check after each one. Keep the slides clean, teach the key words first, and get everyone answering at once so you know whether it's landed before you move on.",
+      "body": [
+        "Telling is not explaining. An explanation has to be built for the mind that receives it, and that's really what Rosenshine's principles of instruction are about: small steps, practice after each one, checks for understanding and reteaching before you move on. Willingham adds that abstract ideas need something concrete to attach to, so show the image, object or clip first and name the idea afterwards.",
+        "A class that's listening politely looks exactly the same as a class that understands. So plan a check into the middle of your explanation, on mini whiteboards or a live poll, where everyone answers at once. The explanation is the start of the process rather than the finish."
+      ]
+    },
+    {
+      "id": "cognitive-load",
+      "q": "What does cognitive load theory mean for explanations?",
+      "answer": "Cognitive load theory, from John Sweller, says working memory is narrow and easily overwhelmed, holding only around four items at once. So a good explanation is an act of load management: fewer things competing for attention, new material in small chunks, and nothing on screen that isn't helping pupils learn.",
+      "body": [
+        "Every element on a slide takes up one of those slots, so a logo, a border or a sentence nobody needs right now is using space the explanation needs. Sweller's work also gives us split attention, where labels sit away from a diagram and pupils have to search between them, and the redundancy effect, where reading out text that's already on the screen makes pupils process it twice.",
+        "It's fair to say the theory has moved on since it was first set out. Sweller, van Merriënboer and Paas reviewed it themselves in 2019, including where it has been revised, and that review is a good place to start if you want the detail. The practical messages for explanations have held up: keep it clear, keep it chunked and keep the clutter out."
+      ],
+      "list_heading": "Where this research comes from",
+      "list": [
+        "Principles of instruction: Barak Rosenshine",
+        "Cognitive load theory: John Sweller",
+        "Worked examples: Sweller and Cooper, and Atkinson",
+        "Multimedia learning: Richard Mayer",
+        "Dual coding theory: Allan Paivio",
+        "Concrete examples and memory: Daniel Willingham",
+        "Technology in the classroom: the EEF's Digital Technology Guidance (2019)"
+      ]
+    },
+    {
+      "id": "worked-examples",
+      "q": "What are worked examples in teaching?",
+      "answer": "A worked example is a problem solved in full, step by step, for pupils to study before they try one themselves. Sweller and Cooper found students can learn more from studying worked examples than from solving equivalent problems, because novices aren't spending all their working memory just searching for a method.",
+      "body": [
+        "Atkinson's research supports alternating them with practice: an example, then a try, then another example, then another try. Each attempt comes while the example is still fresh, and the practice task should be genuinely parallel, with the same structure and a different surface.",
+        "Then you fade the support. Rosenshine's gradient is a complete example first, then a partial one with gaps, then independent practice. It's what a lot of teachers know as \"I do, we do, you do\", and how quickly you fade is your judgement, made per class and sometimes per pupil, because you're the one who can see the attempts."
+      ]
+    },
+    {
+      "id": "best-strategies",
+      "q": "What are the best strategies for explanation and modelling?",
+      "answer": "The best strategies cut what pupils have to hold in their heads and make expert thinking visible. Small steps, concrete examples first, clean slides, words and images together, thinking aloud under a visualiser, and worked examples that fade into independent practice all do this well.",
+      "body": [
+        "In the guide I've grouped 24 strategies into four families: structuring explanations, managing cognitive load, multimedia and dual coding, and modelling and worked examples. The full list is further down this page, and each one has its own page with an example, a way to begin and what to look out for.",
+        "Dual coding sits in the third family. Paivio showed that words and images reach the mind through separate channels, and Mayer built his multimedia principles on that, so pair a key visual with a few words and narrate a diagram rather than captioning it. If you're starting from scratch, pick one strategy and get it right before adding another."
+      ]
+    },
+    {
+      "id": "mistakes",
+      "q": "What are the common mistakes with explanations and modelling?",
+      "answer": "The commonest mistake is the busy slide that feels rich but teaches little, because it forces split attention just when the explanation needs space. Others are reading slide text aloud, showing only the finished product, giving too much at once, and moving on without checking that pupils have understood.",
+      "body": [
+        "Clip art, background music and themed borders aren't neutral, because if something is on the screen, pupils are processing it. Mayer's coherence principle is firm on this: remove every word, image and sound that doesn't support the learning. Labels in a separate key below a diagram are another common one, because the eye has to travel and the memory has to hold the label all the way across.",
+        "The other trap is support that never fades. Scaffolds are there to be removed as competence grows, so plan the handover from the start."
+      ]
+    },
+    {
+      "id": "technology-and-ai",
+      "q": "How can technology and AI help with explanation and modelling?",
+      "answer": "Technology helps most when it supports your explanation and never replaces it. A visualiser turns any desk into a modelling stage, slide animations let you reveal one idea per click, and short narrated screencasts let pupils replay a worked example at their own pace. AI can help you draft examples and explanations, as long as you check them.",
+      "body": [
+        "The EEF's guidance is that technology works best when it supplements teaching rather than substituting for it, and that clarity counts for more than the delivery method. A simple diagram under a visualiser can outperform a polished video. The EEF found the visualiser among the most promising classroom technology, which is quite striking for such a modest device. Pedagogy first, technology second.",
+        "With AI, the same rule applies to any explanation, analogy or worked example it drafts for you. Check its work, like every child in your classroom. And remember the B key, which blanks the screen when you want the attention on you."
+      ]
+    },
+    {
+      "id": "start-tomorrow",
+      "q": "How do I start improving my explanations tomorrow?",
+      "answer": "Take one slide you'll teach tomorrow and strip it back: cut the decoration, put the labels on the diagram, and delete the sentences you were going to read out, so you say them instead. Then plan one whole-class check into the middle of the explanation, on mini whiteboards.",
+      "body": [
+        "Teach it and see whether anything is actually missed. Then look at what happens in the check: who could do it, who couldn't, and whether you need to reteach a step before moving on. Keep going for a few weeks, one slide deck and one explanation at a time, and look at what pupils can do unaided afterwards compared with the last topic."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between explaining and modelling?",
+      "a": "Explaining gets an idea across: what something is and why it works. Modelling shows how to do something, with the expert thinking said out loud. Most good teaching uses both, an explanation of the idea followed by a modelled example of it in use."
+    },
+    {
+      "q": "What is dual coding in teaching?",
+      "a": "Dual coding comes from Paivio's theory that words and images are processed through separate channels. In the classroom it means pairing a clear visual with a few words, both carrying the same idea, so pupils get two routes to it. An unrelated picture doesn't count; it's just clutter."
+    },
+    {
+      "q": "What does \"I do, we do, you do\" mean?",
+      "a": "It's a simple way of describing the gradual handover in modelling. You model the task in full, then you do one together with the class, then pupils do it on their own. Rosenshine describes the same pattern as scaffolds being removed as competence grows."
+    },
+    {
+      "q": "Should I read out the text on my slides?",
+      "a": "No. Sweller's redundancy effect says pupils end up processing the written and spoken versions at once, and the two compete. Say it or show it. Text pupils read silently, in their own time, is a different and perfectly reasonable situation."
+    },
+    {
+      "q": "How much can working memory hold?",
+      "a": "Around four items at a time, which is why every element on a slide competes for space. Strip slides to the essentials, reveal one idea per click and teach key vocabulary before the main explanation, so pupils aren't learning the words and the ideas at once."
+    },
+    {
+      "q": "Do I need a visualiser for modelling?",
+      "a": "You don't need one, but it really helps. A visualiser lets the whole room see handwriting, annotation and a diagram taking shape, crossings-out included. The EEF found it among the most promising classroom technology."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "retrieval-practice",
+  "path": "what-is-retrieval-practice",
+  "term": "retrieval practice",
+  "h1": "What is retrieval practice? A teacher's guide",
+  "title": "What is Retrieval Practice? A Teacher's Guide",
+  "description": "What retrieval practice is, why it works, what the research says and how to do it well, with 24 classroom strategies, by Mark Anderson.",
+  "short_answer": "Retrieval practice is the act of pulling something you've learned back out of memory, without your notes in front of you. Every time pupils retrieve something, they make it easier to remember next time, so the recall itself is part of the learning. In the classroom it usually means short, low-stakes quizzes, brain dumps and questions on earlier topics.",
+  "sections": [
+    {
+      "id": "what-it-looks-like",
+      "q": "What does retrieval practice look like in the classroom?",
+      "answer": "It looks like pupils doing the remembering, little and often. A five question starter on last week's topic, a blank page brain dump, a set of flashcards, a closed-book attempt at a diagram they then check against the textbook. Nothing has to be marked and nothing has to count.",
+      "body": [
+        "The common thread is that the notes are closed while pupils try to remember, and then they check. That check is important, because it's where pupils find out what they actually know rather than what they feel they know.",
+        "It can be as simple as asking a class to write down three things they remember from last lesson before you start. It's quick, it costs nothing and everyone can do it."
+      ]
+    },
+    {
+      "id": "why-it-works",
+      "q": "Why does retrieval practice work?",
+      "answer": "Remembering is effortful, and that effort strengthens the memory. When pupils re-read their notes, the page feels familiar and they feel like they know it. When they have to bring it back from memory, they find out whether they really do, and the act of recall makes the knowledge easier to find next time.",
+      "body": [
+        "Robert Bjork called this kind of effort a desirable difficulty. The conditions that make learning feel slow and hard in the moment, like spacing it out, mixing it up and testing instead of reviewing, are often the ones that make it last. Re-reading and cramming feel smooth and productive, but they mostly produce confidence without retention.",
+        "Forgetting is part of this too. A bit of forgetting between practice attempts makes the next retrieval harder, and that harder retrieval does more for long-term memory. So the strategies that feel least efficient in the lesson are often the ones doing the most helpful work, and it's worth not discounting them."
+      ]
+    },
+    {
+      "id": "research",
+      "q": "What does the research say about retrieval practice?",
+      "answer": "Retrieval practice is one of the best supported findings in the learning sciences. Roediger and Karpicke (2006) found that students who were tested on material remembered far more of it a week later than students who spent the same time restudying it, and Dunlosky and colleagues (2013) rated practice testing as one of the two most useful learning techniques.",
+      "body": [
+        "Karpicke and Blunt (2011) went further and compared retrieval with concept mapping while looking at the text. Retrieval came out ahead, and it even helped students produce better concept maps later on. Dunlosky's review put re-reading and highlighting among the least effective techniques, which is worth knowing, because they're what most pupils do when they revise.",
+        "It's also fair to say where the evidence thins. The Education Endowment Foundation's 2021 review of cognitive science in the classroom is supportive of retrieval and spacing, and honest that there's more laboratory evidence than classroom evidence. That's a good reason to try it deliberately and look at what happens with your own pupils."
+      ],
+      "list_heading": "Where this research comes from",
+      "list": [
+        "The testing effect: Roediger and Karpicke",
+        "Desirable difficulties: Robert and Elizabeth Bjork",
+        "Which study techniques work best: Dunlosky and colleagues",
+        "Retrieval in real classrooms: Pooja Agarwal",
+        "Spacing and the forgetting curve: Cepeda, building on Ebbinghaus"
+      ]
+    },
+    {
+      "id": "how-often",
+      "q": "How often should you do retrieval practice?",
+      "answer": "Little and often, and spread out over time. A few minutes in most lessons works better than one long revision session, and coming back to older topics after days, weeks and months does more than practising the same thing again straight away.",
+      "body": [
+        "This is where retrieval practice meets spaced practice. A simple way in is a starter with one question from last lesson, one from last week and one from last month. It builds spacing into your routine without you needing to track it all on a spreadsheet.",
+        "Mixing topics up helps as well. When questions on different topics are interleaved, pupils have to work out which idea or method each question needs, and that choice is part of what they'll have to do in an exam."
+      ]
+    },
+    {
+      "id": "best-activities",
+      "q": "What are the best retrieval practice activities?",
+      "answer": "The best activities are the ones that make every pupil do the remembering, with the notes closed, and then check. Low-stakes quizzes, brain dumps, closed-book reconstruction, cued recall, concept maps from memory and pupils teaching each other all do this well.",
+      "body": [
+        "In the guide I've grouped 24 strategies into five families: the testing effect, spacing and interleaving, desirable difficulties, retrieval formats, and metacognition and calibration. The full list is further down this page, and each one has its own page with an example, a way to begin and what to look out for.",
+        "If you're starting from scratch, pick one. A low-stakes starter quiz or a brain dump is a really good first step, because both are quick to set up and easy to keep going."
+      ]
+    },
+    {
+      "id": "mistakes",
+      "q": "What are the common mistakes with retrieval practice?",
+      "answer": "The common mistakes are making it high stakes, letting pupils look at their notes, giving answers away too quickly, and only ever asking about last lesson. Each one takes away the effort that makes retrieval work.",
+      "body": [
+        "Marks and league tables raise anxiety and push pupils towards guessing or copying, so keep it low stakes. Hints and multiple choice options can make it too easy, because recognising an answer is easier than recalling it. And if every quiz is about yesterday, you lose the benefit of spacing.",
+        "The other common one is skipping the check. Pupils need to see what they got right and wrong, and correct it, or the gaps stay hidden."
+      ]
+    },
+    {
+      "id": "technology-and-ai",
+      "q": "How can technology and AI help with retrieval practice?",
+      "answer": "Technology helps most when it makes regular recall simple to run, without doing the thinking for pupils. Quiz tools can take the marking away, and spaced repetition tools can bring older material back at the right time automatically. AI can help you write question sets quickly, as long as you check them.",
+      "body": [
+        "Retrieval is not a game show, though. If a tool rewards the fastest finger, gives the answer away too quickly or turns it all into points and streaks, it removes the desirable difficulty that makes the practice worthwhile. Use technology to help manage the activity, but never the struggle for learners.",
+        "With AI, the same rule applies to the questions it writes for you. Check its work, like every child in your classroom. And sometimes a mini whiteboard beats anything that needs Wi-Fi and a battery."
+      ]
+    },
+    {
+      "id": "start-tomorrow",
+      "q": "How do I start retrieval practice tomorrow?",
+      "answer": "Start your next lesson with three questions: one from last lesson, one from last week and one from last month. Pupils answer from memory, then you go through the answers together and they correct their own. It takes about five minutes and needs nothing but paper.",
+      "body": [
+        "Keep it going for a few weeks before you judge it. It'll feel a bit harder for pupils at first, and that's normal. Then look at what's happening: which topics keep coming back wrong, and whether pupils are getting better at remembering the older material."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is retrieval practice the same as testing?",
+      "a": "Not quite. A test usually measures what pupils know and often counts for something. Retrieval practice uses the act of remembering as a way to learn, so it works best when it's low stakes, frequent and doesn't count towards a grade."
+    },
+    {
+      "q": "What is the difference between retrieval practice and spaced practice?",
+      "a": "Retrieval practice is about how pupils study: by recalling from memory. Spaced practice is about when: spreading study out over time. They work best together, with regular retrieval of older material spread across weeks and months."
+    },
+    {
+      "q": "Does retrieval practice work in primary schools?",
+      "a": "Yes. Studies have found benefits across a wide range of ages, from young children to university students. With younger pupils, keep it short, oral or visual where that helps, and make the checking part of the routine."
+    },
+    {
+      "q": "Should retrieval practice be marked?",
+      "a": "It doesn't need to be. Pupils can check their own answers against the correct ones, which is quicker for you and helps them see their own gaps. Keep scores private so it stays low stakes."
+    },
+    {
+      "q": "How long should a retrieval practice starter take?",
+      "a": "Around five minutes is plenty. Three to five questions, answered from memory, then checked together. Short enough to do most lessons, long enough for every pupil to have a proper go."
+    },
+    {
+      "q": "Is multiple choice good for retrieval practice?",
+      "a": "It can help, but recognising the right answer is easier than recalling it. Use multiple choice with plausible wrong answers, and mix it with questions where pupils have to produce the answer themselves."
+    }
+  ]
+}

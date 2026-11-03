@@ -1,0 +1,123 @@
+{
+  "slug": "metacognition-and-self-regulation",
+  "path": "what-is-metacognition",
+  "term": "metacognition",
+  "h1": "What is metacognition? A teacher's guide",
+  "title": "What is Metacognition? A Teacher's Guide",
+  "description": "What metacognition and self-regulation are, what the EEF says and how to teach them, with 24 classroom strategies, by Mark Anderson.",
+  "short_answer": "Metacognition is thinking about your own thinking: knowing how you learn, and using that to plan a task, check how it's going and change course when it isn't working. In the classroom it means teaching pupils to set a goal, pick a strategy on purpose, monitor their understanding and evaluate the result, so self-regulation is something they're taught rather than something the lucky ones pick up.",
+  "sections": [
+    {
+      "id": "what-it-looks-like",
+      "q": "What are some examples of metacognition in the classroom?",
+      "answer": "It looks like pupils thinking about how they're doing the work, as well as doing it. Saying what a good answer would include before they start, naming the method they'll use and why, pausing mid-task to ask whether it's still working, and comparing their finished work against an exemplar.",
+      "body": [
+        "A worded maths problem gets annotated together before anyone solves it, so the quantity being asked for is circled and the step most likely to catch people out gets a warning mark. Fifteen minutes into an extended piece of writing, a timer marks a stop point and everyone answers one question: is my approach still working, and how do I know?",
+        "None of this needs anything special. A one-line margin note saying why a pupil took a step, or a predicted score written down before the quiz is marked, makes invisible thinking visible, so you and they can look at the process as well as the product."
+      ]
+    },
+    {
+      "id": "self-regulated-learning",
+      "q": "What is self-regulated learning?",
+      "answer": "Self-regulated learning is pupils managing their own learning in a cycle: looking ahead and planning, monitoring how it's going while they work, then reflecting on the result and using that to improve the next attempt. Zimmerman showed that self-regulation works as a cycle learners can get better at, which means it can be taught.",
+      "body": [
+        "In Zimmerman's forethought phase, learners analyse the task, set a specific goal, choose a strategy and bring an expectation of how they'll do. In the performance phase, they monitor their understanding and manage their attention while they work. In the self-reflection phase, they judge their work against a standard and explain the result to themselves, and that feeds straight into the next round of planning.",
+        "Metacognition sits inside this cycle. Flavell gave us the language of metacognition, helping us see that pupils can become more aware of their own thinking, and Winne took it further by showing how learners should monitor and adjust while the work is happening, as well as after it's finished."
+      ],
+      "list_heading": "The three phases of the cycle",
+      "list": [
+        "Forethought: analyse the task, set the goal, pick a strategy",
+        "Performance: monitor understanding and manage attention while working",
+        "Self-reflection: judge against a standard, explain the result, plan the next attempt"
+      ]
+    },
+    {
+      "id": "eef-guidance",
+      "q": "What does the EEF guidance say about metacognition?",
+      "answer": "The Education Endowment Foundation's guidance report on metacognition and self-regulated learning is the one most schools start with. It makes seven recommendations, and explicit teaching of strategies is among them, so pupils are taught a named strategy and how to use it before they're expected to use it on their own.",
+      "body": [
+        "Behind the guidance sits a fuller evidence review by Muijs and Bokhove (2020), and it's honest about where the evidence is strong and where it thins. That's worth knowing before anyone sells you a metacognition programme. It's a good reason to try strategies deliberately and look at what happens with your own pupils.",
+        "The thinking behind it goes back a long way. Flavell's 1979 paper is where the term begins, and Zimmerman's 2002 overview set out the forethought, performance and self-reflection cycle that sits behind many of the strategies in this guide."
+      ],
+      "list_heading": "Where this research comes from",
+      "list": [
+        "Where the term metacognition begins: Flavell",
+        "The self-regulation cycle: Zimmerman",
+        "Monitoring while you work, and conditional knowledge: Winne",
+        "Feedback and self-regulation as one loop: Butler",
+        "Knowledge before strategy: Willingham",
+        "The EEF evidence review: Muijs and Bokhove"
+      ]
+    },
+    {
+      "id": "teach-explicitly",
+      "q": "How do you teach metacognition explicitly?",
+      "answer": "Name the strategy, model it out loud, practise it with prompts, then fade the prompts. Teach it inside your subject, on content pupils already know, so they learn to self-regulate this topic. Telling pupils to reflect more won't build the habit; it has to be taught, modelled, practised and gradually handed over.",
+      "body": [
+        "Order is important here. Pupils can't plan or monitor a task they know nothing about, so teach the content first, because metacognition works on knowledge, never instead of it. Then teach the method as a named strategy with steps, like retrieval, spacing or self-explanation, along with the cues that tell pupils when it's the right one to reach for.",
+        "Model it before you expect it. The questions an expert asks themselves look obvious precisely because the expert no longer notices asking them, so think aloud. Then move from modelled, to guided, to independent use, removing prompts as pupils show they no longer need them, and bringing them back for anyone who struggles."
+      ]
+    },
+    {
+      "id": "best-strategies",
+      "q": "What are the best metacognitive strategies for the classroom?",
+      "answer": "The best strategies give pupils something concrete to steer by: a goal set before they start, a method chosen on purpose, planned stop points to check it's working, an exemplar to judge against, and one specific change to make next time. Each one is small, and each one hands a piece of the thinking over to the pupil.",
+      "body": [
+        "In the guide I've grouped 24 strategies into five families: forethought and planning, performance and monitoring, self-reflection and evaluation, strategy knowledge and use, and digital cognition. The full list is further down this page, and each one has its own page with an example, a way to begin and what to look out for.",
+        "If you're starting from scratch, pick one. Asking pupils what a good answer would include before they start, or having them predict their score before a quiz is marked, are both quick to set up and easy to keep going."
+      ]
+    },
+    {
+      "id": "mistakes",
+      "q": "What are the common mistakes with teaching metacognition?",
+      "answer": "The common mistakes are teaching it as a separate study skills lesson, asking pupils to reflect with nothing to reflect against, trusting how confident pupils feel, and never removing the prompts. Each one leaves pupils going through the motions without building the habit of regulating their own learning.",
+      "body": [
+        "Reflection that ends with \"I should be more careful\" changes nothing on Monday. Reflection only really counts as metacognition when it changes what the learner does next, so turn each one into a single concrete adjustment for the very next task. And a novice's sense of understanding is unreliable, so pair every self-check with an external one, like a quick quiz or a worked answer.",
+        "Strategies taught in the abstract tend to stay there, because self-regulating an essay is a different act from self-regulating a proof. And if the prompts never come away, pupils never get the chance to remember to plan, check and reflect for themselves, which is the bit we're actually after."
+      ]
+    },
+    {
+      "id": "technology-and-ai",
+      "q": "How can technology and AI help with metacognition?",
+      "answer": "Technology helps when it scaffolds the regulation and is then faded. Learning journals, planning tools and self-marking quizzes can make invisible thinking visible and give pupils evidence to check their confidence against. AI can act as a critic of work a pupil has already done, as long as the pupil does the judging.",
+      "body": [
+        "The risk is a tool that monitors and corrects so smoothly that the pupil never has to, removing the very work that builds the capacity. Willingham's line, that memory is the residue of thought, applies here: if pupils offload the thinking to AI, nothing is learned, however polished the work looks. Scaffold the regulation, then fade the scaffold. The goal is a learner who no longer needs the tool.",
+        "Pedagogy first, technology second. Teaching pupils to switch on focus modes and silence alerts as a deliberate choice is self-regulation too, because the environment they manage now includes the screen. And when AI critiques a pupil's work, pupils need to treat its feedback the same way you would: check its work, like every child in your classroom."
+      ]
+    },
+    {
+      "id": "start-tomorrow",
+      "q": "How do I start teaching metacognition tomorrow?",
+      "answer": "Before your next extended task, ask the class what a good answer to this question would include, and take suggestions before anyone writes a word. Agree a shared version, leave it on the board while they work, and ask them to check their work against it before they hand it in. It takes two minutes and needs no preparation.",
+      "body": [
+        "Keep it going for a few weeks before you judge it. Pupils new to this will come up with woolly criteria at first, so model it for them. Then look at what's happening: whether the goals get more specific, whether anyone refers back to them mid-task, and whether, in time, pupils start setting the goal without being asked."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between metacognition and self-regulation?",
+      "a": "Metacognition is awareness and control of your own thinking: knowing how you learn and checking your understanding. Self-regulation is wider. It's the whole cycle of planning, monitoring and reflecting, and it also takes in confidence, effort and managing your attention. Metacognition is one part of self-regulation."
+    },
+    {
+      "q": "What are the three stages of metacognition?",
+      "a": "A simple way to put it is plan, monitor and evaluate. Those line up with Zimmerman's cycle of forethought, performance and self-reflection, where what pupils learn from evaluating one task feeds into how they plan the next."
+    },
+    {
+      "q": "Is metacognition just reflection?",
+      "a": "Reflection is one part of it, but on its own it often stops at \"I should be more careful\". Metacognition also includes planning before a task and monitoring during it, and reflection only really counts when it changes what the pupil does next."
+    },
+    {
+      "q": "Should metacognition be taught as a separate lesson?",
+      "a": "It works better inside your subject. Strategies don't float free of content, and pupils taught metacognition in general often can't find it again once they're back in geography. Teach each strategy inside the content it serves."
+    },
+    {
+      "q": "Why is metacognition important?",
+      "a": "Pupils who can plan, monitor and adjust their own learning consistently outperform those who can't. Teaching it explicitly means self-regulation is something every pupil is taught, rather than something only the lucky ones pick up."
+    },
+    {
+      "q": "What questions can pupils ask themselves to be more metacognitive?",
+      "a": "Before the task: what is this question really asking, and what would a good answer include? During it: do I actually understand this, and is my approach still working? After it: what helped most, and what will I do differently next time?"
+    }
+  ]
+}

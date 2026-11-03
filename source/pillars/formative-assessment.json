@@ -1,0 +1,120 @@
+{
+  "slug": "formative-assessment",
+  "path": "what-is-formative-assessment",
+  "term": "formative assessment",
+  "h1": "What is formative assessment? A teacher's guide",
+  "title": "What is Formative Assessment? A Teacher's Guide",
+  "description": "What formative assessment is, why it works, what the research says and how to do it well, with 24 classroom strategies, by Mark Anderson.",
+  "short_answer": "Formative assessment is gathering evidence of what pupils have learned while you're still teaching them, and using it to decide what happens next. It answers three questions: where is the learner going, where are they now, and what closes the gap. In the classroom it means hinge questions, mini whiteboards, feedback pupils act on and pupils checking their own work.",
+  "sections": [
+    {
+      "id": "examples",
+      "q": "What are examples of formative assessment in the classroom?",
+      "answer": "A hinge question at the turning point of a lesson, answered by everyone on mini whiteboards or ABCD cards. A muddiest point slip at the end of the lesson. Comment only marking, with time to respond. Pupils assessing each other's work against exemplars. Each one gives you evidence you can act on straight away.",
+      "body": [
+        "The common thread is that you hear from every pupil, not just the confident few, and then you do something with what you find out. The classic weakness of classroom questioning is that you hear from a handful of pupils and make assumptions about the rest, and most of these routines are there to take that problem away.",
+        "It can be as simple as asking a question, giving everyone a few seconds to write an answer on a whiteboard, and asking them all to hold it up at once. You can read the room in seconds and decide whether to move on or go back."
+      ]
+    },
+    {
+      "id": "formative-vs-summative",
+      "q": "What is the difference between formative and summative assessment?",
+      "answer": "Summative assessment sums up what pupils have learned at the end of a unit or course, usually with a grade. Formative assessment happens during the learning, and its job is to shape what comes next. The same quiz can be either, depending on how you use the evidence it gives you.",
+      "body": [
+        "Dylan Wiliam put it neatly: the word formative should describe the function the evidence serves, rather than the assessment itself. A quiz you mark, record and move on from is summative, whatever you call it. The same quiz, used to decide which topic to reteach on Monday, is formative.",
+        "Or as I put it in the guide, \"If it does not change what you do next, it was not formative. It was just a test with a kinder name.\" Both kinds have their place, and summative pieces still get graded. It's about knowing which one you're doing, and why."
+      ]
+    },
+    {
+      "id": "why-it-works",
+      "q": "Why does formative assessment work?",
+      "answer": "It puts evidence behind the decisions you make in every lesson. Formative assessment answers three questions: where is the learner going, where are they now, and what closes the gap. When you know where every pupil is, you can adjust the teaching in the moment, and pupils know what to do to improve.",
+      "body": [
+        "Every lesson has turning points where you decide, often on a feeling, whether the class is ready to move on. Formative assessment swaps that feeling for evidence. Well designed questions go further, because when each wrong answer maps to a known misconception, the spread of answers tells you why pupils are stuck as well as how many of them are.",
+        "It works for pupils too. When they understand what quality looks like, and get feedback they have to think about and act on, they start doing some of the checking for themselves. That's the long term aim: pupils who can judge their own work and know what to do next."
+      ]
+    },
+    {
+      "id": "research",
+      "q": "What does the research say about formative assessment?",
+      "answer": "Paul Black and Dylan Wiliam's 1998 review, Assessment and Classroom Learning, put formative assessment on the map. The size of the gains it reported has been debated ever since, but the broad direction of the evidence has held: good formative practice helps pupils learn.",
+      "body": [
+        "Their shorter piece for teachers, Inside the Black Box, is still the clearest statement of the argument. Leahy, Lyon, Thompson and Wiliam (2005) then set out the five strategies most schools now use, and Wiliam's book Embedded Formative Assessment (2011) gives the practical techniques behind many of the strategies in this guide.",
+        "Some individual findings are worth knowing too. Butler's research found that comments alone produced the greatest gains, and that adding a grade to a comment cancelled it out, because pupils read the grade and ignored the feedback. It was a small study, and later work has backed up its pattern though not always its size, so it's a good reason to try comment only marking on work in progress and see what happens with your own pupils."
+      ],
+      "list_heading": "Where this research comes from",
+      "list": [
+        "Assessment and classroom learning: Paul Black and Dylan Wiliam",
+        "The five key strategies: Leahy, Lyon, Thompson and Wiliam",
+        "Comments and grades: Butler",
+        "Quality, exemplars and success criteria: Sadler and Berger",
+        "Feedback: Hattie",
+        "Review and guided practice: Rosenshine",
+        "The muddiest point: Angelo and Cross",
+        "Every pupil able to respond: CAST",
+        "Spacing and retrieval: Bjork"
+      ]
+    },
+    {
+      "id": "five-strategies",
+      "q": "What are the five key strategies of formative assessment?",
+      "answer": "The five strategies, set out by Leahy, Lyon, Thompson and Wiliam, are: clarifying learning intentions and success criteria, eliciting evidence of learning, giving feedback that moves learning forward, getting pupils working as learning resources for one another, and helping pupils become owners of their own learning.",
+      "body": [
+        "In the guide I've grouped 24 strategies into these five families: clarify learning intentions, elicit evidence of learning, feedback that moves learning forward, students as learning resources, and students as owners of their learning. The full list is further down this page, and each one has its own page with an example, a way to begin and what to look out for.",
+        "If you're starting from scratch, pick one. Mini whiteboards or a hinge question are a really good first step, because eliciting evidence from every pupil is the hardest part to get right, and it's also the most powerful."
+      ]
+    },
+    {
+      "id": "mistakes",
+      "q": "What are the common mistakes with formative assessment?",
+      "answer": "The common mistakes are collecting evidence and then not acting on it, only hearing from pupils with their hands up, improvising diagnostic questions, putting grades on work in progress, and giving feedback with no time to respond. Each one breaks the link between the evidence and what happens next.",
+      "body": [
+        "Evidence is only useful when you act on it. A muddiest point box that never gets opened, or a set of quiz results nobody looks at, tells pupils their answers don't change anything, and they soon stop telling you the truth.",
+        "Feedback is the other one to watch. If it needs no response from the learner, it's merely information, and if there's never time in the lesson to act on it, it's fair to ask whether it needed writing at all. Starting the next lesson with a few minutes for pupils to read and respond to it fixes a lot of this."
+      ]
+    },
+    {
+      "id": "technology-and-ai",
+      "q": "How can technology and AI help with formative assessment?",
+      "answer": "Technology can make every learner visible at once, and that's its real contribution to assessment. Polling tools, quiz tools and simple response systems gather an answer from everyone at the same time. AI can help you draft hinge questions and plausible distractors quickly, as long as you check them.",
+      "body": [
+        "Evidence is only useful when you act on it, though. A tool that shows you a bar chart of misconceptions has done nothing until it changes what you do in the next five minutes. And if a quiz turns into a race for points, the quality of the answers goes, and so does the diagnosis. Pedagogy first, technology second.",
+        "With AI, look hardest at the wrong answers it writes, because each one needs to map to a misconception your pupils really hold, and you know those better than any tool. Check its work, like every child in your classroom. And sometimes a set of ABCD cards does the job without any Wi-Fi or batteries at all."
+      ]
+    },
+    {
+      "id": "start-tomorrow",
+      "q": "How do I start formative assessment tomorrow?",
+      "answer": "Find the point in your next lesson where you'd normally ask \"Does everyone understand?\" and swap it for one multiple choice question, answered by every pupil at once on mini whiteboards or ABCD cards. Look at the spread of answers, then decide whether to move on or go back.",
+      "body": [
+        "Plan the question before the lesson, and make each wrong answer one your pupils might actually give, so the spread tells you why they're stuck. Then keep it going for a few weeks before you judge it. Look at what changes: how often you go back, which misconceptions keep turning up, and whether more pupils are getting it right first time."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can a test be formative assessment?",
+      "a": "Yes. What makes assessment formative is what you do with the evidence. A test that's marked, recorded and filed is summative. The same test, used to decide what to reteach and to give pupils something to act on, is formative."
+    },
+    {
+      "q": "Should formative assessment be graded?",
+      "a": "Usually not. Butler's research found that when pupils got a grade and a comment together, they read the grade and ignored the comment. On work in progress, comments alone keep pupils focused on improving the work. Summative pieces can still be graded."
+    },
+    {
+      "q": "What is a hinge question?",
+      "a": "A single diagnostic question at a turning point in the lesson, answered by every pupil. Each wrong answer maps to a known misconception, so the responses tell you whether to move on or go back, and why. Plan it in advance; never improvise it."
+    },
+    {
+      "q": "What is the muddiest point?",
+      "a": "At the end of a lesson, each pupil writes down, anonymously, the one thing they're least clear about. You read them and deal with the most common ones at the start of the next lesson. It takes about two minutes."
+    },
+    {
+      "q": "Is whole class feedback formative assessment?",
+      "a": "It can be. You read the whole set of work for patterns, then share common strengths, recurring errors and two or three next steps with the class. It becomes formative when pupils use it, so build in time for them to act on it."
+    },
+    {
+      "q": "How often should I use formative assessment?",
+      "a": "Every lesson, in small ways. Rosenshine found that the most effective teachers reviewed prior learning and checked understanding constantly. One well planned hinge question per lesson is plenty, alongside quick checks that get an answer from everyone."
+    }
+  ]
+}

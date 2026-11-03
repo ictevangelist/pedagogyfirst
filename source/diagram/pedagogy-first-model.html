@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- The Pedagogy First model diagram. Render at 1600x1000, scale 2:
+     with headless Chrome: --window-size=1600,1000 --force-device-scale-factor=2 -->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Poppins'; src: url('../../assets/fonts/poppins-400.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Poppins'; src: url('../../assets/fonts/poppins-600.woff2') format('woff2'); font-weight: 600; }
+@font-face { font-family: 'Exo 2'; src: url('../../assets/fonts/exo2-700.woff2') format('woff2'); font-weight: 700; }
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1600px; height: 1000px; }
+body { background: linear-gradient(135deg, #2d3436 0%, #1a1f24 50%, #0f1317 100%); color: #fff; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden; }
+.topbar { position: absolute; top: 0; left: 0; right: 0; height: 10px; background: linear-gradient(90deg, #17abce 0%, #0ea3ab 45%, #45b84a 100%); }
+header { position: absolute; top: 70px; left: 80px; right: 80px; }
+h1 { font-family: 'Exo 2', sans-serif; font-weight: 700; font-size: 64px; line-height: 1.05; margin: 0; }
+h1 span { color: #FEAE00; }
+.sub { font-size: 28px; color: #ced8de; margin: 16px 0 0; }
+.steps { position: absolute; top: 250px; left: 80px; right: 80px; height: 470px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; }
+.step { background: rgba(255,255,255,.06); border: 2px solid rgba(255,255,255,.16); border-top: 8px solid var(--c); border-radius: 18px; padding: 30px 28px; position: relative; display: flex; flex-direction: column; }
+.step + .step::before { content: ""; position: absolute; left: -40px; top: 50%; width: 0; height: 0; border-top: 16px solid transparent; border-bottom: 16px solid transparent; border-left: 22px solid #FEAE00; transform: translateY(-50%); }
+.num { font-family: 'Exo 2', sans-serif; font-weight: 700; font-size: 60px; line-height: 1; color: var(--c); }
+.label { font-size: 18px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #ced8de; margin: 14px 0 14px; }
+.q { font-family: 'Exo 2', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.22; margin: 0; }
+.yn { margin: auto 0 0; padding-top: 18px; font-size: 20px; line-height: 1.45; color: #ced8de; }
+.yn b { color: #fff; font-weight: 600; }
+.ai { position: absolute; top: 776px; left: 80px; right: 80px; height: 104px; border-radius: 16px; background: rgba(254,174,0,.12); border: 2px solid #FEAE00; display: flex; align-items: center; gap: 24px; padding: 0 32px; }
+.ai .tag { font-family: 'Exo 2', sans-serif; font-weight: 700; font-size: 30px; color: #FEAE00; white-space: nowrap; }
+.ai p { margin: 0; font-size: 24px; line-height: 1.4; }
+footer { position: absolute; left: 80px; right: 80px; bottom: 44px; display: flex; justify-content: space-between; font-size: 20px; color: #ced8de; }
+footer b { color: #fff; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header>
+  <h1>Pedagogy First. <span>Technology Second.</span></h1>
+  <p class="sub">Four questions, in this order</p>
+</header>
+<div class="steps">
+  <div class="step" style="--c:#17abce"><div class="num">1</div><div class="label">The learning</div><p class="q">What do my pupils need to learn, and where are they now?</p><p class="yn">Start with the need in front of you.</p></div>
+  <div class="step" style="--c:#0ea3ab"><div class="num">2</div><div class="label">The pedagogy</div><p class="q">Which evidence‑informed approach fits that need?</p><p class="yn">Retrieval, formative assessment, feedback, questioning, explanations, metacognition.</p></div>
+  <div class="step" style="--c:#45b84a"><div class="num">3</div><div class="label">The technology</div><p class="q">Will a tool support teaching, enhance learning or reduce workload?</p><p class="yn"><b>Yes:</b> use it, on purpose.<br><b>No:</b> leave it out.</p></div>
+  <div class="step" style="--c:#FEAE00"><div class="num">4</div><div class="label">The impact</div><p class="q">What actually happened?</p><p class="yn">Keep it, adapt it or drop it.</p></div>
+</div>
+<div class="ai"><span class="tag">With AI</span><p>Use it to help manage the activity, but never the struggle for learners. Check its work, like every child in your classroom.</p></div>
+<footer><span><b>Mark Anderson</b> &middot; pedagogyfirst.ictevangelist.com</span><span>CC BY-NC-SA 4.0</span></footer>
+</body>
+</html>
