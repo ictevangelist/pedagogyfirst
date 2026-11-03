@@ -294,21 +294,30 @@ def pdf_size_mb(slug):
     return p.stat().st_size / 1024 / 1024 if p.exists() else None
 
 
+def infographic_file(slug, ext):
+    """Descriptive file names so the infographics show up in image search."""
+    return f"/assets/infographics/24-ways-{slug}-infographic.{ext}"
+
+
 def infographic_figure(c, on_chapter_page=True):
     slug = c["slug"]
     mb = pdf_size_mb(slug)
-    alt = (f"The {c['name']} infographic. The same 24 strategies as a one page poster. "
-           f"Every strategy on it is written out as text below.")
+    alt = (f"{c['title']}: a one page infographic of 24 strategies by Mark Anderson, "
+           f"from Pedagogy First, Technology Second. Every strategy is written out as text below.")
     dl = ""
     if mb:
         dl = (f'<a href="/downloads/{slug}.pdf">Download this guide as a PDF</a> '
               f'<span class="meta">({mb:.1f}&nbsp;MB, text is selectable and searchable)</span> · '
-              f'<a href="/assets/infographics/{slug}-download.png">Download the infographic as an image</a>')
+              f'<a href="{infographic_file(slug, "png")}">Download the infographic as an image</a>')
+    share = (f'<p class="share-note">Free to use and share in your school (CC BY-NC-SA 4.0). '
+             f'Please credit Mark Anderson and link back to this page. '
+             f'<button class="copylink" type="button" hidden data-path="/{slug}/" '
+             f'aria-label="Copy a link to this page">Copy link</button></p>')
     w, h = SIZES.get(slug, [1600, 1194])
     return f"""<figure class="infographic">
-      <img src="/assets/infographics/{slug}.webp" width="{w}" height="{h}"
+      <img src="{infographic_file(slug, "webp")}" width="{w}" height="{h}"
            alt="{e(alt)}" decoding="async"{"" if on_chapter_page else ' loading="lazy"'}>
-      <figcaption>{dl}</figcaption>
+      <figcaption>{dl}{share}</figcaption>
     </figure>"""
 
 
@@ -1208,13 +1217,13 @@ def build_chapter(c, index):
             "thinking", "The thinking", thinking["standfirst"],
             "".join(f"<p>{e(p)}</p>" for p in thinking["paragraphs"]),
             f"guide-page-{slug}-thinking.webp",
-            f"The thinking page for {c['name']} from the guide.")
+            f"{c['name']} for teachers: the thinking page from the Pedagogy First, Technology Second guide.")
     if practice.get("standfirst"):
         practice_html = split_section(
             "practice", "In practice", practice["standfirst"],
             "".join(f"<p>{e(p)}</p>" for p in practice["paragraphs"]),
             f"guide-page-{slug}-practice.webp",
-            f"The in practice page for {c['name']} from the guide.",
+            f"{c['name']} in the classroom: the in practice page from the Pedagogy First, Technology Second guide.",
             img_left=True)
 
     out = [
@@ -1352,7 +1361,7 @@ def build_downloads():
         if mb:
             links.append(f'<a class="btn" href="/downloads/{slug}.pdf">Download this guide as a PDF '
                          f'<span>{mb:.1f}&nbsp;MB</span></a>')
-        links.append(f'<a class="btn btn-quiet" href="/assets/infographics/{slug}-download.png">'
+        links.append(f'<a class="btn btn-quiet" href="{infographic_file(slug, "png")}">'
                      f'Download the infographic as an image</a>')
         rows.append(f"""      <li style="--accent:{darken_for_white(c["clusters"][0]["colour"])}">
         <span class="card-no" aria-hidden="true">{c['number']}</span>

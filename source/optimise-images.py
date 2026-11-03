@@ -3,8 +3,10 @@
 Turn the 2x infographic renders into web assets.
 
 Each infographic becomes:
-  <slug>.webp        display version, 1600px wide, for the page
-  <slug>.png         download version, 2400px wide, for sharing and printing
+  24-ways-<slug>-infographic.webp   display version, 1600px wide, for the page
+  24-ways-<slug>-infographic.png    download version, 2400px wide, for sharing and printing
+
+The old <slug>.webp and <slug>-download.png files stay so links already shared keep working.
 
 The raw 2800px renders are 17MB in total, which is far too heavy to put on
 a page. This keeps a crisp download while making the on-page version light.
@@ -23,7 +25,7 @@ DOWNLOAD_W = 2400
 def main():
     total_before = total_after = 0
     for src in sorted(OUT.glob("*.png")):
-        if src.stem.endswith("-download"):
+        if src.stem.startswith("24-ways-") or src.stem.endswith("-download"):  # outputs, old and new
             continue
         before = src.stat().st_size
         total_before += before
@@ -34,14 +36,14 @@ def main():
         dl = img.resize(
             (DOWNLOAD_W, round(img.height * DOWNLOAD_W / img.width)), Image.LANCZOS
         )
-        dl_path = OUT / f"{src.stem}-download.png"
+        dl_path = OUT / f"24-ways-{src.stem}-infographic.png"
         dl.quantize(colors=256, method=Image.MEDIANCUT).save(dl_path, optimize=True)
 
         # display version: WebP
         disp = img.resize(
             (DISPLAY_W, round(img.height * DISPLAY_W / img.width)), Image.LANCZOS
         )
-        webp_path = OUT / f"{src.stem}.webp"
+        webp_path = OUT / f"24-ways-{src.stem}-infographic.webp"
         disp.save(webp_path, "WEBP", quality=82, method=6)
 
         src.unlink()  # the raw render is not shipped
