@@ -4,6 +4,7 @@
    WCAG 2.2 AA floor: contrast, focus, reflow, target size, reduced
    motion, forced colors, print.
    ===================================================================== */
+@font-face { font-family:'Poppins Fallback'; src:local('Arial'); ascent-override:93.62%; descent-override:31.21%; line-gap-override:8.92%; size-adjust:112.16%; }
 @font-face { font-family: 'Poppins'; src: url('/assets/fonts/poppins-400.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 @font-face { font-family: 'Poppins'; src: url('/assets/fonts/poppins-600.woff2') format('woff2'); font-weight: 600; font-display: swap; }
 @font-face { font-family: 'Exo 2'; src: url('/assets/fonts/exo2-700.woff2') format('woff2'); font-weight: 700; font-display: swap; }
@@ -21,7 +22,7 @@
   --charcoal: linear-gradient(135deg, #2d3436 0%, #1a1f24 50%, #0f1317 100%);
   --measure: 68ch;
   --head: 'Exo 2', Segoe UI, system-ui, sans-serif;
-  --body: 'Poppins', Segoe UI, system-ui, sans-serif;
+  --body: 'Poppins', 'Poppins Fallback', Segoe UI, system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

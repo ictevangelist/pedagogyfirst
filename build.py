@@ -124,6 +124,9 @@ def head(title, description, canonical, jsonld=None, body_class=None, og_image=N
 <meta property="og:url" content="{e(canonical)}">
 {_og(og_image, og_alt)}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/exo2-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/styles.css?v={CSS_V}">{_ld(jsonld)}
 </head>
 <body{' class="' + body_class + '"' if body_class else ''}>
